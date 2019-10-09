@@ -24,6 +24,7 @@ class Recipe:
         self.attributes: Dict[str, Dict[str, List[str]]] # {attribute_type: {version: [attribute1, attribute2, ...]}}
         self.attributes = {k: {} for k in attribute_dict.keys()}
         self.margins = self.get_margins()
+        self.del_tags = self.get_del()
         for k, v in attribute_dict.items():
             self.attributes[k] = self.find_tag(v)
         self.balanced: Dict[str: bool] = {k: self.check_balance(k) for k in self.versions.keys()}
@@ -33,6 +34,10 @@ class Recipe:
         # do we record placement of margins?
         margins = re.findall(r'(<ab margin="[\w-]*"( render="tall")?>(.?)</ab>)', self.versions['tl'])
         return [m[0] for m in margins] if margins else []
+
+    def get_del(self):
+        d = re.findall(r'<del>(.*?)<\/del>', self.versions['tl'])
+        return d if d else []
 
     def get_head(self, text: str) -> str:
         """ search text for text in a <head> tag. """

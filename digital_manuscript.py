@@ -62,5 +62,6 @@ class BnF():
     df['length'] = df.entry.apply(lambda x: x.length['tl'])
     df['num_materials'] = df.entry.apply(lambda x: len(x.attributes['material']['tl']))
     df['margins'] = df.entry.apply(lambda x: len(x.margins))
+    df['del_tags'] = df.entry.apply(lambda x: len(x.del_tags))
     df = df.drop(columns=['entry'])
     return df
