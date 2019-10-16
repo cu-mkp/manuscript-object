@@ -1,0 +1,101 @@
+{
+  "sous": {
+    "p003r_2": "Varnish for panels",
+    "p003r_3": "Thick varnish for planks",
+    "p004v_1": "Black varnish for sword guard, bands for trunks, &amp;c",
+    "p020r_2": "Glassworker",
+    "p039r_1": "Goldsmith",
+    "p044v_1": "Horsehair sieves",
+    "p058v_4": "Azure",
+    "p085v_4": "Experimented sands",
+    "p094r_1": "Furbisher",
+    "p097r_2": "Gilding",
+    "p121v_2": "Silver for casting",
+    "p123r_1": "A means di far correr lotnegra",
+    "p126v_1": "Crocum ferri"
+  },
+  "livres": {
+    "p009v_3": "Waste book",
+    "p170v_1": "1578-9 original first page"
+  },
+  "lb": {
+    "p017r_1": "On the gunner",
+    "p020r_2": "Glassworker",
+    "p032v_3": "Founder",
+    "p094r_1": "Furbisher"
+  },
+  "frans": {
+    "p030r_2": "Pewterer"
+  },
+  "liard": {
+    "p036r_1": "For transmuting a ball into a thimble, cunning",
+    "p094r_1": "Furbisher",
+    "p104r_2": "For etching on iron"
+  },
+  "francs": {
+    "p038v_6": "Scarlets"
+  },
+  "lb.": {
+    "p038v_6": "Scarlets"
+  },
+  "florins": {
+    "p039r_2": "Pastel woad"
+  },
+  "pistolet": {
+    "p039v_1": "Enamel",
+    "p124v_1": "Rouge clair enamel"
+  },
+  "deniers": {
+    "p044r_1": "The range of an arquebus"
+  },
+  "s": {
+    "p053v_1": "Silkworms"
+  },
+  "carolus": {
+    "p094r_1": "Furbisher",
+    "p154r_3": "Sweetening silver"
+  },
+  "teston": {
+    "p103v_2": "Cast",
+    "p121v_2": "Silver for casting",
+    "p128v_1": "Whitening of cast silver"
+  },
+  "écu": {
+    "p124v_1": "Rouge clair enamel",
+    "p170v_2": "Against plague"
+  },
+  "real": {
+    "p128r_1": "Casting in silver and gold",
+    "p154r_3": "Sweetening silver"
+  },
+  "sou": {
+    "p154r_3": "Sweetening silver"
+  },
+  "billon": {
+    "p156r_2": "Very light and hollow work of gold"
+  },
+  "reals": {
+    "p164r_3": "Leady silver"
+  },
+  "écus": {
+    "p170v_1": "1578-9 original first page"
+  },
+  "lb t.": {
+    "p009v_3": "Waste book"
+  },
+  "old douzains": {
+    "p149v_2": "Gold solder"
+  },
+  "gold denier": {
+    "p149v_2": "Gold solder"
+  },
+  "old sou": {
+    "p154r_3": "Sweetening silver"
+  },
+  "sous from france": {
+    "p164r_3": "Leady silver"
+  },
+  "sous from spain": {
+    "p164r_3": "Leady silver"
+  }
+}

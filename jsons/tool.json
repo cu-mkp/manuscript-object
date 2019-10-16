@@ -1,0 +1,4212 @@
+{
+  "marble": {
+    "p002v_2": "Emeralds of Brissac",
+    "p005v_1": "For bronzing in yellow and white",
+    "p006r_1": "For laying down and setting burnished gold and giving red or green or blue",
+    "p008v_2": "Or and argent moulu",
+    "p010r_5": "Powder for hourglasses",
+    "p011r_1": "Painting esmail d’azur in oil",
+    "p012r_4": "Plaster",
+    "p012v_3": "For whitening enilanroc",
+    "p013r_1": "Flesh color from arsenic",
+    "p029r_1": "Stucco for molding",
+    "p041r_03": "Sand",
+    "p042v_4": "Sand for casting",
+    "p048v_2": "Lead, tin",
+    "p051r_2": "Cutters of printing plates",
+    "p056v_1": "Painter",
+    "p063r_6": "Verdigris and another very beautiful bright green",
+    "p068r_3": "Casting",
+    "p069r_2": "Sand",
+    "p072r_2": "Casting in copper",
+    "p074r_1": "For bronzing white",
+    "p075r_2": "Bronze of copper",
+    "p075r_3": "Bronze like tin",
+    "p075r_5": "Or moulu",
+    "p078v_1": "For making bronze in the color of steel",
+    "p078v_4": "For making bronze",
+    "p084r_3": "Eau magistra",
+    "p086v_1": "Excellent sand for lead, tin, and copper",
+    "p088v_1": "Sand from pulverised rock salt and sand from the mine finely ground on marble",
+    "p089v_1": "Sal ammoniac and alabaster",
+    "p093v_1": "Faces in distemper",
+    "p101r_2": "Salt for melting",
+    "p107r_1": "Catching lizards and snakes",
+    "p108r_2": "Spalt",
+    "p118v_1": "Casting in frames",
+    "p134v_1": "For making ☀ run",
+    "p148r_4": "Crocum ferri",
+    "p154r_4": "Iron scales"
+  },
+  "stick": {
+    "p003r_1": "Counterfeit coral",
+    "p023r_1": "On petards",
+    "p036r_1": "For transmuting a ball into a thimble, cunning",
+    "p039v_3": "Tracing some history on glass",
+    "p042r_2": "Wax for seal and imprint",
+    "p049v_2": "Grain of lead",
+    "p050r_2": "Molding",
+    "p056r_1": "Excellent tempering bath for cuirass bodies",
+    "p060v_1": "Varnish dry in an hour",
+    "p065v_2": "Painting large figures",
+    "p078r_1": "Another varnish",
+    "p094r_1": "Furbisher",
+    "p106v_2": "Plaster",
+    "p107r_1": "Catching lizards and snakes",
+    "p108r_2": "Spalt",
+    "p139v_1": "Cast of wax to represent an animal that one has not got",
+    "p160v_3": "Catching crayfish",
+    "p167r_1": "Petards"
+  },
+  "brazier": {
+    "p003r_1": "Counterfeit coral",
+    "p007v_2": "Against windy colic",
+    "p013v_3": "Toadstone",
+    "p137r_1": "For casting in red copper",
+    "p140v_1": "For casting in sulfur"
+  },
+  "file": {
+    "p003r_1": "Counterfeit coral",
+    "p006v_1": "For ga cachcages",
+    "p010r_1": "Counterfeit jasper",
+    "p030r_2": "Pewterer",
+    "p037v_3": "Yellow Amber",
+    "p038r_1": "Sapphire",
+    "p038r_4": "Amber",
+    "p094r_1": "Furbisher",
+    "p097r_3": "Gilding with silver",
+    "p098r_3": "Locksmith",
+    "p118v_1": "Casting in frames",
+    "p131v_1": "When the cast of tin or lead becomes porous",
+    "p138v_1": "Talcum mixed in the molds",
+    "p150v_1": "Molding hollow",
+    "p152v_1": "Repairing cast things"
+  },
+  "pestled": {
+    "p003r_1": "Counterfeit coral",
+    "p012v_1": "Molding stucco promptly",
+    "p021v_2": "Defense of a town",
+    "p024r_1": "Grenades",
+    "p026r_2": "Petard",
+    "p042v_6": "White varnish on plaster",
+    "p044v_4": "Stucco",
+    "p047r_5": "Against diarrhea and dysentery",
+    "p047v_2": "Founding",
+    "p048r_3": "Excellent mustard",
+    "p055r_3": "Against wounds",
+    "p065r_4": "Fatty colors",
+    "p068r_3": "Casting",
+    "p069r_2": "Sand",
+    "p074r_3": "For making varnish",
+    "p074v_3": "Recipe for white gum",
+    "p077r_4": "Recipe for making bronze and varnish of many sorts",
+    "p083r_2": "Sand for copper medals",
+    "p083r_4": "Another for lead",
+    "p084r_5": "Sand from a mine in Thoulouse",
+    "p085v_4": "Experimented sands",
+    "p088v_1": "Sand from pulverised rock salt and sand from the mine finely ground on marble",
+    "p107r_1": "Catching lizards and snakes",
+    "p111v_5": "Composition of sand",
+    "p118r_3": "For grottos",
+    "p118v_1": "Casting in frames",
+    "p123r_1": "A means di far correr lotnegra",
+    "p139v_1": "Cast of wax to represent an animal that one has not got",
+    "p150v_1": "Molding hollow",
+    "p170v_3": "For preserving"
+  },
+  "pot": {
+    "p003r_2": "Varnish for panels",
+    "p007v_3": "For relieving the pain of G.",
+    "p012r_2": "Chimolée",
+    "p035r_4": "For making rabbits come out of a burrow",
+    "p048v_1": "Extraction of regulus",
+    "p050v_2": "Curried steel and files",
+    "p051r_2": "Cutters of printing plates",
+    "p071v_1": "Varnish",
+    "p073r_3": "For ridding bone or horn of grease",
+    "p073v_2": "Varnish",
+    "p073v_4": "Color of burnished copper",
+    "p074r_2": "For making vermilion",
+    "p074v_3": "Recipe for white gum",
+    "p075r_3": "Bronze like tin",
+    "p076r_1": "For making wood green",
+    "p076r_2": "For making wood red",
+    "p083r_4": "Another for lead",
+    "p108r_2": "Spalt",
+    "p111v_1": "Sal ammoniac water",
+    "p124v_2": "Casting with gold",
+    "p132v_2": "Crocum ferri",
+    "p137r_1": "For casting in red copper"
+  },
+  "finger": {
+    "p003r_2": "Varnish for panels",
+    "p004r_1": "Varnish of spike lavender oil",
+    "p012r_4": "Plaster",
+    "p013v_1": "For knowing the good cendrée of azure for oil",
+    "p031r_4": "Fruit made from sugar",
+    "p037v_3": "Yellow Amber",
+    "p043r_4": "White bronzing",
+    "p072v_1": "Casting",
+    "p079r_2": "For making water for disease of the eyes",
+    "p086v_1": "Excellent sand for lead, tin, and copper",
+    "p094r_1": "Furbisher",
+    "p097v_1": "Mastic varnish dry in a half hour",
+    "p098v_5": "Founding",
+    "p131v_1": "When the cast of tin or lead becomes porous",
+    "p137v_1": "Tempering sand for molds of flat medals",
+    "p139r_1": "Casts of lead and tin",
+    "p139v_1": "Cast of wax to represent an animal that one has not got",
+    "p140v_3": "Cast of lead and tin in plaster",
+    "p144r_1": "Turtles",
+    "p145v_2": "",
+    "p164v_3": "Molds"
+  },
+  "oven": {
+    "p003r_3": "Thick varnish for planks",
+    "p012r_2": "Chimolée",
+    "p029r_1": "Stucco for molding",
+    "p048r_3": "Excellent mustard",
+    "p048r_4": "Keeping birds and animals",
+    "p066v_1": "For preventing teats from swelling d or to diminish overly large ones",
+    "p073v_4": "Color of burnished copper",
+    "p084r_5": "Sand from a mine in Thoulouse",
+    "p129v_1": "Animals dried in the oven for a long time",
+    "p130r_1": "Animals dried in an oven",
+    "p132r_2": "Method for reheating the molds",
+    "p133v_2": "Thing that does not release",
+    "p133v_3": "Various animals entwined",
+    "p140v_2": "Molding and shrinking a large figure",
+    "p152r_1": "Molding a rat",
+    "p160v_5": "Catching birds"
+  },
+  "trivet": {
+    "p003r_3": "Thick varnish for planks"
+  },
+  "vessel": {
+    "p003r_3": "Thick varnish for planks",
+    "p011r_1": "Painting esmail d’azur in oil",
+    "p035v_2": "For transmuting grain from one vessel to another",
+    "p042v_6": "White varnish on plaster",
+    "p049v_2": "Grain of lead",
+    "p056r_1": "Excellent tempering bath for cuirass bodies",
+    "p056v_1": "Painter",
+    "p063r_3": "Casting",
+    "p071r_3": "Mulled and sugared wine",
+    "p078v_4": "For making bronze",
+    "p090r_3": "All sands can be rendered good",
+    "p099v_6": "Varnish",
+    "p102v_2": "Infusion of anthos or rosemary",
+    "p108r_2": "Spalt",
+    "p128r_1": "Casting in silver and gold",
+    "p128v_1": "Whitening of cast silver",
+    "p137r_1": "For casting in red copper",
+    "p161r_1": "Preparation of sand for frames"
+  },
+  "plate": {
+    "p004r_1": "Varnish of spike lavender oil",
+    "p036v_3": "Glassworkers’ glass",
+    "p051r_2": "Cutters of printing plates",
+    "p160r_1": "Press for the large molds"
+  },
+  "sponge": {
+    "p004r_2": "For removing varnish from an old panel that is yellowish &amp; varnishing it anew",
+    "p004v_3": "Varnish of iron etchers",
+    "p011r_1": "Painting esmail d’azur in oil",
+    "p046v_5": "Making a letter à jour on paper and other work",
+    "p066r_3": "Painting in distemper on wood",
+    "p087v_3": "Sand of the mine of Thoulouse",
+    "p093v_1": "Faces in distemper",
+    "p108r_2": "Spalt",
+    "p119v_1": "Fashion of preparing a spalt spat",
+    "p161r_1": "Preparation of sand for frames",
+    "p165v_1": "Stance of animals"
+  },
+  "bucket": {
+    "p004r_2": "For removing varnish from an old panel that is yellowish &amp; varnishing it anew",
+    "p035r_2": "For supporting a bucket of water on the tips of three knives laid down without touching the ground"
+  },
+  "sieved": {
+    "p004r_2": "For removing varnish from an old panel that is yellowish &amp; varnishing it anew",
+    "p049r_2": "Sand for lead casting",
+    "p049r_3": "Another",
+    "p083r_3": "Another sand",
+    "p085v_4": "Experimented sands",
+    "p127v_1": "Founders’ earth",
+    "p129v_4": "Spider molded on a leaf"
+  },
+  "feather": {
+    "p004v_1": "Black varnish for sword guard, bands for trunks, &amp;c",
+    "p009r_2": "Painter",
+    "p056v_1": "Painter",
+    "p066r_6": "* Or mat",
+    "p096v_3": "Yellow varnish"
+  },
+  "brush": {
+    "p004v_1": "Black varnish for sword guard, bands for trunks, &amp;c",
+    "p004v_2": "Black varnish without fire, without disassembling the harnesses or removing the bands from trunks",
+    "p011r_1": "Painting esmail d’azur in oil",
+    "p029r_1": "Stucco for molding",
+    "p042r_3": "For casting in plaster",
+    "p060r_1": "First whitening of a panel",
+    "p091r_2": "Molding with cuttlefish bone",
+    "p098v_5": "Founding",
+    "p129v_1": "Animals dried in the oven for a long time",
+    "p165v_4": "Lute"
+  },
+  "tripoli": {
+    "p005r_1": "Steel mirrors",
+    "p008v_1": "Polishing of the balas ruby",
+    "p012v_2": "Cleaning yellow pearls",
+    "p012v_3": "For whitening enilanroc",
+    "p013r_3": "Polishing of stones"
+  },
+  "putty": {
+    "p005r_1": "Steel mirrors",
+    "p030r_2": "Pewterer",
+    "p038r_4": "Amber"
+  },
+  "molded": {
+    "p005r_1": "Steel mirrors"
+  },
+  "mold": {
+    "p005r_1": "Steel mirrors",
+    "p016r_1": "Founding of soft iron",
+    "p030r_2": "Pewterer",
+    "p037r_4": "For keeping candles from dripping and making them white",
+    "p042r_2": "Wax for seal and imprint",
+    "p047v_2": "Founding",
+    "p048v_2": "Lead, tin",
+    "p072r_2": "Casting in copper",
+    "p080v_1": "Founders of small works  of tin",
+    "p081r_3": "Plaster",
+    "p081v_4": "Frame casting",
+    "p083r_6": "Excellent sand",
+    "p084r_3": "Eau magistra",
+    "p084r_5": "Sand from a mine in Thoulouse",
+    "p084v_4": "Sand for lead, the most excellent of all, for high and low reliefs",
+    "p085v_1": "Founder",
+    "p085v_4": "Experimented sands",
+    "p086v_1": "Excellent sand for lead, tin, and copper",
+    "p089v_1": "Sal ammoniac and alabaster",
+    "p089v_2": "Glassmakers’ white sand from the mine, mixed with sal ammoniac",
+    "p091r_2": "Molding with cuttlefish bone",
+    "p098v_5": "Founding",
+    "p099v_2": "Cannons",
+    "p104v_2": "For casting",
+    "p106v_1": "Casting in gold",
+    "p107r_1": "Catching lizards and snakes",
+    "p109r_2": "Wax for molding -",
+    "p109r_3": "Molding wax",
+    "p109v_2": "Killing snakes for molding",
+    "p112v_1": "For molding Making the arrangement and disposition of the animal",
+    "p113r_1": "Tempering the sand and molding the first cast",
+    "p114r_1": "Second Cast",
+    "p115r_1": "Make the cast, reheat the molds, &amp;c Note about everything above |-|",
+    "p115r_2": "Animal after release",
+    "p115r_3": "Mold reheating",
+    "p115v_1": "Cast of tin",
+    "p115v_2": "For giving venting to the mold",
+    "p115v_3": "Reheating the noyau molds",
+    "p116r_2": "Molding de en noyau with the same sand, wax images or lead medals and suchlike",
+    "p116r_3": "Casting for gold and silver",
+    "p116v_2": "Mixture of tin and lead",
+    "p117r_1": "A means of molding flowers and plants",
+    "p117v_1": "For making the ashes of flowers and plants leave molds",
+    "p117v_5": "Blood of snakes",
+    "p121v_1": "For casting in silver",
+    "p122r_1": "Arranging various animals",
+    "p122v_1": "Cleaning the bowl and the spoon with which one tempers the sand",
+    "p122v_2": "Molding hollow",
+    "p124r_2": "Noyaulx for molding hollow",
+    "p124v_2": "Casting with gold",
+    "p124v_3": "A means to make the gate for small female lizards",
+    "p125r_1": "Plaster",
+    "p125v_3": "Plaster for casting in wax",
+    "p126r_1": "Molding fruits and animals in sugar",
+    "p126v_1": "Crocum ferri",
+    "p126v_3": "Plants difficult to burn in the noyau",
+    "p127r_1": "Molds of plaster for wax",
+    "p127v_1": "Founders’ earth",
+    "p128r_1": "Casting in silver and gold",
+    "p129v_4": "Spider molded on a leaf",
+    "p130r_4": "Molding a single vine leaf",
+    "p130v_1": "Molding a crab",
+    "p130v_3": "For molding thin",
+    "p131r_1": "Plants that are awkward to burn in the mold",
+    "p131r_5": "Molded waxes",
+    "p131v_1": "When the cast of tin or lead becomes porous",
+    "p132r_1": "Mold made in two casts",
+    "p132r_2": "Method for reheating the molds",
+    "p132v_2": "Crocum ferri",
+    "p133r_2": "Feet of smalls female lizards for gold and silver",
+    "p133r_4": "Clamps and broken mold",
+    "p133v_1": "Bubbles and little holes which are found in the mold",
+    "p133v_2": "Thing that does not release",
+    "p133v_3": "Various animals entwined",
+    "p134r_1": "For mending a pierced mold",
+    "p135r_2": "Gate",
+    "p135v_1": "Casting in ☼",
+    "p136v_1": "For casting in latten",
+    "p137r_1": "For casting in red copper",
+    "p137v_1": "Tempering sand for molds of flat medals",
+    "p139r_1": "Casts of lead and tin",
+    "p139v_1": "Cast of wax to represent an animal that one has not got",
+    "p140v_3": "Cast of lead and tin in plaster",
+    "p141r_1": "Molding a crayfish",
+    "p142v_1": "Molding grasshoppers and things too thin",
+    "p142v_2": "Molds",
+    "p142v_3": "Lute for luting your molds",
+    "p143r_1": "Molding turtles",
+    "p143r_3": "Toad",
+    "p144r_1": "Turtles",
+    "p145r_2": "Cuttlefish bone",
+    "p145v_1": "Molding plants and flowers",
+    "p145v_2": "",
+    "p146v_1": "Molding turtles",
+    "p147v_1": "+Cast of copper alloyed with ☾, which is like very base solder / ard and old K and some R out of xii",
+    "p147v_4": "Cast of latten",
+    "p148v_1": "Molding turtles",
+    "p149v_4": "Bat",
+    "p150r_3": "Molds",
+    "p150v_1": "Molding hollow",
+    "p152r_1": "Molding a rat",
+    "p152v_1": "Repairing cast things",
+    "p153r_2": "Giving the thickness that you wish to a medal",
+    "p153v_1": "Testing the goodness and strength of a sand to be reheated",
+    "p154v_3": "The casting of silver",
+    "p155r_1": "Molding a rose",
+    "p156r_1": "Molding promptly and reducing a hollow form to a relief",
+    "p157r_4": "Arranging plants or flowers for casting",
+    "p157v_1": "Ash in the molds",
+    "p157v_2": "Molding a bird",
+    "p158r_1": "Mercury in the molds for cleaning",
+    "p158v_3": "Candle smoke",
+    "p159r_1": "Wax portraits",
+    "p159v_2": "Carnation",
+    "p159v_3": "Molds",
+    "p159v_4": "Plaster alone",
+    "p160r_1": "Press for the large molds",
+    "p160r_2": "Sand for flowers",
+    "p161r_1": "Preparation of sand for frames",
+    "p162v_4": "Molds of things that do not release",
+    "p163v_1": "Crayfish",
+    "p164r_4": "Blowing",
+    "p164v_1": "Molds",
+    "p164v_3": "Molds",
+    "p165v_4": "Lute",
+    "p169v_2": "Reducing a round figure to a hollow form",
+    "p170r_3": "Clamps"
+  },
+  "crucible": {
+    "p005r_1": "Steel mirrors",
+    "p036v_1": "Founder",
+    "p036v_2": "Four à vent",
+    "p039r_1": "Goldsmith",
+    "p048v_1": "Extraction of regulus",
+    "p063r_3": "Casting",
+    "p068r_3": "Casting",
+    "p069r_2": "Sand",
+    "p079v_4": "Mixture for printers",
+    "p082v_4": "Method of casting in bronze",
+    "p083r_6": "Excellent sand",
+    "p086v_1": "Excellent sand for lead, tin, and copper",
+    "p098v_5": "Founding",
+    "p100v_2": "For ruby take some gold leaf",
+    "p101r_2": "Salt for melting",
+    "p108r_2": "Spalt",
+    "p109r_2": "Wax for molding -",
+    "p116v_2": "Mixture of tin and lead",
+    "p118v_1": "Casting in frames",
+    "p123r_1": "A means di far correr lotnegra",
+    "p127v_1": "Founders’ earth",
+    "p128r_1": "Casting in silver and gold",
+    "p128v_1": "Whitening of cast silver",
+    "p135v_1": "Casting in ☼",
+    "p139r_1": "Casts of lead and tin",
+    "p147v_3": "Crucible",
+    "p164r_3": "Leady silver",
+    "p164r_4": "Blowing",
+    "p167r_1": "Petards"
+  },
+  "arene": {
+    "p005r_1": "Steel mirrors"
+  },
+  "sheet": {
+    "p005r_2": "Concave mirrors"
+  },
+  "mirror": {
+    "p005r_2": "Concave mirrors",
+    "p065r_3": "Mirror"
+  },
+  "table": {
+    "p005r_2": "Concave mirrors",
+    "p034v_1": "For melting or transmuting a jewel put inside a box",
+    "p035v_2": "For transmuting grain from one vessel to another",
+    "p036r_1": "For transmuting a ball into a thimble, cunning",
+    "p121v_1": "For casting in silver",
+    "p122r_1": "Arranging various animals",
+    "p137v_1": "Tempering sand for molds of flat medals",
+    "p145v_2": "",
+    "p150v_1": "Molding hollow"
+  },
+  "candle": {
+    "p005r_2": "Concave mirrors",
+    "p013v_5": "Candles",
+    "p016v_5": "Candles",
+    "p020v_2": "Against winds, colic, &amp;c",
+    "p033r_2": "XFor relighting an extinguished candle between your hands without blowing",
+    "p036v_3": "Glassworkers’ glass",
+    "p061v_1": "Water to give light for the painter",
+    "p065r_3": "Mirror",
+    "p082v_2": "Casting lead in lead",
+    "p103v_5": "Enamels",
+    "p118v_1": "Casting in frames",
+    "p129v_4": "Spider molded on a leaf",
+    "p131r_5": "Molded waxes",
+    "p139v_1": "Cast of wax to represent an animal that one has not got",
+    "p153r_1": "Molding hollow for seals or other things",
+    "p158v_3": "Candle smoke",
+    "p160v_4": "Catching passerines",
+    "p166v_3": "Scented candle from Le Mans"
+  },
+  "window": {
+    "p005r_2": "Concave mirrors"
+  },
+  "tooth": {
+    "p005v_1": "For bronzing in yellow and white",
+    "p012r_3": "Paper",
+    "p019v_2": "PFor writing as well from the left as from the right",
+    "p051r_1": "Counterproofing",
+    "p066r_6": "* Or mat",
+    "p081r_4": "Carton"
+  },
+  "prele": {
+    "p006r_1": "For laying down and setting burnished gold and giving red or green or blue"
+  },
+  "paintbrush": {
+    "p006r_1": "For laying down and setting burnished gold and giving red or green or blue",
+    "p009r_2": "Painter",
+    "p011r_1": "Painting esmail d’azur in oil",
+    "p031r_4": "Fruit made from sugar",
+    "p032r_3": "For layering gold in distemper",
+    "p039v_3": "Tracing some history on glass",
+    "p042v_6": "White varnish on plaster",
+    "p043r_4": "White bronzing",
+    "p050r_2": "Molding",
+    "p051r_1": "Counterproofing",
+    "p056v_1": "Painter",
+    "p058v_5": "Paintbrushes",
+    "p059r_2": "Azure",
+    "p060r_1": "First whitening of a panel",
+    "p060v_5": "Work of the Flemish",
+    "p061r_4": "Lights",
+    "p061v_3": "Azur d’esmail in oil",
+    "p062r_4": "Drawing",
+    "p064v_1": "Apprenticeship of the painter",
+    "p065r_4": "Fatty colors",
+    "p067v_2": "Bones of the foot of oxen for sand",
+    "p075v_3": "For gilding with or moleu",
+    "p077r_4": "Recipe for making bronze and varnish of many sorts",
+    "p078r_1": "Another varnish",
+    "p078v_1": "For making bronze in the color of steel",
+    "p078v_2": "For making bronze in the color of gold",
+    "p092r_2": "Molding hollow on one side and in relief on the other",
+    "p093v_1": "Faces in distemper",
+    "p093v_2": "Azure",
+    "p112v_1": "For molding Making the arrangement and disposition of the animal",
+    "p114r_1": "Second Cast",
+    "p117r_1": "A means of molding flowers and plants",
+    "p117v_4": "Molding à noyau figures of wax or medals of lead",
+    "p120v_6": "Keeping dry flowers in the same state all year",
+    "p121v_1": "For casting in silver",
+    "p129v_1": "Animals dried in the oven for a long time",
+    "p137v_1": "Tempering sand for molds of flat medals",
+    "p153r_1": "Molding hollow for seals or other things",
+    "p153r_2": "Giving the thickness that you wish to a medal",
+    "p158r_1": "Mercury in the molds for cleaning"
+  },
+  "cloth": {
+    "p006r_1": "For laying down and setting burnished gold and giving red or green or blue",
+    "p028v_1": "Pewterers",
+    "p077v_3": "Another varnish",
+    "p079r_2": "For making water for disease of the eyes",
+    "p094r_1": "Furbisher",
+    "p107r_1": "Catching lizards and snakes",
+    "p123r_1": "A means di far correr lotnegra",
+    "p138v_2": "Gold cast very thinly",
+    "p144r_1": "Turtles"
+  },
+  "horsetail": {
+    "p006r_1": "For laying down and setting burnished gold and giving red or green or blue"
+  },
+  "cane": {
+    "p006v_1": "For ga cachcages",
+    "p037v_3": "Yellow Amber"
+  },
+  "grate": {
+    "p006v_1": "For ga cachcages",
+    "p082v_4": "Method of casting in bronze",
+    "p083v_3": "Bellows",
+    "p100v_2": "For ruby take some gold leaf",
+    "p115v_3": "Reheating the noyau molds",
+    "p132r_2": "Method for reheating the molds"
+  },
+  "lamp": {
+    "p006v_1": "For ga cachcages",
+    "p043v_2": "Pearls"
+  },
+  "furnace": {
+    "p006v_1": "For ga cachcages",
+    "p016r_1": "Founding of soft iron",
+    "p036v_3": "Glassworkers’ glass",
+    "p040v_4": "Aquafortis",
+    "p048r_1": "Founder",
+    "p072r_2": "Casting in copper",
+    "p083r_3": "Another sand",
+    "p083v_3": "Bellows",
+    "p085v_3": "Sand from the mine",
+    "p085v_4": "Experimented sands",
+    "p098v_5": "Founding",
+    "p100v_2": "For ruby take some gold leaf",
+    "p102r_2": "For the furnace",
+    "p123r_1": "A means di far correr lotnegra",
+    "p128r_1": "Casting in silver and gold"
+  },
+  "chafing-dish": {
+    "p006v_1": "For ga cachcages",
+    "p054v_1": "On dry preserves",
+    "p075v_2": "For gilding on wood"
+  },
+  "chisel": {
+    "p006v_2": "For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances",
+    "p091r_2": "Molding with cuttlefish bone",
+    "p094r_1": "Furbisher",
+    "p107r_1": "Catching lizards and snakes",
+    "p118r_2": "For removing flashing and barbs from things molded à noyau",
+    "p154r_2": "Cutting lead"
+  },
+  "hammer": {
+    "p006v_2": "For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances",
+    "p030r_2": "Pewterer",
+    "p032r_1": "The body of the cuirass",
+    "p037r_1": "Founder",
+    "p053r_1": "Soldering a vice",
+    "p072v_1": "Casting",
+    "p091r_2": "Molding with cuttlefish bone",
+    "p094r_1": "Furbisher",
+    "p106r_2": "Making gold run for casting",
+    "p118r_3": "For grottos",
+    "p124r_4": "Fine gold",
+    "p138v_2": "Gold cast very thinly",
+    "p145v_2": ""
+  },
+  "burin": {
+    "p006v_2": "For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances",
+    "p017r_1": "On the gunner",
+    "p118r_2": "For removing flashing and barbs from things molded à noyau",
+    "p131v_1": "When the cast of tin or lead becomes porous",
+    "p134v_3": "Secret for soldering gold and silver in small works",
+    "p141r_1": "Molding a crayfish",
+    "p148v_1": "Molding turtles",
+    "p150v_1": "Molding hollow",
+    "p152v_1": "Repairing cast things",
+    "p156r_3": "Chasing",
+    "p163v_3": "Repairing"
+  },
+  "mouth": {
+    "p007r_4": "Fish glue or isinglass and mouth glue",
+    "p044v_1": "Horsehair sieves"
+  },
+  "mortar": {
+    "p007v_3": "For relieving the pain of G.",
+    "p024r_1": "Grenades",
+    "p029v_5": "Extraction of oils",
+    "p052r_1": "The work done in Algiers",
+    "p074r_1": "For bronzing white",
+    "p076v_1": "For making very beautiful color of gold &amp; of little expense",
+    "p077r_4": "Recipe for making bronze and varnish of many sorts",
+    "p079r_3": "For making bronze in the color of gold",
+    "p085v_4": "Experimented sands",
+    "p087v_3": "Sand of the mine of Thoulouse",
+    "p088v_1": "Sand from pulverised rock salt and sand from the mine finely ground on marble",
+    "p090v_1": "Terre fondue of potters",
+    "p097v_1": "Mastic varnish dry in a half hour",
+    "p107r_1": "Catching lizards and snakes",
+    "p108r_2": "Spalt",
+    "p112r_3": "Molding en noyau. Mixture of sand",
+    "p118v_1": "Casting in frames",
+    "p121v_1": "For casting in silver",
+    "p145r_1": "Casting in three frames"
+  },
+  "grais": {
+    "p008v_5": "Perfect amalgam",
+    "p073r_4": "For making gray wood"
+  },
+  "matrass": {
+    "p009v_1": "Painters",
+    "p104r_1": "For eating away and dissolving entirely pure gold"
+  },
+  "joiner'splane": {
+    "p010r_1": "Counterfeit jasper"
+  },
+  "iron": {
+    "p010r_5": "Powder for hourglasses",
+    "p098r_3": "Locksmith"
+  },
+  "thread": {
+    "p010v_4": "For whitening ceruse",
+    "p023r_1": "On petards",
+    "p062v_2": "Perspective",
+    "p066v_4": "paintbrushes",
+    "p115v_2": "For giving venting to the mold",
+    "p117r_1": "A means of molding flowers and plants",
+    "p122r_2": "Flower in the mouth of the snake",
+    "p145v_2": ""
+  },
+  "alembic": {
+    "p011r_1": "Painting esmail d’azur in oil",
+    "p067v_3": "Huiles d’essence",
+    "p102v_2": "Infusion of anthos or rosemary"
+  },
+  "trowel": {
+    "p011r_1": "Painting esmail d’azur in oil"
+  },
+  "awl": {
+    "p011r_1": "Painting esmail d’azur in oil"
+  },
+  "sieves": {
+    "p011r_1": "Painting esmail d’azur in oil"
+  },
+  "fingernail": {
+    "p011r_1": "Painting esmail d’azur in oil",
+    "p053v_1": "Silkworms",
+    "p068r_3": "Casting",
+    "p087v_3": "Sand of the mine of Thoulouse",
+    "p108r_2": "Spalt",
+    "p111v_4": "Lizards",
+    "p132v_2": "Crocum ferri"
+  },
+  "knives": {
+    "p011v_1": "Color of damascene steel on knives",
+    "p035r_2": "For supporting a bucket of water on the tips of three knives laid down without touching the ground"
+  },
+  "sand": {
+    "p011v_1": "Color of damascene steel on knives"
+  },
+  "touchstone": {
+    "p011v_1": "Color of damascene steel on knives"
+  },
+  "ashes": {
+    "p011v_1": "Color of damascene steel on knives",
+    "p040v_4": "Aquafortis"
+  },
+  "points": {
+    "p011v_4": "For diamond points for engraving",
+    "p112v_1": "For molding Making the arrangement and disposition of the animal",
+    "p114r_1": "Second Cast",
+    "p133r_3": "Marks from the points of iron wire which are found on the head of the animal",
+    "p133v_3": "Various animals entwined",
+    "p150v_1": "Molding hollow",
+    "p157r_5": "Flies",
+    "p164v_1": "Molds"
+  },
+  "wheel": {
+    "p011v_5": "Polishing wheel of copper",
+    "p013r_3": "Polishing of stones",
+    "p028v_1": "Pewterers",
+    "p030r_2": "Pewterer",
+    "p038r_4": "Amber"
+  },
+  "leather": {
+    "p012v_2": "Cleaning yellow pearls",
+    "p037v_3": "Yellow Amber"
+  },
+  "brushes": {
+    "p013r_3": "Polishing of stones",
+    "p031v_2": "Brushes",
+    "p144r_1": "Turtles"
+  },
+  "loom": {
+    "p013r_4": "Fine sieves of raw silk"
+  },
+  "candles": {
+    "p013v_5": "Candles",
+    "p016v_5": "Candles",
+    "p037r_4": "For keeping candles from dripping and making them white"
+  },
+  "beaters": {
+    "p014r_1": "For walls of earth and rustic construction"
+  },
+  "ditch-spade": {
+    "p014r_1": "For walls of earth and rustic construction"
+  },
+  "bat": {
+    "p014r_1": "For walls of earth and rustic construction"
+  },
+  "mallet": {
+    "p014r_1": "For walls of earth and rustic construction"
+  },
+  "boards": {
+    "p014r_1": "For walls of earth and rustic construction",
+    "p118r_2": "For removing flashing and barbs from things molded à noyau"
+  },
+  "frame": {
+    "p015r_2": "Foundry casting",
+    "p015r_3": "Casting gold and silver",
+    "p068r_3": "Casting",
+    "p069r_2": "Sand",
+    "p072r_2": "Casting in copper",
+    "p072v_1": "Casting",
+    "p080v_1": "Founders of small works  of tin",
+    "p081r_1": "Sand",
+    "p081v_2": "Making copper and latten run",
+    "p081v_4": "Frame casting",
+    "p082r_2": "Frame",
+    "p083v_2": "Molding in relief on one part and hollow on the other.",
+    "p084v_1": "Sand",
+    "p084v_4": "Sand for lead, the most excellent of all, for high and low reliefs",
+    "p085v_4": "Experimented sands",
+    "p086v_1": "Excellent sand for lead, tin, and copper",
+    "p088v_2": "Mineral sand",
+    "p089r_2": "Reheating or drying a molded frame",
+    "p089v_1": "Sal ammoniac and alabaster",
+    "p089v_2": "Glassmakers’ white sand from the mine, mixed with sal ammoniac",
+    "p091r_2": "Molding with cuttlefish bone",
+    "p092r_2": "Molding hollow on one side and in relief on the other",
+    "p098v_5": "Founding",
+    "p106r_1": "For casting",
+    "p107r_1": "Catching lizards and snakes",
+    "p108r_2": "Spalt",
+    "p118v_1": "Casting in frames",
+    "p119r_1": "Advice about the above",
+    "p119v_1": "Fashion of preparing a spalt spat",
+    "p122r_1": "Arranging various animals",
+    "p132v_1": "Common sand from the mine",
+    "p136v_1": "For casting in latten",
+    "p157v_2": "Molding a bird",
+    "p160r_1": "Press for the large molds",
+    "p161r_1": "Preparation of sand for frames",
+    "p162r_3": "Rotten wood",
+    "p169r_1": "List of processes"
+  },
+  "silverpoint": {
+    "p015v_1": "Tablets"
+  },
+  "calibre": {
+    "p016r_1": "Founding of soft iron"
+  },
+  "blast-pipe": {
+    "p016r_1": "Founding of soft iron",
+    "p083v_3": "Bellows",
+    "p127v_1": "Founders’ earth",
+    "p128r_1": "Casting in silver and gold"
+  },
+  "forges": {
+    "p016r_1": "Founding of soft iron"
+  },
+  "bellows": {
+    "p016r_1": "Founding of soft iron",
+    "p036v_1": "Founder",
+    "p067r_3": "Bellows furnace",
+    "p072r_2": "Casting in copper",
+    "p082v_4": "Method of casting in bronze",
+    "p083v_3": "Bellows",
+    "p109r_4": "Bellows of the forge",
+    "p128r_1": "Casting in silver and gold",
+    "p135v_1": "Casting in ☼",
+    "p139r_1": "Casts of lead and tin",
+    "p145v_1": "Molding plants and flowers",
+    "p147v_3": "Crucible",
+    "p150v_1": "Molding hollow",
+    "p164v_1": "Molds"
+  },
+  "molds": {
+    "p016r_1": "Founding of soft iron",
+    "p020r_1": "For making millas",
+    "p021v_2": "Defense of a town",
+    "p028v_1": "Pewterers",
+    "p030r_2": "Pewterer",
+    "p049r_1": "Casting of lead",
+    "p049r_4": "Pewterers",
+    "p072v_1": "Casting",
+    "p080v_1": "Founders of small works  of tin",
+    "p085v_4": "Experimented sands",
+    "p107r_1": "Catching lizards and snakes",
+    "p108r_2": "Spalt",
+    "p110v_1": "Molds",
+    "p111r_1": "Reheating molds",
+    "p111r_2": "Latten smoke",
+    "p111r_4": "Clay earth",
+    "p111r_5": "Iron wire",
+    "p111v_5": "Composition of sand",
+    "p112r_1": "For tempering sand",
+    "p113r_1": "Tempering the sand and molding the first cast",
+    "p114r_1": "Second Cast",
+    "p115r_1": "Make the cast, reheat the molds, &amp;c Note about everything above |-|",
+    "p115r_3": "Mold reheating",
+    "p115v_3": "Reheating the noyau molds",
+    "p116r_1": "Molding bouquets, plants, and flowers",
+    "p116r_3": "Casting for gold and silver",
+    "p116v_1": "Molding snakes in all weather",
+    "p117v_1": "For making the ashes of flowers and plants leave molds",
+    "p118r_2": "For removing flashing and barbs from things molded à noyau",
+    "p120v_1": "Crocum ferri",
+    "p121v_1": "For casting in silver",
+    "p121v_2": "Silver for casting",
+    "p124v_2": "Casting with gold",
+    "p126r_1": "Molding fruits and animals in sugar",
+    "p126v_1": "Crocum ferri",
+    "p126v_2": "Plaster",
+    "p126v_3": "Plants difficult to burn in the noyau",
+    "p127v_1": "Founders’ earth",
+    "p128r_1": "Casting in silver and gold",
+    "p132r_2": "Method for reheating the molds",
+    "p132v_1": "Common sand from the mine",
+    "p132v_2": "Crocum ferri",
+    "p133r_4": "Clamps and broken mold",
+    "p134r_2": "Sand of crocum",
+    "p134v_2": "For gold casts in large works",
+    "p137r_3": "Clamps",
+    "p137v_1": "Tempering sand for molds of flat medals",
+    "p138v_1": "Talcum mixed in the molds",
+    "p139r_1": "Casts of lead and tin",
+    "p139v_1": "Cast of wax to represent an animal that one has not got",
+    "p140v_3": "Cast of lead and tin in plaster",
+    "p141r_1": "Molding a crayfish",
+    "p142v_1": "Molding grasshoppers and things too thin",
+    "p142v_2": "Molds",
+    "p142v_3": "Lute for luting your molds",
+    "p143r_3": "Toad",
+    "p144r_1": "Turtles",
+    "p146v_1": "Molding turtles",
+    "p147v_2": "Lute",
+    "p148v_1": "Molding turtles",
+    "p150r_3": "Molds",
+    "p150v_1": "Molding hollow",
+    "p155r_1": "Molding a rose",
+    "p155v_1": "Rose",
+    "p157v_1": "Ash in the molds",
+    "p158r_1": "Mercury in the molds for cleaning",
+    "p158v_2": "Large molds",
+    "p159v_3": "Molds",
+    "p159v_4": "Plaster alone",
+    "p160r_1": "Press for the large molds",
+    "p162v_4": "Molds of things that do not release",
+    "p164v_1": "Molds",
+    "p164v_3": "Molds",
+    "p165r_4": "Plaster for molding",
+    "p165v_3": "Molds",
+    "p165v_4": "Lute",
+    "p170r_4": "Molds",
+    "p170r_6": "Cleaning closed molds"
+  },
+  "charcoal": {
+    "p016r_1": "Founding of soft iron",
+    "p062r_4": "Drawing",
+    "p064v_1": "Apprenticeship of the painter",
+    "p100v_2": "For ruby take some gold leaf"
+  },
+  "ladle": {
+    "p017r_1": "On the gunner",
+    "p021r_1": "Gunner",
+    "p024v_1": "For bringing a cannon over land"
+  },
+  "ladles": {
+    "p017r_1": "On the gunner",
+    "p022v_1": "Orgues"
+  },
+  "cauldrons": {
+    "p017r_1": "On the gunner"
+  },
+  "compass": {
+    "p019v_1": "Mathematical figures without ruler and compass",
+    "p025v_1": "Gunner",
+    "p062v_1": "Drawing",
+    "p062v_2": "Perspective",
+    "p064r_8": "",
+    "p080v_1": "Founders of small works  of tin",
+    "p082r_4": "Clockmakers"
+  },
+  "ruler": {
+    "p019v_1": "Mathematical figures without ruler and compass",
+    "p021r_2": "For firing a cannon at night",
+    "p062r_1": "Perspectives",
+    "p062v_1": "Drawing",
+    "p062v_2": "Perspective",
+    "p064v_4": "Straight lines"
+  },
+  "quill": {
+    "p019v_1": "Mathematical figures without ruler and compass",
+    "p046v_1": "Scribe, Oil of sulfur",
+    "p046v_3": "Erasing a letter",
+    "p046v_5": "Making a letter à jour on paper and other work",
+    "p051r_1": "Counterproofing",
+    "p058v_5": "Paintbrushes"
+  },
+  "syringe": {
+    "p019v_3": "Enemas"
+  },
+  "sleeve": {
+    "p019v_3": "Enemas",
+    "p081v_3": "Sand",
+    "p106v_2": "Plaster",
+    "p139v_1": "Cast of wax to represent an animal that one has not got"
+  },
+  "embers": {
+    "p020r_1": "For making millas"
+  },
+  "hearth": {
+    "p020r_1": "For making millas",
+    "p093r_4": "Sand"
+  },
+  "lids": {
+    "p020r_1": "For making millas"
+  },
+  "glass": {
+    "p020v_2": "Against winds, colic, &amp;c",
+    "p033v_2": "For making blood or wine issue from someone’s forehead or from a wall",
+    "p034r_4": "XHow not to break a glass with a log or a large stick",
+    "p093v_3": "Violet and lake",
+    "p112r_4": "Putting to death the animal for molding"
+  },
+  "quadrant": {
+    "p021r_2": "For firing a cannon at night"
+  },
+  "flasks": {
+    "p021r_2": "For firing a cannon at night"
+  },
+  "mirrors": {
+    "p021r_2": "For firing a cannon at night"
+  },
+  "nail": {
+    "p021v_1": "For unspiking a cannon",
+    "p033r_1": "Knife for cutting the nose or a finger",
+    "p094r_1": "Furbisher",
+    "p106v_2": "Plaster",
+    "p111v_4": "Lizards"
+  },
+  "trepan": {
+    "p021v_1": "For unspiking a cannon"
+  },
+  "screw": {
+    "p021v_1": "For unspiking a cannon",
+    "p023r_1": "On petards",
+    "p045v_1": "Loading an arquebus",
+    "p062v_2": "Perspective",
+    "p160r_1": "Press for the large molds"
+  },
+  "pestling": {
+    "p021v_2": "Defense of a town",
+    "p029v_5": "Extraction of oils",
+    "p055v_4": "For casting",
+    "p085v_2": "Mortars",
+    "p101r_1": "Topaz",
+    "p107r_1": "Catching lizards and snakes"
+  },
+  "cord": {
+    "p023r_1": "On petards",
+    "p037v_3": "Yellow Amber",
+    "p098r_2": "Borders of a garden"
+  },
+  "wimble": {
+    "p023r_1": "On petards",
+    "p099v_2": "Cannons",
+    "p167r_1": "Petards"
+  },
+  "bar": {
+    "p023r_1": "On petards"
+  },
+  "gimlet": {
+    "p023r_1": "On petards",
+    "p167r_1": "Petards"
+  },
+  "string": {
+    "p023r_1": "On petards",
+    "p035r_1": "For telling someone that you will show teach him something he does not know, and neither do you",
+    "p045v_2": "For adjusting a crooked cannon",
+    "p107r_1": "Catching lizards and snakes",
+    "p160v_3": "Catching crayfish",
+    "p167r_1": "Petards"
+  },
+  "auger": {
+    "p023r_1": "On petards"
+  },
+  "pegs": {
+    "p023r_1": "On petards",
+    "p072v_1": "Casting",
+    "p080v_1": "Founders of small works  of tin",
+    "p083v_2": "Molding in relief on one part and hollow on the other.",
+    "p167r_1": "Petards"
+  },
+  "bags": {
+    "p024v_1": "For bringing a cannon over land"
+  },
+  "bungs": {
+    "p024v_1": "For bringing a cannon over land"
+  },
+  "frails": {
+    "p024v_1": "For bringing a cannon over land"
+  },
+  "rammer": {
+    "p024v_1": "For bringing a cannon over land"
+  },
+  "shovels": {
+    "p024v_1": "For bringing a cannon over land"
+  },
+  "wedges": {
+    "p024v_1": "For bringing a cannon over land",
+    "p160r_1": "Press for the large molds"
+  },
+  "frail": {
+    "p024v_1": "For bringing a cannon over land"
+  },
+  "blades": {
+    "p025v_1": "Gunner"
+  },
+  "borer": {
+    "p025v_1": "Gunner",
+    "p026r_1": "Cannonball",
+    "p080v_1": "Founders of small works  of tin",
+    "p099v_2": "Cannons"
+  },
+  "pestle": {
+    "p026r_2": "Petard",
+    "p038v_2": "Against nose bleed and for dyeing",
+    "p042r_2": "Wax for seal and imprint",
+    "p050v_1": "Small birds",
+    "p068r_3": "Casting",
+    "p074r_1": "For bronzing white",
+    "p079r_3": "For making bronze in the color of gold",
+    "p081r_4": "Carton",
+    "p084r_5": "Sand from a mine in Thoulouse",
+    "p084v_4": "Sand for lead, the most excellent of all, for high and low reliefs",
+    "p100r_3": "Gemstones",
+    "p100v_1": "Gemstones",
+    "p100v_2": "For ruby take some gold leaf",
+    "p101r_1": "Topaz",
+    "p106v_2": "Plaster",
+    "p106v_3": "Tiles",
+    "p107r_1": "Catching lizards and snakes",
+    "p108r_2": "Spalt",
+    "p110r_2": "Rock &amp; grotto",
+    "p118v_1": "Casting in frames",
+    "p123r_1": "A means di far correr lotnegra",
+    "p138v_1": "Talcum mixed in the molds"
+  },
+  "plane": {
+    "p030r_2": "Pewterer",
+    "p094r_1": "Furbisher"
+  },
+  "hammered": {
+    "p030r_2": "Pewterer"
+  },
+  "hammers": {
+    "p030r_2": "Pewterer"
+  },
+  "esgrusouer": {
+    "p030r_2": "Pewterer"
+  },
+  "anvils": {
+    "p030r_2": "Pewterer"
+  },
+  "crossbar": {
+    "p030r_2": "Pewterer"
+  },
+  "desgrusoue": {
+    "p030r_2": "Pewterer"
+  },
+  "knife": {
+    "p030r_2": "Pewterer",
+    "p033r_1": "Knife for cutting the nose or a finger",
+    "p035r_2": "For supporting a bucket of water on the tips of three knives laid down without touching the ground",
+    "p035v_2": "For transmuting grain from one vessel to another",
+    "p056v_1": "Painter",
+    "p060r_1": "First whitening of a panel",
+    "p060v_1": "Varnish dry in an hour",
+    "p062r_4": "Drawing",
+    "p069r_2": "Sand",
+    "p075v_2": "For gilding on wood",
+    "p084v_4": "Sand for lead, the most excellent of all, for high and low reliefs",
+    "p088r_3": "Varnish",
+    "p091r_2": "Molding with cuttlefish bone",
+    "p097r_3": "Gilding with silver",
+    "p097v_1": "Mastic varnish dry in a half hour",
+    "p102r_4": "Glass vessels",
+    "p110r_3": "Snakes",
+    "p112v_1": "For molding Making the arrangement and disposition of the animal",
+    "p113r_1": "Tempering the sand and molding the first cast",
+    "p114r_1": "Second Cast",
+    "p124v_3": "A means to make the gate for small female lizards",
+    "p146v_1": "Molding turtles",
+    "p154r_2": "Cutting lead"
+  },
+  "desgrusouer": {
+    "p030r_2": "Pewterer"
+  },
+  "rope": {
+    "p030r_2": "Pewterer",
+    "p152v_1": "Repairing cast things"
+  },
+  "hand": {
+    "p030r_2": "Pewterer",
+    "p053v_1": "Silkworms",
+    "p089v_1": "Sal ammoniac and alabaster",
+    "p094r_1": "Furbisher",
+    "p107r_1": "Catching lizards and snakes",
+    "p115v_1": "Cast of tin",
+    "p119r_1": "Advice about the above",
+    "p120r_3": "IlNightingale",
+    "p122r_2": "Flower in the mouth of the snake"
+  },
+  "filter": {
+    "p031r_2": "Colored waters",
+    "p166v_4": "Softening gold"
+  },
+  "shale": {
+    "p031v_4": "Painting on glass"
+  },
+  "handle": {
+    "p033r_1": "Knife for cutting the nose or a finger"
+  },
+  "nailed": {
+    "p033r_1": "Knife for cutting the nose or a finger",
+    "p160r_1": "Press for the large molds"
+  },
+  "toothpick": {
+    "p033r_2": "XFor relighting an extinguished candle between your hands without blowing",
+    "p034r_4": "XHow not to break a glass with a log or a large stick"
+  },
+  "token": {
+    "p033v_1": "For making it seem that to someone that he has a piece of silver on his forehead"
+  },
+  "funnel": {
+    "p033v_2": "For making blood or wine issue from someone’s forehead or from a wall"
+  },
+  "bedpost": {
+    "p034r_1": "For telling someone that by putting holding a finger to his forehead, you will prevent him from exiting a chamber"
+  },
+  "candlestick": {
+    "p034r_3": "For making a candlestick hold to the wall without making a hole in it"
+  },
+  "log": {
+    "p034r_4": "XHow not to break a glass with a log or a large stick"
+  },
+  "box": {
+    "p034v_1": "For melting or transmuting a jewel put inside a box",
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "boxes": {
+    "p034v_1": "For melting or transmuting a jewel put inside a box",
+    "p102r_2": "For the furnace"
+  },
+  "jewel": {
+    "p034v_1": "For melting or transmuting a jewel put inside a box"
+  },
+  "napkin": {
+    "p035v_2": "For transmuting grain from one vessel to another",
+    "p089r_1": "Sand of burnt ox bones and rock salt",
+    "p089v_1": "Sal ammoniac and alabaster",
+    "p090r_1": "Sal ammoniac and iron dross"
+  },
+  "hat": {
+    "p035v_2": "For transmuting grain from one vessel to another",
+    "p105v_3": "Catching nightingales See the 15th folio after this."
+  },
+  "pouch": {
+    "p035v_2": "For transmuting grain from one vessel to another"
+  },
+  "bell": {
+    "p035v_2": "For transmuting grain from one vessel to another"
+  },
+  "bushel": {
+    "p035v_2": "For transmuting grain from one vessel to another"
+  },
+  "grain": {
+    "p035v_2": "For transmuting grain from one vessel to another"
+  },
+  "bag": {
+    "p035v_2": "For transmuting grain from one vessel to another",
+    "p152v_1": "Repairing cast things"
+  },
+  "sheath": {
+    "p036r_1": "For transmuting a ball into a thimble, cunning"
+  },
+  "thimble": {
+    "p036r_1": "For transmuting a ball into a thimble, cunning"
+  },
+  "ball": {
+    "p036r_1": "For transmuting a ball into a thimble, cunning"
+  },
+  "pincers": {
+    "p036v_2": "Four à vent",
+    "p052r_1": "The work done in Algiers",
+    "p072r_2": "Casting in copper",
+    "p107r_1": "Catching lizards and snakes",
+    "p111v_4": "Lizards",
+    "p128r_1": "Casting in silver and gold",
+    "p144r_1": "Turtles",
+    "p167r_1": "Petards"
+  },
+  "stone": {
+    "p036v_3": "Glassworkers’ glass",
+    "p094r_1": "Furbisher",
+    "p098v_5": "Founding"
+  },
+  "stake": {
+    "p037v_1": "Gardener"
+  },
+  "desramonet": {
+    "p037v_3": "Yellow Amber"
+  },
+  "emery": {
+    "p038r_3": "Sapphire",
+    "p038r_4": "Amber",
+    "p094r_1": "Furbisher"
+  },
+  "vat": {
+    "p039r_2": "Pastel woad"
+  },
+  "rakes": {
+    "p039r_2": "Pastel woad"
+  },
+  "pin": {
+    "p039v_3": "Tracing some history on glass",
+    "p049v_1": "Birds",
+    "p049v_2": "Grain of lead",
+    "p105v_3": "Catching nightingales See the 15th folio after this.",
+    "p133v_2": "Thing that does not release"
+  },
+  "receptacle": {
+    "p040r_2": "Aquafortis"
+  },
+  "retort": {
+    "p040r_2": "Aquafortis",
+    "p040v_4": "Aquafortis",
+    "p047r_1": "For teeth"
+  },
+  "crucibles": {
+    "p040v_2": "Latten and calamine",
+    "p047v_2": "Founding",
+    "p047v_3": "Crucibles",
+    "p100v_1": "Gemstones",
+    "p101v_1": "Jacinth",
+    "p107r_1": "Catching lizards and snakes",
+    "p111v_5": "Composition of sand"
+  },
+  "cendrée": {
+    "p040v_3": "Metal"
+  },
+  "luted": {
+    "p040v_4": "Aquafortis",
+    "p047v_3": "Crucibles",
+    "p052r_1": "The work done in Algiers",
+    "p123r_1": "A means di far correr lotnegra",
+    "p127v_1": "Founders’ earth",
+    "p132r_2": "Method for reheating the molds",
+    "p141r_1": "Molding a crayfish",
+    "p145v_2": ""
+  },
+  "porphyry": {
+    "p041r_03": "Sand",
+    "p068r_3": "Casting",
+    "p083r_2": "Sand for copper medals",
+    "p084v_1": "Sand",
+    "p084v_4": "Sand for lead, the most excellent of all, for high and low reliefs",
+    "p085v_3": "Sand from the mine",
+    "p085v_4": "Experimented sands",
+    "p087v_3": "Sand of the mine of Thoulouse",
+    "p088v_1": "Sand from pulverised rock salt and sand from the mine finely ground on marble",
+    "p088v_2": "Mineral sand",
+    "p089r_1": "Sand of burnt ox bones and rock salt",
+    "p089v_2": "Glassmakers’ white sand from the mine, mixed with sal ammoniac",
+    "p090r_1": "Sal ammoniac and iron dross",
+    "p090r_3": "All sands can be rendered good",
+    "p098v_5": "Founding",
+    "p132v_2": "Crocum ferri",
+    "p143r_2": "Molders from Foix",
+    "p163v_2": "Crocum"
+  },
+  "sift": {
+    "p041r_1": "Earth for casting, for founders"
+  },
+  "forge": {
+    "p041v_1": "Glassworkers’ black",
+    "p082v_4": "Method of casting in bronze",
+    "p083r_1": "Sand for lead",
+    "p094r_1": "Furbisher",
+    "p109r_4": "Bellows of the forge",
+    "p115v_3": "Reheating the noyau molds",
+    "p124v_2": "Casting with gold",
+    "p127v_1": "Founders’ earth",
+    "p128r_1": "Casting in silver and gold",
+    "p128v_1": "Whitening of cast silver",
+    "p132r_2": "Method for reheating the molds",
+    "p134v_1": "For making ☀ run",
+    "p134v_2": "For gold casts in large works",
+    "p135v_1": "Casting in ☼",
+    "p138v_2": "Gold cast very thinly",
+    "p142v_1": "Molding grasshoppers and things too thin",
+    "p152v_1": "Repairing cast things",
+    "p160r_1": "Press for the large molds"
+  },
+  "penknife": {
+    "p042v_1": "Pounced design for scratching satin",
+    "p091r_2": "Molding with cuttlefish bone",
+    "p105r_4": "Gardening",
+    "p114r_1": "Second Cast",
+    "p129v_4": "Spider molded on a leaf",
+    "p130v_1": "Molding a crab",
+    "p143r_1": "Molding turtles",
+    "p145v_1": "Molding plants and flowers"
+  },
+  "cochiaro": {
+    "p043r_3": "Purpurine"
+  },
+  "ditto": {
+    "p043r_3": "Purpurine"
+  },
+  "cutting-punch": {
+    "p043v_4": "Hail shot of the arquebus",
+    "p045r_1": "Loading an arquebus with hail shot"
+  },
+  "reed": {
+    "p044v_1": "Horsehair sieves"
+  },
+  "vial": {
+    "p044v_3": "White soporific oil",
+    "p060r_3": "Oil",
+    "p073v_2": "Varnish",
+    "p077r_4": "Recipe for making bronze and varnish of many sorts"
+  },
+  "pipe": {
+    "p045r_1": "Loading an arquebus with hail shot",
+    "p080r_3": "Fountains",
+    "p109v_2": "Killing snakes for molding"
+  },
+  "baton": {
+    "p045r_1": "Loading an arquebus with hail shot"
+  },
+  "nut": {
+    "p045v_1": "Loading an arquebus",
+    "p053r_1": "Soldering a vice"
+  },
+  "ramrod": {
+    "p045v_1": "Loading an arquebus",
+    "p055r_1": "For firing a schioppo senza rumore"
+  },
+  "plumb": {
+    "p045v_2": "For adjusting a crooked cannon"
+  },
+  "spoonful": {
+    "p047r_5": "Against diarrhea and dysentery",
+    "p163r_1": "Perfumer"
+  },
+  "lute": {
+    "p047v_2": "Founding",
+    "p050r_1": "Keeping fruit for the entire year",
+    "p052r_1": "The work done in Algiers",
+    "p081v_2": "Making copper and latten run",
+    "p081v_4": "Frame casting",
+    "p082v_4": "Method of casting in bronze",
+    "p085v_4": "Experimented sands",
+    "p121v_2": "Silver for casting",
+    "p123r_1": "A means di far correr lotnegra",
+    "p127v_1": "Founders’ earth",
+    "p132r_1": "Mold made in two casts",
+    "p133r_4": "Clamps and broken mold",
+    "p134r_1": "For mending a pierced mold",
+    "p135v_1": "Casting in ☼",
+    "p142v_3": "Lute for luting your molds",
+    "p145r_2": "Cuttlefish bone",
+    "p145v_1": "Molding plants and flowers",
+    "p147v_2": "Lute",
+    "p150v_1": "Molding hollow",
+    "p165v_4": "Lute"
+  },
+  "canvas": {
+    "p048r_4": "Keeping birds and animals",
+    "p105v_4": "Nightingale"
+  },
+  "tile": {
+    "p048v_1": "Extraction of regulus",
+    "p072r_2": "Casting in copper",
+    "p100v_2": "For ruby take some gold leaf",
+    "p108r_2": "Spalt",
+    "p166v_5": "Augmenting the color of gold"
+  },
+  "puncheon": {
+    "p049r_1": "Casting of lead"
+  },
+  "needle": {
+    "p049v_2": "Grain of lead",
+    "p109v_2": "Killing snakes for molding",
+    "p112v_1": "For molding Making the arrangement and disposition of the animal",
+    "p115v_2": "For giving venting to the mold",
+    "p117r_1": "A means of molding flowers and plants",
+    "p122r_2": "Flower in the mouth of the snake",
+    "p145v_1": "Molding plants and flowers"
+  },
+  "card": {
+    "p049v_2": "Grain of lead",
+    "p069r_2": "Sand",
+    "p085v_4": "Experimented sands"
+  },
+  "sieve": {
+    "p049v_2": "Grain of lead",
+    "p055v_4": "For casting",
+    "p060v_1": "Varnish dry in an hour",
+    "p084r_5": "Sand from a mine in Thoulouse",
+    "p088r_5": "Baker",
+    "p088v_2": "Mineral sand",
+    "p090r_3": "All sands can be rendered good",
+    "p097v_1": "Mastic varnish dry in a half hour",
+    "p106v_2": "Plaster",
+    "p106v_3": "Tiles",
+    "p107r_1": "Catching lizards and snakes",
+    "p111v_5": "Composition of sand",
+    "p112r_3": "Molding en noyau. Mixture of sand",
+    "p118v_1": "Casting in frames",
+    "p143r_2": "Molders from Foix",
+    "p161r_1": "Preparation of sand for frames"
+  },
+  "dish": {
+    "p049v_2": "Grain of lead",
+    "p161r_1": "Preparation of sand for frames"
+  },
+  "weights": {
+    "p050r_1": "Keeping fruit for the entire year"
+  },
+  "basket": {
+    "p050r_1": "Keeping fruit for the entire year",
+    "p160v_3": "Catching crayfish"
+  },
+  "stopper": {
+    "p050r_1": "Keeping fruit for the entire year"
+  },
+  "bottle": {
+    "p050r_1": "Keeping fruit for the entire year",
+    "p052r_1": "The work done in Algiers",
+    "p052v_2": "Colors",
+    "p055r_4": "Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits",
+    "p102v_2": "Infusion of anthos or rosemary",
+    "p108r_2": "Spalt",
+    "p109v_2": "Killing snakes for molding",
+    "p166v_5": "Augmenting the color of gold"
+  },
+  "bottles": {
+    "p050r_1": "Keeping fruit for the entire year"
+  },
+  "ampul": {
+    "p050r_1": "Keeping fruit for the entire year"
+  },
+  "medal": {
+    "p050r_2": "Molding"
+  },
+  "paper": {
+    "p050r_2": "Molding",
+    "p051r_2": "Cutters of printing plates",
+    "p068r_3": "Casting",
+    "p069r_2": "Sand",
+    "p076v_4": "For gilding iron or tin",
+    "p085v_4": "Experimented sands",
+    "p088v_1": "Sand from pulverised rock salt and sand from the mine finely ground on marble",
+    "p089r_1": "Sand of burnt ox bones and rock salt",
+    "p128v_1": "Whitening of cast silver",
+    "p139r_1": "Casts of lead and tin",
+    "p157r_1": "A means for goldsmiths for molding hollow",
+    "p169v_1": "Molding very thin like bimbalotiers do"
+  },
+  "carton": {
+    "p050r_2": "Molding",
+    "p080v_1": "Founders of small works  of tin",
+    "p086v_1": "Excellent sand for lead, tin, and copper",
+    "p139r_1": "Casts of lead and tin",
+    "p153r_2": "Giving the thickness that you wish to a medal",
+    "p169v_1": "Molding very thin like bimbalotiers do"
+  },
+  "cages": {
+    "p050v_1": "Small birds"
+  },
+  "lime-twigs": {
+    "p050v_1": "Small birds"
+  },
+  "files": {
+    "p050v_2": "Curried steel and files",
+    "p067v_1": "Files",
+    "p141r_1": "Molding a crayfish",
+    "p152v_1": "Repairing cast things"
+  },
+  "burnisher": {
+    "p051r_1": "Counterproofing",
+    "p096v_2": "Color of water",
+    "p097r_3": "Gilding with silver"
+  },
+  "rollers": {
+    "p051r_2": "Cutters of printing plates"
+  },
+  "plates": {
+    "p051r_2": "Cutters of printing plates"
+  },
+  "linen": {
+    "p051r_2": "Cutters of printing plates",
+    "p069r_2": "Sand",
+    "p080v_1": "Founders of small works  of tin",
+    "p081r_4": "Carton",
+    "p084v_4": "Sand for lead, the most excellent of all, for high and low reliefs",
+    "p098r_3": "Locksmith",
+    "p139v_1": "Cast of wax to represent an animal that one has not got"
+  },
+  "felt": {
+    "p051r_2": "Cutters of printing plates"
+  },
+  "fingertip": {
+    "p051r_2": "Cutters of printing plates",
+    "p097v_1": "Mastic varnish dry in a half hour"
+  },
+  "pitcher": {
+    "p052r_1": "The work done in Algiers"
+  },
+  "mattras": {
+    "p052r_1": "The work done in Algiers"
+  },
+  "℥": {
+    "p052r_1": "The work done in Algiers"
+  },
+  "stoppered": {
+    "p052v_2": "Colors"
+  },
+  "vice": {
+    "p053r_1": "Soldering a vice",
+    "p094r_1": "Furbisher",
+    "p097r_2": "Gilding"
+  },
+  "bolt": {
+    "p053r_1": "Soldering a vice",
+    "p167r_1": "Petards"
+  },
+  "shelves": {
+    "p053v_1": "Silkworms"
+  },
+  "tub": {
+    "p054v_1": "On dry preserves"
+  },
+  "sticks": {
+    "p054v_1": "On dry preserves"
+  },
+  "bedsheet": {
+    "p054v_1": "On dry preserves"
+  },
+  "vessels": {
+    "p054v_1": "On dry preserves"
+  },
+  "socket": {
+    "p055r_1": "For firing a schioppo senza rumore"
+  },
+  "top": {
+    "p055v_1": "Another for waters"
+  },
+  "cauldron": {
+    "p056r_1": "Excellent tempering bath for cuirass bodies",
+    "p106v_2": "Plaster",
+    "p108r_2": "Spalt",
+    "p137r_1": "For casting in red copper"
+  },
+  "muid": {
+    "p056r_1": "Excellent tempering bath for cuirass bodies"
+  },
+  "palettes": {
+    "p056v_1": "Painter"
+  },
+  "marbles": {
+    "p056v_1": "Painter"
+  },
+  "press": {
+    "p057v_1": "Sheath maker",
+    "p083v_2": "Molding in relief on one part and hollow on the other.",
+    "p091r_2": "Molding with cuttlefish bone",
+    "p118v_1": "Casting in frames",
+    "p126v_2": "Plaster",
+    "p139r_1": "Casts of lead and tin",
+    "p148v_1": "Molding turtles",
+    "p150v_1": "Molding hollow",
+    "p158v_2": "Large molds",
+    "p160r_1": "Press for the large molds",
+    "p164v_1": "Molds"
+  },
+  "cotton": {
+    "p057v_2": "Painter",
+    "p066r_6": "* Or mat",
+    "p075v_2": "For gilding on wood",
+    "p153r_2": "Giving the thickness that you wish to a medal"
+  },
+  "crayons": {
+    "p057v_2": "Painter"
+  },
+  "paintbrushes": {
+    "p058v_3": "In fresco",
+    "p058v_5": "Paintbrushes",
+    "p066r_5": "Gilding molding for panels with or mat",
+    "p066v_4": "paintbrushes"
+  },
+  "palette": {
+    "p058v_5": "Paintbrushes",
+    "p061v_3": "Azur d’esmail in oil",
+    "p064v_3": "Softening",
+    "p093v_2": "Azure",
+    "p093v_3": "Violet and lake"
+  },
+  "frames": {
+    "p061v_2": "Frames of the Germans",
+    "p069r_2": "Sand",
+    "p080v_1": "Founders of small works  of tin",
+    "p082r_2": "Frame",
+    "p083v_2": "Molding in relief on one part and hollow on the other.",
+    "p106r_2": "Making gold run for casting",
+    "p111r_1": "Reheating molds",
+    "p118v_1": "Casting in frames",
+    "p119r_1": "Advice about the above",
+    "p137v_1": "Tempering sand for molds of flat medals",
+    "p143v_1": "Carcanets made à jour",
+    "p145r_1": "Casting in three frames",
+    "p161r_1": "Preparation of sand for frames",
+    "p169r_1": "List of processes"
+  },
+  "eye": {
+    "p062v_1": "Drawing"
+  },
+  "hook": {
+    "p062v_2": "Perspective"
+  },
+  "rulers": {
+    "p062v_2": "Perspective"
+  },
+  "easel": {
+    "p062v_3": "Panel"
+  },
+  "spatula": {
+    "p063r_6": "Verdigris and another very beautiful bright green",
+    "p113r_1": "Tempering the sand and molding the first cast",
+    "p121v_1": "For casting in silver",
+    "p122v_1": "Cleaning the bowl and the spoon with which one tempers the sand",
+    "p160r_2": "Sand for flowers"
+  },
+  "pan": {
+    "p066v_2": "For attracting pigeons",
+    "p073r_3": "For ridding bone or horn of grease"
+  },
+  "burnished": {
+    "p068r_1": "Fanciful tables"
+  },
+  "straw": {
+    "p068r_3": "Casting"
+  },
+  "fingers": {
+    "p068r_3": "Casting",
+    "p069r_2": "Sand",
+    "p072v_1": "Casting",
+    "p084v_1": "Sand",
+    "p084v_4": "Sand for lead, the most excellent of all, for high and low reliefs",
+    "p085v_4": "Experimented sands",
+    "p090r_3": "All sands can be rendered good",
+    "p111v_4": "Lizards",
+    "p119v_1": "Fashion of preparing a spalt spat",
+    "p120v_6": "Keeping dry flowers in the same state all year",
+    "p132v_2": "Crocum ferri",
+    "p145r_2": "Cuttlefish bone"
+  },
+  "pestles": {
+    "p069r_2": "Sand",
+    "p101r_1": "Topaz",
+    "p118r_3": "For grottos",
+    "p119v_1": "Fashion of preparing a spalt spat"
+  },
+  "skillet": {
+    "p069r_2": "Sand",
+    "p085v_4": "Experimented sands",
+    "p106v_2": "Plaster"
+  },
+  "hands": {
+    "p069r_2": "Sand",
+    "p083v_2": "Molding in relief on one part and hollow on the other.",
+    "p088v_2": "Mineral sand",
+    "p111r_4": "Clay earth",
+    "p111v_5": "Composition of sand",
+    "p112r_3": "Molding en noyau. Mixture of sand",
+    "p112v_1": "For molding Making the arrangement and disposition of the animal",
+    "p118v_1": "Casting in frames"
+  },
+  "horn": {
+    "p071r_4": "Weary horses"
+  },
+  "wood": {
+    "p071v_3": "Spider"
+  },
+  "board": {
+    "p072r_2": "Casting in copper"
+  },
+  "wirebrush": {
+    "p072v_1": "Casting"
+  },
+  "spoon": {
+    "p074r_3": "For making varnish",
+    "p079r_3": "For making bronze in the color of gold",
+    "p092v_2": "Congealing mercury",
+    "p109r_2": "Wax for molding -",
+    "p113r_1": "Tempering the sand and molding the first cast",
+    "p122v_1": "Cleaning the bowl and the spoon with which one tempers the sand"
+  },
+  "palm": {
+    "p074v_2": "For making yellow varnish"
+  },
+  "copper": {
+    "p075r_2": "Bronze of copper"
+  },
+  "tin": {
+    "p075r_3": "Bronze like tin"
+  },
+  "shell": {
+    "p075r_5": "Or moulu",
+    "p075v_3": "For gilding with or moleu"
+  },
+  "bowl": {
+    "p077r_2": "Medicine of the orientals against all maladies",
+    "p112r_1": "For tempering sand",
+    "p113r_1": "Tempering the sand and molding the first cast",
+    "p121v_1": "For casting in silver",
+    "p122v_1": "Cleaning the bowl and the spoon with which one tempers the sand",
+    "p133v_1": "Bubbles and little holes which are found in the mold",
+    "p145v_1": "Molding plants and flowers",
+    "p161r_1": "Preparation of sand for frames"
+  },
+  "gimlets": {
+    "p080r_1": "Petard",
+    "p167r_1": "Petards"
+  },
+  "cornet": {
+    "p080r_3": "Fountains"
+  },
+  "mortars": {
+    "p085v_2": "Mortars",
+    "p088r_2": "Mortars",
+    "p101r_1": "Topaz"
+  },
+  "barrel": {
+    "p087v_2": "Magistra",
+    "p109r_5": "Snakes for molding",
+    "p112r_4": "Putting to death the animal for molding"
+  },
+  "cases": {
+    "p090v_2": "Orange trees"
+  },
+  "screws": {
+    "p090v_2": "Orange trees"
+  },
+  "nails": {
+    "p090v_2": "Orange trees",
+    "p094r_1": "Furbisher",
+    "p155v_1": "Rose"
+  },
+  "buckles": {
+    "p090v_2": "Orange trees"
+  },
+  "straps": {
+    "p090v_2": "Orange trees"
+  },
+  "bones": {
+    "p091r_2": "Molding with cuttlefish bone",
+    "p145r_2": "Cuttlefish bone",
+    "p157r_1": "A means for goldsmiths for molding hollow"
+  },
+  "bone": {
+    "p091r_2": "Molding with cuttlefish bone",
+    "p145r_2": "Cuttlefish bone"
+  },
+  "shovel": {
+    "p092v_2": "Congealing mercury"
+  },
+  "filed": {
+    "p094r_1": "Furbisher"
+  },
+  "flin": {
+    "p094r_1": "Furbisher"
+  },
+  "fustée": {
+    "p094r_1": "Furbisher"
+  },
+  "well-forged": {
+    "p094r_1": "Furbisher"
+  },
+  "thunderstone": {
+    "p094r_1": "Furbisher"
+  },
+  "boxwood": {
+    "p094r_1": "Furbisher"
+  },
+  "chameau": {
+    "p094r_1": "Furbisher"
+  },
+  "arson": {
+    "p094r_1": "Furbisher"
+  },
+  "felin": {
+    "p094r_1": "Furbisher"
+  },
+  "gratteau": {
+    "p094r_1": "Furbisher"
+  },
+  "grindstone": {
+    "p094r_1": "Furbisher"
+  },
+  "foot": {
+    "p094r_1": "Furbisher",
+    "p110r_3": "Snakes",
+    "p145r_2": "Cuttlefish bone",
+    "p152v_1": "Repairing cast things"
+  },
+  "chalk": {
+    "p094r_1": "Furbisher"
+  },
+  "grateau": {
+    "p094r_1": "Furbisher"
+  },
+  "tweezers": {
+    "p097r_2": "Gilding",
+    "p097r_3": "Gilding with silver"
+  },
+  "rake": {
+    "p098r_2": "Borders of a garden"
+  },
+  "firkin": {
+    "p098v_2": "Salted artichokes"
+  },
+  "rod": {
+    "p098v_4": "Birds"
+  },
+  "bricks": {
+    "p098v_5": "Founding"
+  },
+  "boring": {
+    "p099v_2": "Cannons"
+  },
+  "bore": {
+    "p099v_2": "Cannons"
+  },
+  "fornaise": {
+    "p100v_1": "Gemstones"
+  },
+  "tiles": {
+    "p100v_2": "For ruby take some gold leaf"
+  },
+  "alembics": {
+    "p102r_1": "Provisions for the work of Colchis"
+  },
+  "lamps": {
+    "p102r_1": "Provisions for the work of Colchis",
+    "p102r_2": "For the furnace"
+  },
+  "scissors": {
+    "p102r_1": "Provisions for the work of Colchis",
+    "p156v_1": "Molding a fly"
+  },
+  "pots": {
+    "p102r_1": "Provisions for the work of Colchis",
+    "p108r_2": "Spalt",
+    "p161r_1": "Preparation of sand for frames"
+  },
+  "retorts": {
+    "p102r_1": "Provisions for the work of Colchis"
+  },
+  "fire-steel": {
+    "p102r_2": "For the furnace"
+  },
+  "coffer": {
+    "p102r_2": "For the furnace"
+  },
+  "vials": {
+    "p102r_4": "Glass vessels"
+  },
+  "spoonfuls": {
+    "p102v_2": "Infusion of anthos or rosemary"
+  },
+  "tube": {
+    "p103v_1": "Enema"
+  },
+  "clock": {
+    "p104v_4": "Spinet playing by itself"
+  },
+  "mills": {
+    "p105v_3": "Catching nightingales See the 15th folio after this."
+  },
+  "cage": {
+    "p105v_5": "Nightingale",
+    "p120r_3": "IlNightingale"
+  },
+  "pinon": {
+    "p107r_1": "Catching lizards and snakes"
+  },
+  "terrine": {
+    "p108r_2": "Spalt",
+    "p128r_1": "Casting in silver and gold",
+    "p132r_1": "Mold made in two casts"
+  },
+  "pit": {
+    "p108r_2": "Spalt"
+  },
+  "tools": {
+    "p109r_1": "Modeling in wax",
+    "p167r_1": "Petards"
+  },
+  "blast-pipes": {
+    "p109r_4": "Bellows of the forge"
+  },
+  "underfoot": {
+    "p110r_3": "Snakes"
+  },
+  "needles": {
+    "p111r_5": "Iron wire",
+    "p112v_1": "For molding Making the arrangement and disposition of the animal"
+  },
+  "clamps": {
+    "p111r_5": "Iron wire",
+    "p114r_1": "Second Cast",
+    "p115r_3": "Mold reheating",
+    "p115v_3": "Reheating the noyau molds",
+    "p127v_1": "Founders’ earth",
+    "p132r_1": "Mold made in two casts",
+    "p133r_4": "Clamps and broken mold",
+    "p137r_3": "Clamps",
+    "p137v_1": "Tempering sand for molds of flat medals",
+    "p141r_1": "Molding a crayfish",
+    "p144r_1": "Turtles",
+    "p148v_1": "Molding turtles",
+    "p150v_1": "Molding hollow",
+    "p162v_4": "Molds of things that do not release",
+    "p164v_1": "Molds",
+    "p170r_3": "Clamps"
+  },
+  "tongue": {
+    "p111v_1": "Sal ammoniac water"
+  },
+  "cloths": {
+    "p111v_2": "Sanguine"
+  },
+  "basin": {
+    "p112r_1": "For tempering sand"
+  },
+  "flagon": {
+    "p112r_1": "For tempering sand"
+  },
+  "point": {
+    "p112v_1": "For molding Making the arrangement and disposition of the animal",
+    "p114r_1": "Second Cast",
+    "p116v_2": "Mixture of tin and lead",
+    "p124r_3": "Spider’s web",
+    "p133r_3": "Marks from the points of iron wire which are found on the head of the animal",
+    "p150v_1": "Molding hollow",
+    "p157r_5": "Flies"
+  },
+  "chisels": {
+    "p114r_1": "Second Cast",
+    "p133v_2": "Thing that does not release"
+  },
+  "cast": {
+    "p116v_2": "Mixture of tin and lead"
+  },
+  "presses": {
+    "p118r_2": "For removing flashing and barbs from things molded à noyau",
+    "p132r_1": "Mold made in two casts",
+    "p160r_1": "Press for the large molds"
+  },
+  "chaple": {
+    "p118r_2": "For removing flashing and barbs from things molded à noyau",
+    "p131v_1": "When the cast of tin or lead becomes porous",
+    "p148v_1": "Molding turtles",
+    "p150v_1": "Molding hollow",
+    "p152v_1": "Repairing cast things",
+    "p156r_3": "Chasing",
+    "p157r_1": "A means for goldsmiths for molding hollow",
+    "p157r_2": "Rouge clair",
+    "p163v_3": "Repairing",
+    "p170r_6": "Cleaning closed molds"
+  },
+  "vase": {
+    "p119v_1": "Fashion of preparing a spalt spat"
+  },
+  "drawer": {
+    "p120r_3": "IlNightingale"
+  },
+  "hourglass": {
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "fist": {
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "case": {
+    "p121r_1": "For keeping fruits all year"
+  },
+  "quarton": {
+    "p124r_3": "Spider’s web"
+  },
+  "wax": {
+    "p124v_3": "A means to make the gate for small female lizards",
+    "p141r_1": "Molding a crayfish"
+  },
+  "slab": {
+    "p126r_1": "Molding fruits and animals in sugar",
+    "p144r_1": "Turtles",
+    "p164v_1": "Molds"
+  },
+  "almond": {
+    "p126r_1": "Molding fruits and animals in sugar"
+  },
+  "bellow": {
+    "p127v_1": "Founders’ earth",
+    "p128r_1": "Casting in silver and gold"
+  },
+  "metals": {
+    "p128r_1": "Casting in silver and gold"
+  },
+  "brushed": {
+    "p128v_1": "Whitening of cast silver"
+  },
+  "clamp": {
+    "p132r_1": "Mold made in two casts",
+    "p134v_2": "For gold casts in large works",
+    "p148v_1": "Molding turtles"
+  },
+  "lutes": {
+    "p132r_1": "Mold made in two casts",
+    "p137v_1": "Tempering sand for molds of flat medals"
+  },
+  "blood": {
+    "p133v_2": "Thing that does not release"
+  },
+  "fournaise": {
+    "p135v_1": "Casting in ☼"
+  },
+  "moulets": {
+    "p135v_1": "Casting in ☼"
+  },
+  "tows": {
+    "p137r_1": "For casting in red copper"
+  },
+  "anvil": {
+    "p137r_3": "Clamps",
+    "p159r_3": "Fish glue"
+  },
+  "scraper": {
+    "p139r_1": "Casts of lead and tin"
+  },
+  "cartons": {
+    "p139r_1": "Casts of lead and tin"
+  },
+  "taper": {
+    "p139v_1": "Cast of wax to represent an animal that one has not got"
+  },
+  "penknives": {
+    "p141r_1": "Molding a crayfish"
+  },
+  "burins": {
+    "p141r_1": "Molding a crayfish"
+  },
+  "trusseaulx": {
+    "p142v_3": "Lute for luting your molds"
+  },
+  "circle": {
+    "p144r_1": "Turtles",
+    "p145v_1": "Molding plants and flowers",
+    "p146v_1": "Molding turtles"
+  },
+  "ear": {
+    "p145r_2": "Cuttlefish bone"
+  },
+  "knee": {
+    "p145r_2": "Cuttlefish bone"
+  },
+  "contour": {
+    "p145v_1": "Molding plants and flowers"
+  },
+  "bullitoire": {
+    "p147v_1": "+Cast of copper alloyed with ☾, which is like very base solder / ard and old K and some R out of xii"
+  },
+  "scratch-brush": {
+    "p147v_4": "Cast of latten",
+    "p156r_2": "Very light and hollow work of gold"
+  },
+  "wire-brushed": {
+    "p148r_1": "Beautiful color for latten"
+  },
+  "clamped": {
+    "p148v_1": "Molding turtles"
+  },
+  "lathe": {
+    "p149v_1": "Molding vases in several pieces"
+  },
+  "gouge": {
+    "p150v_1": "Molding hollow"
+  },
+  "cushionet": {
+    "p152v_1": "Repairing cast things"
+  },
+  "bath": {
+    "p154r_5": "Metal filings"
+  },
+  "threads": {
+    "p155r_1": "Molding a rose",
+    "p169r_1": "List of processes"
+  },
+  "onglet": {
+    "p156r_3": "Chasing",
+    "p163v_3": "Repairing"
+  },
+  "chasing": {
+    "p156r_3": "Chasing"
+  },
+  "chiseling": {
+    "p159r_2": "Chiseling"
+  },
+  "sheets": {
+    "p160r_1": "Press for the large molds"
+  },
+  "pillars": {
+    "p160r_1": "Press for the large molds"
+  },
+  "stirrup": {
+    "p160r_1": "Press for the large molds"
+  },
+  "semal": {
+    "p161r_1": "Preparation of sand for frames"
+  },
+  "glove": {
+    "p163r_1": "Perfumer"
+  },
+  "gloves": {
+    "p163r_1": "Perfumer"
+  },
+  "pins": {
+    "p163v_1": "Crayfish"
+  },
+  "cupel": {
+    "p164r_3": "Leady silver"
+  },
+  "puncheons": {
+    "p165r_6": "Repairing snakes and lizards"
+  },
+  "forks": {
+    "p167r_1": "Petards"
+  },
+  "axes": {
+    "p167r_1": "Petards"
+  },
+  "crutches": {
+    "p167r_1": "Petards"
+  },
+  "saws": {
+    "p167r_1": "Petards"
+  },
+  "peg": {
+    "p167r_1": "Petards"
+  },
+  "matrices": {
+    "p170r_1": "Currency medals"
+  },
+  "crucible covered with another, well luted": {
+    "p002v_2": "Emeralds of Brissac"
+  },
+  "leaded pot": {
+    "p003r_1": "Counterfeit coral",
+    "p074r_2": "For making vermilion",
+    "p076r_1": "For making wood green"
+  },
+  "coarse canvas": {
+    "p003r_1": "Counterfeit coral"
+  },
+  "very light tammy cloth": {
+    "p003r_1": "Counterfeit coral"
+  },
+  "copper vessel": {
+    "p003r_3": "Thick varnish for planks"
+  },
+  "steel point": {
+    "p004v_3": "Varnish of iron etchers",
+    "p138v_3": "Counterfeit diamonds put in a work"
+  },
+  "venice tripoli": {
+    "p005r_1": "Steel mirrors"
+  },
+  "thin sand": {
+    "p005r_1": "Steel mirrors"
+  },
+  "emery putty": {
+    "p005r_1": "Steel mirrors"
+  },
+  "mold, of white stone with no eyelets": {
+    "p005r_1": "Steel mirrors"
+  },
+  "concave mirror": {
+    "p005r_2": "Concave mirrors"
+  },
+  "sheet of paper": {
+    "p005r_2": "Concave mirrors"
+  },
+  "reverberatory furnace": {
+    "p006v_1": "For ga cachcages",
+    "p012r_4": "Plaster",
+    "p016r_1": "Founding of soft iron",
+    "p115v_3": "Reheating the noyau molds",
+    "p124v_2": "Casting with gold",
+    "p127v_1": "Founders’ earth",
+    "p161r_1": "Preparation of sand for frames",
+    "p161v_1": "Crocum ferri"
+  },
+  "small furnace": {
+    "p006v_1": "For ga cachcages"
+  },
+  "wood model": {
+    "p006v_1": "For ga cachcages"
+  },
+  "small pincers": {
+    "p006v_1": "For ga cachcages",
+    "p007v_2": "Against windy colic",
+    "p112v_1": "For molding Making the arrangement and disposition of the animal",
+    "p129v_4": "Spider molded on a leaf",
+    "p156v_1": "Molding a fly"
+  },
+  "thin canes": {
+    "p006v_1": "For ga cachcages"
+  },
+  "small pincers with a long beak": {
+    "p006v_1": "For ga cachcages"
+  },
+  "thin cane": {
+    "p006v_1": "For ga cachcages"
+  },
+  "cutting file": {
+    "p006v_1": "For ga cachcages"
+  },
+  "thin enamel canes": {
+    "p006v_1": "For ga cachcages"
+  },
+  "wooden board": {
+    "p006v_2": "For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances"
+  },
+  "polished marble": {
+    "p006v_2": "For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances"
+  },
+  "piece of felt": {
+    "p006v_2": "For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances",
+    "p051r_2": "Cutters of printing plates"
+  },
+  "roller press": {
+    "p006v_2": "For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances"
+  },
+  "glass of good wine": {
+    "p007v_2": "Against windy colic"
+  },
+  "alembic well luted": {
+    "p007v_3": "For relieving the pain of G."
+  },
+  "linen cloth": {
+    "p007v_3": "For relieving the pain of G.",
+    "p008r_1": "Lettering of gold on paper",
+    "p029v_4": "Ground for gold",
+    "p051r_2": "Cutters of printing plates",
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "marcasite powder": {
+    "p008v_1": "Polishing of the balas ruby"
+  },
+  "copper blade": {
+    "p008v_2": "Or and argent moulu"
+  },
+  "copper wheel": {
+    "p008v_3": "Polishing of stones",
+    "p013r_3": "Polishing of stones"
+  },
+  "wheels for doing this, one of tin, one of lead, &amp; one of fine copper": {
+    "p008v_3": "Polishing of stones"
+  },
+  "tin wheel": {
+    "p008v_3": "Polishing of stones"
+  },
+  "glass bottle": {
+    "p009v_1": "Painters",
+    "p029v_6": "Dragon’s blood",
+    "p044v_2": "Excellent water against the plague of Monsieur de Montorsin",
+    "p044v_3": "White soporific oil",
+    "p055r_4": "Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits",
+    "p103v_3": "For making colors run",
+    "p109r_5": "Snakes for molding",
+    "p112r_4": "Putting to death the animal for molding",
+    "p137r_2": "Huile tingente to make metals run"
+  },
+  "fine sieve": {
+    "p010r_5": "Powder for hourglasses",
+    "p085v_4": "Experimented sands"
+  },
+  "oil palette": {
+    "p011r_1": "Painting esmail d’azur in oil"
+  },
+  "head band": {
+    "p011v_2": "For getting rid of the redness of eyes or bruising"
+  },
+  "pumice stone powder": {
+    "p011v_4": "For diamond points for engraving"
+  },
+  "lead wheel": {
+    "p011v_4": "For diamond points for engraving"
+  },
+  "diamond points": {
+    "p011v_4": "For diamond points for engraving"
+  },
+  "piece of leather": {
+    "p011v_5": "Polishing wheel of copper",
+    "p035v_2": "For transmuting grain from one vessel to another"
+  },
+  "polishing wheel of copper": {
+    "p011v_5": "Polishing wheel of copper"
+  },
+  "covered oven": {
+    "p012r_2": "Chimolée"
+  },
+  "barbers' ovens": {
+    "p012r_4": "Plaster"
+  },
+  "relief medal": {
+    "p012v_1": "Molding stucco promptly"
+  },
+  "goldsmiths’ bouteure": {
+    "p012v_2": "Cleaning yellow pearls"
+  },
+  "powder of the said tripoli": {
+    "p012v_2": "Cleaning yellow pearls"
+  },
+  "glassworkers’ solders": {
+    "p012v_3": "For whitening enilanroc"
+  },
+  "diamond point": {
+    "p012v_3": "For whitening enilanroc"
+  },
+  "goldsmith’s forge": {
+    "p012v_3": "For whitening enilanroc",
+    "p108r_2": "Spalt"
+  },
+  "iron casket": {
+    "p012v_3": "For whitening enilanroc"
+  },
+  "hog bristles": {
+    "p012v_3": "For whitening enilanroc"
+  },
+  "lead tinwheel": {
+    "p012v_3": "For whitening enilanroc"
+  },
+  "fine sieves of raw silk": {
+    "p013r_4": "Fine sieves of raw silk"
+  },
+  "fine &amp; delicate sieves": {
+    "p013r_4": "Fine sieves of raw silk"
+  },
+  "chevron beams": {
+    "p014r_1": "For walls of earth and rustic construction"
+  },
+  "measuring line": {
+    "p014r_1": "For walls of earth and rustic construction"
+  },
+  "long poles": {
+    "p014r_1": "For walls of earth and rustic construction"
+  },
+  "cuttlefish bone": {
+    "p015v_1": "Tablets",
+    "p053r_3": "Casting of lead",
+    "p072v_1": "Casting",
+    "p091r_2": "Molding with cuttlefish bone",
+    "p139r_1": "Casts of lead and tin",
+    "p145r_2": "Cuttlefish bone"
+  },
+  "little handle": {
+    "p015v_2": "Letter, more legible"
+  },
+  "wooden mallet": {
+    "p015v_3": "Stamping"
+  },
+  "round or oval-shaped triblet": {
+    "p015v_4": "Softening horn"
+  },
+  "large file": {
+    "p016r_1": "Founding of soft iron"
+  },
+  "bellows’ pipes": {
+    "p016r_1": "Founding of soft iron"
+  },
+  "biggest charcoal": {
+    "p016r_1": "Founding of soft iron"
+  },
+  "iron pots": {
+    "p016r_1": "Founding of soft iron",
+    "p092v_2": "Congealing mercury"
+  },
+  "round furnace": {
+    "p016r_1": "Founding of soft iron"
+  },
+  "new charcoal": {
+    "p016r_1": "Founding of soft iron"
+  },
+  "big charcoal": {
+    "p016r_1": "Founding of soft iron"
+  },
+  "iron or metal shells": {
+    "p016r_1": "Founding of soft iron"
+  },
+  "small forges": {
+    "p016r_1": "Founding of soft iron"
+  },
+  "square furnace": {
+    "p016r_1": "Founding of soft iron"
+  },
+  "needle’s worth of fine silk": {
+    "p016v_2": "For removing fine hair from the forehead"
+  },
+  "well closed andtin vessel": {
+    "p016v_4": "Keeping oranges"
+  },
+  "nail of your right thumb": {
+    "p019v_1": "Mathematical figures without ruler and compass"
+  },
+  "big finger": {
+    "p019v_1": "Mathematical figures without ruler and compass"
+  },
+  "leather sleeves or bags": {
+    "p019v_3": "Enemas"
+  },
+  "hair sieve": {
+    "p020r_1": "For making millas"
+  },
+  "plumb line": {
+    "p021r_2": "For firing a cannon at night"
+  },
+  "iron pegs": {
+    "p022v_1": "Orgues",
+    "p023r_1": "On petards",
+    "p167r_1": "Petards"
+  },
+  "short stick": {
+    "p023r_1": "On petards"
+  },
+  "wooden bungs": {
+    "p024v_1": "For bringing a cannon over land"
+  },
+  "model of paper": {
+    "p025v_1": "Gunner"
+  },
+  "iron spoon": {
+    "p028v_1": "Pewterers"
+  },
+  "iron pot": {
+    "p028v_1": "Pewterers"
+  },
+  "female mold": {
+    "p028v_1": "Pewterers"
+  },
+  "cold molds": {
+    "p028v_1": "Pewterers"
+  },
+  "lead vessel": {
+    "p029r_1": "Stucco for molding"
+  },
+  "stopper of the bottle": {
+    "p029v_6": "Dragon’s blood"
+  },
+  "grais mold": {
+    "p030r_2": "Pewterer"
+  },
+  "iron wheels": {
+    "p030r_2": "Pewterer"
+  },
+  "emery stone powder": {
+    "p030r_2": "Pewterer"
+  },
+  "leather nailed onto a piece of wood": {
+    "p030r_2": "Pewterer"
+  },
+  "metal molds": {
+    "p030r_2": "Pewterer"
+  },
+  "cutting iron": {
+    "p030r_2": "Pewterer"
+  },
+  "soldering iron": {
+    "p030r_2": "Pewterer"
+  },
+  "grais molds": {
+    "p030r_2": "Pewterer"
+  },
+  "sharp iron": {
+    "p030r_2": "Pewterer"
+  },
+  "well-furbished knife": {
+    "p033r_1": "Knife for cutting the nose or a finger"
+  },
+  "stick of well dried between wicker": {
+    "p033r_2": "XFor relighting an extinguished candle between your hands without blowing"
+  },
+  "piece of silver": {
+    "p033v_1": "For making it seem that to someone that he has a piece of silver on his forehead"
+  },
+  "bodkin rounded at the tip &amp; that goes into its handle": {
+    "p033v_2": "For making blood or wine issue from someone’s forehead or from a wall"
+  },
+  "funnel of white iron": {
+    "p033v_2": "For making blood or wine issue from someone’s forehead or from a wall"
+  },
+  "large stick": {
+    "p034r_4": "XHow not to break a glass with a log or a large stick"
+  },
+  "little box": {
+    "p034v_1": "For melting or transmuting a jewel put inside a box"
+  },
+  "large box": {
+    "p034v_1": "For melting or transmuting a jewel put inside a box"
+  },
+  "smaller box": {
+    "p034v_1": "For melting or transmuting a jewel put inside a box"
+  },
+  "larger box": {
+    "p034v_1": "For melting or transmuting a jewel put inside a box"
+  },
+  "leather cover of the same length as the box": {
+    "p034v_1": "For melting or transmuting a jewel put inside a box"
+  },
+  "leather box": {
+    "p034v_1": "For melting or transmuting a jewel put inside a box"
+  },
+  "box of boxwood banded with rings": {
+    "p034v_1": "For melting or transmuting a jewel put inside a box"
+  },
+  "small box": {
+    "p034v_1": "For melting or transmuting a jewel put inside a box"
+  },
+  "small stick": {
+    "p035r_1": "For telling someone that you will show teach him something he does not know, and neither do you",
+    "p130r_1": "Animals dried in an oven",
+    "p145v_1": "Molding plants and flowers"
+  },
+  "pikes, with joists": {
+    "p035r_2": "For supporting a bucket of water on the tips of three knives laid down without touching the ground"
+  },
+  "halberd points": {
+    "p035r_2": "For supporting a bucket of water on the tips of three knives laid down without touching the ground"
+  },
+  "knives, either kitchen or table": {
+    "p035r_2": "For supporting a bucket of water on the tips of three knives laid down without touching the ground"
+  },
+  "small wooden bushels": {
+    "p035v_2": "For transmuting grain from one vessel to another"
+  },
+  "folded handkerchief": {
+    "p035v_2": "For transmuting grain from one vessel to another"
+  },
+  "conjuror’s pouch": {
+    "p035v_2": "For transmuting grain from one vessel to another"
+  },
+  "wooden bell": {
+    "p035v_2": "For transmuting grain from one vessel to another"
+  },
+  "white leather of the color of the wood": {
+    "p035v_2": "For transmuting grain from one vessel to another"
+  },
+  "boxwood balls": {
+    "p036r_1": "For transmuting a ball into a thimble, cunning"
+  },
+  "right hand": {
+    "p036r_1": "For transmuting a ball into a thimble, cunning"
+  },
+  "little &amp; ring fingers": {
+    "p036r_1": "For transmuting a ball into a thimble, cunning"
+  },
+  "leather sheath": {
+    "p036r_1": "For transmuting a ball into a thimble, cunning"
+  },
+  "small sheath of plain leather, such as cow or morocco": {
+    "p036r_1": "For transmuting a ball into a thimble, cunning"
+  },
+  "leather mold": {
+    "p036r_1": "For transmuting a ball into a thimble, cunning"
+  },
+  "four à vent": {
+    "p036v_1": "Founder",
+    "p036v_2": "Four à vent",
+    "p079v_4": "Mixture for printers",
+    "p083v_3": "Bellows",
+    "p086v_1": "Excellent sand for lead, tin, and copper",
+    "p100v_1": "Gemstones",
+    "p101r_2": "Salt for melting",
+    "p123r_1": "A means di far correr lotnegra",
+    "p132v_2": "Crocum ferri",
+    "p135v_1": "Casting in ☼"
+  },
+  "bellows furnace": {
+    "p036v_1": "Founder",
+    "p067r_3": "Bellows furnace",
+    "p086v_1": "Excellent sand for lead, tin, and copper"
+  },
+  "wood furnace": {
+    "p036v_1": "Founder"
+  },
+  "thick round iron rod": {
+    "p036v_3": "Glassworkers’ glass"
+  },
+  "annealing furnace": {
+    "p036v_3": "Glassworkers’ glass"
+  },
+  "hot iron": {
+    "p036v_3": "Glassworkers’ glass",
+    "p141r_1": "Molding a crayfish",
+    "p146v_1": "Molding turtles",
+    "p152v_1": "Repairing cast things"
+  },
+  "case of iron or metal": {
+    "p037r_3": "Foil backings for the  gemstones"
+  },
+  "pulverized salt": {
+    "p037v_3": "Yellow Amber"
+  },
+  "pulverized pumice stone": {
+    "p037v_3": "Yellow Amber"
+  },
+  "tripoli from bretagne": {
+    "p037v_3": "Yellow Amber"
+  },
+  "soft wood": {
+    "p038r_4": "Amber"
+  },
+  "willow stick": {
+    "p038r_4": "Amber"
+  },
+  "tripoli of brittany": {
+    "p038r_4": "Amber"
+  },
+  "wheel of soft wood": {
+    "p038r_4": "Amber"
+  },
+  "dyers’ vat": {
+    "p039r_2": "Pastel woad"
+  },
+  "iron shovels": {
+    "p039r_2": "Pastel woad"
+  },
+  "steel awl": {
+    "p039v_3": "Tracing some history on glass"
+  },
+  "linen cloths": {
+    "p039v_3": "Tracing some history on glass"
+  },
+  "à vent bellows furnace": {
+    "p040v_2": "Latten and calamine"
+  },
+  "top grate": {
+    "p040v_4": "Aquafortis"
+  },
+  "bottom grate": {
+    "p040v_4": "Aquafortis"
+  },
+  "mold of earth": {
+    "p042r_1": "Founder"
+  },
+  "piece of glass": {
+    "p042v_1": "Pounced design for scratching satin"
+  },
+  "sublimatorio di vetro": {
+    "p043r_3": "Purpurine"
+  },
+  "small flat stick": {
+    "p044v_1": "Horsehair sieves"
+  },
+  "flaming red tile": {
+    "p044v_2": "Excellent water against the plague of Monsieur de Montorsin"
+  },
+  "little ramrod": {
+    "p045v_1": "Loading an arquebus"
+  },
+  "smooth &amp; well-leveled table": {
+    "p045v_2": "For adjusting a crooked cannon"
+  },
+  "very smooth string without knots": {
+    "p045v_2": "For adjusting a crooked cannon"
+  },
+  "walnut shell": {
+    "p046r_1": "For the teeth, oil of sulfur"
+  },
+  "small burin": {
+    "p046r_1": "For the teeth, oil of sulfur"
+  },
+  "writing quill": {
+    "p046v_2": "Shoemaker",
+    "p046v_3": "Erasing a letter"
+  },
+  "those for glassmakers": {
+    "p047v_2": "Founding"
+  },
+  "crucibles for melting metal": {
+    "p047v_2": "Founding"
+  },
+  "tammy cloth": {
+    "p048r_3": "Excellent mustard"
+  },
+  "mold made of canvas": {
+    "p048r_4": "Keeping birds and animals"
+  },
+  "varnished earthenware pot": {
+    "p048v_1": "Extraction of regulus"
+  },
+  "pick of wood or iron": {
+    "p048v_1": "Extraction of regulus"
+  },
+  "flat tile": {
+    "p048v_1": "Extraction of regulus"
+  },
+  "square tile": {
+    "p048v_2": "Lead, tin"
+  },
+  "copper mold": {
+    "p048v_2": "Lead, tin",
+    "p049r_1": "Casting of lead"
+  },
+  "stone molds": {
+    "p048v_2": "Lead, tin"
+  },
+  "copper molds engraved with a burin": {
+    "p049r_4": "Pewterers"
+  },
+  "resin candles": {
+    "p049r_4": "Pewterers"
+  },
+  "tin molds": {
+    "p049r_4": "Pewterers"
+  },
+  "quite pointy feather": {
+    "p049v_1": "Birds"
+  },
+  "cleft stick": {
+    "p049v_2": "Grain of lead"
+  },
+  "playing card": {
+    "p049v_2": "Grain of lead"
+  },
+  "vat full of water": {
+    "p050r_1": "Keeping fruit for the entire year"
+  },
+  "glass ampul": {
+    "p050r_1": "Keeping fruit for the entire year"
+  },
+  "quite even &amp; table": {
+    "p050r_1": "Keeping fruit for the entire year"
+  },
+  "bottom of a glass": {
+    "p051r_1": "Counterproofing"
+  },
+  "wet napkins": {
+    "p051r_2": "Cutters of printing plates"
+  },
+  "sheets of paper": {
+    "p051r_2": "Cutters of printing plates"
+  },
+  "copper plates": {
+    "p051r_2": "Cutters of printing plates"
+  },
+  "piece of white paper": {
+    "p051r_2": "Cutters of printing plates"
+  },
+  "piece of paper": {
+    "p051r_2": "Cutters of printing plates",
+    "p089v_1": "Sal ammoniac and alabaster"
+  },
+  "small smooth table": {
+    "p051r_2": "Cutters of printing plates"
+  },
+  "wood block": {
+    "p051r_2": "Cutters of printing plates"
+  },
+  "printing plates": {
+    "p051r_2": "Cutters of printing plates"
+  },
+  "wood blocks": {
+    "p051r_2": "Cutters of printing plates"
+  },
+  "large glass mattras": {
+    "p052r_1": "The work done in Algiers"
+  },
+  "earthen jug": {
+    "p052r_1": "The work done in Algiers"
+  },
+  "chafing dishes &amp; with glowing charcoal": {
+    "p053v_1": "Silkworms"
+  },
+  "feather cushions": {
+    "p053v_1": "Silkworms"
+  },
+  "fir box": {
+    "p053v_1": "Silkworms"
+  },
+  "high shelves": {
+    "p053v_1": "Silkworms"
+  },
+  "white linen": {
+    "p053v_1": "Silkworms"
+  },
+  "sieve made of strings": {
+    "p054v_1": "On dry preserves"
+  },
+  "lit hay": {
+    "p054v_4": "For disguising a horse"
+  },
+  "long stick": {
+    "p055r_4": "Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits"
+  },
+  "big cauldron": {
+    "p056r_1": "Excellent tempering bath for cuirass bodies"
+  },
+  "dung heap": {
+    "p056v_1": "Painter",
+    "p076r_1": "For making wood green"
+  },
+  "small even board": {
+    "p057v_1": "Sheath maker"
+  },
+  "fabric of cambray": {
+    "p057v_2": "Painter"
+  },
+  "handle of paintbrushes": {
+    "p058v_5": "Paintbrushes"
+  },
+  "very thin paintbrushes which have a firm point": {
+    "p058v_5": "Paintbrushes"
+  },
+  "small rods to rest their hand when they are painting": {
+    "p058v_5": "Paintbrushes"
+  },
+  "knife point": {
+    "p058v_5": "Paintbrushes"
+  },
+  "tip of a knife": {
+    "p059v_6": "Mending the cracks in a panel"
+  },
+  "oil paintbrush": {
+    "p060v_3": "Spike lavender oil"
+  },
+  "tip of the paintbrushes": {
+    "p060v_5": "Work of the Flemish"
+  },
+  "point of the paintbrush &amp; the rest with the flat part": {
+    "p061r_2": "Rounding off"
+  },
+  "point of the dry &amp; flattened paintbrush": {
+    "p061r_2": "Rounding off"
+  },
+  "big bottle": {
+    "p061v_1": "Water to give light for the painter"
+  },
+  "paintbrushes composed of two or three rat whiskers": {
+    "p061v_2": "Frames of the Germans"
+  },
+  "fairly large paintbrush": {
+    "p061v_3": "Azur d’esmail in oil"
+  },
+  "tip of the paintbrush": {
+    "p061v_3": "Azur d’esmail in oil"
+  },
+  "plumb lines": {
+    "p062v_2": "Perspective"
+  },
+  "judgement of the eye": {
+    "p062v_2": "Perspective"
+  },
+  "tip of another ruler": {
+    "p062v_2": "Perspective"
+  },
+  "molds of iron &amp; copper": {
+    "p063r_3": "Casting"
+  },
+  "crystal glass mirror": {
+    "p065r_3": "Mirror"
+  },
+  "oil paintbrushes": {
+    "p065v_7": "Imprimatura"
+  },
+  "paintbrushes for oil": {
+    "p066r_5": "Gilding molding for panels with or mat",
+    "p066r_6": "* Or mat"
+  },
+  "linen cloths soaked with water from a honey beehive": {
+    "p066v_1": "For preventing teats from swelling d or to diminish overly large ones"
+  },
+  "square files": {
+    "p067v_1": "Files"
+  },
+  "soft files": {
+    "p067v_1": "Files"
+  },
+  "wax candle": {
+    "p068r_3": "Casting"
+  },
+  "frame mold": {
+    "p068r_3": "Casting"
+  },
+  "mortar of metal, or better yet, of iron": {
+    "p068r_3": "Casting"
+  },
+  "double sieve": {
+    "p069r_2": "Sand",
+    "p083r_6": "Excellent sand",
+    "p085v_4": "Experimented sands",
+    "p087v_3": "Sand of the mine of Thoulouse",
+    "p088v_1": "Sand from pulverised rock salt and sand from the mine finely ground on marble",
+    "p090r_1": "Sal ammoniac and iron dross"
+  },
+  "linen sleeve": {
+    "p069r_2": "Sand"
+  },
+  "burning paper": {
+    "p071r_3": "Mulled and sugared wine"
+  },
+  "tin pot": {
+    "p071r_3": "Mulled and sugared wine"
+  },
+  "chafing dish": {
+    "p071v_1": "Varnish",
+    "p088r_3": "Varnish"
+  },
+  "small stick split and quartered at the tip": {
+    "p071v_1": "Varnish"
+  },
+  "latten wirebrush": {
+    "p072r_2": "Casting in copper"
+  },
+  "crooked iron": {
+    "p072r_2": "Casting in copper"
+  },
+  "tin dish": {
+    "p072v_1": "Casting"
+  },
+  "shirt sleeve": {
+    "p072v_1": "Casting"
+  },
+  "well smooth table": {
+    "p072v_1": "Casting"
+  },
+  "iron mortar": {
+    "p073r_5": "For making bronze in gold color",
+    "p078v_1": "For making bronze in the color of steel",
+    "p101r_1": "Topaz"
+  },
+  "small tile oven": {
+    "p073v_4": "Color of burnished copper"
+  },
+  "earthen pot": {
+    "p074r_3": "For making varnish",
+    "p077v_1": "Another approved varnish",
+    "p077v_3": "Another varnish",
+    "p079r_3": "For making bronze in the color of gold"
+  },
+  "cloth that should be rather tight": {
+    "p074r_3": "For making varnish"
+  },
+  "spatula of wood": {
+    "p074v_3": "Recipe for white gum"
+  },
+  "glass vial": {
+    "p075r_4": "For making aquafortis",
+    "p076v_1": "For making very beautiful color of gold &amp; of little expense",
+    "p077r_4": "Recipe for making bronze and varnish of many sorts",
+    "p078r_1": "Another varnish"
+  },
+  "wolf’s tooth": {
+    "p075v_3": "For gilding with or moleu"
+  },
+  "earthen vessel": {
+    "p078r_3": "For making green trwood",
+    "p108r_2": "Spalt"
+  },
+  "tooth of a wolf or dog": {
+    "p078v_1": "For making bronze in the color of steel",
+    "p078v_2": "For making bronze in the color of gold"
+  },
+  "stone mortar": {
+    "p078v_2": "For making bronze in the color of gold"
+  },
+  "white cloth": {
+    "p079r_2": "For making water for disease of the eyes"
+  },
+  "very clean glass": {
+    "p079r_2": "For making water for disease of the eyes"
+  },
+  "reinforced firkin": {
+    "p080r_1": "Petard"
+  },
+  "table is quite even": {
+    "p080v_1": "Founders of small works  of tin"
+  },
+  "a bit of cork": {
+    "p080v_1": "Founders of small works  of tin"
+  },
+  "very fine linen": {
+    "p081r_1": "Sand"
+  },
+  "iron or metal pot": {
+    "p081r_3": "Plaster"
+  },
+  "iron rod": {
+    "p081r_3": "Plaster",
+    "p097r_2": "Gilding"
+  },
+  "sharp point": {
+    "p082r_4": "Clockmakers"
+  },
+  "lead mold": {
+    "p082v_2": "Casting lead in lead"
+  },
+  "iron slab": {
+    "p082v_4": "Method of casting in bronze"
+  },
+  "wood stick": {
+    "p082v_4": "Method of casting in bronze"
+  },
+  "common sieve": {
+    "p084r_5": "Sand from a mine in Thoulouse"
+  },
+  "copper kettle": {
+    "p084r_5": "Sand from a mine in Thoulouse"
+  },
+  "very clean &amp; smooth table": {
+    "p084v_4": "Sand for lead, the most excellent of all, for high and low reliefs"
+  },
+  "small bristle brushes of pig": {
+    "p084v_4": "Sand for lead, the most excellent of all, for high and low reliefs"
+  },
+  "earthen pots": {
+    "p085r_2": "Glue"
+  },
+  "the apothecaries’ double": {
+    "p085v_4": "Experimented sands"
+  },
+  "iron pestle": {
+    "p088r_2": "Mortars"
+  },
+  "fine copper mortars": {
+    "p088r_2": "Mortars"
+  },
+  "metal mortar": {
+    "p088r_2": "Mortars"
+  },
+  "large mortars": {
+    "p088r_2": "Mortars"
+  },
+  "boulting cloth of rough cloth or canvas": {
+    "p088r_5": "Baker"
+  },
+  "sleeve of a shirt": {
+    "p088v_1": "Sand from pulverised rock salt and sand from the mine finely ground on marble"
+  },
+  "bronze mortar": {
+    "p090r_1": "Sal ammoniac and iron dross",
+    "p100v_1": "Gemstones"
+  },
+  "mustard mill": {
+    "p090v_1": "Terre fondue of potters"
+  },
+  "square wooden cases": {
+    "p090v_2": "Orange trees"
+  },
+  "counter bone": {
+    "p091r_2": "Molding with cuttlefish bone"
+  },
+  "hooked rooftile": {
+    "p091r_2": "Molding with cuttlefish bone"
+  },
+  "shards of wood": {
+    "p091r_2": "Molding with cuttlefish bone"
+  },
+  "hands joined between your two knees": {
+    "p091r_2": "Molding with cuttlefish bone"
+  },
+  "dish of fine tin": {
+    "p092r_1": "Sand Mixture easy to melt"
+  },
+  "hollow crucible": {
+    "p092v_2": "Congealing mercury"
+  },
+  "polished knife": {
+    "p093v_3": "Violet and lake"
+  },
+  "spinning wheel": {
+    "p094r_1": "Furbisher"
+  },
+  "small iron tool": {
+    "p094r_1": "Furbisher"
+  },
+  "joiners’ bench": {
+    "p094r_1": "Furbisher"
+  },
+  "stick of the fustée": {
+    "p094r_1": "Furbisher"
+  },
+  "dry chalk": {
+    "p094r_1": "Furbisher"
+  },
+  "baton à felinder": {
+    "p094r_1": "Furbisher"
+  },
+  "fresil stick": {
+    "p094r_1": "Furbisher"
+  },
+  "farriers’ forge": {
+    "p094r_1": "Furbisher"
+  },
+  "round plane, also mounted with two handles": {
+    "p094r_1": "Furbisher"
+  },
+  "knife with two handles": {
+    "p094r_1": "Furbisher"
+  },
+  "baston a felinder": {
+    "p094r_1": "Furbisher"
+  },
+  "dog skin": {
+    "p094r_1": "Furbisher"
+  },
+  "small narrow plane": {
+    "p094r_1": "Furbisher"
+  },
+  "black stone": {
+    "p094r_1": "Furbisher"
+  },
+  "scabbard bench": {
+    "p094r_1": "Furbisher"
+  },
+  "pulverized emery": {
+    "p094r_1": "Furbisher"
+  },
+  "thunder stone": {
+    "p094r_1": "Furbisher"
+  },
+  "iron wire": {
+    "p094r_1": "Furbisher",
+    "p107r_1": "Catching lizards and snakes",
+    "p121v_2": "Silver for casting",
+    "p122r_1": "Arranging various animals",
+    "p123r_1": "A means di far correr lotnegra",
+    "p127v_1": "Founders’ earth",
+    "p134v_2": "For gold casts in large works",
+    "p145v_1": "Molding plants and flowers",
+    "p157v_2": "Molding a bird"
+  },
+  "joiner’s plane": {
+    "p094r_1": "Furbisher"
+  },
+  "sharpening stone": {
+    "p094r_1": "Furbisher"
+  },
+  "halberd point": {
+    "p094r_1": "Furbisher"
+  },
+  "cauldron full of ashes": {
+    "p096v_1": "Grey guards"
+  },
+  "soft file": {
+    "p096v_2": "Color of water"
+  },
+  "furbishers’ furnace": {
+    "p096v_3": "Yellow varnish"
+  },
+  "white linen cloth": {
+    "p097r_2": "Gilding"
+  },
+  "soft, very soft, file": {
+    "p097r_2": "Gilding"
+  },
+  "very fine sieve": {
+    "p097v_1": "Mastic varnish dry in a half hour"
+  },
+  "varnished bowl": {
+    "p097v_1": "Mastic varnish dry in a half hour"
+  },
+  "pruning knife": {
+    "p098r_2": "Borders of a garden"
+  },
+  "iron stake": {
+    "p098r_2": "Borders of a garden"
+  },
+  "head of a nail": {
+    "p098r_3": "Locksmith"
+  },
+  "small stick wrapped in tow": {
+    "p098r_3": "Locksmith"
+  },
+  "mortar of glass": {
+    "p100r_3": "Gemstones",
+    "p100v_2": "For ruby take some gold leaf"
+  },
+  "mortar of wood": {
+    "p100r_3": "Gemstones"
+  },
+  "slab of glass": {
+    "p100r_3": "Gemstones"
+  },
+  "mortar of thick glass": {
+    "p100r_3": "Gemstones"
+  },
+  "little furnace": {
+    "p100r_4": "Vitrified saltpeter"
+  },
+  "hot tile or coal shovel": {
+    "p100r_4": "Vitrified saltpeter"
+  },
+  "glowing coals": {
+    "p100r_5": "Windows that the sun will not pass"
+  },
+  "kettle of pure copper": {
+    "p100v_1": "Gemstones"
+  },
+  "totally pure copper mortar": {
+    "p100v_1": "Gemstones"
+  },
+  "pestle of pure copper": {
+    "p100v_1": "Gemstones"
+  },
+  "thick rounded squares": {
+    "p100v_2": "For ruby take some gold leaf"
+  },
+  "copper mortar": {
+    "p101r_1": "Topaz"
+  },
+  "glass mortar": {
+    "p101v_2": "Topaz"
+  },
+  "steel ver f mortar": {
+    "p101v_2": "Topaz"
+  },
+  "cloth strainer": {
+    "p101v_4": "Gum ammoniac"
+  },
+  "terrines without lead": {
+    "p102r_1": "Provisions for the work of Colchis"
+  },
+  "unleaded pots": {
+    "p102r_1": "Provisions for the work of Colchis"
+  },
+  "pots with a lid": {
+    "p102r_2": "For the furnace"
+  },
+  "pipes of fer blanc": {
+    "p102r_2": "For the furnace"
+  },
+  "glass vessel": {
+    "p102r_4": "Glass vessels"
+  },
+  "dutch quill": {
+    "p102r_4": "Glass vessels"
+  },
+  "glass vessels": {
+    "p102r_4": "Glass vessels"
+  },
+  "substance of wine": {
+    "p102v_2": "Infusion of anthos or rosemary"
+  },
+  "new wooden spatula": {
+    "p103r_1": "Against burns, excellent"
+  },
+  "fine linen cloth": {
+    "p103r_1": "Against burns, excellent"
+  },
+  "wet linen cloth": {
+    "p103r_1": "Against burns, excellent"
+  },
+  "ear picker": {
+    "p103v_4": "Earwax"
+  },
+  "glass globe or jar": {
+    "p103v_5": "Enamels"
+  },
+  "crystal mirror": {
+    "p103v_5": "Enamels"
+  },
+  "very sharp penknife": {
+    "p105r_4": "Gardening",
+    "p150v_1": "Molding hollow"
+  },
+  "very soft thread": {
+    "p105r_4": "Gardening"
+  },
+  "slip of linen": {
+    "p105r_4": "Gardening"
+  },
+  "kneading troughs": {
+    "p105v_3": "Catching nightingales See the 15th folio after this."
+  },
+  "device of little crossed sticks": {
+    "p105v_3": "Catching nightingales See the 15th folio after this."
+  },
+  "small wooden pin": {
+    "p105v_4": "Nightingale"
+  },
+  "green cloth": {
+    "p105v_5": "Nightingale"
+  },
+  "iron presses": {
+    "p106v_1": "Casting in gold"
+  },
+  "wire of the same metal that they cast": {
+    "p107r_1": "Catching lizards and snakes"
+  },
+  "woollen cloth": {
+    "p107r_1": "Catching lizards and snakes"
+  },
+  "glassmaker’s fournaise": {
+    "p107r_1": "Catching lizards and snakes"
+  },
+  "fornaise of those who make pots": {
+    "p108r_2": "Spalt"
+  },
+  "fourneau à vent": {
+    "p108r_2": "Spalt",
+    "p135v_1": "Casting in ☼"
+  },
+  "surrounded with bricks": {
+    "p108r_2": "Spalt"
+  },
+  "twisted cord of the saw": {
+    "p109v_1": "Toad"
+  },
+  "archal wire": {
+    "p109v_2": "Killing snakes for molding"
+  },
+  "blade of iron reddened in the fire": {
+    "p110v_2": "Wheat oil"
+  },
+  "noyau molds": {
+    "p111r_1": "Reheating molds",
+    "p115v_3": "Reheating the noyau molds",
+    "p118v_1": "Casting in frames",
+    "p158v_3": "Candle smoke"
+  },
+  "frame molds": {
+    "p111r_1": "Reheating molds",
+    "p115v_3": "Reheating the noyau molds",
+    "p170r_4": "Molds"
+  },
+  "molds for casting latten": {
+    "p111r_2": "Latten smoke"
+  },
+  "blade of lead": {
+    "p111r_4": "Clay earth"
+  },
+  "wooden spoon": {
+    "p112r_1": "For tempering sand",
+    "p113r_1": "Tempering the sand and molding the first cast"
+  },
+  "large oil paintbrushes": {
+    "p112r_1": "For tempering sand"
+  },
+  "feather quills": {
+    "p112r_1": "For tempering sand"
+  },
+  "lead bowl": {
+    "p112r_1": "For tempering sand"
+  },
+  "clean bottle or vessel": {
+    "p112r_4": "Putting to death the animal for molding"
+  },
+  "round stick, which pastry makers": {
+    "p112v_1": "For molding Making the arrangement and disposition of the animal"
+  },
+  "points of iron wire": {
+    "p112v_1": "For molding Making the arrangement and disposition of the animal",
+    "p129v_1": "Animals dried in the oven for a long time",
+    "p133r_3": "Marks from the points of iron wire which are found on the head of the animal"
+  },
+  "solid plank or table": {
+    "p112v_1": "For molding Making the arrangement and disposition of the animal"
+  },
+  "small curved instrument": {
+    "p112v_1": "For molding Making the arrangement and disposition of the animal"
+  },
+  "point of iron": {
+    "p112v_1": "For molding Making the arrangement and disposition of the animal"
+  },
+  "fine needle of steel": {
+    "p112v_1": "For molding Making the arrangement and disposition of the animal"
+  },
+  "point of an iron wire": {
+    "p112v_1": "For molding Making the arrangement and disposition of the animal"
+  },
+  "points of iron": {
+    "p112v_1": "For molding Making the arrangement and disposition of the animal"
+  },
+  "bowls of different size, which have a lip": {
+    "p113r_1": "Tempering the sand and molding the first cast"
+  },
+  "bowl of leaded earth": {
+    "p113r_1": "Tempering the sand and molding the first cast"
+  },
+  "small flat pincers": {
+    "p114r_1": "Second Cast"
+  },
+  "rough linen cloth": {
+    "p114r_1": "Second Cast"
+  },
+  "brushes of pig bristle": {
+    "p114r_1": "Second Cast"
+  },
+  "delicate points of of fil cist cittern strings": {
+    "p114r_1": "Second Cast"
+  },
+  "point of a hot iron wire": {
+    "p114r_1": "Second Cast",
+    "p129v_4": "Spider molded on a leaf"
+  },
+  "small point": {
+    "p115r_1": "Make the cast, reheat the molds, &amp;c Note about everything above |-|",
+    "p150v_1": "Molding hollow"
+  },
+  "reheated molds": {
+    "p115v_3": "Reheating the noyau molds"
+  },
+  "little bellows": {
+    "p115v_3": "Reheating the noyau molds",
+    "p132r_2": "Method for reheating the molds",
+    "p135v_1": "Casting in ☼",
+    "p139r_1": "Casts of lead and tin",
+    "p164r_4": "Blowing"
+  },
+  "tempered sand mold": {
+    "p116r_1": "Molding bouquets, plants, and flowers"
+  },
+  "barrels filled with earth &amp; covered with manure": {
+    "p116v_1": "Molding snakes in all weather"
+  },
+  "tip of your finger": {
+    "p116v_2": "Mixture of tin and lead",
+    "p163r_1": "Perfumer"
+  },
+  "wire stem": {
+    "p117r_1": "A means of molding flowers and plants"
+  },
+  "small sticks": {
+    "p117r_1": "A means of molding flowers and plants"
+  },
+  "wax peg": {
+    "p117r_1": "A means of molding flowers and plants"
+  },
+  "bottle of water": {
+    "p117r_1": "A means of molding flowers and plants"
+  },
+  "mold en noyau": {
+    "p117r_1": "A means of molding flowers and plants"
+  },
+  "soft brush": {
+    "p117v_1": "For making the ashes of flowers and plants leave molds"
+  },
+  "wire drawing plate": {
+    "p117v_1": "For making the ashes of flowers and plants leave molds"
+  },
+  "cut paintbrush": {
+    "p117v_1": "For making the ashes of flowers and plants leave molds"
+  },
+  "iron wire wrapped in cotton": {
+    "p117v_1": "For making the ashes of flowers and plants leave molds"
+  },
+  "vessel filled with ashes or sand": {
+    "p118r_2": "For removing flashing and barbs from things molded à noyau"
+  },
+  "good pot of water": {
+    "p118v_1": "Casting in frames"
+  },
+  "small brushes": {
+    "p118v_1": "Casting in frames"
+  },
+  "bottle in which one boils tisane": {
+    "p118v_1": "Casting in frames"
+  },
+  "bottle of common water": {
+    "p118v_1": "Casting in frames"
+  },
+  "trivets of iron": {
+    "p118v_1": "Casting in frames"
+  },
+  "tallow candle": {
+    "p118v_1": "Casting in frames"
+  },
+  "silver spoonfuls": {
+    "p118v_1": "Casting in frames"
+  },
+  "large frame": {
+    "p118v_1": "Casting in frames"
+  },
+  "fornaise of the potters": {
+    "p119v_1": "Fashion of preparing a spalt spat"
+  },
+  "sheet of tin": {
+    "p120r_1": "Medals stamped from wax"
+  },
+  "glassmaker’s fornaise": {
+    "p120r_2": "Sand for casting in gold"
+  },
+  "flat box": {
+    "p120r_2": "Sand for casting in gold"
+  },
+  "green fabric": {
+    "p120r_3": "IlNightingale"
+  },
+  "small pointed stick": {
+    "p120r_3": "IlNightingale"
+  },
+  "barrel full of earth": {
+    "p120r_3": "IlNightingale"
+  },
+  "well sealed vessel": {
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "horsehair sieve": {
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "big vessels": {
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "glass boxes": {
+    "p121r_1": "For keeping fruits all year"
+  },
+  "vat, or in a cos of earth full of water": {
+    "p121r_1": "For keeping fruits all year"
+  },
+  "glass bottles": {
+    "p121r_1": "For keeping fruits all year"
+  },
+  "earthenware bowl, from which the peasants eat their soup": {
+    "p121v_1": "For casting in silver"
+  },
+  "good lute": {
+    "p121v_2": "Silver for casting"
+  },
+  "point of a penknife": {
+    "p122r_1": "Arranging various animals"
+  },
+  "thick needle": {
+    "p122r_1": "Arranging various animals"
+  },
+  "tip of a hot iron wire": {
+    "p122r_1": "Arranging various animals"
+  },
+  "end of a iron wire, that is hot": {
+    "p122r_2": "Flower in the mouth of the snake"
+  },
+  "clay slab": {
+    "p122v_2": "Molding hollow",
+    "p126r_1": "Molding fruits and animals in sugar",
+    "p129v_4": "Spider molded on a leaf",
+    "p130r_3": "Molding a single spider",
+    "p130r_4": "Molding a single vine leaf",
+    "p131r_2": "Letters and molded paper",
+    "p133v_3": "Various animals entwined",
+    "p135r_3": "Vine leaf and small frog",
+    "p141r_1": "Molding a crayfish",
+    "p142v_1": "Molding grasshoppers and things too thin",
+    "p144r_1": "Turtles",
+    "p145v_2": "",
+    "p152r_1": "Molding a rat",
+    "p157r_5": "Flies",
+    "p157v_2": "Molding a bird",
+    "p169v_2": "Reducing a round figure to a hollow form"
+  },
+  "good crucible": {
+    "p123r_1": "A means di far correr lotnegra"
+  },
+  "good tile": {
+    "p123r_1": "A means di far correr lotnegra"
+  },
+  "glued to the quarton": {
+    "p124r_3": "Spider’s web"
+  },
+  "hot iron wire": {
+    "p124v_3": "A means to make the gate for small female lizards",
+    "p129v_4": "Spider molded on a leaf",
+    "p133r_3": "Marks from the points of iron wire which are found on the head of the animal",
+    "p133v_3": "Various animals entwined"
+  },
+  "end of the hot iron wire": {
+    "p124v_3": "A means to make the gate for small female lizards"
+  },
+  "plaster molds": {
+    "p125r_1": "Plaster"
+  },
+  "plaster mold": {
+    "p125v_3": "Plaster for casting in wax",
+    "p126r_1": "Molding fruits and animals in sugar"
+  },
+  "circle of earth": {
+    "p126v_3": "Plants difficult to burn in the noyau",
+    "p129v_4": "Spider molded on a leaf"
+  },
+  "molds of plaster": {
+    "p127r_1": "Molds of plaster for wax"
+  },
+  "mold of plaster": {
+    "p127r_1": "Molds of plaster for wax"
+  },
+  "well reddened mold": {
+    "p128r_1": "Casting in silver and gold"
+  },
+  "well melted silver": {
+    "p128r_1": "Casting in silver and gold"
+  },
+  "small bellows": {
+    "p128r_1": "Casting in silver and gold",
+    "p135v_1": "Casting in ☼"
+  },
+  "coarse linen": {
+    "p129r_3": "Viper color"
+  },
+  "slab of earth": {
+    "p129v_1": "Animals dried in the oven for a long time"
+  },
+  "point of iron or latten wire": {
+    "p129v_4": "Spider molded on a leaf"
+  },
+  "small points of latten wire": {
+    "p129v_4": "Spider molded on a leaf"
+  },
+  "small rings of iron wire": {
+    "p130r_1": "Animals dried in an oven"
+  },
+  "small board": {
+    "p130r_1": "Animals dried in an oven"
+  },
+  "balls of lead or of wax": {
+    "p130r_1": "Animals dried in an oven"
+  },
+  "iron points": {
+    "p130r_1": "Animals dried in an oven",
+    "p134r_1": "For mending a pierced mold",
+    "p144r_1": "Turtles",
+    "p165v_1": "Stance of animals"
+  },
+  "points of fine iron latten wire": {
+    "p130r_4": "Molding a single vine leaf"
+  },
+  "quite flat slate": {
+    "p131r_3": "For adorning beds, mirrors, and suchlike"
+  },
+  "iron point": {
+    "p133r_3": "Marks from the points of iron wire which are found on the head of the animal",
+    "p152r_1": "Molding a rat",
+    "p156v_1": "Molding a fly"
+  },
+  "small molds": {
+    "p133v_1": "Bubbles and little holes which are found in the mold"
+  },
+  "little points": {
+    "p133v_2": "Thing that does not release"
+  },
+  "slabs of wax": {
+    "p133v_3": "Various animals entwined"
+  },
+  "earthen slab": {
+    "p133v_3": "Various animals entwined",
+    "p164v_1": "Molds",
+    "p165v_1": "Stance of animals"
+  },
+  "little bands": {
+    "p134v_2": "For gold casts in large works"
+  },
+  "big molds": {
+    "p135r_2": "Gate"
+  },
+  "small bristle brushes": {
+    "p135r_3": "Vine leaf and small frog"
+  },
+  "small points": {
+    "p135r_3": "Vine leaf and small frog",
+    "p155v_1": "Rose"
+  },
+  "small &amp; large bellows": {
+    "p135v_1": "Casting in ☼"
+  },
+  "brim of a burin": {
+    "p136r_1": "DEsm Enamelling thin works"
+  },
+  "cloth, soaked in pig fat, mixed with saltpeter or sal ammoniac": {
+    "p136v_1": "For casting in latten"
+  },
+  "stalk of copper or iron": {
+    "p136v_1": "For casting in latten"
+  },
+  "flat pincers of iron wire": {
+    "p137r_3": "Clamps"
+  },
+  "point of an oiled paintbrush": {
+    "p137v_1": "Tempering sand for molds of flat medals"
+  },
+  "point of a knife": {
+    "p137v_1": "Tempering sand for molds of flat medals",
+    "p141r_1": "Molding a crayfish",
+    "p145v_1": "Molding plants and flowers"
+  },
+  "fresh clay slab": {
+    "p137v_1": "Tempering sand for molds of flat medals"
+  },
+  "knife points": {
+    "p137v_1": "Tempering sand for molds of flat medals"
+  },
+  "steel mortar": {
+    "p138v_1": "Talcum mixed in the molds"
+  },
+  "things that withstand the fire": {
+    "p138v_2": "Gold cast very thinly"
+  },
+  "small finishing hammer": {
+    "p138v_3": "Counterfeit diamonds put in a work"
+  },
+  "large molds": {
+    "p139r_1": "Casts of lead and tin"
+  },
+  "point of gold or hard wood": {
+    "p139r_1": "Casts of lead and tin"
+  },
+  "adapted carton": {
+    "p139r_1": "Casts of lead and tin"
+  },
+  "very tight presses": {
+    "p139r_1": "Casts of lead and tin"
+  },
+  "sheets of copper": {
+    "p139r_1": "Casts of lead and tin"
+  },
+  "stirrup or screw of iron": {
+    "p139r_1": "Casts of lead and tin"
+  },
+  "square pots": {
+    "p139r_1": "Casts of lead and tin"
+  },
+  "little stick": {
+    "p139v_1": "Cast of wax to represent an animal that one has not got"
+  },
+  "mold à noyau": {
+    "p139v_1": "Cast of wax to represent an animal that one has not got"
+  },
+  "bowl with handles": {
+    "p139v_1": "Cast of wax to represent an animal that one has not got"
+  },
+  "hot penknife": {
+    "p139v_1": "Cast of wax to represent an animal that one has not got"
+  },
+  "hot slate": {
+    "p139v_1": "Cast of wax to represent an animal that one has not got"
+  },
+  "mold which is of white plaster": {
+    "p139v_1": "Cast of wax to represent an animal that one has not got"
+  },
+  "iron wire point": {
+    "p141r_1": "Molding a crayfish",
+    "p150v_1": "Molding hollow"
+  },
+  "little hot iron": {
+    "p141r_1": "Molding a crayfish"
+  },
+  "little brushes": {
+    "p141r_1": "Molding a crayfish",
+    "p164r_2": "Repairing flashing"
+  },
+  "slab of yellow potter’s earth": {
+    "p141r_1": "Molding a crayfish"
+  },
+  "little chaples": {
+    "p141r_1": "Molding a crayfish"
+  },
+  "appropriate thing": {
+    "p141r_1": "Molding a crayfish"
+  },
+  "little pincers": {
+    "p144r_1": "Turtles",
+    "p145v_1": "Molding plants and flowers"
+  },
+  "circle of clay": {
+    "p144r_1": "Turtles",
+    "p155r_1": "Molding a rose"
+  },
+  "band of clay": {
+    "p144r_1": "Turtles"
+  },
+  "half mold": {
+    "p144r_1": "Turtles"
+  },
+  "clay entredeux": {
+    "p144r_1": "Turtles"
+  },
+  "strong point": {
+    "p144r_1": "Turtles"
+  },
+  "iron wire points": {
+    "p144r_1": "Turtles"
+  },
+  "clay entredeulx": {
+    "p144r_1": "Turtles"
+  },
+  "fresh clay": {
+    "p144r_1": "Turtles"
+  },
+  "bronze mortars": {
+    "p145r_1": "Casting in three frames"
+  },
+  "large square filee": {
+    "p145r_2": "Cuttlefish bone"
+  },
+  "smooth wood": {
+    "p145r_2": "Cuttlefish bone"
+  },
+  "small points of wood": {
+    "p145r_2": "Cuttlefish bone"
+  },
+  "little piece of twisted paper": {
+    "p145r_2": "Cuttlefish bone"
+  },
+  "long glass": {
+    "p145v_1": "Molding plants and flowers"
+  },
+  "small hog bristle brushes": {
+    "p145v_1": "Molding plants and flowers",
+    "p163v_3": "Repairing"
+  },
+  "thin thread": {
+    "p145v_1": "Molding plants and flowers"
+  },
+  "clay slabs": {
+    "p145v_1": "Molding plants and flowers"
+  },
+  "flat molds": {
+    "p145v_1": "Molding plants and flowers"
+  },
+  "clay closure": {
+    "p145v_1": "Molding plants and flowers"
+  },
+  "large paintbrush": {
+    "p145v_1": "Molding plants and flowers"
+  },
+  "au en bowl": {
+    "p145v_1": "Molding plants and flowers"
+  },
+  "points of hot, thick iron wire": {
+    "p146v_1": "Molding turtles"
+  },
+  "entredeulx of clay": {
+    "p146v_1": "Molding turtles"
+  },
+  "points of rather strong iron": {
+    "p146v_1": "Molding turtles"
+  },
+  "clay circle": {
+    "p146v_1": "Molding turtles",
+    "p150v_1": "Molding hollow"
+  },
+  "clay contour": {
+    "p146v_1": "Molding turtles",
+    "p153r_2": "Giving the thickness that you wish to a medal"
+  },
+  "point of hot iron": {
+    "p146v_1": "Molding turtles"
+  },
+  "entre deulx of clay": {
+    "p146v_1": "Molding turtles"
+  },
+  "latten skillets, which are beaten &amp; forged thinly": {
+    "p147v_4": "Cast of latten"
+  },
+  "handle of a hammer": {
+    "p148r_2": "Whitening"
+  },
+  "iron case": {
+    "p148r_4": "Crocum ferri",
+    "p161v_1": "Crocum ferri"
+  },
+  "small chisel": {
+    "p148v_1": "Molding turtles",
+    "p150v_1": "Molding hollow",
+    "p159r_2": "Chiseling"
+  },
+  "little gouge": {
+    "p148v_1": "Molding turtles"
+  },
+  "little round cutting-punch": {
+    "p148v_1": "Molding turtles"
+  },
+  "point of a small chisel": {
+    "p148v_1": "Molding turtles"
+  },
+  "small file": {
+    "p148v_1": "Molding turtles",
+    "p150v_1": "Molding hollow",
+    "p163v_3": "Repairing",
+    "p164r_2": "Repairing flashing"
+  },
+  "bad linen": {
+    "p149r_1": "Softening iron and rendering it very soft"
+  },
+  "trip hammers": {
+    "p149r_3": "Various arts from Germany"
+  },
+  "water mills": {
+    "p149r_3": "Various arts from Germany"
+  },
+  "hot iron touching point": {
+    "p150v_1": "Molding hollow"
+  },
+  "small serrated chisels": {
+    "p150v_1": "Molding hollow"
+  },
+  "round cutting-punch": {
+    "p150v_1": "Molding hollow"
+  },
+  "small chisels": {
+    "p150v_1": "Molding hollow",
+    "p152v_1": "Repairing cast things",
+    "p156r_3": "Chasing"
+  },
+  "end of your finger": {
+    "p150v_1": "Molding hollow"
+  },
+  "back of a knife": {
+    "p150v_1": "Molding hollow"
+  },
+  "little small chisels": {
+    "p150v_1": "Molding hollow"
+  },
+  "small cutting-punches": {
+    "p150v_1": "Molding hollow"
+  },
+  "circle of soft clay": {
+    "p150v_1": "Molding hollow"
+  },
+  "common lute": {
+    "p150v_1": "Molding hollow",
+    "p165v_4": "Lute"
+  },
+  "small gouges": {
+    "p150v_1": "Molding hollow"
+  },
+  "iron wires": {
+    "p150v_1": "Molding hollow"
+  },
+  "sparkling hot iron plates": {
+    "p151v_1": "Wheat oil"
+  },
+  "little candle": {
+    "p152r_1": "Molding a rat"
+  },
+  "very thin comb": {
+    "p152r_1": "Molding a rat"
+  },
+  "goldsmith’s table": {
+    "p152v_1": "Repairing cast things"
+  },
+  "delicate plate of lead": {
+    "p152v_1": "Repairing cast things"
+  },
+  "leather cushionet": {
+    "p152v_1": "Repairing cast things"
+  },
+  "latten wire": {
+    "p152v_1": "Repairing cast things"
+  },
+  "glass or smooth slate": {
+    "p153r_1": "Molding hollow for seals or other things"
+  },
+  "sheets of lead &amp; copper": {
+    "p153r_2": "Giving the thickness that you wish to a medal"
+  },
+  "rolling pin": {
+    "p153r_2": "Giving the thickness that you wish to a medal"
+  },
+  "small stick of boxwood": {
+    "p153r_2": "Giving the thickness that you wish to a medal"
+  },
+  "rolling pins": {
+    "p153r_2": "Giving the thickness that you wish to a medal"
+  },
+  "small paintbrush": {
+    "p154v_4": "Reinforcing flowers and delicate things"
+  },
+  "stalk of latten wire": {
+    "p155v_1": "Rose"
+  },
+  "small hot point of iron": {
+    "p155v_1": "Rose"
+  },
+  "ordinary engraving burin": {
+    "p156r_3": "Chasing"
+  },
+  "little paintbrush": {
+    "p156v_1": "Molding a fly"
+  },
+  "hot iron wire point": {
+    "p156v_1": "Molding a fly"
+  },
+  "hot iron point": {
+    "p156v_1": "Molding a fly"
+  },
+  "cuttlefish bones": {
+    "p157r_1": "A means for goldsmiths for molding hollow"
+  },
+  "cotton cloth": {
+    "p157v_2": "Molding a bird"
+  },
+  "sock from the right d foot that has been worn": {
+    "p157v_3": "For making h… wine f…rs"
+  },
+  "fatty vessel": {
+    "p159r_3": "Fish glue"
+  },
+  "wire brush made of wires of latten.": {
+    "p159v_1": "Cleaning files"
+  },
+  "hot charcoal": {
+    "p159v_1": "Cleaning files"
+  },
+  "plates of iron": {
+    "p160r_1": "Press for the large molds"
+  },
+  "small iron pillars": {
+    "p160r_1": "Press for the large molds"
+  },
+  "large wooden presses made with screws": {
+    "p160r_1": "Press for the large molds"
+  },
+  "sheets of iron": {
+    "p160r_1": "Press for the large molds"
+  },
+  "lighted candle": {
+    "p160v_4": "Catching passerines"
+  },
+  "large billet": {
+    "p161r_1": "Preparation of sand for frames"
+  },
+  "thick stick": {
+    "p161r_1": "Preparation of sand for frames"
+  },
+  "common vessel": {
+    "p161r_1": "Preparation of sand for frames"
+  },
+  "long table": {
+    "p161r_1": "Preparation of sand for frames"
+  },
+  "bread oven": {
+    "p161r_1": "Preparation of sand for frames"
+  },
+  "tiler’s oven": {
+    "p161r_1": "Preparation of sand for frames"
+  },
+  "reddened iron shovel": {
+    "p161v_1": "Crocum ferri"
+  },
+  "feather quill": {
+    "p162v_4": "Molds of things that do not release"
+  },
+  "pine nut": {
+    "p163r_1": "Perfumer"
+  },
+  "silver spoon": {
+    "p163r_1": "Perfumer"
+  },
+  "small silver bowl": {
+    "p163r_1": "Perfumer"
+  },
+  "point of a chaple or burin": {
+    "p164r_2": "Repairing flashing"
+  },
+  "side of the burin": {
+    "p164r_2": "Repairing flashing"
+  },
+  "pieces of plump &amp; thick felt": {
+    "p164v_1": "Molds"
+  },
+  "wet sponge": {
+    "p165r_3": "Stretching a canvas picture"
+  },
+  "small pieces points of iron or steel wire": {
+    "p165r_6": "Repairing snakes and lizards"
+  },
+  "spinet string": {
+    "p165v_1": "Stance of animals"
+  },
+  "iron fork made like pincers": {
+    "p167r_1": "Petards"
+  },
+  "large iron pegs": {
+    "p167r_1": "Petards"
+  },
+  "short hooked peg": {
+    "p167r_1": "Petards"
+  },
+  "common iron pegs": {
+    "p167r_1": "Petards"
+  },
+  "thick canvas": {
+    "p167r_1": "Petards"
+  },
+  "strap hinge": {
+    "p167r_1": "Petards"
+  },
+  "iron peg": {
+    "p167r_1": "Petards"
+  },
+  "knife-like saws": {
+    "p167r_1": "Petards"
+  },
+  "gimlets of wheelwrights": {
+    "p167r_1": "Petards"
+  },
+  "little bells": {
+    "p167r_1": "Petards"
+  },
+  "iron fork made in the form of pincers of the height of a man": {
+    "p167r_1": "Petards"
+  },
+  "small iron pincers": {
+    "p167r_1": "Petards"
+  },
+  "thick cloth": {
+    "p167r_1": "Petards"
+  },
+  "iron fork": {
+    "p167r_1": "Petards"
+  },
+  "small peg, hooked like the hinge of a door": {
+    "p167r_1": "Petards"
+  },
+  "large augers": {
+    "p167r_1": "Petards"
+  },
+  "iron rod q made with three claws at the end": {
+    "p167r_1": "Petards"
+  },
+  "large mallet of wood": {
+    "p167r_1": "Petards"
+  },
+  "fork made like pincers": {
+    "p167r_1": "Petards"
+  },
+  "stone from istre": {
+    "p169v_1": "Molding very thin like bimbalotiers do"
+  },
+  "steeled iron": {
+    "p170r_1": "Currency medals"
+  },
+  "relief puncheons": {
+    "p170r_1": "Currency medals"
+  },
+  "thin wire of latten": {
+    "p170r_6": "Cleaning closed molds"
+  },
+  "delicate straw": {
+    "p170r_6": "Cleaning closed molds"
+  },
+  "lateres igniti": {
+    "p170v_3": "For preserving"
+  }
+}

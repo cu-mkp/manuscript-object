@@ -1,0 +1,27 @@
+{
+  "guitar": {
+    "p004r_1": "Varnish of spike lavender oil",
+    "p007r_4": "Fish glue or isinglass and mouth glue"
+  },
+  "spinet": {
+    "p104v_4": "Spinet playing by itself",
+    "p111r_5": "Iron wire",
+    "p156v_1": "Molding a fly",
+    "p157r_5": "Flies",
+    "p165v_1": "Stance of animals"
+  },
+  "cittern": {
+    "p104v_4": "Spinet playing by itself",
+    "p114r_1": "Second Cast"
+  },
+  "mandore": {
+    "p112v_1": "For molding Making the arrangement and disposition of the animal",
+    "p113r_1": "Tempering the sand and molding the first cast",
+    "p114r_1": "Second Cast",
+    "p116r_2": "Molding de en noyau with the same sand, wax images or lead medals and suchlike",
+    "p117r_1": "A means of molding flowers and plants"
+  },
+  "spinets": {
+    "p112v_1": "For molding Making the arrangement and disposition of the animal"
+  }
+}

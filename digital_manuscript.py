@@ -7,14 +7,13 @@ from manuscript_helpers import generate_complete_manuscript
 
 class BnF():
 
-  complete_manuscript = generate_complete_manuscript(complete=False)
-
-  def __init__(self, entry_list = []):
+  def __init__(self, entry_list = [], apply_corrections = True):
     """ Initialize entire manuscript. If a list of IDs is given, narrow it down to them. """
+    complete_manuscript = generate_complete_manuscript(complete=False, apply_corrections=apply_corrections)
     if entry_list:
-      self.entries = [page for page in BnF.complete_manuscript.copy() if page.identity in entry_list]
+      self.entries = [page for page in complete_manuscript if page.identity in entry_list]
     else:
-      self.entries = BnF.complete_manuscript.copy()
+      self.entries = complete_manuscript
 
   def entry(self, identity: str):
     """ Return entry with the given identity. """
@@ -47,9 +46,9 @@ class BnF():
     search_strings = [k for k, v in args.items() if isinstance(v, str)] # select string element categories
 
     for s in search_bools: # filter by each bool
-      results = [r for r in results if any(r.get_attribute(s, v) for v in versions)]
+      results = [r for r in results if any(r.get_prop(s, v) for v in versions)]
     for s in search_strings: # filter by each string
-      results = [r for r in results if any(args[s] in r.get_attribute(s, v) for v in versions)]
+      results = [r for r in results if any(args[s] in r.get_prop(s, v) for v in versions)]
   
     return([r.identity for r in results]) # return identities
 
@@ -60,7 +59,7 @@ class BnF():
     df['identity'] = df.entry.apply(lambda x: x.identity)
     df['title'] = df.entry.apply(lambda x: x.title['tl'])
     df['length'] = df.entry.apply(lambda x: x.length['tl'])
-    df['num_materials'] = df.entry.apply(lambda x: len(x.attributes['material']['tl']))
+    df['num_materials'] = df.entry.apply(lambda x: len(x.properties['material']['tl']))
     df['margins'] = df.entry.apply(lambda x: len(x.margins))
     df['del_tags'] = df.entry.apply(lambda x: len(x.del_tags))
     df = df.drop(columns=['entry'])

@@ -5,11 +5,11 @@ from collections import OrderedDict
 re_tags = re.compile(r'<.*?>') # selects any tag
 re_head = re.compile(r'<head>(.*?)</head>')
 re_materials = re.compile(r'<m>(.*?)<\/m>') # selects text between materials tags
-attribute_dict = {'animal': 'al', 'body_part': 'bp', 'currency': 'cn', 'definition': 'def',
+prop_dict = {'animal': 'al', 'body_part': 'bp', 'currency': 'cn', 'definition': 'def',
               'environment': 'env', 'material': 'm', 'medical': 'md', 'measurement': 'ms',
               'music': 'mu', 'plant': 'pa', 'place': 'pl', 'personal_name': 'pn',
               'profession': 'pro', 'sensory': 'sn', 'tool': 'tl', 'time': 'tmp'}
-attribute_dict_reverse = {v: k for k, v in attribute_dict.items()}
+prop_dict_reverse = {v: k for k, v in prop_dict.items()}
 
 class Recipe:
 
@@ -21,22 +21,22 @@ class Recipe:
                                      'tcn': self.get_head(tcn),
                                      'tl': self.get_head(tl)}
         self.length: Dict[str, int] = {k: len(self.text(k)) for k, v in self.versions.items()} 
-        self.attributes: Dict[str, Dict[str, List[str]]] # {attribute_type: {version: [attribute1, attribute2, ...]}}
-        self.attributes = {k: {} for k in attribute_dict.keys()}
-        self.margins = self.get_margins()
-        self.del_tags = self.get_del()
-        for k, v in attribute_dict.items():
-            self.attributes[k] = self.find_tag(v)
+        self.properties: Dict[str, Dict[str, List[str]]] # {prop_type: {version: [prop1, prop2, ...]}}
+        self.properties = {k: {} for k in prop_dict.keys()}
+        self.margins = self.find_margins()
+        self.del_tags = self.find_del()
+        for k, v in prop_dict.items():
+            self.properties[k] = self.find_tag(v)
         self.balanced: Dict[str: bool] = {k: self.check_balance(k) for k in self.versions.keys()}
 
-    def get_margins(self):
+    def find_margins(self) -> List[str]:
         # include figure id?
         # do we record placement of margins?
-        margins = re.findall(r'(<ab margin="[\w-]*"( render="tall")?>(.?)</ab>)', self.versions['tl'])
-        return [m[0] for m in margins] if margins else []
+        margins = re.findall(r'<ab margin="left-middle">(.*?)<\/ab>', self.versions['tl'])
+        return margins if margins else []
 
-    def get_del(self):
-        d = re.findall(r'<del>(.*?)<\/del>', self.versions['tl'])
+    def find_del(self) -> List[str]:
+        d = re.findall(r'<del>(.*?)</del>', self.versions['tl'])
         return d if d else []
 
     def get_head(self, text: str) -> str:
@@ -62,26 +62,22 @@ class Recipe:
         re_tagged = re.compile(rf'<{tag}>(.*?)<\/{tag}>')
         tagged_dict = {}
         for k, v in self.versions.items():
-            tagged_dict[k] = list(set([re_tags.sub('', t).lower() for t in re_tagged.findall(v)]))
+            tagged_dict[k] = list(set([re_tags.sub('', t).lower().strip() for t in re_tagged.findall(v)]))
         return tagged_dict
 
-    def get_attribute(self, attribute, version='tl'):
-        """ Getter method for attribute based on version. """
-        return self.attributes[attribute][version]
-
-    def thesaurus_swap(self, old_term, new_term, attribute):
-        """ Removes an old term from the dictionary, and adds the new term. """
-        self.attributes[attribute]['tl'].remove(old_term)
-        self.attributes[attribute]['tl'].append(new_term)
+    def get_prop(self, prop, version='tl'):
+        """ Getter method for prop based on version. """
+        return self.properties[prop][version]
 
     def check_balance(self, version) -> bool:
-        #TODO: update
         tags = re_tags.findall(self.text(version, True))
-        tags = [t for t in tags if 'cont' not in t and 'lb' not in t]
+        tags = [t for t in tags if not any(word in t for word in ['comment', 'figure'])]
+        tags = [re.sub(r' (margin|render|continued)="[\w-]*"', '', t) for t in tags]
         stack = []
         for tag in tags:
             if '</' in tag:
                 if len(stack) < 1 or tag.replace('/', '') != stack.pop():
+                    print(self.identity, tags)
                     return False
             elif '/' not in tag and '!' not in tag:
                 stack.append(tag)

@@ -4,7 +4,7 @@ import pandas as pd
 from typing import List, Union, Optional
 from recipe import Recipe
 
-element_list = ['animal', 'body_part', 'currency', 'definition',
+properties = ['animal', 'body_part', 'currency', 'definition',
               'environment', 'material', 'medical', 'measurement',
               'music', 'plant', 'place', 'personal_name',
               'profession', 'sensory', 'tool', 'time']
@@ -50,7 +50,7 @@ def process_file(filename, version, continuing_entries) -> List[Recipe]:
           entries[identity] = entry
   return entries, continuing_entries
 
-def generate_complete_manuscript(complete=True):
+def generate_complete_manuscript(complete=True, apply_corrections=True):
   entries = []
   versions = {'tc': {}, 'tcn': {}, 'tl': {}} # Each as (id: entry) in inner dict
   identities = []
@@ -85,20 +85,25 @@ def generate_complete_manuscript(complete=True):
     #   print(identity, not tc, not tcn, not tl)
     
     entries.append(Recipe(identity, tc, tcn, tl))
-  
-  correction_dict = {} # {attribute: {verbatim_term: preferred_term}}
-  for element in element_list: # generate correction_dict from thesaurus
-    dct = {}
-    df = pd.read_csv(f'new_csvs/{element}.csv')
-    for i, row in df.iterrows(): # add corrections to a dictionary for O(1) access
-      dct[row.verbatim_term] = row.prefLabel_en
-    correction_dict[element] = dct # store these dicts in a dict keyed by element
 
-  for entry in entries: # for each entry
-    for element in element_list: # for each element type
-      for term in entry.attributes[element]['tl']: # for each element by type 
-        new_term = correction_dict[element].get(term) # see if we have a replacement
-        if new_term and term != new_term: # if so, apply
-          entry.thesaurus_swap(term, new_term, element)
+  if apply_corrections:
+    if not os.path.exists('thesaurus'):
+      print('Thesaurus not found. Generating now.')
+      os.system('python thesaurus.py')
+      print('Finished Generating Thesaurus')
+
+    for prop in properties: # generate correction_dict from thesaurus
+      dct = {}
+      df = pd.read_csv(f'thesaurus/{prop}.csv')
+      for i, row in df.iterrows(): # add corrections to a dictionary for O(1) access
+        if row.verbatim_term != row.prefLabel_en:
+          dct[row.verbatim_term] = row.prefLabel_en
+
+      for entry in entries:
+        for i, term in enumerate(entry.properties[prop]['tl']):
+          new_term = dct.get(term, None)
+          if new_term:
+            entry.properties[prop]['tl'][i] = new_term
+        entry.properties[prop]['tl'] = list(set(entry.properties[prop]['tl']))
   
   return entries

@@ -1,0 +1,738 @@
+{
+  "chicken": {
+    "p001v_1": "For easing the belly",
+    "p055r_3": "Against wounds",
+    "p103v_1": "Enema"
+  },
+  "lamb": {
+    "p006r_1": "For laying down and setting burnished gold and giving red or green or blue"
+  },
+  "dragon": {
+    "p007r_3": "Doublets",
+    "p029v_6": "Dragon’s blood",
+    "p038v_2": "Against nose bleed and for dyeing",
+    "p040v_1": "Cross of the commanders of Malta",
+    "p098r_1": "Varnish for lutes",
+    "p102v_1": "Painting on crystal or glass",
+    "p165r_5": "Dragon’s blood"
+  },
+  "fish": {
+    "p007r_4": "Fish glue or isinglass and mouth glue",
+    "p129v_4": "Spider molded on a leaf",
+    "p155v_1": "Rose",
+    "p156v_1": "Molding a fly",
+    "p157r_5": "Flies",
+    "p159r_3": "Fish glue",
+    "p165r_6": "Repairing snakes and lizards",
+    "p165v_7": "Joining some fly wings, or similar",
+    "p169r_1": "List of processes"
+  },
+  "codfish": {
+    "p007r_4": "Fish glue or isinglass and mouth glue"
+  },
+  "horse": {
+    "p010v_3": "For cleaning gold leaf applied to iron",
+    "p013r_4": "Fine sieves of raw silk",
+    "p015r_2": "Foundry casting",
+    "p017r_1": "On the gunner",
+    "p030r_2": "Pewterer",
+    "p041r_1": "Earth for casting, for founders",
+    "p044v_1": "Horsehair sieves",
+    "p053r_6": "Casting of lead and copper",
+    "p054v_2": "For making a horse follow",
+    "p054v_4": "For disguising a horse",
+    "p055r_4": "Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits",
+    "p056r_1": "Excellent tempering bath for cuirass bodies",
+    "p063v_5": "Flanders blue",
+    "p071r_4": "Weary horses",
+    "p072r_1": "Printer’s letters",
+    "p078r_3": "For making green trwood",
+    "p083r_5": "Another",
+    "p142v_3": "Lute for luting your molds",
+    "p149r_1": "Softening iron and rendering it very soft"
+  },
+  "mutton": {
+    "p011v_2": "For getting rid of the redness of eyes or bruising",
+    "p120r_3": "IlNightingale"
+  },
+  "lizard": {
+    "p012r_1": "For molding sulfur",
+    "p098r_3": "Locksmith",
+    "p107r_1": "Catching lizards and snakes",
+    "p114r_1": "Second Cast",
+    "p119v_2": "Excellent secret for molding hollow and very delicately in fine gold",
+    "p128v_1": "Whitening of cast silver",
+    "p129r_3": "Viper color",
+    "p133v_3": "Various animals entwined",
+    "p150v_1": "Molding hollow",
+    "p152r_1": "Molding a rat",
+    "p156r_2": "Very light and hollow work of gold"
+  },
+  "hog": {
+    "p012v_3": "For whitening enilanroc",
+    "p145v_1": "Molding plants and flowers",
+    "p163v_3": "Repairing"
+  },
+  "animal": {
+    "p013r_2": "For dyeing"
+  },
+  "toad": {
+    "p013v_3": "Toadstone",
+    "p109v_1": "Toad",
+    "p110r_3": "Snakes",
+    "p142v_2": "Molds",
+    "p143r_3": "Toad"
+  },
+  "snake": {
+    "p013v_4": "Snakes",
+    "p052r_1": "The work done in Algiers",
+    "p107r_1": "Catching lizards and snakes",
+    "p112v_1": "For molding Making the arrangement and disposition of the animal",
+    "p114r_1": "Second Cast",
+    "p115r_1": "Make the cast, reheat the molds, &amp;c Note about everything above |-|",
+    "p115r_2": "Animal after release",
+    "p116v_1": "Molding snakes in all weather",
+    "p117v_1": "For making the ashes of flowers and plants leave molds",
+    "p117v_5": "Blood of snakes",
+    "p122r_2": "Flower in the mouth of the snake",
+    "p124v_3": "A means to make the gate for small female lizards",
+    "p125v_1": "Vipers and snakes",
+    "p129r_3": "Viper color",
+    "p133v_3": "Various animals entwined",
+    "p139v_1": "Cast of wax to represent an animal that one has not got",
+    "p150v_1": "Molding hollow",
+    "p164r_1": "Gate"
+  },
+  "swine": {
+    "p013v_4": "Snakes",
+    "p157r_5": "Flies"
+  },
+  "snakes": {
+    "p013v_4": "Snakes",
+    "p106r_2": "Making gold run for casting",
+    "p107r_1": "Catching lizards and snakes",
+    "p109r_5": "Snakes for molding",
+    "p109v_2": "Killing snakes for molding",
+    "p110r_3": "Snakes",
+    "p110v_3": "Cast of lead and tin",
+    "p116r_1": "Molding bouquets, plants, and flowers",
+    "p116v_1": "Molding snakes in all weather",
+    "p117r_1": "A means of molding flowers and plants",
+    "p117v_5": "Blood of snakes",
+    "p122r_1": "Arranging various animals",
+    "p123r_1": "A means di far correr lotnegra",
+    "p125v_1": "Vipers and snakes",
+    "p125v_2": "Molding turtles",
+    "p129v_1": "Animals dried in the oven for a long time",
+    "p129v_4": "Spider molded on a leaf",
+    "p130v_1": "Molding a crab",
+    "p139r_1": "Casts of lead and tin",
+    "p139v_1": "Cast of wax to represent an animal that one has not got",
+    "p143r_1": "Molding turtles",
+    "p144r_1": "Turtles",
+    "p152r_1": "Molding a rat",
+    "p165r_6": "Repairing snakes and lizards"
+  },
+  "swallows": {
+    "p014r_1": "For walls of earth and rustic construction"
+  },
+  "cuttlefish": {
+    "p015v_1": "Tablets",
+    "p049r_3": "Another",
+    "p053r_3": "Casting of lead",
+    "p072v_1": "Casting",
+    "p091r_2": "Molding with cuttlefish bone",
+    "p139r_1": "Casts of lead and tin",
+    "p145r_2": "Cuttlefish bone",
+    "p157r_1": "A means for goldsmiths for molding hollow"
+  },
+  "horses": {
+    "p017r_1": "On the gunner",
+    "p022v_1": "Orgues",
+    "p052r_1": "The work done in Algiers",
+    "p071r_4": "Weary horses"
+  },
+  "cat": {
+    "p019v_3": "Enemas"
+  },
+  "swan": {
+    "p024r_1": "Grenades"
+  },
+  "horses’": {
+    "p024v_1": "For bringing a cannon over land"
+  },
+  "pigeon": {
+    "p031r_1": "New vine",
+    "p053v_1": "Silkworms",
+    "p056r_1": "Excellent tempering bath for cuirass bodies"
+  },
+  "rabbits": {
+    "p035r_4": "For making rabbits come out of a burrow"
+  },
+  "cow": {
+    "p036r_1": "For transmuting a ball into a thimble, cunning",
+    "p038v_4": "Planting trees",
+    "p063v_5": "Flanders blue",
+    "p094r_1": "Furbisher",
+    "p160v_3": "Catching crayfish"
+  },
+  "ox": {
+    "p041r_03": "Sand",
+    "p089r_1": "Sand of burnt ox bones and rock salt",
+    "p158v_1": "Colors for green leaves"
+  },
+  "ducks": {
+    "p041r_04": "Ducks"
+  },
+  "ewe": {
+    "p041v_2": "Sheared ewes"
+  },
+  "ewes": {
+    "p041v_2": "Sheared ewes"
+  },
+  "sheep": {
+    "p041v_2": "Sheared ewes",
+    "p053r_6": "Casting of lead and copper",
+    "p069r_2": "Sand",
+    "p071v_2": "Sheep fat",
+    "p094r_1": "Furbisher",
+    "p105v_5": "Nightingale",
+    "p160v_3": "Catching crayfish"
+  },
+  "crow": {
+    "p046r_3": "Against the falling sickness",
+    "p066v_4": "paintbrushes"
+  },
+  "beef": {
+    "p047r_5": "Against diarrhea and dysentery"
+  },
+  "dogs": {
+    "p048r_2": "Curing dogs of mange",
+    "p054v_3": "Dogs",
+    "p098v_1": "Small dogs",
+    "p103r_2": "Against dogs’ mange"
+  },
+  "birds": {
+    "p048r_4": "Keeping birds and animals",
+    "p049v_1": "Birds",
+    "p049v_3": "Birds",
+    "p098v_4": "Birds",
+    "p106v_1": "Casting in gold",
+    "p129v_1": "Animals dried in the oven for a long time",
+    "p160v_5": "Catching birds",
+    "p169r_1": "List of processes"
+  },
+  "oyster": {
+    "p049r_1": "Casting of lead",
+    "p080v_1": "Founders of small works  of tin"
+  },
+  "ortolans": {
+    "p049v_3": "Birds",
+    "p050v_1": "Small birds"
+  },
+  "turtledoves": {
+    "p049v_3": "Birds"
+  },
+  "siskins": {
+    "p049v_3": "Birds"
+  },
+  "spider": {
+    "p050v_1": "Small birds",
+    "p071v_3": "Spider",
+    "p124r_3": "Spider’s web",
+    "p129v_4": "Spider molded on a leaf",
+    "p130r_3": "Molding a single spider",
+    "p134v_1": "For making ☀ run",
+    "p135r_3": "Vine leaf and small frog"
+  },
+  "goldfinches": {
+    "p050v_1": "Small birds"
+  },
+  "verdaule": {
+    "p050v_1": "Small birds"
+  },
+  "chaffinches": {
+    "p050v_1": "Small birds"
+  },
+  "linnet": {
+    "p050v_1": "Small birds"
+  },
+  "calandra": {
+    "p050v_1": "Small birds"
+  },
+  "bird": {
+    "p050v_1": "Small birds",
+    "p117v_1": "For making the ashes of flowers and plants leave molds",
+    "p152r_1": "Molding a rat",
+    "p157v_2": "Molding a bird"
+  },
+  "cuckoo": {
+    "p050v_1": "Small birds"
+  },
+  "colt": {
+    "p052r_1": "The work done in Algiers"
+  },
+  "worms": {
+    "p052r_1": "The work done in Algiers",
+    "p053v_1": "Silkworms",
+    "p105v_1": "Gardening",
+    "p105v_3": "Catching nightingales See the 15th folio after this.",
+    "p160v_5": "Catching birds"
+  },
+  "oxen": {
+    "p053r_6": "Casting of lead and copper",
+    "p058v_1": "Blacks",
+    "p067v_2": "Bones of the foot of oxen for sand",
+    "p069r_2": "Sand",
+    "p084v_1": "Sand",
+    "p085v_4": "Experimented sands",
+    "p089r_1": "Sand of burnt ox bones and rock salt",
+    "p167r_1": "Petards"
+  },
+  "worm": {
+    "p053v_1": "Silkworms"
+  },
+  "butterfly": {
+    "p053v_1": "Silkworms",
+    "p110v_2": "Wheat oil",
+    "p142v_1": "Molding grasshoppers and things too thin"
+  },
+  "bombicum": {
+    "p053v_1": "Silkworms"
+  },
+  "silkworms": {
+    "p053v_1": "Silkworms"
+  },
+  "pork": {
+    "p055r_1": "For firing a schioppo senza rumore",
+    "p156v_1": "Molding a fly"
+  },
+  "dog": {
+    "p055r_3": "Against wounds",
+    "p078v_1": "For making bronze in the color of steel",
+    "p078v_2": "For making bronze in the color of gold",
+    "p078v_4": "For making bronze",
+    "p094r_1": "Furbisher",
+    "p125v_1": "Vipers and snakes",
+    "p131r_4": "For teaching a dog well"
+  },
+  "snails": {
+    "p055r_4": "Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits",
+    "p118r_1": "Snails"
+  },
+  "daot": {
+    "p055v_1": "Another for waters"
+  },
+  "earthworms": {
+    "p055v_2": "Damascus steel"
+  },
+  "lambs": {
+    "p057v_1": "Sheath maker"
+  },
+  "goats": {
+    "p057v_1": "Sheath maker"
+  },
+  "weasels": {
+    "p058v_5": "Paintbrushes"
+  },
+  "porcupine": {
+    "p058v_5": "Paintbrushes"
+  },
+  "dormice": {
+    "p058v_5": "Paintbrushes"
+  },
+  "rats": {
+    "p058v_5": "Paintbrushes",
+    "p106v_1": "Casting in gold",
+    "p130r_1": "Animals dried in an oven"
+  },
+  "squirrel": {
+    "p058v_5": "Paintbrushes",
+    "p066v_4": "paintbrushes"
+  },
+  "rat": {
+    "p061v_2": "Frames of the Germans",
+    "p066v_4": "paintbrushes",
+    "p152r_1": "Molding a rat"
+  },
+  "pigeons": {
+    "p066v_2": "For attracting pigeons"
+  },
+  "petit-gris": {
+    "p066v_4": "paintbrushes"
+  },
+  "duck": {
+    "p066v_4": "paintbrushes"
+  },
+  "fishes": {
+    "p068r_1": "Fanciful tables"
+  },
+  "human": {
+    "p069r_2": "Sand"
+  },
+  "partridge": {
+    "p075v_2": "For gilding on wood"
+  },
+  "wolf": {
+    "p075v_3": "For gilding with or moleu",
+    "p078v_1": "For making bronze in the color of steel",
+    "p078v_2": "For making bronze in the color of gold",
+    "p078v_4": "For making bronze"
+  },
+  "pig": {
+    "p079v_2": "Antidote against the fumes of metals",
+    "p084v_4": "Sand for lead, the most excellent of all, for high and low reliefs",
+    "p114r_1": "Second Cast",
+    "p125v_1": "Vipers and snakes",
+    "p136v_1": "For casting in latten"
+  },
+  "oysters": {
+    "p084v_2": "Eau Magistra"
+  },
+  "shells": {
+    "p092v_1": "Sand from river tellins and mussels"
+  },
+  "mussels": {
+    "p092v_1": "Sand from river tellins and mussels"
+  },
+  "tellins": {
+    "p092v_1": "Sand from river tellins and mussels"
+  },
+  "calf": {
+    "p094r_1": "Furbisher"
+  },
+  "dogfish": {
+    "p094r_1": "Furbisher"
+  },
+  "fleas": {
+    "p097v_1": "Mastic varnish dry in a half hour"
+  },
+  "water-dogs": {
+    "p098v_1": "Small dogs"
+  },
+  "ogs": {
+    "p103r_2": "Against dogs’ mange"
+  },
+  "dogs’": {
+    "p104v_1": "Against dogs’ mange"
+  },
+  "turtles": {
+    "p105r_1": "Turtles",
+    "p106v_3": "Tiles",
+    "p125v_2": "Molding turtles",
+    "p141r_1": "Molding a crayfish",
+    "p143r_1": "Molding turtles",
+    "p144r_1": "Turtles",
+    "p146v_1": "Molding turtles",
+    "p148v_1": "Molding turtles",
+    "p150r_2": "Various alloys of tin and lead",
+    "p150v_1": "Molding hollow",
+    "p169r_1": "List of processes"
+  },
+  "nightingale": {
+    "p105v_3": "Catching nightingales See the 15th folio after this.",
+    "p105v_4": "Nightingale",
+    "p105v_5": "Nightingale",
+    "p120r_3": "IlNightingale"
+  },
+  "nightingales": {
+    "p105v_3": "Catching nightingales See the 15th folio after this.",
+    "p120r_3": "IlNightingale"
+  },
+  "calendras": {
+    "p105v_5": "Nightingale"
+  },
+  "ants": {
+    "p105v_5": "Nightingale",
+    "p120r_3": "IlNightingale"
+  },
+  "mealworms": {
+    "p105v_5": "Nightingale",
+    "p120r_3": "IlNightingale"
+  },
+  "lizards": {
+    "p106r_2": "Making gold run for casting",
+    "p107r_1": "Catching lizards and snakes",
+    "p109v_2": "Killing snakes for molding",
+    "p111v_4": "Lizards",
+    "p112r_4": "Putting to death the animal for molding",
+    "p120r_1": "Medals stamped from wax",
+    "p124v_3": "A means to make the gate for small female lizards",
+    "p135r_2": "Gate",
+    "p137v_1": "Tempering sand for molds of flat medals",
+    "p138v_2": "Gold cast very thinly",
+    "p139r_1": "Casts of lead and tin",
+    "p144r_1": "Turtles",
+    "p150r_2": "Various alloys of tin and lead",
+    "p152r_1": "Molding a rat",
+    "p164r_3": "Leady silver",
+    "p165r_6": "Repairing snakes and lizards"
+  },
+  "crabs": {
+    "p106v_1": "Casting in gold",
+    "p114r_1": "Second Cast",
+    "p137v_1": "Tempering sand for molds of flat medals",
+    "p141r_1": "Molding a crayfish"
+  },
+  "crayfish": {
+    "p106v_1": "Casting in gold",
+    "p107r_1": "Catching lizards and snakes",
+    "p111v_3": "Crab and crayfish",
+    "p130r_2": "For reddening live crayfish, which will seem boiled",
+    "p130v_1": "Molding a crab",
+    "p137v_1": "Tempering sand for molds of flat medals",
+    "p141r_1": "Molding a crayfish",
+    "p143v_1": "Carcanets made à jour",
+    "p144r_1": "Turtles",
+    "p159v_3": "Molds",
+    "p160v_3": "Catching crayfish",
+    "p163v_1": "Crayfish",
+    "p169r_1": "List of processes"
+  },
+  "hart": {
+    "p109r_1": "Modeling in wax"
+  },
+  "frog": {
+    "p109r_5": "Snakes for molding",
+    "p109v_1": "Toad",
+    "p133v_3": "Various animals entwined",
+    "p135r_3": "Vine leaf and small frog"
+  },
+  "crab": {
+    "p111v_3": "Crab and crayfish",
+    "p130v_1": "Molding a crab",
+    "p130v_2": "Stag beetle",
+    "p141r_1": "Molding a crayfish",
+    "p169r_1": "List of processes"
+  },
+  "frogs": {
+    "p112r_4": "Putting to death the animal for molding"
+  },
+  "lice": {
+    "p112r_4": "Putting to death the animal for molding"
+  },
+  "larks": {
+    "p120r_3": "IlNightingale"
+  },
+  "butterflies": {
+    "p124r_1": "Animals with hair and fragile and very thin flowers",
+    "p149v_3": "Molding a fly",
+    "p169r_1": "List of processes"
+  },
+  "viper": {
+    "p125v_1": "Vipers and snakes"
+  },
+  "vipers": {
+    "p125v_1": "Vipers and snakes"
+  },
+  "flies": {
+    "p129r_4": "Molded roses",
+    "p154v_4": "Reinforcing flowers and delicate things",
+    "p157r_5": "Flies",
+    "p160v_2": "Delicate work of gold or of silver",
+    "p169r_1": "List of processes"
+  },
+  "cats": {
+    "p130r_1": "Animals dried in an oven"
+  },
+  "spiders": {
+    "p130r_3": "Molding a single spider"
+  },
+  "grasshopper": {
+    "p142v_1": "Molding grasshoppers and things too thin"
+  },
+  "grasshoppers": {
+    "p142v_1": "Molding grasshoppers and things too thin",
+    "p149v_3": "Molding a fly",
+    "p169r_1": "List of processes"
+  },
+  "turtle": {
+    "p144r_1": "Turtles",
+    "p146v_1": "Molding turtles",
+    "p148v_1": "Molding turtles",
+    "p150v_1": "Molding hollow"
+  },
+  "bittern": {
+    "p148r_3": "Molding the foot of the bittern, or of the eagle, or of other birds for the foot of saltcellars or vases",
+    "p162v_3": "Bittern foot",
+    "p169r_1": "List of processes"
+  },
+  "eagle": {
+    "p148r_3": "Molding the foot of the bittern, or of the eagle, or of other birds for the foot of saltcellars or vases"
+  },
+  "cicadas": {
+    "p149v_3": "Molding a fly"
+  },
+  "fly": {
+    "p149v_3": "Molding a fly",
+    "p151v_1": "Wheat oil",
+    "p152r_1": "Molding a rat",
+    "p155v_1": "Rose",
+    "p156v_1": "Molding a fly",
+    "p157r_5": "Flies",
+    "p160v_5": "Catching birds",
+    "p165v_6": "Fly wings",
+    "p165v_7": "Joining some fly wings, or similar"
+  },
+  "bat": {
+    "p149v_4": "Bat"
+  },
+  "mouse": {
+    "p152r_1": "Molding a rat"
+  },
+  "passerines": {
+    "p160v_4": "Catching passerines"
+  },
+  "chicks": {
+    "p166r_1": "For the workshop"
+  },
+  "hen": {
+    "p166r_1": "For the workshop"
+  },
+  "mules": {
+    "p167r_1": "Petards"
+  },
+  "bats": {
+    "p169r_1": "List of processes"
+  },
+  "barbels": {
+    "p169r_1": "List of processes"
+  },
+  "aquatilium animalium": {
+    "p001r_4": "List of books"
+  },
+  "good horses": {
+    "p017r_1": "On the gunner"
+  },
+  "field mice": {
+    "p037v_1": "Gardener",
+    "p116v_3": "Cast for copper and latten"
+  },
+  "calandra lark": {
+    "p049v_1": "Birds"
+  },
+  "calandra larks": {
+    "p049v_1": "Birds"
+  },
+  "passe solitaire": {
+    "p050v_1": "Small birds"
+  },
+  "young small birds": {
+    "p050v_1": "Small birds"
+  },
+  "small birds": {
+    "p050v_1": "Small birds"
+  },
+  "female silkworm seeds": {
+    "p052r_1": "The work done in Algiers"
+  },
+  "black ants": {
+    "p053v_1": "Silkworms"
+  },
+  "beech martens": {
+    "p058v_5": "Paintbrushes"
+  },
+  "goat buck": {
+    "p071r_1": "Amber"
+  },
+  "goat kid": {
+    "p071r_1": "Amber"
+  },
+  "common dogs": {
+    "p104v_1": "Against dogs’ mange"
+  },
+  "female lizards": {
+    "p111v_4": "Lizards",
+    "p122r_1": "Arranging various animals"
+  },
+  "water snakes": {
+    "p112r_4": "Putting to death the animal for molding"
+  },
+  "common snake": {
+    "p112v_1": "For molding Making the arrangement and disposition of the animal"
+  },
+  "small crabs": {
+    "p118r_1": "Snails"
+  },
+  "horned aspic": {
+    "p125v_1": "Vipers and snakes"
+  },
+  "little lizard": {
+    "p128v_1": "Whitening of cast silver"
+  },
+  "viper color": {
+    "p129r_3": "Viper color"
+  },
+  "stag beetle": {
+    "p130v_2": "Stag beetle",
+    "p169r_1": "List of processes"
+  },
+  "large lizard": {
+    "p131v_1": "When the cast of tin or lead becomes porous"
+  },
+  "very small female lizard": {
+    "p132v_2": "Crocum ferri"
+  },
+  "smalls female lizards": {
+    "p133r_2": "Feet of smalls female lizards for gold and silver"
+  },
+  "large lizards": {
+    "p133r_2": "Feet of smalls female lizards for gold and silver"
+  },
+  "small female lizards": {
+    "p133v_2": "Thing that does not release"
+  },
+  "wall lizard": {
+    "p133v_3": "Various animals entwined"
+  },
+  "small wall lizard": {
+    "p133v_3": "Various animals entwined"
+  },
+  "small frog": {
+    "p135r_3": "Vine leaf and small frog"
+  },
+  "stag beetles": {
+    "p137v_1": "Tempering sand for molds of flat medals",
+    "p141r_1": "Molding a crayfish"
+  },
+  "water turtle": {
+    "p143r_1": "Molding turtles"
+  },
+  "those from garrigue": {
+    "p143r_1": "Molding turtles"
+  },
+  "those of the garrigue": {
+    "p143r_1": "Molding turtles",
+    "p144r_1": "Turtles",
+    "p146v_1": "Molding turtles"
+  },
+  "those from water": {
+    "p143r_1": "Molding turtles"
+  },
+  "those of the water": {
+    "p143r_1": "Molding turtles",
+    "p144r_1": "Turtles",
+    "p146v_1": "Molding turtles"
+  },
+  "those of water": {
+    "p144r_1": "Turtles"
+  },
+  "large flies": {
+    "p149v_3": "Molding a fly"
+  },
+  "small mouse": {
+    "p152r_1": "Molding a rat"
+  },
+  "big rat": {
+    "p152r_1": "Molding a rat"
+  },
+  "largest vo flies": {
+    "p156v_1": "Molding a fly"
+  },
+  "solid bird": {
+    "p157v_2": "Molding a bird"
+  },
+  "little viper": {
+    "p164r_3": "Leady silver"
+  }
+}

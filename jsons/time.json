@@ -1,0 +1,643 @@
+{
+  "hours": {
+    "p002v_2": "Emeralds of Brissac",
+    "p002v_3": "Sapphire",
+    "p004v_3": "Varnish of iron etchers",
+    "p015v_6": "Tooth ache",
+    "p043v_1": "Varied and transmuted wine",
+    "p044r_4": "Lake",
+    "p066r_6": "* Or mat",
+    "p074r_3": "For making varnish",
+    "p076r_1": "For making wood green",
+    "p079r_3": "For making bronze in the color of gold",
+    "p086v_1": "Excellent sand for lead, tin, and copper",
+    "p092v_2": "Congealing mercury",
+    "p094r_1": "Furbisher",
+    "p098v_5": "Founding",
+    "p104r_1": "For eating away and dissolving entirely pure gold",
+    "p104r_5": "Enameling a cornaline",
+    "p106v_3": "Tiles",
+    "p109r_5": "Snakes for molding",
+    "p123r_1": "A means di far correr lotnegra"
+  },
+  "hour": {
+    "p003r_1": "Counterfeit coral",
+    "p003r_3": "Thick varnish for planks",
+    "p052r_1": "The work done in Algiers",
+    "p060v_1": "Varnish dry in an hour",
+    "p066r_6": "* Or mat",
+    "p067v_3": "Huiles d’essence",
+    "p075v_4": "Recipe for putting all woods in color",
+    "p078v_3": "For making bone or horn green",
+    "p096v_1": "Grey guards"
+  },
+  "overnight": {
+    "p003r_2": "Varnish for panels",
+    "p077r_1": "Against redness of the face",
+    "p149r_1": "Softening iron and rendering it very soft"
+  },
+  "months": {
+    "p003r_3": "Thick varnish for planks",
+    "p016v_4": "Keeping oranges",
+    "p052r_1": "The work done in Algiers",
+    "p057v_2": "Painter",
+    "p106v_2": "Plaster"
+  },
+  "night": {
+    "p007r_4": "Fish glue or isinglass and mouth glue",
+    "p037v_3": "Yellow Amber",
+    "p086v_1": "Excellent sand for lead, tin, and copper",
+    "p088v_1": "Sand from pulverised rock salt and sand from the mine finely ground on marble",
+    "p114r_1": "Second Cast",
+    "p126r_1": "Molding fruits and animals in sugar",
+    "p139v_1": "Cast of wax to represent an animal that one has not got",
+    "p160v_4": "Catching passerines"
+  },
+  "years": {
+    "p009r_1": "Plowman",
+    "p041v_2": "Sheared ewes",
+    "p065v_4": "White and black",
+    "p120r_2": "Sand for casting in gold"
+  },
+  "day": {
+    "p009v_3": "Waste book",
+    "p017r_1": "On the gunner",
+    "p059v_4": "Desiccative",
+    "p066r_6": "* Or mat",
+    "p066v_1": "For preventing teats from swelling d or to diminish overly large ones",
+    "p073r_1": "For making blue varnish",
+    "p073v_4": "Color of burnished copper",
+    "p094r_1": "Furbisher",
+    "p096v_2": "Color of water",
+    "p100v_2": "For ruby take some gold leaf",
+    "p101v_1": "Jacinth",
+    "p102v_2": "Infusion of anthos or rosemary",
+    "p105v_4": "Nightingale",
+    "p114r_1": "Second Cast",
+    "p120r_3": "IlNightingale",
+    "p126r_1": "Molding fruits and animals in sugar",
+    "p132v_2": "Crocum ferri",
+    "p139v_1": "Cast of wax to represent an animal that one has not got",
+    "p161v_1": "Crocum ferri",
+    "p165r_6": "Repairing snakes and lizards"
+  },
+  "longer": {
+    "p017r_1": "On the gunner",
+    "p125r_1": "Plaster"
+  },
+  "days": {
+    "p020v_6": "A form of regimen",
+    "p026r_2": "Petard",
+    "p044v_2": "Excellent water against the plague of Monsieur de Montorsin",
+    "p044v_3": "White soporific oil",
+    "p048r_2": "Curing dogs of mange",
+    "p053v_1": "Silkworms",
+    "p055r_4": "Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits",
+    "p056r_1": "Excellent tempering bath for cuirass bodies",
+    "p059v_4": "Desiccative",
+    "p066r_6": "* Or mat",
+    "p066v_1": "For preventing teats from swelling d or to diminish overly large ones",
+    "p075v_4": "Recipe for putting all woods in color",
+    "p076r_1": "For making wood green",
+    "p076v_1": "For making very beautiful color of gold &amp; of little expense",
+    "p077r_4": "Recipe for making bronze and varnish of many sorts",
+    "p078r_3": "For making green trwood",
+    "p085r_1": "Green varnish for medals of copper",
+    "p089v_1": "Sal ammoniac and alabaster",
+    "p089v_2": "Glassmakers’ white sand from the mine, mixed with sal ammoniac",
+    "p102v_2": "Infusion of anthos or rosemary",
+    "p105r_4": "Gardening",
+    "p107r_1": "Catching lizards and snakes",
+    "p109r_5": "Snakes for molding",
+    "p114r_1": "Second Cast",
+    "p120r_2": "Sand for casting in gold",
+    "p126v_3": "Plants difficult to burn in the noyau",
+    "p132v_2": "Crocum ferri",
+    "p144r_1": "Turtles",
+    "p148v_1": "Molding turtles",
+    "p152r_1": "Molding a rat",
+    "p161r_1": "Preparation of sand for frames",
+    "p162r_1": "For the workshop",
+    "p162v_3": "Bittern foot"
+  },
+  "today": {
+    "p038r_3": "Sapphire",
+    "p082v_1": "Clockmakers"
+  },
+  "year": {
+    "p038v_3": "Beautiful artichokes",
+    "p057v_2": "Painter",
+    "p098r_3": "Locksmith",
+    "p121r_1": "For keeping fruits all year",
+    "p170v_1": "1578-9 original first page"
+  },
+  "summer": {
+    "p040r_1": "Dye",
+    "p056v_1": "Painter",
+    "p111v_4": "Lizards"
+  },
+  "month": {
+    "p041r_04": "Ducks",
+    "p114r_1": "Second Cast"
+  },
+  "hora": {
+    "p043r_3": "Purpurine"
+  },
+  "mornings": {
+    "p046r_3": "Against the falling sickness"
+  },
+  "week": {
+    "p048r_2": "Curing dogs of mange"
+  },
+  "march": {
+    "p049v_3": "Birds"
+  },
+  "weeks": {
+    "p052r_1": "The work done in Algiers",
+    "p053v_1": "Silkworms"
+  },
+  "long": {
+    "p062v_1": "Drawing",
+    "p153v_1": "Testing the goodness and strength of a sand to be reheated",
+    "p166r_1": "For the workshop"
+  },
+  "evening": {
+    "p066r_6": "* Or mat"
+  },
+  "time": {
+    "p066r_6": "* Or mat"
+  },
+  "advent": {
+    "p084r_4": "Flour"
+  },
+  "wednesdays": {
+    "p086v_1": "Excellent sand for lead, tin, and copper"
+  },
+  "thursdays": {
+    "p086v_1": "Excellent sand for lead, tin, and copper"
+  },
+  "tuesdays": {
+    "p086v_1": "Excellent sand for lead, tin, and copper"
+  },
+  "saturdays": {
+    "p086v_1": "Excellent sand for lead, tin, and copper"
+  },
+  "serain": {
+    "p089v_1": "Sal ammoniac and alabaster",
+    "p090r_1": "Sal ammoniac and iron dross"
+  },
+  "pauses": {
+    "p098r_3": "Locksmith"
+  },
+  "nights": {
+    "p120r_2": "Sand for casting in gold"
+  },
+  "everyday": {
+    "p120r_3": "IlNightingale"
+  },
+  "season": {
+    "p120v_6": "Keeping dry flowers in the same state all year",
+    "p126r_1": "Molding fruits and animals in sugar"
+  },
+  "morning": {
+    "p123r_1": "A means di far correr lotnegra",
+    "p149r_1": "Softening iron and rendering it very soft"
+  },
+  "june": {
+    "p129v_1": "Animals dried in the oven for a long time"
+  },
+  "winter": {
+    "p143r_1": "Molding turtles"
+  },
+  "frost": {
+    "p162v_1": "Peach tree"
+  },
+  "subsequent": {
+    "p166r_1": "For the workshop"
+  },
+  "july": {
+    "p170v_1": "1578-9 original first page"
+  },
+  "in the morning": {
+    "p001v_1": "For easing the belly",
+    "p079v_2": "Antidote against the fumes of metals"
+  },
+  "in the summer": {
+    "p003r_2": "Varnish for panels"
+  },
+  "during the winter": {
+    "p003r_2": "Varnish for panels"
+  },
+  "times past": {
+    "p003r_3": "Thick varnish for planks"
+  },
+  "a quarter of an hour": {
+    "p004r_2": "For removing varnish from an old panel that is yellowish &amp; varnishing it anew",
+    "p056v_1": "Painter"
+  },
+  "a good quarter of an hour": {
+    "p004v_1": "Black varnish for sword guard, bands for trunks, &amp;c"
+  },
+  "half a day": {
+    "p004v_1": "Black varnish for sword guard, bands for trunks, &amp;c"
+  },
+  "at night": {
+    "p005r_2": "Concave mirrors",
+    "p013v_3": "Toadstone",
+    "p024v_1": "For bringing a cannon over land",
+    "p049v_3": "Birds",
+    "p050v_1": "Small birds",
+    "p066v_3": "Against bruising of the eyes",
+    "p104v_1": "Against dogs’ mange"
+  },
+  "by night": {
+    "p008r_4": "For making a breach in a wall by night",
+    "p017r_1": "On the gunner"
+  },
+  "at night in the cool &amp; by moonlight": {
+    "p009r_1": "Plowman"
+  },
+  "at the next sowing": {
+    "p009r_1": "Plowman"
+  },
+  "sun is approaching midday": {
+    "p009r_1": "Plowman"
+  },
+  "st. andrew’s day": {
+    "p009v_3": "Waste book"
+  },
+  "2nd september 1581": {
+    "p009v_3": "Waste book"
+  },
+  "long time": {
+    "p011v_5": "Polishing wheel of copper",
+    "p037r_1": "Founder",
+    "p040v_3": "Metal",
+    "p041v_1": "Glassworkers’ black",
+    "p048v_2": "Lead, tin",
+    "p051r_2": "Cutters of printing plates",
+    "p057v_1": "Sheath maker",
+    "p077r_3": "Fatty earth",
+    "p097v_1": "Mastic varnish dry in a half hour",
+    "p103v_3": "For making colors run",
+    "p106r_2": "Making gold run for casting",
+    "p112r_4": "Putting to death the animal for molding",
+    "p115r_1": "Make the cast, reheat the molds, &amp;c Note about everything above |-|",
+    "p123r_1": "A means di far correr lotnegra",
+    "p129r_1": "Painting plants of metal",
+    "p131v_1": "When the cast of tin or lead becomes porous",
+    "p147v_4": "Cast of latten",
+    "p150v_1": "Molding hollow",
+    "p155r_1": "Molding a rose",
+    "p165r_4": "Plaster for molding",
+    "p165v_2": "Keeping animals",
+    "p165v_3": "Molds"
+  },
+  "every morning": {
+    "p020v_6": "A form of regimen"
+  },
+  "every three days": {
+    "p024r_1": "Grenades"
+  },
+  "a long time": {
+    "p029v_6": "Dragon’s blood",
+    "p129v_1": "Animals dried in the oven for a long time"
+  },
+  "in winter": {
+    "p032v_1": "Mat maker",
+    "p047v_3": "Crucibles",
+    "p056v_1": "Painter",
+    "p160v_5": "Catching birds"
+  },
+  "in summer": {
+    "p032v_1": "Mat maker",
+    "p116v_1": "Molding snakes in all weather",
+    "p160v_5": "Catching birds",
+    "p162v_2": "Olive trees"
+  },
+  "once a week": {
+    "p037r_2": "Medicine for the stomach which heats it and unstops the liver",
+    "p050v_1": "Small birds"
+  },
+  "end of a moon cycle": {
+    "p037v_1": "Gardener"
+  },
+  "every year": {
+    "p038v_3": "Beautiful artichokes",
+    "p039r_2": "Pastel woad"
+  },
+  "saint paul’s day": {
+    "p038v_4": "Planting trees"
+  },
+  "on saint anthony’s day in january": {
+    "p039r_2": "Pastel woad"
+  },
+  "in the following year": {
+    "p041r_02": "Garden lily"
+  },
+  "in the evening": {
+    "p042v_6": "White varnish on plaster",
+    "p060v_3": "Spike lavender oil"
+  },
+  "advent of christmas": {
+    "p043r_1": "Mericotons and pavis"
+  },
+  "with everyes new ☾": {
+    "p046r_5": "GoFlowers of trees"
+  },
+  "at the waning of the moon": {
+    "p047r_3": "Against falling sickness or vertigo"
+  },
+  "humid weather": {
+    "p047v_3": "Crucibles"
+  },
+  "before michaelmas": {
+    "p049v_1": "Birds"
+  },
+  "from all saints’ day until christmas": {
+    "p049v_3": "Birds"
+  },
+  "after mid-july until michaelmas": {
+    "p049v_3": "Birds"
+  },
+  "all summer": {
+    "p049v_3": "Birds"
+  },
+  "at michaelmas": {
+    "p049v_3": "Birds"
+  },
+  "during the summer": {
+    "p050r_1": "Keeping fruit for the entire year"
+  },
+  "on a warm &amp; dry day": {
+    "p050r_1": "Keeping fruit for the entire year"
+  },
+  "for the space of two hours": {
+    "p050r_1": "Keeping fruit for the entire year"
+  },
+  "for the entire year": {
+    "p050r_1": "Keeping fruit for the entire year"
+  },
+  "in the winter": {
+    "p050r_1": "Keeping fruit for the entire year",
+    "p116v_1": "Molding snakes in all weather"
+  },
+  "beginning of august": {
+    "p050v_1": "Small birds"
+  },
+  "after several days": {
+    "p050v_1": "Small birds"
+  },
+  "good hours": {
+    "p051r_2": "Cutters of printing plates"
+  },
+  "around the feast of st john": {
+    "p052r_1": "The work done in Algiers"
+  },
+  "from the feast of saint john until the 25th of april": {
+    "p052r_1": "The work done in Algiers"
+  },
+  "at regular intervals, day &amp; night": {
+    "p052r_1": "The work done in Algiers"
+  },
+  "around saint john’s day": {
+    "p053v_1": "Silkworms"
+  },
+  "during the day": {
+    "p053v_1": "Silkworms"
+  },
+  "around holy week": {
+    "p053v_1": "Silkworms"
+  },
+  "around pentecost": {
+    "p053v_1": "Silkworms"
+  },
+  "from their birth until the their time when they make their cocoons &amp; their prisons": {
+    "p053v_1": "Silkworms"
+  },
+  "per day": {
+    "p053v_1": "Silkworms"
+  },
+  "until holy week": {
+    "p053v_1": "Silkworms"
+  },
+  "in the month of june &amp; july": {
+    "p055r_4": "Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits"
+  },
+  "space of fifteen days": {
+    "p055r_4": "Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits"
+  },
+  "very long time": {
+    "p057v_2": "Painter"
+  },
+  "take a long time": {
+    "p062r_1": "Perspectives"
+  },
+  "month of may": {
+    "p063v_5": "Flanders blue"
+  },
+  "the next day": {
+    "p063v_7": "Softening",
+    "p087v_3": "Sand of the mine of Thoulouse",
+    "p143r_1": "Molding turtles"
+  },
+  "over time": {
+    "p066r_5": "Gilding molding for panels with or mat"
+  },
+  "the day after": {
+    "p066r_6": "* Or mat"
+  },
+  "one day or one night": {
+    "p066r_6": "* Or mat"
+  },
+  "after rainy weather": {
+    "p069r_2": "Sand"
+  },
+  "long sea crossing": {
+    "p071r_3": "Mulled and sugared wine"
+  },
+  "for the space of twenty-four hours": {
+    "p074r_2": "For making vermilion"
+  },
+  "half an hour": {
+    "p076v_4": "For gilding iron or tin"
+  },
+  "in the month of may": {
+    "p077r_2": "Medicine of the orientals against all maladies"
+  },
+  "at any hour": {
+    "p079r_2": "For making water for disease of the eyes"
+  },
+  "every day": {
+    "p081r_4": "Carton"
+  },
+  "in the past": {
+    "p082v_1": "Clockmakers"
+  },
+  "whole year": {
+    "p084r_4": "Flour"
+  },
+  "after the bread has been taken out": {
+    "p084r_5": "Sand from a mine in Thoulouse"
+  },
+  "three days a week": {
+    "p086v_1": "Excellent sand for lead, tin, and copper"
+  },
+  "next morning": {
+    "p086v_1": "Excellent sand for lead, tin, and copper",
+    "p120r_3": "IlNightingale"
+  },
+  "all year long": {
+    "p087v_2": "Magistra"
+  },
+  "in a day": {
+    "p087v_3": "Sand of the mine of Thoulouse"
+  },
+  "serain of the night": {
+    "p089r_1": "Sand of burnt ox bones and rock salt"
+  },
+  "every two years": {
+    "p090v_2": "Orange trees"
+  },
+  "once a month": {
+    "p093r_1": "Olives"
+  },
+  "all the months of the year": {
+    "p093r_2": "Observation from rustics"
+  },
+  "palm sunday": {
+    "p093r_2": "Observation from rustics"
+  },
+  "half hour": {
+    "p097v_1": "Mastic varnish dry in a half hour",
+    "p115v_3": "Reheating the noyau molds"
+  },
+  "all year": {
+    "p098v_2": "Salted artichokes",
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "weather is damp &amp; humid": {
+    "p100r_1": "Gold color"
+  },
+  "weather is not serain &amp; dry": {
+    "p100r_1": "Gold color"
+  },
+  "hour &amp; a half": {
+    "p100v_1": "Gemstones",
+    "p101r_1": "Topaz"
+  },
+  "for a month": {
+    "p102v_2": "Infusion of anthos or rosemary"
+  },
+  "in the month of august": {
+    "p102v_2": "Infusion of anthos or rosemary"
+  },
+  "twice a day": {
+    "p103r_1": "Against burns, excellent"
+  },
+  "for the time it takes you to say 8 pater nosters": {
+    "p103r_1": "Against burns, excellent"
+  },
+  "for the space of 9 days": {
+    "p103r_1": "Against burns, excellent"
+  },
+  "in that year": {
+    "p105r_4": "Gardening"
+  },
+  "from mid-may": {
+    "p105r_4": "Gardening"
+  },
+  "until the beginning of august": {
+    "p105r_4": "Gardening"
+  },
+  "in the month of january": {
+    "p105r_4": "Gardening"
+  },
+  "season of their pleasure": {
+    "p105v_3": "Catching nightingales See the 15th folio after this."
+  },
+  "the evening and the morning": {
+    "p105v_3": "Catching nightingales See the 15th folio after this."
+  },
+  "rainy weather": {
+    "p106v_2": "Plaster"
+  },
+  "long enough": {
+    "p108r_2": "Spalt"
+  },
+  "quarter hour": {
+    "p108r_2": "Spalt",
+    "p110r_3": "Snakes",
+    "p114r_1": "Second Cast"
+  },
+  "in the spring": {
+    "p111v_4": "Lizards"
+  },
+  "an hour or a half": {
+    "p112r_4": "Putting to death the animal for molding"
+  },
+  "quarter of an hour": {
+    "p113r_1": "Tempering the sand and molding the first cast"
+  },
+  "length of a pater noster": {
+    "p114r_1": "Second Cast"
+  },
+  "first day": {
+    "p120r_3": "IlNightingale"
+  },
+  "next day": {
+    "p120r_3": "IlNightingale"
+  },
+  "several days": {
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "out of season when winter denies flowers": {
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "in the early morning": {
+    "p123r_1": "A means di far correr lotnegra"
+  },
+  "for a whole day": {
+    "p123r_1": "A means di far correr lotnegra"
+  },
+  "natural day": {
+    "p123r_1": "A means di far correr lotnegra"
+  },
+  "at night or at a silent time": {
+    "p125r_3": "Hearing from afar"
+  },
+  "a day &amp; a night": {
+    "p129v_1": "Animals dried in the oven for a long time"
+  },
+  "in autumn": {
+    "p135r_3": "Vine leaf and small frog"
+  },
+  "a good hour": {
+    "p139v_1": "Cast of wax to represent an animal that one has not got"
+  },
+  "a long time ago": {
+    "p139v_1": "Cast of wax to represent an animal that one has not got"
+  },
+  "at least as long": {
+    "p139v_1": "Cast of wax to represent an animal that one has not got"
+  },
+  "a good space of time": {
+    "p161r_1": "Preparation of sand for frames"
+  },
+  "during winter": {
+    "p162v_1": "Peach tree",
+    "p162v_2": "Olive trees"
+  },
+  "the winter": {
+    "p162v_1": "Peach tree"
+  },
+  "different times, but continue once you have started": {
+    "p164v_3": "Molds"
+  },
+  "preceding day": {
+    "p166r_1": "For the workshop"
+  },
+  "in the space of a thousand years": {
+    "p166r_1": "For the workshop"
+  }
+}

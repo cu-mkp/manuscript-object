@@ -1,0 +1,843 @@
+{
+  "jujubes": {
+    "p001v_1": "For easing the belly"
+  },
+  "marshmallow": {
+    "p001v_1": "For easing the belly"
+  },
+  "gilliflower": {
+    "p001v_1": "For easing the belly"
+  },
+  "mallow": {
+    "p001v_1": "For easing the belly"
+  },
+  "cinnamon": {
+    "p001v_1": "For easing the belly",
+    "p047r_1": "For teeth",
+    "p048r_3": "Excellent mustard"
+  },
+  "prunes": {
+    "p001v_1": "For easing the belly"
+  },
+  "cabbage": {
+    "p002r_2": "Against pains"
+  },
+  "walnut": {
+    "p003r_1": "Counterfeit coral",
+    "p004v_1": "Black varnish for sword guard, bands for trunks, &amp;c",
+    "p004v_3": "Varnish of iron etchers",
+    "p006r_1": "For laying down and setting burnished gold and giving red or green or blue",
+    "p046r_1": "For the teeth, oil of sulfur",
+    "p051r_2": "Cutters of printing plates",
+    "p057v_2": "Painter",
+    "p058v_4": "Azure",
+    "p058v_5": "Paintbrushes",
+    "p059r_2": "Azure",
+    "p060r_3": "Oil",
+    "p063r_2": "Drying of oil",
+    "p064r_2": "Fatty oil",
+    "p067v_3": "Huiles d’essence",
+    "p084v_4": "Sand for lead, the most excellent of all, for high and low reliefs",
+    "p089v_2": "Glassmakers’ white sand from the mine, mixed with sal ammoniac",
+    "p096v_3": "Yellow varnish",
+    "p100r_1": "Gold color",
+    "p104r_4": "For gilding with silver on copper and latten",
+    "p108r_2": "Spalt",
+    "p139v_1": "Cast of wax to represent an animal that one has not got"
+  },
+  "linseed": {
+    "p004v_1": "Black varnish for sword guard, bands for trunks, &amp;c",
+    "p004v_3": "Varnish of iron etchers",
+    "p006r_1": "For laying down and setting burnished gold and giving red or green or blue",
+    "p051r_2": "Cutters of printing plates",
+    "p052v_1": "Linseed",
+    "p074r_3": "For making varnish",
+    "p077v_1": "Another approved varnish",
+    "p101v_3": "Varnish",
+    "p103r_1": "Against burns, excellent",
+    "p104r_2": "For etching on iron"
+  },
+  "garlic": {
+    "p004v_1": "Black varnish for sword guard, bands for trunks, &amp;c",
+    "p015v_6": "Tooth ache",
+    "p039v_3": "Tracing some history on glass",
+    "p051r_2": "Cutters of printing plates"
+  },
+  "onions": {
+    "p004v_1": "Black varnish for sword guard, bands for trunks, &amp;c",
+    "p074r_3": "For making varnish"
+  },
+  "linen": {
+    "p004v_3": "Varnish of iron etchers",
+    "p039v_3": "Tracing some history on glass",
+    "p098r_3": "Locksmith",
+    "p105r_4": "Gardening"
+  },
+  "bean": {
+    "p006r_1": "For laying down and setting burnished gold and giving red or green or blue",
+    "p118v_1": "Casting in frames",
+    "p135r_1": "Couleur for gold or mixture",
+    "p135v_1": "Casting in ☼",
+    "p139r_1": "Casts of lead and tin"
+  },
+  "prele": {
+    "p006r_1": "For laying down and setting burnished gold and giving red or green or blue"
+  },
+  "saffron": {
+    "p006r_1": "For laying down and setting burnished gold and giving red or green or blue",
+    "p007r_3": "Doublets",
+    "p020r_1": "For making millas",
+    "p038r_2": "Saffron"
+  },
+  "willow": {
+    "p006r_1": "For laying down and setting burnished gold and giving red or green or blue",
+    "p038r_4": "Amber",
+    "p081v_3": "Sand",
+    "p083v_2": "Molding in relief on one part and hollow on the other.",
+    "p084v_2": "Eau Magistra",
+    "p091r_2": "Molding with cuttlefish bone",
+    "p094r_1": "Furbisher",
+    "p164r_2": "Repairing flashing"
+  },
+  "brazilwood": {
+    "p006r_1": "For laying down and setting burnished gold and giving red or green or blue",
+    "p032v_1": "Mat maker",
+    "p043v_1": "Varied and transmuted wine",
+    "p063v_4": "Rosette"
+  },
+  "pea": {
+    "p006r_1": "For laying down and setting burnished gold and giving red or green or blue",
+    "p057v_1": "Sheath maker",
+    "p128r_1": "Casting in silver and gold"
+  },
+  "horsetail": {
+    "p006r_1": "For laying down and setting burnished gold and giving red or green or blue"
+  },
+  "carnation": {
+    "p006v_1": "For ga cachcages",
+    "p159v_2": "Carnation"
+  },
+  "walnuts": {
+    "p007v_2": "Against windy colic",
+    "p057v_2": "Painter",
+    "p118v_1": "Casting in frames"
+  },
+  "baillard": {
+    "p009r_1": "Plowman"
+  },
+  "millet": {
+    "p009r_1": "Plowman",
+    "p020r_1": "For making millas",
+    "p041r_04": "Ducks",
+    "p049v_3": "Birds",
+    "p112v_1": "For molding Making the arrangement and disposition of the animal"
+  },
+  "pomole": {
+    "p009r_1": "Plowman"
+  },
+  "grain": {
+    "p009r_1": "Plowman",
+    "p035v_2": "For transmuting grain from one vessel to another"
+  },
+  "beans": {
+    "p009r_1": "Plowman"
+  },
+  "roses": {
+    "p010r_1": "Counterfeit jasper",
+    "p010r_3": "Roses",
+    "p120v_6": "Keeping dry flowers in the same state all year",
+    "p129r_4": "Molded roses"
+  },
+  "heather": {
+    "p014r_1": "For walls of earth and rustic construction",
+    "p053v_1": "Silkworms"
+  },
+  "visaube": {
+    "p015v_6": "Tooth ache"
+  },
+  "wallwort": {
+    "p016r_1": "Founding of soft iron"
+  },
+  "quince": {
+    "p016v_1": "Against Go",
+    "p066v_1": "For preventing teats from swelling d or to diminish overly large ones",
+    "p134v_3": "Secret for soldering gold and silver in small works"
+  },
+  "cotton": {
+    "p016v_2": "For removing fine hair from the forehead"
+  },
+  "oranges": {
+    "p016v_4": "Keeping oranges"
+  },
+  "hemp": {
+    "p016v_5": "Candles",
+    "p050v_1": "Small birds",
+    "p066v_2": "For attracting pigeons"
+  },
+  "straw": {
+    "p020r_2": "Glassworker"
+  },
+  "puffball": {
+    "p020v_1": "For whitening the face"
+  },
+  "wheat": {
+    "p020v_1": "For whitening the face",
+    "p029r_1": "Stucco for molding",
+    "p037v_1": "Gardener",
+    "p039r_2": "Pastel woad",
+    "p046r_2": "Wheat oil",
+    "p088r_5": "Baker",
+    "p088v_2": "Mineral sand",
+    "p104r_5": "Enameling a cornaline",
+    "p110v_2": "Wheat oil",
+    "p119r_1": "Advice about the above",
+    "p124r_1": "Animals with hair and fragile and very thin flowers",
+    "p126r_1": "Molding fruits and animals in sugar",
+    "p129v_4": "Spider molded on a leaf",
+    "p130r_3": "Molding a single spider",
+    "p138v_2": "Gold cast very thinly",
+    "p138v_3": "Counterfeit diamonds put in a work",
+    "p141r_1": "Molding a crayfish",
+    "p142v_1": "Molding grasshoppers and things too thin",
+    "p149v_3": "Molding a fly",
+    "p151v_1": "Wheat oil",
+    "p152r_1": "Molding a rat",
+    "p154v_4": "Reinforcing flowers and delicate things",
+    "p156v_1": "Molding a fly",
+    "p163r_1": "Perfumer",
+    "p166r_1": "For the workshop",
+    "p169r_1": "List of processes"
+  },
+  "orange": {
+    "p020v_2": "Against winds, colic, &amp;c",
+    "p076v_1": "For making very beautiful color of gold &amp; of little expense"
+  },
+  "skirret": {
+    "p020v_3": "Skirret root"
+  },
+  "onion": {
+    "p020v_4": "Against burn"
+  },
+  "trees": {
+    "p024v_1": "For bringing a cannon over land"
+  },
+  "rye": {
+    "p029r_1": "Stucco for molding",
+    "p049r_2": "Sand for lead casting"
+  },
+  "hazelnuts": {
+    "p029v_6": "Dragon’s blood"
+  },
+  "peas": {
+    "p029v_6": "Dragon’s blood",
+    "p147v_4": "Cast of latten",
+    "p152r_1": "Molding a rat"
+  },
+  "vine": {
+    "p031r_1": "New vine",
+    "p049r_3": "Another",
+    "p083r_3": "Another sand",
+    "p091r_1": "Grafting",
+    "p118r_3": "For grottos",
+    "p121r_1": "For keeping fruits all year",
+    "p129v_4": "Spider molded on a leaf",
+    "p130r_3": "Molding a single spider",
+    "p130r_4": "Molding a single vine leaf",
+    "p135r_3": "Vine leaf and small frog",
+    "p169r_1": "List of processes"
+  },
+  "arum": {
+    "p035v_1": "For preventing someone from eating a foodstuff"
+  },
+  "boxwood": {
+    "p036r_1": "For transmuting a ball into a thimble, cunning",
+    "p081v_4": "Frame casting",
+    "p094r_1": "Furbisher",
+    "p109r_1": "Modeling in wax",
+    "p153r_2": "Giving the thickness that you wish to a medal"
+  },
+  "fern": {
+    "p036v_3": "Glassworkers’ glass"
+  },
+  "saltworth": {
+    "p036v_3": "Glassworkers’ glass"
+  },
+  "wormwood": {
+    "p037r_2": "Medicine for the stomach which heats it and unstops the liver",
+    "p037v_1": "Gardener",
+    "p107r_1": "Catching lizards and snakes",
+    "p122r_2": "Flower in the mouth of the snake"
+  },
+  "pepper": {
+    "p037r_2": "Medicine for the stomach which heats it and unstops the liver"
+  },
+  "melons": {
+    "p037v_1": "Gardener"
+  },
+  "marigold": {
+    "p038r_2": "Saffron",
+    "p145v_1": "Molding plants and flowers",
+    "p159v_2": "Carnation"
+  },
+  "fir": {
+    "p038r_4": "Amber",
+    "p053v_1": "Silkworms"
+  },
+  "sorrel": {
+    "p038v_2": "Against nose bleed and for dyeing",
+    "p040r_1": "Dye"
+  },
+  "artichokes": {
+    "p038v_3": "Beautiful artichokes",
+    "p098v_2": "Salted artichokes"
+  },
+  "lettuces": {
+    "p041r_04": "Ducks",
+    "p050v_1": "Small birds"
+  },
+  "olive": {
+    "p042v_5": "For outlining a portrait",
+    "p044v_3": "White soporific oil",
+    "p067r_4": "Varnish on paper",
+    "p069r_2": "Sand",
+    "p075v_4": "Recipe for putting all woods in color",
+    "p089v_2": "Glassmakers’ white sand from the mine, mixed with sal ammoniac",
+    "p096v_3": "Yellow varnish",
+    "p110v_1": "Molds",
+    "p116r_2": "Molding de en noyau with the same sand, wax images or lead medals and suchlike",
+    "p141r_1": "Molding a crayfish",
+    "p152r_1": "Molding a rat",
+    "p153r_2": "Giving the thickness that you wish to a medal",
+    "p156v_1": "Molding a fly"
+  },
+  "pavis": {
+    "p043r_1": "Mericotons and pavis",
+    "p053r_5": "Almond trees, apricots"
+  },
+  "mericotons": {
+    "p043r_1": "Mericotons and pavis",
+    "p053r_5": "Almond trees, apricots",
+    "p105r_4": "Gardening"
+  },
+  "flax": {
+    "p044r_5": "Dyes from flowers"
+  },
+  "bugloss": {
+    "p044r_5": "Dyes from flowers",
+    "p170v_2": "Against plague"
+  },
+  "columbine": {
+    "p044r_5": "Dyes from flowers"
+  },
+  "grains": {
+    "p044r_5": "Dyes from flowers",
+    "p170v_3": "For preserving"
+  },
+  "pansy": {
+    "p044r_5": "Dyes from flowers",
+    "p110v_2": "Wheat oil",
+    "p138v_2": "Gold cast very thinly",
+    "p142v_1": "Molding grasshoppers and things too thin",
+    "p154v_4": "Reinforcing flowers and delicate things"
+  },
+  "cornflower": {
+    "p044r_5": "Dyes from flowers"
+  },
+  "dittany": {
+    "p044v_2": "Excellent water against the plague of Monsieur de Montorsin"
+  },
+  "rue": {
+    "p044v_2": "Excellent water against the plague of Monsieur de Montorsin",
+    "p170v_3": "For preserving"
+  },
+  "mandrake": {
+    "p044v_3": "White soporific oil"
+  },
+  "clove": {
+    "p046r_1": "For the teeth, oil of sulfur",
+    "p047r_1": "For teeth"
+  },
+  "gentian": {
+    "p046r_3": "Against the falling sickness"
+  },
+  "guaiac": {
+    "p046r_4": "Against cold gouts"
+  },
+  "peony": {
+    "p047r_3": "Against falling sickness or vertigo"
+  },
+  "symphytum": {
+    "p047r_5": "Against diarrhea and dysentery"
+  },
+  "cloves": {
+    "p048r_3": "Excellent mustard"
+  },
+  "mustard": {
+    "p048r_3": "Excellent mustard",
+    "p121v_1": "For casting in silver"
+  },
+  "plums": {
+    "p050r_1": "Keeping fruit for the entire year"
+  },
+  "cherries": {
+    "p050r_1": "Keeping fruit for the entire year"
+  },
+  "ettuce": {
+    "p050v_1": "Small birds"
+  },
+  "lettuce": {
+    "p050v_1": "Small birds"
+  },
+  "almonds": {
+    "p050v_1": "Small birds",
+    "p060r_3": "Oil"
+  },
+  "rapeseed": {
+    "p050v_1": "Small birds",
+    "p102r_2": "For the furnace",
+    "p144r_1": "Turtles"
+  },
+  "fenugreek": {
+    "p052r_1": "The work done in Algiers"
+  },
+  "apricots": {
+    "p053r_5": "Almond trees, apricots",
+    "p091r_1": "Grafting",
+    "p105r_4": "Gardening"
+  },
+  "alberge": {
+    "p053r_5": "Almond trees, apricots"
+  },
+  "heath": {
+    "p053v_1": "Silkworms"
+  },
+  "semperviva": {
+    "p055r_3": "Against wounds"
+  },
+  "vermicularis": {
+    "p055r_3": "Against wounds"
+  },
+  "horseradish": {
+    "p055v_2": "Damascus steel"
+  },
+  "weld": {
+    "p056r_1": "Excellent tempering bath for cuirass bodies"
+  },
+  "aloe": {
+    "p056v_1": "Painter"
+  },
+  "almond": {
+    "p057v_2": "Painter",
+    "p126r_1": "Molding fruits and animals in sugar"
+  },
+  "peach": {
+    "p058v_1": "Blacks",
+    "p063v_1": "Velvets and blacks"
+  },
+  "amaranth": {
+    "p063r_1": "Amaranth color",
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "sloes": {
+    "p066v_1": "For preventing teats from swelling d or to diminish overly large ones"
+  },
+  "sumac": {
+    "p066v_1": "For preventing teats from swelling d or to diminish overly large ones"
+  },
+  "pomegranate": {
+    "p066v_1": "For preventing teats from swelling d or to diminish overly large ones"
+  },
+  "elm": {
+    "p071r_2": "Wood with streaked grain",
+    "p072r_2": "Casting in copper",
+    "p084v_1": "Sand",
+    "p084v_2": "Eau Magistra",
+    "p085v_4": "Experimented sands",
+    "p087v_2": "Magistra"
+  },
+  "maple": {
+    "p071r_2": "Wood with streaked grain"
+  },
+  "persicaire": {
+    "p072r_2": "Casting in copper"
+  },
+  "maplewood": {
+    "p073r_4": "For making gray wood"
+  },
+  "fustet": {
+    "p076r_5": "For making it yellow"
+  },
+  "rosemary": {
+    "p077r_2": "Medicine of the orientals against all maladies",
+    "p098r_2": "Borders of a garden",
+    "p102v_2": "Infusion of anthos or rosemary",
+    "p126v_3": "Plants difficult to burn in the noyau"
+  },
+  "beech": {
+    "p084v_2": "Eau Magistra",
+    "p094r_1": "Furbisher"
+  },
+  "oak": {
+    "p084v_2": "Eau Magistra"
+  },
+  "aspic": {
+    "p084v_4": "Sand for lead, the most excellent of all, for high and low reliefs"
+  },
+  "bramble": {
+    "p088r_1": "Osier"
+  },
+  "osier": {
+    "p088r_1": "Osier"
+  },
+  "peaches": {
+    "p091r_1": "Grafting"
+  },
+  "olives": {
+    "p093r_1": "Olives"
+  },
+  "rowan": {
+    "p094r_1": "Furbisher"
+  },
+  "sage": {
+    "p094r_1": "Furbisher",
+    "p156v_1": "Molding a fly"
+  },
+  "straws": {
+    "p097v_1": "Mastic varnish dry in a half hour"
+  },
+  "prune": {
+    "p098r_2": "Borders of a garden"
+  },
+  "anthos": {
+    "p102v_2": "Infusion of anthos or rosemary"
+  },
+  "ivy": {
+    "p103r_1": "Against burns, excellent"
+  },
+  "oraches": {
+    "p105v_1": "Gardening"
+  },
+  "nettles": {
+    "p109v_1": "Toad"
+  },
+  "chestnuts": {
+    "p111v_1": "Sal ammoniac water",
+    "p166v_2": "Keeping chestnuts"
+  },
+  "rose": {
+    "p116r_4": "A way to grind enamel gold very delicate gold rose leaves and others",
+    "p154v_4": "Reinforcing flowers and delicate things",
+    "p155r_1": "Molding a rose",
+    "p155v_1": "Rose",
+    "p159v_2": "Carnation",
+    "p169r_1": "List of processes"
+  },
+  "hazelnut": {
+    "p116v_2": "Mixture of tin and lead",
+    "p128r_1": "Casting in silver and gold"
+  },
+  "asparagus": {
+    "p117v_1": "For making the ashes of flowers and plants leave molds",
+    "p126v_3": "Plants difficult to burn in the noyau"
+  },
+  "daisies": {
+    "p117v_2": "Daisies"
+  },
+  "potirons": {
+    "p118r_3": "For grottos"
+  },
+  "mushrooms": {
+    "p118r_3": "For grottos"
+  },
+  "wormseed": {
+    "p120r_2": "Sand for casting in gold",
+    "p129r_2": "For wormseed"
+  },
+  "cornflowers": {
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "pansies": {
+    "p120v_6": "Keeping dry flowers in the same state all year",
+    "p129r_4": "Molded roses"
+  },
+  "carnations": {
+    "p120v_6": "Keeping dry flowers in the same state all year",
+    "p143v_3": "Carnations",
+    "p169r_1": "List of processes"
+  },
+  "ranunculus": {
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "broom": {
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "marigolds": {
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "zedoary": {
+    "p123r_1": "A means di far correr lotnegra"
+  },
+  "pappus": {
+    "p124r_1": "Animals with hair and fragile and very thin flowers"
+  },
+  "dandelion": {
+    "p124r_1": "Animals with hair and fragile and very thin flowers"
+  },
+  "burdock": {
+    "p124r_1": "Animals with hair and fragile and very thin flowers"
+  },
+  "grapes": {
+    "p126r_1": "Molding fruits and animals in sugar"
+  },
+  "grape": {
+    "p126r_1": "Molding fruits and animals in sugar"
+  },
+  "chauchés": {
+    "p126r_1": "Molding fruits and animals in sugar"
+  },
+  "sauvignons": {
+    "p126r_1": "Molding fruits and animals in sugar"
+  },
+  "pears": {
+    "p126r_1": "Molding fruits and animals in sugar"
+  },
+  "apples": {
+    "p126r_1": "Molding fruits and animals in sugar"
+  },
+  "thyme": {
+    "p126v_3": "Plants difficult to burn in the noyau"
+  },
+  "strawberry": {
+    "p154v_5": "Strawberries"
+  },
+  "strawberries": {
+    "p154v_5": "Strawberries",
+    "p169r_1": "List of processes"
+  },
+  "periwinkle": {
+    "p158r_1": "Mercury in the molds for cleaning"
+  },
+  "mosses": {
+    "p169r_1": "List of processes"
+  },
+  "scabious": {
+    "p170v_2": "Against plague"
+  },
+  "ruta": {
+    "p170v_3": "For preserving"
+  },
+  "pastel woad": {
+    "p001r_1": "List of names",
+    "p015r_1": "Damasked cloth",
+    "p032v_1": "Mat maker",
+    "p038v_5": "Merchant",
+    "p038v_6": "Scarlets",
+    "p039r_2": "Pastel woad",
+    "p076r_3": "For making it blue"
+  },
+  "hog’s fennel": {
+    "p004v_1": "Black varnish for sword guard, bands for trunks, &amp;c"
+  },
+  "grains of wheat": {
+    "p004v_1": "Black varnish for sword guard, bands for trunks, &amp;c"
+  },
+  "spike lavender": {
+    "p004v_2": "Black varnish without fire, without disassembling the harnesses or removing the bands from trunks",
+    "p006r_1": "For laying down and setting burnished gold and giving red or green or blue",
+    "p010r_1": "Counterfeit jasper",
+    "p029v_1": "Color of gold without gold on silver",
+    "p042v_6": "White varnish on plaster",
+    "p051r_1": "Counterproofing",
+    "p056r_2": "Varnish for distemper",
+    "p056v_1": "Painter",
+    "p057v_2": "Painter",
+    "p058v_5": "Paintbrushes",
+    "p059r_2": "Azure",
+    "p060v_3": "Spike lavender oil",
+    "p067r_1": "Oil",
+    "p067r_4": "Varnish on paper",
+    "p071v_1": "Varnish",
+    "p073v_2": "Varnish",
+    "p073v_3": "Another recipe for making varnish",
+    "p077v_2": "Another varnish",
+    "p077v_3": "Another varnish",
+    "p078r_1": "Another varnish",
+    "p079v_1": "For making varnish",
+    "p089v_1": "Sal ammoniac and alabaster",
+    "p089v_2": "Glassmakers’ white sand from the mine, mixed with sal ammoniac",
+    "p097v_1": "Mastic varnish dry in a half hour",
+    "p098r_1": "Varnish for lutes"
+  },
+  "service tree": {
+    "p007r_2": "For coloring stamped trunks"
+  },
+  "fig tree": {
+    "p008r_1": "Lettering of gold on paper",
+    "p012r_3": "Paper",
+    "p039v_3": "Tracing some history on glass",
+    "p042v_1": "Pounced design for scratching satin",
+    "p066r_3": "Painting in distemper on wood",
+    "p073v_1": "For c coating it",
+    "p075v_2": "For gilding on wood",
+    "p129r_1": "Painting plants of metal"
+  },
+  "guesde woad": {
+    "p015r_1": "Damasked cloth"
+  },
+  "black cherry": {
+    "p033r_1": "Knife for cutting the nose or a finger",
+    "p033v_2": "For making blood or wine issue from someone’s forehead or from a wall"
+  },
+  "calf’s foot": {
+    "p035v_1": "For preventing someone from eating a foodstuff"
+  },
+  "capilli veneris": {
+    "p037r_2": "Medicine for the stomach which heats it and unstops the liver",
+    "p169r_1": "List of processes"
+  },
+  "lapathum acutum": {
+    "p038v_2": "Against nose bleed and for dyeing"
+  },
+  "cooking herbs": {
+    "p039r_2": "Pastel woad"
+  },
+  "monk’s rhubarb": {
+    "p040r_1": "Dye"
+  },
+  "lapathium acutum maius": {
+    "p040r_1": "Dye"
+  },
+  "garden lily": {
+    "p041r_02": "Garden lily"
+  },
+  "lily flower": {
+    "p044r_5": "Dyes from flowers"
+  },
+  "red poppy": {
+    "p044r_5": "Dyes from flowers"
+  },
+  "consolida maior": {
+    "p047r_5": "Against diarrhea and dysentery"
+  },
+  "walnut tree": {
+    "p049r_3": "Another",
+    "p056v_1": "Painter"
+  },
+  "almond tree": {
+    "p053r_5": "Almond trees, apricots"
+  },
+  "almond trees": {
+    "p053r_5": "Almond trees, apricots",
+    "p091r_1": "Grafting",
+    "p105r_4": "Gardening"
+  },
+  "white mulberry": {
+    "p053v_1": "Silkworms"
+  },
+  "pear tree": {
+    "p056v_1": "Painter"
+  },
+  "fir tree": {
+    "p056v_1": "Painter"
+  },
+  "palma christi": {
+    "p058v_4": "Azure",
+    "p060r_3": "Oil"
+  },
+  "broom flower": {
+    "p063v_3": "Stil de grain yellow"
+  },
+  "orberé grain": {
+    "p065r_1": "Shadows",
+    "p088v_2": "Mineral sand"
+  },
+  "olive tree": {
+    "p066v_1": "For preventing teats from swelling d or to diminish overly large ones"
+  },
+  "elm tree": {
+    "p069r_2": "Sand"
+  },
+  "vine shoots": {
+    "p073r_3": "For ridding bone or horn of grease"
+  },
+  "guesdre woad": {
+    "p076r_5": "For making it yellow"
+  },
+  "elm root": {
+    "p084v_4": "Sand for lead, the most excellent of all, for high and low reliefs"
+  },
+  "orange tree": {
+    "p090v_2": "Orange trees"
+  },
+  "orange trees": {
+    "p090v_2": "Orange trees"
+  },
+  "apricot trees": {
+    "p091r_1": "Grafting"
+  },
+  "prune trees": {
+    "p091r_1": "Grafting"
+  },
+  "peach trees": {
+    "p093r_3": "Grafts"
+  },
+  "plum trees": {
+    "p093r_3": "Grafts"
+  },
+  "quince trees": {
+    "p099v_1": "Quince trees"
+  },
+  "peach tree": {
+    "p100v_2": "For ruby take some gold leaf",
+    "p158v_1": "Colors for green leaves",
+    "p162v_1": "Peach tree"
+  },
+  "mericoton peaches": {
+    "p105r_4": "Gardening"
+  },
+  "yellow meadow flowers": {
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "palta lupina": {
+    "p120v_6": "Keeping dry flowers in the same state all year"
+  },
+  "caper plant": {
+    "p129r_4": "Molded roses"
+  },
+  "wheat chaff": {
+    "p143r_1": "Molding turtles"
+  },
+  "some small": {
+    "p144r_1": "Turtles"
+  },
+  "large amaranth": {
+    "p144r_1": "Turtles"
+  },
+  "yellow millet": {
+    "p144r_1": "Turtles"
+  },
+  "turmeric root": {
+    "p148r_1": "Beautiful color for latten"
+  },
+  "terra merita": {
+    "p148r_1": "Beautiful color for latten"
+  },
+  "rose bush": {
+    "p155r_1": "Molding a rose"
+  },
+  "rose bushes": {
+    "p155r_1": "Molding a rose"
+  },
+  "strawberry plants": {
+    "p155r_1": "Molding a rose"
+  },
+  "marigold flowers": {
+    "p158v_1": "Colors for green leaves"
+  },
+  "olive trees": {
+    "p162v_2": "Olive trees"
+  },
+  "baccis juniperi": {
+    "p170v_3": "For preserving"
+  }
+}
