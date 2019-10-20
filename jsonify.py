@@ -79,7 +79,7 @@ def write_json(prop_dict, prop: str):
     text += "  ],\n"
   text += '}'
 
-  text = re.sub(r',\n   ]', '\n   ]', text) # remove inner trailing commas
+  text = re.sub(r',\n  ]', '\n  ]', text) # remove inner trailing commas
   text = re.sub(r'],\n}', ']\n}', text) # remove outer trailing commas
 
   f = open(f"jsons/{prop}.json", "w") # save to a file in /jsons/
