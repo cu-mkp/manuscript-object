@@ -35,5 +35,5 @@ Then, `cd manuscript object`
 
 3. Run `pipenv install` to install dependencies to the pipenv shell.
 
-4. To enter the pipenv shell, run `pipenv shell`. To exit, press ^D or type `exit`
+4. To enter the pipenv shell, run `pipenv shell`. To exit, press ^D or type `exit`. Inside the pipenv shell, all outside dependencies for the repository are installed. 
 
