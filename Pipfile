@@ -8,6 +8,8 @@ verify_ssl = true
 [packages]
 pandas = "*"
 spacy = "*"
+inflection = "*"
+en-core-web-sm = {file = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz"}
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"

@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d81233aad8df5ed1cdd8fac374fe897341df6e64b13d4d9b24cede8f3824a4e4"
+            "sha256": "8d5ea6a21f773f9a25cb78aeea5ef9e3242b4d08f447ce2168b33ba71880a6d8"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.6"
+            "python_version": "3.7"
         },
         "sources": [
             {
@@ -76,12 +76,22 @@
             ],
             "version": "==2.0.2"
         },
+        "en-core-web-sm": {
+            "file": "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz"
+        },
         "idna": {
             "hashes": [
                 "sha256:c357b3f628cf53ae2c4c05627ecc484553142ca23264e593d327bcde5e9c3407",
                 "sha256:ea8b7f6188e6fa117537c3df7da9fc686d485087abf6ac197f9c46432f7e4a3c"
             ],
             "version": "==2.8"
+        },
+        "inflection": {
+            "hashes": [
+                "sha256:18ea7fb7a7d152853386523def08736aa8c32636b047ade55f7578c4edeb16ca"
+            ],
+            "index": "pypi",
+            "version": "==0.3.1"
         },
         "murmurhash": {
             "hashes": [
