@@ -4,9 +4,11 @@ import os
 from typing import Dict
 
 # Third-Party Modules
+import inflection
 import pandas as pd
 import spacy
-import inflection
+from tqdm import tqdm
+
 
 # Local Modules
 from digital_manuscript import BnF
@@ -93,7 +95,7 @@ def create_thesaurus():
   if not os.path.exists('thesaurus'):
     os.mkdir('thesaurus')
 
-  for i, prop in enumerate(properties):
+  for prop in tqdm(properties):
     simple_df, complex_df = get_prop_dfs(manuscript, prop) # get dataframe of count, verbatim terms
 
     # create the prefLabel_en column by lemmatizing terms to lower case, singular, and stripped of white space
@@ -105,6 +107,5 @@ def create_thesaurus():
 
     df = pd.concat([simple_df, complex_df]) # merge dataframes 
     df.to_csv(f'thesaurus/{prop}.csv', index=False) # write dataframe to a file
-    print(f'{int(((i+1)/len(properties)) * 100)}%') # print progress
     
 create_thesaurus()

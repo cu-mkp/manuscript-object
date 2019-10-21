@@ -6,8 +6,7 @@ from typing import Dict, Tuple, List
 
 # Third Party Modules
 import pandas as pd
-import spacy
-import inflection
+from tqdm import tqdm
 
 # Local Modules
 from digital_manuscript import BnF
@@ -40,7 +39,8 @@ def read_manuscript(manuscript: BnF, df_dict: Dict[str, pd.DataFrame]):
   Output: df_dict -- a dict where they keys are an element of properties and the value is the thesaurus
   DataFrame for that property.
   """
-  for i, entry in enumerate(manuscript.entries):
+  for i in tqdm(range(len(manuscript.entries))):
+    entry = manuscript.entries[i]
     for prop in properties:
       df = df_dict[prop]
       prop_list = entry.get_prop(prop, 'tl')
@@ -50,8 +50,6 @@ def read_manuscript(manuscript: BnF, df_dict: Dict[str, pd.DataFrame]):
           entry_list.append(entry)
           df.loc[j] = [row.freq, row.verbatim_term, row.prefLabel_en, entry_list.copy()]
           df_dict[prop] = df
-    if i%25 == 0:
-      print(i)
   return df_dict
 
 def df_to_dict(df = pd.DataFrame):
