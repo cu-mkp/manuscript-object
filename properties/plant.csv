@@ -1,18 +1,18 @@
 prefLabel_en,verbatim_term,identity,title
+gilliflower,gilliflower,p001v_1,For easing the belly
 jujube,jujubes,p001v_1,For easing the belly
 marshmallow,marshmallow,p001v_1,For easing the belly
-gilliflower,gilliflower,p001v_1,For easing the belly
 mallow,mallow,p001v_1,For easing the belly
+prune,prunes,p001v_1,For easing the belly
+prune,prune,p098r_2,Borders of a garden
 cinnamon,cinnamon,p001v_1,For easing the belly
 cinnamon,cinnamon,p047r_1,For teeth
 cinnamon,cinnamon,p048r_3,Excellent mustard
-prune,prunes,p001v_1,For easing the belly
-prune,prune,p098r_2,Borders of a garden
 cabbage,cabbage,p002r_2,Against pains
 walnut,walnut,p003r_1,Counterfeit coral
 walnut,walnut,p004v_1,Black varnish for sword guard, bands for trunks, &amp;c
 walnut,walnut,p004v_3,Varnish of iron etchers
-walnut,walnut,p006r_1,For laying down and setting burnished gold and giving red or green or blue
+walnut,walnut,p006r_1,For laying down and seating burnished gold and giving red or green or blue
 walnut,walnut,p046r_1,For the teeth, oil of sulfur
 walnut,walnut,p051r_2,Cutters of printing plates
 walnut,walnut,p057v_2,Painter
@@ -35,7 +35,7 @@ walnut,walnuts,p057v_2,Painter
 walnut,walnuts,p118v_1,Casting in frames
 linseed,linseed,p004v_1,Black varnish for sword guard, bands for trunks, &amp;c
 linseed,linseed,p004v_3,Varnish of iron etchers
-linseed,linseed,p006r_1,For laying down and setting burnished gold and giving red or green or blue
+linseed,linseed,p006r_1,For laying down and seating burnished gold and giving red or green or blue
 linseed,linseed,p051r_2,Cutters of printing plates
 linseed,linseed,p052v_1,Linseed
 linseed,linseed,p074r_3,For making varnish
@@ -43,29 +43,18 @@ linseed,linseed,p077v_1,Another approved varnish
 linseed,linseed,p101v_3,Varnish
 linseed,linseed,p103r_1,Against burns, excellent
 linseed,linseed,p104r_2,For etching on iron
+onion,onions,p004v_1,Black varnish for sword guard, bands for trunks, &amp;c
+onion,onions,p074r_3,For making varnish
+onion,onion,p020v_4,Against burn
 garlic,garlic,p004v_1,Black varnish for sword guard, bands for trunks, &amp;c
 garlic,garlic,p015v_6,Tooth ache
 garlic,garlic,p039v_3,Tracing some history on glass
 garlic,garlic,p051r_2,Cutters of printing plates
-onion,onions,p004v_1,Black varnish for sword guard, bands for trunks, &amp;c
-onion,onions,p074r_3,For making varnish
-onion,onion,p020v_4,Against burn
 linen,linen,p004v_3,Varnish of iron etchers
 linen,linen,p039v_3,Tracing some history on glass
 linen,linen,p098r_3,Locksmith
 linen,linen,p105r_4,Gardening
-bean,bean,p006r_1,For laying down and setting burnished gold and giving red or green or blue
-bean,bean,p118v_1,Casting in frames
-bean,bean,p135r_1,Couleur for gold or mixture
-bean,bean,p135v_1,Casting in ☼
-bean,bean,p139r_1,Casts of lead and tin
-bean,beans,p009r_1,Plowman
-prele,prele,p006r_1,For laying down and setting burnished gold and giving red or green or blue
-saffron,saffron,p006r_1,For laying down and setting burnished gold and giving red or green or blue
-saffron,saffron,p007r_3,Doublets
-saffron,saffron,p020r_1,For making millas
-saffron,saffron,p038r_2,Saffron
-willow,willow,p006r_1,For laying down and setting burnished gold and giving red or green or blue
+willow,willow,p006r_1,For laying down and seating burnished gold and giving red or green or blue
 willow,willow,p038r_4,Amber
 willow,willow,p081v_3,Sand
 willow,willow,p083v_2, Molding in relief on one part and hollow on the other.
@@ -73,30 +62,42 @@ willow,willow,p084v_2,Eau Magistra
 willow,willow,p091r_2,Molding with cuttlefish bone
 willow,willow,p094r_1,Furbisher
 willow,willow,p164r_2,Repairing flashing
-brazilwood,brazilwood,p006r_1,For laying down and setting burnished gold and giving red or green or blue
+prele,prele,p006r_1,For laying down and seating burnished gold and giving red or green or blue
+horsetail,horsetail,p006r_1,For laying down and seating burnished gold and giving red or green or blue
+bean,bean,p006r_1,For laying down and seating burnished gold and giving red or green or blue
+bean,bean,p118v_1,Casting in frames
+bean,bean,p135r_1,Couleur for gold or mixture
+bean,bean,p135v_1,Casting in ☼
+bean,bean,p139r_1,Casts of lead and tin
+bean,beans,p009r_1,Plowman
+brazilwood,brazilwood,p006r_1,For laying down and seating burnished gold and giving red or green or blue
 brazilwood,brazilwood,p032v_1,Mat maker
 brazilwood,brazilwood,p043v_1,Varied and transmuted wine
 brazilwood,brazilwood,p063v_4,Rosette
-pea,pea,p006r_1,For laying down and setting burnished gold and giving red or green or blue
+saffron,saffron,p006r_1,For laying down and seating burnished gold and giving red or green or blue
+saffron,saffron,p007r_3,Doublets
+saffron,saffron,p020r_1,For making millas
+saffron,saffron,p038r_2,Saffron
+saffron,saffron,p041v_3,Colors and gilding on glass
+pea,pea,p006r_1,For laying down and seating burnished gold and giving red or green or blue
 pea,pea,p057v_1,Sheath maker
 pea,pea,p128r_1,Casting in silver and gold
 pea,peas,p029v_6,Dragon’s blood
 pea,peas,p147v_4,Cast of latten
 pea,peas,p152r_1,Molding a rat
-horsetail,horsetail,p006r_1,For laying down and setting burnished gold and giving red or green or blue
 carnation,carnation,p006v_1,For ga cachcages
 carnation,carnation,p159v_2,Carnation
 carnation,carnations,p120v_6,Keeping dry flowers in the same state all year
 carnation,carnations,p143v_3,Carnations
 carnation,carnations,p169r_1,List of processes
 baillard,baillard,p009r_1,Plowman
+pomole,pomole,p009r_1,Plowman
 millet,millet,p009r_1,Plowman
 millet,millet,p020r_1,For making millas
 millet,millet,p041r_04,Ducks
 millet,millet,p049v_3,Birds
 millet,millet,p112v_1,For molding Making the arrangement and disposition of the animal
 millet,yellow millet,p144r_1,Turtles
-pomole,pomole,p009r_1,Plowman
 grain,grain,p009r_1,Plowman
 grain,grain,p035v_2,For transmuting grain from one vessel to another
 grain,grains,p044r_5,Dyes from flowers
@@ -132,7 +133,6 @@ hemp,hemp,p050v_1,Small birds
 hemp,hemp,p066v_2,For attracting pigeons
 straw,straw,p020r_2,Glassworker
 straw,straws,p097v_1,Mastic varnish dry in a half hour
-puffball,puffball,p020v_1,For whitening the face
 wheat,wheat,p020v_1,For whitening the face
 wheat,wheat,p029r_1,Stucco for molding
 wheat,wheat,p037v_1,Gardener
@@ -159,6 +159,7 @@ wheat,wheat,p156v_1,Molding a fly
 wheat,wheat,p163r_1,Perfumer
 wheat,wheat,p166r_1,For the workshop
 wheat,wheat,p169r_1,List of processes
+puffball,puffball,p020v_1,For whitening the face
 skirret,skirret,p020v_3,Skirret root
 tree,trees,p024v_1,For bringing a cannon over land
 tree,almond trees,p053r_5,Almond trees, apricots
@@ -168,6 +169,7 @@ tree,orange trees,p090v_2,Orange trees
 tree,apricot trees,p091r_1,Grafting
 tree,prune trees,p091r_1,Grafting
 tree,plum trees,p093r_3,Grafts
+tree,peach trees,p093r_3,Grafts
 tree,quince trees,p099v_1,Quince trees
 tree,olive trees,p162v_2,Olive trees
 rye,rye,p029r_1,Stucco for molding
@@ -226,14 +228,12 @@ olive,olive,p141r_1,Molding a crayfish
 olive,olive,p152r_1,Molding a rat
 olive,olive,p153r_2,Giving the thickness that you wish to a medal
 olive,olive,p156v_1,Molding a fly
-pavi,pavis,p043r_1,Mericotons and pavis
-pavi,pavis,p053r_5,Almond trees, apricots
 mericoton,mericotons,p043r_1,Mericotons and pavis
 mericoton,mericotons,p053r_5,Almond trees, apricots
 mericoton,mericotons,p105r_4,Gardening
+pavi,pavis,p043r_1,Mericotons and pavis
+pavi,pavis,p053r_5,Almond trees, apricots
 flax,flax,p044r_5,Dyes from flowers
-bugloss,bugloss,p044r_5,Dyes from flowers
-bugloss,bugloss,p170v_2,Against plague
 columbine,columbine,p044r_5,Dyes from flowers
 pansy,pansy,p044r_5,Dyes from flowers
 pansy,pansy,p110v_2,Wheat oil
@@ -244,9 +244,11 @@ pansy,pansies,p120v_6,Keeping dry flowers in the same state all year
 pansy,pansies,p129r_4,Molded roses
 cornflower,cornflower,p044r_5,Dyes from flowers
 cornflower,cornflowers,p120v_6,Keeping dry flowers in the same state all year
-dittany,dittany,p044v_2,Excellent water against the plague of Monsieur de Montorsin
+bugloss,bugloss,p044r_5,Dyes from flowers
+bugloss,bugloss,p170v_2,Against plague
 rue,rue,p044v_2,Excellent water against the plague of Monsieur de Montorsin
 rue,rue,p170v_3,For preserving
+dittany,dittany,p044v_2,Excellent water against the plague of Monsieur de Montorsin
 mandrake,mandrake,p044v_3,White soporific oil
 clove,clove,p046r_1,For the teeth, oil of sulfur
 clove,clove,p047r_1,For teeth
@@ -254,34 +256,33 @@ gentian,gentian,p046r_3,Against the falling sickness
 guaiac,guaiac,p046r_4,Against cold gouts
 peony,peony,p047r_3,Against falling sickness or vertigo
 symphytum,symphytum,p047r_5,Against diarrhea and dysentery
-clofe,cloves,p048r_3,Excellent mustard
 mustard,mustard,p048r_3,Excellent mustard
 mustard,mustard,p121v_1,For casting in silver
-plum,plums,p050r_1,Keeping fruit for the entire year
+clofe,cloves,p048r_3,Excellent mustard
 cherry,cherries,p050r_1,Keeping fruit for the entire year
+plum,plums,p050r_1,Keeping fruit for the entire year
 ettuce,ettuce,p050v_1,Small birds
+rapeseed,rapeseed,p050v_1,Small birds
+rapeseed,rapeseed,p102r_2,For the furnace
+rapeseed,rapeseed,p144r_1,Turtles
 almond,almonds,p050v_1,Small birds
 almond,almonds,p060r_3,Oil
 almond,almond,p057v_2,Painter
 almond,almond,p126r_1,Molding fruits and animals in sugar
-rapeseed,rapeseed,p050v_1,Small birds
-rapeseed,rapeseed,p102r_2,For the furnace
-rapeseed,rapeseed,p144r_1,Turtles
 fenugreek,fenugreek,p052r_1,The work done in Algiers
 apricot,apricots,p053r_5,Almond trees, apricots
 apricot,apricots,p091r_1,Grafting
 apricot,apricots,p105r_4,Gardening
 alberge,alberge,p053r_5,Almond trees, apricots
 heath,heath,p053v_1,Silkworms
-semperviva,semperviva,p055r_3,Against wounds
 vermiculari,vermicularis,p055r_3,Against wounds
+semperviva,semperviva,p055r_3,Against wounds
 horseradish,horseradish,p055v_2,Damascus steel
 weld,weld,p056r_1,Excellent tempering bath for cuirass bodies
 aloe,aloe,p056v_1,Painter
 peach,peach,p058v_1,Blacks
 peach,peach,p063v_1,Velvets and blacks
 peach,peaches,p091r_1,Grafting
-peach,peach trees,p093r_3,Grafts
 peach,mericoton peaches,p105r_4,Gardening
 amaranth,amaranth,p063r_1,Amaranth color
 amaranth,amaranth,p120v_6,Keeping dry flowers in the same state all year
@@ -289,13 +290,13 @@ amaranth,large amaranth,p144r_1,Turtles
 slo,sloes,p066v_1,For preventing teats from swelling d or to diminish overly large ones
 sumac,sumac,p066v_1,For preventing teats from swelling d or to diminish overly large ones
 pomegranate,pomegranate,p066v_1,For preventing teats from swelling d or to diminish overly large ones
+maple,maple,p071r_2,Wood with streaked grain
 elm,elm,p071r_2,Wood with streaked grain
 elm,elm,p072r_2,Casting in copper 
 elm,elm,p084v_1,Sand
 elm,elm,p084v_2,Eau Magistra
 elm,elm,p085v_4,Experimented sands
 elm,elm,p087v_2,Magistra
-maple,maple,p071r_2,Wood with streaked grain
 persicaire,persicaire,p072r_2,Casting in copper 
 maplewood,maplewood,p073r_4,For making gray wood
 fustet,fustet,p076r_5,For making it yellow
@@ -303,16 +304,16 @@ rosemary,rosemary,p077r_2, Medicine of the orientals against all maladies
 rosemary,rosemary,p098r_2,Borders of a garden
 rosemary,rosemary,p102v_2,Infusion of anthos or rosemary
 rosemary,rosemary,p126v_3,Plants difficult to burn in the noyau
+oak,oak,p084v_2,Eau Magistra
 beech,beech,p084v_2,Eau Magistra
 beech,beech,p094r_1,Furbisher
-oak,oak,p084v_2,Eau Magistra
 aspic,aspic,p084v_4,Sand for lead, the most excellent of all, for high and low reliefs
-bramble,bramble,p088r_1,Osier
 osier,osier,p088r_1,Osier
+bramble,bramble,p088r_1,Osier
 olife,olives,p093r_1,Olives
-rowan,rowan,p094r_1,Furbisher
 sage,sage,p094r_1,Furbisher
 sage,sage,p156v_1,Molding a fly
+rowan,rowan,p094r_1,Furbisher
 antho,anthos,p102v_2,Infusion of anthos or rosemary
 ivy,ivy,p103r_1,Against burns, excellent
 orach,oraches,p105v_1,Gardening
@@ -322,22 +323,22 @@ chestnut,chestnuts,p166v_2,Keeping chestnuts
 asparagu,asparagus,p117v_1,For making the ashes of flowers and plants leave molds
 asparagu,asparagus,p126v_3,Plants difficult to burn in the noyau
 daisy,daisies,p117v_2,Daisies
-potiron,potirons,p118r_3,For grottos
 mushroom,mushrooms,p118r_3,For grottos
+potiron,potirons,p118r_3,For grottos
 wormseed,wormseed,p120r_2,Sand for casting in gold
 wormseed,wormseed,p129r_2,For wormseed
 ranunculu,ranunculus,p120v_6,Keeping dry flowers in the same state all year
 broom,broom,p120v_6,Keeping dry flowers in the same state all year
 zedoary,zedoary,p123r_1, A means di far correr lotnegra
-pappu,pappus,p124r_1,Animals with hair and fragile and very thin flowers
-dandelion,dandelion,p124r_1,Animals with hair and fragile and very thin flowers
 burdock,burdock,p124r_1,Animals with hair and fragile and very thin flowers
+dandelion,dandelion,p124r_1,Animals with hair and fragile and very thin flowers
+pappu,pappus,p124r_1,Animals with hair and fragile and very thin flowers
+sauvignon,sauvignons,p126r_1,Molding fruits and animals in sugar
 grape,grapes,p126r_1,Molding fruits and animals in sugar
 grape,grape,p126r_1,Molding fruits and animals in sugar
 chauché,chauchés,p126r_1,Molding fruits and animals in sugar
-sauvignon,sauvignons,p126r_1,Molding fruits and animals in sugar
-pear,pears,p126r_1,Molding fruits and animals in sugar
 apple,apples,p126r_1,Molding fruits and animals in sugar
+pear,pears,p126r_1,Molding fruits and animals in sugar
 thyme,thyme,p126v_3,Plants difficult to burn in the noyau
 strawberry,strawberry,p154v_5,Strawberries
 strawberry,strawberries,p154v_5,Strawberries
@@ -355,7 +356,7 @@ pastel woad,pastel woad,p039r_2,Pastel woad
 pastel woad,pastel woad,p076r_3,For making it blue
 hog’s fennel,hog’s fennel,p004v_1,Black varnish for sword guard, bands for trunks, &amp;c
 spike lavender,spike lavender,p004v_2,Black varnish without fire, without disassembling the harnesses or removing the bands from trunks
-spike lavender,spike lavender,p006r_1,For laying down and setting burnished gold and giving red or green or blue
+spike lavender,spike lavender,p006r_1,For laying down and seating burnished gold and giving red or green or blue
 spike lavender,spike lavender,p010r_1,Counterfeit jasper
 spike lavender,spike lavender,p029v_1,Color of gold without gold on silver
 spike lavender,spike lavender,p042v_6,White varnish on plaster
@@ -396,8 +397,8 @@ capilli veneri,capilli veneris,p037r_2,Medicine for the stomach which heats it a
 capilli veneri,capilli veneris,p169r_1,List of processes
 lapathum acutum,lapathum acutum,p038v_2,Against nose bleed and for dyeing
 cooking herb,cooking herbs,p039r_2,Pastel woad
-monk’s rhubarb,monk’s rhubarb,p040r_1,Dye
 lapathium acutum maiu,lapathium acutum maius,p040r_1,Dye
+monk’s rhubarb,monk’s rhubarb,p040r_1,Dye
 garden lily,garden lily,p041r_02,Garden lily
 lily flower,lily flower,p044r_5,Dyes from flowers
 red poppy,red poppy,p044r_5,Dyes from flowers

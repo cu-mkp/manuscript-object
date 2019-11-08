@@ -1,31 +1,31 @@
 freq,verbatim_term,prefLabel_en
 3,rain,rain
 1,courtyard,courtyard
+1,street,street
 4,sun,sun
 1,window,window
-1,street,street
 4,wall,wall
 1,court,court
 2,mountains,mountain
 2,chamber,chamber
 2,walls,wall
-1,casemates,casemate
-2,houses,house
-1,barricade,barricade
-1,cities,city
+1,trenches,trench
 1,tower,tower
+2,houses,house
+1,cities,city
+1,barricade,barricade
+1,casemates,casemate
 1,gabions,gabion
 1,city,city
-1,trenches,trench
 2,hearth,hearth
 2,church,church
 1,land,land
-11,mine,mine
 1,countryside,countryside
+11,mine,mine
 1,humidity,humidity
 1,kitchen,kitchen
-1,burrows,burrow
 1,burrow,burrow
+1,burrows,burrow
 1,chimney,chimney
 4,grottos,grotto
 8,water,water
@@ -39,8 +39,8 @@ freq,verbatim_term,prefLabel_en
 1,firelight,firelight
 1,rains,rain
 1,rocks,rock
-1,quarreriesries,quarreriesry
 3,sea,sea
+1,quarreriesries,quarreriesry
 1,quarries,quarry
 3,river,river
 6,wind,wind
@@ -60,14 +60,14 @@ freq,verbatim_term,prefLabel_en
 2,earth,earth
 2,grotto,grotto
 1,forests,forest
-1,barns,barn
 1,anthill,anthill
+1,barns,barn
 1,cabinets,cabinet
 1,rooms,room
 1,well,well
 1,shop,shop
-1,mirrors,mirror
 1,beds,bed
+1,mirrors,mirror
 1,daylight,daylight
 3,garrigue,garrigue
 1,pantries,pantry
@@ -85,24 +85,24 @@ freq,verbatim_term,prefLabel_en
 1,in wind,in wind
 1,near the fire,near the fire
 1,autan wind,wind
-1,good &amp; fertile land,land
+1,good &amp; fertile land,good &amp; fertile land
 1,cool &amp; dry place,cool &amp; dry place
-1,house or elsewhere,house
-1,ditch casemates,casemate
 1,fortresses of little importance,fortresses of little importance
+1,edge of the ditch,edge of the ditch
+1,ditch casemates,casemate
 1,small towns,small town
 1,garrets topped with a tower,garrets topped with a tower
 1,private houses,house
-1,edge of the ditch,edge of the ditch
-1,in a very humid place where with such a rodier well or fountain one can water it often,water
+1,house or elsewhere,house
+1,in a very humid place where with such a rodier well or fountain one can water it often,in a very humid place where with such a rodier well or fountain one can water it often
 2,humid place,humid place
 1,very dry place,very dry place
-1,fortified towns,fortified town
 1,poorly fortified towns,poorly fortified town
+1,fortified towns,fortified town
 4,dry place,dry place
 1,bonnes villes,bonnes ville
-4,in the serain,in the serain
 1,in the open air,in the open air
+4,in the serain,in the serain
 1,overcast weather,overcast weather
 1,partition walls of rooms,wall
 1,in the hottest sun,in the hottest sun
@@ -113,18 +113,18 @@ freq,verbatim_term,prefLabel_en
 1,in nature,in nature
 1,cities where they are sworn masters,city
 1,humid weather,humid weather
-1,in a cellar,in a cellar
-1,in a room where there is not a drop of air &amp; of wind,in a room where there is not a drop of air &amp; of wind
-1,deep well,well
 1,"well-closed room, where neither wind nor air may enter",room
+1,in a room where there is not a drop of air &amp; of wind,in a room where there is not a drop of air &amp; of wind
+1,in a cellar,in a cellar
+1,deep well,well
 1,forges of foix,forges of foix
 1,place where the flame cannot cause damage,place where the flame cannot cause damage
 1,"from the ceiling, where the air or &amp; sun dry it","from the ceiling, where the air or &amp; sun dry it"
 1,warm &amp; close place,warm &amp; close place
 1,"thunder or rainy weather, cloud-covered &amp; cool","thunder or rainy weather, cloud-covered &amp; cool"
-1,weather is warm &amp; serain,weather is warm &amp; serain
 1,room accomodated with three or 4 levels of large shelves,room
-1,running river,running river
+1,weather is warm &amp; serain,weather is warm &amp; serain
+1,running river,river
 1,in the very strong sun &amp; in the serain,in the very strong sun &amp; in the serain
 1,tree or a plant that is on the bank,tree or a plant that is on the bank
 1,open sea,sea
@@ -136,10 +136,10 @@ freq,verbatim_term,prefLabel_en
 1,in the wind,in the wind
 1,the first rain,rain
 1,dry weather,dry weather
-1,rock caves,rock cafe
 1,after rainy weather,after rainy weather
 1,near my area,near my area
 1,sandy paths,path
+1,rock caves,rock cafe
 1,in the cellar or other damp place,in the cellar or other damp place
 1,at the foot of a wall,at the foot of a wall
 1,great flakes near the mountains,great flakes near the mountain
@@ -154,12 +154,12 @@ freq,verbatim_term,prefLabel_en
 1,deep in the earth,deep in the earth
 2,in dampness,in dampness
 1,rock formation,rock formation
-1,serain of the night,serain of the night
 1,moisture of the cellar,moisture of the cellar
+1,serain of the night,serain of the night
 3,in a damp place,in a damp place
-1,close to their house,close to their house
-1,in the surroundings of all the bonnes villes,in the surroundings of all the bonnes ville
 1,near the rocks in mountainous areas,near the rocks in mountainous area
+1,in the surroundings of all the bonnes villes,in the surroundings of all the bonnes ville
+1,close to their house,close to their house
 1,lean territories,lean territory
 1,from the depths of the sand-bed,from the depths of the sand-bed
 1,"serain &amp; mild weather, &amp; not too cold &amp; windy","serain &amp; mild weather, &amp; not too cold &amp; windy"
@@ -168,15 +168,15 @@ freq,verbatim_term,prefLabel_en
 1,big kitchens,kitchen
 1,fireplaces of large kitchens,fireplaces of large kitchen
 1,in the fireplace,in the fireplace
-1,weather is damp &amp; humid,weather is damp &amp; humid
 1,on the fire,on the fire
 1,weather is not serain &amp; dry,weather is not serain &amp; dry
+1,weather is damp &amp; humid,weather is damp &amp; humid
 1,humid air or place,humid air or place
 1,sand bank,sand bank
 1,in the fire,in the fire
 1,"coolness of the evening and the morning, near fountains &amp; shaded places","coolness of the evening and the morning, near fountains &amp; shaded place"
-1,rainy weather,rainy weather
 1,in a dry place,in a dry place
+1,rainy weather,rainy weather
 1,in water,in water
 1,in a cool place,in a cool place
 1,into fresh earth,into fresh earth
@@ -184,18 +184,18 @@ freq,verbatim_term,prefLabel_en
 1,fresh &amp; damp earth,fresh &amp; damp earth
 1,wind or the cold,wind
 1,in all weather,in all weather
-1,current of the waters,current of the water
 1,hot sun,sun
 1,"serain, &amp; the humidity of the night","serain, &amp; the humidity of the night"
-1,in sunlight,in sunlight
+1,current of the waters,current of the water
 1,rainy and humid weather,rainy and humid weather
+1,in sunlight,in sunlight
 1,serain &amp; s quite dry weather,serain &amp; s quite dry weather
 1,in the fields,in the field
 1,sun in june,sun
 1,wind from a window,wind
 1,moist &amp; humid place,moist &amp; humid place
-1,the air,the air
 1,the wind,wind
+1,the air,the air
 1,spring of water in the pit,spring of water in the pit
 1,cold &amp; humidity,cold
 1,in a very flat &amp; level place,in a very flat &amp; level place
@@ -205,8 +205,8 @@ freq,verbatim_term,prefLabel_en
 2,in the cold,in the cold
 1,lean &amp; dry earth,lean &amp; dry earth
 1,water where crayfish eat,water
-1,night be dark &amp; without ☾,night be dark &amp; without ☾
 1,close to the house,close to the house
+1,night be dark &amp; without ☾,night be dark &amp; without ☾
 1,in straw,in straw
 1,silver spoon that one uses at the table,silver spoon that one uses at the table
 1,lean soil,lean soil

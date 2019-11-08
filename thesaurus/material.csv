@@ -1,94 +1,95 @@
 freq,verbatim_term,prefLabel_en
 10,sugar,sugar
-2,cinnamon,cinnamon
 138,water,water
+2,cinnamon,cinnamon
 5,crystal,crystal
 25,minium,minium
+10,luted,luted
 14,verdet,verdet
 42,marble,marble
-10,luted,luted
 6,pebbles,pebble
-1,coryal,coryal
 5,sapphire,sapphire
-54,wood,wood
-1,coral,coral
-4,resin,resin
-6,cement,cement
-2,colophony,colophony
-5,leaded,leaded
+1,coryal,coryal
 6,enamels,enamel
 15,mastic,mastic
-9,vermilion,vermilion
-24,sulfur,sulfur
 39,vinegar,vinegar
+54,wood,wood
+2,colophony,colophony
+24,sulfur,sulfur
+4,resin,resin
+5,leaded,leaded
+31,charcoal,charcoal
+6,cement,cement
 21,brick,brick
-35,charcoal,charcoal
+1,coral,coral
+9,vermilion,vermilion
 48,varnish,varnish
 22,turpentine,turpentine
-107,oil,oil
+109,oil,oil
 13,rosin,rosin
+50,eau-de-vie,eau-de-vie
 69,copper,copper
 2,tinned,tinned
-4,wheat,wheat
 3,garlic,garlic
-50,eau-de-vie,eau-de-vie
-17,gum,gum
-24,glue,glue
-6,sandarac,sandarac
+4,wheat,wheat
 78,iron,iron
+6,sandarac,sandarac
+24,glue,glue
+17,gum,gum
 41,plaster,plaster
 2,ebony,ebony
 30,ashes,ash
 6,soap,soap
 4,pitch,pitch
-15,sands,sand
-4,jet,jet
 2,galipot,galipot
+16,charcoals,charcoal
+4,jet,jet
 9,smokes,smoke
+15,sands,sand
 2,onions,onion
 3,lampblack,lampblack
-14,steel,steel
 22,verdigris,verdigri
-16,salt,salt
 17,linen,linen
-11,tripoli,tripoli
-10,rosette,rosette
-6,putty,putty
-94,tin,tin
+16,salt,salt
+14,steel,steel
 6,arene,arene
+11,tripoli,tripoli
+94,tin,tin
+6,putty,putty
+10,rosette,rosette
 3,candle,candle
 14,straw,straw
 51,paper,paper
 16,quicksilver,quicksilver
-17,ash,ash
+18,ash,ash
 12,wooden,wooden
+6,sanguine,sanguine
+5,ochre,ochre
+101,gold,gold
+6,bole,bole
+1,prele,prele
+1,mine,mine
+28,ceruse,ceruse
+14,tallow,tallow
+1,horsetail,horsetail
+1,bean,bean
+3,brazilwood,brazilwood
+6,saffron,saffron
 16,azure,azure
 1,pea,pea
-1,bean,bean
-6,bole,bole
-14,tallow,tallow
-1,prele,prele
-3,brazilwood,brazilwood
-5,ochre,ochre
-1,horsetail,horsetail
-1,mine,mine
-7,saffron,saffron
-6,sanguine,sanguine
-101,gold,gold
-28,ceruse,ceruse
-22,aquafortis,aquaforti
-113,lead,lead
 8,felt,felt
 13,gild,gild
+113,lead,lead
+22,aquafortis,aquaforti
 2,tinsel,tinsel
+2,satin,satin
 14,cotton,cotton
 15,massicot,massicot
 4,velvet,velvet
-2,satin,satin
-26,lake,lake
+27,lake,lake
 2,sap-green,sap-green
-2,glueing,glueing
 1,isinglass,isinglass
+2,glueing,glueing
 1,salted,salted
 16,metals,metal
 73,metal,metal
@@ -96,45 +97,45 @@ freq,verbatim_term,prefLabel_en
 19,wine,wine
 1,walnuts,walnut
 55,glass,glass
-1,fumes,fume
-1,storax,storax
 21,urine,urine
+1,storax,storax
+1,fumes,fume
 1,mellis,melli
 19,powder,powder
-2,wadding,wadding
 1,lard,lard
+2,wadding,wadding
 10,☿,☿
-93,silver,silver
 1,or,or
 5,mercury,mercury
-9,stones,stone
-1,amethyst,amethyst
-4,ruby,ruby
+93,silver,silver
 3,emerald,emerald
 3,diamond,diamond
-4,grais,grai
+1,amethyst,amethyst
+4,ruby,ruby
+9,stones,stone
 3,☾,☾
-1,♀,♀
 2,☼,☼
+4,grais,grai
+1,♀,♀
 3,grain,grain
-1,garnets,garnet
 9,orpiment,orpiment
+1,garnets,garnet
 1,cambric,cambric
-1,jasper,jasper
-1,roses,rose
 5,horn,horn
+1,roses,rose
 1,cornalines,cornaline
-10,chalk,chalk
+1,jasper,jasper
 18,distemper,distemper
+10,chalk,chalk
 5,parchment,parchment
 17,alum,alum
 47,earth,earth
 29,filth,filth
-2,batture,batture
 4,taffeta,taffetum
+2,batture,batture
 7,honey,honey
-3,waters,water
 2,azures,azure
+3,waters,water
 10,enamel,enamel
 105,sand,sand
 2,nail,nail
@@ -142,41 +143,40 @@ freq,verbatim_term,prefLabel_en
 14,leather,leather
 1,chimolée,chimolée
 7,cloth,cloth
-6,alabaster,alabaster
 2,white,white
+6,alabaster,alabaster
 11,oiled,oiled
 5,stucco,stucco
 1,pearl,pearl
-6,arsenic,arsenic
 1,agate,agate
-2,coals,coal
 1,enilanroc,enilanroc
+6,arsenic,arsenic
 4,dyeing,dyeing
 3,vitriol,vitriol
-3,horsehair,horsehair
-12,flour,flour
 6,silk,silk
+12,flour,flour
+3,horsehair,horsehair
 2,pearls,pearl
 1,toadstone,toadstone
+5,bricks,brick
 1,heather,heather
 20,saltpeter,saltpeter
 1,mud,mud
-5,bricks,brick
 1,wisps,wisp
+1,string,string
+6,dye,dye
 1,cord,cord
 2,dyed,dyed
-6,dye,dye
-1,string,string
 36,latten,latten
-2,ivory,ivory
-1,damascening,damascening
-7,boxwood,boxwood
 1,sandalwood,sandalwood
+7,boxwood,boxwood
+1,damascening,damascening
+2,ivory,ivory
 2,beryl,beryl
 14,bronze,bronze
 2,musk,musk
-1,melt,melt
 1,realgar,realgar
+1,melt,melt
 1,wallwort,wallwort
 1,crimson,crimson
 1,silks,silk
@@ -186,48 +186,48 @@ freq,verbatim_term,prefLabel_en
 6,ink,ink
 4,card,card
 1,cards,card
-1,husks,husk
-1,millet,millet
 3,hay,hay
 2,earthenware,earthenware
-1,millas,milla
 1,dough,dough
+1,husks,husk
 1,milk,milk
+1,millet,millet
+1,millas,milla
 6,drugs,drug
 1,puffball,puffball
 1,juice,juice
-1,verjuice,verjuice
 1,onion,onion
+1,verjuice,verjuice
 1,centers,center
 4,eggs,egg
 3,plumb,plumb
-15,canvas,canva
 1,buckram,buckram
+15,canvas,canva
 1,basan,basan
 79,wax,wax
 3,cork,cork
-35,solder,solder
 1,plates,plate
+35,solder,solder
 1,jelly,jelly
 7,bread,bread
 3,starch,starch
 3,oils,oil
 3,rubies,ruby
-1,hazelnuts,hazelnut
 1,peas,pea
+1,hazelnuts,hazelnut
 1,tincture,tincture
 1,quick-lime,quick-lime
 1,shale,shale
 3,rocaille,rocaille
 1,cocon,cocon
 1,tint,tint
-5,copperas,coppera
 2,straws,straw
+5,copperas,coppera
 3,litharge,litharge
 1,wicker,wicker
 5,saliva,saliva
-1,air,air
 2,blood,blood
+1,air,air
 4,egg,egg
 6,quicklime,quicklime
 1,embers,ember
@@ -240,21 +240,21 @@ freq,verbatim_term,prefLabel_en
 4,grease,grease
 1,arène,arène
 5,amber,amber
-2,sapphires,sapphire
 1,taffer,taffer
+2,sapphires,sapphire
 4,gemstones,gemstone
 1,aquamarines,aquamarine
 4,emery,emery
-1,willow,willow
-9,bones,bone
-1,fir,fir
-5,lye,lye
 1,manganese,manganese
-7,dung,dung
+5,lye,lye
 2,soot,soot
+1,willow,willow
+7,dung,dung
+1,fir,fir
+9,bones,bone
 2,sorrel,sorrel
-1,cochineal,cochineal
 1,cloths,cloth
+1,cochineal,cochineal
 8,borax,borax
 1,wool,wool
 2,enamelled,enamelled
@@ -262,24 +262,23 @@ freq,verbatim_term,prefLabel_en
 3,thread,thread
 1,gilds,gild
 1,vermeilles,vermeille
-10,charcoals,charcoal
 1,cendrée,cendrée
 1,spirits,spirit
-17,porphyry,porphyry
 2,aspalte,aspalte
+17,porphyry,porphyry
 1,earths,earth
 2,black,black
 1,niello,niello
 6,gilding,gilding
 8,glair,glair
-2,purpurine,purpurine
+2,purple,purple
+1,solfo,solfo
+1,purpurina,purpurina
+1,colla,colla
 1,vetro,vetro
 1,stagno,stagno
-1,colla,colla
-1,porfidio,porfidio
-1,solfo,solfo
 1,vernice,vernice
-1,purpurina,purpurina
+1,porfidio,porfidio
 1,debris,debri
 1,columbine,columbine
 1,pansy,pansy
@@ -290,46 +289,46 @@ freq,verbatim_term,prefLabel_en
 2,rue,rue
 1,dittany,dittany
 1,cardboard,cardboard
-1,grès,grè
 1,residue,residue
+1,grès,grè
 1,beef,beef
 1,broth,broth
-20,lute,lute
 4,potin,potin
+20,lute,lute
 1,food,food
 2,cloves,clofe
 1,,
 2,skin,skin
 11,antimony,antimony
 1,regulus,regulu
-5,sandever,sandever
+6,sandiver,sandiver
 1,fruit,fruit
 9,carton,carton
-3,spider,spider
-1,pith,pith
+1,rapeseed,rapeseed
 4,lime,lime
 1,almonds,almond
-1,rapeseed,rapeseed
+3,spider,spider
+1,pith,pith
 1,bitumen,bituman
 1,sheet,sheet
 1,pastes,paste
-2,cartons,carton
 5,tartar,tartar
-1,fenugreek,fenugreek
-1,barley,barley
-1,yolks,yolk
+2,cartons,carton
 11,earthen,earthen
-1,rye,rye
-2,yolk,yolk
 1,germ,germ
+1,yolks,yolk
+1,barley,barley
+2,yolk,yolk
+1,rye,rye
+1,fenugreek,fenugreek
 1,tragacanth,tragacanth
 2,soldering,soldering
 6,sublimate,sublimate
 1,sheep,sheep
 8,bone,bone
 1,ferret-silk,ferret-silk
-1,incense,incense
 1,floret,floret
+1,incense,incense
 1,balls,ball
 1,porkfat,porkfat
 2,fat,fat
@@ -340,12 +339,13 @@ freq,verbatim_term,prefLabel_en
 1,ferlin,ferlin
 3,pumice,pumouse
 1,weld,weld
-1,marbles,marble
 2,florey,florey
+4,cristallin,cristallin
 1,aloe,aloe
+1,marbles,marble
 4,glues,glue
-2,asphaltum,asphaltum
 1,crayons,crayon
+2,asphaltum,asphaltum
 2,quill,quill
 2,crêpe,crêpe
 1,taffetas,taffeta
@@ -355,33 +355,32 @@ freq,verbatim_term,prefLabel_en
 11,butter,butter
 1,flower,flower
 2,ore,ore
-1,velvets,velvet
 2,umber,umber
 1,cocon.,cocon.
 3,gilded,gilded
 1,sumac,sumac
 1,saltwort,saltwort
 3,magistra,magistra
-1,tuf,tuf
 1,muddying,muddying
 36,clay,clay
+1,tuf,tuf
 3,paste,paste
-1,maple,maple
 1,elm,elm
+1,maple,maple
 1,gums,gum
 1,camphor,camphor
-2,grindings,grinding
 1,sludge,sludge
 7,slate,slate
+2,grindings,grinding
 1,nails,nail
 1,nailheads,nailhead
-3,tile,tile
+2,oiling,oiling
 1,persicaire,persicaire
 6,salts,salt
-2,oiling,oiling
-1,marrow,marrow
+3,tile,tile
 1,shell,shell
 1,leads,lead
+1,marrow,marrow
 1,blue,blue
 1,maplewood,maplewood
 1,bronzing,bronzing
@@ -395,8 +394,8 @@ freq,verbatim_term,prefLabel_en
 1,madder,madder
 1,fustet,fustet
 1,goumiche,goumiche
-1,medicine,medicine
 2,rosemary,rosemary
+1,medicine,medicine
 1,benzoin,benzoin
 1,trwood,trwood
 1,ironware,ironware
@@ -418,79 +417,78 @@ freq,verbatim_term,prefLabel_en
 1,shells,shell
 1,flint,flint
 3,rust,rust
-1,fresil,fresil
-1,waxed,waxed
-1,glued,glued
-1,flin,flin
-1,"rowan,","rowan,"
-1,thunderstone,thunderstone
-1,threads,thread
-2,waxes,wax
-1,felinder,felinder
-4,bloodstone,bloodstone
-1,felin,felin
-2,flesh,flesh
 1,pearled,pearled
-1,estamiere,estamiere
+1,waxed,waxed
+1,fresil,fresil
+1,"rowan,","rowan,"
+2,flesh,flesh
+1,thunderstone,thunderstone
+1,flin,flin
+2,waxes,wax
+1,felin,felin
+4,bloodstone,bloodstone
+1,glued,glued
+1,felinder,felinder
+1,threads,thread
 1,tow,tow
 1,tinning,tinning
+1,estamiere,estamiere
 1,brine,brine
 1,fruits,fruit
 2,down,down
 1,emeralds,emerald
-2,topaz,topaz
 1,firestone,firestone
+2,topaz,topaz
 1,jacinth,jacinth
 1,unleaded,unleaded
 1,anthos,antho
 1,ointment,ointment
 1,bile,bile
-1,foam,foam
 1,earwax,earwax
+1,foam,foam
 2,gravel,gravel
-2,enameling,enameling
 1,cornaline,cornaline
+2,enameling,enameling
 1,stavesacre,stavesacre
 1,quills,quill
 1,mealworms,mealworm
 1,tiles,tile
-1,lucerta,lucertum
-1,tondure,tondure
 2,spat,spat
-1,animal,animal
+1,tondure,tondure
 1,woollen,woollen
+1,lucerta,lucertum
+1,animal,animal
 2,impurities,impurity
 1,spalt,spalt
 1,impurity,impurity
-1,magnet,magnet
 1,piss,piss
-1,mineral,mineral
+1,magnet,magnet
 2,minerals,mineral
-1,salty,salty
+1,mineral,mineral
 1,chestnuts,chestnut
+1,salty,salty
 3,feather,feather
 2,enameled,enameled
 1,snake,snake
 1,manure,manure
 1,marcasites,marcasite
-1,mushrooms,mushroom
 1,stuf,stuf
-4,smoked,smoked
+1,mushrooms,mushroom
 1,tisane,tisane
+4,smoked,smoked
 1,aspalt,aspalt
 1,billon,billon
-4,couleur,couleur
 24,crocum,crocum
+4,couleur,couleur
 3,luting,luting
 1,crayfish,crayfish
-1,metallic,metallic
 1,otnegra,otnegra
-6,filings,filing
+1,metallic,metallic
 1,zedoary,zedoary
+6,filings,filing
 1,quarton,quarton
 1,almond,almond
 1,syrup,syrup
-1,coal,coal
 1,molds,mold
 1,bullitoyre,bullitoyre
 1,plants,plant
@@ -512,8 +510,8 @@ freq,verbatim_term,prefLabel_en
 2,whitening,whitening
 1,electrum,electrum
 1,wire,wire
-2,silvered,silvered
 1,varnishing,varnishing
+2,silvered,silvered
 1,bullitoire,bullitoire
 2,leady,leady
 1,salpeter,salpeter
@@ -529,299 +527,299 @@ freq,verbatim_term,prefLabel_en
 1,paint,paint
 1,opiate,opiate
 1,ruta,rutum
-1,acetum,acetum
 1,grains,grain
+1,acetum,acetum
 1,aceto,aceto
 2,pastel woad flowers,flower
-1,prunes of saint antonin,prunes of saint antonin
-1,leaves of mallow &amp; gilliflower,leaves of mallow &amp; gilliflower
 1,syrup of sweet jujubes,syrup
-1,marshmallow root,marshmallow root
+1,leaves of mallow &amp; gilliflower,leaves of mallow &amp; gilliflower
 1,chicken broth,broth
-1,salt extracted from cabbage ash,salt
+1,prunes of saint antonin,prunes of saint antonin
+1,marshmallow root,marshmallow root
 8,turpentine oil,oil
+1,salt extracted from cabbage ash,salt
 1,oil of jacob,oil
 1,emeralds of brissac,emerald
 1,blacksmith’s salt,blacksmith’s salt
-13,walnut oil,oil
-1,thorn branch,thorn branch
-1,counterfeit coral,coral
-1,purified resin,purified resin
-1,venice laque platte,venice laque platte
 1,subtly ground vermilion,vermilion
-1,gules red enamel,gules red enamel
-1,clear pitch resin,resin
-1,coarse canvas,canva
 1,pestled than of glass,pestled than of glass
 1,very light tammy cloth,cloth
+1,coarse canvas,canva
+1,gules red enamel,gules red enamel
+1,thorn branch,thorn branch
+1,clear pitch resin,resin
+13,walnut oil,oil
+1,purified resin,resin
+1,venice laque platte,venice laque platte
+1,counterfeit coral,coral
 2,mastic varnish,varnish
 3,venice turpentine,turpentine
 2,common turpentine,turpentine
+9,linseed oil,oil
+1,coarse common turpentine,turpentine
 1,fine turpentine oil,oil
 10,cold water,water
-1,pix graeca,pix graeca
 1,thick varnish,varnish
-2,fine turpentine,turpentine
-9,linseed oil,linseed oil
-1,coarse common turpentine,turpentine
 1,"turpentine it may be, whether fine or crude",turpentine
-3,hide glue,hide glue
-8,turpentine varnish,varnish
+1,pix graeca,pix graeca
+2,fine turpentine,turpentine
 4,spike lavender,spike lavender
+3,hide glue,glue
 4,distemper glue,glue
-1,linseed varnish,linseed varnish
-2,varnish of spike lavender oil,varnish
-1,pulverized sandarac,sandarac
-1,powdered sandarac gum,gum
-1,lavender spike oil,oil
+8,turpentine varnish,varnish
 18,spike lavender oil,oil
+1,lavender spike oil,oil
+1,linseed varnish,varnish
 2,pulverized mastic,mastic
-1,white soap,soap
+1,pulverized sandarac,sandarac
+2,varnish of spike lavender oil,varnish
+1,powdered sandarac gum,gum
 1,sieved ashes,sieved ash
-2,bread crusts,bread crust
+1,white soap,soap
 1,hog’s fennel,hog’s fennel
-4,black varnish,varnish
-1,peeled garlic cloves,peeled garlic clofe
 2,black pitch,pitch
+4,black varnish,varnish
 1,grains of wheat,grain
-6,soot black,soot
+1,peeled garlic cloves,clofe
+2,bread crusts,bread crust
+6,soot black,black
+1,quite strong vinegar,vinegar
 1,varnish of iron etchers,varnish
 1,pitch resin,resin
-1,quite strong vinegar,vinegar
-1,rosette copper,copper
-1,venice tripoli,tripoli
-1,thin sand,sand
 11,soft tin,tin
+1,venice tripoli,tripoli
+1,rosette copper,copper
 1,emery putty,putty
 2,white stone,stone
 1,cuivre franc,cuivre franc
+1,thin sand,sand
 18,looking-glass tin,tin
-4,pin filings,filing
-1,clean water,water
 1,water of ret hide glue,water
-1,"good chalk, quite white, well ground",chalk
-4,rouge clair,rouge clair
-1,lamb tallow,tallow
-1,venice  laque platte,venice  laque platte
+1,clean water,water
+4,pin filings,filing
 21,lead white,lead
-1,gilded lead work,gilded
-1,walnut or linseed oil,walnut or linseed oil
-5,willow charcoal,charcoal
-5,burnished gold,burnished gold
-1,burnished silver,burnished silver
-1,turpentine varnish and not spike lavender varnish,varnish
-5,or mat,or mat
-15,clear water,water
-1,turpentine or spike lavender varnish,turpentine
 1,laque ronde,laque ronde
+15,clear water,water
+1,lamb tallow,tallow
+4,rouge clair,rouge clair
+5,burnished gold,burnished gold
 2,candy sugar,sugar
+1,"good chalk, quite white, well ground",chalk
+1,venice  laque platte,venice  laque platte
+1,fine boli armeni,fine boli armeni
+1,gilded lead work,gilded
+1,turpentine or spike lavender varnish,turpentine
+1,burnished silver,burnished silver
+5,or mat,or mat
 15,azur d’esmail,azur d’esmail
-1,fine armenian bole,bole
+5,willow charcoal,charcoal
+1,walnut or linseed oil,walnut or linseed oil
+1,turpentine varnish and not spike lavender varnish,varnish
 1,latten or iron wire,latten
-1,thin enamel canes,thin enamel cane
+1,enamel cannules,enamel cannule
 1,polished marble,marble
 2,gold color,gold color
-1,smoke of partridge or of yellow or red cloth,smoke
-1,mine de plomb,mine de plomb
-9,strong glue,glue
 5,fatty oil,oil
-1,service tree wood,wood
+1,smoke of partridge or of yellow or red cloth,smoke
+9,strong glue,glue
+1,mine de plomb,mine de plomb
 4,fer blanc,fer blanc
+1,service tree wood,wood
 1,sheets of copper or latten,sheets of copper or latten
 7,dragon’s blood,blood
-1,mouth glue,glue
 8,white wine,wine
-1,codfish skin,skin
-1,barely boiling water,barely boiling water
 8,fish glue,glue
 1,parchment scrapings,parchment scraping
+1,barely boiling water,barely boiling water
+1,mouth glue,glue
+1,codfish skin,skin
 2,pumice stone,stone
 2,good wine,wine
-1,dried common walnuts,dried common walnut
-1,finely pulverised golden &amp; yellow marcasite,finely pulverised golden &amp; yellow marcasite
-1,aquae fabrorum antiquae,aquae fabrorum antiquae
+1,dried common walnuts,walnut
+1,finely pulverized golden &amp; yellow marcasite,finely pulverized golden &amp; yellow marcasite
 1,mellis communis,mellis communi
+1,aquae fabrorum antiquae,aquae fabrorum antiquae
 1,boli armeniae,boli armeniae
-1,fig tree milk,fig tree milk
+1,fig tree milk,milk
 10,gold leaf,gold leaf
 1,strongest vinegar,vinegar
-1,marcasite powder,powder
 1,balas ruby,ruby
+1,marcasite powder,powder
 7,gum water,water
-9,fine gold,gold
 2,argent moulu,argent moulu
+9,fine gold,gold
 1,oriental jacinth,jacinth
 6,fine copper,copper
-1,latten filings,filing
 23,fine tin,tin
-8,common salt,salt
+1,latten filings,filing
 2,red enamel,enamel
+8,common salt,salt
 2,vert de terre,vert de terre
-1,gold &amp; silver leaf,gold
-2,tin leaf,tin leaf
-1,counterfeit jasper,jasper
+1,spike lavender varnish,varnish
 1,mottled jasper,jasper
-3,gum ammoniac,gum
+1,wool with thick hairs,wool
 3,clear turpentine,turpentine
 1,filings of talc or of pins,filing
-1,spike lavender varnish,varnish
-1,wool with thick hairs,wool
+3,gum ammoniac,ammoniac
+2,tin leaf,tin leaf
+1,counterfeit jasper,jasper
+1,gold &amp; silver leaf,gold
 8,stil de grain yellow,stil de grain yellow
 1,juice of weld,juice
-1,horn used for lanterns,horn
+1,horn used for lanterns,horn used for lantern
 1,common azur,common azur
-1,finely pulverized common salt,finely pulverized common salt
+1,finely pulverized common salt,salt
 3,alum water,water
 1,starch glue,glue
 1,dry horse dung,dung
 1,"eggs, divide them in half &amp; take the yolk out, &amp; between the two halves of the white","eggs, divide them in half &amp; take the yolk out, &amp; between the two halves of the white"
-1,colored water,water
 1,vert d’azur,vert d’azur
-3,esmail d’azur,esmail d’azur
-1,rock water,water
-1,azure ashes,azure
 4,egg yolk,yolk
-1,damascene steel,steel
+1,rock water,water
+3,esmail d’azur,esmail d’azur
+1,colored water,water
+1,azure ashes,ash
 1,common aquafortis,aquaforti
+2,damascus steel,steel
 1,raw mutton flesh,flesh
 1,pumice stone powder,powder
 1,pulverized sanguine,sanguine
-2,terre chimolée,chimolée
 1,fuller’s earth,earth
+2,terre chimolée,chimolée
+1,cooked chimolée,cooked chimolée
 2,white varnish,varnish
 10,glair of egg,glair
-1,cooked chimolée,chimolée
 1,peelings from the fig tree,peelings from the fig tree
-1,plaster powder,powder
 1,powder of the said plaster,powder
-17,melted wax,wax
+1,plaster powder,powder
 1,pestled paper,paper
 2,armenian bole,bole
-1,powder of the said tripoli,powder
+17,melted wax,melted wax
 1,yellow pearls,pearl
+1,powder of the said tripoli,powder
+5,hog bristle,hog bristle
 1,refired enamel,refired enamel
-1,hog bristles,hog bristle
-2,yellow arsenic,arsenic
 1,sublimated arsenic,arsenic
-38,sal ammoniac,sal ammoniac
+2,yellow arsenic,arsenic
+38,sal ammoniac,ammoniac
 1,engraved tai stones,engraved tai stone
-1,stones cut in facets and flat,stone
+1,stones cut in facets and flat,stones cut in facets and flat
 1,yellow raw &amp; natural silk,yellow raw &amp; natural silk
-2,sulfur smoke,smoke
-1,raw silk,silk
 1,tammy of raw silk,tammy of raw silk
+1,raw silk,silk
+2,sulfur smoke,smoke
 1,cendrée of azure,cendrée
 2,soap water,water
-1,branches of heather,branches of heather
-1,blocks of wood,blocks of wood
 1,stalks of hay or straw,stalks of hay or straw
 1,light earth,earth
-1,green dye,dye
+1,blocks of wood,blocks of wood
+1,branches of heather,branches of heather
 4,pastel woad,pastel woad
-1,damasked cloth,cloth
+1,green dye,dye
 1,paltry cloth,cloth
 1,guesde woad,guesde woad
-5,cloth waste,cloth waste
+1,damasked cloth,cloth
 1,sandy clay,clay
+5,cloth waste,cloth waste
 8,horse dung,dung
 1,artificial sand,sand
 1,founders' sand,sand
 6,cuttlefish bone,bone
-1,lead or annealed annealed silver,lead
 1,thin plate of gold,thin plate of gold
+1,lead or annealed annealed silver,lead
 19,hot water,water
 1,musked cotton,cotton
 1,clove of garlic,clove of garlic
-1,brittle iron,iron
 1,tempered ashes,ash
 4,soft iron,iron
-2,quince seeds,seed
+1,brittle iron,iron
 1,mucilaginous water,water
+2,quince seeds,seed
 1,fine silk,silk
-1,fine cotton wisps,wisp
+1,fine cotton wisps,cotton
 1,hemp thread,thread
+1,fine metal of la large bells,metal
+1,metal of small bells,metal
 2,fine rosette,rosette
-1,cannon powder,powder
 1,fine arquebus powder,powder
 1,ordinary cannon powder,powder
-1,metal of small bells,metal
+1,cannon powder,powder
 1,arquebus powder,powder
-1,fine metal of la large bells,metal
 2,well-gummed ink,ink
 1,cat skin,skin
-1,melted fresh butter,melted fresh butter
 3,egg yolks,yolk
+1,melted fresh butter,butter
 1,dough to make fritters,dough
-2,plate glass,glass
 1,glass from lorraine,glass
-2,wheat starch,starch
-1,whitened water,water
+2,plate glass,glass
 1,cistern water,water
-1,wine foam,foam
+2,wheat starch,starch
+1,whitened water,whitened water
 1,foaming wine,foaming wine
-1,candied peel,candied peel
 1,orange juice,juice
+1,candied peel,candied peel
 1,sap squeezed or water  distilled from orange peel,sap squeezed or water  distilled from orange peel
+1,wine foam,foam
 2,black soap,soap
 1,strong iron pegs,strong iron peg
-1,bits of chain,bits of chain
 1,coarsely pestling pestled glass,coarsely pestling pestled glass
-1,substance of the pieces,substance of the piece
-2,cart nails,nail
 1,large steel dice,large steel dice
-2,flint stones,stone
+2,cart nails,nail
+1,bits of chain,bits of chain
+1,substance of the pieces,substance of the piece
 1,very good turpentine,turpentine
+2,flint stones,stone
 1,cart flint stones,stone
-1,thick canvas,canva
-1,buckram strip,buckram strip
-1,combustible things,combustible thing
-1,large strip of canvas,large strip of canva
-3,waxed canvas,canva
 1,primer powder,powder
-1,crude metal,metal
-1,finest metal one can find,finest metal one can find
-1,metal of a large bell,metal
-1,best arquebus powder,powder
-1,coarsely pestled glass,glass
+1,combustible things,combustible thing
+1,buckram strip,buckram strip
+1,large strip of canvas,large strip of canva
+1,thick canvas,canva
+3,waxed canvas,waxed
+1,good powder,powder
 3,strong vinegar,vinegar
 5,good eau-de-vie,good eau-de-vie
-1,good powder,powder
+1,coarsely pestled glass,coarsely pestled glass
+1,finest metal one can find,finest metal one can find
+1,crude metal,metal
 2,fine metal,metal
+1,best arquebus powder,powder
+1,metal of a large bell,metal
 1,a steel,steel
 1,cast iron,cast iron
-1,pierre porte morte,pierre porte morte
 1,tin from england,tin
 1,glass-looking tin,tin
+1,pierre porte morte,pierre porte morte
+4,common tin,tin
 1,tin is fine,tin is fine
 1,tin is base,tin is base
 7,fine lead,lead
-4,common tin,tin
-1,rye flour,flour
-3,tragacanth gum,gum
 1,paste glue,glue
 1,bread dough,dough
+1,rye flour,flour
+3,tragacanth gum,gum
 1,spike lavender oil varnish,varnish
 1,terre emerita,terre emeritum
 1,silver leaf,silver leaf
-1,clear starch water,water
 1,simple paper,paper
+1,clear starch water,water
 1,terra emerita,terra emeritum
+1,darker dragon’s blood,blood
+2,wine lees,wine lee
 1,good kind of dragon’s blood,good kind of dragon’s blood
 1,common eau-de-vie,common eau-de-vie
-2,wine lees,wine lee
-1,darker dragon’s blood,darker dragon’s blood
 1,rouge clair enamel,enamel
 1,emery stone powder,powder
 1,white clay earth,earth
 2,pigeon dung,dung
 1,distilled urine,urine
-8,red copper,copper
 1,colored waters,water
+8,red copper,copper
 1,pulverized and finely ground aes ustum,pulverized and finely ground aes ustum
 7,distilled vinegar,vinegar
 2,flanders varnish,varnish
 1,white walnut oil,oil
-1,rouges de mine,mine
+1,rouges de mine,rouges de mine
 4,noir d’escaille,noir d’escaille
 3,white paper,paper
 1,joiner’s glue,glue
@@ -829,12 +827,12 @@ freq,verbatim_term,prefLabel_en
 4,iron scales,iron scale
 1,red from german,red from german
 1,tin for bells,tin
-4,great metals,metal
-1,fine coppersmith’s rosette,fine coppersmith’s rosette
-1,"metal, which is the substance of bells",metal
 1,latten made brittle by the calamine,latten made brittle by the calamine
-1,brazilwood rosette,rosette
+1,"metal, which is the substance of bells",metal
+1,fine coppersmith’s rosette,rosette
+4,great metals,metal
 2,black cherry juice,juice
+1,brazilwood rosette,rosette
 1,well dried between wicker,well dried between wicker
 1,liquid rosette of brazilwood,rosette
 1,white iron,iron
@@ -843,275 +841,272 @@ freq,verbatim_term,prefLabel_en
 1,powdered gold or silver,gold
 3,natural sulfur,sulfur
 1,calf’s foot root,calf’s foot root
-2,white leather,leather
 1,kernels of grain,kernels of grain
-1,"plain leather, such as cow or morocco",leather
+2,white leather,leather
 1,oribus powder,powder
+1,"plain leather, such as cow or morocco",leather
 1,metal the bells are made of,metal the bells are made of
-1,glassworkers’ glass,glassworkers’ glass
 1,fern ashes,ash
 1,well-made glass,glass
-1,sufficiently tempered wine,sufficiently tempered wine
-1,pepper grains,grain
+1,glassworkers’ glass,glass
 1,host soaked in wine,host soaked in wine
+1,sufficiently tempered wine,wine
 1,capilli veneris syrup,syrup
+1,pepper grains,grain
 1,wormwood powder,powder
 1,foil backings for the  gemstones,foil backings for the  gemstone
 1,fresh water,water
 1,very fine earth,earth
 1,decoction of wormwood,decoction of wormwood
-1,esmail colombin,esmail colombin
-1,clean glass,glass
-1,gris d’escaille,gris d’escaille
 1,clear sanguine,sanguine
+1,gris d’escaille,gris d’escaille
 2,noir à huile,noir à huile
+1,clean glass,glass
+1,esmail colombin,esmail colombin
 1,leaded glass,glass
 1,pulverized salt,salt
-1,pulverized pumice stone,stone
 1,tripoli from bretagne,tripoli
 1,yellow amber,amber
+1,pulverized pumice stone,stone
 1,very clear esmail azuré,very clear esmail azuré
 1,"marigold leaves half-dried, &amp; twisted like a thread","marigold leaves half-dried, &amp; twisted like a thread"
 1,white glass,glass
 1,antique glass,glass
-1,soft wood,wood
-1,vapor of aquafortis,vapor of aquaforti
-1,smoke of safre,smoke
-1,transparent amber,amber
+2,mineral salt,salt
+1,corrosive water,water
 1,tripoli of brittany,tripoli
 1,marble stone,stone
+1,vapor of aquafortis,vapor of aquaforti
 1,salt called by the english de armonic,salt
-1,corrosive water,water
-2,mineral salt,salt
+1,transparent amber,amber
+1,smoke of safre,smoke
+1,soft wood,wood
+1,lye of lime,lye
 1,tawny dye,dye
 1,lye of quicklime,lye
-1,lye of lime,lye
 1,lapathum acutum,lapathum acutum
-1,black cloth,cloth
-1,pure scarlet pastel woad,pure scarlet pastel woad
 1,white cloth,cloth
+1,pure scarlet pastel woad,pure scarlet pastel woad
+1,black cloth,cloth
 1,silver filings,filing
 1,gold filings,filing
 1,azure in body,azure
-1,pistolet gold,gold
 2,white enamel,enamel
 1,fine silver,silver
+1,pistolet gold,gold
 2,tear of mastic,tear of mastic
-1,glass pane,glass pane
-1,gilding of the glass,gilding
-1,fine laque platte,fine laque platte
-2,garlic juice,juice
-1,linen cloths,cloth
-1,gilt glass,glass
-2,milk of the fig tree,milk
 1,white tin,tin
-1,monk’s rhubarb,monk’s rhubarb
+1,gilding of the glass,gilding
+1,linen cloths,cloth
+1,fine laque platte,fine laque platte
+1,glass pane,glass pane
+2,garlic juice,juice
+2,milk of the fig tree,milk
+1,gilt glass,glass
 1,root of lapathium acutum maius,root of lapathium acutum maiu
+1,monk’s rhubarb,monk’s rhubarb
 6,common water,water
-2,very good vinegar,vinegar
-1,cardona salt,cardona salt
+1,cardona salt,salt
 1,pomace soured,pomace soured
+2,very good vinegar,vinegar
 1,paste of ground enamel,paste
 1,thick parchment,parchment
-1,indian laque plate,indian laque plate
 2,gemstone foils,gemstone foil
-3,calcined alabaster,calcined alabaster
+1,indian laque platte,indian laque platte
+1,brick thoroughly ground,brick thoroughly ground
 1,burned marrow of ox horn,burned marrow of ox horn
 1,burned aspalte,burned aspalte
-1,brick thoroughly ground,brick
 1,in nature,in nature
 3,fatty earth,earth
+3,calcined alabaster,alabaster
 1,boiled millet grains,grain
 1,well chopped lettuces,well chopped lettuce
 1,fatty earths,earth
-1,potter’s earth,potter’s earth
+1,potter’s earth,earth
 1,"earth for casting, for founders",earth
-1,the common delicate kind that falls under the anvil,the common delicate kind that falls under the anvil
+1,common delicate kind that falls under the anvil,common delicate kind that falls under the anvil
 3,iron scale,iron scale
 1,dung of the ewe,dung
 1,charcoal powder,powder
-1,colors in turpentine &amp; mastic,colors in turpentine &amp; mastic
 1,colors in varnish,colors in varnish
 2,tepid water,water
-1,milk or bark of the fig tree,milk
+1,colors in turpentine &amp; mastic,colors in turpentine &amp; mastic
 1,ground chalk,chalk
+1,milk or bark of the fig tree,milk
 2,starch water,water
 1,sand for casting,sand
 11,olive oil,oil
 1,varnish of sandarac,varnish
 1,quite white glue,glue
 2,minium from england,minium
-1,painters’ distemper glue,painters’ distemper glue
+1,painters’ distemper glue,glue
 1,sal armoniaco,sal armoniaco
 1,negro di resina,negro di resina
-1,tinted water,water
-1,varied and transmuted wine,wine
 1,lemon or orange juice,lemon or orange juice
-1,pulverised talc,pulverised talc
+1,varied and transmuted wine,varied and transmuted wine
+1,tinted water,tinted water
+1,pulverized talc,pulverized talc
 1,copper shards that coppersmiths make,copper shards that coppersmiths make
-8,looking glass tin,looking glass tin
+8,looking glass tin,glass
 1,linen cloth,cloth
-1,"plant which grows in hedges, which has a stem similar to flax, a long &amp; broad leaf like small bugloss, which has a violet flower verging on blue &amp; is shaped like the lily flower","plant which grows in hedges, which has a stem similar to flax, a long &amp; broad leaf like small bugloss, which has a violet flower verging on blue &amp; is shaped like the lily flower"
-1,bugloss flower,flower
-1,red poppy,red poppy
 1,dyes from flowers,dyes from flower
-1,horse tail hair,hair
+1,bugloss flower,flower
+1,"plant which grows in hedges, which has a stem similar to flax, a long &amp; broad leaf like small bugloss, which has a violet flower verging on blue &amp; is shaped like the lily flower","plant which grows in hedges, which has a stem similar to flax, a long &amp; broad leaf like small bugloss, which has a violet flower verging on blue &amp; is shaped like the lily flower"
+1,red poppy,red poppy
 1,silk tammy,silk tammy
+1,horse tail hair,hair
 10,good vinegar,vinegar
-1,mandrake apples,mandrake apple
 1,white soporific oil,oil
-1,black pitch resin,resin
+1,mandrake apples,mandrake apple
 2,white chalk,chalk
-2,pestled brick,brick
-1,waxed paper,paper
+2,pestled brick,pestled brick
+1,black pitch resin,resin
+1,waxed paper,waxed
+1,waxed cloth,waxed
 1,"strong paper, of the as of large printed books",paper
-1,waxed cloth,cloth
-2,rose honey,rose honey
-7,oil of sulfur,oil
+5,oil of sulfur,oil
 1,clove oil,oil
+2,rose honey,rose honey
 16,wheat oil,oil
-1,fresh crow eggs,egg
 1,powdered gentian,powdered gentian
+1,fresh crow eggs,egg
 1,oil of guaiac &amp; of sulfur,oil
 1,black leather,leather
 1,fresh &amp; good oil of sulfur,fresh &amp; good oil of sulfur
-4,rock salt,salt
 1,cinnamon or clove oil,cinnamon
+4,rock salt,salt
 1,antimony oil,oil
 1,root of peony,root of peony
 1,wax oil,oil
 1,root of consolida maior,root of consolida maior
-1,consolida maior,consolida maior
 1,preserve of symphytum,preserve of symphytum
+1,consolida maior,consolida maior
 1,tartar from large vessels,tartar
-1,candlestick latten,latten
 1,basin latten,latten
-7,pestled glass,glass
+1,candlestick latten,latten
+7,pestled glass,pestled glass
 2,calcined pumice stone,stone
 1,"pill of precipitate,","pill of precipitate,"
+1,excellent mustard,mustard
 1,mustard seed,mustard seed
 1,tammy cloth,cloth
-1,excellent mustard,mustard
 1,tartar from montpellier,tartar
-3,pulverized tartar,tartar
 1,extraction of regulus,extraction of regulu
+3,pulverized tartar,tartar
+2,fine &amp; soft tin,fine &amp; soft tin
+1,red &amp; soft cauldron copper,red &amp; soft cauldron copper
 2,brittle tin,tin
 1,square tile,tile
-2,fine &amp; soft tin,fine &amp; soft tin
-1,red &amp; soft cauldron copper,copper
 1,brittle one,brittle one
-1,resin candle,candle
-1,calcined iron oyster shell,calcined iron oyster shell
-2,casting of lead,casting of lead
 3,pure lead,lead
-1,rye straw ashes,rye
+1,resin candle,candle
+1,calcined iron oyster shell,shell
+2,casting of lead,casting of lead
 3,sand for lead,sand
+1,rye straw ashes,ash
+1,ashes of walnut tree or vine,ash
 1,burnt &amp; calcined cuttlefish bones,burnt &amp; calcined cuttlefish bone
 1,burnt &amp; calcined pumice stone,burnt &amp; calcined pumice stone
-1,ashes of walnut tree or vine,ash
 1,resin candles,resin candle
-1,brittle dou tin,brittle dou tin
+1,brittle dou tin,tin
 2,river sand,sand
 3,river water,water
 1,water of the vat,water
 1,new wax,wax
+2,dry mortar,mortar
 1,lettuce seed,lettuce seed
 4,bread pith,pith
 2,hemp seed,hemp seed
-2,dry mortar,mortar
-1,strong iron,iron
-1,purified steel,purified steel
-1,the finest steel,steel
-1,fine steel,steel
 1,molten iron,iron
-1,common iron,iron
-1,iron bars,iron bar
 1,very soft iron,iron
+1,purified steel,steel
+1,strong iron,iron
+1,the finest steel,steel
+1,iron bars,iron bar
+1,fine steel,steel
+1,common iron,iron
 1,well-gummed water,water
-1,spike lavender &amp;or turpentine oil,spike lavender &amp;or turpentine oil
+1,spike lavender &amp;or turpentine oil,oil
 3,gummed water,water
-4,lamp smoke,smoke
+2,wash water,water
 1,good lye,lye
-1,moist handkerchief,moist handkerchief
 1,black moderately thick,black moderately thick
+1,moist handkerchief,moist handkerchief
 1,non-boiled linseed oil,oil
-2,wash water,wash water
-1,female silkworm seeds,seed
-1,molten ♁,molten ♁
-1,finer ☉ than the other one,finer ☉ than the other one
-1,good fountain or river water,water
+4,lamp smoke,smoke
 1,water of sulfurous baths,water
-1,oldest ♁,oldest ♁
+1,good fountain or river water,good fountain or river water
+1,finer ☉ than the other one,☉
+1,molten ♁,molten ♁
+1,female silkworm seeds,seed
 1,chicken eggs,egg
+1,oldest ♁,oldest ♁
 2,white salt,salt
 1,iron strip,iron strip
 1,aqua regia,aqua regium
 1,marrow from the horns of oxen,marrow
-3,lean sand,sand
-1,brittle metal comes out better than the fatty,brittle metal comes out better than the fatty
-1,dense one,dense one
+1,the one from champaigne,the one from champaigne
 1,spongy bone,bone
 1,burnt &amp; calcined horse bones,burnt &amp; calcined horse bone
-1,the one from champaigne,the one from champaigne
-1,white mulberry leaves,white mulberry leafe
+3,lean sand,sand
+1,dense one,dense one
+1,brittle metal comes out better than the fatty,brittle metal comes out better than the fatty
 1,fresh leaves,fresh leafe
+1,white mulberry leaves,white mulberry leafe
 1,sweet bread,bread
 1,resin balls,ball
-1,lit hay,hay
+1,lit hay,lit hay
 1,pestled herb which is called semperviva,pestled herb which is called semperviva
-1,damascus steel,steel
 1,horseradish leaf,horseradish leaf
 1,fatty red earth,earth
 6,iron filings,filing
-1,pure spike lavender oil varnish,varnish
-1,rose of ghent,rose of ghent
 1,clear venice turpentine,turpentine
-1,pulverized terra emerita,pulverized terra emeritum
-1,knots of the fir tree,knots of the fir tree
-1,printers’ ink,printers’ ink
+1,rose of ghent,rose of ghent
+1,pure spike lavender oil varnish,varnish
 1,walnut tree,walnut tree
-1,pith of coarse bread,pith
-1,plate lead,lead
-1,white varnish of turpentine,varnish
-1,rosette of ghent,rosette
-1,common ashes,ash
-4,crystal glass,glass
 1,gold powder,powder
+1,printers’ ink,ink
+1,common ashes,ash
+1,rosette of ghent,rosette
+1,white varnish of turpentine,varnish
+1,knots of the fir tree,knots of the fir tree
+1,pulverized terra emerita,pulverized terra emeritum
+1,plate lead,lead
 1,pear tree,pear tree
+1,pith of coarse bread,pith
+1,"small, very delicate skins of lambs and young goats","small, very delicate skins of lambs and young goat"
 1,fine fatty earth,earth
 1,copperas black,black
-1,"small, very delicate skins of lambs and young goats","small, very delicate skins of lambs and young goat"
 1,hot iron,iron
-1,fabric of cambray,fabric of cambray
-2,florence lake,lake
-1,women’s milk,women’s milk
 1,thoroughly thinned and clear melted resin,resin
-1,walnuts’ skin,walnut
 1,almond oil,oil
-1,burnt bones of the feet of oxen,bone
-1,burnt ivory,ivory
-1,peach pits,peach pit
-1,black of charcoal from the mines,black
+1,women’s milk,women’s milk
+1,fabric of cambray,fabric of cambray
+1,walnuts’ skin,skin
+2,florence lake,lake
 1,ordinary charcoal,charcoal
-1,palma christi seed oil,oil
-1,bristles of the oldest rats,bristles of the oldest rat
-1,ash from acre,ash
+1,peach pits,peach pit
+1,burnt ivory,ivory
+1,black of charcoal from the mines,black
+1,burnt bones of the feet of oxen,bone
+1,palma christi seed oil,palma christi seed oil
+1,squirrel’s tail hair,hair
 1,porcupine quills,quill
 1,bristles of beech martens &amp; weasels &amp; small animals that make musk,bristles of beech martens &amp; weasels &amp; small animals that make musk
-1,squirrel’s tail hair,squirrel’s tail hair
 2,azur d’acre,azur d’acre
-2,charcoal black,black
-1,thick cloth,cloth
+1,bristles of the oldest rats,bristles of the oldest rat
+2,charcoal black,charcoal
 1,silk cloth,cloth
+1,thick cloth,cloth
 12,white wax,wax
-1,peeled almonds,peeled almond
-1,common varnish,varnish
-1,palma christi,palma christi
+1,peeled almonds,almond
 1,lead filings,filing
+1,common varnish,varnish
 1,calcined pulverized pglass,calcined pulverized pglass
-1,"mastic, pulverized &amp; passed delicately through a sieve","mastic, pulverized &amp; passed delicately through a sieve"
+1,palma christi,palma christi
+1,mastic pulverized,mastic
+1,"mastic, pulverized &amp; passed delicately through a sieve",mastic
 1,white turpentine oil,oil
-1,mastic pulverized,mastic pulverized
 1,soapy water,water
 1,spike lavender on the oil,spike lavender on the oil
 1,rose alexandrine,rose alexandrine
@@ -1121,8 +1116,8 @@ freq,verbatim_term,prefLabel_en
 1,azure ash,ash
 1,oil than that of walnut,oil
 1,lead from flanders,lead
-1,lead ore,ore
-1,pit coal,coal
+1,lead ore,lead
+1,pit coal,pit coal
 1,peach pit,peach pit
 1,common charcoal,charcoal
 1,soft wood charcoal,charcoal
@@ -1130,113 +1125,113 @@ freq,verbatim_term,prefLabel_en
 1,brazilwood dye,dye
 1,cow dung,dung
 1,clearest walnut oil,oil
-1,calcined crystal glass,glass
+1,calcined cristallin,cristallin
 4,yellow ochre,ochre
-3,oiled paper,paper
+3,oiled paper,oiled
 2,orberé grain,grain
-1,calcined &amp; crushed crystal glass,calcined &amp; crushed crystal glass
-1,washings of oil,washings of oil
+1,calcined &amp; ground cristallin,calcined &amp; ground cristallin
 1,&amp; a bit of yellow ocher,&amp; a bit of yellow ocher
+1,washings of oil,washings of oil
 2,peelings of the fig tree,peelings of the fig tree
-2,lamp black,black
 3,ocre de ru,ocre de ru
+2,lamp black,black
 2,yellow ocher,yellow ocher
 2,or moulu,or moulu
+1,hot bread,bread
+1,water from a honey beehive,water
 1,loaves of bread freshly drawn from the oven,loaves of bread freshly drawn from the oven
 1,olive tree leaves,olive tree leafe
 1,sloes from bushes,sloes from bush
 1,pomegranate flowers,flower
-1,water from a honey beehive,water
-1,hot bread,bread
 1,very thin sheets of lead,very thin sheets of lead
-1,hair from the tail of a squirrel’s fur,hair
 1,bristles of a rat’s whiskers,bristles of a rat’s whisker
-1,rat hairs,hair
 1,hair of the petit-gris,hair
+1,hair from the tail of a squirrel’s fur,hair
+1,rat hairs,hair
+1,bones of the foot of oxen for sand,bone
 1,sand of bone,sand
 1,neatest sand that can be found for copper,sand
-1,bones of the foot of oxen for sand,bone
 1,huiles d’essence,huiles d’essence
-1,simple carton,carton
 1,very clear lantern horn,horn
+1,simple carton,carton
 1,silvered &amp; burnished paper,silvered
+1,finely pulverized tripoli,tripoli
+1,powdered chalk,chalk
 1,common glass,glass
-1,salt of saltwort,salt
+1,the champagne one that painters use,the champagne one that painters use
+1,common glass sand,sand
 1,salt of tartar,salt
 1,wax candle,candle
-1,pestled slate,pestled slate
-1,powdered chalk,chalk
-1,burnt linen,linen
+1,salt of saltwort,salt
 1,pure tin pure or or lead,tin
-1,finely pulverized tripoli,tripoli
-1,common glass sand,sand
 1,common marble,marble
-1,the champagne one that painters use,the champagne one that painters use
-3,burned felt,burned felt
+1,burnt linen,linen
+1,pestled slate,slate
+1,pure wine,wine
+1,burned linen,burned linen
+1,"sand from oxen feet, burned twice &amp; finely ground","sand from oxen feet, burned twice &amp; finely ground"
+1,very fine sands,sand
+2,lean sands,sand
+1,sand of calcined glass,sand
+1,terres bolvenes,terres bolvene
 1,human bones,bone
 1,lean soils,lean soil
+2,substance of skillets,substance of skillet
+1,well ground ceruse,ceruse
+1,molded tripoli,molded tripoli
+1,stones of tuf,stone
+1,the one from the sea,the one from the sea
+1,fatty &amp; strong earths,fatty &amp; strong earth
+1,boiled wine with elm tree roots,wine
+1,common earth,earth
 1,those of oxen foot,those of oxen foot
+1,beaten egg glair,beaten egg glair
+2,fixed quicksilver,quicksilver
+1,calcined vitriol,vitriol
+1,slightly coarser sand,sand
+1,pure latton used for trebuschets,pure latton used for trebuschet
+2,moistened sand,moistened sand
+1,sand near my area,sand
 1,sand from corp rock,sand
 1,old printers' type,old printers type
-2,fixed quicksilver,quicksilver
-1,very fine sands,sand
-1,beaten egg glair,beaten egg glair
-1,calcined vitriol,vitriol
-1,pure wine,wine
-1,common earth,earth
-1,terres bolvenes,terres bolvene
+1,sheep foot bones,bone
 1,from sandy paths dried out by the sun,from sandy paths dried out by the sun
-1,sand near my area,sand
-1,slightly coarser sand,sand
-2,moistened sand,sand
-1,pure latton used for trebuschets,pure latton used for trebuschet
-1,cendrée earth,earth
-1,fatty &amp; strong earths,fatty &amp; strong earth
-1,well ground ceruse,ceruse
-1,sheep foot bones,sheep
-2,substance of skillets,substance of skillet
-1,"sand from oxen feet, burned twice &amp; finely ground",sand
-1,stones of tuf,stone
-1,burned linen,burned linen
-1,sand of calcined glass,sand
-1,molded tripoli,molded tripoli
-2,lean sands,sand
-1,boiled wine with elm tree roots,wine
-1,the one from the sea,the one from the sea
+1,cendrée earth,cendrée
+3,burned felt,felt
 1,fat of a young goat kid,fat
 1,wood with streaked grain,wood
 1,root of the maple,root of the maple
-1,eau panée,eau panée
+1,burning paper,paper
 1,sweet new wine,wine
-1,burning paper,burning paper
-1,pulverized subtly mastic,pulverized subtly mastic
+1,eau panée,eau panée
+1,pulverized subtly mastic,mastic
 1,pierres de filieres,pierres de filiere
 1,those of cutlers,those of cutler
 1,old horseshoes,old horseshoe
-1,substance of the trebuschets,substance of the trebuschet
 1,grindings from sharpening large scissors &amp; large knives,grinding
+1,substance of the trebuschets,substance of the trebuschet
 5,wine boiled with elm root,wine
-1,iron or pin filings,filing
 1,bone marrow,marrow
+1,iron or pin filings,iron
 1,blue varnish,varnish
-1,blue of flowers florey or of flanders,florey
+1,blue of flowers florey or of flanders,blue
 1,terroy merita,terroy meritum
 1,goldsmith’s water,water
 1,ash of vine shoots,ash
 1,well water,water
 1,white of one egg,white
 1,glue of partenay or parchment,glue
-1,varnishvenice turpentine,turpentine
-1,spike lavender oil.,oil
 1,oil of perolle petrolle,oil
+1,spike lavender oil.,oil
+1,varnishvenice turpentine,turpentine
 3,copper filings,filing
 1,good vermilion,vermilion
-1,well-pestled sandarac,sandarac
-1,d’araucq rock alum,alum
 1,crust of bread,crust
+1,d’araucq rock alum,rock
+1,well-pestled sandarac,sandarac
 1,flour glue,glue
-2,red varnish,varnish
 1,quite clear gum water,water
+2,red varnish,varnish
 1,well beaten saffron,saffron
 2,gum arabic,arabic
 2,yellow varnish,varnish
@@ -1246,15 +1241,15 @@ freq,verbatim_term,prefLabel_en
 1,red wax,wax
 1,clear glue,glue
 1,quickt aiantsilver,quickt aiantsilver
-6,glass alum,alum
-1,green copperas,coppera
 1,currier's water,water
+6,glass alum,glass
+1,green copperas,coppera
 1,yellow gold,gold
-1,fig tree wood,wood
-1,partridge feather,partridge feather
-1,the white of one egg,white
-1,fig tree,fig tree
 3,very clear glue,glue
+1,partridge feather,feather
+1,fig tree,fig tree
+1,the white of one egg,white
+1,fig tree wood,wood
 1,or moleu,or moleu
 1,white vinegar,vinegar
 1,old urine,urine
@@ -1269,31 +1264,31 @@ freq,verbatim_term,prefLabel_en
 1,sang dea raiec,sang dea raiec
 1,very strong vinegar,vinegar
 1,tooth of a wolf or dog,tooth of a wolf or dog
-1,currier’s’ black,black
 1,grais powder,powder
-1,water for disease of the eyes,water
+1,currier’s’ black,currier’s’ black
 2,fountain water,water
+1,water for disease of the eyes,water
 1,calcined tin,calcined tin
-1,sang darage darac,sang darage darac
 1,glue quite clear,glue quite clear
+1,sang darage darac,sang darage darac
 1,any other vapor,any other vapor
-1,toast with butter,toast with butter
 1,pig’s bladder,pig’s bladder
-1,iron nail heads,iron nail head
-1,pulverized antimony,pulverized antimony
+1,toast with butter,toast with butter
+1,pulverized antimony,antimony
 1,old scrapings or thin plates of iron,old scrapings or thin plates of iron
+1,iron nail heads,iron nail head
+1,calcined oyster shells,shell
 1,stones of which are made the sharpening stones or files of barbers,stones of which are made the sharpening stones or files of barber
 1,fine powder of quicklime,powder
 1,iron fittings,iron fitting
-1,calcined oyster shells,calcined oyster shell
-1,the finest sand you have,sand
 1,fixed mercury,mercury
+1,the finest sand you have,sand
 1,"tanner’s earth, or the one with which potters make a whitening on pots",earth
 1,paper from florence,paper
 1,whitish brick,brick
 1,clay earth with which one can make tiles,earth
-1,sand for b lead,sand
 1,calcined black pebbles from the river,calcined black pebbles from the river
+1,sand for b lead,lead
 1,black lead of saulmon,lead
 1,glair of eggs,glair
 1,molten lead,lead
@@ -1302,190 +1297,188 @@ freq,verbatim_term,prefLabel_en
 2,fine latten,latten
 1,latten of potin,latten
 1,fine latten of pots,latten
-1,grey soot from the furnace of the silversmiths,soot
-1,grey soot of locksmiths,soot
 1,quick lime,lime
+1,grey soot of locksmiths,soot
+1,grey soot from the furnace of the silversmiths,soot
+5,iron dross,iron dross
+1,hat felt burnt,felt
 2,burnt bone,bone
 1,burnt hat felt,felt
-5,iron dross,iron dross
 1,dross of iron,dross of iron
-1,hat felt burnt,felt
-1,well beaten glair of eggs,glair
 3,clay earth,earth
 1,charcoal of vine shoots,charcoal
-1,finely pestled slate,slate
-1,burnt black tracing paper,paper
-1,burnt horse dung,dung
+1,well beaten glair of eggs,glair
+1,finely pestled slate,finely pestled slate
 1,"little-cooked tile, ground",tile
+1,burnt black tracing paper,paper
 1,tracing paper burnt,tracing paper burnt
+1,burnt horse dung,dung
 1,alabaster calcined,alabaster calcined
-1,tallow of glass,tallow
 1,coarse sand,sand
 1,soft &amp; fine sand,sand
 2,eau magistra,magistra
 1,tartar oil,oil
-1,pulverized sandever,sandever
-1,sand from a mine in thoulouse,sand
-1,waters of the above mentioned salts,waters of the above mentioned salt
 3,sand from thoulouse,sand
+1,waters of the above mentioned salts,water
 2,natural sand,sand
-1,well burned bone of oxen feet,bone
+1,pulverized sandiver,sandiver
+1,sand from a mine in thoulouse,sand
 3,fat sand,sand
-1,"bone of oxen feet, very burned &amp; pulverized",bone
-1,felt also well burned,felt
 1,fat metal,metal
-1,the one of oak or beech,the one of oak or beech
-1,burnt oysters,burnt oyster
+1,"bone of oxen feet, very burned &amp; pulverized",bone
+1,felt also well burned,felt also well burned
+1,well burned bone of oxen feet,well burned bone of oxen feet
 1,charcoal for pouncing,charcoal
 1,the one of willow,the one of willow
+1,the one of oak or beech,the one of oak or beech
+1,burnt oysters,burnt oyster
 6,salt water,water
 3,soft lead,lead
-1,water of glair of egg,water
+1,the one of the mine,the one of the mine
 1,aspic oil,oil
 1,clear walnut oil,oil
-1,the one of the mine,the one of the mine
 1,well-beaten glair of egg,glair
-2,sel de verre,sel de verre
+1,water of glair of egg,water
 1,green varnish,varnish
-3,beaten glair of egg,glair
+2,sel de verre,sel de verre
 1,"earth with which they make the first layer of the cope of pieces, &amp; bells, &amp; all other pieces",earth
+3,beaten glair of egg,glair
 1,copper for cauldrons,copper
 4,sand from the mine,sand
-1,"bone of oxen feet, burned, pulverized",bone
-1,material of a skillet,material of a skillet
+1,experimented sands,sand
+1,"bone of oxen feet, burned, pulverized","bone of oxen feet, burned, pulverized"
+1,pulverized bone,bone
 1,substance of a skillet,substance of a skillet
 1,bone sand,sand
-1,pulverised bone,bone
-1,experimented sands,experimented sand
+1,material of a skillet,material of a skillet
 1,fine casting sand,sand
 1,excellent sand for lead,sand
 1,potin from seringue,potin
 1,burned bone,burned bone
 1,the one which is found in a vineyard near puy david,the one which is found in a vineyard near puy david
 1,"the one is from the touch, near sainct michel &amp; toward blagnac, in a vineyard that is quite high up","the one is from the touch, near sainct michel &amp; toward blagnac, in a vineyard that is quite high up"
-1,burned earth,burned earth
 1,very finely ground sands,sand
+1,burned earth,burned earth
 1,very burnt sand,sand
 1,roots of a young elm,roots of a young elm
-1,sand of the mine of thoulouse,sand
-1,casting sand coming from the mine,casting sand coming from the mine
 1,glair of egg passed through a sponge,glair of egg passed through a sponge
+1,casting sand coming from the mine,casting sand coming from the mine
+1,sand of the mine of thoulouse,sand
 1,melted resin,resin
-1,sand from pulverised rock salt,sand
-1,mineral sand,sand
+1,sand from pulverized rock salt,sand
 1,wheat flour,flour
+1,mineral sand,sand
 1,artificial sands,sand
 1,fat sands,sand
 1,bone of the foot of oxen,bone
 1,sand of burnt ox bones and rock salt,sand
-1,"alabaster, pulverized",alabaster
 1,salts appropriate for metals,salt
 1,"sal ammoniac, well pulverized","sal ammoniac, well pulverized"
+1,"alabaster, pulverized",alabaster
 1,"oil either of olive, walnut, or even better spike lavender",oil
 1,"sand, white mai, like salt",sand
-1,gummed or pure water,water
-1,glassmakers’ white sand from the mine,glassmakers’ white sand from the mine
+1,gummed or pure water,gummed or pure water
+1,glassmakers’ white sand from the mine,sand
 1,pulverized &amp; finely ground iron dross,pulverized &amp; finely ground iron dross
-13,crocum ferri,crocum
+13,crocum ferri,crocum ferri
 2,calcined slate,slate
-1,ashes of paper,ash
-1,"linen, or burned felt",felt
-1,the one of the s mines,the one of the s mine
 1,sand from a mine,sand
+1,"linen, or burned felt",felt
+1,ashes of paper,ash
+1,the one of the s mines,the one of the s mine
 1,terre fondue of potters,terre fondue of potter
-1,willow charcoal powder,powder
 1,pulverized willow charcoal,charcoal
+1,willow charcoal powder,powder
 1,"founder’s earth, which founders use",earth
 1,impalpable white sand,sand
 1,sand from river tellins and mussels,sand
-1,vitriol of saltpetre,vitriol
 1,old water from farriers,water
+1,vitriol of saltpetre,vitriol
 1,congealed mercury,mercury
 1,white ash of all woods,ash
 1,well pulverized tallow,tallow
 1,finely pulverized quicklime,quicklime
-1,sap green,sap
-1,sage leaf,sage leaf
-1,gummed wax,wax
-1,dry chalk,chalk
-1,"very even steel, &amp; well filed",steel
-1,threads of gold &amp; of fine &amp; false silve,thread
-1,beech wood,wood
-1,sheep skin,skin
-1,not quite lukewarm aquafortis,aquaforti
-1,thin yellow canvas,canva
-1,willow wood,wood
-1,dog skin,skin
-1,dogfish skin,skin
-1,black stone,stone
-1,pulverized emery,emery
-1,thunder stone,stone
-1,thin canvas,canva
-1,annealed iron wire,annealed iron wire
-26,iron wire,wire
-1,calf or sheep leather,leather
+1,sap green,sap green
+1,pulverized emery,pulverized emery
 1,lightly lukewarm water,water
-1,plain canvas,canva
-1,pulverized rosin,rosin
-1,sharpening stone,sharpening stone
-1,black thread,thread
+1,not quite lukewarm aquafortis,aquaforti
 1,good calf skin,skin
+1,"very even steel, &amp; well filed","very even steel, &amp; well filed"
+1,calf or sheep leather,leather
 1,canvas yellowed with chalk,canvas yellowed with chalk
+1,thunder stone,stone
+1,gummed wax,gummed wax
+1,pulverized rosin,rosin
+1,beech wood,wood
+1,annealed iron wire,wire
+1,thin yellow canvas,canva
+1,threads of gold &amp; of fine &amp; false silve,thread
+1,dry chalk,chalk
+1,sharpening stone,sharpening stone
+1,willow wood,wood
+1,sheep skin,skin
+1,black stone,stone
+1,black thread,thread
+1,dogfish skin,skin
 1,better steel &amp; iron,steel
+1,dog skin,skin
+26,iron wire,wire
+1,plain canvas,canva
+1,thin canvas,canva
+1,sage leaf,sage leaf
 2,hot charcoal,charcoal
 1,walnut olive oil,oil
 1,white linen cloth,cloth
 1,silver foil,silver foil
-1,subtly ground mastic,mastic
-1,amber pulverized,amber pulverized
+1,subtly ground mastic,subtly ground mastic
 1,oil of turpentine or of spike lavender,oil
+1,amber pulverized,amber pulverized
 1,tinning done in leaf,tinning done in leaf
-1,pure &amp; fine tin,tin
+1,pure &amp; fine tin,pure &amp; fine tin
 1,hare skin,skin
+1,burnt earth,earth
 1,lean white sand,sand
-1,metals already alloyed,metal
+1,metals already alloyed,metals already alloyed
+1,white sand,sand
 1,latten from a candlestick,latten
 1,earth bourre bolvene,earth bourre bolvene
-1,white sand,sand
-1,burnt earth,earth
-1,orpiment in leaf form,orpiment
-1,ground crystal glass,glass
+1,ground cristallin,cristallin
 1,ground metals,metal
+1,orpiment in leaf form,orpiment
 1,clear &amp; white turpentine oil,clear &amp; white turpentine oil
-1,or on mat,or on mat
 1,oil panel,oil panel
+1,or on mat,or on mat
 1,thick glass,glass
-1,large panes of glass,large panes of glass
 2,white calcined pebbles,pebble
+1,large panes of glass,large panes of glass
 2,alkali salt,salt
-1,calcined saltpeter,saltpeter
-1,"white pebbles that are found by the rivers &amp; among the sand bank, &amp; paths, which are somewhat transparent",pebble
+1,calcined saltpeter,calcined saltpeter
 1,"good minium, not adulterated by brick",minium
+1,"white pebbles that are found by the rivers &amp; among the sand bank, &amp; paths, which are somewhat transparent",pebble
 1,vitrified minium,minium
-1,calcined pebbles,calcined pebble
 1,colored glass,glass
+1,calcined pebbles,pebble
 1,slightly burnt tartar,tartar
-1,melted copper,copper
-1,rubified antimony,rubified antimony
-1,pumice stone calcined &amp; pulverized &amp; tr with three parts of minium,pumice stone calcined &amp; pulverized &amp; tr with three parts of minium
+1,melted copper,melted copper
+1,rubified antimony,antimony
 1,fire stone,stone
-1,stone pulverized,stone pulverized
+1,pumice stone calcined &amp; pulverized &amp; tr with three parts of minium,pumice stone calcined &amp; pulverized &amp; tr with three parts of minium
+1,stone pulverized,stone
 1,very pulverized yellow amber,amber
 1,medicinal gums,gum
 2,coarse salt,salt
-1,rapeseed oil,rapeseed
+1,rapeseed oil,oil
 1,ciment royal,ciment royal
-1,rock alum,alum
+1,rock alum,rock
 1,foil backing for topaz,foil backing for topaz
-1,lake for a quickly-done red,lake
 1,first substance of wine,first substance of wine
-1,ivy leaves,ivy leafe
 1,new wooden,wooden
-1,holy water,water
-1,first water,water
-1,soft &amp; white ointment,ointment
+1,ivy leaves,ivy leafe
 1,new water,water
+1,soft &amp; white ointment,ointment
+1,holy water,water
 1,newest wax,wax
+1,first water,water
 1,water of sublimate,water
 1,chicken gut,chicken gut
 2,fine sand,sand
@@ -1499,35 +1492,35 @@ freq,verbatim_term,prefLabel_en
 1,very soft thread,thread
 1,slip of linen,slip of linen
 1,reheated plaster,plaster
-1,ants with soil,ants with soil
 1,chopped sheep’s heart,chopped sheep’s heart
-1,most excellent sand one can find for molding in a frame,most excellent sand one can find for molding in a frame
+1,ants with soil,ants with soil
+1,most excellent sand one can find for molding in a frame,sand
 1,"aspalte is, which is found in germany","aspalte is, which is found in germany"
+20,feather alum,feather
 1,sand for molding flowers &amp; leaves &amp; delicate things,sand
+11,sal ammoniac water,water
+1,ground raw plaster,plaster
 1,plaster of paris,plaster
-1,ground raw plaster,ground raw plaster
-20,feather alum,alum
-11,sal ammoniac water,sal ammoniac water
 1,shell of crabs &amp; crayfish,shell
-1,whitish stone,stone
-1,liquid sand,sand
-1,white c silk,silk
-1,melted copper and latten,copper
-1,founder’s earth of the founders of great works,founder’s earth of the founders of great work
-1,the most excellent sand that can be found for lead,sand
-1,vini spiritum,vini spiritum
-1,common silver,silver
 1,plaster pulverized &amp; reheated,plaster pulverized &amp; reheated
-1,good feather alum,alum
-3,fat earth,earth
+1,the most excellent sand that can be found for lead,sand
+1,white c silk,silk
 1,the one white que v in powder that apothecaries sell,the one white que v in powder that apothecaries sell
 1,wire of the same metal,wire
+1,common silver,silver
+1,vini spiritum,vini spiritum
+1,founder’s earth of the founders of great works,earth
 1,greasy leather,leather
-1,muddy &amp; clean water,muddy &amp; clean water
-1,muddy water,water
+1,melted copper and latten,melted copper and latten
+3,fat earth,earth
+1,liquid sand,sand
+1,whitish stone,stone
+1,good feather alum,feather
 1,chalk from champagne,chalk
 1,small stones,stone
-2,cooked plaster,plaster
+1,muddy &amp; clean water,muddy &amp; clean water
+1,muddy water,water
+2,cooked plaster,cooked plaster
 1,bone of hart,bone
 1,lukewarm water,water
 1,archal wire,wire
@@ -1537,160 +1530,160 @@ freq,verbatim_term,prefLabel_en
 1,yellow filth,filth
 1,iron wire is firmer,iron wire is firmer
 1,that of latten,that of latten
-1,pulverized sal ammoniac,pulverized sal ammoniac
+1,pulverized sal ammoniac,ammoniac
 1,pestled tiles,pestled tile
-5,wetted sand,sand
+5,wetted sand,wetted sand
+1,the one of latten,the one of latten
 1,grain of millet,grain
 1,strings of spinets,strings of spinet
-1,the one of latten,the one of latten
-1,clear mustard,mustard
-1,pureed broth,pureed broth
-1,cake of earth,cake of earth
-1,common fountain water,water
 17,tempered sand,sand
-1,wet sand,sand
-1,pig bristle,pig bristle
+1,clear mustard,mustard
+1,common fountain water,water
+1,pureed broth,broth
+1,cake of earth,cake of earth
 1,cittern strings,cittern string
+1,wet sand,sand
 1,burnt bones,bone
+1,alloyed tin,tin
 1,lead alloyed with tin,lead
-1,tin alloyed with lead,tin alloyed with lead
-1,alloyed tin,alloyed tin
+1,tin alloyed with lead,tin
+1,wet alum,wet alum
 1,sand of plaster,sand
-1,wet alum,alum
 1,silver strips,silver strip
+1,aquafortis d,aquafortis d
 1,ciment real,ciment real
-1,aquafortis d,aquaforti
 1,common plaster,plaster
 1,new leather,leather
 1,parings of the feet of field mice,parings of the feet of field mouse
 1,old leather,leather
-1,sal ammoniac water among the common,sal ammoniac water among the common
-1,calcined bones of the animal,bone
+1,sal ammoniac water among the common,water
 1,oil of sulfur &amp; turpentine,oil
+1,calcined bones of the animal,bone
 1,sand that was used,sand
 1,blood of snakes,blood
 1,mother of pearl,mother of pearl
 2,good plaster,plaster
+1,white coral,coral
+1,compound of tin &amp; fine latten,compound of tin &amp; fine latten
+1,potirons of trees,potirons of tree
+1,stones made from water,stone
+1,old vine stocks,old vine stock
+1,sulfurous marcasites,marcasite
+1,heated parchment,parchment
 1,paper pestled,paper pestled
 1,fantastical pieces of wood,fantastical pieces of wood
-1,heated parchment,parchment
-1,white coral,coral
-1,sulfurous marcasites,marcasite
-1,old vine stocks,old vine stock
-1,compound of tin &amp; fine latten,compound of tin &amp; fine latten
-1,stones made from water,stone
-1,potirons of trees,potirons of tree
 1,firm fine tin,tin
+1,charcoal pulverized,charcoal
+1,sand that was used in the reheated noyaulx,sand
+1,water moderately salty,salty
+1,"lead, fine &amp; new",lead
 1,pitch rosin,rosin
 2,pulverized charcoal,charcoal
-1,"lead, fine &amp; new",lead
-1,excellent sand,sand
-1,smoke of a tallow candle,smoke
 1,"sand, the finest that you can",sand
-1,water moderately salty,salty
-1,sand that was used in the reheated noyaulx,sand
+1,smoke of a tallow candle,smoke
 1,sand used for the noyau,sand
+1,excellent sand,sand
 1,perfect sand for the frame,sand
-1,sand that you use for the noyau,sand
 1,grain of wheat,grain
 1,good tin,tin
+1,sand that you use for the noyau,sand
 1,pure aspalte,aspalte
 1,wet flour,flour
 1,billon silver,silver
 1,sheets of gemstone foils,sheets of gemstone foil
-1,common sand,sand
-1,common sand of goldsmiths,sand
 1,sand for casting in gold,sand
 1,branch of wormseed,branch of wormseed
+1,common sand of goldsmiths,sand
+1,common sand,sand
 1,green fabric,green fabric
 1,delicate flesh,flesh
-1,mutton heart,mutton heart
-1,live mealworms,mealworm
-1,meat &amp; the egg,meat &amp; the egg
 1,well minced flesh with the yolk of a hard-boiled egg,flesh
+1,mutton heart,mutton heart
+1,meat &amp; the egg,meat &amp; the egg
+1,live mealworms,mealworm
 1,needle filings,filing
 1,good quicklime,quicklime
-1,"small filings of latten of thin copper, u e antimony, sublimate, finely pulverized",filing
+5,melted silver,melted silver
 4,aes ustum,aes ustum
-5,melted silver,silver
+1,"small filings of latten of thin copper, u e antimony, sublimate, finely pulverized","small filings of latten of thin copper, u e antimony, sublimate, finely pulverized"
+1,any lean sand that does not hold together,sand
 1,residue of common vinegar,residue
 1,sand with which goldsmiths buff enamels,sand
 1,"sand, the leanest &amp; driest you can find","sand, the leanest &amp; driest you can find"
-1,any lean sand that does not hold together,sand
 1,leaves from vine,leaves from vine
-1,thick sauce,thick sauce
 1,reheated brick,brick
-1,"pure feather alum, reheated &amp; pulverized","pure feather alum, reheated &amp; pulverized"
 1,alloyed silver is better for casting than the fine one,alloyed silver is better for casting than the fine one
+1,"pure feather alum, reheated &amp; pulverized",feather
 1,feather alum reheated,feather alum reheated
 1,thin mustard,mustard
-1,silver from the capital,silver
-1,not fine silver but alloyed,silver
-2,alloyed silver,alloyed silver
-1,good lute,lute
-1,cloth waste which founders use to cast their cannons,cloth waste which founders use to cast their cannon
-1,teston silver,silver
+1,thick sauce,thick sauce
+2,alloyed silver,silver
 1,sandy earth,earth
+1,good lute,lute
+1,not fine silver but alloyed,silver
+1,cloth waste which founders use to cast their cannons,cloth waste which founders use to cast their cannon
+1,silver from the capital,silver
+1,teston silver,silver
 1,fresh sand,sand
-1,fine copper filings,filing
-1,broken steel,steel
-1,coarse common salt melted,coarse common salt melted
 1,gold coins,gold coin
-1,metallic grain,grain
-3,melted metal,metal
+1,good buttered toast,good buttered toast
+1,coarse common salt melted,coarse common salt melted
+1,"earth mixed with dung or founder’s earth, that artillery founders use",earth
 1,white arsenic,arsenic
 1,salts sublimated,salts sublimated
-1,"earth mixed with dung or founder’s earth, that artillery founders use","earth mixed with dung or founder’s earth, that artillery founders use"
-1,good buttered toast,good buttered toast
 2,raw tartar,tartar
+3,melted metal,melted metal
+1,fine copper filings,filing
+1,broken steel,steel
+1,metallic grain,grain
 1,glued to the quarton,glued
 1,"tin, very little alloyed with lead","tin, very little alloyed with lead"
 1,grains of gold,grain
-2,alloyed gold,alloyed gold
+2,alloyed gold,gold
 1,sand of the second cast,sand
 1,"transparent grey plaster is not strong, but a good one is one that, being tempered, is white","transparent grey plaster is not strong, but a good one is one that, being tempered, is white"
 2,sand of noyau,sand
-1,melted iron,iron
-1,sugar melted in water,sugar
+1,melted iron,melted iron
+1,sugar melted in water,sugar melted in water
 1,well clarified sugar,sugar
 3,hot ashes,ash
 1,iron rust,rust
 1,very hot wax,wax
 1,animal bones,bone
-1,oil of brick,oil
 1,clear sand,sand
 1,oil of petrol or sulfur,oil
-1,sifted ash,ash
+1,oil of brick,oil
+1,founders’ earth,earth
 1,above mentioned founders’ earth,above mentioned founders’ earth
-1,terre bolvene,terre bolvene
 1,sandy clay earth,earth
-1,earth that founders use to braze or solder,earth
-1,founders’ earth,founders’ earth
+1,sifted ash,ash
 1,crucible bottoms,crucible bottom
+1,earth that founders use to braze or solder,earth
+1,terre bolvene,terre bolvene
 1,ground borax,borax
-1,small stone of pulverized borax,stone
-1,"gold and silver, melted",gold
-1,adulterated silver,silver
 1,lean delicate sand,sand
 1,silver finer than the alloy from the capital and like the real,silver finer than the alloy from the capital and like the real
+1,"gold and silver, melted","gold and silver, melted"
+1,small stone of pulverized borax,stone
+1,adulterated silver,silver
 1,"arsenic &amp; two times as much of raw tartar, coarsely pulverized",arsenic
+1,water of tartar,water
 1,alloy of teston,alloy of teston
+1,burned tartar,burned tartar
+2,base silver,silver
 1,common bullitoyre,bullitoyre
 1,water of bullitoyre,water
-2,base silver,silver
-1,water of tartar,water
-1,burned tartar,burned tartar
-1,white lead,lead
 1,cendré of azure,cendré of azure
+1,white lead,lead
 1,coarse linen,linen
 6,latten wire,wire
-1,iron or latten wire,iron
-1,sieved fine hair of cloth waste,sieved fine hair of cloth waste
+1,iron or latten wire,wire
+1,sieved fine hair of cloth waste,hair
 1,iron points,iron point
 1,quite good vinegar,vinegar
 1,mixed tin,tin
-3,candle smoke,smoke
 2,melted sulfur,sulfur
+3,candle smoke,smoke
 2,boiling water,water
 1,common sand from the mine,sand
 1,steel fillings &amp; needles,steel fillings &amp; needle
@@ -1699,137 +1692,137 @@ freq,verbatim_term,prefLabel_en
 2,hard wax,wax
 1,sand of crocum,sand
 1,good strong vinegar,vinegar
-1,boiled water of quince seed,water
-1,little spangle of gold,little spangle of gold
-1,soldering gold,soldering
 1,white thick which saliva that is found on the teeth,white thick which saliva that is found on the teeth
-1,brittle melted gold,gold
+1,little spangle of gold,little spangle of gold
+1,boiled water of quince seed,water
+1,soldering gold,soldering
+1,brittle melted gold,brittle melted gold
 1,verd de terre,verd de terre
 1,plate of lead,plate of lead
-1,fresh calamine,calamine
-1,soft latten,latten
 1,prepared tutty,prepared tutty
 1,nails of rosette,nail
-1,yellowed latten,latten
-1,very yellow latten,latten
-1,calamine smoke,smoke
 1,pig fat,fat
 1,german tokens,german token
-2,huile tingente,huile tingente
+1,yellowed latten,yellowed latten
+1,calamine smoke,smoke
+1,fresh calamine,calamine
 1,strong yellow latten,latten
-1,pure red copper from a cauldron or other thin works,copper
+1,very yellow latten,latten
+1,soft latten,latten
+2,huile tingente,huile tingente
 1,strong smoke,smoke
+1,pure red copper from a cauldron or other thin works,copper
 2,hot ash,ash
-1,☿ sublimate of venice,sublimate
 1,arsenic sublimate,sublimate
-1,thick bones,bone
-1,spat from germany,spat
-1,sand for molds of flat medals,sand
-1,scrapings of the mold,scrapings of the mold
-1,sulfured black wax,wax
-1,grey earth,grey earth
-2,fresh clay,clay
+1,☿ sublimate of venice,sublimate
 1,the yellow,the yellow
+1,sand for molds of flat medals,sand
+1,thick bones,bone
 1,pieces of the molds that have been used,pieces of the molds that have been used
+1,spat from germany,spat
+2,fresh clay,clay
+1,scrapings of the mold,scrapings of the mold
+1,sulfured black wax,sulfured black wax
+1,grey earth,earth
 1,false stones,stone
 1,black modeling wax,wax
 1,counterfeit diamonds put in a work,counterfeit diamonds put in a work
-1,plates of copper,plate
-2,written paper,paper
-1,sheets of copper,sheets of copper
 1,hard wood,wood
 1,new lead,lead
+2,written paper,paper
 1,new &amp; unadulterated lead,lead
+1,sheets of copper,sheets of copper
+1,plates of copper,plate
 1,pestled charcoal,charcoal
-2,white plaster,plaster
 1,water so hot,water
-4,modeling wax,wax
-1,"charcoal, pestled &amp; finely passed through a linen",charcoal
-1,the aforesaid pulverized charcoal,charcoal
+2,white plaster,plaster
+1,"charcoal, pestled &amp; finely passed through a linen","charcoal, pestled &amp; finely passed through a linen"
 2,black sulfured wax,wax
-1,goldsmith’s cement,cement
-1,white bones,bone
-1,whitened latten wire,wire
+1,the aforesaid pulverized charcoal,charcoal
+4,modeling wax,wax
 1,white of ceruse,white
+1,whitened latten wire,whitened latten wire
+1,goldsmith’s cement,cement
+1,yellow potter’s earth,yellow potter’s earth
+1,white bones,bone
 1,thick thread,thread
-1,yellow potter’s earth,earth
+6,melted butter,melted butter
+1,wetted sand for noyau,wetted sand for noyau
 1,common carton,carton
-6,melted butter,butter
-1,wetted sand for noyau,sand
-1,lean earth of which the founders of artillery &amp; bells make their trusseaulx and molds,earth
-1,discarded cloth waste,discarded cloth waste
 1,tondure of cloth,tondure
+1,lean earth of which the founders of artillery &amp; bells make their trusseaulx and molds,lean earth of which the founders of artillery &amp; bells make their trusseaulx and mold
+1,discarded cloth waste,discarded cloth waste
 1,wheat chaff,wheat chaff
 1,warm manure,manure
 1,good filings,filing
 1,leaves &amp; sheets of silver,leaves &amp; sheets of silver
-1,grain of yellow millet,grain
 1,grain of rapeseed,grain
 1,grain of large amaranth,grain
+1,grain of yellow millet,grain
 1,some small,some small
 1,thicker tempered sand,sand
 1,thick sand,sand
-1,rather strong iron,iron
-2,soft clay,clay
 1,thick iron wire,wire
+2,soft clay,clay
+1,rather strong iron,iron
 1,old k,k
 1,very base solder,solder
 1,pure silver,silver
-1,soft latten of skillets,latten
-1,sour latten of candlesticks,latten
 2,melted glass,glass
 1,"pulverized calamine, raw &amp; pure",calamine
+1,soft latten of skillets,latten
+1,sour latten of candlesticks,latten
 1,turmeric root,turmeric root
 1,strong plaster,plaster
-1,bad linen,linen
 1,soap from venice,soap
+1,bad linen,linen
+1,spangle gold,gold
 1,base gold from germany,gold
 1,gold from the rhine,gold
-1,spangle gold,gold
 1,fine alloy,fine alloy
 1,very thin silver sheet,sheet
 1,very strong wax,wax
-1,glowing charcoal,charcoal
 1,very finely ground iron scales,very finely ground iron scale
-2,black wax,wax
-1,ashes of the wax,ash
-1,molding sand,sand
+1,glowing charcoal,glowing charcoal
 1,sand which served for the molds,sand
+2,black wax,wax
 2,common lute,lute
+1,molding sand,sand
+1,ashes of the wax,ash
 1,iron wires,iron wire
-1,black oil,oil
-1,gilded leather,leather
 1,white false stones,stone
+1,gilded leather,gilded
 2,iron plates,plate
+1,black oil,oil
+1,common oil,oil
 1,biggish bones,bone
 1,halves of well-rounded peas,halves of well-rounded pea
-1,common oil,oil
 1,delicate plate of lead,delicate plate of lead
+1,alloyed lead,lead
 1,dried glair of egg,glair
-1,alloyed lead,alloyed lead
-2,warm urine,urine
-1,crushed chalk,chalk
 1,warm water,water
+1,crushed chalk,chalk
+2,warm urine,urine
 1,well-ground iron scales,well-ground iron scale
 1,sheets of lead &amp; copper,sheets of lead &amp; copper
 1,gold as gilding,gold
-1,good lime,lime
 1,silver from real,silver
-1,metal filings,filing
-1,one of silver,one of silver
+1,good lime,lime
 1,the one of gold,the one of gold
+1,metal filings,filing
 1,tin and lead filings,filing
+1,one of silver,one of silver
 1,tinned latten,latten
 1,well-ground ceruse,ceruse
 1,colored wax,wax
 1,good aquafortis,aquaforti
-1,amalgamated gold,amalgamated gold
-1,spinet strings,spinet string
+1,amalgamated gold,gold
 1,window glass from lorraine,glass
-1,pork fat,fat
 1,"wax, melted",wax
+1,pork fat,fat
+1,spinet strings,spinet string
 1,cuttlefish bones,bone
-1,"gold, thinly beaten esp &amp; well burnished with a chaple",gold
+1,"gold, thinly beaten esp &amp; well burnished with a chaple","gold, thinly beaten esp &amp; well burnished with a chaple"
 1,gold ingot,gold ingot
 1,good ashes,ash
 1,swine bristle,swine bristle
@@ -1843,31 +1836,30 @@ freq,verbatim_term,prefLabel_en
 1,charcoal of peach tree pits,charcoal
 1,very hot melted wax,wax
 1,wires of latten.,wires of latten.
-1,stone plaster,plaster
 1,the one of paris &amp; spain,the one of paris &amp; spain
+1,stone plaster,plaster
 1,sand for flowers,sand
 1,liver or lung of a cow or sheep,liver or lung of a cow or sheep
-1,stuffing cloth,cloth
-1,pieces of molds,pieces of mold
-1,sand for frames,sand
-1,gip mat,gip mat
-1,sand de noyau dalu of gip of lateribus,sand de noyau dalu of gip of lateribus
+1,stuffing cloth,stuffing cloth
 1,alume jameni,alume jameni
+1,gip mat,gip mat
+1,sand for frames,sand
+1,pieces of molds,pieces of mold
+1,sand de noyau dalu of gip of lateribus,sand de noyau dalu of gip of lateribus
 1,rusty filings,filing
-1,"the one which is white, light like a sponge","the one which is white, light like a sponge"
 1,rotten wood,wood
+1,"the one which is white, light like a sponge","the one which is white, light like a sponge"
 1,flower oil,oil
-1,ben oil,ben oil
-1,white amber,amber
+1,ben oil,oil
 1,wheat starch from england,starch
-1,levant bole,bole
+1,white amber,amber
 1,crushed aes ustum,crushed aes ustum
-1,hog bristle,hog bristle
+1,levant bole,bole
 1,sous from spain,sous from spain
-1,leady silver,silver
 1,sous from france,sous from france
-1,coined silver,silver
-1,plump &amp; thick felt,plump &amp; thick felt
+1,leady silver,silver
+1,coined silver,coined silver
+1,plump &amp; thick felt,felt
 1,bad sand,sand
 1,gummed modeling wax,wax
 1,fat plaster,plaster
@@ -1878,24 +1870,24 @@ freq,verbatim_term,prefLabel_en
 1,caput mortuum,caput mortuum
 1,aquafortis of vitriol,aquaforti
 1,pressed paper,paper
-1,"plates of wax, cork, &amp; wood",plate
-1,old cauldron,old cauldron
-1,cake of wax,cake of wax
-1,plate of cork,plate of cork
 1,feather quill,quill
+1,"plates of wax, cork, &amp; wood",plate
+1,plate of cork,plate of cork
+1,old cauldron,old cauldron
 1,good great grain powder,powder
-1,gilded silver,gilded
-1,black calcined river pebbles,pebble
+1,cake of wax,cake of wax
 1,very hard wax,wax
+1,black calcined river pebbles,pebble
+1,gilded silver,gilded
 1,stone from istre,stone
-1,wetted sand # like for noyau,wetted sand # like for noyau
-1,transparent wax,wax
 1,black wax mixed with sulfur,black wax mixed with sulfur
+1,transparent wax,wax
+1,wetted sand # like for noyau,wetted sand # like for noyau
+1,steeled iron,steeled iron
 1,untempered steel,steel
-1,steeled iron,iron
 1,red tin,tin
 1,thin wire of latten,wire
 1,delicate straw,straw
+1,scabious or bugloss water,water
 1,thoroughly tempered wine,thoroughly tempered wine
-1,scabious or bugloss water,scabious or bugloss water
 1,baccis juniperi,baccis juniperi

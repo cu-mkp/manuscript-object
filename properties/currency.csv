@@ -14,15 +14,14 @@ sou,sous,p123r_1, A means di far correr lotnegra
 sou,sous,p126v_1,Crocum ferri
 sou,sou,p154r_3,Sweetening silver
 sou,old sou,p154r_3,Sweetening silver
-sou,sous from france,p164r_3,Leady silver
 sou,sous from spain,p164r_3,Leady silver
+sou,sous from france,p164r_3,Leady silver
 livre,livres,p009v_3,Waste book
 livre,livres,p170v_1,1578-9 original first page
 lb,lb,p017r_1,On the gunner
 lb,lb,p020r_2,Glassworker
 lb,lb,p032v_3,Founder
 lb,lb,p094r_1,Furbisher
-lb,lb t.,p009v_3,Waste book
 fran,frans,p030r_2,Pewterer
 liard,liard,p036r_1,For transmuting a ball into a thimble, cunning
 liard,liard,p094r_1,Furbisher
@@ -46,5 +45,6 @@ real,real,p128r_1,Casting in silver and gold
 real,real,p154r_3,Sweetening silver
 real,reals,p164r_3,Leady silver
 billon,billon,p156r_2,Very light and hollow work of gold
-old douzain,old douzains,p149v_2,Gold solder
+lb t.,lb t.,p009v_3,Waste book
 gold denier,gold denier,p149v_2,Gold solder
+old douzain,old douzains,p149v_2,Gold solder

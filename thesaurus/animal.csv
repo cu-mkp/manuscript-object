@@ -1,18 +1,19 @@
 freq,verbatim_term,prefLabel_en
+1,aucupio,aucupio
 3,chicken,chicken
 1,lamb,lamb
 7,dragon,dragon
-9,fish,fish
 1,codfish,codfish
+9,fish,fish
 19,horse,horse
 2,mutton,mutton
 11,lizard,lizard
-3,hog,hog
+5,hog,hog
 1,animal,animal
 5,toad,toad
-18,snake,snake
-2,swine,swine
 24,snakes,snake
+2,swine,swine
+18,snake,snake
 1,swallows,swallow
 8,cuttlefish,cuttlefish
 4,horses,horse
@@ -24,31 +25,31 @@ freq,verbatim_term,prefLabel_en
 5,cow,cow
 3,ox,ox
 1,ducks,duck
+7,sheep,sheep
 1,ewe,ewe
 1,ewes,ewe
-7,sheep,sheep
 2,crow,crow
 1,beef,beef
 4,dogs,dog
 8,birds,bird
 2,oyster,oyster
+1,siskins,siskin
 2,ortolans,ortolan
 1,turtledoves,turtledofe
-1,siskins,siskin
-7,spider,spider
-1,goldfinches,goldfinch
-1,verdaule,verdaule
 1,chaffinches,chaffinch
-1,linnet,linnet
-1,calandra,calandra
-4,bird,bird
 1,cuckoo,cuckoo
+1,goldfinches,goldfinch
+7,spider,spider
+1,calandra,calandra
+1,linnet,linnet
+1,verdaule,verdaule
+4,bird,bird
 1,colt,colt
 5,worms,worm
 8,oxen,ox
-1,worm,worm
-3,butterfly,butterfly
 1,bombicum,bombicum
+3,butterfly,butterfly
+1,worm,worm
 1,silkworms,silkworm
 2,pork,pork
 7,dog,dog
@@ -57,11 +58,11 @@ freq,verbatim_term,prefLabel_en
 1,earthworms,earthworm
 1,lambs,lamb
 1,goats,goat
-1,weasels,weasel
-1,porcupine,porcupine
-1,dormice,dormouse
 3,rats,rat
+1,porcupine,porcupine
 2,squirrel,squirrel
+1,dormice,dormouse
+1,weasels,weasel
 3,rat,rat
 1,pigeons,pigeon
 1,petit-gris,petit-gri
@@ -70,10 +71,10 @@ freq,verbatim_term,prefLabel_en
 1,human,human
 1,partridge,partridge
 4,wolf,wolf
-5,pig,pig
+3,pig,pig
 1,oysters,oyster
-1,shells,shell
 1,mussels,mussel
+1,shells,shell
 1,tellins,tellin
 1,calf,calf
 1,dogfish,dogfish
@@ -84,12 +85,12 @@ freq,verbatim_term,prefLabel_en
 11,turtles,turtle
 4,nightingale,nightingale
 2,nightingales,nightingale
-1,calendras,calendra
-2,ants,ant
 2,mealworms,mealworm
+2,ants,ant
+1,calendras,calendra
 16,lizards,lizard
-4,crabs,crab
 13,crayfish,crayfish
+4,crabs,crab
 1,hart,hart
 4,frog,frog
 5,crab,crab
@@ -105,8 +106,8 @@ freq,verbatim_term,prefLabel_en
 1,grasshopper,grasshopper
 3,grasshoppers,grasshopper
 4,turtle,turtle
-3,bittern,bittern
 1,eagle,eagle
+3,bittern,bittern
 1,cicadas,cicada
 9,fly,fly
 1,bat,bat
@@ -120,16 +121,16 @@ freq,verbatim_term,prefLabel_en
 1,aquatilium animalium,aquatilium animalium
 1,good horses,horse
 2,field mice,field mouse
-1,calandra lark,calandra
-1,calandra larks,calandra
+1,calandra larks,lark
+1,calandra lark,calandra lark
 1,passe solitaire,passe solitaire
 1,young small birds,bird
 1,small birds,bird
 1,female silkworm seeds,female silkworm seed
 1,black ants,ant
 1,beech martens,beech marten
-1,goat buck,goat buck
 1,goat kid,goat kid
+1,goat buck,goat buck
 1,common dogs,dog
 2,female lizards,lizard
 1,water snakes,snake
@@ -141,22 +142,22 @@ freq,verbatim_term,prefLabel_en
 2,stag beetle,stag beetle
 1,large lizard,lizard
 1,very small female lizard,lizard
-1,smalls female lizards,smalls female lizard
 1,large lizards,lizard
+1,smalls female lizards,smalls female lizard
 1,small female lizards,lizard
-1,wall lizard,lizard
 1,small wall lizard,lizard
+1,wall lizard,lizard
 1,small frog,frog
 2,stag beetles,stag beetle
-1,water turtle,turtle
-1,those from garrigue,those from garrigue
-3,those of the garrigue,those of the garrigue
 1,those from water,those from water
 3,those of the water,those of the water
+3,those of the garrigue,those of the garrigue
+1,water turtle,turtle
+1,those from garrigue,those from garrigue
 1,those of water,those of water
 1,large flies,fly
-1,small mouse,mouse
 1,big rat,rat
+1,small mouse,mouse
 1,largest vo flies,fly
 1,solid bird,bird
 1,little viper,viper

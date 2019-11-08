@@ -13,7 +13,7 @@ brissac,brissac,p002v_2,Emeralds of Brissac
 venice,venice,p003r_1,Counterfeit coral
 venice,venice,p003r_2,Varnish for panels
 venice,venice,p005r_1,Steel mirrors
-venice,venice,p006r_1,For laying down and setting burnished gold and giving red or green or blue
+venice,venice,p006r_1,For laying down and seating burnished gold and giving red or green or blue
 venice,venice,p056r_2,Varnish for distemper
 venice,venice,p057v_2,Painter
 venice,venice,p066v_1,For preventing teats from swelling d or to diminish overly large ones
@@ -21,10 +21,7 @@ venice,venice,p073v_3,Another recipe for making varnish
 venice,venice,p080r_2,Very hard white stucco
 venice,venice,p137r_2,Huile tingente to make metals run
 venice,venice,p149r_1,Softening iron and rendering it very soft
-armenian,armenian,p006r_1,For laying down and setting burnished gold and giving red or green or blue
-armenian,armenian,p012v_1,Molding stucco promptly
-armenian,armenian,p073v_4,Color of burnished copper
-gascony,gascony,p009r_1,Plowman
+armeni,armeni,p006r_1,For laying down and seating burnished gold and giving red or green or blue
 france,france,p009r_1,Plowman
 france,france,p017r_1,On the gunner
 france,france,p020r_2,Glassworker
@@ -37,6 +34,7 @@ france,france,p107r_1,Catching lizards and snakes
 france,france,p128v_1,Whitening of cast silver
 france,france,p164r_3,Leady silver
 france,france,p166v_3,Scented candle from Le Mans
+gascony,gascony,p009r_1,Plowman
 germany,germany,p011r_1,Painting esmail d’azur in oil
 germany,germany,p028v_1,Pewterers
 germany,germany,p030r_1,Lead
@@ -53,6 +51,8 @@ germany,germany,p149r_2,Base gold from Germany, electrum
 germany,germany,p149r_3,Various arts from Germany
 albi,albi,p012r_4,Plaster
 albi,albi,p020v_5,Common saying
+armenian,armenian,p012v_1,Molding stucco promptly
+armenian,armenian,p073v_4,Color of burnished copper
 montauban,montauban,p016v_5,Candles
 montpellier,montpellier,p017r_1,On the gunner
 montpellier,montpellier,p027v_4,2 quintals, is one cane long, which is 8 Montpellier pans
@@ -110,16 +110,17 @@ german,germans,p159v_4,Plaster alone
 rouen,rouen,p036v_3,Glassworkers’ glass
 englishman,englishman,p037v_3,Yellow Amber
 bretagne,bretagne,p037v_3,Yellow Amber
-monserrat,monserrat,p038r_4,Amber
-cardona,cardona,p038r_4,Amber
-cardona,cardona,p040r_3,Vinegar
 english,english,p038r_4,Amber
 english,english,p071r_3,Mulled and sugared wine
 english,english,p103r_2,Against dogs’ mange
 brittany,brittany,p038r_4,Amber
+monserrat,monserrat,p038r_4,Amber
+cardona,cardona,p038r_4,Amber
+cardona,cardona,p040r_3,Vinegar
+carmail,carmail,p039r_2,Pastel woad
 lauragai,lauragais,p039r_2,Pastel woad
 auragne,auragne,p039r_2,Pastel woad
-carmail,carmail,p039r_2,Pastel woad
+catalonium,catalonia,p040r_3,Vinegar
 spain,spain,p040r_3,Vinegar
 spain,spain,p044v_1,Horsehair sieves
 spain,spain,p052r_1,The work done in Algiers
@@ -127,7 +128,6 @@ spain,spain,p053v_1,Silkworms
 spain,spain,p159v_4,Plaster alone
 spain,spain,p162v_2,Olive trees
 spain,spain,p164r_3,Leady silver
-catalonium,catalonia,p040r_3,Vinegar
 maltum,malta,p040v_1,Cross of the commanders of Malta
 indian,indian,p040v_1,Cross of the commanders of Malta
 pari,paris,p044r_1,The range of an arquebus
@@ -136,17 +136,17 @@ pari,paris,p159v_4,Plaster alone
 normandy,normandy,p044v_1,Horsehair sieves
 coustance,coustance,p044v_1,Horsehair sieves
 bayonne,bayonne,p047r_4,Crucibles
+biscaye,biscaye,p050v_2,Curried steel and files
 foix,foix,p050v_2,Curried steel and files
 foix,foix,p090r_2,Sand
 foix,foix,p143r_2,Molders from Foix
-biscaye,biscaye,p050v_2,Curried steel and files
 levantine,levantines,p050v_2,Curried steel and files
 biscay,biscay,p050v_2,Curried steel and files
 algier,algiers,p052r_1,The work done in Algiers
 champaigne,champaigne,p053r_6,Casting of lead and copper
 languedoc,languedoc,p053v_1,Silkworms
-albensi,albensis,p053v_1,Silkworms
 cremonensi,cremonensis,p053v_1,Silkworms
+albensi,albensis,p053v_1,Silkworms
 ghent,ghent,p056r_2,Varnish for distemper
 ghent,ghent,p056v_1,Painter
 florence,florence,p056v_1,Painter
@@ -158,9 +158,9 @@ italian,italians,p059r_1,Shadows
 italian,italians,p097v_1,Mastic varnish dry in a half hour
 italian,italians,p109r_1,Modeling in wax
 cambray,cambray,p057v_2,Painter
-turkey,turkey,p058v_5,Paintbrushes
 acre,acre,p058v_5,Paintbrushes
 acre,acre,p102v_1,Painting on crystal or glass
+turkey,turkey,p058v_5,Paintbrushes
 champagne,champagne,p068r_3,Casting
 champagne,champagne,p108r_2,Spalt
 bolvene,bolvenes,p069r_2,Sand
@@ -174,18 +174,18 @@ thoulouse,thoulouse,p084r_5,Sand from a mine in Thoulouse
 thoulouse,thoulouse,p085v_4,Experimented sands
 thoulouse,thoulouse,p087r_1,Sand from Thoulouse
 thoulouse,thoulouse,p087v_3,Sand of the mine of Thoulouse
-ox,ox,p081r_2,Earth for molding
 fosseret,fosseret,p081r_2,Earth for molding
+ox,ox,p081r_2,Earth for molding
 touch,touch,p087r_1,Sand from Thoulouse
 blagnac,blagnac,p087r_1,Sand from Thoulouse
-cominge,cominge,p089v_2,Glassmakers’ white sand from the mine, mixed with sal ammoniac
 aurignac,aurignac,p089v_2,Glassmakers’ white sand from the mine, mixed with sal ammoniac
+cominge,cominge,p089v_2,Glassmakers’ white sand from the mine, mixed with sal ammoniac
 venise,venise,p090r_3,All sands can be rendered good
 italy,italy,p090v_2,Orange trees
 lombardy,lombardy,p090v_2,Orange trees
 dauphiné,dauphiné,p094r_1,Furbisher
-spanish,spanish,p094r_1,Furbisher
 vienne,vienne,p094r_1,Furbisher
+spanish,spanish,p094r_1,Furbisher
 dutch,dutch,p102r_4,Glass vessels
 augsburg,augsburg,p107r_1,Catching lizards and snakes
 rouan,rouan,p107r_1,Catching lizards and snakes
@@ -199,29 +199,29 @@ garrigue,garrigue,p144r_1,Turtles
 garrigue,garrigue,p146v_1,Molding turtles
 rhine,rhine,p149r_2,Base gold from Germany, electrum
 syracuse,syracuse,p152r_1,Molding a rat
+argo,argos,p162r_1,For the workshop
+phoenician,phoenicians,p162r_1,For the workshop
 egypt,egypt,p162r_1,For the workshop
 portuguese,portuguese,p162r_1,For the workshop
 portuguese,portuguese,p163r_1,Perfumer
 assyrium,assyria,p162r_1,For the workshop
-argo,argos,p162r_1,For the workshop
-phoenician,phoenicians,p162r_1,For the workshop
 levant,levant,p163v_2,Crocum
-egyptian,egyptians,p166r_1,For the workshop
-greek,greeks,p166r_1,For the workshop
+sicilian,sicilians,p166r_1,For the workshop
 greek,greek,p166r_1,For the workshop
+greek,greeks,p166r_1,For the workshop
+egyptian,egyptians,p166r_1,For the workshop
+hebrew,hebrews,p166r_1,For the workshop
+tyana,tyana,p166r_1,For the workshop
 latin,latins,p166r_1,For the workshop
 eleusi,eleusis,p166r_1,For the workshop
-hebrew,hebrews,p166r_1,For the workshop
-sicilian,sicilians,p166r_1,For the workshop
-tyana,tyana,p166r_1,For the workshop
 burgundy,burgundy,p166v_3,Scented candle from Le Mans
 istre,istre,p169v_1,Molding very thin like bimbalotiers do
 saint-frajou,saint-frajou,p170v_1,1578-9 original first page
 mechliniensi,mechliniensis,p170v_4,List of books
-faubourg saint-germain,faubourg saint-germain,p001r_1,List of names
-rue de la heaumerie, at the sign of st claude,rue de la heaumerie, at the sign of st claude,p001r_1,List of names
 rue des escrivain,rue des escrivains,p001r_1,List of names
 st jacques de la boucherie,st jacques de la boucherie,p001r_1,List of names
+rue de la heaumerie, at the sign of st claude,rue de la heaumerie, at the sign of st claude,p001r_1,List of names
+faubourg saint-germain,faubourg saint-germain,p001r_1,List of names
 urb. rom.,urb. rom.,p001r_3,List of books
 saint antonin,saint antonin,p001v_1,For easing the belly
 la rochelle,la rochelle,p017r_1,On the gunner
@@ -233,6 +233,6 @@ puy david,puy david,p084r_5,Sand from a mine in Thoulouse
 puy david,puy david,p087r_1,Sand from Thoulouse
 sainct michel,sainct michel,p087r_1,Sand from Thoulouse
 parys near the sainct chappelle,parys near the sainct chappelle,p090r_3,All sands can be rendered good
-coast of greece,coast of greece,p162r_1,For the workshop
 red sea,red sea,p162r_1,For the workshop
+coast of greece,coast of greece,p162r_1,For the workshop
 le man,le mans,p166v_3,Scented candle from Le Mans

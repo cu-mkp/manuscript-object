@@ -1,4 +1,8 @@
 prefLabel_en,verbatim_term,identity,title
+currier,currier,p001r_1,List of names
+currier,currier,p079r_1,Making gray wood
+currier,currier's,p075v_1,For making gray wood
+currier,curriers,p157v_2,Molding a bird
 master,master,p001r_1,List of names
 master,master,p017r_1,On the gunner
 master,master,p131r_4,For teaching a dog well
@@ -7,28 +11,25 @@ master,masters,p028v_1,Pewterers
 master,masters,p032r_1,The body of the cuirass
 master,masters,p062r_4,Drawing
 master,masters,p062v_1,Drawing
-currier,currier,p001r_1,List of names
-currier,currier,p079r_1,Making gray wood
-currier,currier's,p075v_1,For making gray wood
-currier,curriers,p157v_2,Molding a bird
+master,sworn masters,p044r_2,Pewterer
 harvester,harvester,p001r_2,List
 harvester,harvester,p166r_1,For the workshop
 harvester,harvesters,p009r_1,Plowman
-historicu,historicus,p001r_3,List of books
 bergier,bergiers,p001r_3,List of books
 king,king,p001r_3,List of books
 king,king,p017r_1,On the gunner
 king,king,p038r_1,Sapphire
 king,king,p094r_1,Furbisher
+historicu,historicus,p001r_3,List of books
 blacksmith,blacksmith,p002v_3,Sapphire
 furbisher,furbishers,p004v_1,Black varnish for sword guard, bands for trunks, &amp;c
 furbisher,furbishers,p011v_3,For coating with or mat
 furbisher,furbishers,p094r_1,Furbisher
 furbisher,furbishers,p096v_3,Yellow varnish
 furbisher,furbisher,p094r_1,Furbisher
+surgeon,surgeons,p005r_2,Concave mirrors
 woman,women,p005r_2,Concave mirrors
 woman,women,p113r_1,Tempering the sand and molding the first cast
-surgeon,surgeons,p005r_2,Concave mirrors
 joiner,joiners,p007r_4,Fish glue or isinglass and mouth glue
 joiner,joiners,p094r_1,Furbisher
 joiner,joiner's,p010r_1,Counterfeit jasper
@@ -69,21 +70,23 @@ painter,painters,p093v_2,Azure
 painter,painters,p097r_2,Gilding
 painter,painters,p100v_2,For ruby take some gold leaf
 painter,common painters,p011r_1,Painting esmail d’azur in oil
+merchant,merchant,p009r_3,Merchant
+merchant,merchant,p009v_2,Merchant
+merchant,merchant,p038v_5,Merchant
+merchant,merchants,p009v_2,Merchant
+merchant,merchants,p053v_1,Silkworms
 apprentice,apprentices,p009r_3,Merchant
 apprentice,apprentices,p062r_4,Drawing
 apprentice,apprentices,p062v_1,Drawing
 apprentice,apprentice,p065v_4,White and black
 apprentice,apprentice,p094r_1,Furbisher
 apprentice,apprentice,p131r_4,For teaching a dog well
-merchant,merchant,p009r_3,Merchant
-merchant,merchant,p009v_2,Merchant
-merchant,merchant,p038v_5,Merchant
-merchant,merchants,p009v_2,Merchant
-merchant,merchants,p053v_1,Silkworms
 fuller,fuller,p012r_2,Chimolée
 barber,barbers',p012r_4,Plaster
 barber,barbers,p080v_1,Founders of small works  of tin
 goldsmiths’,goldsmiths’,p012v_2,Cleaning yellow pearls
+glassworkers’,glassworkers’,p012v_3,For whitening enilanroc
+glassworkers’,glassworkers’,p041v_1,Glassworkers’ black
 goldsmith,goldsmith,p012v_3,For whitening enilanroc
 goldsmith,goldsmith,p039r_1,Goldsmith
 goldsmith,goldsmith,p104v_3,Goldsmith
@@ -110,8 +113,6 @@ goldsmith,goldsmiths,p157r_1,A means for goldsmiths for molding hollow
 goldsmith,goldsmiths,p157r_2,Rouge clair
 goldsmith,goldsmiths who work in large wares and plate,p149v_1,Molding vases in several pieces
 goldsmith,goldsmiths who work large wares,p154r_3,Sweetening silver
-glassworkers’,glassworkers’,p012v_3,For whitening enilanroc
-glassworkers’,glassworkers’,p041v_1,Glassworkers’ black
 sophisticator,sophisticators,p013v_1,For knowing the good cendrée of azure for oil
 thiefe,thieves,p013v_3,Toadstone
 candlemaker,candlemakers,p013v_5,Candles
@@ -143,8 +144,12 @@ founder,artillery founders,p123r_1, A means di far correr lotnegra
 founder,founders of large casts for statues,p137r_2,Huile tingente to make metals run
 founder,founders of artillery &amp; bells,p142v_3,Lute for luting your molds
 founder,founders of large castings,p157r_4,Arranging plants or flowers for casting
+alchemist,alchemists,p016r_1,Founding of soft iron
 miner,miners,p016r_1,Founding of soft iron
 miner,miners,p028v_1,Pewterers
+person,people,p016r_1,Founding of soft iron
+person,common people,p094r_1,Furbisher
+person,common people,p100v_1,Gemstones
 worker,workers,p016r_1,Founding of soft iron
 worker,workers,p050v_2,Curried steel and files
 worker,workers,p097v_2,Working on glass
@@ -154,10 +159,6 @@ worker,worker,p036v_3,Glassworkers’ glass
 worker,worker,p052r_1,The work done in Algiers
 worker,iron workers,p050v_2,Curried steel and files
 worker,worker who made the wood piece,p094r_1,Furbisher
-person,people,p016r_1,Founding of soft iron
-person,common people,p094r_1,Furbisher
-person,common people,p100v_1,Gemstones
-alchemist,alchemists,p016r_1,Founding of soft iron
 gunner,gunner,p017r_1,On the gunner
 gunner,gunner,p021r_1,Gunner
 gunner,gunner,p021r_2,For firing a cannon at night
@@ -165,14 +166,8 @@ gunner,gunner,p021v_1,For unspiking a cannon
 gunner,gunner,p024v_1,For bringing a cannon over land
 gunner,gunner,p024v_3,A steel touch-hole
 gunner,gunners,p024v_1,For bringing a cannon over land
-cavalry,cavalry,p017r_1,On the gunner
 infantry,infantry,p017r_1,On the gunner
-glassmaker,glassmakers,p020r_2,Glassworker
-glassmaker,glassmakers,p047v_2,Founding
-glassmaker,glassmakers,p089v_2,Glassmakers’ white sand from the mine, mixed with sal ammoniac
-glassmaker,glassmakers,p098v_5,Founding
-glassmaker,glassmakers,p100v_1,Gemstones
-glassmaker,glassmakers,p120v_6,Keeping dry flowers in the same state all year
+cavalry,cavalry,p017r_1,On the gunner
 glassworker,glassworker,p020r_2,Glassworker
 glassworker,glassworker,p032v_2,Glassworker
 glassworker,glassworker,p037v_2,Glassworker
@@ -180,6 +175,12 @@ glassworker,glassworkers,p020r_2,Glassworker
 glassworker,glassworkers,p036v_3,Glassworkers’ glass
 glassworker,glassworkers,p039v_3,Tracing some history on glass
 glassworker,glassworkers,p049r_1,Casting of lead
+glassmaker,glassmakers,p020r_2,Glassworker
+glassmaker,glassmakers,p047v_2,Founding
+glassmaker,glassmakers,p089v_2,Glassmakers’ white sand from the mine, mixed with sal ammoniac
+glassmaker,glassmakers,p098v_5,Founding
+glassmaker,glassmakers,p100v_1,Gemstones
+glassmaker,glassmakers,p120v_6,Keeping dry flowers in the same state all year
 pioneer,pioneers,p024v_1,For bringing a cannon over land
 apothecary,apothecaries,p029v_5,Extraction of oils
 apothecary,apothecaries,p085v_2,Mortars
@@ -195,9 +196,9 @@ scribe,scribe,p046v_1,Scribe, Oil of sulfur
 villager,villagers,p032v_1,Mat maker
 coppersmith,coppersmith,p032v_3,Founder
 coppersmith,coppersmiths,p044r_2,Pewterer
+spectator,spectators,p033r_1,Knife for cutting the nose or a finger
 conjuror,conjuror,p033r_1,Knife for cutting the nose or a finger
 conjuror,conjuror,p035v_2,For transmuting grain from one vessel to another
-spectator,spectators,p033r_1,Knife for cutting the nose or a finger
 bystander,bystander,p033v_1,For making it seem that to someone that he has a piece of silver on his forehead
 bystander,bystanders,p033v_2,For making blood or wine issue from someone’s forehead or from a wall
 fellow,fellow,p033v_2,For making blood or wine issue from someone’s forehead or from a wall
@@ -216,7 +217,7 @@ potter,potters,p089v_2,Glassmakers’ white sand from the mine, mixed with sal a
 potter,potters,p090v_1,Terre fondue of potters
 potter,potters,p119v_1,Fashion of preparing a spalt spat
 shearer,shearer,p041v_2,Sheared ewes
-pintori,pintori,p043r_3,Purpurine
+pintori,pintori,p043r_3,Purple
 arquebusier,arquebusier,p043v_3,Arquebusier
 writer,writer,p046v_1,Scribe, Oil of sulfur
 shoemaker,shoemaker,p046v_2,Shoemaker
@@ -282,12 +283,12 @@ boy,shop boy,p123r_1, A means di far correr lotnegra
 caster,casters,p136v_1,For casting in latten
 tiler,tiler,p161r_1,Preparation of sand for frames
 medicari,medicari,p166r_1,For the workshop
-weaver,weaver,p166r_1,For the workshop
 inventor,inventor,p166r_1,For the workshop
 inventor,inventor of rustic figulines,p001r_3,List of books
-author,authors,p166r_1,For the workshop
+weaver,weaver,p166r_1,For the workshop
 orphan,orphans,p166r_1,For the workshop
 mason,mason,p166r_1,For the workshop
+author,authors,p166r_1,For the workshop
 wheelwright,wheelwrights,p167r_1,Petards
 bimbalotier,bimbalotiers,p169v_1,Molding very thin like bimbalotiers do
 medicu,medicus,p170v_4,List of books
@@ -300,14 +301,13 @@ glass button maker,glass button makers,p006v_1,For ga cachcages
 ancient lapidary,ancient lapidaries,p012v_3,For whitening enilanroc
 gunpowder maker,gunpowder makers,p014r_1,For walls of earth and rustic construction
 gunpowder maker,gunpowder maker,p103r_1,Against burns, excellent
-sworn master pewterer,sworn master pewterers,p028v_1,Pewterers
 others, who work in the countryside,others, who work in the countryside,p028v_1,Pewterers
+sworn master pewterer,sworn master pewterers,p028v_1,Pewterers
 white limer,white limers,p031v_2,Brushes
 mat maker,mat maker,p032v_1,Mat maker
 stone cutter,stone cutters,p038r_3,Sapphire
-commanders of maltum,commanders of malta,p040v_1,Cross of the commanders of Malta
 those who make gemstone foil,those who make gemstone foils,p040v_1,Cross of the commanders of Malta
-sworn master,sworn masters,p044r_2,Pewterer
+commanders of maltum,commanders of malta,p040v_1,Cross of the commanders of Malta
 cutters of printing plate,cutters of printing plates,p051r_2,Cutters of printing plates
 the one who makes a profession of working in oil,the one who makes a profession of working in oil,p056v_1,Painter
 sheath maker,sheath makers,p057v_1,Sheath maker
@@ -317,6 +317,7 @@ those who create sword guard,those who create sword guards,p094r_1,Furbisher
 fountain maker,fountain maker,p105v_2,Fountain maker
 crayfish catcher,crayfish catchers,p107r_1,Catching lizards and snakes
 those who make pot,those who make pots,p108r_2,Spalt
+the one who taught me to mold them,the one who taught me to mold them,p110r_3,Snakes
 pastry maker,pastry makers,p112v_1,For molding Making the arrangement and disposition of the animal
 those who work in plate and large ware,those who work in plate and large wares,p123r_1, A means di far correr lotnegra
 little child,little children,p136v_1,For casting in latten

@@ -1,59 +1,59 @@
 freq,verbatim_term,prefLabel_en
-3,master,master
 2,currier,currier
+3,master,master
 2,harvester,harvester
-1,historicus,historicu
 1,bergiers,bergier
 4,king,king
+1,historicus,historicu
 1,blacksmith,blacksmith
 4,furbishers,furbisher
-2,women,woman
 1,surgeons,surgeon
+2,women,woman
 2,joiners,joiner
 1,fabrorum,fabrorum
 7,pewterers,pewterer
-1,plowman,plowman
 1,harvesters,harvester
+1,plowman,plowman
 8,painter,painter
-3,apprentices,apprentice
 3,merchant,merchant
+3,apprentices,apprentice
 14,painters,painter
 2,merchants,merchant
 1,joiner's,joiner
 1,fuller,fuller
 1,barbers',barber
 1,goldsmiths’,goldsmiths’
-5,goldsmith,goldsmith
 2,glassworkers’,glassworkers’
+5,goldsmith,goldsmith
 1,sophisticators,sophisticator
 1,thieves,thiefe
 1,candlemakers,candlemaker
 1,founders',founder
-2,miners,miner
-4,workers,worker
-1,people,person
 1,alchemists,alchemist
+2,miners,miner
+1,people,person
+4,workers,worker
 3,worker,worker
 6,gunner,gunner
-1,cavalry,cavalry
 1,infantry,infantry
+1,cavalry,cavalry
 5,masters,master
-6,glassmakers,glassmaker
 3,glassworker,glassworker
+6,glassmakers,glassmaker
 4,glassworkers,glassworker
 9,founder,founder
-1,gunners,gunner
 1,pioneers,pioneer
+1,gunners,gunner
 5,apothecaries,apothecary
-2,pewterer,pewterer
 2,rich,rich
+2,pewterer,pewterer
 2,scribes,scribe
 3,joiner,joiner
 1,villagers,villager
-12,founders,founder
 1,coppersmith,coppersmith
-2,conjuror,conjuror
+12,founders,founder
 1,spectators,spectator
+2,conjuror,conjuror
 1,bystander,bystander
 1,fellow,fellow
 1,bystanders,bystander
@@ -62,8 +62,8 @@ freq,verbatim_term,prefLabel_en
 1,founablesders,founablesder
 1,gardener,gardener
 19,goldsmiths,goldsmith
-1,dyers,dyer
 1,gardeners,gardener
+1,dyers,dyer
 1,monk,monk
 1,vintagers,vintager
 2,potter,potter
@@ -71,8 +71,8 @@ freq,verbatim_term,prefLabel_en
 1,pintori,pintori
 1,arquebusier,arquebusier
 1,coppersmiths,coppersmith
-1,writer,writer
 1,scribe,scribe
+1,writer,writer
 1,shoemaker,shoemaker
 3,farriers,farrier
 5,printers,printer
@@ -117,13 +117,13 @@ freq,verbatim_term,prefLabel_en
 1,tiler,tiler
 1,perfumer,perfumer
 1,medicari,medicari
-1,weaver,weaver
 1,inventor,inventor
-1,authors,author
+1,weaver,weaver
 1,orphans,orphan
 1,mason,mason
-1,peasant,peasant
+1,authors,author
 1,wheelwrights,wheelwright
+1,peasant,peasant
 1,bimbalotiers,bimbalotier
 1,medicus,medicu
 1,queen mother,queen mother
@@ -135,14 +135,14 @@ freq,verbatim_term,prefLabel_en
 1,common painters,painter
 1,ancient lapidaries,ancient lapidary
 1,gunpowder makers,gunpowder maker
-1,sworn master pewterers,sworn master pewterer
 1,"others, who work in the countryside","others, who work in the countryside"
+1,sworn master pewterers,sworn master pewterer
 1,white limers,white limer
 1,mat maker,mat maker
 1,stone cutters,stone cutter
-1,commanders of malta,commanders of maltum
 1,those who make gemstone foils,those who make gemstone foil
-1,sworn masters,sworn master
+1,commanders of malta,commanders of maltum
+1,sworn masters,master
 1,iron workers,worker
 1,cutters of printing plates,cutters of printing plate
 1,the one who makes a profession of working in oil,the one who makes a profession of working in oil
@@ -153,17 +153,18 @@ freq,verbatim_term,prefLabel_en
 1,founders of small works  of tin,founder
 1,artisans who work on big works,artisan
 1,artisans who work in big works,artisan
-1,worker who made the wood piece,worker
-1,those who create sword guards,those who create sword guard
 2,common people,person
+1,those who create sword guards,those who create sword guard
+1,worker who made the wood piece,worker
 1,gunpowder maker,gunpowder maker
 1,fountain maker,fountain maker
 1,crayfish catchers,crayfish catcher
 1,founders of great works,founder
 1,those who make pots,those who make pot
+1,the one who taught me to mold them,the one who taught me to mold them
 1,pastry makers,pastry maker
-1,those who work in plate and large wares,those who work in plate and large ware
 1,artillery founders,founder
+1,those who work in plate and large wares,those who work in plate and large ware
 1,shop boy,boy
 1,little children,little child
 1,founders of large casts for statues,founder

@@ -5,6 +5,7 @@ rain,rain,p125r_1,Plaster
 rain,rains,p068r_2,Planting trees
 rain,the first rain,p067r_4,Varnish on paper
 courtyard,courtyard,p004v_1,Black varnish for sword guard, bands for trunks, &amp;c
+street,street,p005r_2,Concave mirrors
 sun,sun,p005r_2,Concave mirrors
 sun,sun,p069r_2,Sand
 sun,sun,p100r_5,Windows that the sun will not pass
@@ -12,7 +13,6 @@ sun,sun,p120v_6,Keeping dry flowers in the same state all year
 sun,hot sun,p120v_6,Keeping dry flowers in the same state all year
 sun,sun in june,p129v_1,Animals dried in the oven for a long time
 window,window,p005r_2,Concave mirrors
-street,street,p005r_2,Concave mirrors
 wall,wall,p008r_4,For making a breach in a wall by night
 wall,wall,p014r_1,For walls of earth and rustic construction
 wall,wall,p033v_2,For making blood or wine issue from someone’s forehead or from a wall
@@ -25,27 +25,27 @@ mountain,mountains,p012r_4,Plaster
 mountain,mountains,p049v_3,Birds
 chamber,chamber,p013v_3,Toadstone
 chamber,chamber,p034r_1,For telling someone that by putting holding a finger to his forehead, you will prevent him from exiting a chamber
-casemate,casemates,p017r_1,On the gunner
-casemate,ditch casemates,p017r_1,On the gunner
+trench,trenches,p017r_1,On the gunner
+tower,tower,p017r_1,On the gunner
 house,houses,p017r_1,On the gunner
 house,houses,p106v_3,Tiles
 house,house,p166r_1,For the workshop
-house,house or elsewhere,p017r_1,On the gunner
 house,private houses,p017r_1,On the gunner
-barricade,barricade,p017r_1,On the gunner
+house,house or elsewhere,p017r_1,On the gunner
 city,cities,p017r_1,On the gunner
 city,city,p017r_1,On the gunner
 city,cities where they are sworn masters,p044r_2,Pewterer
-tower,tower,p017r_1,On the gunner
+barricade,barricade,p017r_1,On the gunner
+casemate,casemates,p017r_1,On the gunner
+casemate,ditch casemates,p017r_1,On the gunner
 gabion,gabions,p017r_1,On the gunner
-trench,trenches,p017r_1,On the gunner
 hearth,hearth,p020r_1,For making millas
 hearth,hearth,p093r_4,Sand
 church,church,p020v_5,Common saying
 church,church,p038r_3,Sapphire
 church,churches,p049r_1,Casting of lead
 land,land,p024v_1,For bringing a cannon over land
-land,good &amp; fertile land,p014r_1,For walls of earth and rustic construction
+countryside,countryside,p028v_1,Pewterers
 mine,mine,p028v_1,Pewterers
 mine,mine,p050v_2,Curried steel and files
 mine,mine,p063r_3,Casting
@@ -53,18 +53,17 @@ mine,mine,p084v_4,Sand for lead, the most excellent of all, for high and low rel
 mine,mine,p085v_3,Sand from the mine
 mine,mine,p086v_1,Excellent sand for lead, tin, and copper
 mine,mine,p087v_3,Sand of the mine of Thoulouse
-mine,mine,p088v_1,Sand from pulverised rock salt and sand from the mine finely ground on marble 
+mine,mine,p088v_1,Sand from pulverized rock salt and sand from the mine finely ground on marble 
 mine,mine,p089v_2,Glassmakers’ white sand from the mine, mixed with sal ammoniac
 mine,mine,p090r_3,All sands can be rendered good
 mine,mine,p132v_1,Common sand from the mine
 mine,mine in thoulouse,p084r_5,Sand from a mine in Thoulouse
-countryside,countryside,p028v_1,Pewterers
 humidity,humidity,p031v_1,Painter
 kitchen,kitchen,p035r_2,For supporting a bucket of water on the tips of three knives laid down without touching the ground
 kitchen,kitchens,p093r_5,Sand
 kitchen,big kitchens,p093r_5,Sand
-burrow,burrows,p035r_4,For making rabbits come out of a burrow
 burrow,burrow,p035r_4,For making rabbits come out of a burrow
+burrow,burrows,p035r_4,For making rabbits come out of a burrow
 chimney,chimney,p038r_4,Amber
 grotto,grottos,p040r_5,Grottos
 grotto,grottos,p118r_1,Snails
@@ -80,12 +79,11 @@ water,water,p144r_1,Turtles
 water,water,p146v_1,Molding turtles
 water,water,p149r_3,Various arts from Germany
 water,water,p160v_3,Catching crayfish
-water,in a very humid place where with such a rodier well or fountain one can water it often,p020v_3,Skirret root
 water,water where crayfish eat,p160v_3,Catching crayfish
 cellar,cellar,p050r_1,Keeping fruit for the entire year
 cellar,cellar,p083r_6,Excellent sand
 cellar,cellar,p084r_3,Eau magistra
-cellar,cellar,p088v_1,Sand from pulverised rock salt and sand from the mine finely ground on marble 
+cellar,cellar,p088v_1,Sand from pulverized rock salt and sand from the mine finely ground on marble 
 cellar,cellar,p090r_1,Sal ammoniac and iron dross
 cellar,cellar,p121r_1,For keeping fruits all year
 garden,gardens,p050v_1,Small birds
@@ -108,16 +106,17 @@ workshop,workshop,p166r_1,For the workshop
 light,light,p061r_4,Lights
 firelight,firelight,p065r_3,Mirror
 rock,rocks,p069r_2,Sand
-quarreriesry,quarreriesries,p069r_2,Sand
 sea,sea,p069r_2,Sand
 sea,sea,p094r_1,Furbisher
 sea,sea,p118r_1,Snails
 sea,open sea,p055v_3,For knowing the course one takes on the open sea
+quarreriesry,quarreriesries,p069r_2,Sand
 river,river,p081v_3,Sand
 river,river,p092v_1,Sand from river tellins and mussels
 river,river,p169r_1,List of processes
 river,rivers,p100v_1,Gemstones
 river,rivers,p149r_2,Base gold from Germany, electrum
+river,running river,p055r_4,Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits 
 river,fresh water rivers,p092v_1,Sand from river tellins and mussels
 wind,wind,p083v_3,Bellows
 wind,wind,p093r_3,Grafts
@@ -154,8 +153,8 @@ cabinet,cabinets,p120v_6,Keeping dry flowers in the same state all year
 well,well,p121r_1,For keeping fruits all year
 well,deep well,p050r_1,Keeping fruit for the entire year
 shop,shop,p123r_1, A means di far correr lotnegra
-mirror,mirrors,p131r_3,For adorning beds, mirrors, and suchlike
 bed,beds,p131r_3,For adorning beds, mirrors, and suchlike
+mirror,mirrors,p131r_3,For adorning beds, mirrors, and suchlike
 daylight,daylight,p138v_3,Counterfeit diamonds put in a work
 garrigue,garrigue,p143r_1,Molding turtles
 garrigue,garrigue,p144r_1,Turtles
@@ -180,7 +179,7 @@ in the sun,in the sun,p141r_1,Molding a crayfish
 open space,open space,p004v_1,Black varnish for sword guard, bands for trunks, &amp;c
 open space,open space,p051r_2,Cutters of printing plates
 pierced door of a closed room,pierced door of a closed room,p005r_2,Concave mirrors
-in the rain,in the rain,p006r_1,For laying down and setting burnished gold and giving red or green or blue
+in the rain,in the rain,p006r_1,For laying down and seating burnished gold and giving red or green or blue
 in the rain,in the rain,p007r_1,For gilding with gold color and tinsel
 in the rain,in the rain,p031r_3,Varnish resistant to water
 in the rain,in the rain,p032r_3,For layering gold in distemper
@@ -192,27 +191,29 @@ at night,at night,p011v_2,For getting rid of the redness of eyes or bruising
 in cold,in cold,p012r_1,For molding sulfur
 in wind,in wind,p012r_1,For molding sulfur
 near the fire,near the fire,p012v_3,For whitening enilanroc
+good &amp; fertile land,good &amp; fertile land,p014r_1,For walls of earth and rustic construction
 cool &amp; dry place,cool &amp; dry place,p016v_5,Candles
 fortresses of little importance,fortresses of little importance,p017r_1,On the gunner
+edge of the ditch,edge of the ditch,p017r_1,On the gunner
 small town,small towns,p017r_1,On the gunner
 garrets topped with a tower,garrets topped with a tower,p017r_1,On the gunner
-edge of the ditch,edge of the ditch,p017r_1,On the gunner
+in a very humid place where with such a rodier well or fountain one can water it often,in a very humid place where with such a rodier well or fountain one can water it often,p020v_3,Skirret root
 humid place,humid place,p024r_1,Grenades
 humid place,humid place,p166v_2,Keeping chestnuts
 humid place,humid places,p057v_1,Sheath maker
 very dry place,very dry place,p024r_1,Grenades
-fortified town,fortified towns,p024v_1,For bringing a cannon over land
 poorly fortified town,poorly fortified towns,p024v_1,For bringing a cannon over land
+fortified town,fortified towns,p024v_1,For bringing a cannon over land
 dry place,dry place,p026r_2,Petard
 dry place,dry place,p068r_2,Planting trees
 dry place,dry place,p084r_5,Sand from a mine in Thoulouse
 dry place,dry place,p120v_6,Keeping dry flowers in the same state all year
 bonnes ville,bonnes villes,p028v_1,Pewterers
+in the open air,in the open air,p029r_1,Stucco for molding
 in the serain,in the serain,p029r_1,Stucco for molding
 in the serain,in the serain,p050v_1,Small birds
 in the serain,in the serain,p089v_1,Sal ammoniac and alabaster
 in the serain,in the serain,p090r_1,Sal ammoniac and iron dross
-in the open air,in the open air,p029r_1,Stucco for molding
 overcast weather,overcast weather,p031v_3,Painting from nature
 in the hottest sun,in the hottest sun,p038r_2,Saffron
 in a closed space,in a closed space,p038r_4,Amber
@@ -221,15 +222,14 @@ in one field &amp; in the one close by it,in one field &amp; in the one close by
 thunder storm,thunder storms,p040r_3,Vinegar
 in nature,in nature,p041r_03,Sand
 humid weather,humid weather,p047v_3,Crucibles
-in a cellar,in a cellar,p050r_1,Keeping fruit for the entire year
 in a room where there is not a drop of air &amp; of wind,in a room where there is not a drop of air &amp; of wind,p050r_1,Keeping fruit for the entire year
+in a cellar,in a cellar,p050r_1,Keeping fruit for the entire year
 forges of foix,forges of foix,p050v_2,Curried steel and files
 place where the flame cannot cause damage,place where the flame cannot cause damage,p051r_2,Cutters of printing plates
 from the ceiling, where the air or &amp; sun dry it,from the ceiling, where the air or &amp; sun dry it,p052r_1,The work done in Algiers
 warm &amp; close place,warm &amp; close place,p052r_1,The work done in Algiers
 thunder or rainy weather, cloud-covered &amp; cool,thunder or rainy weather, cloud-covered &amp; cool,p053v_1,Silkworms
 weather is warm &amp; serain,weather is warm &amp; serain,p053v_1,Silkworms
-running river,running river,p055r_4,Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits 
 in the very strong sun &amp; in the serain,in the very strong sun &amp; in the serain,p055r_4,Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits 
 tree or a plant that is on the bank,tree or a plant that is on the bank,p055r_4,Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits 
 dung heap,dung heap,p056v_1,Painter
@@ -239,9 +239,9 @@ in damp weather,in damp weather,p059v_6,Mending the cracks in a panel
 exposed to the sun,exposed to the sun,p060r_3,Oil
 in the wind,in the wind,p060v_1,Varnish dry in an hour
 dry weather,dry weather,p068r_2,Planting trees
-rock cafe,rock caves,p069r_2,Sand
 after rainy weather,after rainy weather,p069r_2,Sand
 near my area,near my area,p069r_2,Sand
+rock cafe,rock caves,p069r_2,Sand
 in the cellar or other damp place,in the cellar or other damp place,p076v_1,For making very beautiful color of gold &amp; of little expense
 at the foot of a wall,at the foot of a wall,p080r_1,Petard
 great flakes near the mountain,great flakes near the mountains,p080v_1,Founders of small works  of tin
@@ -253,42 +253,42 @@ depths of the earth, from the small hill of puy david,depths of the earth, from 
 private home,private home,p085v_2,Mortars
 out of the wind,out of the wind,p085v_4,Experimented sands
 deep in the earth,deep in the earth,p087v_3,Sand of the mine of Thoulouse
-in dampness,in dampness,p088v_1,Sand from pulverised rock salt and sand from the mine finely ground on marble 
+in dampness,in dampness,p088v_1,Sand from pulverized rock salt and sand from the mine finely ground on marble 
 in dampness,in dampness,p089v_1,Sal ammoniac and alabaster
 rock formation,rock formation,p088v_2,Mineral sand
-serain of the night,serain of the night,p089r_1,Sand of burnt ox bones and rock salt
 moisture of the cellar,moisture of the cellar,p089r_1,Sand of burnt ox bones and rock salt
+serain of the night,serain of the night,p089r_1,Sand of burnt ox bones and rock salt
 in a damp place,in a damp place,p089v_1,Sal ammoniac and alabaster
 in a damp place,in a damp place,p091r_2,Molding with cuttlefish bone
 in a damp place,in a damp place,p111r_4,Clay earth
-close to their house,close to their house,p090r_3,All sands can be rendered good
-in the surroundings of all the bonnes ville,in the surroundings of all the bonnes villes,p090r_3,All sands can be rendered good
 near the rocks in mountainous area,near the rocks in mountainous areas,p090r_3,All sands can be rendered good
+in the surroundings of all the bonnes ville,in the surroundings of all the bonnes villes,p090r_3,All sands can be rendered good
+close to their house,close to their house,p090r_3,All sands can be rendered good
 lean territory,lean territories,p090r_3,All sands can be rendered good
 from the depths of the sand-bed,from the depths of the sand-bed,p090r_3,All sands can be rendered good
 serain &amp; mild weather, &amp; not too cold &amp; windy,serain &amp; mild weather, &amp; not too cold &amp; windy,p091r_1,Grafting
 in freezing weather,in freezing weather,p093r_3,Grafts
 fireplaces of large kitchen,fireplaces of large kitchens,p093v_1,Faces in distemper
 in the fireplace,in the fireplace,p096v_1,Grey guards
-weather is damp &amp; humid,weather is damp &amp; humid,p100r_1,Gold color
 on the fire,on the fire,p100r_1,Gold color
 weather is not serain &amp; dry,weather is not serain &amp; dry,p100r_1,Gold color
+weather is damp &amp; humid,weather is damp &amp; humid,p100r_1,Gold color
 humid air or place,humid air or place,p100r_5,Windows that the sun will not pass
 sand bank,sand bank,p100v_1,Gemstones
 in the fire,in the fire,p104r_2,For etching on iron
 coolness of the evening and the morning, near fountains &amp; shaded place,coolness of the evening and the morning, near fountains &amp; shaded places,p105v_3,Catching nightingales See the 15th folio after this.
-rainy weather,rainy weather,p106v_2,Plaster
-in a dry place,in a dry place,p106v_2,Plaster
+in a dry place,in a dry place,p106v_2,
+rainy weather,rainy weather,p106v_2,
 in water,in water,p107r_1,Catching lizards and snakes
 in a cool place,in a cool place,p109r_5,Snakes for molding
 into fresh earth,into fresh earth,p109v_1,Toad
 in a garden outdoor,in a garden outdoors,p109v_2,Killing snakes for molding
 fresh &amp; damp earth,fresh &amp; damp earth,p110r_3,Snakes
 in all weather,in all weather,p116v_1,Molding snakes in all weather
-current of the water,current of the waters,p120v_6,Keeping dry flowers in the same state all year
 serain, &amp; the humidity of the night,serain, &amp; the humidity of the night,p120v_6,Keeping dry flowers in the same state all year
-in sunlight,in sunlight,p120v_6,Keeping dry flowers in the same state all year
+current of the water,current of the waters,p120v_6,Keeping dry flowers in the same state all year
 rainy and humid weather,rainy and humid weather,p120v_6,Keeping dry flowers in the same state all year
+in sunlight,in sunlight,p120v_6,Keeping dry flowers in the same state all year
 serain &amp; s quite dry weather,serain &amp; s quite dry weather,p121r_1,For keeping fruits all year
 in the field,in the fields,p124r_3,Spider’s web
 moist &amp; humid place,moist &amp; humid place,p135r_2,Gate
@@ -301,8 +301,8 @@ in the earth,in the earth,p143r_1,Molding turtles
 in the cold,in the cold,p152r_1,Molding a rat
 in the cold,in the cold,p164v_3,Molds
 lean &amp; dry earth,lean &amp; dry earth,p159v_4,Plaster alone
-night be dark &amp; without ☾,night be dark &amp; without ☾,p160v_4,Catching passerines
 close to the house,close to the house,p160v_4,Catching passerines
+night be dark &amp; without ☾,night be dark &amp; without ☾,p160v_4,Catching passerines
 in straw,in straw,p160v_4,Catching passerines
 silver spoon that one uses at the table,silver spoon that one uses at the table,p163r_1,Perfumer
 lean soil,lean soil,p165r_4,Plaster for molding
