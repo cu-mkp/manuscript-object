@@ -4,7 +4,7 @@ python:
 # command to install dependencies
 install:
   - pip install pipenv
-  - pipenv install --skip-lock
-  - python update.py
+  - pipenv sync
+  - python check_update.py
 # command to run tests
 # script:
