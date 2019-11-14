@@ -3,8 +3,12 @@ python:
   - "3.7"
 # command to install dependencies
 install:
-  - pip install pipenv
+  - rm Pipefile.lock
+  - pip install --system
   - pipenv sync
+  - virtualenv env
+  - source env/bin/activate
+  - pipenv install
   - python check_update.py
 # command to run tests
 # script:
