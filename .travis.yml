@@ -9,6 +9,6 @@ install:
   # - virtualenv env
   # - source env/bin/activate
   # - pipenv install
-  - python check_update.py
 # command to run tests
-# script:
+script:
+  - python check_update.py
