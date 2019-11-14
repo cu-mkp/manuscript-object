@@ -85,9 +85,9 @@
     "entry_title": "Plowman"
     }
   ],
-  "bergier": [
+  "historicu": [
     {
-    "verbatim_term": "bergiers",
+    "verbatim_term": "historicus",
     "entry_id": "p001r_3",
     "entry_title": "List of books"
     }
@@ -114,9 +114,9 @@
     "entry_title": "Furbisher"
     }
   ],
-  "historicu": [
+  "bergier": [
     {
-    "verbatim_term": "historicus",
+    "verbatim_term": "bergiers",
     "entry_id": "p001r_3",
     "entry_title": "List of books"
     }
@@ -384,33 +384,6 @@
     "entry_title": "Painting esmail d’azur in oil"
     }
   ],
-  "merchant": [
-    {
-    "verbatim_term": "merchant",
-    "entry_id": "p009r_3",
-    "entry_title": "Merchant"
-    },
-    {
-    "verbatim_term": "merchant",
-    "entry_id": "p009v_2",
-    "entry_title": "Merchant"
-    },
-    {
-    "verbatim_term": "merchant",
-    "entry_id": "p038v_5",
-    "entry_title": "Merchant"
-    },
-    {
-    "verbatim_term": "merchants",
-    "entry_id": "p009v_2",
-    "entry_title": "Merchant"
-    },
-    {
-    "verbatim_term": "merchants",
-    "entry_id": "p053v_1",
-    "entry_title": "Silkworms"
-    }
-  ],
   "apprentice": [
     {
     "verbatim_term": "apprentices",
@@ -443,6 +416,33 @@
     "entry_title": "For teaching a dog well"
     }
   ],
+  "merchant": [
+    {
+    "verbatim_term": "merchant",
+    "entry_id": "p009r_3",
+    "entry_title": "Merchant"
+    },
+    {
+    "verbatim_term": "merchant",
+    "entry_id": "p009v_2",
+    "entry_title": "Merchant"
+    },
+    {
+    "verbatim_term": "merchant",
+    "entry_id": "p038v_5",
+    "entry_title": "Merchant"
+    },
+    {
+    "verbatim_term": "merchants",
+    "entry_id": "p009v_2",
+    "entry_title": "Merchant"
+    },
+    {
+    "verbatim_term": "merchants",
+    "entry_id": "p053v_1",
+    "entry_title": "Silkworms"
+    }
+  ],
   "fuller": [
     {
     "verbatim_term": "fuller",
@@ -462,26 +462,12 @@
     "entry_title": "Founders of small works  of tin"
     }
   ],
-  "goldsmiths’": [
+  "goldsmith": [
     {
     "verbatim_term": "goldsmiths’",
     "entry_id": "p012v_2",
     "entry_title": "Cleaning yellow pearls"
-    }
-  ],
-  "glassworkers’": [
-    {
-    "verbatim_term": "glassworkers’",
-    "entry_id": "p012v_3",
-    "entry_title": "For whitening enilanroc"
     },
-    {
-    "verbatim_term": "glassworkers’",
-    "entry_id": "p041v_1",
-    "entry_title": "Glassworkers’ black"
-    }
-  ],
-  "goldsmith": [
     {
     "verbatim_term": "goldsmith",
     "entry_id": "p012v_3",
@@ -603,6 +589,16 @@
     "entry_title": "Rouge clair"
     },
     {
+    "verbatim_term": "goldsmith’s",
+    "entry_id": "p073r_3",
+    "entry_title": "For ridding bone or horn of grease"
+    },
+    {
+    "verbatim_term": "goldsmith’s",
+    "entry_id": "p152v_1",
+    "entry_title": "Repairing cast things"
+    },
+    {
     "verbatim_term": "goldsmiths who work in large wares and plate",
     "entry_id": "p149v_1",
     "entry_title": "Molding vases in several pieces"
@@ -611,6 +607,53 @@
     "verbatim_term": "goldsmiths who work large wares",
     "entry_id": "p154r_3",
     "entry_title": "Sweetening silver"
+    }
+  ],
+  "glassworker": [
+    {
+    "verbatim_term": "glassworkers’",
+    "entry_id": "p012v_3",
+    "entry_title": "For whitening enilanroc"
+    },
+    {
+    "verbatim_term": "glassworkers’",
+    "entry_id": "p041v_1",
+    "entry_title": "Glassworkers’ black"
+    },
+    {
+    "verbatim_term": "glassworkers",
+    "entry_id": "p020r_2",
+    "entry_title": "Glassworker"
+    },
+    {
+    "verbatim_term": "glassworkers",
+    "entry_id": "p036v_3",
+    "entry_title": "Glassworkers’ glass"
+    },
+    {
+    "verbatim_term": "glassworkers",
+    "entry_id": "p039v_3",
+    "entry_title": "Tracing some history on glass"
+    },
+    {
+    "verbatim_term": "glassworkers",
+    "entry_id": "p049r_1",
+    "entry_title": "Casting of lead"
+    },
+    {
+    "verbatim_term": "glassworker",
+    "entry_id": "p020r_2",
+    "entry_title": "Glassworker"
+    },
+    {
+    "verbatim_term": "glassworker",
+    "entry_id": "p032v_2",
+    "entry_title": "Glassworker"
+    },
+    {
+    "verbatim_term": "glassworker",
+    "entry_id": "p037v_2",
+    "entry_title": "Glassworker"
     }
   ],
   "sophisticator": [
@@ -783,35 +826,6 @@
     "entry_title": "Founding of soft iron"
     }
   ],
-  "miner": [
-    {
-    "verbatim_term": "miners",
-    "entry_id": "p016r_1",
-    "entry_title": "Founding of soft iron"
-    },
-    {
-    "verbatim_term": "miners",
-    "entry_id": "p028v_1",
-    "entry_title": "Pewterers"
-    }
-  ],
-  "person": [
-    {
-    "verbatim_term": "people",
-    "entry_id": "p016r_1",
-    "entry_title": "Founding of soft iron"
-    },
-    {
-    "verbatim_term": "common people",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    },
-    {
-    "verbatim_term": "common people",
-    "entry_id": "p100v_1",
-    "entry_title": "Gemstones"
-    }
-  ],
   "worker": [
     {
     "verbatim_term": "workers",
@@ -859,6 +873,49 @@
     "entry_title": "Furbisher"
     }
   ],
+  "miner": [
+    {
+    "verbatim_term": "miners",
+    "entry_id": "p016r_1",
+    "entry_title": "Founding of soft iron"
+    },
+    {
+    "verbatim_term": "miners",
+    "entry_id": "p028v_1",
+    "entry_title": "Pewterers"
+    }
+  ],
+  "person": [
+    {
+    "verbatim_term": "people",
+    "entry_id": "p016r_1",
+    "entry_title": "Founding of soft iron"
+    },
+    {
+    "verbatim_term": "common people",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    },
+    {
+    "verbatim_term": "common people",
+    "entry_id": "p100v_1",
+    "entry_title": "Gemstones"
+    }
+  ],
+  "infantry": [
+    {
+    "verbatim_term": "infantry",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "cavalry": [
+    {
+    "verbatim_term": "cavalry",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
   "gunner": [
     {
     "verbatim_term": "gunner",
@@ -896,57 +953,6 @@
     "entry_title": "For bringing a cannon over land"
     }
   ],
-  "infantry": [
-    {
-    "verbatim_term": "infantry",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    }
-  ],
-  "cavalry": [
-    {
-    "verbatim_term": "cavalry",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    }
-  ],
-  "glassworker": [
-    {
-    "verbatim_term": "glassworker",
-    "entry_id": "p020r_2",
-    "entry_title": "Glassworker"
-    },
-    {
-    "verbatim_term": "glassworker",
-    "entry_id": "p032v_2",
-    "entry_title": "Glassworker"
-    },
-    {
-    "verbatim_term": "glassworker",
-    "entry_id": "p037v_2",
-    "entry_title": "Glassworker"
-    },
-    {
-    "verbatim_term": "glassworkers",
-    "entry_id": "p020r_2",
-    "entry_title": "Glassworker"
-    },
-    {
-    "verbatim_term": "glassworkers",
-    "entry_id": "p036v_3",
-    "entry_title": "Glassworkers’ glass"
-    },
-    {
-    "verbatim_term": "glassworkers",
-    "entry_id": "p039v_3",
-    "entry_title": "Tracing some history on glass"
-    },
-    {
-    "verbatim_term": "glassworkers",
-    "entry_id": "p049r_1",
-    "entry_title": "Casting of lead"
-    }
-  ],
   "glassmaker": [
     {
     "verbatim_term": "glassmakers",
@@ -977,6 +983,21 @@
     "verbatim_term": "glassmakers",
     "entry_id": "p120v_6",
     "entry_title": "Keeping dry flowers in the same state all year"
+    },
+    {
+    "verbatim_term": "glassmakers’",
+    "entry_id": "p089v_2",
+    "entry_title": "Glassmakers’ white sand from the mine, mixed with sal ammoniac"
+    },
+    {
+    "verbatim_term": "glassmaker’s",
+    "entry_id": "p107r_1",
+    "entry_title": "Catching lizards and snakes"
+    },
+    {
+    "verbatim_term": "glassmaker’s",
+    "entry_id": "p120r_2",
+    "entry_title": "Sand for casting in gold"
     }
   ],
   "pioneer": [
@@ -1066,13 +1087,6 @@
     "entry_title": "Pewterer"
     }
   ],
-  "spectator": [
-    {
-    "verbatim_term": "spectators",
-    "entry_id": "p033r_1",
-    "entry_title": "Knife for cutting the nose or a finger"
-    }
-  ],
   "conjuror": [
     {
     "verbatim_term": "conjuror",
@@ -1083,6 +1097,13 @@
     "verbatim_term": "conjuror",
     "entry_id": "p035v_2",
     "entry_title": "For transmuting grain from one vessel to another"
+    }
+  ],
+  "spectator": [
+    {
+    "verbatim_term": "spectators",
+    "entry_id": "p033r_1",
+    "entry_title": "Knife for cutting the nose or a finger"
     }
   ],
   "bystander": [
@@ -1272,6 +1293,11 @@
     "verbatim_term": "printers",
     "entry_id": "p079v_4",
     "entry_title": "Mixture for printers"
+    },
+    {
+    "verbatim_term": "printer’s",
+    "entry_id": "p072r_1",
+    "entry_title": "Printer’s letters"
     }
   ],
   "tanner": [
@@ -1371,25 +1397,6 @@
     "entry_title": "Sand"
     }
   ],
-  "printer’": [
-    {
-    "verbatim_term": "printer’s",
-    "entry_id": "p072r_1",
-    "entry_title": "Printer’s letters"
-    }
-  ],
-  "goldsmith’": [
-    {
-    "verbatim_term": "goldsmith’s",
-    "entry_id": "p073r_3",
-    "entry_title": "For ridding bone or horn of grease"
-    },
-    {
-    "verbatim_term": "goldsmith’s",
-    "entry_id": "p152v_1",
-    "entry_title": "Repairing cast things"
-    }
-  ],
   "clockmaker": [
     {
     "verbatim_term": "clockmakers",
@@ -1419,13 +1426,6 @@
     "verbatim_term": "baker",
     "entry_id": "p088r_5",
     "entry_title": "Baker"
-    }
-  ],
-  "glassmakers’": [
-    {
-    "verbatim_term": "glassmakers’",
-    "entry_id": "p089v_2",
-    "entry_title": "Glassmakers’ white sand from the mine, mixed with sal ammoniac"
     }
   ],
   "artisan": [
@@ -1526,18 +1526,6 @@
     "entry_title": "Goldsmith"
     }
   ],
-  "glassmaker’": [
-    {
-    "verbatim_term": "glassmaker’s",
-    "entry_id": "p107r_1",
-    "entry_title": "Catching lizards and snakes"
-    },
-    {
-    "verbatim_term": "glassmaker’s",
-    "entry_id": "p120r_2",
-    "entry_title": "Sand for casting in gold"
-    }
-  ],
   "disciple": [
     {
     "verbatim_term": "disciples",
@@ -1595,16 +1583,18 @@
     "entry_title": "For the workshop"
     }
   ],
-  "inventor": [
+  "author": [
     {
-    "verbatim_term": "inventor",
+    "verbatim_term": "authors",
     "entry_id": "p166r_1",
     "entry_title": "For the workshop"
-    },
+    }
+  ],
+  "mason": [
     {
-    "verbatim_term": "inventor of rustic figulines",
-    "entry_id": "p001r_3",
-    "entry_title": "List of books"
+    "verbatim_term": "mason",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
     }
   ],
   "weaver": [
@@ -1621,18 +1611,16 @@
     "entry_title": "For the workshop"
     }
   ],
-  "mason": [
+  "inventor": [
     {
-    "verbatim_term": "mason",
+    "verbatim_term": "inventor",
     "entry_id": "p166r_1",
     "entry_title": "For the workshop"
-    }
-  ],
-  "author": [
+    },
     {
-    "verbatim_term": "authors",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
+    "verbatim_term": "inventor of rustic figulines",
+    "entry_id": "p001r_3",
+    "entry_title": "List of books"
     }
   ],
   "wheelwright": [
@@ -1663,13 +1651,6 @@
     "entry_title": "List of books"
     }
   ],
-  "frame maker": [
-    {
-    "verbatim_term": "frame makers",
-    "entry_id": "p004r_1",
-    "entry_title": "Varnish of spike lavender oil"
-    }
-  ],
   "guitar maker": [
     {
     "verbatim_term": "guitar makers",
@@ -1680,6 +1661,13 @@
     "verbatim_term": "guitar makers",
     "entry_id": "p007r_4",
     "entry_title": "Fish glue or isinglass and mouth glue"
+    }
+  ],
+  "frame maker": [
+    {
+    "verbatim_term": "frame makers",
+    "entry_id": "p004r_1",
+    "entry_title": "Varnish of spike lavender oil"
     }
   ],
   "iron etcher": [
@@ -1715,16 +1703,16 @@
     "entry_title": "Against burns, excellent"
     }
   ],
-  "others, who work in the countryside": [
+  "sworn master pewterer": [
     {
-    "verbatim_term": "others, who work in the countryside",
+    "verbatim_term": "sworn master pewterers",
     "entry_id": "p028v_1",
     "entry_title": "Pewterers"
     }
   ],
-  "sworn master pewterer": [
+  "others, who work in the countryside": [
     {
-    "verbatim_term": "sworn master pewterers",
+    "verbatim_term": "others, who work in the countryside",
     "entry_id": "p028v_1",
     "entry_title": "Pewterers"
     }
@@ -1750,16 +1738,16 @@
     "entry_title": "Sapphire"
     }
   ],
-  "those who make gemstone foil": [
+  "commanders of maltum": [
     {
-    "verbatim_term": "those who make gemstone foils",
+    "verbatim_term": "commanders of malta",
     "entry_id": "p040v_1",
     "entry_title": "Cross of the commanders of Malta"
     }
   ],
-  "commanders of maltum": [
+  "those who make gemstone foil": [
     {
-    "verbatim_term": "commanders of malta",
+    "verbatim_term": "those who make gemstone foils",
     "entry_id": "p040v_1",
     "entry_title": "Cross of the commanders of Malta"
     }

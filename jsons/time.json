@@ -33,7 +33,7 @@
     {
     "verbatim_term": "hours",
     "entry_id": "p066r_6",
-    "entry_title": "* Or mat"
+    "entry_title": ""
     },
     {
     "verbatim_term": "hours",
@@ -117,7 +117,7 @@
     },
     {
     "verbatim_term": "hour",
-    "entry_id": "p066r_6",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     },
     {
@@ -407,7 +407,7 @@
     },
     {
     "verbatim_term": "day",
-    "entry_id": "p066r_6",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     },
     {
@@ -537,7 +537,7 @@
     },
     {
     "verbatim_term": "days",
-    "entry_id": "p066r_6",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     },
     {
@@ -686,13 +686,13 @@
     "entry_title": "Molding turtles"
     },
     {
-    "verbatim_term": "the day after",
-    "entry_id": "p066r_6",
+    "verbatim_term": "one day or one night",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     },
     {
-    "verbatim_term": "one day or one night",
-    "entry_id": "p066r_6",
+    "verbatim_term": "the day after",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     },
     {
@@ -711,12 +711,12 @@
     "entry_title": "Against burns, excellent"
     },
     {
-    "verbatim_term": "first day",
+    "verbatim_term": "next day",
     "entry_id": "p120r_3",
     "entry_title": "IlNightingale"
     },
     {
-    "verbatim_term": "next day",
+    "verbatim_term": "first day",
     "entry_id": "p120r_3",
     "entry_title": "IlNightingale"
     },
@@ -877,10 +877,22 @@
     "entry_title": "Cast of wax to represent an animal that one has not got"
     }
   ],
+  "evening": [
+    {
+    "verbatim_term": "evening",
+    "entry_id": "p066r_6" continued="yes",
+    "entry_title": "* Or mat"
+    },
+    {
+    "verbatim_term": "the evening and the morning",
+    "entry_id": "p105v_3",
+    "entry_title": "Catching nightingales See the 15th folio after this."
+    }
+  ],
   "time": [
     {
     "verbatim_term": "time",
-    "entry_id": "p066r_6",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     },
     {
@@ -1009,18 +1021,6 @@
     "entry_title": "Painter"
     }
   ],
-  "evening": [
-    {
-    "verbatim_term": "evening",
-    "entry_id": "p066r_6",
-    "entry_title": "* Or mat"
-    },
-    {
-    "verbatim_term": "the evening and the morning",
-    "entry_id": "p105v_3",
-    "entry_title": "Catching nightingales See the 15th folio after this."
-    }
-  ],
   "advent": [
     {
     "verbatim_term": "advent",
@@ -1031,6 +1031,13 @@
     "verbatim_term": "advent of christmas",
     "entry_id": "p043r_1",
     "entry_title": "Mericotons and pavis"
+    }
+  ],
+  "thursday": [
+    {
+    "verbatim_term": "thursdays",
+    "entry_id": "p086v_1",
+    "entry_title": "Excellent sand for lead, tin, and copper"
     }
   ],
   "tuesday": [
@@ -1050,13 +1057,6 @@
   "saturday": [
     {
     "verbatim_term": "saturdays",
-    "entry_id": "p086v_1",
-    "entry_title": "Excellent sand for lead, tin, and copper"
-    }
-  ],
-  "thursday": [
-    {
-    "verbatim_term": "thursdays",
     "entry_id": "p086v_1",
     "entry_title": "Excellent sand for lead, tin, and copper"
     }
@@ -1250,6 +1250,13 @@
     "entry_title": "On the gunner"
     }
   ],
+  "sun is approaching midday": [
+    {
+    "verbatim_term": "sun is approaching midday",
+    "entry_id": "p009r_1",
+    "entry_title": "Plowman"
+    }
+  ],
   "at the next sowing": [
     {
     "verbatim_term": "at the next sowing",
@@ -1264,20 +1271,6 @@
     "entry_title": "Plowman"
     }
   ],
-  "sun is approaching midday": [
-    {
-    "verbatim_term": "sun is approaching midday",
-    "entry_id": "p009r_1",
-    "entry_title": "Plowman"
-    }
-  ],
-  "st andré’s day": [
-    {
-    "verbatim_term": "st andré’s day",
-    "entry_id": "p009v_3",
-    "entry_title": "Waste book"
-    }
-  ],
   "2nd september 1581": [
     {
     "verbatim_term": "2nd september 1581",
@@ -1285,26 +1278,11 @@
     "entry_title": "Waste book"
     }
   ],
-  "in winter": [
+  "st andré’s day": [
     {
-    "verbatim_term": "in winter",
-    "entry_id": "p032v_1",
-    "entry_title": "Mat maker"
-    },
-    {
-    "verbatim_term": "in winter",
-    "entry_id": "p047v_3",
-    "entry_title": "Crucibles"
-    },
-    {
-    "verbatim_term": "in winter",
-    "entry_id": "p056v_1",
-    "entry_title": "Painter"
-    },
-    {
-    "verbatim_term": "in winter",
-    "entry_id": "p160v_5",
-    "entry_title": "Catching birds"
+    "verbatim_term": "st andré’s day",
+    "entry_id": "p009v_3",
+    "entry_title": "Waste book"
     }
   ],
   "in summer": [
@@ -1327,6 +1305,28 @@
     "verbatim_term": "in summer",
     "entry_id": "p162v_2",
     "entry_title": "Olive trees"
+    }
+  ],
+  "in winter": [
+    {
+    "verbatim_term": "in winter",
+    "entry_id": "p032v_1",
+    "entry_title": "Mat maker"
+    },
+    {
+    "verbatim_term": "in winter",
+    "entry_id": "p047v_3",
+    "entry_title": "Crucibles"
+    },
+    {
+    "verbatim_term": "in winter",
+    "entry_id": "p056v_1",
+    "entry_title": "Painter"
+    },
+    {
+    "verbatim_term": "in winter",
+    "entry_id": "p160v_5",
+    "entry_title": "Catching birds"
     }
   ],
   "once a week": [
@@ -1378,7 +1378,7 @@
     {
     "verbatim_term": "with everyes new ☾",
     "entry_id": "p046r_5",
-    "entry_title": "GoFlowers of trees"
+    "entry_title": "Go Flowers of trees"
     }
   ],
   "at the waning of the moon": [
@@ -1402,16 +1402,16 @@
     "entry_title": "Birds"
     }
   ],
-  "after mid-july until sainct michel": [
+  "from all saints’ day until christma": [
     {
-    "verbatim_term": "after mid-july until sainct michel",
+    "verbatim_term": "from all saints’ day until christmas",
     "entry_id": "p049v_3",
     "entry_title": "Birds"
     }
   ],
-  "from all saints’ day until christma": [
+  "after mid-july until sainct michel": [
     {
-    "verbatim_term": "from all saints’ day until christmas",
+    "verbatim_term": "after mid-july until sainct michel",
     "entry_id": "p049v_3",
     "entry_title": "Birds"
     }
@@ -1423,13 +1423,6 @@
     "entry_title": "Birds"
     }
   ],
-  "for the entire year": [
-    {
-    "verbatim_term": "for the entire year",
-    "entry_id": "p050r_1",
-    "entry_title": "Keeping fruit for the entire year"
-    }
-  ],
   "for the space of two hour": [
     {
     "verbatim_term": "for the space of two hours",
@@ -1437,16 +1430,9 @@
     "entry_title": "Keeping fruit for the entire year"
     }
   ],
-  "on a warm &amp; dry day": [
+  "for the entire year": [
     {
-    "verbatim_term": "on a warm &amp; dry day",
-    "entry_id": "p050r_1",
-    "entry_title": "Keeping fruit for the entire year"
-    }
-  ],
-  "during the summer": [
-    {
-    "verbatim_term": "during the summer",
+    "verbatim_term": "for the entire year",
     "entry_id": "p050r_1",
     "entry_title": "Keeping fruit for the entire year"
     }
@@ -1463,11 +1449,18 @@
     "entry_title": "Molding snakes in all weather"
     }
   ],
-  "beginning of august": [
+  "during the summer": [
     {
-    "verbatim_term": "beginning of august",
-    "entry_id": "p050v_1",
-    "entry_title": "Small birds"
+    "verbatim_term": "during the summer",
+    "entry_id": "p050r_1",
+    "entry_title": "Keeping fruit for the entire year"
+    }
+  ],
+  "on a warm &amp; dry day": [
+    {
+    "verbatim_term": "on a warm &amp; dry day",
+    "entry_id": "p050r_1",
+    "entry_title": "Keeping fruit for the entire year"
     }
   ],
   "after several day": [
@@ -1477,11 +1470,11 @@
     "entry_title": "Small birds"
     }
   ],
-  "around the feast of sainct jehan": [
+  "beginning of august": [
     {
-    "verbatim_term": "around the feast of sainct jehan",
-    "entry_id": "p052r_1",
-    "entry_title": "The work done in Algiers"
+    "verbatim_term": "beginning of august",
+    "entry_id": "p050v_1",
+    "entry_title": "Small birds"
     }
   ],
   "from the feast of st jehan until the 25th of april": [
@@ -1491,30 +1484,16 @@
     "entry_title": "The work done in Algiers"
     }
   ],
-  "around holy week": [
+  "around the feast of sainct jehan": [
     {
-    "verbatim_term": "around holy week",
-    "entry_id": "p053v_1",
-    "entry_title": "Silkworms"
+    "verbatim_term": "around the feast of sainct jehan",
+    "entry_id": "p052r_1",
+    "entry_title": "The work done in Algiers"
     }
   ],
-  "per day": [
+  "around pentecost": [
     {
-    "verbatim_term": "per day",
-    "entry_id": "p053v_1",
-    "entry_title": "Silkworms"
-    }
-  ],
-  "until holy week": [
-    {
-    "verbatim_term": "until holy week",
-    "entry_id": "p053v_1",
-    "entry_title": "Silkworms"
-    }
-  ],
-  "from their birth until the their time when they make their cocoons &amp; their prison": [
-    {
-    "verbatim_term": "from their birth until the their time when they make their cocoons &amp; their prisons",
+    "verbatim_term": "around pentecost",
     "entry_id": "p053v_1",
     "entry_title": "Silkworms"
     }
@@ -1526,6 +1505,27 @@
     "entry_title": "Silkworms"
     }
   ],
+  "around holy week": [
+    {
+    "verbatim_term": "around holy week",
+    "entry_id": "p053v_1",
+    "entry_title": "Silkworms"
+    }
+  ],
+  "from their birth until the their time when they make their cocoons &amp; their prison": [
+    {
+    "verbatim_term": "from their birth until the their time when they make their cocoons &amp; their prisons",
+    "entry_id": "p053v_1",
+    "entry_title": "Silkworms"
+    }
+  ],
+  "per day": [
+    {
+    "verbatim_term": "per day",
+    "entry_id": "p053v_1",
+    "entry_title": "Silkworms"
+    }
+  ],
   "during the day": [
     {
     "verbatim_term": "during the day",
@@ -1533,9 +1533,9 @@
     "entry_title": "Silkworms"
     }
   ],
-  "around pentecost": [
+  "until holy week": [
     {
-    "verbatim_term": "around pentecost",
+    "verbatim_term": "until holy week",
     "entry_id": "p053v_1",
     "entry_title": "Silkworms"
     }
@@ -1638,16 +1638,16 @@
     "entry_title": "Observation from rustics"
     }
   ],
-  "weather is not serain &amp; dry": [
+  "weather is damp &amp; humid": [
     {
-    "verbatim_term": "weather is not serain &amp; dry",
+    "verbatim_term": "weather is damp &amp; humid",
     "entry_id": "p100r_1",
     "entry_title": "Gold color"
     }
   ],
-  "weather is damp &amp; humid": [
+  "weather is not serain &amp; dry": [
     {
-    "verbatim_term": "weather is damp &amp; humid",
+    "verbatim_term": "weather is not serain &amp; dry",
     "entry_id": "p100r_1",
     "entry_title": "Gold color"
     }
@@ -1680,9 +1680,9 @@
     "entry_title": "Against burns, excellent"
     }
   ],
-  "from mid-may": [
+  "in the month of january": [
     {
-    "verbatim_term": "from mid-may",
+    "verbatim_term": "in the month of january",
     "entry_id": "p105r_4",
     "entry_title": "Gardening"
     }
@@ -1694,16 +1694,16 @@
     "entry_title": "Gardening"
     }
   ],
-  "until the beginning of august": [
+  "from mid-may": [
     {
-    "verbatim_term": "until the beginning of august",
+    "verbatim_term": "from mid-may",
     "entry_id": "p105r_4",
     "entry_title": "Gardening"
     }
   ],
-  "in the month of january": [
+  "until the beginning of august": [
     {
-    "verbatim_term": "in the month of january",
+    "verbatim_term": "until the beginning of august",
     "entry_id": "p105r_4",
     "entry_title": "Gardening"
     }
@@ -1750,16 +1750,16 @@
     "entry_title": "Keeping dry flowers in the same state all year"
     }
   ],
-  "for a whole day": [
+  "in the early morning": [
     {
-    "verbatim_term": "for a whole day",
+    "verbatim_term": "in the early morning",
     "entry_id": "p123r_1",
     "entry_title": "A means di far correr lotnegra"
     }
   ],
-  "in the early morning": [
+  "for a whole day": [
     {
-    "verbatim_term": "in the early morning",
+    "verbatim_term": "for a whole day",
     "entry_id": "p123r_1",
     "entry_title": "A means di far correr lotnegra"
     }

@@ -46,6 +46,7 @@ horse,horses,p017r_1,On the gunner
 horse,horses,p022v_1,Orgues
 horse,horses,p052r_1,The work done in Algiers
 horse,horses,p071r_4,Weary horses
+horse,horses’,p024v_1,For bringing a cannon over land
 horse,good horses,p017r_1,On the gunner
 mutton,mutton,p011v_2,For getting rid of the redness of eyes or bruising
 mutton,mutton,p120r_3,IlNightingale
@@ -83,8 +84,8 @@ lizard,large lizard,p131v_1,When the cast of tin or lead becomes porous
 lizard,very small female lizard,p132v_2,Crocum ferri
 lizard,large lizards,p133r_2,Feet of smalls female lizards for gold and silver
 lizard,small female lizards,p133v_2,Thing that does not release
-lizard,small wall lizard,p133v_3,Various animals entwined
 lizard,wall lizard,p133v_3,Various animals entwined
+lizard,small wall lizard,p133v_3,Various animals entwined
 hog,hog,p012v_3,For whitening enilanroc
 hog,hog,p084v_4,Sand for lead, the most excellent of all, for high and low reliefs
 hog,hog,p114r_1,Second cast
@@ -96,6 +97,24 @@ toad,toad,p109v_1,Toad
 toad,toad,p110r_3,Snakes
 toad,toad,p142v_2,Molds
 toad,toad,p143r_3,Toad
+snake,snake,p013v_4,Snakes
+snake,snake,p052r_1,The work done in Algiers
+snake,snake,p107r_1,Catching lizards and snakes
+snake,snake,p112v_1,For molding Making the arrangement and disposition of the animal
+snake,snake,p114r_1,Second cast
+snake,snake,p115r_1,Make the cast, reheat the molds, &amp;c Note about everything above |-|
+snake,snake,p115r_2,Animal after release
+snake,snake,p116v_1,Molding snakes in all weather
+snake,snake,p117v_1,For making the ashes of flowers and plants leave molds
+snake,snake,p117v_5,Blood of snakes
+snake,snake,p122r_2,Flower in the mouth of the snake
+snake,snake,p124v_3,A means to make the gate for small female lizards
+snake,snake,p125v_1,Vipers and snakes
+snake,snake,p129r_3,Viper color
+snake,snake,p133v_3,Various animals entwined
+snake,snake,p139v_1,Cast of wax to represent an animal that one has not got
+snake,snake,p150v_1,Molding hollow
+snake,snake,p164r_1,Gate
 snake,snakes,p013v_4,Snakes
 snake,snakes,p106r_2,Making gold run for casting
 snake,snakes,p107r_1,Catching lizards and snakes
@@ -120,24 +139,6 @@ snake,snakes,p143r_1,Molding turtles
 snake,snakes,p144r_1,Turtles
 snake,snakes,p152r_1,Molding a rat
 snake,snakes,p165r_6,Repairing snakes and lizards
-snake,snake,p013v_4,Snakes
-snake,snake,p052r_1,The work done in Algiers
-snake,snake,p107r_1,Catching lizards and snakes
-snake,snake,p112v_1,For molding Making the arrangement and disposition of the animal
-snake,snake,p114r_1,Second cast
-snake,snake,p115r_1,Make the cast, reheat the molds, &amp;c Note about everything above |-|
-snake,snake,p115r_2,Animal after release
-snake,snake,p116v_1,Molding snakes in all weather
-snake,snake,p117v_1,For making the ashes of flowers and plants leave molds
-snake,snake,p117v_5,Blood of snakes
-snake,snake,p122r_2,Flower in the mouth of the snake
-snake,snake,p124v_3,A means to make the gate for small female lizards
-snake,snake,p125v_1,Vipers and snakes
-snake,snake,p129r_3,Viper color
-snake,snake,p133v_3,Various animals entwined
-snake,snake,p139v_1,Cast of wax to represent an animal that one has not got
-snake,snake,p150v_1,Molding hollow
-snake,snake,p164r_1,Gate
 snake,water snakes,p112r_4,Putting to death the animal for molding
 snake,common snake,p112v_1,For molding Making the arrangement and disposition of the animal
 swine,swine,p013v_4,Snakes
@@ -154,7 +155,6 @@ cuttlefish,cuttlefish,p157r_1,A means for goldsmiths for molding hollow
 cat,cat,p019v_3,Enemas
 cat,cats,p130r_1,Animals dried in an oven
 swan,swan,p024r_1,Grenades
-horses’,horses’,p024v_1,For bringing a cannon over land
 pigeon,pigeon,p031r_1,New vine
 pigeon,pigeon,p053v_1,Silkworms
 pigeon,pigeon,p056r_1,Excellent tempering bath for cuirass bodies
@@ -177,7 +177,7 @@ ox,oxen,p085v_4,Experimented sands
 ox,oxen,p089r_1,Sand of burnt ox bones and rock salt
 ox,oxen,p167r_1,Petards
 duck,ducks,p041r_04,Ducks
-duck,duck,p066v_4,paintbrushes
+duck,duck,p066v_4,Paintbrushes
 sheep,sheep,p041v_2,Sheared ewes
 sheep,sheep,p053r_6,Casting of lead and copper
 sheep,sheep,p069r_2,Sand
@@ -185,10 +185,10 @@ sheep,sheep,p071v_2,Sheep fat
 sheep,sheep,p094r_1,Furbisher
 sheep,sheep,p105v_5,Nightingale
 sheep,sheep,p160v_3,Catching crayfish
-ewe,ewe,p041v_2,Sheared ewes
 ewe,ewes,p041v_2,Sheared ewes
+ewe,ewe,p041v_2,Sheared ewes
 crow,crow,p046r_3,Against the falling sickness
-crow,crow,p066v_4,paintbrushes
+crow,crow,p066v_4,Paintbrushes
 beef,beef,p047r_5,Against diarrhea and dysentery
 dog,dogs,p048r_2,Curing dogs of mange
 dog,dogs,p054v_3,Dogs
@@ -201,6 +201,7 @@ dog,dog,p078v_4,For making bronze
 dog,dog,p094r_1,Furbisher
 dog,dog,p125v_1,Vipers and snakes
 dog,dog,p131r_4,For teaching a dog well
+dog,dogs’,p104v_1,Against dogs’ mange
 dog,common dogs,p104v_1,Against dogs’ mange
 bird,birds,p048r_4,Keeping birds and animals
 bird,birds,p049v_1,Birds
@@ -224,9 +225,6 @@ siskin,siskins,p049v_3,Birds
 ortolan,ortolans,p049v_3,Birds
 ortolan,ortolans,p050v_1,Small birds
 turtledofe,turtledoves,p049v_3,Birds
-chaffinch,chaffinches,p050v_1,Small birds
-cuckoo,cuckoo,p050v_1,Small birds
-goldfinch,goldfinches,p050v_1,Small birds
 spider,spider,p050v_1,Small birds
 spider,spider,p071v_3,Spider
 spider,spider,p124r_3,Spider’s web
@@ -235,9 +233,12 @@ spider,spider,p130r_3,Molding a single spider
 spider,spider,p134v_1,For making ☀ run
 spider,spider,p135r_3,Vine leaf and small frog
 spider,spiders,p130r_3,Molding a single spider
-calandra,calandra,p050v_1,Small birds
+chaffinch,chaffinches,p050v_1,Small birds
 linnet,linnet,p050v_1,Small birds
+calandra,calandra,p050v_1,Small birds
 verdaule,verdaule,p050v_1,Small birds
+goldfinch,goldfinches,p050v_1,Small birds
+cuckoo,cuckoo,p050v_1,Small birds
 colt,colt,p052r_1,The work done in Algiers
 worm,worms,p052r_1,The work done in Algiers
 worm,worms,p053v_1,Silkworms
@@ -245,7 +246,6 @@ worm,worms,p105v_1,Gardening
 worm,worms,p105v_3,Catching nightingales See the 15th folio after this.
 worm,worms,p160v_5,Catching birds
 worm,worm,p053v_1,Silkworms
-bombicum,bombicum,p053v_1,Silkworms
 butterfly,butterfly,p053v_1,Silkworms
 butterfly,butterfly,p110v_2,Wheat oil
 butterfly,butterfly,p142v_1,Molding grasshoppers and things too thin
@@ -253,6 +253,7 @@ butterfly,butterflies,p124r_1,Animals with hair and fragile and very thin flower
 butterfly,butterflies,p149v_3,Molding a fly
 butterfly,butterflies,p169r_1,List of processes
 silkworm,silkworms,p053v_1,Silkworms
+bombicum,bombicum,p053v_1,Silkworms
 pork,pork,p055r_1,For firing a schioppo senza rumore
 pork,pork,p156v_1,Molding a fly
 snail,snails,p055r_4,Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits 
@@ -260,19 +261,19 @@ snail,snails,p118r_1,Snails
 daot,daot,p055v_1,Another for waters
 earthworm,earthworms,p055v_2,Damascus steel
 goat,goats,p057v_1,Sheath maker
+porcupine,porcupine,p058v_5,Paintbrushes
+weasel,weasels,p058v_5,Paintbrushes
+squirrel,squirrel,p058v_5,Paintbrushes
+squirrel,squirrel,p066v_4,Paintbrushes
+dormouse,dormice,p058v_5,Paintbrushes
 rat,rats,p058v_5,Paintbrushes
 rat,rats,p106v_1,Casting in gold
 rat,rats,p130r_1,Animals dried in an oven
 rat,rat,p061v_2,Frames of the Germans 
-rat,rat,p066v_4,paintbrushes
+rat,rat,p066v_4,Paintbrushes
 rat,rat,p152r_1,Molding a rat
 rat,big rat,p152r_1,Molding a rat
-porcupine,porcupine,p058v_5,Paintbrushes
-squirrel,squirrel,p058v_5,Paintbrushes
-squirrel,squirrel,p066v_4,paintbrushes
-dormouse,dormice,p058v_5,Paintbrushes
-weasel,weasels,p058v_5,Paintbrushes
-petit-gri,petit-gris,p066v_4,paintbrushes
+petit-gri,petit-gris,p066v_4,Paintbrushes
 human,human,p069r_2,Sand
 partridge,partridge,p075v_2,For gilding on wood
 wolf,wolf,p075v_3,For gilding with or moleu
@@ -282,15 +283,14 @@ wolf,wolf,p078v_4,For making bronze
 pig,pig,p079v_2,Antidote against the fumes of metals
 pig,pig,p125v_1,Vipers and snakes
 pig,pig,p136v_1,For casting in latten
-mussel,mussels,p092v_1,Sand from river tellins and mussels
 shell,shells,p092v_1,Sand from river tellins and mussels
 tellin,tellins,p092v_1,Sand from river tellins and mussels
+mussel,mussels,p092v_1,Sand from river tellins and mussels
 calf,calf,p094r_1,Furbisher
 dogfish,dogfish,p094r_1,Furbisher
 flea,fleas,p097v_1,Mastic varnish dry in a half hour
 water-dog,water-dogs,p098v_1,Small dogs
 og,ogs,p103r_2,Against dogs’ mange
-dogs’,dogs’,p104v_1,Against dogs’ mange
 turtle,turtles,p105r_1,Turtles
 turtle,turtles,p106v_3,Tiles
 turtle,turtles,p125v_2,Molding turtles
@@ -307,18 +307,28 @@ turtle,turtle,p146v_1,Molding turtles
 turtle,turtle,p148v_1,Molding turtles
 turtle,turtle,p150v_1,Molding hollow
 turtle,water turtle,p143r_1,Molding turtles
+nightingale,nightingales,p105v_3,Catching nightingales See the 15th folio after this.
+nightingale,nightingales,p120r_3,IlNightingale
 nightingale,nightingale,p105v_3,Catching nightingales See the 15th folio after this.
 nightingale,nightingale,p105v_4,Nightingale
 nightingale,nightingale,p105v_5,Nightingale
 nightingale,nightingale,p120r_3,IlNightingale
-nightingale,nightingales,p105v_3,Catching nightingales See the 15th folio after this.
-nightingale,nightingales,p120r_3,IlNightingale
-mealworm,mealworms,p105v_5,Nightingale
-mealworm,mealworms,p120r_3,IlNightingale
+calendra,calendras,p105v_5,Nightingale
 ant,ants,p105v_5,Nightingale
 ant,ants,p120r_3,IlNightingale
 ant,black ants,p053v_1,Silkworms
-calendra,calendras,p105v_5,Nightingale
+mealworm,mealworms,p105v_5,Nightingale
+mealworm,mealworms,p120r_3,IlNightingale
+crab,crabs,p106v_1,Casting in gold
+crab,crabs,p114r_1,Second cast
+crab,crabs,p137v_1,Tempering sand for molds of flat medals
+crab,crabs,p141r_1,Molding a crayfish
+crab,crab,p111v_3,Crab and crayfish
+crab,crab,p130v_1,Molding a crab
+crab,crab,p130v_2,Stag beetle
+crab,crab,p141r_1,Molding a crayfish
+crab,crab,p169r_1,List of processes
+crab,small crabs,p118r_1,Snails
 crayfish,crayfish,p106v_1,Casting in gold
 crayfish,crayfish,p107r_1,Catching lizards and snakes
 crayfish,crayfish,p111v_3,Crab and crayfish
@@ -332,16 +342,6 @@ crayfish,crayfish,p159v_3,Molds
 crayfish,crayfish,p160v_3,Catching crayfish
 crayfish,crayfish,p163v_1,Crayfish
 crayfish,crayfish,p169r_1,List of processes
-crab,crabs,p106v_1,Casting in gold
-crab,crabs,p114r_1,Second cast
-crab,crabs,p137v_1,Tempering sand for molds of flat medals
-crab,crabs,p141r_1,Molding a crayfish
-crab,crab,p111v_3,Crab and crayfish
-crab,crab,p130v_1,Molding a crab
-crab,crab,p130v_2,Stag beetle
-crab,crab,p141r_1,Molding a crayfish
-crab,crab,p169r_1,List of processes
-crab,small crabs,p118r_1,Snails
 hart,hart,p109r_1,Modeling in wax
 frog,frog,p109r_5,Snakes for molding
 frog,frog,p109v_1,Toad
@@ -352,8 +352,8 @@ frog,small frog,p135r_3,Vine leaf and small frog
 louse,lice,p112r_4,Putting to death the animal for molding
 lark,larks,p120r_3,IlNightingale
 lark,calandra larks,p049v_1,Birds
-viper,viper,p125v_1,Vipers and snakes
 viper,vipers,p125v_1,Vipers and snakes
+viper,viper,p125v_1,Vipers and snakes
 viper,little viper,p164r_3,Leady silver
 fly,flies,p129r_4,Molded roses
 fly,flies,p154v_4,Reinforcing flowers and delicate things
@@ -371,10 +371,10 @@ fly,fly,p165v_6,Fly wings
 fly,fly,p165v_7,Joining some fly wings, or similar
 fly,large flies,p149v_3,Molding a fly
 fly,largest vo flies,p156v_1,Molding a fly
-grasshopper,grasshopper,p142v_1,Molding grasshoppers and things too thin
 grasshopper,grasshoppers,p142v_1,Molding grasshoppers and things too thin
 grasshopper,grasshoppers,p149v_3,Molding a fly
 grasshopper,grasshoppers,p169r_1,List of processes
+grasshopper,grasshopper,p142v_1,Molding grasshoppers and things too thin
 eagle,eagle,p148r_3,Molding the foot of the bittern, or of the eagle, or of other birds for the foot of saltcellars or vases
 bittern,bittern,p148r_3,Molding the foot of the bittern, or of the eagle, or of other birds for the foot of saltcellars or vases
 bittern,bittern,p162v_3,Bittern foot
@@ -396,8 +396,8 @@ calandra lark,calandra lark,p049v_1,Birds
 passe solitaire,passe solitaire,p050v_1,Small birds
 female silkworm seed,female silkworm seeds,p052r_1,The work done in Algiers
 beech marten,beech martens,p058v_5,Paintbrushes
-goat kid,goat kid,p071r_1,Amber
 goat buck,goat buck,p071r_1,Amber
+goat kid,goat kid,p071r_1,Amber
 horned aspic,horned aspic,p125v_1,Vipers and snakes
 viper color,viper color,p129r_3,Viper color
 stag beetle,stag beetle,p130v_2,Stag beetle
@@ -406,11 +406,11 @@ stag beetle,stag beetles,p137v_1,Tempering sand for molds of flat medals
 stag beetle,stag beetles,p141r_1,Molding a crayfish
 smalls female lizard,smalls female lizards,p133r_2,Feet of smalls female lizards for gold and silver
 those from water,those from water,p143r_1,Molding turtles
-those of the water,those of the water,p143r_1,Molding turtles
-those of the water,those of the water,p144r_1,Turtles
-those of the water,those of the water,p146v_1,Molding turtles
+those from garrigue,those from garrigue,p143r_1,Molding turtles
 those of the garrigue,those of the garrigue,p143r_1,Molding turtles
 those of the garrigue,those of the garrigue,p144r_1,Turtles
 those of the garrigue,those of the garrigue,p146v_1,Molding turtles
-those from garrigue,those from garrigue,p143r_1,Molding turtles
+those of the water,those of the water,p143r_1,Molding turtles
+those of the water,those of the water,p144r_1,Turtles
+those of the water,those of the water,p146v_1,Molding turtles
 those of water,those of water,p144r_1,Turtles

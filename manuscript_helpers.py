@@ -1,109 +1,109 @@
 import os
 import re
 import pandas as pd
-from typing import List, Union, Optional
+from collections import OrderedDict
+from typing import List, Union, Optional, Dict
 from recipe import Recipe
 
 properties = ['animal', 'body_part', 'currency', 'definition',
               'environment', 'material', 'medical', 'measurement',
               'music', 'plant', 'place', 'personal_name',
-              'profession', 'sensory', 'tool', 'time']
+              'profession', 'sensory', 'tool', 'time', 'weapon']
 
-def file_to_entries_all(file_obj) -> List[str]:
-  """ Divide file into each of its entries """
-  entries = []
-  entry: str = ''
-  adding = False
-  for line in file_obj.readlines():
-    if 'div' in line:
-      adding = True
-      entry = ''
-    elif '/div' in line:
-      adding = False
-      entries.append(re.sub(r'\s+', ' ', entry))
-    elif adding:
-      entry = f'{entry} {line}'
-  return entries
+def process_file(filename, version) -> List[Recipe]:
+  """
+  Open and read file in /ms-xml/. Creates a dict of the form identity: entry, which is returned and
+  added to a larger dictionary of the same format.
 
-def package_entries_all(versions, version, entries):
-  """ extract id and save to version dict for {version}_all.xml """
-  for entry in entries:
-    id_search = re_id.search(entry)
-    identity = id_search[0] if id_search else ''
-    identity = re_tags.sub('', identity)
-    versions[version][identity] = entry
-  return versions
-
-def process_file(filename, version, continuing_entries) -> List[Recipe]:
-  """ Open and read file in /ms-xml/ """
-  entries = {}
+  Inputs:
+    filename: str -- the name of the file including path from the current directory.
+    version: str -- denotes the version of the manuscript in use, either tc, tcn, or tl.
+  Output:
+    entries: List[Recipe] -- a List containing every entry in the manuscript.
+  """
+  entries = OrderedDict()
   with open(filename, 'r') as f:
     text = re.sub(r'\s+', ' ', f.read())
-    divs = re.findall(r'<div (continues="yes" )?id="(.*?)"( margin="[-\w]*")?( continued="yes")?>(.*?)</div>', text)
+    divs = re.findall(r'(<div (continues="yes" )?id="(.*?)" categories="([\w\s;]*)"( margin="[-\w]*")?( continued="yes")?>(.*?)</div>)', text)
     if divs:
       for div in divs:
-        identity, entry = div[1], div[4] 
-        if div[0] != '': # if the entry continues another
-          old_entry = continuing_entries.get(identity, '')
-          continuing_entries[identity] = f'{old_entry}{entry}'
+        identity, entry = div[2], div[0]
+        if identity in entries.keys():
+          entries[identity] = f'{entries[identity]}\n\n{entry}'
         else:
           entries[identity] = entry
-  return entries, continuing_entries
+  return entries
 
-def generate_complete_manuscript(complete=True, apply_corrections=True):
-  entries = []
+def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
+  """
+  Use /thesaurus/ to standardize the vocabulary in the manuscript. If the thesaurus does not exist,
+  create it. Read in the thesaurus for each property, iterate through the manuscript, and apply
+  corrections to any words in the manuscript also found in the thesaurus.
+
+  Input:
+    entries: List[Recipe] -- A list containing the entries of the manuscript as members of the
+                             Recipe class.
+  Output:
+    entries: List[Recipe] -- same as above, but with the thesaurus corrections applied.
+  """
+  if not os.path.exists('thesaurus'):
+    print('Thesaurus not found. Generating now.')
+    os.system('python thesaurus.py')
+    print('Finished Generating Thesaurus')
+
+  for prop in properties:
+    dct = {} # {verbatim_term: prefLabel_en}
+    df = pd.read_csv(f'thesaurus/{prop}.csv')
+    for i, row in df.iterrows(): # add corrections to a dictionary for O(1) access later on.
+      if row.verbatim_term != row.prefLabel_en:
+        dct[row.verbatim_term] = row.prefLabel_en
+
+    for identity, entry in entries.items(): # iterate through the manuscript.
+      for j, term in enumerate(entry.properties[prop]['tl']):
+        entry.properties[prop]['tl'][j] = dct.get(term, term) # apply corrections if needed.
+      entry.properties[prop]['tl'] = list(set(entry.properties[prop]['tl'])) # remove duplicates
+      entries[identity] = entry
+    return entries
+
+def generate_complete_manuscript(apply_corrections=True):
+  entries = OrderedDict()
   versions = {'tc': {}, 'tcn': {}, 'tl': {}} # Each as (id: entry) in inner dict
   identities = []
 
   for version in versions.keys():
-    if complete: # use {version}_all.xml
-      file_path = directory + 'all_' + version + '.xml'
-      with open(file_path, 'r') as f:
-        entries = file_to_entries_all(f)
-        versions = package_entries_all(versions, version, entries)
-    else: # use /ms-xml/
-      dir_path = os.getcwd() + f'/../m-k-manuscript-data/ms-xml/{version}/'
-      continuing_entries = {} # initialize dict of entries marked with continues="yes"
-      for r, d, f in os.walk(dir_path):
-        for filename in f: # iterate through folder
-          entry_dict, continuing_entries = process_file(f'{dir_path}{filename}', version, continuing_entries)
-          for identity, entry in entry_dict.items(): # add to version_dict
-            versions[version][identity] = entry
-            identities.append(identity) # keep list of all ids
-      for identity, entry in continuing_entries.items():
-        entry_beginning = versions[version][identity] # get old entry
-        versions[version][identity] = f'{entry_beginning} {entry}' # append and reinsert
+    file_dict = {}
+    dir_path = os.getcwd() + f'/../m-k-manuscript-data/ms-xml/{version}/'
+    for r, d, f in os.walk(dir_path):
+      for filename in f: # iterate through /ms-xml/ folder
+        file_id = filename.split('_')[1]
+        entry_dict = process_file(f'{dir_path}{filename}', version)
+        for identity, entry in entry_dict.items():
+          file_dict[f'{file_id};{identity}'] = entry
+
+    file_dict = OrderedDict(sorted(file_dict.items(), key=lambda x: x[0])) # sort filedict by key
+    entry_dict = OrderedDict()
+
+    for combined_id, entry in file_dict.items():
+      file_id, identity = combined_id.split(';')
+      if identity in entry_dict.keys():
+        entry_dict[identity] = f'{entry_dict[identity]}\n\n{entry}'
+      else:
+        entry_dict[identity] = entry
+        identities.append(identity)
   
-  identities = list(set(identities)) # remove duplicates
+    versions[version] = entry_dict
+  
+  identities = list(set(identities))
   identities.sort()
+
   for identity in identities:
     tc = versions['tc'].get(identity, '')
     tcn = versions['tcn'].get(identity, '')
     tl = versions['tl'].get(identity, '')
 
-    # if not tc or not tcn or not tl:
-    #   print(identity, not tc, not tcn, not tl)
-    
-    entries.append(Recipe(identity, tc, tcn, tl))
+    entries[identity] = Recipe(identity, tc, tcn, tl)
 
   if apply_corrections:
-    if not os.path.exists('thesaurus'):
-      print('Thesaurus not found. Generating now.')
-      os.system('python thesaurus.py')
-      print('Finished Generating Thesaurus')
+    entries = use_thesaurus(entries)
 
-    for prop in properties: # generate correction_dict from thesaurus
-      dct = {}
-      df = pd.read_csv(f'thesaurus/{prop}.csv')
-      for i, row in df.iterrows(): # add corrections to a dictionary for O(1) access
-        if row.verbatim_term != row.prefLabel_en:
-          dct[row.verbatim_term] = row.prefLabel_en
-
-      for entry in entries:
-        for i, term in enumerate(entry.properties[prop]['tl']):
-          new_term = dct.get(term, None)
-          if new_term:
-            entry.properties[prop]['tl'][i] = new_term
-        entry.properties[prop]['tl'] = list(set(entry.properties[prop]['tl']))
-  
   return entries

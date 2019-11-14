@@ -1,11 +1,4 @@
 {
-  "belly": [
-    {
-    "verbatim_term": "belly",
-    "entry_id": "p001v_1",
-    "entry_title": "For easing the belly"
-    }
-  ],
   "stomach": [
     {
     "verbatim_term": "stomach",
@@ -21,6 +14,13 @@
     "verbatim_term": "stomach",
     "entry_id": "p037r_2",
     "entry_title": "Medicine for the stomach which heats it and unstops the liver"
+    }
+  ],
+  "belly": [
+    {
+    "verbatim_term": "belly",
+    "entry_id": "p001v_1",
+    "entry_title": "For easing the belly"
     }
   ],
   "finger": [
@@ -101,7 +101,7 @@
     },
     {
     "verbatim_term": "finger",
-    "entry_id": "p066r_6",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     },
     {
@@ -452,7 +452,7 @@
     {
     "verbatim_term": "index finger",
     "entry_id": "p066v_4",
-    "entry_title": "paintbrushes"
+    "entry_title": "Paintbrushes"
     },
     {
     "verbatim_term": "middle finger",
@@ -590,7 +590,7 @@
     {
     "verbatim_term": "hand",
     "entry_id": "p066v_4",
-    "entry_title": "paintbrushes"
+    "entry_title": "Paintbrushes"
     },
     {
     "verbatim_term": "hand",
@@ -705,7 +705,7 @@
     {
     "verbatim_term": "hands",
     "entry_id": "p083v_2",
-    "entry_title": "Molding in relief on one part and hollow on the other."
+    "entry_title": "Molding in relief on one part and hollow on the other"
     },
     {
     "verbatim_term": "hands",
@@ -1112,7 +1112,24 @@
     "entry_title": "For making h… wine f…rs"
     }
   ],
+  "elbow": [
+    {
+    "verbatim_term": "elbow",
+    "entry_id": "p015v_5",
+    "entry_title": "Ears"
+    }
+  ],
   "ear": [
+    {
+    "verbatim_term": "ears",
+    "entry_id": "p015v_5",
+    "entry_title": "Ears"
+    },
+    {
+    "verbatim_term": "ears",
+    "entry_id": "p033v_1",
+    "entry_title": "For making it seem that to someone that he has a piece of silver on his forehead"
+    },
     {
     "verbatim_term": "ear",
     "entry_id": "p015v_5",
@@ -1142,35 +1159,18 @@
     "verbatim_term": "ear",
     "entry_id": "p145r_2",
     "entry_title": "Cuttlefish bone"
-    },
-    {
-    "verbatim_term": "ears",
-    "entry_id": "p015v_5",
-    "entry_title": "Ears"
-    },
-    {
-    "verbatim_term": "ears",
-    "entry_id": "p033v_1",
-    "entry_title": "For making it seem that to someone that he has a piece of silver on his forehead"
-    }
-  ],
-  "elbow": [
-    {
-    "verbatim_term": "elbow",
-    "entry_id": "p015v_5",
-    "entry_title": "Ears"
-    }
-  ],
-  "nostril": [
-    {
-    "verbatim_term": "nostril",
-    "entry_id": "p015v_6",
-    "entry_title": "Tooth ache"
     }
   ],
   "tooth": [
     {
     "verbatim_term": "tooth",
+    "entry_id": "p015v_6",
+    "entry_title": "Tooth ache"
+    }
+  ],
+  "nostril": [
+    {
+    "verbatim_term": "nostril",
     "entry_id": "p015v_6",
     "entry_title": "Tooth ache"
     }
@@ -1231,7 +1231,7 @@
     {
     "verbatim_term": "thumb",
     "entry_id": "p066v_4",
-    "entry_title": "paintbrushes"
+    "entry_title": "Paintbrushes"
     },
     {
     "verbatim_term": "thumb",
@@ -1314,6 +1314,13 @@
     "entry_title": "For telling someone that by putting holding a finger to his forehead, you will prevent him from exiting a chamber"
     }
   ],
+  "thigh": [
+    {
+    "verbatim_term": "thigh",
+    "entry_id": "p033r_1",
+    "entry_title": "Knife for cutting the nose or a finger"
+    }
+  ],
   "nose": [
     {
     "verbatim_term": "nose",
@@ -1344,13 +1351,6 @@
     "verbatim_term": "nose",
     "entry_id": "p123r_1",
     "entry_title": "A means di far correr lotnegra"
-    }
-  ],
-  "thigh": [
-    {
-    "verbatim_term": "thigh",
-    "entry_id": "p033r_1",
-    "entry_title": "Knife for cutting the nose or a finger"
     }
   ],
   "palm": [
@@ -1566,9 +1566,14 @@
     "entry_title": "Furbisher"
     }
   ],
-  "hair": [
+  "burn": [
     {
-    "verbatim_term": "hair",
+    "verbatim_term": "burn",
+    "entry_id": "p103r_1",
+    "entry_title": "Against burns, excellent"
+    },
+    {
+    "verbatim_term": "burns",
     "entry_id": "p103r_1",
     "entry_title": "Against burns, excellent"
     }
@@ -1585,14 +1590,9 @@
     "entry_title": "Lizards"
     }
   ],
-  "burn": [
+  "hair": [
     {
-    "verbatim_term": "burn",
-    "entry_id": "p103r_1",
-    "entry_title": "Against burns, excellent"
-    },
-    {
-    "verbatim_term": "burns",
+    "verbatim_term": "hair",
     "entry_id": "p103r_1",
     "entry_title": "Against burns, excellent"
     }
@@ -1604,16 +1604,16 @@
     "entry_title": "Enema"
     }
   ],
-  "headache": [
+  "earwax": [
     {
-    "verbatim_term": "headache",
+    "verbatim_term": "earwax",
     "entry_id": "p103v_4",
     "entry_title": "Earwax"
     }
   ],
-  "earwax": [
+  "headache": [
     {
-    "verbatim_term": "earwax",
+    "verbatim_term": "headache",
     "entry_id": "p103v_4",
     "entry_title": "Earwax"
     }
@@ -1660,16 +1660,16 @@
     "entry_title": "Secret for soldering gold and silver in small works"
     }
   ],
-  "digiti": [
+  "manu": [
     {
-    "verbatim_term": "digiti",
+    "verbatim_term": "manus",
     "entry_id": "p166r_1",
     "entry_title": "For the workshop"
     }
   ],
-  "manu": [
+  "digiti": [
     {
-    "verbatim_term": "manus",
+    "verbatim_term": "digiti",
     "entry_id": "p166r_1",
     "entry_title": "For the workshop"
     }
@@ -1734,7 +1734,7 @@
     {
     "verbatim_term": "ends of your fingernails",
     "entry_id": "p066v_4",
-    "entry_title": "paintbrushes"
+    "entry_title": "Paintbrushes"
     }
   ],
   "foam of urine": [

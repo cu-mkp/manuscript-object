@@ -33,13 +33,6 @@
     "entry_title": "Black varnish for sword guard, bands for trunks, &amp;c"
     }
   ],
-  "street": [
-    {
-    "verbatim_term": "street",
-    "entry_id": "p005r_2",
-    "entry_title": "Concave mirrors"
-    }
-  ],
   "sun": [
     {
     "verbatim_term": "sun",
@@ -75,6 +68,13 @@
   "window": [
     {
     "verbatim_term": "window",
+    "entry_id": "p005r_2",
+    "entry_title": "Concave mirrors"
+    }
+  ],
+  "street": [
+    {
+    "verbatim_term": "street",
     "entry_id": "p005r_2",
     "entry_title": "Concave mirrors"
     }
@@ -154,9 +154,16 @@
     "entry_title": "On the gunner"
     }
   ],
-  "tower": [
+  "gabion": [
     {
-    "verbatim_term": "tower",
+    "verbatim_term": "gabions",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "barricade": [
+    {
+    "verbatim_term": "barricade",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     }
@@ -178,12 +185,19 @@
     "entry_title": "For the workshop"
     },
     {
-    "verbatim_term": "private houses",
+    "verbatim_term": "house or elsewhere",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     },
     {
-    "verbatim_term": "house or elsewhere",
+    "verbatim_term": "private houses",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "tower": [
+    {
+    "verbatim_term": "tower",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     }
@@ -205,13 +219,6 @@
     "entry_title": "Pewterer"
     }
   ],
-  "barricade": [
-    {
-    "verbatim_term": "barricade",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    }
-  ],
   "casemate": [
     {
     "verbatim_term": "casemates",
@@ -220,13 +227,6 @@
     },
     {
     "verbatim_term": "ditch casemates",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    }
-  ],
-  "gabion": [
-    {
-    "verbatim_term": "gabions",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     }
@@ -265,13 +265,6 @@
     "verbatim_term": "land",
     "entry_id": "p024v_1",
     "entry_title": "For bringing a cannon over land"
-    }
-  ],
-  "countryside": [
-    {
-    "verbatim_term": "countryside",
-    "entry_id": "p028v_1",
-    "entry_title": "Pewterers"
     }
   ],
   "mine": [
@@ -336,6 +329,13 @@
     "entry_title": "Sand from a mine in Thoulouse"
     }
   ],
+  "countryside": [
+    {
+    "verbatim_term": "countryside",
+    "entry_id": "p028v_1",
+    "entry_title": "Pewterers"
+    }
+  ],
   "humidity": [
     {
     "verbatim_term": "humidity",
@@ -362,12 +362,12 @@
   ],
   "burrow": [
     {
-    "verbatim_term": "burrow",
+    "verbatim_term": "burrows",
     "entry_id": "p035r_4",
     "entry_title": "For making rabbits come out of a burrow"
     },
     {
-    "verbatim_term": "burrows",
+    "verbatim_term": "burrow",
     "entry_id": "p035r_4",
     "entry_title": "For making rabbits come out of a burrow"
     }
@@ -597,6 +597,13 @@
     "entry_title": "Mirror"
     }
   ],
+  "quarreriesry": [
+    {
+    "verbatim_term": "quarreriesries",
+    "entry_id": "p069r_2",
+    "entry_title": "Sand"
+    }
+  ],
   "rock": [
     {
     "verbatim_term": "rocks",
@@ -624,13 +631,6 @@
     "verbatim_term": "open sea",
     "entry_id": "p055v_3",
     "entry_title": "For knowing the course one takes on the open sea"
-    }
-  ],
-  "quarreriesry": [
-    {
-    "verbatim_term": "quarreriesries",
-    "entry_id": "p069r_2",
-    "entry_title": "Sand"
     }
   ],
   "river": [
@@ -793,18 +793,6 @@
     "entry_title": "Enamels"
     }
   ],
-  "barn": [
-    {
-    "verbatim_term": "barn",
-    "entry_id": "p105v_5",
-    "entry_title": "Nightingale"
-    },
-    {
-    "verbatim_term": "barns",
-    "entry_id": "p120r_3",
-    "entry_title": "IlNightingale"
-    }
-  ],
   "cold": [
     {
     "verbatim_term": "cold",
@@ -825,6 +813,18 @@
     "verbatim_term": "cold &amp; humidity",
     "entry_id": "p137r_2",
     "entry_title": "Huile tingente to make metals run"
+    }
+  ],
+  "barn": [
+    {
+    "verbatim_term": "barn",
+    "entry_id": "p105v_5",
+    "entry_title": "Nightingale"
+    },
+    {
+    "verbatim_term": "barns",
+    "entry_id": "p120r_3",
+    "entry_title": "IlNightingale"
     }
   ],
   "earth": [
@@ -931,23 +931,6 @@
     "entry_title": "Plaster alone"
     }
   ],
-  "in the shade": [
-    {
-    "verbatim_term": "in the shade",
-    "entry_id": "p003r_2",
-    "entry_title": "Varnish for panels"
-    },
-    {
-    "verbatim_term": "in the shade",
-    "entry_id": "p077r_3",
-    "entry_title": "Fatty earth"
-    },
-    {
-    "verbatim_term": "in the shade",
-    "entry_id": "p102v_2",
-    "entry_title": "Infusion of anthos or rosemary"
-    }
-  ],
   "in the sun": [
     {
     "verbatim_term": "in the sun",
@@ -1010,6 +993,23 @@
     "entry_title": "Molding a crayfish"
     }
   ],
+  "in the shade": [
+    {
+    "verbatim_term": "in the shade",
+    "entry_id": "p003r_2",
+    "entry_title": "Varnish for panels"
+    },
+    {
+    "verbatim_term": "in the shade",
+    "entry_id": "p077r_3",
+    "entry_title": "Fatty earth"
+    },
+    {
+    "verbatim_term": "in the shade",
+    "entry_id": "p102v_2",
+    "entry_title": "Infusion of anthos or rosemary"
+    }
+  ],
   "open space": [
     {
     "verbatim_term": "open space",
@@ -1057,7 +1057,7 @@
     },
     {
     "verbatim_term": "in the rain",
-    "entry_id": "p066r_6",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     }
   ],
@@ -1124,9 +1124,9 @@
     "entry_title": "On the gunner"
     }
   ],
-  "edge of the ditch": [
+  "garrets topped with a tower": [
     {
-    "verbatim_term": "edge of the ditch",
+    "verbatim_term": "garrets topped with a tower",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     }
@@ -1138,9 +1138,9 @@
     "entry_title": "On the gunner"
     }
   ],
-  "garrets topped with a tower": [
+  "edge of the ditch": [
     {
-    "verbatim_term": "garrets topped with a tower",
+    "verbatim_term": "edge of the ditch",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     }
@@ -1219,13 +1219,6 @@
     "entry_title": "Pewterers"
     }
   ],
-  "in the open air": [
-    {
-    "verbatim_term": "in the open air",
-    "entry_id": "p029r_1",
-    "entry_title": "Stucco for molding"
-    }
-  ],
   "in the serain": [
     {
     "verbatim_term": "in the serain",
@@ -1246,6 +1239,13 @@
     "verbatim_term": "in the serain",
     "entry_id": "p090r_1",
     "entry_title": "Sal ammoniac and iron dross"
+    }
+  ],
+  "in the open air": [
+    {
+    "verbatim_term": "in the open air",
+    "entry_id": "p029r_1",
+    "entry_title": "Stucco for molding"
     }
   ],
   "overcast weather": [
@@ -1269,16 +1269,16 @@
     "entry_title": "Amber"
     }
   ],
-  "where the depth of the earth is so fertile": [
+  "in one field &amp; in the one close by it": [
     {
-    "verbatim_term": "where the depth of the earth is so fertile",
+    "verbatim_term": "in one field &amp; in the one close by it",
     "entry_id": "p039r_2",
     "entry_title": "Pastel woad"
     }
   ],
-  "in one field &amp; in the one close by it": [
+  "where the depth of the earth is so fertile": [
     {
-    "verbatim_term": "in one field &amp; in the one close by it",
+    "verbatim_term": "where the depth of the earth is so fertile",
     "entry_id": "p039r_2",
     "entry_title": "Pastel woad"
     }
@@ -1304,16 +1304,16 @@
     "entry_title": "Crucibles"
     }
   ],
-  "in a room where there is not a drop of air &amp; of wind": [
+  "in a cellar": [
     {
-    "verbatim_term": "in a room where there is not a drop of air &amp; of wind",
+    "verbatim_term": "in a cellar",
     "entry_id": "p050r_1",
     "entry_title": "Keeping fruit for the entire year"
     }
   ],
-  "in a cellar": [
+  "in a room where there is not a drop of air &amp; of wind": [
     {
-    "verbatim_term": "in a cellar",
+    "verbatim_term": "in a room where there is not a drop of air &amp; of wind",
     "entry_id": "p050r_1",
     "entry_title": "Keeping fruit for the entire year"
     }
@@ -1346,16 +1346,16 @@
     "entry_title": "The work done in Algiers"
     }
   ],
-  "thunder or rainy weather, cloud-covered &amp; cool": [
+  "weather is warm &amp; serain": [
     {
-    "verbatim_term": "thunder or rainy weather, cloud-covered &amp; cool",
+    "verbatim_term": "weather is warm &amp; serain",
     "entry_id": "p053v_1",
     "entry_title": "Silkworms"
     }
   ],
-  "weather is warm &amp; serain": [
+  "thunder or rainy weather, cloud-covered &amp; cool": [
     {
-    "verbatim_term": "weather is warm &amp; serain",
+    "verbatim_term": "thunder or rainy weather, cloud-covered &amp; cool",
     "entry_id": "p053v_1",
     "entry_title": "Silkworms"
     }
@@ -1421,9 +1421,9 @@
     "entry_title": "Planting trees"
     }
   ],
-  "after rainy weather": [
+  "rock cafe": [
     {
-    "verbatim_term": "after rainy weather",
+    "verbatim_term": "rock caves",
     "entry_id": "p069r_2",
     "entry_title": "Sand"
     }
@@ -1435,9 +1435,9 @@
     "entry_title": "Sand"
     }
   ],
-  "rock cafe": [
+  "after rainy weather": [
     {
-    "verbatim_term": "rock caves",
+    "verbatim_term": "after rainy weather",
     "entry_id": "p069r_2",
     "entry_title": "Sand"
     }
@@ -1567,9 +1567,9 @@
     "entry_title": "Clay earth"
     }
   ],
-  "near the rocks in mountainous area": [
+  "from the depths of the sand-bed": [
     {
-    "verbatim_term": "near the rocks in mountainous areas",
+    "verbatim_term": "from the depths of the sand-bed",
     "entry_id": "p090r_3",
     "entry_title": "All sands can be rendered good"
     }
@@ -1581,13 +1581,6 @@
     "entry_title": "All sands can be rendered good"
     }
   ],
-  "close to their house": [
-    {
-    "verbatim_term": "close to their house",
-    "entry_id": "p090r_3",
-    "entry_title": "All sands can be rendered good"
-    }
-  ],
   "lean territory": [
     {
     "verbatim_term": "lean territories",
@@ -1595,9 +1588,16 @@
     "entry_title": "All sands can be rendered good"
     }
   ],
-  "from the depths of the sand-bed": [
+  "close to their house": [
     {
-    "verbatim_term": "from the depths of the sand-bed",
+    "verbatim_term": "close to their house",
+    "entry_id": "p090r_3",
+    "entry_title": "All sands can be rendered good"
+    }
+  ],
+  "near the rocks in mountainous area": [
+    {
+    "verbatim_term": "near the rocks in mountainous areas",
     "entry_id": "p090r_3",
     "entry_title": "All sands can be rendered good"
     }
@@ -1630,9 +1630,9 @@
     "entry_title": "Grey guards"
     }
   ],
-  "on the fire": [
+  "weather is damp &amp; humid": [
     {
-    "verbatim_term": "on the fire",
+    "verbatim_term": "weather is damp &amp; humid",
     "entry_id": "p100r_1",
     "entry_title": "Gold color"
     }
@@ -1644,9 +1644,9 @@
     "entry_title": "Gold color"
     }
   ],
-  "weather is damp &amp; humid": [
+  "on the fire": [
     {
-    "verbatim_term": "weather is damp &amp; humid",
+    "verbatim_term": "on the fire",
     "entry_id": "p100r_1",
     "entry_title": "Gold color"
     }
@@ -1679,16 +1679,16 @@
     "entry_title": "Catching nightingales See the 15th folio after this."
     }
   ],
-  "in a dry place": [
+  "rainy weather": [
     {
-    "verbatim_term": "in a dry place",
+    "verbatim_term": "rainy weather",
     "entry_id": "p106v_2",
     "entry_title": ""
     }
   ],
-  "rainy weather": [
+  "in a dry place": [
     {
-    "verbatim_term": "rainy weather",
+    "verbatim_term": "in a dry place",
     "entry_id": "p106v_2",
     "entry_title": ""
     }
@@ -1735,9 +1735,9 @@
     "entry_title": "Molding snakes in all weather"
     }
   ],
-  "serain, &amp; the humidity of the night": [
+  "rainy and humid weather": [
     {
-    "verbatim_term": "serain, &amp; the humidity of the night",
+    "verbatim_term": "rainy and humid weather",
     "entry_id": "p120v_6",
     "entry_title": "Keeping dry flowers in the same state all year"
     }
@@ -1749,9 +1749,9 @@
     "entry_title": "Keeping dry flowers in the same state all year"
     }
   ],
-  "rainy and humid weather": [
+  "serain, &amp; the humidity of the night": [
     {
-    "verbatim_term": "rainy and humid weather",
+    "verbatim_term": "serain, &amp; the humidity of the night",
     "entry_id": "p120v_6",
     "entry_title": "Keeping dry flowers in the same state all year"
     }
@@ -1812,16 +1812,16 @@
     "entry_title": "Molds"
     }
   ],
-  "under wheat chaff or warm manure": [
+  "in the earth": [
     {
-    "verbatim_term": "under wheat chaff or warm manure",
+    "verbatim_term": "in the earth",
     "entry_id": "p143r_1",
     "entry_title": "Molding turtles"
     }
   ],
-  "in the earth": [
+  "under wheat chaff or warm manure": [
     {
-    "verbatim_term": "in the earth",
+    "verbatim_term": "under wheat chaff or warm manure",
     "entry_id": "p143r_1",
     "entry_title": "Molding turtles"
     }
@@ -1845,13 +1845,6 @@
     "entry_title": "Plaster alone"
     }
   ],
-  "close to the house": [
-    {
-    "verbatim_term": "close to the house",
-    "entry_id": "p160v_4",
-    "entry_title": "Catching passerines"
-    }
-  ],
   "night be dark &amp; without ☾": [
     {
     "verbatim_term": "night be dark &amp; without ☾",
@@ -1862,6 +1855,13 @@
   "in straw": [
     {
     "verbatim_term": "in straw",
+    "entry_id": "p160v_4",
+    "entry_title": "Catching passerines"
+    }
+  ],
+  "close to the house": [
+    {
+    "verbatim_term": "close to the house",
     "entry_id": "p160v_4",
     "entry_title": "Catching passerines"
     }

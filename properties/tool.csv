@@ -38,6 +38,38 @@ marble,marble,p148r_4,Crocum ferri
 marble,marble,p154r_4,Iron scales
 marble,marbles,p056v_1,Painter
 marble,polished marble,p006v_2,For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances
+file,file,p003r_1,Counterfeit coral
+file,file,p006v_1,For ga cachcages
+file,file,p010r_1,Counterfeit jasper
+file,file,p030r_2,Pewterer
+file,file,p037v_3,Yellow Amber
+file,file,p038r_1,Sapphire
+file,file,p038r_4,Amber
+file,file,p094r_1,Furbisher
+file,file,p097r_3,Gilding with silver
+file,file,p098r_3,Locksmith
+file,file,p118v_1,Casting in frames
+file,file,p131v_1,When the cast of tin or lead becomes porous
+file,file,p138v_1,Talcum mixed in the molds
+file,file,p150v_1,Molding hollow
+file,file,p152v_1,Repairing cast things
+file,files,p050v_2,Curried steel and files
+file,files,p067v_1,Files
+file,files,p141r_1,Molding a crayfish
+file,files,p152v_1,Repairing cast things
+file,large file,p016r_1,Founding of soft iron
+file,soft files,p067v_1,Files
+file,square files,p067v_1,Files
+file,soft file,p096v_2,Color of water
+file,small file,p148v_1,Molding turtles
+file,small file,p150v_1,Molding hollow
+file,small file,p163v_3,Repairing
+file,small file,p164r_2,Repairing flashing
+brazier,brazier,p003r_1,Counterfeit coral
+brazier,brazier,p007v_2,Against windy colic
+brazier,brazier,p013v_3,Toadstone
+brazier,brazier,p137r_1,For casting in red copper
+brazier,brazier,p140v_1,For casting in sulfur
 stick,stick,p003r_1,Counterfeit coral
 stick,stick,p023r_1,On petards
 stick,stick,p036r_1,For transmuting a ball into a thimble, cunning
@@ -67,41 +99,14 @@ stick,small flat stick,p044v_1,Horsehair sieves
 stick,cleft stick,p049v_2,Grain of lead
 stick,long stick,p055r_4,Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits 
 stick,wood stick,p082v_4,Method of casting in bronze
-stick,fresil stick,p094r_1,Furbisher
 stick,stick of the fustée,p094r_1,Furbisher
+stick,fresil stick,p094r_1,Furbisher
 stick,round stick, which pastry makers,p112v_1,For molding Making the arrangement and disposition of the animal
 stick,small sticks,p117r_1,A means of molding flowers and plants
 stick,small pointed stick,p120r_3,IlNightingale
 stick,little stick,p139v_1,Cast of wax to represent an animal that one has not got
 stick,small stick of boxwood,p153r_2,Giving the thickness that you wish to a medal
 stick,thick stick,p161r_1,Preparation of sand for frames
-file,file,p003r_1,Counterfeit coral
-file,file,p006v_1,For ga cachcages
-file,file,p010r_1,Counterfeit jasper
-file,file,p030r_2,Pewterer
-file,file,p037v_3,Yellow Amber
-file,file,p038r_1,Sapphire
-file,file,p038r_4,Amber
-file,file,p094r_1,Furbisher
-file,file,p097r_3,Gilding with silver
-file,file,p098r_3,Locksmith
-file,file,p118v_1,Casting in frames
-file,file,p131v_1,When the cast of tin or lead becomes porous
-file,file,p138v_1,Talcum mixed in the molds
-file,file,p150v_1,Molding hollow
-file,file,p152v_1,Repairing cast things
-file,files,p050v_2,Curried steel and files
-file,files,p067v_1,Files
-file,files,p141r_1,Molding a crayfish
-file,files,p152v_1,Repairing cast things
-file,large file,p016r_1,Founding of soft iron
-file,square files,p067v_1,Files
-file,soft files,p067v_1,Files
-file,soft file,p096v_2,Color of water
-file,small file,p148v_1,Molding turtles
-file,small file,p150v_1,Molding hollow
-file,small file,p163v_3,Repairing
-file,small file,p164r_2,Repairing flashing
 pestled,pestled,p003r_1,Counterfeit coral
 pestled,pestled,p012v_1,Molding stucco promptly
 pestled,pestled,p021v_2,Defense of a town
@@ -132,11 +137,6 @@ pestled,pestled,p123r_1, A means di far correr lotnegra
 pestled,pestled,p139v_1,Cast of wax to represent an animal that one has not got
 pestled,pestled,p150v_1,Molding hollow
 pestled,pestled,p170v_3,For preserving
-brazier,brazier,p003r_1,Counterfeit coral
-brazier,brazier,p007v_2,Against windy colic
-brazier,brazier,p013v_3,Toadstone
-brazier,brazier,p137r_1,For casting in red copper
-brazier,brazier,p140v_1,For casting in sulfur
 finger,finger,p003r_2,Varnish for panels
 finger,finger,p004r_1,Varnish of spike lavender oil
 finger,finger,p012r_4,Plaster
@@ -213,26 +213,6 @@ pot,unleaded pots,p102r_1,Provisions for the work of Colchis
 pot,pots with a lid,p102r_2,For the furnace
 pot,good pot of water,p118v_1,Casting in frames
 pot,square pots,p139r_1,Casts of lead and tin
-trivet,trivet,p003r_3,Thick varnish for planks
-oven,oven,p003r_3,Thick varnish for planks
-oven,oven,p012r_2,Chimolée
-oven,oven,p029r_1,Stucco for molding
-oven,oven,p048r_3,Excellent mustard
-oven,oven,p048r_4,Keeping birds and animals
-oven,oven,p066v_1,For preventing teats from swelling d or to diminish overly large ones
-oven,oven,p073v_4,Color of burnished copper
-oven,oven,p084r_5,Sand from a mine in Thoulouse
-oven,oven,p129v_1,Animals dried in the oven for a long time
-oven,oven,p130r_1,Animals dried in an oven
-oven,oven,p132r_2,Method for reheating the molds
-oven,oven,p133v_2,Thing that does not release
-oven,oven,p133v_3,Various animals entwined
-oven,oven,p140v_2,Molding and shrinking a large figure
-oven,oven,p152r_1,Molding a rat
-oven,oven,p160v_5,Catching birds
-oven,small tile oven,p073v_4,Color of burnished copper
-oven,bread oven,p161r_1,Preparation of sand for frames
-oven,tiler’s oven,p161r_1,Preparation of sand for frames
 vessel,vessel,p003r_3,Thick varnish for planks
 vessel,vessel,p011r_1,Painting esmail d’azur in oil
 vessel,vessel,p035v_2,For transmuting grain from one vessel to another
@@ -256,13 +236,33 @@ vessel,copper vessel,p003r_3,Thick varnish for planks
 vessel,lead vessel,p029r_1,Stucco for molding
 vessel,earthen vessel,p078r_3,For making green trwood
 vessel,earthen vessel,p108r_2,Spalt
-vessel,glass vessel,p102r_4,Glass vessels
 vessel,glass vessels,p102r_4,Glass vessels
+vessel,glass vessel,p102r_4,Glass vessels
 vessel,vessel filled with ashes or sand,p118r_2,For removing flashing and barbs from things molded à noyau
-vessel,well sealed vessel,p120v_6,Keeping dry flowers in the same state all year
 vessel,big vessels,p120v_6,Keeping dry flowers in the same state all year
+vessel,well sealed vessel,p120v_6,Keeping dry flowers in the same state all year
 vessel,fatty vessel,p159r_3, Fish glue
 vessel,common vessel,p161r_1,Preparation of sand for frames
+oven,oven,p003r_3,Thick varnish for planks
+oven,oven,p012r_2,Chimolée
+oven,oven,p029r_1,Stucco for molding
+oven,oven,p048r_3,Excellent mustard
+oven,oven,p048r_4,Keeping birds and animals
+oven,oven,p066v_1,For preventing teats from swelling d or to diminish overly large ones
+oven,oven,p073v_4,Color of burnished copper
+oven,oven,p084r_5,Sand from a mine in Thoulouse
+oven,oven,p129v_1,Animals dried in the oven for a long time
+oven,oven,p130r_1,Animals dried in an oven
+oven,oven,p132r_2,Method for reheating the molds
+oven,oven,p133v_2,Thing that does not release
+oven,oven,p133v_3,Various animals entwined
+oven,oven,p140v_2,Molding and shrinking a large figure
+oven,oven,p152r_1,Molding a rat
+oven,oven,p160v_5,Catching birds
+oven,small tile oven,p073v_4,Color of burnished copper
+oven,bread oven,p161r_1,Preparation of sand for frames
+oven,tiler’s oven,p161r_1,Preparation of sand for frames
+trivet,trivet,p003r_3,Thick varnish for planks
 plate,plate,p004r_1,Varnish of spike lavender oil
 plate,plate,p036v_3,Glassworkers’ glass
 plate,plate,p051r_2,Cutters of printing plates
@@ -295,12 +295,6 @@ sieved,sieved,p127v_1,Founders’ earth
 sieved,sieved,p129v_4,Spider molded on a leaf
 bucket,bucket,p004r_2,For removing varnish from an old panel that is yellowish &amp; varnishing it anew
 bucket,bucket,p035r_2,For supporting a bucket of water on the tips of three knives laid down without touching the ground
-feather,feather,p004v_1,Black varnish for sword guard, bands for trunks, &amp;c
-feather,feather,p009r_2,Painter
-feather,feather,p056v_1,Painter
-feather,feather,p066r_6,* Or mat
-feather,feather,p096v_3,Yellow varnish
-feather,quite pointy feather,p049v_1,Birds
 brush,brush,p004v_1,Black varnish for sword guard, bands for trunks, &amp;c
 brush,brush,p004v_2,Black varnish without fire, without disassembling the harnesses or removing the bands from trunks
 brush,brush,p011r_1,Painting esmail d’azur in oil
@@ -327,6 +321,12 @@ brush,small brushes,p118v_1,Casting in frames
 brush,little brushes,p141r_1,Molding a crayfish
 brush,little brushes,p164r_2,Repairing flashing
 brush,wire brush made of wires of latten.,p159v_1,Cleaning files
+feather,feather,p004v_1,Black varnish for sword guard, bands for trunks, &amp;c
+feather,feather,p009r_2,Painter
+feather,feather,p056v_1,Painter
+feather,feather,p066r_6" continued="yes,* Or mat
+feather,feather,p096v_3,Yellow varnish
+feather,quite pointy feather,p049v_1,Birds
 mold,mold,p005r_1,Steel mirrors
 mold,mold,p016r_1,Founding of soft iron
 mold,mold,p030r_2,Pewterer
@@ -532,17 +532,17 @@ mold,molds,p165v_4,Lute
 mold,molds,p170r_4,Molds
 mold,molds,p170r_6,Cleaning closed molds
 mold,mold, of white stone with no eyelets,p005r_1,Steel mirrors
-mold,cold molds,p028v_1,Pewterers
 mold,female mold,p028v_1,Pewterers
+mold,cold molds,p028v_1,Pewterers
 mold,metal molds,p030r_2,Pewterer
-mold,grais molds,p030r_2,Pewterer
 mold,grais mold,p030r_2,Pewterer
+mold,grais molds,p030r_2,Pewterer
 mold,leather mold,p036r_1,For transmuting a ball into a thimble, cunning
 mold,mold of earth,p042r_1,Founder
 mold,mold made of canvas,p048r_4,Keeping birds and animals
-mold,stone molds,p048v_2,Lead, tin
 mold,copper mold,p048v_2,Lead, tin
 mold,copper mold,p049r_1,Casting of lead
+mold,stone molds,p048v_2,Lead, tin
 mold,tin molds,p049r_4,Pewterers
 mold,molds of iron &amp; copper,p063r_3,Casting
 mold,frame mold,p068r_3,Casting
@@ -561,8 +561,8 @@ mold,mold en noyau,p117r_1,A means of molding flowers and plants
 mold,plaster molds,p125r_1,Plaster
 mold,plaster mold,p125v_3,Plaster for casting in wax
 mold,plaster mold,p126r_1,Molding fruits and animals in sugar
-mold,molds of plaster,p127r_1,Molds of plaster for wax
 mold,mold of plaster,p127r_1,Molds of plaster for wax
+mold,molds of plaster,p127r_1,Molds of plaster for wax
 mold,small molds,p133v_1,Bubbles and little holes which are found in the mold
 mold,big molds,p135r_2,Gate
 mold,large molds,p139r_1,Casts of lead and tin
@@ -570,6 +570,7 @@ mold,mold à noyau,p139v_1,Cast of wax to represent an animal that one has not g
 mold,mold which is of white plaster,p139v_1,Cast of wax to represent an animal that one has not got
 mold,half mold,p144r_1,Turtles
 mold,flat molds,p145v_1,Molding plants and flowers
+arene,arene,p005r_1,Steel mirrors
 tripoli,tripoli,p005r_1,Steel mirrors
 tripoli,tripoli,p008v_1,Polishing of the balas ruby
 tripoli,tripoli,p012v_2,Cleaning yellow pearls
@@ -578,11 +579,6 @@ tripoli,tripoli,p013r_3,Polishing of stones
 tripoli,venice tripoli,p005r_1,Steel mirrors
 tripoli,tripoli from bretagne,p037v_3,Yellow Amber
 tripoli,tripoli of brittany,p038r_4,Amber
-putty,putty,p005r_1,Steel mirrors
-putty,putty,p030r_2,Pewterer
-putty,putty,p038r_4,Amber
-putty,emery putty,p005r_1,Steel mirrors
-molded,molded,p005r_1,Steel mirrors
 crucible,crucible,p005r_1,Steel mirrors
 crucible,crucible,p036v_1,Founder
 crucible,crucible,p036v_2,Four à vent
@@ -622,15 +618,17 @@ crucible,crucibles,p111v_5,Composition of sand
 crucible,crucibles for melting metal,p047v_2,Founding
 crucible,hollow crucible,p092v_2,Congealing mercury
 crucible,good crucible,p123r_1, A means di far correr lotnegra
-arene,arene,p005r_1,Steel mirrors
-sheet,sheet,p005r_2,Concave mirrors
-sheet,sheets,p160r_1,Press for the large molds
-sheet,sheet of paper,p005r_2,Concave mirrors
-sheet,sheets of paper,p051r_2,Cutters of printing plates
-sheet,sheet of tin,p120r_1,Medals stamped from wax
-sheet,sheets of copper,p139r_1,Casts of lead and tin
-sheet,sheets of lead &amp; copper,p153r_2,Giving the thickness that you wish to a medal
-sheet,sheets of iron,p160r_1,Press for the large molds
+molded,molded,p005r_1,Steel mirrors
+putty,putty,p005r_1,Steel mirrors
+putty,putty,p030r_2,Pewterer
+putty,putty,p038r_4,Amber
+putty,emery putty,p005r_1,Steel mirrors
+mirror,mirror,p005r_2,Concave mirrors
+mirror,mirror,p065r_3,Mirror
+mirror,mirrors,p021r_2,For firing a cannon at night
+mirror,concave mirror,p005r_2,Concave mirrors
+mirror,cristallin mirror,p065r_3,Mirror
+mirror,crystal mirror,p103v_5,Enamels
 candle,candle,p005r_2,Concave mirrors
 candle,candle,p013v_5,Candles
 candle,candle,p016v_5,Candles
@@ -671,24 +669,25 @@ table,small smooth table,p051r_2,Cutters of printing plates
 table,well smooth table,p072v_1,Casting
 table,goldsmith’s table,p152v_1,Repairing cast things
 table,long table,p161r_1,Preparation of sand for frames
-mirror,mirror,p005r_2,Concave mirrors
-mirror,mirror,p065r_3,Mirror
-mirror,mirrors,p021r_2,For firing a cannon at night
-mirror,concave mirror,p005r_2,Concave mirrors
-mirror,cristallin mirror,p065r_3,Mirror
-mirror,crystal mirror,p103v_5,Enamels
+sheet,sheet,p005r_2,Concave mirrors
+sheet,sheets,p160r_1,Press for the large molds
+sheet,sheet of paper,p005r_2,Concave mirrors
+sheet,sheets of paper,p051r_2,Cutters of printing plates
+sheet,sheet of tin,p120r_1,Medals stamped from wax
+sheet,sheets of copper,p139r_1,Casts of lead and tin
+sheet,sheets of lead &amp; copper,p153r_2,Giving the thickness that you wish to a medal
+sheet,sheets of iron,p160r_1,Press for the large molds
 window,window,p005r_2,Concave mirrors
 tooth,tooth,p005v_1,For bronzing in yellow and white
 tooth,tooth,p012r_3,Paper
 tooth,tooth,p019v_2,P For writing as well from the left as from the right
 tooth,tooth,p051r_1,Counterproofing
-tooth,tooth,p066r_6,* Or mat
+tooth,tooth,p066r_6" continued="yes,* Or mat
 tooth,tooth,p081r_4,Carton
 tooth,wolf’s tooth,p075v_3,For gilding with or moleu
 tooth,tooth of a wolf or dog,p078v_1,For making bronze in the color of steel
 tooth,tooth of a wolf or dog,p078v_2,For making bronze in the color of gold
 prele,prele,p006r_1,For laying down and seating burnished gold and giving red or green or blue
-horsetail,horsetail,p006r_1,For laying down and seating burnished gold and giving red or green or blue
 cloth,cloth,p006r_1,For laying down and seating burnished gold and giving red or green or blue
 cloth,cloth,p028v_1,Pewterers
 cloth,cloth,p077v_3,Another varnish
@@ -708,8 +707,8 @@ cloth,cloth that should be rather tight,p074r_3,For making varnish
 cloth,white cloth,p079r_2,For making water for disease of the eyes
 cloth,boulting cloth of rough cloth or canvas,p088r_5,Baker
 cloth,white linen cloth,p097r_2,Gilding
-cloth,fine linen cloth,p103r_1,Against burns, excellent
 cloth,wet linen cloth,p103r_1,Against burns, excellent
+cloth,fine linen cloth,p103r_1,Against burns, excellent
 cloth,green cloth,p105v_5,Nightingale
 cloth,woollen cloth,p107r_1,Catching lizards and snakes
 cloth,rough linen cloth,p114r_1,Second cast
@@ -759,33 +758,19 @@ paintbrush,paintbrush,p158r_1,Mercury in the molds for cleaning
 paintbrush,paintbrushes,p058v_3,In fresco
 paintbrush,paintbrushes,p058v_5,Paintbrushes
 paintbrush,paintbrushes,p066r_5,Gilding molding for panels with or mat
-paintbrush,paintbrushes,p066v_4,paintbrushes
+paintbrush,paintbrushes,p066v_4,Paintbrushes
 paintbrush,very thin paintbrushes which have a firm point,p058v_5,Paintbrushes
 paintbrush,oil paintbrush,p060v_3,Spike lavender oil
 paintbrush,paintbrushes composed of two or three rat whiskers,p061v_2,Frames of the Germans 
 paintbrush,fairly large paintbrush,p061v_3,Azur d’esmail in oil
-paintbrush,oil paintbrushes,p065v_7,Imprimatura
+paintbrush,oil paintbrushes,p065v_7,
 paintbrush,paintbrushes for oil,p066r_5,Gilding molding for panels with or mat
-paintbrush,paintbrushes for oil,p066r_6,* Or mat
+paintbrush,paintbrushes for oil,p066r_6" continued="yes,* Or mat
 paintbrush,large oil paintbrushes,p112r_1,For tempering sand
 paintbrush,large paintbrush,p145v_1,Molding plants and flowers
 paintbrush,small paintbrush,p154v_4,Reinforcing flowers and delicate things
 paintbrush,little paintbrush,p156v_1,Molding a fly
-lamp,lamp,p006v_1,For ga cachcages
-lamp,lamp,p043v_2,Pearls
-lamp,lamps,p102r_1,Provisions for the work of Colchis
-lamp,lamps,p102r_2,For the furnace
-grate,grate,p006v_1,For ga cachcages
-grate,grate,p082v_4,Method of casting in bronze
-grate,grate,p083v_3,Bellows
-grate,grate,p100v_2,For ruby take some gold leaf
-grate,grate,p115v_3,Reheating the noyau molds
-grate,grate,p132r_2,Method for reheating the molds
-grate,top grate,p040v_4,Aquafortis
-grate,bottom grate,p040v_4,Aquafortis
-cannule,cannule,p006v_1,For ga cachcages
-cannule,cannules,p006v_1,For ga cachcages
-cannule,enamel cannules,p006v_1,For ga cachcages
+horsetail,horsetail,p006r_1,For laying down and seating burnished gold and giving red or green or blue
 furnace,furnace,p006v_1,For ga cachcages
 furnace,furnace,p016r_1,Founding of soft iron
 furnace,furnace,p036v_3,Glassworkers’ glass
@@ -801,7 +786,6 @@ furnace,furnace,p100v_2,For ruby take some gold leaf
 furnace,furnace,p102r_2,For the furnace
 furnace,furnace,p123r_1, A means di far correr lotnegra
 furnace,furnace,p128r_1,Casting in silver and gold
-furnace,small furnace,p006v_1,For ga cachcages
 furnace,reverberatory furnace,p006v_1,For ga cachcages
 furnace,reverberatory furnace,p012r_4,Plaster
 furnace,reverberatory furnace,p016r_1,Founding of soft iron
@@ -810,12 +794,13 @@ furnace,reverberatory furnace,p124v_2,Casting with gold
 furnace,reverberatory furnace,p127v_1,Founders’ earth
 furnace,reverberatory furnace,p161r_1,Preparation of sand for frames
 furnace,reverberatory furnace,p161v_1,Crocum ferri
+furnace,small furnace,p006v_1,For ga cachcages
 furnace,round furnace,p016r_1,Founding of soft iron
 furnace,square furnace,p016r_1,Founding of soft iron
+furnace,wood furnace,p036v_1,Founder
 furnace,bellows furnace,p036v_1,Founder
 furnace,bellows furnace,p067r_3,Bellows furnace
 furnace,bellows furnace,p086v_1,Excellent sand for lead, tin, and copper
-furnace,wood furnace,p036v_1,Founder
 furnace,annealing furnace,p036v_3,Glassworkers’ glass
 furnace,à vent bellows furnace,p040v_2,Latten and calamine
 furnace,furbishers’ furnace,p096v_3,Yellow varnish
@@ -823,6 +808,21 @@ furnace,little furnace,p100r_4,Vitrified saltpeter
 chafing-dish,chafing-dish,p006v_1,For ga cachcages
 chafing-dish,chafing-dish,p054v_1,On dry preserves
 chafing-dish,chafing-dish,p075v_2,For gilding on wood
+cannule,cannules,p006v_1,For ga cachcages
+cannule,cannule,p006v_1,For ga cachcages
+cannule,enamel cannules,p006v_1,For ga cachcages
+lamp,lamp,p006v_1,For ga cachcages
+lamp,lamp,p043v_2,Pearls
+lamp,lamps,p102r_1,Provisions for the work of Colchis
+lamp,lamps,p102r_2,For the furnace
+grate,grate,p006v_1,For ga cachcages
+grate,grate,p082v_4,Method of casting in bronze
+grate,grate,p083v_3,Bellows
+grate,grate,p100v_2,For ruby take some gold leaf
+grate,grate,p115v_3,Reheating the noyau molds
+grate,grate,p132r_2,Method for reheating the molds
+grate,bottom grate,p040v_4,Aquafortis
+grate,top grate,p040v_4,Aquafortis
 chisel,chisel,p006v_2,For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances
 chisel,chisel,p091r_2,Molding with cuttlefish bone
 chisel,chisel,p094r_1,Furbisher
@@ -835,10 +835,24 @@ chisel,small chisel,p148v_1,Molding turtles
 chisel,small chisel,p150v_1,Molding hollow
 chisel,small chisel,p159r_2,Chiseling
 chisel,small serrated chisels,p150v_1,Molding hollow
+chisel,little small chisels,p150v_1,Molding hollow
 chisel,small chisels,p150v_1,Molding hollow
 chisel,small chisels,p152v_1,Repairing cast things
 chisel,small chisels,p156r_3,Chasing
-chisel,little small chisels,p150v_1,Molding hollow
+burin,burin,p006v_2,For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances
+burin,burin,p017r_1,On the gunner
+burin,burin,p118r_2,For removing flashing and barbs from things molded à noyau
+burin,burin,p131v_1,When the cast of tin or lead becomes porous
+burin,burin,p134v_3,Secret for soldering gold and silver in small works
+burin,burin,p141r_1,Molding a crayfish
+burin,burin,p148v_1,Molding turtles
+burin,burin,p150v_1,Molding hollow
+burin,burin,p152v_1,Repairing cast things
+burin,burin,p156r_3,Chasing
+burin,burin,p163v_3,Repairing
+burin,burins,p141r_1,Molding a crayfish
+burin,small burin,p046r_1,For the teeth, oil of sulfur
+burin,ordinary engraving burin,p156r_3,Chasing
 hammer,hammer,p006v_2,For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances
 hammer,hammer,p030r_2,Pewterer
 hammer,hammer,p032r_1,The body of the cuirass
@@ -855,20 +869,6 @@ hammer,hammer,p145v_2,
 hammer,hammers,p030r_2,Pewterer
 hammer,small finishing hammer,p138v_3,Counterfeit diamonds put in a work
 hammer,trip hammers,p149r_3,Various arts from Germany
-burin,burin,p006v_2,For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances
-burin,burin,p017r_1,On the gunner
-burin,burin,p118r_2,For removing flashing and barbs from things molded à noyau
-burin,burin,p131v_1,When the cast of tin or lead becomes porous
-burin,burin,p134v_3,Secret for soldering gold and silver in small works
-burin,burin,p141r_1,Molding a crayfish
-burin,burin,p148v_1,Molding turtles
-burin,burin,p150v_1,Molding hollow
-burin,burin,p152v_1,Repairing cast things
-burin,burin,p156r_3,Chasing
-burin,burin,p163v_3,Repairing
-burin,burins,p141r_1,Molding a crayfish
-burin,small burin,p046r_1,For the teeth, oil of sulfur
-burin,ordinary engraving burin,p156r_3,Chasing
 mouth,mouth,p007r_4,Fish glue or isinglass and mouth glue
 mouth,mouth,p044v_1,Horsehair sieves
 mortar,mortar,p007v_3,For relieving the pain of G.
@@ -899,14 +899,14 @@ mortar,iron mortar,p078v_1,For making bronze in the color of steel
 mortar,iron mortar,p101r_1,Topaz
 mortar,stone mortar,p078v_2,For making bronze in the color of gold
 mortar,metal mortar,p088r_2,Mortars
-mortar,large mortars,p088r_2,Mortars
 mortar,fine copper mortars,p088r_2,Mortars
+mortar,large mortars,p088r_2,Mortars
 mortar,bronze mortar,p090r_1,Sal ammoniac and iron dross
 mortar,bronze mortar,p100v_1,Gemstones
-mortar,mortar of thick glass,p100r_3,Gemstones
+mortar,mortar of wood,p100r_3,Gemstones
 mortar,mortar of glass,p100r_3,Gemstones
 mortar,mortar of glass,p100v_2,For ruby take some gold leaf
-mortar,mortar of wood,p100r_3,Gemstones
+mortar,mortar of thick glass,p100r_3,Gemstones
 mortar,totally pure copper mortar,p100v_1,Gemstones
 mortar,copper mortar,p101r_1,Topaz
 mortar,steel ver f mortar,p101v_2,Topaz
@@ -930,7 +930,7 @@ iron,little hot iron,p141r_1,Molding a crayfish
 thread,thread,p010v_4,For whitening ceruse
 thread,thread,p023r_1,On petards
 thread,thread,p062v_2,Perspective
-thread,thread,p066v_4,paintbrushes
+thread,thread,p066v_4,Paintbrushes
 thread,thread,p115v_2,For giving venting to the mold
 thread,thread,p117r_1,A means of molding flowers and plants
 thread,thread,p122r_2,Flower in the mouth of the snake
@@ -941,9 +941,6 @@ thread,very soft thread,p105r_4,Gardening
 thread,thin thread,p145v_1,Molding plants and flowers
 siefe,sieves,p011r_1,Painting esmail d’azur in oil
 siefe,fine sieves of raw silk,p013r_4,Fine sieves of raw silk
-trowel,trowel,p011r_1,Painting esmail d’azur in oil
-awl,awl,p011r_1,Painting esmail d’azur in oil
-awl,steel awl,p039v_3,Tracing some history on glass
 alembic,alembic,p011r_1,Painting esmail d’azur in oil
 alembic,alembic,p067v_3,Huiles d’essence
 alembic,alembic,p102v_2,Infusion of anthos or rosemary
@@ -955,7 +952,14 @@ fingernail,fingernail,p087v_3,Sand of the mine of Thoulouse
 fingernail,fingernail,p108r_2,Spalt
 fingernail,fingernail,p111v_4,Lizards
 fingernail,fingernail,p132v_2,Crocum ferri
+trowel,trowel,p011r_1,Painting esmail d’azur in oil
+awl,awl,p011r_1,Painting esmail d’azur in oil
+awl,steel awl,p039v_3,Tracing some history on glass
+ash,ashes,p011v_1,Color of Damascus steel on knives
+ash,ashes,p040v_4,Aquafortis
 touchstone,touchstone,p011v_1,Color of Damascus steel on knives
+sand,sand,p011v_1,Color of Damascus steel on knives
+sand,thin sand,p005r_1,Steel mirrors
 knife,knives,p011v_1,Color of Damascus steel on knives
 knife,knives,p035r_2,For supporting a bucket of water on the tips of three knives laid down without touching the ground
 knife,knife,p030r_2,Pewterer
@@ -985,10 +989,6 @@ knife,well-furbished knife,p033r_1,Knife for cutting the nose or a finger
 knife,knives, either kitchen or table,p035r_2,For supporting a bucket of water on the tips of three knives laid down without touching the ground
 knife,polished knife,p093v_3,Violet and lake
 knife,knife with two handles,p094r_1,Furbisher
-ash,ashes,p011v_1,Color of Damascus steel on knives
-ash,ashes,p040v_4,Aquafortis
-sand,sand,p011v_1,Color of Damascus steel on knives
-sand,thin sand,p005r_1,Steel mirrors
 point,points,p011v_4,For diamond points for engraving
 point,points,p112v_1,For molding Making the arrangement and disposition of the animal
 point,points,p114r_1,Second cast
@@ -1014,19 +1014,19 @@ point,point of the paintbrush &amp; the rest with the flat part,p061r_2,Rounding
 point,sharp point,p082r_4,Clockmakers
 point,halberd point,p094r_1,Furbisher
 point,point of iron,p112v_1,For molding Making the arrangement and disposition of the animal
-point,points of iron,p112v_1,For molding Making the arrangement and disposition of the animal
-point,point of an iron wire,p112v_1,For molding Making the arrangement and disposition of the animal
 point,points of iron wire,p112v_1,For molding Making the arrangement and disposition of the animal
 point,points of iron wire,p129v_1,Animals dried in the oven for a long time
 point,points of iron wire,p133r_3,Marks from the points of iron wire which are found on the head of the animal
+point,points of iron,p112v_1,For molding Making the arrangement and disposition of the animal
+point,point of an iron wire,p112v_1,For molding Making the arrangement and disposition of the animal
 point,delicate points of of fil cist cittern strings,p114r_1,Second cast
 point,point of a hot iron wire,p114r_1,Second cast
 point,point of a hot iron wire,p129v_4,Spider molded on a leaf
 point,small point,p115r_1,Make the cast, reheat the molds, &amp;c Note about everything above |-|
 point,small point,p150v_1,Molding hollow
 point,point of a penknife,p122r_1,Arranging various animals
-point,small points of latten wire,p129v_4,Spider molded on a leaf
 point,point of iron or latten wire,p129v_4,Spider molded on a leaf
+point,small points of latten wire,p129v_4,Spider molded on a leaf
 point,iron points,p130r_1,Animals dried in an oven
 point,iron points,p134r_1,For mending a pierced mold
 point,iron points,p144r_1,Turtles
@@ -1038,10 +1038,10 @@ point,iron point,p156v_1,Molding a fly
 point,little points,p133v_2,Thing that does not release
 point,small points,p135r_3,Vine leaf and small frog
 point,small points,p155v_1,Rose
+point,point of an oiled paintbrush,p137v_1,Tempering sand for molds of flat medals
 point,point of a knife,p137v_1,Tempering sand for molds of flat medals
 point,point of a knife,p141r_1,Molding a crayfish
 point,point of a knife,p145v_1,Molding plants and flowers
-point,point of an oiled paintbrush,p137v_1,Tempering sand for molds of flat medals
 point,knife points,p137v_1,Tempering sand for molds of flat medals
 point,point of gold or hard wood,p139r_1,Casts of lead and tin
 point,iron wire point,p141r_1,Molding a crayfish
@@ -1049,8 +1049,8 @@ point,iron wire point,p150v_1,Molding hollow
 point,iron wire points,p144r_1,Turtles
 point,strong point,p144r_1,Turtles
 point,small points of wood,p145r_2,Cuttlefish bone
-point,point of hot iron,p146v_1,Molding turtles
 point,points of rather strong iron,p146v_1,Molding turtles
+point,point of hot iron,p146v_1,Molding turtles
 point,points of hot, thick iron wire,p146v_1,Molding turtles
 point,point of a small chisel,p148v_1,Molding turtles
 point,hot iron touching point,p150v_1,Molding hollow
@@ -1074,18 +1074,18 @@ leather,leather,p012v_2,Cleaning yellow pearls
 leather,leather,p037v_3,Yellow Amber
 leather,white leather of the color of the wood,p035v_2,For transmuting grain from one vessel to another
 loom,loom,p013r_4,Fine sieves of raw silk
-mallet,mallet,p014r_1,For walls of earth and rustic construction
-mallet,wooden mallet,p015v_3,Stamping
-mallet,large mallet of wood,p167r_1,Petards
-bat,bat,p014r_1,For walls of earth and rustic construction
-ditch-spade,ditch-spade,p014r_1,For walls of earth and rustic construction
 board,boards,p014r_1,For walls of earth and rustic construction
 board,boards,p118r_2,For removing flashing and barbs from things molded à noyau
 board,board,p072r_2,Casting in copper 
 board,wooden board,p006v_2,For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances
 board,small even board,p057v_1,Sheath maker
 board,small board,p130r_1,Animals dried in an oven
+bat,bat,p014r_1,For walls of earth and rustic construction
 beater,beaters,p014r_1,For walls of earth and rustic construction
+ditch-spade,ditch-spade,p014r_1,For walls of earth and rustic construction
+mallet,mallet,p014r_1,For walls of earth and rustic construction
+mallet,wooden mallet,p015v_3,Stamping
+mallet,large mallet of wood,p167r_1,Petards
 frame,frame,p015r_2,Foundry casting
 frame,frame,p015r_3,Casting gold and silver
 frame,frame,p068r_3,Casting
@@ -1097,7 +1097,7 @@ frame,frame,p081r_1,Sand
 frame,frame,p081v_2,Making copper and latten run
 frame,frame,p081v_4,Frame casting
 frame,frame,p082r_2,Frame
-frame,frame,p083v_2, Molding in relief on one part and hollow on the other.
+frame,frame,p083v_2, Molding in relief on one part and hollow on the other
 frame,frame,p084v_1,Sand
 frame,frame,p084v_4,Sand for lead, the most excellent of all, for high and low reliefs
 frame,frame,p085v_4,Experimented sands
@@ -1127,7 +1127,7 @@ frame,frames,p061v_2,Frames of the Germans
 frame,frames,p069r_2,Sand
 frame,frames,p080v_1,Founders of small works  of tin
 frame,frames,p082r_2,Frame
-frame,frames,p083v_2, Molding in relief on one part and hollow on the other.
+frame,frames,p083v_2, Molding in relief on one part and hollow on the other
 frame,frames,p106r_2,Making gold run for casting
 frame,frames,p111r_1,Reheating molds
 frame,frames,p118v_1,Casting in frames
@@ -1144,10 +1144,15 @@ charcoal,charcoal,p016r_1,Founding of soft iron
 charcoal,charcoal,p062r_4,Drawing
 charcoal,charcoal,p064v_1,Apprenticeship of the painter
 charcoal,charcoal,p100v_2,For ruby take some gold leaf
-charcoal,biggest charcoal,p016r_1,Founding of soft iron
-charcoal,big charcoal,p016r_1,Founding of soft iron
 charcoal,new charcoal,p016r_1,Founding of soft iron
+charcoal,big charcoal,p016r_1,Founding of soft iron
+charcoal,biggest charcoal,p016r_1,Founding of soft iron
 charcoal,hot charcoal,p159v_1,Cleaning files
+blast-pipe,blast-pipe,p016r_1,Founding of soft iron
+blast-pipe,blast-pipe,p083v_3,Bellows
+blast-pipe,blast-pipe,p127v_1,Founders’ earth
+blast-pipe,blast-pipe,p128r_1,Casting in silver and gold
+blast-pipe,blast-pipes,p109r_4,Bellows of the forge
 forge,forges,p016r_1,Founding of soft iron
 forge,forge,p041v_1,Glassworkers’ black
 forge,forge,p082v_4,Method of casting in bronze
@@ -1196,11 +1201,6 @@ bellow,small bellows,p128r_1,Casting in silver and gold
 bellow,small bellows,p135v_1,Casting in ☼
 bellow,small &amp; large bellows,p135v_1,Casting in ☼
 calibre,calibre,p016r_1,Founding of soft iron
-blast-pipe,blast-pipe,p016r_1,Founding of soft iron
-blast-pipe,blast-pipe,p083v_3,Bellows
-blast-pipe,blast-pipe,p127v_1,Founders’ earth
-blast-pipe,blast-pipe,p128r_1,Casting in silver and gold
-blast-pipe,blast-pipes,p109r_4,Bellows of the forge
 ladle,ladles,p017r_1,On the gunner
 ladle,ladles,p022v_1,Orgues
 ladle,ladle,p017r_1,On the gunner
@@ -1213,6 +1213,20 @@ cauldron,cauldron,p108r_2,Spalt
 cauldron,cauldron,p137r_1,For casting in red copper
 cauldron,big cauldron,p056r_1,Excellent tempering bath for cuirass bodies
 cauldron,cauldron full of ashes,p096v_1,Grey guards
+compass,compass,p019v_1, Mathematical figures without ruler and compass
+compass,compass,p025v_1,Gunner
+compass,compass,p062v_1,Drawing
+compass,compass,p062v_2,Perspective
+compass,compass,p064r_8,
+compass,compass,p080v_1,Founders of small works  of tin
+compass,compass,p082r_4,Clockmakers
+ruler,ruler,p019v_1, Mathematical figures without ruler and compass
+ruler,ruler,p021r_2,For firing a cannon at night
+ruler,ruler,p062r_1,Perspectives
+ruler,ruler,p062v_1,Drawing
+ruler,ruler,p062v_2,Perspective
+ruler,ruler,p064v_4,Straight lines
+ruler,rulers,p062v_2,Perspective
 quill,quill,p019v_1, Mathematical figures without ruler and compass
 quill,quill,p046v_1,Scribe, Oil of sulfur
 quill,quill,p046v_3,Erasing a letter
@@ -1221,20 +1235,7 @@ quill,quill,p051r_1,Counterproofing
 quill,quill,p058v_5,Paintbrushes
 quill,dutch quill,p102r_4,Glass vessels
 quill,feather quill,p162v_4,Molds of things that do not release
-ruler,ruler,p019v_1, Mathematical figures without ruler and compass
-ruler,ruler,p021r_2,For firing a cannon at night
-ruler,ruler,p062r_1,Perspectives
-ruler,ruler,p062v_1,Drawing
-ruler,ruler,p062v_2,Perspective
-ruler,ruler,p064v_4,Straight lines
-ruler,rulers,p062v_2,Perspective
-compass,compass,p019v_1, Mathematical figures without ruler and compass
-compass,compass,p025v_1,Gunner
-compass,compass,p062v_1,Drawing
-compass,compass,p062v_2,Perspective
-compass,compass,p064r_8,
-compass,compass,p080v_1,Founders of small works  of tin
-compass,compass,p082r_4,Clockmakers
+syringe,syringe,p019v_3,Enemas
 sleeve,sleeve,p019v_3,Enemas
 sleeve,sleeve,p081v_3,Sand
 sleeve,sleeve,p106v_2,
@@ -1242,11 +1243,10 @@ sleeve,sleeve,p139v_1,Cast of wax to represent an animal that one has not got
 sleeve,linen sleeve,p069r_2,Sand
 sleeve,shirt sleeve,p072v_1,Casting
 sleeve,sleeve of a shirt,p088v_1,Sand from pulverized rock salt and sand from the mine finely ground on marble 
-syringe,syringe,p019v_3,Enemas
+lid,lids,p020r_1,For making millas
+ember,embers,p020r_1,For making millas
 hearth,hearth,p020r_1,For making millas
 hearth,hearth,p093r_4,Sand
-ember,embers,p020r_1,For making millas
-lid,lids,p020r_1,For making millas
 glass,glass,p020v_2,Against winds, colic, &amp;c
 glass,glass,p033v_2,For making blood or wine issue from someone’s forehead or from a wall
 glass,glass,p034r_4,XHow not to break a glass with a log or a large stick
@@ -1280,6 +1280,29 @@ pestling,pestling,p055v_4,For casting
 pestling,pestling,p085v_2,Mortars
 pestling,pestling,p101r_1,Topaz
 pestling,pestling,p107r_1,Catching lizards and snakes
+peg,pegs,p023r_1,On petards
+peg,pegs,p072v_1,Casting
+peg,pegs,p080v_1,Founders of small works  of tin
+peg,pegs,p083v_2, Molding in relief on one part and hollow on the other
+peg,pegs,p167r_1,Petards
+peg,peg,p167r_1,Petards
+peg,iron pegs,p022v_1,Orgues
+peg,iron pegs,p023r_1,On petards
+peg,iron pegs,p167r_1,Petards
+peg,iron peg,p167r_1,Petards
+peg,common iron pegs,p167r_1,Petards
+peg,large iron pegs,p167r_1,Petards
+bar,bar,p023r_1,On petards
+auger,auger,p023r_1,On petards
+cord,cord,p023r_1,On petards
+cord,cord,p037v_3,Yellow Amber
+cord,cord,p098r_2,Borders of a garden
+cord,twisted cord of the saw,p109v_1,Toad
+gimlet,gimlet,p023r_1,On petards
+gimlet,gimlet,p167r_1,Petards
+gimlet,gimlets,p080r_1,Petard
+gimlet,gimlets,p167r_1,Petards
+gimlet,gimlets of wheelwrights,p167r_1,Petards
 string,string,p023r_1,On petards
 string,string,p035r_1,For telling someone that you will show teach him something he does not know, and neither do you
 string,string,p045v_2,For adjusting a crooked cannon
@@ -1288,50 +1311,27 @@ string,string,p160v_3,Catching crayfish
 string,string,p167r_1,Petards
 string,very smooth string without knots,p045v_2,For adjusting a crooked cannon
 string,spinet string,p165v_1,Stance of animals
-bar,bar,p023r_1,On petards
-auger,auger,p023r_1,On petards
-gimlet,gimlet,p023r_1,On petards
-gimlet,gimlet,p167r_1,Petards
-gimlet,gimlets,p080r_1,Petard
-gimlet,gimlets,p167r_1,Petards
-gimlet,gimlets of wheelwrights,p167r_1,Petards
 wimble,wimble,p023r_1,On petards
 wimble,wimble,p099v_2,Cannons
 wimble,wimble,p167r_1,Petards
-cord,cord,p023r_1,On petards
-cord,cord,p037v_3,Yellow Amber
-cord,cord,p098r_2,Borders of a garden
-cord,twisted cord of the saw,p109v_1,Toad
-peg,pegs,p023r_1,On petards
-peg,pegs,p072v_1,Casting
-peg,pegs,p080v_1,Founders of small works  of tin
-peg,pegs,p083v_2, Molding in relief on one part and hollow on the other.
-peg,pegs,p167r_1,Petards
-peg,peg,p167r_1,Petards
-peg,iron pegs,p022v_1,Orgues
-peg,iron pegs,p023r_1,On petards
-peg,iron pegs,p167r_1,Petards
-peg,common iron pegs,p167r_1,Petards
-peg,large iron pegs,p167r_1,Petards
-peg,iron peg,p167r_1,Petards
+frail,frails,p024v_1,For bringing a cannon over land
+frail,frail,p024v_1,For bringing a cannon over land
 shovel,shovels,p024v_1,For bringing a cannon over land
 shovel,shovel,p092v_2,Congealing mercury
 shovel,shovels of iron,p039r_2,Pastel woad
-frail,frails,p024v_1,For bringing a cannon over land
-frail,frail,p024v_1,For bringing a cannon over land
+rammer,rammer,p024v_1,For bringing a cannon over land
 bag,bags,p024v_1,For bringing a cannon over land
 bag,bag,p035v_2,For transmuting grain from one vessel to another
 bag,bag,p152v_1,Repairing cast things
-wedge,wedges,p024v_1,For bringing a cannon over land
-wedge,wedges,p160r_1,Press for the large molds
-rammer,rammer,p024v_1,For bringing a cannon over land
 bung,bungs,p024v_1,For bringing a cannon over land
 bung,wooden bungs,p024v_1,For bringing a cannon over land
+wedge,wedges,p024v_1,For bringing a cannon over land
+wedge,wedges,p160r_1,Press for the large molds
+blade,blades,p025v_1,Gunner
 borer,borer,p025v_1,Gunner
 borer,borer,p026r_1,Cannonball
 borer,borer,p080v_1,Founders of small works  of tin
 borer,borer,p099v_2,Cannons
-blade,blades,p025v_1,Gunner
 pestle,pestle,p026r_2,Petard
 pestle,pestle,p038v_2,Against nose bleed and for dyeing
 pestle,pestle,p042r_2,Wax for seal and imprint
@@ -1360,8 +1360,10 @@ pestle,pestles,p118r_3,For grottos
 pestle,pestles,p119v_1,Fashion of preparing a spalt spat
 pestle,iron pestle,p088r_2,Mortars
 pestle,pestle of pure copper,p100v_1,Gemstones
-hammered,hammered,p030r_2,Pewterer
-desgrusouer,desgrusouer,p030r_2,Pewterer
+anvil,anvils,p030r_2,Pewterer
+anvil,anvil,p137r_3,Clamps
+anvil,anvil,p159r_3, Fish glue
+desgrusoue,desgrusoue,p030r_2,Pewterer
 hand,hand,p030r_2,Pewterer
 hand,hand,p053v_1,Silkworms
 hand,hand,p089v_1,Sal ammoniac and alabaster
@@ -1372,7 +1374,7 @@ hand,hand,p119r_1,Advice about the above
 hand,hand,p120r_3,IlNightingale
 hand,hand,p122r_2,Flower in the mouth of the snake
 hand,hands,p069r_2,Sand
-hand,hands,p083v_2, Molding in relief on one part and hollow on the other.
+hand,hands,p083v_2, Molding in relief on one part and hollow on the other
 hand,hands,p088v_2,Mineral sand
 hand,hands,p111r_4,Clay earth
 hand,hands,p111v_5,Composition of sand
@@ -1380,28 +1382,26 @@ hand,hands,p112r_3,Molding en noyau. Mixture of sand
 hand,hands,p112v_1,For molding Making the arrangement and disposition of the animal
 hand,hands,p118v_1,Casting in frames
 hand,right hand,p036r_1,For transmuting a ball into a thimble, cunning
-esgrusouer,esgrusouer,p030r_2,Pewterer
-rope,rope,p030r_2,Pewterer
-rope,rope,p152v_1,Repairing cast things
-desgrusoue,desgrusoue,p030r_2,Pewterer
+crossbar,crossbar,p030r_2,Pewterer
+hammered,hammered,p030r_2,Pewterer
+desgrusouer,desgrusouer,p030r_2,Pewterer
 plane,plane,p030r_2,Pewterer
 plane,plane,p094r_1,Furbisher
 plane,small narrow plane,p094r_1,Furbisher
 plane,joiner’s plane,p094r_1,Furbisher
-anvil,anvils,p030r_2,Pewterer
-anvil,anvil,p137r_3,Clamps
-anvil,anvil,p159r_3, Fish glue
-crossbar,crossbar,p030r_2,Pewterer
+esgrusouer,esgrusouer,p030r_2,Pewterer
+rope,rope,p030r_2,Pewterer
+rope,rope,p152v_1,Repairing cast things
 filter,filter,p031r_2,Colored waters
 filter,filter,p166v_4,Softening gold
 shale,shale,p031v_4,Painting on glass
-nailed,nailed,p033r_1,Knife for cutting the nose or a finger
-nailed,nailed,p160r_1,Press for the large molds
-nailed,leather nailed onto a piece of wood,p030r_2,Pewterer
 handle,handle,p033r_1,Knife for cutting the nose or a finger
 handle,little handle,p015v_2,Letter, more legible
 handle,handle of paintbrushes,p058v_5,Paintbrushes
 handle,handle of a hammer,p148r_2,Whitening
+nailed,nailed,p033r_1,Knife for cutting the nose or a finger
+nailed,nailed,p160r_1,Press for the large molds
+nailed,leather nailed onto a piece of wood,p030r_2,Pewterer
 toothpick,toothpick,p033r_2,XFor relighting an extinguished candle between your hands without blowing
 toothpick,toothpick,p034r_4,XHow not to break a glass with a log or a large stick
 token,token,p033v_1,For making it seem that to someone that he has a piece of silver on his forehead
@@ -1410,38 +1410,38 @@ funnel,funnel of white iron,p033v_2,For making blood or wine issue from someone�
 bedpost,bedpost,p034r_1,For telling someone that by putting holding a finger to his forehead, you will prevent him from exiting a chamber
 candlestick,candlestick,p034r_3,For making a candlestick hold to the wall without making a hole in it
 log,log,p034r_4,XHow not to break a glass with a log or a large stick
+jewel,jewel,p034v_1,For melting or transmuting a jewel put inside a box
 box,box,p034v_1,For melting or transmuting a jewel put inside a box
 box,box,p120v_6,Keeping dry flowers in the same state all year
 box,boxes,p034v_1,For melting or transmuting a jewel put inside a box
 box,boxes,p102r_2,For the furnace
-box,small box,p034v_1,For melting or transmuting a jewel put inside a box
-box,little box,p034v_1,For melting or transmuting a jewel put inside a box
+box,box of boxwood banded with rings,p034v_1,For melting or transmuting a jewel put inside a box
 box,large box,p034v_1,For melting or transmuting a jewel put inside a box
+box,little box,p034v_1,For melting or transmuting a jewel put inside a box
+box,leather box,p034v_1,For melting or transmuting a jewel put inside a box
+box,small box,p034v_1,For melting or transmuting a jewel put inside a box
 box,larger box,p034v_1,For melting or transmuting a jewel put inside a box
 box,smaller box,p034v_1,For melting or transmuting a jewel put inside a box
-box,box of boxwood banded with rings,p034v_1,For melting or transmuting a jewel put inside a box
-box,leather box,p034v_1,For melting or transmuting a jewel put inside a box
 box,fir box,p053v_1,Silkworms
 box,flat box,p120r_2,Sand for casting in gold
 box,glass boxes,p121r_1,For keeping fruits all year
-jewel,jewel,p034v_1,For melting or transmuting a jewel put inside a box
 pouch,pouch,p035v_2,For transmuting grain from one vessel to another
 pouch,conjuror’s pouch,p035v_2,For transmuting grain from one vessel to another
-bushel,bushel,p035v_2,For transmuting grain from one vessel to another
-hat,hat,p035v_2,For transmuting grain from one vessel to another
-hat,hat,p105v_3,Catching nightingales See the 15th folio after this.
 bell,bell,p035v_2,For transmuting grain from one vessel to another
 bell,wooden bell,p035v_2,For transmuting grain from one vessel to another
+bushel,bushel,p035v_2,For transmuting grain from one vessel to another
 grain,grain,p035v_2,For transmuting grain from one vessel to another
 napkin,napkin,p035v_2,For transmuting grain from one vessel to another
 napkin,napkin,p089r_1,Sand of burnt ox bones and rock salt
 napkin,napkin,p089v_1,Sal ammoniac and alabaster
 napkin,napkin,p090r_1,Sal ammoniac and iron dross
-thimble,thimble,p036r_1,For transmuting a ball into a thimble, cunning
+hat,hat,p035v_2,For transmuting grain from one vessel to another
+hat,hat,p105v_3,Catching nightingales See the 15th folio after this.
 ball,ball,p036r_1,For transmuting a ball into a thimble, cunning
 sheath,sheath,p036r_1,For transmuting a ball into a thimble, cunning
-sheath,small sheath of plain leather, such as cow or morocco,p036r_1,For transmuting a ball into a thimble, cunning
 sheath,leather sheath,p036r_1,For transmuting a ball into a thimble, cunning
+sheath,small sheath of plain leather, such as cow or morocco,p036r_1,For transmuting a ball into a thimble, cunning
+thimble,thimble,p036r_1,For transmuting a ball into a thimble, cunning
 pincer,pincers,p036v_2,Four à vent
 pincer,pincers,p052r_1,The work done in Algiers
 pincer,pincers,p072r_2,Casting in copper 
@@ -1450,12 +1450,12 @@ pincer,pincers,p111v_4,Lizards
 pincer,pincers,p128r_1,Casting in silver and gold
 pincer,pincers,p144r_1,Turtles
 pincer,pincers,p167r_1,Petards
+pincer,small pincers with a long beak,p006v_1,For ga cachcages
 pincer,small pincers,p006v_1,For ga cachcages
 pincer,small pincers,p007v_2,Against windy colic
 pincer,small pincers,p112v_1,For molding Making the arrangement and disposition of the animal
 pincer,small pincers,p129v_4,Spider molded on a leaf
 pincer,small pincers,p156v_1,Molding a fly
-pincer,small pincers with a long beak,p006v_1,For ga cachcages
 pincer,small flat pincers,p114r_1,Second cast
 pincer,flat pincers of iron wire,p137r_3,Clamps
 pincer,little pincers,p144r_1,Turtles
@@ -1465,13 +1465,13 @@ stone,stone,p036v_3,Glassworkers’ glass
 stone,stone,p094r_1,Furbisher
 stone,stone,p098v_5,Founding
 stone,pulverized pumice stone,p037v_3,Yellow Amber
-stone,thunder stone,p094r_1,Furbisher
 stone,black stone,p094r_1,Furbisher
+stone,thunder stone,p094r_1,Furbisher
 stone,stone from istre,p169v_1,Molding very thin like bimbalotiers do
 stake,stake,p037v_1,Gardener
 stake,iron stake,p098r_2,Borders of a garden
-cane,cane,p037v_3,Yellow Amber
 desramonet,desramonet,p037v_3,Yellow Amber
+cane,cane,p037v_3,Yellow Amber
 emery,emery,p038r_3,Sapphire
 emery,emery,p038r_4,Amber
 emery,emery,p094r_1,Furbisher
@@ -1504,7 +1504,7 @@ luted,luted,p132r_2,Method for reheating the molds
 luted,luted,p141r_1,Molding a crayfish
 luted,luted,p145v_2,
 luted,crucible covered with another, well luted,p002v_2,Emeralds of Brissac
-luted,alembic well luted,p007v_3,For relieving the pain of G.
+luted,alembic, well-luted,p007v_3,For relieving the pain of G.
 porphyry,porphyry,p041r_03,Sand
 porphyry,porphyry,p068r_3,Casting
 porphyry,porphyry,p083r_2,Sand for copper medals
@@ -1550,10 +1550,10 @@ vial,glass vial,p075r_4,For making aquafortis
 vial,glass vial,p076v_1,For making very beautiful color of gold &amp; of little expense
 vial,glass vial,p077r_4,Recipe for making bronze and varnish of many sorts
 vial,glass vial,p078r_1,Another varnish
+baton,baton,p045r_1,Loading an arquebus with hail shot
 pipe,pipe,p045r_1,Loading an arquebus with hail shot
 pipe,pipe,p080r_3,Fountains
 pipe,pipe,p109v_2,Killing snakes for molding
-baton,baton,p045r_1,Loading an arquebus with hail shot
 ramrod,ramrod,p045v_1,Loading an arquebus
 ramrod,ramrod,p055r_1,For firing a schioppo senza rumore
 ramrod,little ramrod,p045v_1,Loading an arquebus
@@ -1608,12 +1608,6 @@ tile,good tile,p123r_1, A means di far correr lotnegra
 puncheon,puncheon,p049r_1,Casting of lead
 puncheon,puncheons,p165r_6,Repairing snakes and lizards
 puncheon,relief puncheons,p170r_1,Currency medals
-dish,dish,p049v_2,Grain of lead
-dish,dish,p161r_1,Preparation of sand for frames
-dish,chafing dish,p071v_1,Varnish
-dish,chafing dish,p088r_3,Varnish
-dish,tin dish,p072v_1,Casting
-dish,dish of fine tin,p092r_1,Sand Mixture easy to melt
 card,card,p049v_2,Grain of lead
 card,card,p069r_2,Sand
 card,card,p085v_4,Experimented sands
@@ -1657,12 +1651,13 @@ needle,needles,p111r_5,Iron wire
 needle,needles,p112v_1,For molding Making the arrangement and disposition of the animal
 needle,fine needle of steel,p112v_1,For molding Making the arrangement and disposition of the animal
 needle,thick needle,p122r_1,Arranging various animals
-stopper,stopper,p050r_1,Keeping fruit for the entire year
-stopper,stopper of the bottle,p029v_6,Dragon’s blood
-ampul,ampul,p050r_1,Keeping fruit for the entire year
-ampul,glass ampul,p050r_1,Keeping fruit for the entire year
-basket,basket,p050r_1,Keeping fruit for the entire year
-basket,basket,p160v_3,Catching crayfish
+dish,dish,p049v_2,Grain of lead
+dish,dish,p161r_1,Preparation of sand for frames
+dish,chafing dish,p071v_1,Varnish
+dish,chafing dish,p088r_3,Varnish
+dish,tin dish,p072v_1,Casting
+dish,dish of fine tin,p092r_1,Sand Mixture easy to melt
+weight,weights,p050r_1,Keeping fruit for the entire year
 bottle,bottle,p050r_1,Keeping fruit for the entire year
 bottle,bottle,p052r_1,The work done in Algiers
 bottle,bottle,p052v_2,Colors
@@ -1687,7 +1682,20 @@ bottle,bottle of water,p117r_1,A means of molding flowers and plants
 bottle,bottle in which one boils tisane,p118v_1,Casting in frames
 bottle,bottle of common water,p118v_1,Casting in frames
 bottle,glass bottles,p121r_1,For keeping fruits all year
-weight,weights,p050r_1,Keeping fruit for the entire year
+stopper,stopper,p050r_1,Keeping fruit for the entire year
+stopper,stopper of the bottle,p029v_6,Dragon’s blood
+basket,basket,p050r_1,Keeping fruit for the entire year
+basket,basket,p160v_3,Catching crayfish
+ampul,ampul,p050r_1,Keeping fruit for the entire year
+ampul,glass ampul,p050r_1,Keeping fruit for the entire year
+carton,carton,p050r_2,Molding
+carton,carton,p080v_1,Founders of small works  of tin
+carton,carton,p086v_1,Excellent sand for lead, tin, and copper
+carton,carton,p139r_1,Casts of lead and tin
+carton,carton,p153r_2,Giving the thickness that you wish to a medal
+carton,carton,p169v_1,Molding very thin like bimbalotiers do
+carton,cartons,p139r_1,Casts of lead and tin
+carton,adapted carton,p139r_1,Casts of lead and tin
 medal,medal,p050r_2,Molding
 medal,relief medal,p012v_1,Molding stucco promptly
 paper,paper,p050r_2,Molding
@@ -1703,24 +1711,14 @@ paper,paper,p139r_1,Casts of lead and tin
 paper,paper,p157r_1,A means for goldsmiths for molding hollow
 paper,paper,p169v_1,Molding very thin like bimbalotiers do
 paper,burning paper,p071r_3,Mulled and sugared wine
-carton,carton,p050r_2,Molding
-carton,carton,p080v_1,Founders of small works  of tin
-carton,carton,p086v_1,Excellent sand for lead, tin, and copper
-carton,carton,p139r_1,Casts of lead and tin
-carton,carton,p153r_2,Giving the thickness that you wish to a medal
-carton,carton,p169v_1,Molding very thin like bimbalotiers do
-carton,cartons,p139r_1,Casts of lead and tin
-carton,adapted carton,p139r_1,Casts of lead and tin
-lime-twig,lime-twigs,p050v_1,Small birds
 cage,cages,p050v_1,Small birds
 cage,cage,p105v_5,Nightingale
 cage,cage,p120r_3,IlNightingale
+lime-twig,lime-twigs,p050v_1,Small birds
 burnisher,burnisher,p051r_1,Counterproofing
 burnisher,burnisher,p096v_2,Color of water
 burnisher,burnisher,p097r_3,Gilding with silver
 roller,rollers,p051r_2,Cutters of printing plates
-fingertip,fingertip,p051r_2,Cutters of printing plates
-fingertip,fingertip,p097v_1,Mastic varnish dry in a half hour
 felt,felt,p051r_2,Cutters of printing plates
 felt,pieces of plump &amp; thick felt,p164v_1,Molds
 linen,linen,p051r_2,Cutters of printing plates
@@ -1734,10 +1732,12 @@ linen,white linen,p053v_1,Silkworms
 linen,very fine linen,p081r_1,Sand
 linen,coarse linen,p129r_3,Viper color
 linen,bad linen,p149r_1,Softening iron and rendering it very soft
+fingertip,fingertip,p051r_2,Cutters of printing plates
+fingertip,fingertip,p097v_1,Mastic varnish dry in a half hour
+pitcher,pitcher,p052r_1,The work done in Algiers
+℥,℥,p052r_1,The work done in Algiers
 mattra,mattras,p052r_1,The work done in Algiers
 mattra,large glass mattras,p052r_1,The work done in Algiers
-℥,℥,p052r_1,The work done in Algiers
-pitcher,pitcher,p052r_1,The work done in Algiers
 stoppered,stoppered,p052v_2,Colors
 bolt,bolt,p053r_1,Soldering a vise
 bolt,bolt,p167r_1,Petards
@@ -1759,7 +1759,7 @@ palette,palette,p093v_2,Azure
 palette,palette,p093v_3,Violet and lake
 palette,oil palette,p011r_1,Painting esmail d’azur in oil
 press,press,p057v_1,Sheath maker
-press,press,p083v_2, Molding in relief on one part and hollow on the other.
+press,press,p083v_2, Molding in relief on one part and hollow on the other
 press,press,p091r_2,Molding with cuttlefish bone
 press,press,p118v_1,Casting in frames
 press,press,p126v_2,Plaster
@@ -1778,7 +1778,7 @@ press,very tight presses,p139r_1,Casts of lead and tin
 press,large wooden presses made with screws,p160r_1,Press for the large molds
 crayon,crayons,p057v_2,Painter
 cotton,cotton,p057v_2,Painter
-cotton,cotton,p066r_6,* Or mat
+cotton,cotton,p066r_6" continued="yes,* Or mat
 cotton,cotton,p075v_2,For gilding on wood
 cotton,cotton,p153r_2,Giving the thickness that you wish to a medal
 eye,eye,p062v_1,Drawing
@@ -1861,24 +1861,24 @@ bone,cuttlefish bone,p139r_1,Casts of lead and tin
 bone,cuttlefish bone,p145r_2,Cuttlefish bone
 bone,counter bone,p091r_2,Molding with cuttlefish bone
 bone,cuttlefish bones,p157r_1,A means for goldsmiths for molding hollow
-gratteau,gratteau,p094r_1,Furbisher
-boxwood,boxwood,p094r_1,Furbisher
-filed,filed,p094r_1,Furbisher
-grateau,grateau,p094r_1,Furbisher
-thunderstone,thunderstone,p094r_1,Furbisher
 arson,arson,p094r_1,Furbisher
-flin,flin,p094r_1,Furbisher
-felin,felin,p094r_1,Furbisher
-grindstone,grindstone,p094r_1,Furbisher
 well-forged,well-forged,p094r_1,Furbisher
+filed,filed,p094r_1,Furbisher
+flin,flin,p094r_1,Furbisher
 chameau,chameau,p094r_1,Furbisher
+grateau,grateau,p094r_1,Furbisher
+grindstone,grindstone,p094r_1,Furbisher
+thunderstone,thunderstone,p094r_1,Furbisher
+fustée,fustée,p094r_1,Furbisher
 foot,foot,p094r_1,Furbisher
 foot,foot,p110r_3,Snakes
 foot,foot,p145r_2,Cuttlefish bone
 foot,foot,p152v_1,Repairing cast things
-fustée,fustée,p094r_1,Furbisher
+gratteau,gratteau,p094r_1,Furbisher
+felin,felin,p094r_1,Furbisher
 chalk,chalk,p094r_1,Furbisher
 chalk,dry chalk,p094r_1,Furbisher
+boxwood,boxwood,p094r_1,Furbisher
 tweezer,tweezers,p097r_2,Gilding
 tweezer,tweezers,p097r_3,Gilding with silver
 firkin,firkin,p098v_2,Salted artichokes
@@ -1888,8 +1888,8 @@ rod,thick round iron rod,p036v_3,Glassworkers’ glass
 rod,iron rod,p081r_3,Plaster
 rod,iron rod,p097r_2,Gilding
 brick,bricks,p098v_5,Founding
-bore,bore,p099v_2,Cannons
 boring,boring,p099v_2,Cannons
+bore,bore,p099v_2,Cannons
 fornaise,fornaise,p100v_1,Gemstones
 fornaise,fornaise of those who make pots,p108r_2,Spalt
 fornaise,fornaise of the potters,p119v_1,Fashion of preparing a spalt spat
@@ -1930,8 +1930,8 @@ clamp,clamp,p132r_1,Mold made in two casts
 clamp,clamp,p134v_2, For gold casts in large works
 clamp,clamp,p148v_1,Molding turtles
 tongue,tongue,p111v_1,Sal ammoniac water
-basin,basin,p112r_1,For tempering sand
 flagon,flagon,p112r_1,For tempering sand
+basin,basin,p112r_1,For tempering sand
 cast,cast,p116v_2,Mixture of tin and lead
 chaple,chaple,p118r_2,For removing flashing and barbs from things molded à noyau
 chaple,chaple,p131v_1,When the cast of tin or lead becomes porous
@@ -1945,8 +1945,8 @@ chaple,chaple,p163v_3,Repairing
 chaple,chaple,p170r_6,Cleaning closed molds
 vase,vase,p119v_1,Fashion of preparing a spalt spat
 drawer,drawer,p120r_3,IlNightingale
-hourglass,hourglass,p120v_6,Keeping dry flowers in the same state all year
 fist,fist,p120v_6,Keeping dry flowers in the same state all year
+hourglass,hourglass,p120v_6,Keeping dry flowers in the same state all year
 quarton,quarton,p124r_3,Spider’s web
 wax,wax,p124v_3,A means to make the gate for small female lizards
 wax,wax,p141r_1,Molding a crayfish
@@ -1982,9 +1982,9 @@ almond,almond,p126r_1,Molding fruits and animals in sugar
 metal,metals,p128r_1,Casting in silver and gold
 brushed,brushed,p128v_1,Whitening of cast silver
 blood,blood,p133v_2,Thing that does not release
+moulet,moulets,p135v_1,Casting in ☼
 fournaise,fournaise,p135v_1,Casting in ☼
 fournaise,glassmaker’s fournaise,p107r_1,Catching lizards and snakes
-moulet,moulets,p135v_1,Casting in ☼
 tow,tows,p137r_1,For casting in red copper
 scraper,scraper,p139r_1,Casts of lead and tin
 taper,taper,p139v_1,Cast of wax to represent an animal that one has not got
@@ -1999,8 +1999,8 @@ circle,circle of clay,p155r_1,Molding a rose
 circle,clay circle,p146v_1,Molding turtles
 circle,clay circle,p150v_1,Molding hollow
 circle,circle of soft clay,p150v_1,Molding hollow
-ear,ear,p145r_2,Cuttlefish bone
 knee,knee,p145r_2,Cuttlefish bone
+ear,ear,p145r_2,Cuttlefish bone
 contour,contour,p145v_1,Molding plants and flowers
 contour,clay contour,p146v_1,Molding turtles
 contour,clay contour,p153r_2,Giving the thickness that you wish to a medal
@@ -2019,22 +2019,22 @@ onglet,onglet,p156r_3,Chasing
 onglet,onglet,p163v_3,Repairing
 chasing,chasing,p156r_3,Chasing
 chiseling,chiseling,p159r_2,Chiseling
-stirrup,stirrup,p160r_1,Press for the large molds
-stirrup,stirrup or screw of iron,p139r_1,Casts of lead and tin
 pillar,pillars,p160r_1,Press for the large molds
 pillar,small iron pillars,p160r_1,Press for the large molds
+stirrup,stirrup,p160r_1,Press for the large molds
+stirrup,stirrup or screw of iron,p139r_1,Casts of lead and tin
 semal,semal,p161r_1,Preparation of sand for frames
-glofe,gloves,p163r_1,Perfumer
 glove,glove,p163r_1,Perfumer
+glofe,gloves,p163r_1,Perfumer
 cupel,cupel,p164r_3,Leady silver
-fork,forks,p167r_1,Petards
-crutch,crutches,p167r_1,Petards
-axis,axes,p167r_1,Petards
 saw,saws,p167r_1,Petards
 saw,knife-like saws,p167r_1,Petards
+crutch,crutches,p167r_1,Petards
+axis,axes,p167r_1,Petards
+fork,forks,p167r_1,Petards
 matrix,matrices,p170r_1,Currency medals
-cutting file,cutting file,p006v_1,For ga cachcages
 wood model,wood model,p006v_1,For ga cachcages
+cutting file,cutting file,p006v_1,For ga cachcages
 piece of felt,piece of felt,p006v_2,For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances
 piece of felt,piece of felt,p051r_2,Cutters of printing plates
 marcasite powder,marcasite powder,p008v_1,Polishing of the balas ruby
@@ -2046,28 +2046,28 @@ piece of leather,piece of leather,p011v_5,Polishing wheel of copper
 piece of leather,piece of leather,p035v_2,For transmuting grain from one vessel to another
 covered oven,covered oven,p012r_2,Chimolée
 barbers oven,barbers' ovens,p012r_4,Plaster
-goldsmiths’ bouteure,goldsmiths’ bouteure,p012v_2,Cleaning yellow pearls
 powder of the said tripoli,powder of the said tripoli,p012v_2,Cleaning yellow pearls
+goldsmiths’ bouteure,goldsmiths’ bouteure,p012v_2,Cleaning yellow pearls
 iron casket,iron casket,p012v_3,For whitening enilanroc
 glassworkers’ solder,glassworkers’ solders,p012v_3,For whitening enilanroc
 lead tinwheel,lead tinwheel,p012v_3,For whitening enilanroc
 fine &amp; delicate siefe,fine &amp; delicate sieves,p013r_4,Fine sieves of raw silk
 measuring line,measuring line,p014r_1,For walls of earth and rustic construction
-long pole,long poles,p014r_1,For walls of earth and rustic construction
 chevron beam,chevron beams,p014r_1,For walls of earth and rustic construction
+long pole,long poles,p014r_1,For walls of earth and rustic construction
 round or oval-shaped triblet,round or oval-shaped triblet,p015v_4,Softening horn
-iron or metal shell,iron or metal shells,p016r_1,Founding of soft iron
 bellows’ pipe,bellows’ pipes,p016r_1,Founding of soft iron
+iron or metal shell,iron or metal shells,p016r_1,Founding of soft iron
 needle’s worth of fine silk,needle’s worth of fine silk,p016v_2,For removing fine hair from the forehead
 well closed andtin vessel,well closed andtin vessel,p016v_4,Keeping oranges
 leather sleeves or bag,leather sleeves or bags,p019v_3,Enemas
 plumb line,plumb line,p021r_2,For firing a cannon at night
 plumb line,plumb lines,p062v_2,Perspective
 model of paper,model of paper,p025v_1,Gunner
-iron wheel,iron wheels,p030r_2,Pewterer
-cutting iron,cutting iron,p030r_2,Pewterer
 soldering iron,soldering iron,p030r_2,Pewterer
 emery stone powder,emery stone powder,p030r_2,Pewterer
+iron wheel,iron wheels,p030r_2,Pewterer
+cutting iron,cutting iron,p030r_2,Pewterer
 stick of well dried between wicker,stick of well dried between wicker,p033r_2,XFor relighting an extinguished candle between your hands without blowing
 piece of silver,piece of silver,p033v_1,For making it seem that to someone that he has a piece of silver on his forehead
 bodkin rounded at the tip &amp; that goes into its handle,bodkin rounded at the tip &amp; that goes into its handle,p033v_2,For making blood or wine issue from someone’s forehead or from a wall
@@ -2075,8 +2075,8 @@ leather cover of the same length as the box,leather cover of the same length as 
 pikes, with joist,pikes, with joists,p035r_2,For supporting a bucket of water on the tips of three knives laid down without touching the ground
 folded handkerchief,folded handkerchief,p035v_2,For transmuting grain from one vessel to another
 small wooden bushel,small wooden bushels,p035v_2,For transmuting grain from one vessel to another
-boxwood ball,boxwood balls,p036r_1,For transmuting a ball into a thimble, cunning
 little &amp; ring finger,little &amp; ring fingers,p036r_1,For transmuting a ball into a thimble, cunning
+boxwood ball,boxwood balls,p036r_1,For transmuting a ball into a thimble, cunning
 four à vent,four à vent,p036v_1,Founder
 four à vent,four à vent,p036v_2,Four à vent
 four à vent,four à vent,p079v_4,Mixture for printers
@@ -2094,20 +2094,20 @@ sublimatorio di vetro,sublimatorio di vetro,p043r_3,Purple
 writing quill,writing quill,p046v_2,Shoemaker
 writing quill,writing quill,p046v_3,Erasing a letter
 those for glassmaker,those for glassmakers,p047v_2,Founding
-pick of wood or iron,pick of wood or iron,p048v_1,Extraction of regulus
 varnished earthenware pot,varnished earthenware pot,p048v_1,Extraction of regulus
+pick of wood or iron,pick of wood or iron,p048v_1,Extraction of regulus
 copper molds engraved with a burin,copper molds engraved with a burin,p049r_4,Pewterers
 playing card,playing card,p049v_2,Grain of lead
 bottom of a glass,bottom of a glass,p051r_1,Counterproofing
-wet napkin,wet napkins,p051r_2,Cutters of printing plates
 piece of white paper,piece of white paper,p051r_2,Cutters of printing plates
 piece of paper,piece of paper,p051r_2,Cutters of printing plates
 piece of paper,piece of paper,p089v_1,Sal ammoniac and alabaster
-wood block,wood block,p051r_2,Cutters of printing plates
 wood block,wood blocks,p051r_2,Cutters of printing plates
+wood block,wood block,p051r_2,Cutters of printing plates
+wet napkin,wet napkins,p051r_2,Cutters of printing plates
 earthen jug,earthen jug,p052r_1,The work done in Algiers
-feather cushion,feather cushions,p053v_1,Silkworms
 chafing dishes &amp; with glowing charcoal,chafing dishes &amp; with glowing charcoal,p053v_1,Silkworms
+feather cushion,feather cushions,p053v_1,Silkworms
 lit hay,lit hay,p054v_4,For disguising a horse
 dung heap,dung heap,p056v_1,Painter
 dung heap,dung heap,p076r_1,For making wood green
@@ -2121,25 +2121,17 @@ tip of another ruler,tip of another ruler,p062v_2,Perspective
 judgement of the eye,judgement of the eye,p062v_2,Perspective
 linen cloths soaked with water from a honey beehive,linen cloths soaked with water from a honey beehive,p066v_1,For preventing teats from swelling d or to diminish overly large ones
 small stick split and quartered at the tip,small stick split and quartered at the tip,p071v_1,Varnish
-table is quite even,table is quite even,p080v_1,Founders of small works  of tin
 a bit of cork,a bit of cork,p080v_1,Founders of small works  of tin
+table is quite even,table is quite even,p080v_1,Founders of small works  of tin
 copper kettle,copper kettle,p084r_5,Sand from a mine in Thoulouse
 very clean &amp; smooth table,very clean &amp; smooth table,p084v_4,Sand for lead, the most excellent of all, for high and low reliefs
 the apothecaries’ double,the apothecaries’ double,p085v_4,Experimented sands
 mustard mill,mustard mill,p090v_1,Terre fondue of potters
-shards of wood,shards of wood,p091r_2,Molding with cuttlefish bone
-hooked rooftile,hooked rooftile,p091r_2,Molding with cuttlefish bone
 hands joined between your two knee,hands joined between your two knees,p091r_2,Molding with cuttlefish bone
-pulverized emery,pulverized emery,p094r_1,Furbisher
-baston a felinder,baston a felinder,p094r_1,Furbisher
-joiners’ bench,joiners’ bench,p094r_1,Furbisher
-spinning wheel,spinning wheel,p094r_1,Furbisher
-sharpening stone,sharpening stone,p094r_1,Furbisher
-scabbard bench,scabbard bench,p094r_1,Furbisher
-baton à felinder,baton à felinder,p094r_1,Furbisher
-small iron tool,small iron tool,p094r_1,Furbisher
-round plane, also mounted with two handle,round plane, also mounted with two handles,p094r_1,Furbisher
+hooked rooftile,hooked rooftile,p091r_2,Molding with cuttlefish bone
+shards of wood,shards of wood,p091r_2,Molding with cuttlefish bone
 dog skin,dog skin,p094r_1,Furbisher
+baston a felinder,baston a felinder,p094r_1,Furbisher
 iron wire,iron wire,p094r_1,Furbisher
 iron wire,iron wire,p107r_1,Catching lizards and snakes
 iron wire,iron wire,p121v_2,Silver for casting
@@ -2150,10 +2142,18 @@ iron wire,iron wire,p134v_2, For gold casts in large works
 iron wire,iron wire,p145v_1,Molding plants and flowers
 iron wire,iron wire,p157v_2,Molding a bird
 iron wire,iron wires,p150v_1,Molding hollow
+round plane, also mounted with two handle,round plane, also mounted with two handles,p094r_1,Furbisher
+spinning wheel,spinning wheel,p094r_1,Furbisher
+pulverized emery,pulverized emery,p094r_1,Furbisher
+joiners’ bench,joiners’ bench,p094r_1,Furbisher
+baton à felinder,baton à felinder,p094r_1,Furbisher
+small iron tool,small iron tool,p094r_1,Furbisher
+sharpening stone,sharpening stone,p094r_1,Furbisher
+scabbard bench,scabbard bench,p094r_1,Furbisher
 soft, very soft, file,soft, very soft, file,p097r_2,Gilding
 pruning knife,pruning knife,p098r_2,Borders of a garden
-head of a nail,head of a nail,p098r_3,Locksmith
 small stick wrapped in tow,small stick wrapped in tow,p098r_3,Locksmith
+head of a nail,head of a nail,p098r_3,Locksmith
 glowing charcoal,glowing charcoals,p100r_5,Windows that the sun will not pass
 kettle of pure copper,kettle of pure copper,p100v_1,Gemstones
 thick rounded square,thick rounded squares,p100v_2,For ruby take some gold leaf
@@ -2164,8 +2164,8 @@ substance of wine,substance of wine,p102v_2,Infusion of anthos or rosemary
 ear picker,ear picker,p103v_4,Earwax
 glass globe or jar,glass globe or jar,p103v_5,Enamels
 slip of linen,slip of linen,p105r_4,Gardening
-device of little crossed stick,device of little crossed sticks,p105v_3,Catching nightingales See the 15th folio after this.
 kneading trough,kneading troughs,p105v_3,Catching nightingales See the 15th folio after this.
+device of little crossed stick,device of little crossed sticks,p105v_3,Catching nightingales See the 15th folio after this.
 wire of the same metal that they cast,wire of the same metal that they cast,p107r_1,Catching lizards and snakes
 fourneau à vent,fourneau à vent,p108r_2,Spalt
 fourneau à vent,fourneau à vent,p135v_1,Casting in ☼
@@ -2181,8 +2181,8 @@ barrels filled with earth &amp; covered with manure,barrels filled with earth &a
 tip of your finger,tip of your finger,p116v_2,Mixture of tin and lead
 tip of your finger,tip of your finger,p163r_1,Perfumer
 wire stem,wire stem,p117r_1,A means of molding flowers and plants
-cut paintbrush,cut paintbrush,p117v_1,For making the ashes of flowers and plants leave molds
 iron wire wrapped in cotton,iron wire wrapped in cotton,p117v_1,For making the ashes of flowers and plants leave molds
+cut paintbrush,cut paintbrush,p117v_1,For making the ashes of flowers and plants leave molds
 trivets of iron,trivets of iron,p118v_1,Casting in frames
 green fabric,green fabric,p120r_3,IlNightingale
 tip of a hot iron wire,tip of a hot iron wire,p122r_1,Arranging various animals
@@ -2206,24 +2206,24 @@ things that withstand the fire,things that withstand the fire,p138v_2,Gold cast 
 hot slate,hot slate,p139v_1,Cast of wax to represent an animal that one has not got
 little chaple,little chaples,p141r_1,Molding a crayfish
 appropriate thing,appropriate thing,p141r_1,Molding a crayfish
-fresh clay,fresh clay,p144r_1,Turtles
-band of clay,band of clay,p144r_1,Turtles
-clay entredeulx,clay entredeulx,p144r_1,Turtles
 clay entredeux,clay entredeux,p144r_1,Turtles
+band of clay,band of clay,p144r_1,Turtles
+fresh clay,fresh clay,p144r_1,Turtles
+clay entredeulx,clay entredeulx,p144r_1,Turtles
 little piece of twisted paper,little piece of twisted paper,p145r_2,Cuttlefish bone
 large square filee,large square filee,p145r_2,Cuttlefish bone
-clay slab,clay slabs,p145v_1,Molding plants and flowers
 clay closure,clay closure,p145v_1,Molding plants and flowers
 au en bowl,au en bowl,p145v_1,Molding plants and flowers
-entredeulx of clay,entredeulx of clay,p146v_1,Molding turtles
+clay slab,clay slabs,p145v_1,Molding plants and flowers
 entre deulx of clay,entre deulx of clay,p146v_1,Molding turtles
+entredeulx of clay,entredeulx of clay,p146v_1,Molding turtles
 latten skillets, which are beaten &amp; forged thinly,latten skillets, which are beaten &amp; forged thinly,p147v_4,Cast of latten
 little round cutting-punch,little round cutting-punch,p148v_1,Molding turtles
-end of your finger,end of your finger,p150v_1,Molding hollow
-back of a knife,back of a knife,p150v_1,Molding hollow
-round cutting-punch,round cutting-punch,p150v_1,Molding hollow
 small gouge,small gouges,p150v_1,Molding hollow
+back of a knife,back of a knife,p150v_1,Molding hollow
+end of your finger,end of your finger,p150v_1,Molding hollow
 small cutting-punch,small cutting-punches,p150v_1,Molding hollow
+round cutting-punch,round cutting-punch,p150v_1,Molding hollow
 very thin comb,very thin comb,p152r_1,Molding a rat
 latten wire,latten wire,p152v_1,Repairing cast things
 rolling pin,rolling pin,p153r_2,Giving the thickness that you wish to a medal
@@ -2233,16 +2233,16 @@ lighted candle,lighted candle,p160v_4,Catching passerines
 large billet,large billet,p161r_1,Preparation of sand for frames
 reddened iron shovel,reddened iron shovel,p161v_1,Crocum ferri
 side of the burin,side of the burin,p164r_2,Repairing flashing
-iron fork,iron fork,p167r_1,Petards
 little bell,little bells,p167r_1,Petards
+short hooked peg,short hooked peg,p167r_1,Petards
+iron fork,iron fork,p167r_1,Petards
+large auger,large augers,p167r_1,Petards
+iron rod q made with three claws at the end,iron rod q made with three claws at the end,p167r_1,Petards
+strap hinge,strap hinge,p167r_1,Petards
 fork made like pincer,fork made like pincers,p167r_1,Petards
 small peg, hooked like the hinge of a door,small peg, hooked like the hinge of a door,p167r_1,Petards
 iron fork made in the form of pincers of the height of a man,iron fork made in the form of pincers of the height of a man,p167r_1,Petards
-iron rod q made with three claws at the end,iron rod q made with three claws at the end,p167r_1,Petards
-strap hinge,strap hinge,p167r_1,Petards
 iron fork made like pincer,iron fork made like pincers,p167r_1,Petards
-large auger,large augers,p167r_1,Petards
-short hooked peg,short hooked peg,p167r_1,Petards
 steeled iron,steeled iron,p170r_1,Currency medals
 thin wire of latten,thin wire of latten,p170r_6,Cleaning closed molds
 lateres igniti,lateres igniti,p170v_3,For preserving

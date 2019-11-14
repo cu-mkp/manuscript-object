@@ -1,6 +1,7 @@
 """ Data transform to generate a folder of .csv files containing correction lists. """
 # Python Modules
 import os
+import re
 from typing import Dict
 
 # Third-Party Modules
@@ -16,7 +17,7 @@ nlp = spacy.load('en_core_web_sm')
 
 properties = ['animal', 'body_part', 'currency', 'definition', 'environment', 'material',
               'medical', 'measurement', 'music', 'plant', 'place', 'personal_name',
-              'profession', 'sensory', 'tool', 'time']
+              'profession', 'sensory', 'tool', 'time', 'weapon']
 
 def get_prop_dfs(manuscript: BnF, prop_type: str) -> (pd.DataFrame, pd.DataFrame):
   """
@@ -34,9 +35,11 @@ def get_prop_dfs(manuscript: BnF, prop_type: str) -> (pd.DataFrame, pd.DataFrame
   simple_df = pd.DataFrame(columns=['freq', 'verbatim_term'])
   complex_df = pd.DataFrame(columns=['freq', 'verbatim_term'])
 
-  for entry in manuscript.entries:
+  for identity, entry in manuscript.entries.items():
     prop_list = entry.get_prop(prop_type, 'tl')
     for prop in prop_list: # bucket each property for each entry
+
+      # prop = re.sub(r"’|'", '', prop)
 
       if prop.count(' ') == 0: # if the term is one word
         if prop in simple_properties.keys(): # if we've seen it before,
@@ -99,7 +102,7 @@ def create_thesaurus():
     simple_df, complex_df = get_prop_dfs(manuscript, prop) # get dataframe of count, verbatim terms
 
     # create the prefLabel_en column by lemmatizing terms to lower case, singular, and stripped of white space
-    simple_df['prefLabel_en'] = simple_df.verbatim_term.apply(lambda x: inflection.singularize(x.replace('\'', '')).lower().strip())
+    simple_df['prefLabel_en'] = simple_df.verbatim_term.apply(lambda x: inflection.singularize(re.sub(r"’|'", '', x)).lower().strip())
     complex_df['prefLabel_en'] = complex_df.verbatim_term.apply(lambda x: inflection.singularize(x.replace('\'', '')).lower().strip())
 
     complex_df = simplify_terms(simple_df, complex_df) # reduce complex terms to their semantic heads

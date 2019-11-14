@@ -23,13 +23,6 @@
     "entry_title": "Concave mirrors"
     }
   ],
-  "deaf": [
-    {
-    "verbatim_term": "deaf",
-    "entry_id": "p008v_4",
-    "entry_title": "Mixture of Pewterers"
-    }
-  ],
   "sonorou": [
     {
     "verbatim_term": "sonorous",
@@ -50,6 +43,13 @@
     "verbatim_term": "sonorous",
     "entry_id": "p086v_1",
     "entry_title": "Excellent sand for lead, tin, and copper"
+    }
+  ],
+  "deaf": [
+    {
+    "verbatim_term": "deaf",
+    "entry_id": "p008v_4",
+    "entry_title": "Mixture of Pewterers"
     }
   ],
   "sound": [
@@ -123,9 +123,9 @@
     "entry_title": "Pastel woad"
     }
   ],
-  "odorant": [
+  "fragrant": [
     {
-    "verbatim_term": "odorant",
+    "verbatim_term": "fragrant",
     "entry_id": "p067r_4",
     "entry_title": "Varnish on paper"
     }
@@ -170,16 +170,16 @@
     "entry_title": "For keeping fruits all year"
     }
   ],
-  "hearing": [
+  "hear": [
     {
-    "verbatim_term": "hearing",
+    "verbatim_term": "hear",
     "entry_id": "p125r_3",
     "entry_title": "Hearing from afar"
     }
   ],
-  "hear": [
+  "hearing": [
     {
-    "verbatim_term": "hear",
+    "verbatim_term": "hearing",
     "entry_id": "p125r_3",
     "entry_title": "Hearing from afar"
     }
@@ -280,16 +280,16 @@
     "entry_title": "Founding"
     }
   ],
-  "soft to the touch": [
+  "to scratch yourself well": [
     {
-    "verbatim_term": "soft to the touch",
+    "verbatim_term": "to scratch yourself well",
     "entry_id": "p108r_2",
     "entry_title": "Spalt"
     }
   ],
-  "to scratch yourself well": [
+  "soft to the touch": [
     {
-    "verbatim_term": "to scratch yourself well",
+    "verbatim_term": "soft to the touch",
     "entry_id": "p108r_2",
     "entry_title": "Spalt"
     }
@@ -315,13 +315,6 @@
     "entry_title": "Mixture of tin and lead"
     }
   ],
-  "so hot that you can bear putting your finger in it": [
-    {
-    "verbatim_term": "so hot that you can bear putting your finger in it",
-    "entry_id": "p131v_1",
-    "entry_title": "When the cast of tin or lead becomes porous"
-    }
-  ],
   "of such a heat that you can handle it without harm, or that you can keep your finger in the gate without burning yourself": [
     {
     "verbatim_term": "of such a heat that you can handle it without harm, or that you can keep your finger in the gate without burning yourself",
@@ -329,11 +322,11 @@
     "entry_title": "When the cast of tin or lead becomes porous"
     }
   ],
-  "you will find it so, by scraping a little harder than the other where there is none": [
+  "so hot that you can bear putting your finger in it": [
     {
-    "verbatim_term": "you will find it so, by scraping a little harder than the other where there is none",
-    "entry_id": "p132v_2",
-    "entry_title": "Crocum ferri"
+    "verbatim_term": "so hot that you can bear putting your finger in it",
+    "entry_id": "p131v_1",
+    "entry_title": "When the cast of tin or lead becomes porous"
     }
   ],
   "when scraping it with the fingernail, it is a sign that the crocum is good, very fine &amp; well prepared": [
@@ -346,6 +339,13 @@
   "perceived on the fingernail": [
     {
     "verbatim_term": "perceived on the fingernail",
+    "entry_id": "p132v_2",
+    "entry_title": "Crocum ferri"
+    }
+  ],
+  "you will find it so, by scraping a little harder than the other where there is none": [
+    {
+    "verbatim_term": "you will find it so, by scraping a little harder than the other where there is none",
     "entry_id": "p132v_2",
     "entry_title": "Crocum ferri"
     }

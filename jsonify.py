@@ -14,7 +14,7 @@ from recipe import Recipe
 
 properties = ['animal', 'body_part', 'currency', 'definition', 'environment', 'material',
               'medical', 'measurement', 'music', 'plant', 'place', 'personal_name',
-              'profession', 'sensory', 'tool', 'time']
+              'profession', 'sensory', 'tool', 'time', 'weapon']
 
 def read_csvs() -> Dict[str, pd.DataFrame]:
   """
@@ -39,8 +39,8 @@ def read_manuscript(manuscript: BnF, df_dict: Dict[str, pd.DataFrame]):
   Output: df_dict -- a dict where they keys are an element of properties and the value is the thesaurus
   DataFrame for that property.
   """
-  for i in tqdm(range(len(manuscript.entries))):
-    entry = manuscript.entries[i]
+  for identity in tqdm(manuscript.entries.keys()):
+    entry = manuscript.entries[identity]
     for prop in properties:
       df = df_dict[prop]
       prop_list = entry.get_prop(prop, 'tl')
@@ -129,7 +129,6 @@ def jsonify():
   if not os.path.exists('thesaurus'):
     print('Thesaurus not found. Generating now.')
     os.system('python thesaurus.py')
-    print('Finished Generating Thesaurus')
 
   manuscript = BnF(apply_corrections=False)
   df_dict = read_csvs()

@@ -1,4 +1,11 @@
 {
+  "italie": [
+    {
+    "verbatim_term": "italie",
+    "entry_id": "p001r_3",
+    "entry_title": "List of books"
+    }
+  ],
   "lyon": [
     {
     "verbatim_term": "lyon",
@@ -24,13 +31,6 @@
     "verbatim_term": "lyon",
     "entry_id": "p090r_3",
     "entry_title": "All sands can be rendered good"
-    }
-  ],
-  "italie": [
-    {
-    "verbatim_term": "italie",
-    "entry_id": "p001r_3",
-    "entry_title": "List of books"
     }
   ],
   "romae": [
@@ -170,7 +170,7 @@
     },
     {
     "verbatim_term": "france",
-    "entry_id": "p066r_6",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     },
     {
@@ -304,23 +304,6 @@
     "entry_title": "Candles"
     }
   ],
-  "montpellier": [
-    {
-    "verbatim_term": "montpellier",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    },
-    {
-    "verbatim_term": "montpellier",
-    "entry_id": "p027v_4",
-    "entry_title": "2 quintals, is one cane long, which is 8 Montpellier pans"
-    },
-    {
-    "verbatim_term": "montpellier",
-    "entry_id": "p048v_1",
-    "entry_title": "Extraction of regulus"
-    }
-  ],
   "toulouse": [
     {
     "verbatim_term": "toulouse",
@@ -351,6 +334,23 @@
     "verbatim_term": "toulouse",
     "entry_id": "p071v_4",
     "entry_title": "Sand"
+    }
+  ],
+  "montpellier": [
+    {
+    "verbatim_term": "montpellier",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "montpellier",
+    "entry_id": "p027v_4",
+    "entry_title": "2 quintals, is one cane long, which is 8 Montpellier pans"
+    },
+    {
+    "verbatim_term": "montpellier",
+    "entry_id": "p048v_1",
+    "entry_title": "Extraction of regulus"
     }
   ],
   "lorraine": [
@@ -473,7 +473,7 @@
     },
     {
     "verbatim_term": "flanders",
-    "entry_id": "p066r_6",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     },
     {
@@ -631,16 +631,16 @@
     "entry_title": "Against dogs’ mange"
     }
   ],
-  "brittany": [
+  "monserrat": [
     {
-    "verbatim_term": "brittany",
+    "verbatim_term": "monserrat",
     "entry_id": "p038r_4",
     "entry_title": "Amber"
     }
   ],
-  "monserrat": [
+  "brittany": [
     {
-    "verbatim_term": "monserrat",
+    "verbatim_term": "brittany",
     "entry_id": "p038r_4",
     "entry_title": "Amber"
     }
@@ -657,6 +657,13 @@
     "entry_title": "Vinegar"
     }
   ],
+  "auragne": [
+    {
+    "verbatim_term": "auragne",
+    "entry_id": "p039r_2",
+    "entry_title": "Pastel woad"
+    }
+  ],
   "carmail": [
     {
     "verbatim_term": "carmail",
@@ -669,20 +676,6 @@
     "verbatim_term": "lauragais",
     "entry_id": "p039r_2",
     "entry_title": "Pastel woad"
-    }
-  ],
-  "auragne": [
-    {
-    "verbatim_term": "auragne",
-    "entry_id": "p039r_2",
-    "entry_title": "Pastel woad"
-    }
-  ],
-  "catalonium": [
-    {
-    "verbatim_term": "catalonia",
-    "entry_id": "p040r_3",
-    "entry_title": "Vinegar"
     }
   ],
   "spain": [
@@ -720,6 +713,13 @@
     "verbatim_term": "spain",
     "entry_id": "p164r_3",
     "entry_title": "Leady silver"
+    }
+  ],
+  "catalonium": [
+    {
+    "verbatim_term": "catalonia",
+    "entry_id": "p040r_3",
+    "entry_title": "Vinegar"
     }
   ],
   "maltum": [
@@ -774,9 +774,16 @@
     "entry_title": "Crucibles"
     }
   ],
-  "biscaye": [
+  "biscay": [
     {
-    "verbatim_term": "biscaye",
+    "verbatim_term": "biscay",
+    "entry_id": "p050v_2",
+    "entry_title": "Curried steel and files"
+    }
+  ],
+  "levantine": [
+    {
+    "verbatim_term": "levantines",
     "entry_id": "p050v_2",
     "entry_title": "Curried steel and files"
     }
@@ -798,16 +805,9 @@
     "entry_title": "Molders from Foix"
     }
   ],
-  "levantine": [
+  "biscaye": [
     {
-    "verbatim_term": "levantines",
-    "entry_id": "p050v_2",
-    "entry_title": "Curried steel and files"
-    }
-  ],
-  "biscay": [
-    {
-    "verbatim_term": "biscay",
+    "verbatim_term": "biscaye",
     "entry_id": "p050v_2",
     "entry_title": "Curried steel and files"
     }
@@ -826,6 +826,13 @@
     "entry_title": "Casting of lead and copper"
     }
   ],
+  "albensi": [
+    {
+    "verbatim_term": "albensis",
+    "entry_id": "p053v_1",
+    "entry_title": "Silkworms"
+    }
+  ],
   "languedoc": [
     {
     "verbatim_term": "languedoc",
@@ -836,13 +843,6 @@
   "cremonensi": [
     {
     "verbatim_term": "cremonensis",
-    "entry_id": "p053v_1",
-    "entry_title": "Silkworms"
-    }
-  ],
-  "albensi": [
-    {
-    "verbatim_term": "albensis",
     "entry_id": "p053v_1",
     "entry_title": "Silkworms"
     }
@@ -910,6 +910,13 @@
     "entry_title": "Painter"
     }
   ],
+  "turkey": [
+    {
+    "verbatim_term": "turkey",
+    "entry_id": "p058v_5",
+    "entry_title": "Paintbrushes"
+    }
+  ],
   "acre": [
     {
     "verbatim_term": "acre",
@@ -920,13 +927,6 @@
     "verbatim_term": "acre",
     "entry_id": "p102v_1",
     "entry_title": "Painting on crystal or glass"
-    }
-  ],
-  "turkey": [
-    {
-    "verbatim_term": "turkey",
-    "entry_id": "p058v_5",
-    "entry_title": "Paintbrushes"
     }
   ],
   "champagne": [
@@ -1024,13 +1024,6 @@
     "entry_title": "Earth for molding"
     }
   ],
-  "touch": [
-    {
-    "verbatim_term": "touch",
-    "entry_id": "p087r_1",
-    "entry_title": "Sand from Thoulouse"
-    }
-  ],
   "blagnac": [
     {
     "verbatim_term": "blagnac",
@@ -1038,16 +1031,23 @@
     "entry_title": "Sand from Thoulouse"
     }
   ],
-  "aurignac": [
+  "touch": [
     {
-    "verbatim_term": "aurignac",
-    "entry_id": "p089v_2",
-    "entry_title": "Glassmakers’ white sand from the mine, mixed with sal ammoniac"
+    "verbatim_term": "touch",
+    "entry_id": "p087r_1",
+    "entry_title": "Sand from Thoulouse"
     }
   ],
   "cominge": [
     {
     "verbatim_term": "cominge",
+    "entry_id": "p089v_2",
+    "entry_title": "Glassmakers’ white sand from the mine, mixed with sal ammoniac"
+    }
+  ],
+  "aurignac": [
+    {
+    "verbatim_term": "aurignac",
     "entry_id": "p089v_2",
     "entry_title": "Glassmakers’ white sand from the mine, mixed with sal ammoniac"
     }
@@ -1073,16 +1073,16 @@
     "entry_title": "Orange trees"
     }
   ],
-  "dauphiné": [
+  "vienne": [
     {
-    "verbatim_term": "dauphiné",
+    "verbatim_term": "vienne",
     "entry_id": "p094r_1",
     "entry_title": "Furbisher"
     }
   ],
-  "vienne": [
+  "dauphiné": [
     {
-    "verbatim_term": "vienne",
+    "verbatim_term": "dauphiné",
     "entry_id": "p094r_1",
     "entry_title": "Furbisher"
     }
@@ -1101,16 +1101,16 @@
     "entry_title": "Glass vessels"
     }
   ],
-  "augsburg": [
+  "rouan": [
     {
-    "verbatim_term": "augsburg",
+    "verbatim_term": "rouan",
     "entry_id": "p107r_1",
     "entry_title": "Catching lizards and snakes"
     }
   ],
-  "rouan": [
+  "augsburg": [
     {
-    "verbatim_term": "rouan",
+    "verbatim_term": "augsburg",
     "entry_id": "p107r_1",
     "entry_title": "Catching lizards and snakes"
     }
@@ -1134,16 +1134,16 @@
     "entry_title": "Scimitars"
     }
   ],
-  "damascu": [
+  "turk": [
     {
-    "verbatim_term": "damascus",
+    "verbatim_term": "turks",
     "entry_id": "p125r_2",
     "entry_title": "Scimitars"
     }
   ],
-  "turk": [
+  "damascu": [
     {
-    "verbatim_term": "turks",
+    "verbatim_term": "damascus",
     "entry_id": "p125r_2",
     "entry_title": "Scimitars"
     }
@@ -1179,13 +1179,6 @@
     "entry_title": "Molding a rat"
     }
   ],
-  "argo": [
-    {
-    "verbatim_term": "argos",
-    "entry_id": "p162r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
   "phoenician": [
     {
     "verbatim_term": "phoenicians",
@@ -1212,6 +1205,13 @@
     "entry_title": "Perfumer"
     }
   ],
+  "argo": [
+    {
+    "verbatim_term": "argos",
+    "entry_id": "p162r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
   "assyrium": [
     {
     "verbatim_term": "assyria",
@@ -1226,9 +1226,9 @@
     "entry_title": "Crocum"
     }
   ],
-  "sicilian": [
+  "tyana": [
     {
-    "verbatim_term": "sicilians",
+    "verbatim_term": "tyana",
     "entry_id": "p166r_1",
     "entry_title": "For the workshop"
     }
@@ -1245,27 +1245,6 @@
     "entry_title": "For the workshop"
     }
   ],
-  "egyptian": [
-    {
-    "verbatim_term": "egyptians",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "hebrew": [
-    {
-    "verbatim_term": "hebrews",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "tyana": [
-    {
-    "verbatim_term": "tyana",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
   "latin": [
     {
     "verbatim_term": "latins",
@@ -1276,6 +1255,27 @@
   "eleusi": [
     {
     "verbatim_term": "eleusis",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "egyptian": [
+    {
+    "verbatim_term": "egyptians",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "sicilian": [
+    {
+    "verbatim_term": "sicilians",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "hebrew": [
+    {
+    "verbatim_term": "hebrews",
     "entry_id": "p166r_1",
     "entry_title": "For the workshop"
     }
@@ -1308,9 +1308,9 @@
     "entry_title": "List of books"
     }
   ],
-  "rue des escrivain": [
+  "rue de la heaumerie, at the sign of st claude": [
     {
-    "verbatim_term": "rue des escrivains",
+    "verbatim_term": "rue de la heaumerie, at the sign of st claude",
     "entry_id": "p001r_1",
     "entry_title": "List of names"
     }
@@ -1322,9 +1322,9 @@
     "entry_title": "List of names"
     }
   ],
-  "rue de la heaumerie, at the sign of st claude": [
+  "rue des escrivain": [
     {
-    "verbatim_term": "rue de la heaumerie, at the sign of st claude",
+    "verbatim_term": "rue des escrivains",
     "entry_id": "p001r_1",
     "entry_title": "List of names"
     }
@@ -1407,16 +1407,16 @@
     "entry_title": "All sands can be rendered good"
     }
   ],
-  "red sea": [
+  "coast of greece": [
     {
-    "verbatim_term": "red sea",
+    "verbatim_term": "coast of greece",
     "entry_id": "p162r_1",
     "entry_title": "For the workshop"
     }
   ],
-  "coast of greece": [
+  "red sea": [
     {
-    "verbatim_term": "coast of greece",
+    "verbatim_term": "red sea",
     "entry_id": "p162r_1",
     "entry_title": "For the workshop"
     }

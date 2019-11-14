@@ -11,18 +11,6 @@
     "entry_title": "Fish glue or isinglass and mouth glue"
     }
   ],
-  "cittern": [
-    {
-    "verbatim_term": "cittern",
-    "entry_id": "p104v_4",
-    "entry_title": "Spinet playing by itself"
-    },
-    {
-    "verbatim_term": "cittern",
-    "entry_id": "p114r_1",
-    "entry_title": "Second cast"
-    }
-  ],
   "spinet": [
     {
     "verbatim_term": "spinet",
@@ -53,6 +41,18 @@
     "verbatim_term": "spinets",
     "entry_id": "p112v_1",
     "entry_title": "For molding Making the arrangement and disposition of the animal"
+    }
+  ],
+  "cittern": [
+    {
+    "verbatim_term": "cittern",
+    "entry_id": "p104v_4",
+    "entry_title": "Spinet playing by itself"
+    },
+    {
+    "verbatim_term": "cittern",
+    "entry_id": "p114r_1",
+    "entry_title": "Second cast"
     }
   ],
   "mandore": [

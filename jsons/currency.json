@@ -76,12 +76,12 @@
     "entry_title": "Sweetening silver"
     },
     {
-    "verbatim_term": "sous from spain",
+    "verbatim_term": "sous from france",
     "entry_id": "p164r_3",
     "entry_title": "Leady silver"
     },
     {
-    "verbatim_term": "sous from france",
+    "verbatim_term": "sous from spain",
     "entry_id": "p164r_3",
     "entry_title": "Leady silver"
     }
@@ -144,16 +144,16 @@
     "entry_title": "For etching on iron"
     }
   ],
-  "franc": [
+  "lb.": [
     {
-    "verbatim_term": "francs",
+    "verbatim_term": "lb.",
     "entry_id": "p038v_6",
     "entry_title": "Scarlets"
     }
   ],
-  "lb.": [
+  "franc": [
     {
-    "verbatim_term": "lb.",
+    "verbatim_term": "francs",
     "entry_id": "p038v_6",
     "entry_title": "Scarlets"
     }

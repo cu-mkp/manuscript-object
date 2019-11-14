@@ -196,6 +196,170 @@
     "entry_title": "For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances"
     }
   ],
+  "file": [
+    {
+    "verbatim_term": "file",
+    "entry_id": "p003r_1",
+    "entry_title": "Counterfeit coral"
+    },
+    {
+    "verbatim_term": "file",
+    "entry_id": "p006v_1",
+    "entry_title": "For ga cachcages"
+    },
+    {
+    "verbatim_term": "file",
+    "entry_id": "p010r_1",
+    "entry_title": "Counterfeit jasper"
+    },
+    {
+    "verbatim_term": "file",
+    "entry_id": "p030r_2",
+    "entry_title": "Pewterer"
+    },
+    {
+    "verbatim_term": "file",
+    "entry_id": "p037v_3",
+    "entry_title": "Yellow Amber"
+    },
+    {
+    "verbatim_term": "file",
+    "entry_id": "p038r_1",
+    "entry_title": "Sapphire"
+    },
+    {
+    "verbatim_term": "file",
+    "entry_id": "p038r_4",
+    "entry_title": "Amber"
+    },
+    {
+    "verbatim_term": "file",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    },
+    {
+    "verbatim_term": "file",
+    "entry_id": "p097r_3",
+    "entry_title": "Gilding with silver"
+    },
+    {
+    "verbatim_term": "file",
+    "entry_id": "p098r_3",
+    "entry_title": "Locksmith"
+    },
+    {
+    "verbatim_term": "file",
+    "entry_id": "p118v_1",
+    "entry_title": "Casting in frames"
+    },
+    {
+    "verbatim_term": "file",
+    "entry_id": "p131v_1",
+    "entry_title": "When the cast of tin or lead becomes porous"
+    },
+    {
+    "verbatim_term": "file",
+    "entry_id": "p138v_1",
+    "entry_title": "Talcum mixed in the molds"
+    },
+    {
+    "verbatim_term": "file",
+    "entry_id": "p150v_1",
+    "entry_title": "Molding hollow"
+    },
+    {
+    "verbatim_term": "file",
+    "entry_id": "p152v_1",
+    "entry_title": "Repairing cast things"
+    },
+    {
+    "verbatim_term": "files",
+    "entry_id": "p050v_2",
+    "entry_title": "Curried steel and files"
+    },
+    {
+    "verbatim_term": "files",
+    "entry_id": "p067v_1",
+    "entry_title": "Files"
+    },
+    {
+    "verbatim_term": "files",
+    "entry_id": "p141r_1",
+    "entry_title": "Molding a crayfish"
+    },
+    {
+    "verbatim_term": "files",
+    "entry_id": "p152v_1",
+    "entry_title": "Repairing cast things"
+    },
+    {
+    "verbatim_term": "large file",
+    "entry_id": "p016r_1",
+    "entry_title": "Founding of soft iron"
+    },
+    {
+    "verbatim_term": "soft files",
+    "entry_id": "p067v_1",
+    "entry_title": "Files"
+    },
+    {
+    "verbatim_term": "square files",
+    "entry_id": "p067v_1",
+    "entry_title": "Files"
+    },
+    {
+    "verbatim_term": "soft file",
+    "entry_id": "p096v_2",
+    "entry_title": "Color of water"
+    },
+    {
+    "verbatim_term": "small file",
+    "entry_id": "p148v_1",
+    "entry_title": "Molding turtles"
+    },
+    {
+    "verbatim_term": "small file",
+    "entry_id": "p150v_1",
+    "entry_title": "Molding hollow"
+    },
+    {
+    "verbatim_term": "small file",
+    "entry_id": "p163v_3",
+    "entry_title": "Repairing"
+    },
+    {
+    "verbatim_term": "small file",
+    "entry_id": "p164r_2",
+    "entry_title": "Repairing flashing"
+    }
+  ],
+  "brazier": [
+    {
+    "verbatim_term": "brazier",
+    "entry_id": "p003r_1",
+    "entry_title": "Counterfeit coral"
+    },
+    {
+    "verbatim_term": "brazier",
+    "entry_id": "p007v_2",
+    "entry_title": "Against windy colic"
+    },
+    {
+    "verbatim_term": "brazier",
+    "entry_id": "p013v_3",
+    "entry_title": "Toadstone"
+    },
+    {
+    "verbatim_term": "brazier",
+    "entry_id": "p137r_1",
+    "entry_title": "For casting in red copper"
+    },
+    {
+    "verbatim_term": "brazier",
+    "entry_id": "p140v_1",
+    "entry_title": "For casting in sulfur"
+    }
+  ],
   "stick": [
     {
     "verbatim_term": "stick",
@@ -343,12 +507,12 @@
     "entry_title": "Method of casting in bronze"
     },
     {
-    "verbatim_term": "fresil stick",
+    "verbatim_term": "stick of the fustée",
     "entry_id": "p094r_1",
     "entry_title": "Furbisher"
     },
     {
-    "verbatim_term": "stick of the fustée",
+    "verbatim_term": "fresil stick",
     "entry_id": "p094r_1",
     "entry_title": "Furbisher"
     },
@@ -381,143 +545,6 @@
     "verbatim_term": "thick stick",
     "entry_id": "p161r_1",
     "entry_title": "Preparation of sand for frames"
-    }
-  ],
-  "file": [
-    {
-    "verbatim_term": "file",
-    "entry_id": "p003r_1",
-    "entry_title": "Counterfeit coral"
-    },
-    {
-    "verbatim_term": "file",
-    "entry_id": "p006v_1",
-    "entry_title": "For ga cachcages"
-    },
-    {
-    "verbatim_term": "file",
-    "entry_id": "p010r_1",
-    "entry_title": "Counterfeit jasper"
-    },
-    {
-    "verbatim_term": "file",
-    "entry_id": "p030r_2",
-    "entry_title": "Pewterer"
-    },
-    {
-    "verbatim_term": "file",
-    "entry_id": "p037v_3",
-    "entry_title": "Yellow Amber"
-    },
-    {
-    "verbatim_term": "file",
-    "entry_id": "p038r_1",
-    "entry_title": "Sapphire"
-    },
-    {
-    "verbatim_term": "file",
-    "entry_id": "p038r_4",
-    "entry_title": "Amber"
-    },
-    {
-    "verbatim_term": "file",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    },
-    {
-    "verbatim_term": "file",
-    "entry_id": "p097r_3",
-    "entry_title": "Gilding with silver"
-    },
-    {
-    "verbatim_term": "file",
-    "entry_id": "p098r_3",
-    "entry_title": "Locksmith"
-    },
-    {
-    "verbatim_term": "file",
-    "entry_id": "p118v_1",
-    "entry_title": "Casting in frames"
-    },
-    {
-    "verbatim_term": "file",
-    "entry_id": "p131v_1",
-    "entry_title": "When the cast of tin or lead becomes porous"
-    },
-    {
-    "verbatim_term": "file",
-    "entry_id": "p138v_1",
-    "entry_title": "Talcum mixed in the molds"
-    },
-    {
-    "verbatim_term": "file",
-    "entry_id": "p150v_1",
-    "entry_title": "Molding hollow"
-    },
-    {
-    "verbatim_term": "file",
-    "entry_id": "p152v_1",
-    "entry_title": "Repairing cast things"
-    },
-    {
-    "verbatim_term": "files",
-    "entry_id": "p050v_2",
-    "entry_title": "Curried steel and files"
-    },
-    {
-    "verbatim_term": "files",
-    "entry_id": "p067v_1",
-    "entry_title": "Files"
-    },
-    {
-    "verbatim_term": "files",
-    "entry_id": "p141r_1",
-    "entry_title": "Molding a crayfish"
-    },
-    {
-    "verbatim_term": "files",
-    "entry_id": "p152v_1",
-    "entry_title": "Repairing cast things"
-    },
-    {
-    "verbatim_term": "large file",
-    "entry_id": "p016r_1",
-    "entry_title": "Founding of soft iron"
-    },
-    {
-    "verbatim_term": "square files",
-    "entry_id": "p067v_1",
-    "entry_title": "Files"
-    },
-    {
-    "verbatim_term": "soft files",
-    "entry_id": "p067v_1",
-    "entry_title": "Files"
-    },
-    {
-    "verbatim_term": "soft file",
-    "entry_id": "p096v_2",
-    "entry_title": "Color of water"
-    },
-    {
-    "verbatim_term": "small file",
-    "entry_id": "p148v_1",
-    "entry_title": "Molding turtles"
-    },
-    {
-    "verbatim_term": "small file",
-    "entry_id": "p150v_1",
-    "entry_title": "Molding hollow"
-    },
-    {
-    "verbatim_term": "small file",
-    "entry_id": "p163v_3",
-    "entry_title": "Repairing"
-    },
-    {
-    "verbatim_term": "small file",
-    "entry_id": "p164r_2",
-    "entry_title": "Repairing flashing"
     }
   ],
   "pestled": [
@@ -670,33 +697,6 @@
     "verbatim_term": "pestled",
     "entry_id": "p170v_3",
     "entry_title": "For preserving"
-    }
-  ],
-  "brazier": [
-    {
-    "verbatim_term": "brazier",
-    "entry_id": "p003r_1",
-    "entry_title": "Counterfeit coral"
-    },
-    {
-    "verbatim_term": "brazier",
-    "entry_id": "p007v_2",
-    "entry_title": "Against windy colic"
-    },
-    {
-    "verbatim_term": "brazier",
-    "entry_id": "p013v_3",
-    "entry_title": "Toadstone"
-    },
-    {
-    "verbatim_term": "brazier",
-    "entry_id": "p137r_1",
-    "entry_title": "For casting in red copper"
-    },
-    {
-    "verbatim_term": "brazier",
-    "entry_id": "p140v_1",
-    "entry_title": "For casting in sulfur"
     }
   ],
   "finger": [
@@ -1083,110 +1083,6 @@
     "entry_title": "Casts of lead and tin"
     }
   ],
-  "trivet": [
-    {
-    "verbatim_term": "trivet",
-    "entry_id": "p003r_3",
-    "entry_title": "Thick varnish for planks"
-    }
-  ],
-  "oven": [
-    {
-    "verbatim_term": "oven",
-    "entry_id": "p003r_3",
-    "entry_title": "Thick varnish for planks"
-    },
-    {
-    "verbatim_term": "oven",
-    "entry_id": "p012r_2",
-    "entry_title": "Chimolée"
-    },
-    {
-    "verbatim_term": "oven",
-    "entry_id": "p029r_1",
-    "entry_title": "Stucco for molding"
-    },
-    {
-    "verbatim_term": "oven",
-    "entry_id": "p048r_3",
-    "entry_title": "Excellent mustard"
-    },
-    {
-    "verbatim_term": "oven",
-    "entry_id": "p048r_4",
-    "entry_title": "Keeping birds and animals"
-    },
-    {
-    "verbatim_term": "oven",
-    "entry_id": "p066v_1",
-    "entry_title": "For preventing teats from swelling d or to diminish overly large ones"
-    },
-    {
-    "verbatim_term": "oven",
-    "entry_id": "p073v_4",
-    "entry_title": "Color of burnished copper"
-    },
-    {
-    "verbatim_term": "oven",
-    "entry_id": "p084r_5",
-    "entry_title": "Sand from a mine in Thoulouse"
-    },
-    {
-    "verbatim_term": "oven",
-    "entry_id": "p129v_1",
-    "entry_title": "Animals dried in the oven for a long time"
-    },
-    {
-    "verbatim_term": "oven",
-    "entry_id": "p130r_1",
-    "entry_title": "Animals dried in an oven"
-    },
-    {
-    "verbatim_term": "oven",
-    "entry_id": "p132r_2",
-    "entry_title": "Method for reheating the molds"
-    },
-    {
-    "verbatim_term": "oven",
-    "entry_id": "p133v_2",
-    "entry_title": "Thing that does not release"
-    },
-    {
-    "verbatim_term": "oven",
-    "entry_id": "p133v_3",
-    "entry_title": "Various animals entwined"
-    },
-    {
-    "verbatim_term": "oven",
-    "entry_id": "p140v_2",
-    "entry_title": "Molding and shrinking a large figure"
-    },
-    {
-    "verbatim_term": "oven",
-    "entry_id": "p152r_1",
-    "entry_title": "Molding a rat"
-    },
-    {
-    "verbatim_term": "oven",
-    "entry_id": "p160v_5",
-    "entry_title": "Catching birds"
-    },
-    {
-    "verbatim_term": "small tile oven",
-    "entry_id": "p073v_4",
-    "entry_title": "Color of burnished copper"
-    },
-    {
-    "verbatim_term": "bread oven",
-    "entry_id": "p161r_1",
-    "entry_title": "Preparation of sand for frames"
-    },
-    {
-    "verbatim_term": "tiler’s oven",
-    "entry_id": "p161r_1",
-    "entry_title": "Preparation of sand for frames"
-    }
-  ],
   "vessel": [
     {
     "verbatim_term": "vessel",
@@ -1304,12 +1200,12 @@
     "entry_title": "Spalt"
     },
     {
-    "verbatim_term": "glass vessel",
+    "verbatim_term": "glass vessels",
     "entry_id": "p102r_4",
     "entry_title": "Glass vessels"
     },
     {
-    "verbatim_term": "glass vessels",
+    "verbatim_term": "glass vessel",
     "entry_id": "p102r_4",
     "entry_title": "Glass vessels"
     },
@@ -1319,12 +1215,12 @@
     "entry_title": "For removing flashing and barbs from things molded à noyau"
     },
     {
-    "verbatim_term": "well sealed vessel",
+    "verbatim_term": "big vessels",
     "entry_id": "p120v_6",
     "entry_title": "Keeping dry flowers in the same state all year"
     },
     {
-    "verbatim_term": "big vessels",
+    "verbatim_term": "well sealed vessel",
     "entry_id": "p120v_6",
     "entry_title": "Keeping dry flowers in the same state all year"
     },
@@ -1337,6 +1233,110 @@
     "verbatim_term": "common vessel",
     "entry_id": "p161r_1",
     "entry_title": "Preparation of sand for frames"
+    }
+  ],
+  "oven": [
+    {
+    "verbatim_term": "oven",
+    "entry_id": "p003r_3",
+    "entry_title": "Thick varnish for planks"
+    },
+    {
+    "verbatim_term": "oven",
+    "entry_id": "p012r_2",
+    "entry_title": "Chimolée"
+    },
+    {
+    "verbatim_term": "oven",
+    "entry_id": "p029r_1",
+    "entry_title": "Stucco for molding"
+    },
+    {
+    "verbatim_term": "oven",
+    "entry_id": "p048r_3",
+    "entry_title": "Excellent mustard"
+    },
+    {
+    "verbatim_term": "oven",
+    "entry_id": "p048r_4",
+    "entry_title": "Keeping birds and animals"
+    },
+    {
+    "verbatim_term": "oven",
+    "entry_id": "p066v_1",
+    "entry_title": "For preventing teats from swelling d or to diminish overly large ones"
+    },
+    {
+    "verbatim_term": "oven",
+    "entry_id": "p073v_4",
+    "entry_title": "Color of burnished copper"
+    },
+    {
+    "verbatim_term": "oven",
+    "entry_id": "p084r_5",
+    "entry_title": "Sand from a mine in Thoulouse"
+    },
+    {
+    "verbatim_term": "oven",
+    "entry_id": "p129v_1",
+    "entry_title": "Animals dried in the oven for a long time"
+    },
+    {
+    "verbatim_term": "oven",
+    "entry_id": "p130r_1",
+    "entry_title": "Animals dried in an oven"
+    },
+    {
+    "verbatim_term": "oven",
+    "entry_id": "p132r_2",
+    "entry_title": "Method for reheating the molds"
+    },
+    {
+    "verbatim_term": "oven",
+    "entry_id": "p133v_2",
+    "entry_title": "Thing that does not release"
+    },
+    {
+    "verbatim_term": "oven",
+    "entry_id": "p133v_3",
+    "entry_title": "Various animals entwined"
+    },
+    {
+    "verbatim_term": "oven",
+    "entry_id": "p140v_2",
+    "entry_title": "Molding and shrinking a large figure"
+    },
+    {
+    "verbatim_term": "oven",
+    "entry_id": "p152r_1",
+    "entry_title": "Molding a rat"
+    },
+    {
+    "verbatim_term": "oven",
+    "entry_id": "p160v_5",
+    "entry_title": "Catching birds"
+    },
+    {
+    "verbatim_term": "small tile oven",
+    "entry_id": "p073v_4",
+    "entry_title": "Color of burnished copper"
+    },
+    {
+    "verbatim_term": "bread oven",
+    "entry_id": "p161r_1",
+    "entry_title": "Preparation of sand for frames"
+    },
+    {
+    "verbatim_term": "tiler’s oven",
+    "entry_id": "p161r_1",
+    "entry_title": "Preparation of sand for frames"
+    }
+  ],
+  "trivet": [
+    {
+    "verbatim_term": "trivet",
+    "entry_id": "p003r_3",
+    "entry_title": "Thick varnish for planks"
     }
   ],
   "plate": [
@@ -1507,38 +1507,6 @@
     "entry_title": "For supporting a bucket of water on the tips of three knives laid down without touching the ground"
     }
   ],
-  "feather": [
-    {
-    "verbatim_term": "feather",
-    "entry_id": "p004v_1",
-    "entry_title": "Black varnish for sword guard, bands for trunks, &amp;c"
-    },
-    {
-    "verbatim_term": "feather",
-    "entry_id": "p009r_2",
-    "entry_title": "Painter"
-    },
-    {
-    "verbatim_term": "feather",
-    "entry_id": "p056v_1",
-    "entry_title": "Painter"
-    },
-    {
-    "verbatim_term": "feather",
-    "entry_id": "p066r_6",
-    "entry_title": "* Or mat"
-    },
-    {
-    "verbatim_term": "feather",
-    "entry_id": "p096v_3",
-    "entry_title": "Yellow varnish"
-    },
-    {
-    "verbatim_term": "quite pointy feather",
-    "entry_id": "p049v_1",
-    "entry_title": "Birds"
-    }
-  ],
   "brush": [
     {
     "verbatim_term": "brush",
@@ -1669,6 +1637,38 @@
     "verbatim_term": "wire brush made of wires of latten.",
     "entry_id": "p159v_1",
     "entry_title": "Cleaning files"
+    }
+  ],
+  "feather": [
+    {
+    "verbatim_term": "feather",
+    "entry_id": "p004v_1",
+    "entry_title": "Black varnish for sword guard, bands for trunks, &amp;c"
+    },
+    {
+    "verbatim_term": "feather",
+    "entry_id": "p009r_2",
+    "entry_title": "Painter"
+    },
+    {
+    "verbatim_term": "feather",
+    "entry_id": "p056v_1",
+    "entry_title": "Painter"
+    },
+    {
+    "verbatim_term": "feather",
+    "entry_id": "p066r_6" continued="yes",
+    "entry_title": "* Or mat"
+    },
+    {
+    "verbatim_term": "feather",
+    "entry_id": "p096v_3",
+    "entry_title": "Yellow varnish"
+    },
+    {
+    "verbatim_term": "quite pointy feather",
+    "entry_id": "p049v_1",
+    "entry_title": "Birds"
     }
   ],
   "mold": [
@@ -2698,12 +2698,12 @@
     "entry_title": "Steel mirrors"
     },
     {
-    "verbatim_term": "cold molds",
+    "verbatim_term": "female mold",
     "entry_id": "p028v_1",
     "entry_title": "Pewterers"
     },
     {
-    "verbatim_term": "female mold",
+    "verbatim_term": "cold molds",
     "entry_id": "p028v_1",
     "entry_title": "Pewterers"
     },
@@ -2713,12 +2713,12 @@
     "entry_title": "Pewterer"
     },
     {
-    "verbatim_term": "grais molds",
+    "verbatim_term": "grais mold",
     "entry_id": "p030r_2",
     "entry_title": "Pewterer"
     },
     {
-    "verbatim_term": "grais mold",
+    "verbatim_term": "grais molds",
     "entry_id": "p030r_2",
     "entry_title": "Pewterer"
     },
@@ -2738,11 +2738,6 @@
     "entry_title": "Keeping birds and animals"
     },
     {
-    "verbatim_term": "stone molds",
-    "entry_id": "p048v_2",
-    "entry_title": "Lead, tin"
-    },
-    {
     "verbatim_term": "copper mold",
     "entry_id": "p048v_2",
     "entry_title": "Lead, tin"
@@ -2751,6 +2746,11 @@
     "verbatim_term": "copper mold",
     "entry_id": "p049r_1",
     "entry_title": "Casting of lead"
+    },
+    {
+    "verbatim_term": "stone molds",
+    "entry_id": "p048v_2",
+    "entry_title": "Lead, tin"
     },
     {
     "verbatim_term": "tin molds",
@@ -2843,12 +2843,12 @@
     "entry_title": "Molding fruits and animals in sugar"
     },
     {
-    "verbatim_term": "molds of plaster",
+    "verbatim_term": "mold of plaster",
     "entry_id": "p127r_1",
     "entry_title": "Molds of plaster for wax"
     },
     {
-    "verbatim_term": "mold of plaster",
+    "verbatim_term": "molds of plaster",
     "entry_id": "p127r_1",
     "entry_title": "Molds of plaster for wax"
     },
@@ -2886,6 +2886,13 @@
     "verbatim_term": "flat molds",
     "entry_id": "p145v_1",
     "entry_title": "Molding plants and flowers"
+    }
+  ],
+  "arene": [
+    {
+    "verbatim_term": "arene",
+    "entry_id": "p005r_1",
+    "entry_title": "Steel mirrors"
     }
   ],
   "tripoli": [
@@ -2928,35 +2935,6 @@
     "verbatim_term": "tripoli of brittany",
     "entry_id": "p038r_4",
     "entry_title": "Amber"
-    }
-  ],
-  "putty": [
-    {
-    "verbatim_term": "putty",
-    "entry_id": "p005r_1",
-    "entry_title": "Steel mirrors"
-    },
-    {
-    "verbatim_term": "putty",
-    "entry_id": "p030r_2",
-    "entry_title": "Pewterer"
-    },
-    {
-    "verbatim_term": "putty",
-    "entry_id": "p038r_4",
-    "entry_title": "Amber"
-    },
-    {
-    "verbatim_term": "emery putty",
-    "entry_id": "p005r_1",
-    "entry_title": "Steel mirrors"
-    }
-  ],
-  "molded": [
-    {
-    "verbatim_term": "molded",
-    "entry_id": "p005r_1",
-    "entry_title": "Steel mirrors"
     }
   ],
   "crucible": [
@@ -3156,53 +3134,65 @@
     "entry_title": "A means di far correr lotnegra"
     }
   ],
-  "arene": [
+  "molded": [
     {
-    "verbatim_term": "arene",
+    "verbatim_term": "molded",
     "entry_id": "p005r_1",
     "entry_title": "Steel mirrors"
     }
   ],
-  "sheet": [
+  "putty": [
     {
-    "verbatim_term": "sheet",
+    "verbatim_term": "putty",
+    "entry_id": "p005r_1",
+    "entry_title": "Steel mirrors"
+    },
+    {
+    "verbatim_term": "putty",
+    "entry_id": "p030r_2",
+    "entry_title": "Pewterer"
+    },
+    {
+    "verbatim_term": "putty",
+    "entry_id": "p038r_4",
+    "entry_title": "Amber"
+    },
+    {
+    "verbatim_term": "emery putty",
+    "entry_id": "p005r_1",
+    "entry_title": "Steel mirrors"
+    }
+  ],
+  "mirror": [
+    {
+    "verbatim_term": "mirror",
     "entry_id": "p005r_2",
     "entry_title": "Concave mirrors"
     },
     {
-    "verbatim_term": "sheets",
-    "entry_id": "p160r_1",
-    "entry_title": "Press for the large molds"
+    "verbatim_term": "mirror",
+    "entry_id": "p065r_3",
+    "entry_title": "Mirror"
     },
     {
-    "verbatim_term": "sheet of paper",
+    "verbatim_term": "mirrors",
+    "entry_id": "p021r_2",
+    "entry_title": "For firing a cannon at night"
+    },
+    {
+    "verbatim_term": "concave mirror",
     "entry_id": "p005r_2",
     "entry_title": "Concave mirrors"
     },
     {
-    "verbatim_term": "sheets of paper",
-    "entry_id": "p051r_2",
-    "entry_title": "Cutters of printing plates"
+    "verbatim_term": "cristallin mirror",
+    "entry_id": "p065r_3",
+    "entry_title": "Mirror"
     },
     {
-    "verbatim_term": "sheet of tin",
-    "entry_id": "p120r_1",
-    "entry_title": "Medals stamped from wax"
-    },
-    {
-    "verbatim_term": "sheets of copper",
-    "entry_id": "p139r_1",
-    "entry_title": "Casts of lead and tin"
-    },
-    {
-    "verbatim_term": "sheets of lead &amp; copper",
-    "entry_id": "p153r_2",
-    "entry_title": "Giving the thickness that you wish to a medal"
-    },
-    {
-    "verbatim_term": "sheets of iron",
-    "entry_id": "p160r_1",
-    "entry_title": "Press for the large molds"
+    "verbatim_term": "crystal mirror",
+    "entry_id": "p103v_5",
+    "entry_title": "Enamels"
     }
   ],
   "candle": [
@@ -3409,36 +3399,46 @@
     "entry_title": "Preparation of sand for frames"
     }
   ],
-  "mirror": [
+  "sheet": [
     {
-    "verbatim_term": "mirror",
+    "verbatim_term": "sheet",
     "entry_id": "p005r_2",
     "entry_title": "Concave mirrors"
     },
     {
-    "verbatim_term": "mirror",
-    "entry_id": "p065r_3",
-    "entry_title": "Mirror"
+    "verbatim_term": "sheets",
+    "entry_id": "p160r_1",
+    "entry_title": "Press for the large molds"
     },
     {
-    "verbatim_term": "mirrors",
-    "entry_id": "p021r_2",
-    "entry_title": "For firing a cannon at night"
-    },
-    {
-    "verbatim_term": "concave mirror",
+    "verbatim_term": "sheet of paper",
     "entry_id": "p005r_2",
     "entry_title": "Concave mirrors"
     },
     {
-    "verbatim_term": "cristallin mirror",
-    "entry_id": "p065r_3",
-    "entry_title": "Mirror"
+    "verbatim_term": "sheets of paper",
+    "entry_id": "p051r_2",
+    "entry_title": "Cutters of printing plates"
     },
     {
-    "verbatim_term": "crystal mirror",
-    "entry_id": "p103v_5",
-    "entry_title": "Enamels"
+    "verbatim_term": "sheet of tin",
+    "entry_id": "p120r_1",
+    "entry_title": "Medals stamped from wax"
+    },
+    {
+    "verbatim_term": "sheets of copper",
+    "entry_id": "p139r_1",
+    "entry_title": "Casts of lead and tin"
+    },
+    {
+    "verbatim_term": "sheets of lead &amp; copper",
+    "entry_id": "p153r_2",
+    "entry_title": "Giving the thickness that you wish to a medal"
+    },
+    {
+    "verbatim_term": "sheets of iron",
+    "entry_id": "p160r_1",
+    "entry_title": "Press for the large molds"
     }
   ],
   "window": [
@@ -3471,7 +3471,7 @@
     },
     {
     "verbatim_term": "tooth",
-    "entry_id": "p066r_6",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     },
     {
@@ -3498,13 +3498,6 @@
   "prele": [
     {
     "verbatim_term": "prele",
-    "entry_id": "p006r_1",
-    "entry_title": "For laying down and seating burnished gold and giving red or green or blue"
-    }
-  ],
-  "horsetail": [
-    {
-    "verbatim_term": "horsetail",
     "entry_id": "p006r_1",
     "entry_title": "For laying down and seating burnished gold and giving red or green or blue"
     }
@@ -3606,12 +3599,12 @@
     "entry_title": "Gilding"
     },
     {
-    "verbatim_term": "fine linen cloth",
+    "verbatim_term": "wet linen cloth",
     "entry_id": "p103r_1",
     "entry_title": "Against burns, excellent"
     },
     {
-    "verbatim_term": "wet linen cloth",
+    "verbatim_term": "fine linen cloth",
     "entry_id": "p103r_1",
     "entry_title": "Against burns, excellent"
     },
@@ -3865,7 +3858,7 @@
     {
     "verbatim_term": "paintbrushes",
     "entry_id": "p066v_4",
-    "entry_title": "paintbrushes"
+    "entry_title": "Paintbrushes"
     },
     {
     "verbatim_term": "very thin paintbrushes which have a firm point",
@@ -3890,7 +3883,7 @@
     {
     "verbatim_term": "oil paintbrushes",
     "entry_id": "p065v_7",
-    "entry_title": "Imprimatura"
+    "entry_title": ""
     },
     {
     "verbatim_term": "paintbrushes for oil",
@@ -3899,7 +3892,7 @@
     },
     {
     "verbatim_term": "paintbrushes for oil",
-    "entry_id": "p066r_6",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     },
     {
@@ -3923,85 +3916,11 @@
     "entry_title": "Molding a fly"
     }
   ],
-  "lamp": [
+  "horsetail": [
     {
-    "verbatim_term": "lamp",
-    "entry_id": "p006v_1",
-    "entry_title": "For ga cachcages"
-    },
-    {
-    "verbatim_term": "lamp",
-    "entry_id": "p043v_2",
-    "entry_title": "Pearls"
-    },
-    {
-    "verbatim_term": "lamps",
-    "entry_id": "p102r_1",
-    "entry_title": "Provisions for the work of Colchis"
-    },
-    {
-    "verbatim_term": "lamps",
-    "entry_id": "p102r_2",
-    "entry_title": "For the furnace"
-    }
-  ],
-  "grate": [
-    {
-    "verbatim_term": "grate",
-    "entry_id": "p006v_1",
-    "entry_title": "For ga cachcages"
-    },
-    {
-    "verbatim_term": "grate",
-    "entry_id": "p082v_4",
-    "entry_title": "Method of casting in bronze"
-    },
-    {
-    "verbatim_term": "grate",
-    "entry_id": "p083v_3",
-    "entry_title": "Bellows"
-    },
-    {
-    "verbatim_term": "grate",
-    "entry_id": "p100v_2",
-    "entry_title": "For ruby take some gold leaf"
-    },
-    {
-    "verbatim_term": "grate",
-    "entry_id": "p115v_3",
-    "entry_title": "Reheating the noyau molds"
-    },
-    {
-    "verbatim_term": "grate",
-    "entry_id": "p132r_2",
-    "entry_title": "Method for reheating the molds"
-    },
-    {
-    "verbatim_term": "top grate",
-    "entry_id": "p040v_4",
-    "entry_title": "Aquafortis"
-    },
-    {
-    "verbatim_term": "bottom grate",
-    "entry_id": "p040v_4",
-    "entry_title": "Aquafortis"
-    }
-  ],
-  "cannule": [
-    {
-    "verbatim_term": "cannule",
-    "entry_id": "p006v_1",
-    "entry_title": "For ga cachcages"
-    },
-    {
-    "verbatim_term": "cannules",
-    "entry_id": "p006v_1",
-    "entry_title": "For ga cachcages"
-    },
-    {
-    "verbatim_term": "enamel cannules",
-    "entry_id": "p006v_1",
-    "entry_title": "For ga cachcages"
+    "verbatim_term": "horsetail",
+    "entry_id": "p006r_1",
+    "entry_title": "For laying down and seating burnished gold and giving red or green or blue"
     }
   ],
   "furnace": [
@@ -4081,11 +4000,6 @@
     "entry_title": "Casting in silver and gold"
     },
     {
-    "verbatim_term": "small furnace",
-    "entry_id": "p006v_1",
-    "entry_title": "For ga cachcages"
-    },
-    {
     "verbatim_term": "reverberatory furnace",
     "entry_id": "p006v_1",
     "entry_title": "For ga cachcages"
@@ -4126,6 +4040,11 @@
     "entry_title": "Crocum ferri"
     },
     {
+    "verbatim_term": "small furnace",
+    "entry_id": "p006v_1",
+    "entry_title": "For ga cachcages"
+    },
+    {
     "verbatim_term": "round furnace",
     "entry_id": "p016r_1",
     "entry_title": "Founding of soft iron"
@@ -4134,6 +4053,11 @@
     "verbatim_term": "square furnace",
     "entry_id": "p016r_1",
     "entry_title": "Founding of soft iron"
+    },
+    {
+    "verbatim_term": "wood furnace",
+    "entry_id": "p036v_1",
+    "entry_title": "Founder"
     },
     {
     "verbatim_term": "bellows furnace",
@@ -4149,11 +4073,6 @@
     "verbatim_term": "bellows furnace",
     "entry_id": "p086v_1",
     "entry_title": "Excellent sand for lead, tin, and copper"
-    },
-    {
-    "verbatim_term": "wood furnace",
-    "entry_id": "p036v_1",
-    "entry_title": "Founder"
     },
     {
     "verbatim_term": "annealing furnace",
@@ -4191,6 +4110,87 @@
     "verbatim_term": "chafing-dish",
     "entry_id": "p075v_2",
     "entry_title": "For gilding on wood"
+    }
+  ],
+  "cannule": [
+    {
+    "verbatim_term": "cannules",
+    "entry_id": "p006v_1",
+    "entry_title": "For ga cachcages"
+    },
+    {
+    "verbatim_term": "cannule",
+    "entry_id": "p006v_1",
+    "entry_title": "For ga cachcages"
+    },
+    {
+    "verbatim_term": "enamel cannules",
+    "entry_id": "p006v_1",
+    "entry_title": "For ga cachcages"
+    }
+  ],
+  "lamp": [
+    {
+    "verbatim_term": "lamp",
+    "entry_id": "p006v_1",
+    "entry_title": "For ga cachcages"
+    },
+    {
+    "verbatim_term": "lamp",
+    "entry_id": "p043v_2",
+    "entry_title": "Pearls"
+    },
+    {
+    "verbatim_term": "lamps",
+    "entry_id": "p102r_1",
+    "entry_title": "Provisions for the work of Colchis"
+    },
+    {
+    "verbatim_term": "lamps",
+    "entry_id": "p102r_2",
+    "entry_title": "For the furnace"
+    }
+  ],
+  "grate": [
+    {
+    "verbatim_term": "grate",
+    "entry_id": "p006v_1",
+    "entry_title": "For ga cachcages"
+    },
+    {
+    "verbatim_term": "grate",
+    "entry_id": "p082v_4",
+    "entry_title": "Method of casting in bronze"
+    },
+    {
+    "verbatim_term": "grate",
+    "entry_id": "p083v_3",
+    "entry_title": "Bellows"
+    },
+    {
+    "verbatim_term": "grate",
+    "entry_id": "p100v_2",
+    "entry_title": "For ruby take some gold leaf"
+    },
+    {
+    "verbatim_term": "grate",
+    "entry_id": "p115v_3",
+    "entry_title": "Reheating the noyau molds"
+    },
+    {
+    "verbatim_term": "grate",
+    "entry_id": "p132r_2",
+    "entry_title": "Method for reheating the molds"
+    },
+    {
+    "verbatim_term": "bottom grate",
+    "entry_id": "p040v_4",
+    "entry_title": "Aquafortis"
+    },
+    {
+    "verbatim_term": "top grate",
+    "entry_id": "p040v_4",
+    "entry_title": "Aquafortis"
     }
   ],
   "chisel": [
@@ -4255,6 +4255,11 @@
     "entry_title": "Molding hollow"
     },
     {
+    "verbatim_term": "little small chisels",
+    "entry_id": "p150v_1",
+    "entry_title": "Molding hollow"
+    },
+    {
     "verbatim_term": "small chisels",
     "entry_id": "p150v_1",
     "entry_title": "Molding hollow"
@@ -4268,11 +4273,78 @@
     "verbatim_term": "small chisels",
     "entry_id": "p156r_3",
     "entry_title": "Chasing"
+    }
+  ],
+  "burin": [
+    {
+    "verbatim_term": "burin",
+    "entry_id": "p006v_2",
+    "entry_title": "For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances"
     },
     {
-    "verbatim_term": "little small chisels",
+    "verbatim_term": "burin",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "burin",
+    "entry_id": "p118r_2",
+    "entry_title": "For removing flashing and barbs from things molded à noyau"
+    },
+    {
+    "verbatim_term": "burin",
+    "entry_id": "p131v_1",
+    "entry_title": "When the cast of tin or lead becomes porous"
+    },
+    {
+    "verbatim_term": "burin",
+    "entry_id": "p134v_3",
+    "entry_title": "Secret for soldering gold and silver in small works"
+    },
+    {
+    "verbatim_term": "burin",
+    "entry_id": "p141r_1",
+    "entry_title": "Molding a crayfish"
+    },
+    {
+    "verbatim_term": "burin",
+    "entry_id": "p148v_1",
+    "entry_title": "Molding turtles"
+    },
+    {
+    "verbatim_term": "burin",
     "entry_id": "p150v_1",
     "entry_title": "Molding hollow"
+    },
+    {
+    "verbatim_term": "burin",
+    "entry_id": "p152v_1",
+    "entry_title": "Repairing cast things"
+    },
+    {
+    "verbatim_term": "burin",
+    "entry_id": "p156r_3",
+    "entry_title": "Chasing"
+    },
+    {
+    "verbatim_term": "burin",
+    "entry_id": "p163v_3",
+    "entry_title": "Repairing"
+    },
+    {
+    "verbatim_term": "burins",
+    "entry_id": "p141r_1",
+    "entry_title": "Molding a crayfish"
+    },
+    {
+    "verbatim_term": "small burin",
+    "entry_id": "p046r_1",
+    "entry_title": "For the teeth, oil of sulfur"
+    },
+    {
+    "verbatim_term": "ordinary engraving burin",
+    "entry_id": "p156r_3",
+    "entry_title": "Chasing"
     }
   ],
   "hammer": [
@@ -4355,78 +4427,6 @@
     "verbatim_term": "trip hammers",
     "entry_id": "p149r_3",
     "entry_title": "Various arts from Germany"
-    }
-  ],
-  "burin": [
-    {
-    "verbatim_term": "burin",
-    "entry_id": "p006v_2",
-    "entry_title": "For stampings to embellish and encrust or cover the edges of mirrors, the tops of chests, or the friezes of bed valances"
-    },
-    {
-    "verbatim_term": "burin",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    },
-    {
-    "verbatim_term": "burin",
-    "entry_id": "p118r_2",
-    "entry_title": "For removing flashing and barbs from things molded à noyau"
-    },
-    {
-    "verbatim_term": "burin",
-    "entry_id": "p131v_1",
-    "entry_title": "When the cast of tin or lead becomes porous"
-    },
-    {
-    "verbatim_term": "burin",
-    "entry_id": "p134v_3",
-    "entry_title": "Secret for soldering gold and silver in small works"
-    },
-    {
-    "verbatim_term": "burin",
-    "entry_id": "p141r_1",
-    "entry_title": "Molding a crayfish"
-    },
-    {
-    "verbatim_term": "burin",
-    "entry_id": "p148v_1",
-    "entry_title": "Molding turtles"
-    },
-    {
-    "verbatim_term": "burin",
-    "entry_id": "p150v_1",
-    "entry_title": "Molding hollow"
-    },
-    {
-    "verbatim_term": "burin",
-    "entry_id": "p152v_1",
-    "entry_title": "Repairing cast things"
-    },
-    {
-    "verbatim_term": "burin",
-    "entry_id": "p156r_3",
-    "entry_title": "Chasing"
-    },
-    {
-    "verbatim_term": "burin",
-    "entry_id": "p163v_3",
-    "entry_title": "Repairing"
-    },
-    {
-    "verbatim_term": "burins",
-    "entry_id": "p141r_1",
-    "entry_title": "Molding a crayfish"
-    },
-    {
-    "verbatim_term": "small burin",
-    "entry_id": "p046r_1",
-    "entry_title": "For the teeth, oil of sulfur"
-    },
-    {
-    "verbatim_term": "ordinary engraving burin",
-    "entry_id": "p156r_3",
-    "entry_title": "Chasing"
     }
   ],
   "mouth": [
@@ -4583,12 +4583,12 @@
     "entry_title": "Mortars"
     },
     {
-    "verbatim_term": "large mortars",
+    "verbatim_term": "fine copper mortars",
     "entry_id": "p088r_2",
     "entry_title": "Mortars"
     },
     {
-    "verbatim_term": "fine copper mortars",
+    "verbatim_term": "large mortars",
     "entry_id": "p088r_2",
     "entry_title": "Mortars"
     },
@@ -4603,7 +4603,7 @@
     "entry_title": "Gemstones"
     },
     {
-    "verbatim_term": "mortar of thick glass",
+    "verbatim_term": "mortar of wood",
     "entry_id": "p100r_3",
     "entry_title": "Gemstones"
     },
@@ -4618,7 +4618,7 @@
     "entry_title": "For ruby take some gold leaf"
     },
     {
-    "verbatim_term": "mortar of wood",
+    "verbatim_term": "mortar of thick glass",
     "entry_id": "p100r_3",
     "entry_title": "Gemstones"
     },
@@ -4750,7 +4750,7 @@
     {
     "verbatim_term": "thread",
     "entry_id": "p066v_4",
-    "entry_title": "paintbrushes"
+    "entry_title": "Paintbrushes"
     },
     {
     "verbatim_term": "thread",
@@ -4803,25 +4803,6 @@
     "verbatim_term": "fine sieves of raw silk",
     "entry_id": "p013r_4",
     "entry_title": "Fine sieves of raw silk"
-    }
-  ],
-  "trowel": [
-    {
-    "verbatim_term": "trowel",
-    "entry_id": "p011r_1",
-    "entry_title": "Painting esmail d’azur in oil"
-    }
-  ],
-  "awl": [
-    {
-    "verbatim_term": "awl",
-    "entry_id": "p011r_1",
-    "entry_title": "Painting esmail d’azur in oil"
-    },
-    {
-    "verbatim_term": "steel awl",
-    "entry_id": "p039v_3",
-    "entry_title": "Tracing some history on glass"
     }
   ],
   "alembic": [
@@ -4883,11 +4864,54 @@
     "entry_title": "Crocum ferri"
     }
   ],
+  "trowel": [
+    {
+    "verbatim_term": "trowel",
+    "entry_id": "p011r_1",
+    "entry_title": "Painting esmail d’azur in oil"
+    }
+  ],
+  "awl": [
+    {
+    "verbatim_term": "awl",
+    "entry_id": "p011r_1",
+    "entry_title": "Painting esmail d’azur in oil"
+    },
+    {
+    "verbatim_term": "steel awl",
+    "entry_id": "p039v_3",
+    "entry_title": "Tracing some history on glass"
+    }
+  ],
+  "ash": [
+    {
+    "verbatim_term": "ashes",
+    "entry_id": "p011v_1",
+    "entry_title": "Color of Damascus steel on knives"
+    },
+    {
+    "verbatim_term": "ashes",
+    "entry_id": "p040v_4",
+    "entry_title": "Aquafortis"
+    }
+  ],
   "touchstone": [
     {
     "verbatim_term": "touchstone",
     "entry_id": "p011v_1",
     "entry_title": "Color of Damascus steel on knives"
+    }
+  ],
+  "sand": [
+    {
+    "verbatim_term": "sand",
+    "entry_id": "p011v_1",
+    "entry_title": "Color of Damascus steel on knives"
+    },
+    {
+    "verbatim_term": "thin sand",
+    "entry_id": "p005r_1",
+    "entry_title": "Steel mirrors"
     }
   ],
   "knife": [
@@ -5037,30 +5061,6 @@
     "entry_title": "Furbisher"
     }
   ],
-  "ash": [
-    {
-    "verbatim_term": "ashes",
-    "entry_id": "p011v_1",
-    "entry_title": "Color of Damascus steel on knives"
-    },
-    {
-    "verbatim_term": "ashes",
-    "entry_id": "p040v_4",
-    "entry_title": "Aquafortis"
-    }
-  ],
-  "sand": [
-    {
-    "verbatim_term": "sand",
-    "entry_id": "p011v_1",
-    "entry_title": "Color of Damascus steel on knives"
-    },
-    {
-    "verbatim_term": "thin sand",
-    "entry_id": "p005r_1",
-    "entry_title": "Steel mirrors"
-    }
-  ],
   "point": [
     {
     "verbatim_term": "points",
@@ -5188,16 +5188,6 @@
     "entry_title": "For molding Making the arrangement and disposition of the animal"
     },
     {
-    "verbatim_term": "points of iron",
-    "entry_id": "p112v_1",
-    "entry_title": "For molding Making the arrangement and disposition of the animal"
-    },
-    {
-    "verbatim_term": "point of an iron wire",
-    "entry_id": "p112v_1",
-    "entry_title": "For molding Making the arrangement and disposition of the animal"
-    },
-    {
     "verbatim_term": "points of iron wire",
     "entry_id": "p112v_1",
     "entry_title": "For molding Making the arrangement and disposition of the animal"
@@ -5211,6 +5201,16 @@
     "verbatim_term": "points of iron wire",
     "entry_id": "p133r_3",
     "entry_title": "Marks from the points of iron wire which are found on the head of the animal"
+    },
+    {
+    "verbatim_term": "points of iron",
+    "entry_id": "p112v_1",
+    "entry_title": "For molding Making the arrangement and disposition of the animal"
+    },
+    {
+    "verbatim_term": "point of an iron wire",
+    "entry_id": "p112v_1",
+    "entry_title": "For molding Making the arrangement and disposition of the animal"
     },
     {
     "verbatim_term": "delicate points of of fil cist cittern strings",
@@ -5243,12 +5243,12 @@
     "entry_title": "Arranging various animals"
     },
     {
-    "verbatim_term": "small points of latten wire",
+    "verbatim_term": "point of iron or latten wire",
     "entry_id": "p129v_4",
     "entry_title": "Spider molded on a leaf"
     },
     {
-    "verbatim_term": "point of iron or latten wire",
+    "verbatim_term": "small points of latten wire",
     "entry_id": "p129v_4",
     "entry_title": "Spider molded on a leaf"
     },
@@ -5308,6 +5308,11 @@
     "entry_title": "Rose"
     },
     {
+    "verbatim_term": "point of an oiled paintbrush",
+    "entry_id": "p137v_1",
+    "entry_title": "Tempering sand for molds of flat medals"
+    },
+    {
     "verbatim_term": "point of a knife",
     "entry_id": "p137v_1",
     "entry_title": "Tempering sand for molds of flat medals"
@@ -5321,11 +5326,6 @@
     "verbatim_term": "point of a knife",
     "entry_id": "p145v_1",
     "entry_title": "Molding plants and flowers"
-    },
-    {
-    "verbatim_term": "point of an oiled paintbrush",
-    "entry_id": "p137v_1",
-    "entry_title": "Tempering sand for molds of flat medals"
     },
     {
     "verbatim_term": "knife points",
@@ -5363,12 +5363,12 @@
     "entry_title": "Cuttlefish bone"
     },
     {
-    "verbatim_term": "point of hot iron",
+    "verbatim_term": "points of rather strong iron",
     "entry_id": "p146v_1",
     "entry_title": "Molding turtles"
     },
     {
-    "verbatim_term": "points of rather strong iron",
+    "verbatim_term": "point of hot iron",
     "entry_id": "p146v_1",
     "entry_title": "Molding turtles"
     },
@@ -5494,37 +5494,6 @@
     "entry_title": "Fine sieves of raw silk"
     }
   ],
-  "mallet": [
-    {
-    "verbatim_term": "mallet",
-    "entry_id": "p014r_1",
-    "entry_title": "For walls of earth and rustic construction"
-    },
-    {
-    "verbatim_term": "wooden mallet",
-    "entry_id": "p015v_3",
-    "entry_title": "Stamping"
-    },
-    {
-    "verbatim_term": "large mallet of wood",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    }
-  ],
-  "bat": [
-    {
-    "verbatim_term": "bat",
-    "entry_id": "p014r_1",
-    "entry_title": "For walls of earth and rustic construction"
-    }
-  ],
-  "ditch-spade": [
-    {
-    "verbatim_term": "ditch-spade",
-    "entry_id": "p014r_1",
-    "entry_title": "For walls of earth and rustic construction"
-    }
-  ],
   "board": [
     {
     "verbatim_term": "boards",
@@ -5557,11 +5526,42 @@
     "entry_title": "Animals dried in an oven"
     }
   ],
+  "bat": [
+    {
+    "verbatim_term": "bat",
+    "entry_id": "p014r_1",
+    "entry_title": "For walls of earth and rustic construction"
+    }
+  ],
   "beater": [
     {
     "verbatim_term": "beaters",
     "entry_id": "p014r_1",
     "entry_title": "For walls of earth and rustic construction"
+    }
+  ],
+  "ditch-spade": [
+    {
+    "verbatim_term": "ditch-spade",
+    "entry_id": "p014r_1",
+    "entry_title": "For walls of earth and rustic construction"
+    }
+  ],
+  "mallet": [
+    {
+    "verbatim_term": "mallet",
+    "entry_id": "p014r_1",
+    "entry_title": "For walls of earth and rustic construction"
+    },
+    {
+    "verbatim_term": "wooden mallet",
+    "entry_id": "p015v_3",
+    "entry_title": "Stamping"
+    },
+    {
+    "verbatim_term": "large mallet of wood",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
     }
   ],
   "frame": [
@@ -5623,7 +5623,7 @@
     {
     "verbatim_term": "frame",
     "entry_id": "p083v_2",
-    "entry_title": "Molding in relief on one part and hollow on the other."
+    "entry_title": "Molding in relief on one part and hollow on the other"
     },
     {
     "verbatim_term": "frame",
@@ -5773,7 +5773,7 @@
     {
     "verbatim_term": "frames",
     "entry_id": "p083v_2",
-    "entry_title": "Molding in relief on one part and hollow on the other."
+    "entry_title": "Molding in relief on one part and hollow on the other"
     },
     {
     "verbatim_term": "frames",
@@ -5860,7 +5860,7 @@
     "entry_title": "For ruby take some gold leaf"
     },
     {
-    "verbatim_term": "biggest charcoal",
+    "verbatim_term": "new charcoal",
     "entry_id": "p016r_1",
     "entry_title": "Founding of soft iron"
     },
@@ -5870,7 +5870,7 @@
     "entry_title": "Founding of soft iron"
     },
     {
-    "verbatim_term": "new charcoal",
+    "verbatim_term": "biggest charcoal",
     "entry_id": "p016r_1",
     "entry_title": "Founding of soft iron"
     },
@@ -5878,6 +5878,33 @@
     "verbatim_term": "hot charcoal",
     "entry_id": "p159v_1",
     "entry_title": "Cleaning files"
+    }
+  ],
+  "blast-pipe": [
+    {
+    "verbatim_term": "blast-pipe",
+    "entry_id": "p016r_1",
+    "entry_title": "Founding of soft iron"
+    },
+    {
+    "verbatim_term": "blast-pipe",
+    "entry_id": "p083v_3",
+    "entry_title": "Bellows"
+    },
+    {
+    "verbatim_term": "blast-pipe",
+    "entry_id": "p127v_1",
+    "entry_title": "Founders’ earth"
+    },
+    {
+    "verbatim_term": "blast-pipe",
+    "entry_id": "p128r_1",
+    "entry_title": "Casting in silver and gold"
+    },
+    {
+    "verbatim_term": "blast-pipes",
+    "entry_id": "p109r_4",
+    "entry_title": "Bellows of the forge"
     }
   ],
   "forge": [
@@ -6126,33 +6153,6 @@
     "entry_title": "Founding of soft iron"
     }
   ],
-  "blast-pipe": [
-    {
-    "verbatim_term": "blast-pipe",
-    "entry_id": "p016r_1",
-    "entry_title": "Founding of soft iron"
-    },
-    {
-    "verbatim_term": "blast-pipe",
-    "entry_id": "p083v_3",
-    "entry_title": "Bellows"
-    },
-    {
-    "verbatim_term": "blast-pipe",
-    "entry_id": "p127v_1",
-    "entry_title": "Founders’ earth"
-    },
-    {
-    "verbatim_term": "blast-pipe",
-    "entry_id": "p128r_1",
-    "entry_title": "Casting in silver and gold"
-    },
-    {
-    "verbatim_term": "blast-pipes",
-    "entry_id": "p109r_4",
-    "entry_title": "Bellows of the forge"
-    }
-  ],
   "ladle": [
     {
     "verbatim_term": "ladles",
@@ -6217,6 +6217,80 @@
     "entry_title": "Grey guards"
     }
   ],
+  "compass": [
+    {
+    "verbatim_term": "compass",
+    "entry_id": "p019v_1",
+    "entry_title": "Mathematical figures without ruler and compass"
+    },
+    {
+    "verbatim_term": "compass",
+    "entry_id": "p025v_1",
+    "entry_title": "Gunner"
+    },
+    {
+    "verbatim_term": "compass",
+    "entry_id": "p062v_1",
+    "entry_title": "Drawing"
+    },
+    {
+    "verbatim_term": "compass",
+    "entry_id": "p062v_2",
+    "entry_title": "Perspective"
+    },
+    {
+    "verbatim_term": "compass",
+    "entry_id": "p064r_8",
+    "entry_title": ""
+    },
+    {
+    "verbatim_term": "compass",
+    "entry_id": "p080v_1",
+    "entry_title": "Founders of small works  of tin"
+    },
+    {
+    "verbatim_term": "compass",
+    "entry_id": "p082r_4",
+    "entry_title": "Clockmakers"
+    }
+  ],
+  "ruler": [
+    {
+    "verbatim_term": "ruler",
+    "entry_id": "p019v_1",
+    "entry_title": "Mathematical figures without ruler and compass"
+    },
+    {
+    "verbatim_term": "ruler",
+    "entry_id": "p021r_2",
+    "entry_title": "For firing a cannon at night"
+    },
+    {
+    "verbatim_term": "ruler",
+    "entry_id": "p062r_1",
+    "entry_title": "Perspectives"
+    },
+    {
+    "verbatim_term": "ruler",
+    "entry_id": "p062v_1",
+    "entry_title": "Drawing"
+    },
+    {
+    "verbatim_term": "ruler",
+    "entry_id": "p062v_2",
+    "entry_title": "Perspective"
+    },
+    {
+    "verbatim_term": "ruler",
+    "entry_id": "p064v_4",
+    "entry_title": "Straight lines"
+    },
+    {
+    "verbatim_term": "rulers",
+    "entry_id": "p062v_2",
+    "entry_title": "Perspective"
+    }
+  ],
   "quill": [
     {
     "verbatim_term": "quill",
@@ -6259,78 +6333,11 @@
     "entry_title": "Molds of things that do not release"
     }
   ],
-  "ruler": [
+  "syringe": [
     {
-    "verbatim_term": "ruler",
-    "entry_id": "p019v_1",
-    "entry_title": "Mathematical figures without ruler and compass"
-    },
-    {
-    "verbatim_term": "ruler",
-    "entry_id": "p021r_2",
-    "entry_title": "For firing a cannon at night"
-    },
-    {
-    "verbatim_term": "ruler",
-    "entry_id": "p062r_1",
-    "entry_title": "Perspectives"
-    },
-    {
-    "verbatim_term": "ruler",
-    "entry_id": "p062v_1",
-    "entry_title": "Drawing"
-    },
-    {
-    "verbatim_term": "ruler",
-    "entry_id": "p062v_2",
-    "entry_title": "Perspective"
-    },
-    {
-    "verbatim_term": "ruler",
-    "entry_id": "p064v_4",
-    "entry_title": "Straight lines"
-    },
-    {
-    "verbatim_term": "rulers",
-    "entry_id": "p062v_2",
-    "entry_title": "Perspective"
-    }
-  ],
-  "compass": [
-    {
-    "verbatim_term": "compass",
-    "entry_id": "p019v_1",
-    "entry_title": "Mathematical figures without ruler and compass"
-    },
-    {
-    "verbatim_term": "compass",
-    "entry_id": "p025v_1",
-    "entry_title": "Gunner"
-    },
-    {
-    "verbatim_term": "compass",
-    "entry_id": "p062v_1",
-    "entry_title": "Drawing"
-    },
-    {
-    "verbatim_term": "compass",
-    "entry_id": "p062v_2",
-    "entry_title": "Perspective"
-    },
-    {
-    "verbatim_term": "compass",
-    "entry_id": "p064r_8",
-    "entry_title": ""
-    },
-    {
-    "verbatim_term": "compass",
-    "entry_id": "p080v_1",
-    "entry_title": "Founders of small works  of tin"
-    },
-    {
-    "verbatim_term": "compass",
-    "entry_id": "p082r_4",
-    "entry_title": "Clockmakers"
+    "verbatim_term": "syringe",
+    "entry_id": "p019v_3",
+    "entry_title": "Enemas"
     }
   ],
   "sleeve": [
@@ -6370,11 +6377,18 @@
     "entry_title": "Sand from pulverized rock salt and sand from the mine finely ground on marble"
     }
   ],
-  "syringe": [
+  "lid": [
     {
-    "verbatim_term": "syringe",
-    "entry_id": "p019v_3",
-    "entry_title": "Enemas"
+    "verbatim_term": "lids",
+    "entry_id": "p020r_1",
+    "entry_title": "For making millas"
+    }
+  ],
+  "ember": [
+    {
+    "verbatim_term": "embers",
+    "entry_id": "p020r_1",
+    "entry_title": "For making millas"
     }
   ],
   "hearth": [
@@ -6387,20 +6401,6 @@
     "verbatim_term": "hearth",
     "entry_id": "p093r_4",
     "entry_title": "Sand"
-    }
-  ],
-  "ember": [
-    {
-    "verbatim_term": "embers",
-    "entry_id": "p020r_1",
-    "entry_title": "For making millas"
-    }
-  ],
-  "lid": [
-    {
-    "verbatim_term": "lids",
-    "entry_id": "p020r_1",
-    "entry_title": "For making millas"
     }
   ],
   "glass": [
@@ -6582,6 +6582,131 @@
     "entry_title": "Catching lizards and snakes"
     }
   ],
+  "peg": [
+    {
+    "verbatim_term": "pegs",
+    "entry_id": "p023r_1",
+    "entry_title": "On petards"
+    },
+    {
+    "verbatim_term": "pegs",
+    "entry_id": "p072v_1",
+    "entry_title": "Casting"
+    },
+    {
+    "verbatim_term": "pegs",
+    "entry_id": "p080v_1",
+    "entry_title": "Founders of small works  of tin"
+    },
+    {
+    "verbatim_term": "pegs",
+    "entry_id": "p083v_2",
+    "entry_title": "Molding in relief on one part and hollow on the other"
+    },
+    {
+    "verbatim_term": "pegs",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    },
+    {
+    "verbatim_term": "peg",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    },
+    {
+    "verbatim_term": "iron pegs",
+    "entry_id": "p022v_1",
+    "entry_title": "Orgues"
+    },
+    {
+    "verbatim_term": "iron pegs",
+    "entry_id": "p023r_1",
+    "entry_title": "On petards"
+    },
+    {
+    "verbatim_term": "iron pegs",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    },
+    {
+    "verbatim_term": "iron peg",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    },
+    {
+    "verbatim_term": "common iron pegs",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    },
+    {
+    "verbatim_term": "large iron pegs",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    }
+  ],
+  "bar": [
+    {
+    "verbatim_term": "bar",
+    "entry_id": "p023r_1",
+    "entry_title": "On petards"
+    }
+  ],
+  "auger": [
+    {
+    "verbatim_term": "auger",
+    "entry_id": "p023r_1",
+    "entry_title": "On petards"
+    }
+  ],
+  "cord": [
+    {
+    "verbatim_term": "cord",
+    "entry_id": "p023r_1",
+    "entry_title": "On petards"
+    },
+    {
+    "verbatim_term": "cord",
+    "entry_id": "p037v_3",
+    "entry_title": "Yellow Amber"
+    },
+    {
+    "verbatim_term": "cord",
+    "entry_id": "p098r_2",
+    "entry_title": "Borders of a garden"
+    },
+    {
+    "verbatim_term": "twisted cord of the saw",
+    "entry_id": "p109v_1",
+    "entry_title": "Toad"
+    }
+  ],
+  "gimlet": [
+    {
+    "verbatim_term": "gimlet",
+    "entry_id": "p023r_1",
+    "entry_title": "On petards"
+    },
+    {
+    "verbatim_term": "gimlet",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    },
+    {
+    "verbatim_term": "gimlets",
+    "entry_id": "p080r_1",
+    "entry_title": "Petard"
+    },
+    {
+    "verbatim_term": "gimlets",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    },
+    {
+    "verbatim_term": "gimlets of wheelwrights",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    }
+  ],
   "string": [
     {
     "verbatim_term": "string",
@@ -6624,47 +6749,6 @@
     "entry_title": "Stance of animals"
     }
   ],
-  "bar": [
-    {
-    "verbatim_term": "bar",
-    "entry_id": "p023r_1",
-    "entry_title": "On petards"
-    }
-  ],
-  "auger": [
-    {
-    "verbatim_term": "auger",
-    "entry_id": "p023r_1",
-    "entry_title": "On petards"
-    }
-  ],
-  "gimlet": [
-    {
-    "verbatim_term": "gimlet",
-    "entry_id": "p023r_1",
-    "entry_title": "On petards"
-    },
-    {
-    "verbatim_term": "gimlet",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    },
-    {
-    "verbatim_term": "gimlets",
-    "entry_id": "p080r_1",
-    "entry_title": "Petard"
-    },
-    {
-    "verbatim_term": "gimlets",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    },
-    {
-    "verbatim_term": "gimlets of wheelwrights",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    }
-  ],
   "wimble": [
     {
     "verbatim_term": "wimble",
@@ -6682,88 +6766,16 @@
     "entry_title": "Petards"
     }
   ],
-  "cord": [
+  "frail": [
     {
-    "verbatim_term": "cord",
-    "entry_id": "p023r_1",
-    "entry_title": "On petards"
+    "verbatim_term": "frails",
+    "entry_id": "p024v_1",
+    "entry_title": "For bringing a cannon over land"
     },
     {
-    "verbatim_term": "cord",
-    "entry_id": "p037v_3",
-    "entry_title": "Yellow Amber"
-    },
-    {
-    "verbatim_term": "cord",
-    "entry_id": "p098r_2",
-    "entry_title": "Borders of a garden"
-    },
-    {
-    "verbatim_term": "twisted cord of the saw",
-    "entry_id": "p109v_1",
-    "entry_title": "Toad"
-    }
-  ],
-  "peg": [
-    {
-    "verbatim_term": "pegs",
-    "entry_id": "p023r_1",
-    "entry_title": "On petards"
-    },
-    {
-    "verbatim_term": "pegs",
-    "entry_id": "p072v_1",
-    "entry_title": "Casting"
-    },
-    {
-    "verbatim_term": "pegs",
-    "entry_id": "p080v_1",
-    "entry_title": "Founders of small works  of tin"
-    },
-    {
-    "verbatim_term": "pegs",
-    "entry_id": "p083v_2",
-    "entry_title": "Molding in relief on one part and hollow on the other."
-    },
-    {
-    "verbatim_term": "pegs",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    },
-    {
-    "verbatim_term": "peg",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    },
-    {
-    "verbatim_term": "iron pegs",
-    "entry_id": "p022v_1",
-    "entry_title": "Orgues"
-    },
-    {
-    "verbatim_term": "iron pegs",
-    "entry_id": "p023r_1",
-    "entry_title": "On petards"
-    },
-    {
-    "verbatim_term": "iron pegs",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    },
-    {
-    "verbatim_term": "common iron pegs",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    },
-    {
-    "verbatim_term": "large iron pegs",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    },
-    {
-    "verbatim_term": "iron peg",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
+    "verbatim_term": "frail",
+    "entry_id": "p024v_1",
+    "entry_title": "For bringing a cannon over land"
     }
   ],
   "shovel": [
@@ -6783,14 +6795,9 @@
     "entry_title": "Pastel woad"
     }
   ],
-  "frail": [
+  "rammer": [
     {
-    "verbatim_term": "frails",
-    "entry_id": "p024v_1",
-    "entry_title": "For bringing a cannon over land"
-    },
-    {
-    "verbatim_term": "frail",
+    "verbatim_term": "rammer",
     "entry_id": "p024v_1",
     "entry_title": "For bringing a cannon over land"
     }
@@ -6812,6 +6819,18 @@
     "entry_title": "Repairing cast things"
     }
   ],
+  "bung": [
+    {
+    "verbatim_term": "bungs",
+    "entry_id": "p024v_1",
+    "entry_title": "For bringing a cannon over land"
+    },
+    {
+    "verbatim_term": "wooden bungs",
+    "entry_id": "p024v_1",
+    "entry_title": "For bringing a cannon over land"
+    }
+  ],
   "wedge": [
     {
     "verbatim_term": "wedges",
@@ -6824,23 +6843,11 @@
     "entry_title": "Press for the large molds"
     }
   ],
-  "rammer": [
+  "blade": [
     {
-    "verbatim_term": "rammer",
-    "entry_id": "p024v_1",
-    "entry_title": "For bringing a cannon over land"
-    }
-  ],
-  "bung": [
-    {
-    "verbatim_term": "bungs",
-    "entry_id": "p024v_1",
-    "entry_title": "For bringing a cannon over land"
-    },
-    {
-    "verbatim_term": "wooden bungs",
-    "entry_id": "p024v_1",
-    "entry_title": "For bringing a cannon over land"
+    "verbatim_term": "blades",
+    "entry_id": "p025v_1",
+    "entry_title": "Gunner"
     }
   ],
   "borer": [
@@ -6863,13 +6870,6 @@
     "verbatim_term": "borer",
     "entry_id": "p099v_2",
     "entry_title": "Cannons"
-    }
-  ],
-  "blade": [
-    {
-    "verbatim_term": "blades",
-    "entry_id": "p025v_1",
-    "entry_title": "Gunner"
     }
   ],
   "pestle": [
@@ -7014,16 +7014,26 @@
     "entry_title": "Gemstones"
     }
   ],
-  "hammered": [
+  "anvil": [
     {
-    "verbatim_term": "hammered",
+    "verbatim_term": "anvils",
     "entry_id": "p030r_2",
     "entry_title": "Pewterer"
+    },
+    {
+    "verbatim_term": "anvil",
+    "entry_id": "p137r_3",
+    "entry_title": "Clamps"
+    },
+    {
+    "verbatim_term": "anvil",
+    "entry_id": "p159r_3",
+    "entry_title": "Fish glue"
     }
   ],
-  "desgrusouer": [
+  "desgrusoue": [
     {
-    "verbatim_term": "desgrusouer",
+    "verbatim_term": "desgrusoue",
     "entry_id": "p030r_2",
     "entry_title": "Pewterer"
     }
@@ -7082,7 +7092,7 @@
     {
     "verbatim_term": "hands",
     "entry_id": "p083v_2",
-    "entry_title": "Molding in relief on one part and hollow on the other."
+    "entry_title": "Molding in relief on one part and hollow on the other"
     },
     {
     "verbatim_term": "hands",
@@ -7120,28 +7130,23 @@
     "entry_title": "For transmuting a ball into a thimble, cunning"
     }
   ],
-  "esgrusouer": [
+  "crossbar": [
     {
-    "verbatim_term": "esgrusouer",
+    "verbatim_term": "crossbar",
     "entry_id": "p030r_2",
     "entry_title": "Pewterer"
     }
   ],
-  "rope": [
+  "hammered": [
     {
-    "verbatim_term": "rope",
+    "verbatim_term": "hammered",
     "entry_id": "p030r_2",
     "entry_title": "Pewterer"
-    },
-    {
-    "verbatim_term": "rope",
-    "entry_id": "p152v_1",
-    "entry_title": "Repairing cast things"
     }
   ],
-  "desgrusoue": [
+  "desgrusouer": [
     {
-    "verbatim_term": "desgrusoue",
+    "verbatim_term": "desgrusouer",
     "entry_id": "p030r_2",
     "entry_title": "Pewterer"
     }
@@ -7168,28 +7173,23 @@
     "entry_title": "Furbisher"
     }
   ],
-  "anvil": [
+  "esgrusouer": [
     {
-    "verbatim_term": "anvils",
+    "verbatim_term": "esgrusouer",
     "entry_id": "p030r_2",
     "entry_title": "Pewterer"
-    },
-    {
-    "verbatim_term": "anvil",
-    "entry_id": "p137r_3",
-    "entry_title": "Clamps"
-    },
-    {
-    "verbatim_term": "anvil",
-    "entry_id": "p159r_3",
-    "entry_title": "Fish glue"
     }
   ],
-  "crossbar": [
+  "rope": [
     {
-    "verbatim_term": "crossbar",
+    "verbatim_term": "rope",
     "entry_id": "p030r_2",
     "entry_title": "Pewterer"
+    },
+    {
+    "verbatim_term": "rope",
+    "entry_id": "p152v_1",
+    "entry_title": "Repairing cast things"
     }
   ],
   "filter": [
@@ -7209,23 +7209,6 @@
     "verbatim_term": "shale",
     "entry_id": "p031v_4",
     "entry_title": "Painting on glass"
-    }
-  ],
-  "nailed": [
-    {
-    "verbatim_term": "nailed",
-    "entry_id": "p033r_1",
-    "entry_title": "Knife for cutting the nose or a finger"
-    },
-    {
-    "verbatim_term": "nailed",
-    "entry_id": "p160r_1",
-    "entry_title": "Press for the large molds"
-    },
-    {
-    "verbatim_term": "leather nailed onto a piece of wood",
-    "entry_id": "p030r_2",
-    "entry_title": "Pewterer"
     }
   ],
   "handle": [
@@ -7248,6 +7231,23 @@
     "verbatim_term": "handle of a hammer",
     "entry_id": "p148r_2",
     "entry_title": "Whitening"
+    }
+  ],
+  "nailed": [
+    {
+    "verbatim_term": "nailed",
+    "entry_id": "p033r_1",
+    "entry_title": "Knife for cutting the nose or a finger"
+    },
+    {
+    "verbatim_term": "nailed",
+    "entry_id": "p160r_1",
+    "entry_title": "Press for the large molds"
+    },
+    {
+    "verbatim_term": "leather nailed onto a piece of wood",
+    "entry_id": "p030r_2",
+    "entry_title": "Pewterer"
     }
   ],
   "toothpick": [
@@ -7302,6 +7302,13 @@
     "entry_title": "XHow not to break a glass with a log or a large stick"
     }
   ],
+  "jewel": [
+    {
+    "verbatim_term": "jewel",
+    "entry_id": "p034v_1",
+    "entry_title": "For melting or transmuting a jewel put inside a box"
+    }
+  ],
   "box": [
     {
     "verbatim_term": "box",
@@ -7324,7 +7331,12 @@
     "entry_title": "For the furnace"
     },
     {
-    "verbatim_term": "small box",
+    "verbatim_term": "box of boxwood banded with rings",
+    "entry_id": "p034v_1",
+    "entry_title": "For melting or transmuting a jewel put inside a box"
+    },
+    {
+    "verbatim_term": "large box",
     "entry_id": "p034v_1",
     "entry_title": "For melting or transmuting a jewel put inside a box"
     },
@@ -7334,7 +7346,12 @@
     "entry_title": "For melting or transmuting a jewel put inside a box"
     },
     {
-    "verbatim_term": "large box",
+    "verbatim_term": "leather box",
+    "entry_id": "p034v_1",
+    "entry_title": "For melting or transmuting a jewel put inside a box"
+    },
+    {
+    "verbatim_term": "small box",
     "entry_id": "p034v_1",
     "entry_title": "For melting or transmuting a jewel put inside a box"
     },
@@ -7345,16 +7362,6 @@
     },
     {
     "verbatim_term": "smaller box",
-    "entry_id": "p034v_1",
-    "entry_title": "For melting or transmuting a jewel put inside a box"
-    },
-    {
-    "verbatim_term": "box of boxwood banded with rings",
-    "entry_id": "p034v_1",
-    "entry_title": "For melting or transmuting a jewel put inside a box"
-    },
-    {
-    "verbatim_term": "leather box",
     "entry_id": "p034v_1",
     "entry_title": "For melting or transmuting a jewel put inside a box"
     },
@@ -7374,13 +7381,6 @@
     "entry_title": "For keeping fruits all year"
     }
   ],
-  "jewel": [
-    {
-    "verbatim_term": "jewel",
-    "entry_id": "p034v_1",
-    "entry_title": "For melting or transmuting a jewel put inside a box"
-    }
-  ],
   "pouch": [
     {
     "verbatim_term": "pouch",
@@ -7393,25 +7393,6 @@
     "entry_title": "For transmuting grain from one vessel to another"
     }
   ],
-  "bushel": [
-    {
-    "verbatim_term": "bushel",
-    "entry_id": "p035v_2",
-    "entry_title": "For transmuting grain from one vessel to another"
-    }
-  ],
-  "hat": [
-    {
-    "verbatim_term": "hat",
-    "entry_id": "p035v_2",
-    "entry_title": "For transmuting grain from one vessel to another"
-    },
-    {
-    "verbatim_term": "hat",
-    "entry_id": "p105v_3",
-    "entry_title": "Catching nightingales See the 15th folio after this."
-    }
-  ],
   "bell": [
     {
     "verbatim_term": "bell",
@@ -7420,6 +7401,13 @@
     },
     {
     "verbatim_term": "wooden bell",
+    "entry_id": "p035v_2",
+    "entry_title": "For transmuting grain from one vessel to another"
+    }
+  ],
+  "bushel": [
+    {
+    "verbatim_term": "bushel",
     "entry_id": "p035v_2",
     "entry_title": "For transmuting grain from one vessel to another"
     }
@@ -7453,11 +7441,16 @@
     "entry_title": "Sal ammoniac and iron dross"
     }
   ],
-  "thimble": [
+  "hat": [
     {
-    "verbatim_term": "thimble",
-    "entry_id": "p036r_1",
-    "entry_title": "For transmuting a ball into a thimble, cunning"
+    "verbatim_term": "hat",
+    "entry_id": "p035v_2",
+    "entry_title": "For transmuting grain from one vessel to another"
+    },
+    {
+    "verbatim_term": "hat",
+    "entry_id": "p105v_3",
+    "entry_title": "Catching nightingales See the 15th folio after this."
     }
   ],
   "ball": [
@@ -7474,12 +7467,19 @@
     "entry_title": "For transmuting a ball into a thimble, cunning"
     },
     {
-    "verbatim_term": "small sheath of plain leather, such as cow or morocco",
+    "verbatim_term": "leather sheath",
     "entry_id": "p036r_1",
     "entry_title": "For transmuting a ball into a thimble, cunning"
     },
     {
-    "verbatim_term": "leather sheath",
+    "verbatim_term": "small sheath of plain leather, such as cow or morocco",
+    "entry_id": "p036r_1",
+    "entry_title": "For transmuting a ball into a thimble, cunning"
+    }
+  ],
+  "thimble": [
+    {
+    "verbatim_term": "thimble",
     "entry_id": "p036r_1",
     "entry_title": "For transmuting a ball into a thimble, cunning"
     }
@@ -7526,6 +7526,11 @@
     "entry_title": "Petards"
     },
     {
+    "verbatim_term": "small pincers with a long beak",
+    "entry_id": "p006v_1",
+    "entry_title": "For ga cachcages"
+    },
+    {
     "verbatim_term": "small pincers",
     "entry_id": "p006v_1",
     "entry_title": "For ga cachcages"
@@ -7549,11 +7554,6 @@
     "verbatim_term": "small pincers",
     "entry_id": "p156v_1",
     "entry_title": "Molding a fly"
-    },
-    {
-    "verbatim_term": "small pincers with a long beak",
-    "entry_id": "p006v_1",
-    "entry_title": "For ga cachcages"
     },
     {
     "verbatim_term": "small flat pincers",
@@ -7603,12 +7603,12 @@
     "entry_title": "Yellow Amber"
     },
     {
-    "verbatim_term": "thunder stone",
+    "verbatim_term": "black stone",
     "entry_id": "p094r_1",
     "entry_title": "Furbisher"
     },
     {
-    "verbatim_term": "black stone",
+    "verbatim_term": "thunder stone",
     "entry_id": "p094r_1",
     "entry_title": "Furbisher"
     },
@@ -7630,16 +7630,16 @@
     "entry_title": "Borders of a garden"
     }
   ],
-  "cane": [
+  "desramonet": [
     {
-    "verbatim_term": "cane",
+    "verbatim_term": "desramonet",
     "entry_id": "p037v_3",
     "entry_title": "Yellow Amber"
     }
   ],
-  "desramonet": [
+  "cane": [
     {
-    "verbatim_term": "desramonet",
+    "verbatim_term": "cane",
     "entry_id": "p037v_3",
     "entry_title": "Yellow Amber"
     }
@@ -7820,7 +7820,7 @@
     "entry_title": "Emeralds of Brissac"
     },
     {
-    "verbatim_term": "alembic well luted",
+    "verbatim_term": "alembic, well-luted",
     "entry_id": "p007v_3",
     "entry_title": "For relieving the pain of G."
     }
@@ -8066,6 +8066,13 @@
     "entry_title": "Another varnish"
     }
   ],
+  "baton": [
+    {
+    "verbatim_term": "baton",
+    "entry_id": "p045r_1",
+    "entry_title": "Loading an arquebus with hail shot"
+    }
+  ],
   "pipe": [
     {
     "verbatim_term": "pipe",
@@ -8081,13 +8088,6 @@
     "verbatim_term": "pipe",
     "entry_id": "p109v_2",
     "entry_title": "Killing snakes for molding"
-    }
-  ],
-  "baton": [
-    {
-    "verbatim_term": "baton",
-    "entry_id": "p045r_1",
-    "entry_title": "Loading an arquebus with hail shot"
     }
   ],
   "ramrod": [
@@ -8376,38 +8376,6 @@
     "entry_title": "Currency medals"
     }
   ],
-  "dish": [
-    {
-    "verbatim_term": "dish",
-    "entry_id": "p049v_2",
-    "entry_title": "Grain of lead"
-    },
-    {
-    "verbatim_term": "dish",
-    "entry_id": "p161r_1",
-    "entry_title": "Preparation of sand for frames"
-    },
-    {
-    "verbatim_term": "chafing dish",
-    "entry_id": "p071v_1",
-    "entry_title": "Varnish"
-    },
-    {
-    "verbatim_term": "chafing dish",
-    "entry_id": "p088r_3",
-    "entry_title": "Varnish"
-    },
-    {
-    "verbatim_term": "tin dish",
-    "entry_id": "p072v_1",
-    "entry_title": "Casting"
-    },
-    {
-    "verbatim_term": "dish of fine tin",
-    "entry_id": "p092r_1",
-    "entry_title": "Sand Mixture easy to melt"
-    }
-  ],
   "card": [
     {
     "verbatim_term": "card",
@@ -8629,40 +8597,43 @@
     "entry_title": "Arranging various animals"
     }
   ],
-  "stopper": [
+  "dish": [
     {
-    "verbatim_term": "stopper",
-    "entry_id": "p050r_1",
-    "entry_title": "Keeping fruit for the entire year"
+    "verbatim_term": "dish",
+    "entry_id": "p049v_2",
+    "entry_title": "Grain of lead"
     },
     {
-    "verbatim_term": "stopper of the bottle",
-    "entry_id": "p029v_6",
-    "entry_title": "Dragon’s blood"
+    "verbatim_term": "dish",
+    "entry_id": "p161r_1",
+    "entry_title": "Preparation of sand for frames"
+    },
+    {
+    "verbatim_term": "chafing dish",
+    "entry_id": "p071v_1",
+    "entry_title": "Varnish"
+    },
+    {
+    "verbatim_term": "chafing dish",
+    "entry_id": "p088r_3",
+    "entry_title": "Varnish"
+    },
+    {
+    "verbatim_term": "tin dish",
+    "entry_id": "p072v_1",
+    "entry_title": "Casting"
+    },
+    {
+    "verbatim_term": "dish of fine tin",
+    "entry_id": "p092r_1",
+    "entry_title": "Sand Mixture easy to melt"
     }
   ],
-  "ampul": [
+  "weight": [
     {
-    "verbatim_term": "ampul",
+    "verbatim_term": "weights",
     "entry_id": "p050r_1",
     "entry_title": "Keeping fruit for the entire year"
-    },
-    {
-    "verbatim_term": "glass ampul",
-    "entry_id": "p050r_1",
-    "entry_title": "Keeping fruit for the entire year"
-    }
-  ],
-  "basket": [
-    {
-    "verbatim_term": "basket",
-    "entry_id": "p050r_1",
-    "entry_title": "Keeping fruit for the entire year"
-    },
-    {
-    "verbatim_term": "basket",
-    "entry_id": "p160v_3",
-    "entry_title": "Catching crayfish"
     }
   ],
   "bottle": [
@@ -8787,11 +8758,82 @@
     "entry_title": "For keeping fruits all year"
     }
   ],
-  "weight": [
+  "stopper": [
     {
-    "verbatim_term": "weights",
+    "verbatim_term": "stopper",
     "entry_id": "p050r_1",
     "entry_title": "Keeping fruit for the entire year"
+    },
+    {
+    "verbatim_term": "stopper of the bottle",
+    "entry_id": "p029v_6",
+    "entry_title": "Dragon’s blood"
+    }
+  ],
+  "basket": [
+    {
+    "verbatim_term": "basket",
+    "entry_id": "p050r_1",
+    "entry_title": "Keeping fruit for the entire year"
+    },
+    {
+    "verbatim_term": "basket",
+    "entry_id": "p160v_3",
+    "entry_title": "Catching crayfish"
+    }
+  ],
+  "ampul": [
+    {
+    "verbatim_term": "ampul",
+    "entry_id": "p050r_1",
+    "entry_title": "Keeping fruit for the entire year"
+    },
+    {
+    "verbatim_term": "glass ampul",
+    "entry_id": "p050r_1",
+    "entry_title": "Keeping fruit for the entire year"
+    }
+  ],
+  "carton": [
+    {
+    "verbatim_term": "carton",
+    "entry_id": "p050r_2",
+    "entry_title": "Molding"
+    },
+    {
+    "verbatim_term": "carton",
+    "entry_id": "p080v_1",
+    "entry_title": "Founders of small works  of tin"
+    },
+    {
+    "verbatim_term": "carton",
+    "entry_id": "p086v_1",
+    "entry_title": "Excellent sand for lead, tin, and copper"
+    },
+    {
+    "verbatim_term": "carton",
+    "entry_id": "p139r_1",
+    "entry_title": "Casts of lead and tin"
+    },
+    {
+    "verbatim_term": "carton",
+    "entry_id": "p153r_2",
+    "entry_title": "Giving the thickness that you wish to a medal"
+    },
+    {
+    "verbatim_term": "carton",
+    "entry_id": "p169v_1",
+    "entry_title": "Molding very thin like bimbalotiers do"
+    },
+    {
+    "verbatim_term": "cartons",
+    "entry_id": "p139r_1",
+    "entry_title": "Casts of lead and tin"
+    },
+    {
+    "verbatim_term": "adapted carton",
+    "entry_id": "p139r_1",
+    "entry_title": "Casts of lead and tin"
     }
   ],
   "medal": [
@@ -8873,55 +8915,6 @@
     "entry_title": "Mulled and sugared wine"
     }
   ],
-  "carton": [
-    {
-    "verbatim_term": "carton",
-    "entry_id": "p050r_2",
-    "entry_title": "Molding"
-    },
-    {
-    "verbatim_term": "carton",
-    "entry_id": "p080v_1",
-    "entry_title": "Founders of small works  of tin"
-    },
-    {
-    "verbatim_term": "carton",
-    "entry_id": "p086v_1",
-    "entry_title": "Excellent sand for lead, tin, and copper"
-    },
-    {
-    "verbatim_term": "carton",
-    "entry_id": "p139r_1",
-    "entry_title": "Casts of lead and tin"
-    },
-    {
-    "verbatim_term": "carton",
-    "entry_id": "p153r_2",
-    "entry_title": "Giving the thickness that you wish to a medal"
-    },
-    {
-    "verbatim_term": "carton",
-    "entry_id": "p169v_1",
-    "entry_title": "Molding very thin like bimbalotiers do"
-    },
-    {
-    "verbatim_term": "cartons",
-    "entry_id": "p139r_1",
-    "entry_title": "Casts of lead and tin"
-    },
-    {
-    "verbatim_term": "adapted carton",
-    "entry_id": "p139r_1",
-    "entry_title": "Casts of lead and tin"
-    }
-  ],
-  "lime-twig": [
-    {
-    "verbatim_term": "lime-twigs",
-    "entry_id": "p050v_1",
-    "entry_title": "Small birds"
-    }
-  ],
   "cage": [
     {
     "verbatim_term": "cages",
@@ -8937,6 +8930,13 @@
     "verbatim_term": "cage",
     "entry_id": "p120r_3",
     "entry_title": "IlNightingale"
+    }
+  ],
+  "lime-twig": [
+    {
+    "verbatim_term": "lime-twigs",
+    "entry_id": "p050v_1",
+    "entry_title": "Small birds"
     }
   ],
   "burnisher": [
@@ -8961,18 +8961,6 @@
     "verbatim_term": "rollers",
     "entry_id": "p051r_2",
     "entry_title": "Cutters of printing plates"
-    }
-  ],
-  "fingertip": [
-    {
-    "verbatim_term": "fingertip",
-    "entry_id": "p051r_2",
-    "entry_title": "Cutters of printing plates"
-    },
-    {
-    "verbatim_term": "fingertip",
-    "entry_id": "p097v_1",
-    "entry_title": "Mastic varnish dry in a half hour"
     }
   ],
   "felt": [
@@ -9044,14 +9032,21 @@
     "entry_title": "Softening iron and rendering it very soft"
     }
   ],
-  "mattra": [
+  "fingertip": [
     {
-    "verbatim_term": "mattras",
-    "entry_id": "p052r_1",
-    "entry_title": "The work done in Algiers"
+    "verbatim_term": "fingertip",
+    "entry_id": "p051r_2",
+    "entry_title": "Cutters of printing plates"
     },
     {
-    "verbatim_term": "large glass mattras",
+    "verbatim_term": "fingertip",
+    "entry_id": "p097v_1",
+    "entry_title": "Mastic varnish dry in a half hour"
+    }
+  ],
+  "pitcher": [
+    {
+    "verbatim_term": "pitcher",
     "entry_id": "p052r_1",
     "entry_title": "The work done in Algiers"
     }
@@ -9063,9 +9058,14 @@
     "entry_title": "The work done in Algiers"
     }
   ],
-  "pitcher": [
+  "mattra": [
     {
-    "verbatim_term": "pitcher",
+    "verbatim_term": "mattras",
+    "entry_id": "p052r_1",
+    "entry_title": "The work done in Algiers"
+    },
+    {
+    "verbatim_term": "large glass mattras",
     "entry_id": "p052r_1",
     "entry_title": "The work done in Algiers"
     }
@@ -9199,7 +9199,7 @@
     {
     "verbatim_term": "press",
     "entry_id": "p083v_2",
-    "entry_title": "Molding in relief on one part and hollow on the other."
+    "entry_title": "Molding in relief on one part and hollow on the other"
     },
     {
     "verbatim_term": "press",
@@ -9297,7 +9297,7 @@
     },
     {
     "verbatim_term": "cotton",
-    "entry_id": "p066r_6",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     },
     {
@@ -9757,65 +9757,9 @@
     "entry_title": "A means for goldsmiths for molding hollow"
     }
   ],
-  "gratteau": [
-    {
-    "verbatim_term": "gratteau",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    }
-  ],
-  "boxwood": [
-    {
-    "verbatim_term": "boxwood",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    }
-  ],
-  "filed": [
-    {
-    "verbatim_term": "filed",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    }
-  ],
-  "grateau": [
-    {
-    "verbatim_term": "grateau",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    }
-  ],
-  "thunderstone": [
-    {
-    "verbatim_term": "thunderstone",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    }
-  ],
   "arson": [
     {
     "verbatim_term": "arson",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    }
-  ],
-  "flin": [
-    {
-    "verbatim_term": "flin",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    }
-  ],
-  "felin": [
-    {
-    "verbatim_term": "felin",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    }
-  ],
-  "grindstone": [
-    {
-    "verbatim_term": "grindstone",
     "entry_id": "p094r_1",
     "entry_title": "Furbisher"
     }
@@ -9827,9 +9771,51 @@
     "entry_title": "Furbisher"
     }
   ],
+  "filed": [
+    {
+    "verbatim_term": "filed",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    }
+  ],
+  "flin": [
+    {
+    "verbatim_term": "flin",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    }
+  ],
   "chameau": [
     {
     "verbatim_term": "chameau",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    }
+  ],
+  "grateau": [
+    {
+    "verbatim_term": "grateau",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    }
+  ],
+  "grindstone": [
+    {
+    "verbatim_term": "grindstone",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    }
+  ],
+  "thunderstone": [
+    {
+    "verbatim_term": "thunderstone",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    }
+  ],
+  "fustée": [
+    {
+    "verbatim_term": "fustée",
     "entry_id": "p094r_1",
     "entry_title": "Furbisher"
     }
@@ -9856,9 +9842,16 @@
     "entry_title": "Repairing cast things"
     }
   ],
-  "fustée": [
+  "gratteau": [
     {
-    "verbatim_term": "fustée",
+    "verbatim_term": "gratteau",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    }
+  ],
+  "felin": [
+    {
+    "verbatim_term": "felin",
     "entry_id": "p094r_1",
     "entry_title": "Furbisher"
     }
@@ -9871,6 +9864,13 @@
     },
     {
     "verbatim_term": "dry chalk",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    }
+  ],
+  "boxwood": [
+    {
+    "verbatim_term": "boxwood",
     "entry_id": "p094r_1",
     "entry_title": "Furbisher"
     }
@@ -9928,16 +9928,16 @@
     "entry_title": "Founding"
     }
   ],
-  "bore": [
+  "boring": [
     {
-    "verbatim_term": "bore",
+    "verbatim_term": "boring",
     "entry_id": "p099v_2",
     "entry_title": "Cannons"
     }
   ],
-  "boring": [
+  "bore": [
     {
-    "verbatim_term": "boring",
+    "verbatim_term": "bore",
     "entry_id": "p099v_2",
     "entry_title": "Cannons"
     }
@@ -10170,16 +10170,16 @@
     "entry_title": "Sal ammoniac water"
     }
   ],
-  "basin": [
+  "flagon": [
     {
-    "verbatim_term": "basin",
+    "verbatim_term": "flagon",
     "entry_id": "p112r_1",
     "entry_title": "For tempering sand"
     }
   ],
-  "flagon": [
+  "basin": [
     {
-    "verbatim_term": "flagon",
+    "verbatim_term": "basin",
     "entry_id": "p112r_1",
     "entry_title": "For tempering sand"
     }
@@ -10257,16 +10257,16 @@
     "entry_title": "IlNightingale"
     }
   ],
-  "hourglass": [
+  "fist": [
     {
-    "verbatim_term": "hourglass",
+    "verbatim_term": "fist",
     "entry_id": "p120v_6",
     "entry_title": "Keeping dry flowers in the same state all year"
     }
   ],
-  "fist": [
+  "hourglass": [
     {
-    "verbatim_term": "fist",
+    "verbatim_term": "hourglass",
     "entry_id": "p120v_6",
     "entry_title": "Keeping dry flowers in the same state all year"
     }
@@ -10460,6 +10460,13 @@
     "entry_title": "Thing that does not release"
     }
   ],
+  "moulet": [
+    {
+    "verbatim_term": "moulets",
+    "entry_id": "p135v_1",
+    "entry_title": "Casting in ☼"
+    }
+  ],
   "fournaise": [
     {
     "verbatim_term": "fournaise",
@@ -10470,13 +10477,6 @@
     "verbatim_term": "glassmaker’s fournaise",
     "entry_id": "p107r_1",
     "entry_title": "Catching lizards and snakes"
-    }
-  ],
-  "moulet": [
-    {
-    "verbatim_term": "moulets",
-    "entry_id": "p135v_1",
-    "entry_title": "Casting in ☼"
     }
   ],
   "tow": [
@@ -10559,16 +10559,16 @@
     "entry_title": "Molding hollow"
     }
   ],
-  "ear": [
+  "knee": [
     {
-    "verbatim_term": "ear",
+    "verbatim_term": "knee",
     "entry_id": "p145r_2",
     "entry_title": "Cuttlefish bone"
     }
   ],
-  "knee": [
+  "ear": [
     {
-    "verbatim_term": "knee",
+    "verbatim_term": "ear",
     "entry_id": "p145r_2",
     "entry_title": "Cuttlefish bone"
     }
@@ -10687,18 +10687,6 @@
     "entry_title": "Chiseling"
     }
   ],
-  "stirrup": [
-    {
-    "verbatim_term": "stirrup",
-    "entry_id": "p160r_1",
-    "entry_title": "Press for the large molds"
-    },
-    {
-    "verbatim_term": "stirrup or screw of iron",
-    "entry_id": "p139r_1",
-    "entry_title": "Casts of lead and tin"
-    }
-  ],
   "pillar": [
     {
     "verbatim_term": "pillars",
@@ -10711,6 +10699,18 @@
     "entry_title": "Press for the large molds"
     }
   ],
+  "stirrup": [
+    {
+    "verbatim_term": "stirrup",
+    "entry_id": "p160r_1",
+    "entry_title": "Press for the large molds"
+    },
+    {
+    "verbatim_term": "stirrup or screw of iron",
+    "entry_id": "p139r_1",
+    "entry_title": "Casts of lead and tin"
+    }
+  ],
   "semal": [
     {
     "verbatim_term": "semal",
@@ -10718,16 +10718,16 @@
     "entry_title": "Preparation of sand for frames"
     }
   ],
-  "glofe": [
+  "glove": [
     {
-    "verbatim_term": "gloves",
+    "verbatim_term": "glove",
     "entry_id": "p163r_1",
     "entry_title": "Perfumer"
     }
   ],
-  "glove": [
+  "glofe": [
     {
-    "verbatim_term": "glove",
+    "verbatim_term": "gloves",
     "entry_id": "p163r_1",
     "entry_title": "Perfumer"
     }
@@ -10739,9 +10739,14 @@
     "entry_title": "Leady silver"
     }
   ],
-  "fork": [
+  "saw": [
     {
-    "verbatim_term": "forks",
+    "verbatim_term": "saws",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    },
+    {
+    "verbatim_term": "knife-like saws",
     "entry_id": "p167r_1",
     "entry_title": "Petards"
     }
@@ -10760,14 +10765,9 @@
     "entry_title": "Petards"
     }
   ],
-  "saw": [
+  "fork": [
     {
-    "verbatim_term": "saws",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    },
-    {
-    "verbatim_term": "knife-like saws",
+    "verbatim_term": "forks",
     "entry_id": "p167r_1",
     "entry_title": "Petards"
     }
@@ -10779,16 +10779,16 @@
     "entry_title": "Currency medals"
     }
   ],
-  "cutting file": [
+  "wood model": [
     {
-    "verbatim_term": "cutting file",
+    "verbatim_term": "wood model",
     "entry_id": "p006v_1",
     "entry_title": "For ga cachcages"
     }
   ],
-  "wood model": [
+  "cutting file": [
     {
-    "verbatim_term": "wood model",
+    "verbatim_term": "cutting file",
     "entry_id": "p006v_1",
     "entry_title": "For ga cachcages"
     }
@@ -10866,16 +10866,16 @@
     "entry_title": "Plaster"
     }
   ],
-  "goldsmiths’ bouteure": [
+  "powder of the said tripoli": [
     {
-    "verbatim_term": "goldsmiths’ bouteure",
+    "verbatim_term": "powder of the said tripoli",
     "entry_id": "p012v_2",
     "entry_title": "Cleaning yellow pearls"
     }
   ],
-  "powder of the said tripoli": [
+  "goldsmiths’ bouteure": [
     {
-    "verbatim_term": "powder of the said tripoli",
+    "verbatim_term": "goldsmiths’ bouteure",
     "entry_id": "p012v_2",
     "entry_title": "Cleaning yellow pearls"
     }
@@ -10915,16 +10915,16 @@
     "entry_title": "For walls of earth and rustic construction"
     }
   ],
-  "long pole": [
+  "chevron beam": [
     {
-    "verbatim_term": "long poles",
+    "verbatim_term": "chevron beams",
     "entry_id": "p014r_1",
     "entry_title": "For walls of earth and rustic construction"
     }
   ],
-  "chevron beam": [
+  "long pole": [
     {
-    "verbatim_term": "chevron beams",
+    "verbatim_term": "long poles",
     "entry_id": "p014r_1",
     "entry_title": "For walls of earth and rustic construction"
     }
@@ -10936,16 +10936,16 @@
     "entry_title": "Softening horn"
     }
   ],
-  "iron or metal shell": [
+  "bellows’ pipe": [
     {
-    "verbatim_term": "iron or metal shells",
+    "verbatim_term": "bellows’ pipes",
     "entry_id": "p016r_1",
     "entry_title": "Founding of soft iron"
     }
   ],
-  "bellows’ pipe": [
+  "iron or metal shell": [
     {
-    "verbatim_term": "bellows’ pipes",
+    "verbatim_term": "iron or metal shells",
     "entry_id": "p016r_1",
     "entry_title": "Founding of soft iron"
     }
@@ -10990,20 +10990,6 @@
     "entry_title": "Gunner"
     }
   ],
-  "iron wheel": [
-    {
-    "verbatim_term": "iron wheels",
-    "entry_id": "p030r_2",
-    "entry_title": "Pewterer"
-    }
-  ],
-  "cutting iron": [
-    {
-    "verbatim_term": "cutting iron",
-    "entry_id": "p030r_2",
-    "entry_title": "Pewterer"
-    }
-  ],
   "soldering iron": [
     {
     "verbatim_term": "soldering iron",
@@ -11014,6 +11000,20 @@
   "emery stone powder": [
     {
     "verbatim_term": "emery stone powder",
+    "entry_id": "p030r_2",
+    "entry_title": "Pewterer"
+    }
+  ],
+  "iron wheel": [
+    {
+    "verbatim_term": "iron wheels",
+    "entry_id": "p030r_2",
+    "entry_title": "Pewterer"
+    }
+  ],
+  "cutting iron": [
+    {
+    "verbatim_term": "cutting iron",
     "entry_id": "p030r_2",
     "entry_title": "Pewterer"
     }
@@ -11067,16 +11067,16 @@
     "entry_title": "For transmuting grain from one vessel to another"
     }
   ],
-  "boxwood ball": [
+  "little &amp; ring finger": [
     {
-    "verbatim_term": "boxwood balls",
+    "verbatim_term": "little &amp; ring fingers",
     "entry_id": "p036r_1",
     "entry_title": "For transmuting a ball into a thimble, cunning"
     }
   ],
-  "little &amp; ring finger": [
+  "boxwood ball": [
     {
-    "verbatim_term": "little &amp; ring fingers",
+    "verbatim_term": "boxwood balls",
     "entry_id": "p036r_1",
     "entry_title": "For transmuting a ball into a thimble, cunning"
     }
@@ -11180,16 +11180,16 @@
     "entry_title": "Founding"
     }
   ],
-  "pick of wood or iron": [
+  "varnished earthenware pot": [
     {
-    "verbatim_term": "pick of wood or iron",
+    "verbatim_term": "varnished earthenware pot",
     "entry_id": "p048v_1",
     "entry_title": "Extraction of regulus"
     }
   ],
-  "varnished earthenware pot": [
+  "pick of wood or iron": [
     {
-    "verbatim_term": "varnished earthenware pot",
+    "verbatim_term": "pick of wood or iron",
     "entry_id": "p048v_1",
     "entry_title": "Extraction of regulus"
     }
@@ -11215,13 +11215,6 @@
     "entry_title": "Counterproofing"
     }
   ],
-  "wet napkin": [
-    {
-    "verbatim_term": "wet napkins",
-    "entry_id": "p051r_2",
-    "entry_title": "Cutters of printing plates"
-    }
-  ],
   "piece of white paper": [
     {
     "verbatim_term": "piece of white paper",
@@ -11243,12 +11236,19 @@
   ],
   "wood block": [
     {
-    "verbatim_term": "wood block",
+    "verbatim_term": "wood blocks",
     "entry_id": "p051r_2",
     "entry_title": "Cutters of printing plates"
     },
     {
-    "verbatim_term": "wood blocks",
+    "verbatim_term": "wood block",
+    "entry_id": "p051r_2",
+    "entry_title": "Cutters of printing plates"
+    }
+  ],
+  "wet napkin": [
+    {
+    "verbatim_term": "wet napkins",
     "entry_id": "p051r_2",
     "entry_title": "Cutters of printing plates"
     }
@@ -11260,16 +11260,16 @@
     "entry_title": "The work done in Algiers"
     }
   ],
-  "feather cushion": [
+  "chafing dishes &amp; with glowing charcoal": [
     {
-    "verbatim_term": "feather cushions",
+    "verbatim_term": "chafing dishes &amp; with glowing charcoal",
     "entry_id": "p053v_1",
     "entry_title": "Silkworms"
     }
   ],
-  "chafing dishes &amp; with glowing charcoal": [
+  "feather cushion": [
     {
-    "verbatim_term": "chafing dishes &amp; with glowing charcoal",
+    "verbatim_term": "feather cushions",
     "entry_id": "p053v_1",
     "entry_title": "Silkworms"
     }
@@ -11361,16 +11361,16 @@
     "entry_title": "Varnish"
     }
   ],
-  "table is quite even": [
+  "a bit of cork": [
     {
-    "verbatim_term": "table is quite even",
+    "verbatim_term": "a bit of cork",
     "entry_id": "p080v_1",
     "entry_title": "Founders of small works  of tin"
     }
   ],
-  "a bit of cork": [
+  "table is quite even": [
     {
-    "verbatim_term": "a bit of cork",
+    "verbatim_term": "table is quite even",
     "entry_id": "p080v_1",
     "entry_title": "Founders of small works  of tin"
     }
@@ -11403,9 +11403,9 @@
     "entry_title": "Terre fondue of potters"
     }
   ],
-  "shards of wood": [
+  "hands joined between your two knee": [
     {
-    "verbatim_term": "shards of wood",
+    "verbatim_term": "hands joined between your two knees",
     "entry_id": "p091r_2",
     "entry_title": "Molding with cuttlefish bone"
     }
@@ -11417,16 +11417,16 @@
     "entry_title": "Molding with cuttlefish bone"
     }
   ],
-  "hands joined between your two knee": [
+  "shards of wood": [
     {
-    "verbatim_term": "hands joined between your two knees",
+    "verbatim_term": "shards of wood",
     "entry_id": "p091r_2",
     "entry_title": "Molding with cuttlefish bone"
     }
   ],
-  "pulverized emery": [
+  "dog skin": [
     {
-    "verbatim_term": "pulverized emery",
+    "verbatim_term": "dog skin",
     "entry_id": "p094r_1",
     "entry_title": "Furbisher"
     }
@@ -11434,62 +11434,6 @@
   "baston a felinder": [
     {
     "verbatim_term": "baston a felinder",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    }
-  ],
-  "joiners’ bench": [
-    {
-    "verbatim_term": "joiners’ bench",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    }
-  ],
-  "spinning wheel": [
-    {
-    "verbatim_term": "spinning wheel",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    }
-  ],
-  "sharpening stone": [
-    {
-    "verbatim_term": "sharpening stone",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    }
-  ],
-  "scabbard bench": [
-    {
-    "verbatim_term": "scabbard bench",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    }
-  ],
-  "baton à felinder": [
-    {
-    "verbatim_term": "baton à felinder",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    }
-  ],
-  "small iron tool": [
-    {
-    "verbatim_term": "small iron tool",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    }
-  ],
-  "round plane, also mounted with two handle": [
-    {
-    "verbatim_term": "round plane, also mounted with two handles",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    }
-  ],
-  "dog skin": [
-    {
-    "verbatim_term": "dog skin",
     "entry_id": "p094r_1",
     "entry_title": "Furbisher"
     }
@@ -11546,6 +11490,62 @@
     "entry_title": "Molding hollow"
     }
   ],
+  "round plane, also mounted with two handle": [
+    {
+    "verbatim_term": "round plane, also mounted with two handles",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    }
+  ],
+  "spinning wheel": [
+    {
+    "verbatim_term": "spinning wheel",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    }
+  ],
+  "pulverized emery": [
+    {
+    "verbatim_term": "pulverized emery",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    }
+  ],
+  "joiners’ bench": [
+    {
+    "verbatim_term": "joiners’ bench",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    }
+  ],
+  "baton à felinder": [
+    {
+    "verbatim_term": "baton à felinder",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    }
+  ],
+  "small iron tool": [
+    {
+    "verbatim_term": "small iron tool",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    }
+  ],
+  "sharpening stone": [
+    {
+    "verbatim_term": "sharpening stone",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    }
+  ],
+  "scabbard bench": [
+    {
+    "verbatim_term": "scabbard bench",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    }
+  ],
   "soft, very soft, file": [
     {
     "verbatim_term": "soft, very soft, file",
@@ -11560,16 +11560,16 @@
     "entry_title": "Borders of a garden"
     }
   ],
-  "head of a nail": [
+  "small stick wrapped in tow": [
     {
-    "verbatim_term": "head of a nail",
+    "verbatim_term": "small stick wrapped in tow",
     "entry_id": "p098r_3",
     "entry_title": "Locksmith"
     }
   ],
-  "small stick wrapped in tow": [
+  "head of a nail": [
     {
-    "verbatim_term": "small stick wrapped in tow",
+    "verbatim_term": "head of a nail",
     "entry_id": "p098r_3",
     "entry_title": "Locksmith"
     }
@@ -11644,16 +11644,16 @@
     "entry_title": "Gardening"
     }
   ],
-  "device of little crossed stick": [
+  "kneading trough": [
     {
-    "verbatim_term": "device of little crossed sticks",
+    "verbatim_term": "kneading troughs",
     "entry_id": "p105v_3",
     "entry_title": "Catching nightingales See the 15th folio after this."
     }
   ],
-  "kneading trough": [
+  "device of little crossed stick": [
     {
-    "verbatim_term": "kneading troughs",
+    "verbatim_term": "device of little crossed sticks",
     "entry_id": "p105v_3",
     "entry_title": "Catching nightingales See the 15th folio after this."
     }
@@ -11759,16 +11759,16 @@
     "entry_title": "A means of molding flowers and plants"
     }
   ],
-  "cut paintbrush": [
+  "iron wire wrapped in cotton": [
     {
-    "verbatim_term": "cut paintbrush",
+    "verbatim_term": "iron wire wrapped in cotton",
     "entry_id": "p117v_1",
     "entry_title": "For making the ashes of flowers and plants leave molds"
     }
   ],
-  "iron wire wrapped in cotton": [
+  "cut paintbrush": [
     {
-    "verbatim_term": "iron wire wrapped in cotton",
+    "verbatim_term": "cut paintbrush",
     "entry_id": "p117v_1",
     "entry_title": "For making the ashes of flowers and plants leave molds"
     }
@@ -11928,9 +11928,9 @@
     "entry_title": "Molding a crayfish"
     }
   ],
-  "fresh clay": [
+  "clay entredeux": [
     {
-    "verbatim_term": "fresh clay",
+    "verbatim_term": "clay entredeux",
     "entry_id": "p144r_1",
     "entry_title": "Turtles"
     }
@@ -11942,16 +11942,16 @@
     "entry_title": "Turtles"
     }
   ],
-  "clay entredeulx": [
+  "fresh clay": [
     {
-    "verbatim_term": "clay entredeulx",
+    "verbatim_term": "fresh clay",
     "entry_id": "p144r_1",
     "entry_title": "Turtles"
     }
   ],
-  "clay entredeux": [
+  "clay entredeulx": [
     {
-    "verbatim_term": "clay entredeux",
+    "verbatim_term": "clay entredeulx",
     "entry_id": "p144r_1",
     "entry_title": "Turtles"
     }
@@ -11970,13 +11970,6 @@
     "entry_title": "Cuttlefish bone"
     }
   ],
-  "clay slab": [
-    {
-    "verbatim_term": "clay slabs",
-    "entry_id": "p145v_1",
-    "entry_title": "Molding plants and flowers"
-    }
-  ],
   "clay closure": [
     {
     "verbatim_term": "clay closure",
@@ -11991,16 +11984,23 @@
     "entry_title": "Molding plants and flowers"
     }
   ],
-  "entredeulx of clay": [
+  "clay slab": [
     {
-    "verbatim_term": "entredeulx of clay",
-    "entry_id": "p146v_1",
-    "entry_title": "Molding turtles"
+    "verbatim_term": "clay slabs",
+    "entry_id": "p145v_1",
+    "entry_title": "Molding plants and flowers"
     }
   ],
   "entre deulx of clay": [
     {
     "verbatim_term": "entre deulx of clay",
+    "entry_id": "p146v_1",
+    "entry_title": "Molding turtles"
+    }
+  ],
+  "entredeulx of clay": [
+    {
+    "verbatim_term": "entredeulx of clay",
     "entry_id": "p146v_1",
     "entry_title": "Molding turtles"
     }
@@ -12019,9 +12019,9 @@
     "entry_title": "Molding turtles"
     }
   ],
-  "end of your finger": [
+  "small gouge": [
     {
-    "verbatim_term": "end of your finger",
+    "verbatim_term": "small gouges",
     "entry_id": "p150v_1",
     "entry_title": "Molding hollow"
     }
@@ -12033,16 +12033,9 @@
     "entry_title": "Molding hollow"
     }
   ],
-  "round cutting-punch": [
+  "end of your finger": [
     {
-    "verbatim_term": "round cutting-punch",
-    "entry_id": "p150v_1",
-    "entry_title": "Molding hollow"
-    }
-  ],
-  "small gouge": [
-    {
-    "verbatim_term": "small gouges",
+    "verbatim_term": "end of your finger",
     "entry_id": "p150v_1",
     "entry_title": "Molding hollow"
     }
@@ -12050,6 +12043,13 @@
   "small cutting-punch": [
     {
     "verbatim_term": "small cutting-punches",
+    "entry_id": "p150v_1",
+    "entry_title": "Molding hollow"
+    }
+  ],
+  "round cutting-punch": [
+    {
+    "verbatim_term": "round cutting-punch",
     "entry_id": "p150v_1",
     "entry_title": "Molding hollow"
     }
@@ -12117,6 +12117,20 @@
     "entry_title": "Repairing flashing"
     }
   ],
+  "little bell": [
+    {
+    "verbatim_term": "little bells",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    }
+  ],
+  "short hooked peg": [
+    {
+    "verbatim_term": "short hooked peg",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    }
+  ],
   "iron fork": [
     {
     "verbatim_term": "iron fork",
@@ -12124,9 +12138,23 @@
     "entry_title": "Petards"
     }
   ],
-  "little bell": [
+  "large auger": [
     {
-    "verbatim_term": "little bells",
+    "verbatim_term": "large augers",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    }
+  ],
+  "iron rod q made with three claws at the end": [
+    {
+    "verbatim_term": "iron rod q made with three claws at the end",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    }
+  ],
+  "strap hinge": [
+    {
+    "verbatim_term": "strap hinge",
     "entry_id": "p167r_1",
     "entry_title": "Petards"
     }
@@ -12152,37 +12180,9 @@
     "entry_title": "Petards"
     }
   ],
-  "iron rod q made with three claws at the end": [
-    {
-    "verbatim_term": "iron rod q made with three claws at the end",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    }
-  ],
-  "strap hinge": [
-    {
-    "verbatim_term": "strap hinge",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    }
-  ],
   "iron fork made like pincer": [
     {
     "verbatim_term": "iron fork made like pincers",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    }
-  ],
-  "large auger": [
-    {
-    "verbatim_term": "large augers",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    }
-  ],
-  "short hooked peg": [
-    {
-    "verbatim_term": "short hooked peg",
     "entry_id": "p167r_1",
     "entry_title": "Petards"
     }

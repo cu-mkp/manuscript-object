@@ -1,4 +1,61 @@
 {
+  "grain": [
+    {
+    "verbatim_term": "grains",
+    "entry_id": "p002v_2",
+    "entry_title": "Emeralds of Brissac"
+    },
+    {
+    "verbatim_term": "grains",
+    "entry_id": "p002v_3",
+    "entry_title": "Sapphire"
+    },
+    {
+    "verbatim_term": "grains",
+    "entry_id": "p048r_2",
+    "entry_title": "Curing dogs of mange"
+    },
+    {
+    "verbatim_term": "grains",
+    "entry_id": "p104r_2",
+    "entry_title": "For etching on iron"
+    },
+    {
+    "verbatim_term": "grains",
+    "entry_id": "p116v_2",
+    "entry_title": "Mixture of tin and lead"
+    },
+    {
+    "verbatim_term": "grains",
+    "entry_id": "p118v_1",
+    "entry_title": "Casting in frames"
+    },
+    {
+    "verbatim_term": "grain",
+    "entry_id": "p100v_2",
+    "entry_title": "For ruby take some gold leaf"
+    },
+    {
+    "verbatim_term": "grain",
+    "entry_id": "p149v_2",
+    "entry_title": "Gold solder"
+    },
+    {
+    "verbatim_term": "pepper grains",
+    "entry_id": "p037r_2",
+    "entry_title": "Medicine for the stomach which heats it and unstops the liver"
+    },
+    {
+    "verbatim_term": "grains of gold",
+    "entry_id": "p100v_2",
+    "entry_title": "For ruby take some gold leaf"
+    },
+    {
+    "verbatim_term": "grains, like peas",
+    "entry_id": "p147v_4",
+    "entry_title": "Cast of latten"
+    }
+  ],
   "|ʒ|": [
     {
     "verbatim_term": "|ʒ|",
@@ -45,7 +102,7 @@
     {
     "verbatim_term": "hours",
     "entry_id": "p066r_6",
-    "entry_title": "* Or mat"
+    "entry_title": ""
     },
     {
     "verbatim_term": "hours",
@@ -119,7 +176,7 @@
     },
     {
     "verbatim_term": "hour",
-    "entry_id": "p066r_6",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     },
     {
@@ -191,63 +248,6 @@
     "verbatim_term": "a good hour",
     "entry_id": "p139v_1",
     "entry_title": "Cast of wax to represent an animal that one has not got"
-    }
-  ],
-  "grain": [
-    {
-    "verbatim_term": "grains",
-    "entry_id": "p002v_2",
-    "entry_title": "Emeralds of Brissac"
-    },
-    {
-    "verbatim_term": "grains",
-    "entry_id": "p002v_3",
-    "entry_title": "Sapphire"
-    },
-    {
-    "verbatim_term": "grains",
-    "entry_id": "p048r_2",
-    "entry_title": "Curing dogs of mange"
-    },
-    {
-    "verbatim_term": "grains",
-    "entry_id": "p104r_2",
-    "entry_title": "For etching on iron"
-    },
-    {
-    "verbatim_term": "grains",
-    "entry_id": "p116v_2",
-    "entry_title": "Mixture of tin and lead"
-    },
-    {
-    "verbatim_term": "grains",
-    "entry_id": "p118v_1",
-    "entry_title": "Casting in frames"
-    },
-    {
-    "verbatim_term": "grain",
-    "entry_id": "p100v_2",
-    "entry_title": "For ruby take some gold leaf"
-    },
-    {
-    "verbatim_term": "grain",
-    "entry_id": "p149v_2",
-    "entry_title": "Gold solder"
-    },
-    {
-    "verbatim_term": "pepper grains",
-    "entry_id": "p037r_2",
-    "entry_title": "Medicine for the stomach which heats it and unstops the liver"
-    },
-    {
-    "verbatim_term": "grains of gold",
-    "entry_id": "p100v_2",
-    "entry_title": "For ruby take some gold leaf"
-    },
-    {
-    "verbatim_term": "grains, like peas",
-    "entry_id": "p147v_4",
-    "entry_title": "Cast of latten"
     }
   ],
   "℥": [
@@ -372,6 +372,263 @@
     "entry_title": "Against dogs’ mange"
     }
   ],
+  "lb": [
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p003r_1",
+    "entry_title": "Counterfeit coral"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p003r_2",
+    "entry_title": "Varnish for panels"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p003r_3",
+    "entry_title": "Thick varnish for planks"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p004r_1",
+    "entry_title": "Varnish of spike lavender oil"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p004v_1",
+    "entry_title": "Black varnish for sword guard, bands for trunks, &amp;c"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p007v_3",
+    "entry_title": "For relieving the pain of G."
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p007v_4",
+    "entry_title": "Against gonorrhea"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p010r_5",
+    "entry_title": "Powder for hourglasses"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p016r_1",
+    "entry_title": "Founding of soft iron"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p022r_1",
+    "entry_title": "Cannon ball, weighing 40 lb, having 12 lines, king's foot."
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p022v_1",
+    "entry_title": "Orgues"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p023r_1",
+    "entry_title": "On petards"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p023v_1",
+    "entry_title": "On petards"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p024r_1",
+    "entry_title": "Grenades"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p027v_7",
+    "entry_title": "60 lb musket, is 5 pans and a half or 6"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p028v_1",
+    "entry_title": "Pewterers"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p039r_1",
+    "entry_title": "Goldsmith"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p044r_2",
+    "entry_title": "Pewterer"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p048v_1",
+    "entry_title": "Extraction of regulus"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p048v_2",
+    "entry_title": "Lead, tin"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p049r_1",
+    "entry_title": "Casting of lead"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p049r_4",
+    "entry_title": "Pewterers"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p052r_1",
+    "entry_title": "The work done in Algiers"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p053v_1",
+    "entry_title": "Silkworms"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p069r_2",
+    "entry_title": "Sand"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p072v_1",
+    "entry_title": "Casting"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p079v_3",
+    "entry_title": "Tin for casting"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p080r_1",
+    "entry_title": "Petard"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p083r_6",
+    "entry_title": "Excellent sand"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p089v_1",
+    "entry_title": "Sal ammoniac and alabaster"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p110v_3",
+    "entry_title": "Cast of lead and tin"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p118r_4",
+    "entry_title": "Looking-glass tin"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p118v_1",
+    "entry_title": "Casting in frames"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p131v_1",
+    "entry_title": "When the cast of tin or lead becomes porous"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p135v_1",
+    "entry_title": "Casting in ☼"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p139r_1",
+    "entry_title": "Casts of lead and tin"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p145v_1",
+    "entry_title": "Molding plants and flowers"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p150r_2",
+    "entry_title": "Various alloys of tin and lead"
+    },
+    {
+    "verbatim_term": "lb",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    },
+    {
+    "verbatim_term": "lbs",
+    "entry_id": "p003r_3",
+    "entry_title": "Thick varnish for planks"
+    },
+    {
+    "verbatim_term": "half a lb",
+    "entry_id": "p005v_1",
+    "entry_title": "For bronzing in yellow and white"
+    },
+    {
+    "verbatim_term": "half a lb",
+    "entry_id": "p007v_3",
+    "entry_title": "For relieving the pain of G."
+    },
+    {
+    "verbatim_term": "half a lb",
+    "entry_id": "p048v_1",
+    "entry_title": "Extraction of regulus"
+    },
+    {
+    "verbatim_term": "half a lb",
+    "entry_id": "p052r_1",
+    "entry_title": "The work done in Algiers"
+    },
+    {
+    "verbatim_term": "lb, according to the king’s ordinance, per quintal",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "lb per quintal",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "half lb",
+    "entry_id": "p071v_1",
+    "entry_title": "Varnish"
+    },
+    {
+    "verbatim_term": "lb a dozen",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    },
+    {
+    "verbatim_term": "lb &amp; a half or two",
+    "entry_id": "p116v_2",
+    "entry_title": "Mixture of tin and lead"
+    }
+  ],
   "ounce": [
     {
     "verbatim_term": "ounce",
@@ -395,7 +652,7 @@
     },
     {
     "verbatim_term": "ounce",
-    "entry_id": "p066r_6",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     },
     {
@@ -599,263 +856,6 @@
     "entry_title": "Another varnish"
     }
   ],
-  "lb": [
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p003r_1",
-    "entry_title": "Counterfeit coral"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p003r_2",
-    "entry_title": "Varnish for panels"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p003r_3",
-    "entry_title": "Thick varnish for planks"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p004r_1",
-    "entry_title": "Varnish of spike lavender oil"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p004v_1",
-    "entry_title": "Black varnish for sword guard, bands for trunks, &amp;c"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p007v_3",
-    "entry_title": "For relieving the pain of G."
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p007v_4",
-    "entry_title": "Against gonorrhea"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p010r_5",
-    "entry_title": "Powder for hourglasses"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p016r_1",
-    "entry_title": "Founding of soft iron"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p022r_1",
-    "entry_title": "Cannon ball, weighing 40 lb, having 12 lines, king's foot."
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p022v_1",
-    "entry_title": "Orgues"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p023r_1",
-    "entry_title": "On petards"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p023v_1",
-    "entry_title": ""
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p024r_1",
-    "entry_title": "Grenades"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p027v_7",
-    "entry_title": "60 lb musket, is 5 pans and a half or 6"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p028v_1",
-    "entry_title": "Pewterers"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p039r_1",
-    "entry_title": "Goldsmith"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p044r_2",
-    "entry_title": "Pewterer"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p048v_1",
-    "entry_title": "Extraction of regulus"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p048v_2",
-    "entry_title": "Lead, tin"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p049r_1",
-    "entry_title": "Casting of lead"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p049r_4",
-    "entry_title": "Pewterers"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p052r_1",
-    "entry_title": "The work done in Algiers"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p053v_1",
-    "entry_title": "Silkworms"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p069r_2",
-    "entry_title": "Sand"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p072v_1",
-    "entry_title": "Casting"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p079v_3",
-    "entry_title": "Tin for casting"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p080r_1",
-    "entry_title": "Petard"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p083r_6",
-    "entry_title": "Excellent sand"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p089v_1",
-    "entry_title": "Sal ammoniac and alabaster"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p110v_3",
-    "entry_title": "Cast of lead and tin"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p118r_4",
-    "entry_title": "Looking-glass tin"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p118v_1",
-    "entry_title": "Casting in frames"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p131v_1",
-    "entry_title": "When the cast of tin or lead becomes porous"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p135v_1",
-    "entry_title": "Casting in ☼"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p139r_1",
-    "entry_title": "Casts of lead and tin"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p145v_1",
-    "entry_title": "Molding plants and flowers"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p150r_2",
-    "entry_title": "Various alloys of tin and lead"
-    },
-    {
-    "verbatim_term": "lb",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    },
-    {
-    "verbatim_term": "lbs",
-    "entry_id": "p003r_3",
-    "entry_title": "Thick varnish for planks"
-    },
-    {
-    "verbatim_term": "half a lb",
-    "entry_id": "p005v_1",
-    "entry_title": "For bronzing in yellow and white"
-    },
-    {
-    "verbatim_term": "half a lb",
-    "entry_id": "p007v_3",
-    "entry_title": "For relieving the pain of G."
-    },
-    {
-    "verbatim_term": "half a lb",
-    "entry_id": "p048v_1",
-    "entry_title": "Extraction of regulus"
-    },
-    {
-    "verbatim_term": "half a lb",
-    "entry_id": "p052r_1",
-    "entry_title": "The work done in Algiers"
-    },
-    {
-    "verbatim_term": "lb, according to the king’s ordinance, per quintal",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    },
-    {
-    "verbatim_term": "lb per quintal",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    },
-    {
-    "verbatim_term": "half lb",
-    "entry_id": "p071v_1",
-    "entry_title": "Varnish"
-    },
-    {
-    "verbatim_term": "lb a dozen",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    },
-    {
-    "verbatim_term": "lb &amp; a half or two",
-    "entry_id": "p116v_2",
-    "entry_title": "Mixture of tin and lead"
-    }
-  ],
   "bucket": [
     {
     "verbatim_term": "bucket",
@@ -887,7 +887,7 @@
     {
     "verbatim_term": "half",
     "entry_id": "p023v_1",
-    "entry_title": ""
+    "entry_title": "On petards"
     },
     {
     "verbatim_term": "half",
@@ -1105,7 +1105,7 @@
     },
     {
     "verbatim_term": "days",
-    "entry_id": "p066r_6",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     },
     {
@@ -1225,7 +1225,7 @@
     },
     {
     "verbatim_term": "day",
-    "entry_id": "p066r_6",
+    "entry_id": "p066r_6" continued="yes",
     "entry_title": "* Or mat"
     },
     {
@@ -1339,18 +1339,6 @@
     "entry_title": "Animals dried in the oven for a long time"
     }
   ],
-  "dose": [
-    {
-    "verbatim_term": "dose",
-    "entry_id": "p007v_2",
-    "entry_title": "Against windy colic"
-    },
-    {
-    "verbatim_term": "dose",
-    "entry_id": "p101r_1",
-    "entry_title": "Topaz"
-    }
-  ],
   "dozen": [
     {
     "verbatim_term": "dozen",
@@ -1371,6 +1359,18 @@
     "verbatim_term": "dozens",
     "entry_id": "p094r_1",
     "entry_title": "Furbisher"
+    }
+  ],
+  "dose": [
+    {
+    "verbatim_term": "dose",
+    "entry_id": "p007v_2",
+    "entry_title": "Against windy colic"
+    },
+    {
+    "verbatim_term": "dose",
+    "entry_id": "p101r_1",
+    "entry_title": "Topaz"
     }
   ],
   "ʒ": [
@@ -1480,30 +1480,6 @@
     "entry_title": ""
     }
   ],
-  "shovel": [
-    {
-    "verbatim_term": "shovels",
-    "entry_id": "p016r_1",
-    "entry_title": "Founding of soft iron"
-    }
-  ],
-  "handful": [
-    {
-    "verbatim_term": "handfuls",
-    "entry_id": "p016r_1",
-    "entry_title": "Founding of soft iron"
-    },
-    {
-    "verbatim_term": "handfuls",
-    "entry_id": "p031r_1",
-    "entry_title": "New vine"
-    },
-    {
-    "verbatim_term": "double handfuls",
-    "entry_id": "p056r_1",
-    "entry_title": "Excellent tempering bath for cuirass bodies"
-    }
-  ],
   "pan": [
     {
     "verbatim_term": "pans",
@@ -1586,12 +1562,12 @@
     "entry_title": "Founding of soft iron"
     },
     {
-    "verbatim_term": "king’s pan",
+    "verbatim_term": "pan of montpellier",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     },
     {
-    "verbatim_term": "pan of montpellier",
+    "verbatim_term": "king’s pan",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     },
@@ -1599,6 +1575,30 @@
     "verbatim_term": "montpellier pans",
     "entry_id": "p027v_4",
     "entry_title": "2 quintals, is one cane long, which is 8 Montpellier pans"
+    }
+  ],
+  "shovel": [
+    {
+    "verbatim_term": "shovels",
+    "entry_id": "p016r_1",
+    "entry_title": "Founding of soft iron"
+    }
+  ],
+  "handful": [
+    {
+    "verbatim_term": "handfuls",
+    "entry_id": "p016r_1",
+    "entry_title": "Founding of soft iron"
+    },
+    {
+    "verbatim_term": "handfuls",
+    "entry_id": "p031r_1",
+    "entry_title": "New vine"
+    },
+    {
+    "verbatim_term": "double handfuls",
+    "entry_id": "p056r_1",
+    "entry_title": "Excellent tempering bath for cuirass bodies"
     }
   ],
   "quintal": [
@@ -1625,7 +1625,7 @@
     {
     "verbatim_term": "quintals",
     "entry_id": "p023v_1",
-    "entry_title": ""
+    "entry_title": "On petards"
     },
     {
     "verbatim_term": "quintals",
@@ -1713,12 +1713,12 @@
     "entry_title": "Tin for casting"
     },
     {
-    "verbatim_term": "quintals &amp; a half",
+    "verbatim_term": "one quintal of metal for two of rosette",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     },
     {
-    "verbatim_term": "one quintal of metal for two of rosette",
+    "verbatim_term": "quintals &amp; a half",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     }
@@ -1730,39 +1730,19 @@
     "entry_title": "Founding of soft iron"
     }
   ],
-  "pound": [
+  "caliber": [
     {
-    "verbatim_term": "pounds",
+    "verbatim_term": "caliber",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     },
     {
-    "verbatim_term": "pounds",
-    "entry_id": "p040r_2",
-    "entry_title": "Aquafortis"
-    },
-    {
-    "verbatim_term": "pounds",
-    "entry_id": "p074r_2",
-    "entry_title": "For making vermilion"
-    },
-    {
-    "verbatim_term": "pound",
-    "entry_id": "p074r_3",
-    "entry_title": "For making varnish"
-    },
-    {
-    "verbatim_term": "pound",
-    "entry_id": "p110v_3",
-    "entry_title": "Cast of lead and tin"
+    "verbatim_term": "king’s caliber",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
     }
   ],
   "ball": [
-    {
-    "verbatim_term": "ball",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    },
     {
     "verbatim_term": "balls",
     "entry_id": "p017r_1",
@@ -1774,83 +1754,29 @@
     "entry_title": "Pastel woad"
     },
     {
+    "verbatim_term": "ball",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "three balls at the breech &amp; two in front",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "three balls at the breech &amp; two in front",
+    "entry_id": "p022v_1",
+    "entry_title": "Orgues"
+    },
+    {
     "verbatim_term": "3 balls &amp; a twelfth part of a ball",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     },
     {
-    "verbatim_term": "three balls at the breech &amp; two in front",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    },
-    {
-    "verbatim_term": "three balls at the breech &amp; two in front",
-    "entry_id": "p022v_1",
-    "entry_title": "Orgues"
-    },
-    {
     "verbatim_term": "half an arquebus ball",
     "entry_id": "p129r_3",
     "entry_title": "Viper color"
-    }
-  ],
-  "league": [
-    {
-    "verbatim_term": "league",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    },
-    {
-    "verbatim_term": "leagues",
-    "entry_id": "p055v_3",
-    "entry_title": "For knowing the course one takes on the open sea"
-    },
-    {
-    "verbatim_term": "a half league",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    }
-  ],
-  "line": [
-    {
-    "verbatim_term": "lines",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    },
-    {
-    "verbatim_term": "lines",
-    "entry_id": "p022r_1",
-    "entry_title": "Cannon ball, weighing 40 lb, having 12 lines, king's foot."
-    },
-    {
-    "verbatim_term": "lines",
-    "entry_id": "p044r_1",
-    "entry_title": "The range of an arquebus"
-    },
-    {
-    "verbatim_term": "lines",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    },
-    {
-    "verbatim_term": "line",
-    "entry_id": "p022v_1",
-    "entry_title": "Orgues"
-    },
-    {
-    "verbatim_term": "line",
-    "entry_id": "p025v_1",
-    "entry_title": "Gunner"
-    },
-    {
-    "verbatim_term": "line",
-    "entry_id": "p043v_3",
-    "entry_title": "Arquebusier"
-    },
-    {
-    "verbatim_term": "line",
-    "entry_id": "p115r_1",
-    "entry_title": "Make the cast, reheat the molds, &amp;c Note about everything above |-|"
     }
   ],
   "ladle": [
@@ -1875,9 +1801,19 @@
     "entry_title": "On the gunner"
     }
   ],
-  "escutcheon": [
+  "league": [
     {
-    "verbatim_term": "escutcheon",
+    "verbatim_term": "league",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "leagues",
+    "entry_id": "p055v_3",
+    "entry_title": "For knowing the course one takes on the open sea"
+    },
+    {
+    "verbatim_term": "a half league",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     }
@@ -1989,12 +1925,12 @@
     "entry_title": "Perfect amalgam"
     },
     {
-    "verbatim_term": "third part of a ball",
+    "verbatim_term": "three parts of rosette &amp; one of the fine metal of la large bells",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     },
     {
-    "verbatim_term": "three parts of rosette &amp; one of the fine metal of la large bells",
+    "verbatim_term": "third part of a ball",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     },
@@ -2029,30 +1965,80 @@
     "entry_title": "A means di far correr lotnegra"
     }
   ],
-  "caliber": [
+  "escutcheon": [
     {
-    "verbatim_term": "caliber",
+    "verbatim_term": "escutcheon",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "line": [
+    {
+    "verbatim_term": "lines",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     },
     {
-    "verbatim_term": "king’s caliber",
+    "verbatim_term": "lines",
+    "entry_id": "p022r_1",
+    "entry_title": "Cannon ball, weighing 40 lb, having 12 lines, king's foot."
+    },
+    {
+    "verbatim_term": "lines",
+    "entry_id": "p044r_1",
+    "entry_title": "The range of an arquebus"
+    },
+    {
+    "verbatim_term": "lines",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    },
+    {
+    "verbatim_term": "line",
+    "entry_id": "p022v_1",
+    "entry_title": "Orgues"
+    },
+    {
+    "verbatim_term": "line",
+    "entry_id": "p025v_1",
+    "entry_title": "Gunner"
+    },
+    {
+    "verbatim_term": "line",
+    "entry_id": "p043v_3",
+    "entry_title": "Arquebusier"
+    },
+    {
+    "verbatim_term": "line",
+    "entry_id": "p115r_1",
+    "entry_title": "Make the cast, reheat the molds, &amp;c Note about everything above |-|"
+    }
+  ],
+  "pound": [
+    {
+    "verbatim_term": "pounds",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
-    }
-  ],
-  "plate": [
+    },
     {
-    "verbatim_term": "plates",
-    "entry_id": "p020r_2",
-    "entry_title": "Glassworker"
-    }
-  ],
-  "tablet": [
+    "verbatim_term": "pounds",
+    "entry_id": "p040r_2",
+    "entry_title": "Aquafortis"
+    },
     {
-    "verbatim_term": "tablets",
-    "entry_id": "p020r_2",
-    "entry_title": "Glassworker"
+    "verbatim_term": "pounds",
+    "entry_id": "p074r_2",
+    "entry_title": "For making vermilion"
+    },
+    {
+    "verbatim_term": "pound",
+    "entry_id": "p074r_3",
+    "entry_title": "For making varnish"
+    },
+    {
+    "verbatim_term": "pound",
+    "entry_id": "p110v_3",
+    "entry_title": "Cast of lead and tin"
     }
   ],
   "bundle": [
@@ -2064,12 +2050,26 @@
   ],
   "panier": [
     {
-    "verbatim_term": "panier",
+    "verbatim_term": "paniers",
     "entry_id": "p020r_2",
     "entry_title": "Glassworker"
     },
     {
-    "verbatim_term": "paniers",
+    "verbatim_term": "panier",
+    "entry_id": "p020r_2",
+    "entry_title": "Glassworker"
+    }
+  ],
+  "tablet": [
+    {
+    "verbatim_term": "tablets",
+    "entry_id": "p020r_2",
+    "entry_title": "Glassworker"
+    }
+  ],
+  "plate": [
+    {
+    "verbatim_term": "plates",
     "entry_id": "p020r_2",
     "entry_title": "Glassworker"
     }
@@ -2426,13 +2426,6 @@
     "entry_title": "Aquafortis"
     }
   ],
-  "fifth": [
-    {
-    "verbatim_term": "fifth",
-    "entry_id": "p041r_1",
-    "entry_title": "Earth for casting, for founders"
-    }
-  ],
   "quarter": [
     {
     "verbatim_term": "quarter",
@@ -2480,6 +2473,13 @@
     "entry_title": "Tempering the sand and molding the first cast"
     }
   ],
+  "fifth": [
+    {
+    "verbatim_term": "fifth",
+    "entry_id": "p041r_1",
+    "entry_title": "Earth for casting, for founders"
+    }
+  ],
   "coat": [
     {
     "verbatim_term": "coats",
@@ -2492,23 +2492,6 @@
     "verbatim_term": "hora",
     "entry_id": "p043r_3",
     "entry_title": "Purple"
-    }
-  ],
-  "inch": [
-    {
-    "verbatim_term": "inches",
-    "entry_id": "p044r_1",
-    "entry_title": "The range of an arquebus"
-    },
-    {
-    "verbatim_term": "inches",
-    "entry_id": "p167r_1",
-    "entry_title": "Petards"
-    },
-    {
-    "verbatim_term": "king’s inches",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
     }
   ],
   "denier": [
@@ -2533,6 +2516,23 @@
     "entry_title": "A means di far correr lotnegra"
     }
   ],
+  "inch": [
+    {
+    "verbatim_term": "inches",
+    "entry_id": "p044r_1",
+    "entry_title": "The range of an arquebus"
+    },
+    {
+    "verbatim_term": "inches",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    },
+    {
+    "verbatim_term": "king’s inches",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
   "sou": [
     {
     "verbatim_term": "sous",
@@ -2550,12 +2550,12 @@
     "entry_title": "Crocum ferri"
     },
     {
-    "verbatim_term": "sous from spain",
+    "verbatim_term": "sous from france",
     "entry_id": "p164r_3",
     "entry_title": "Leady silver"
     },
     {
-    "verbatim_term": "sous from france",
+    "verbatim_term": "sous from spain",
     "entry_id": "p164r_3",
     "entry_title": "Leady silver"
     }
@@ -2897,6 +2897,13 @@
     "entry_title": "Leady silver"
     }
   ],
+  "double handful": [
+    {
+    "verbatim_term": "double handful",
+    "entry_id": "p004v_1",
+    "entry_title": "Black varnish for sword guard, bands for trunks, &amp;c"
+    }
+  ],
   "paternoster bead": [
     {
     "verbatim_term": "paternoster beads",
@@ -2911,23 +2918,16 @@
     "entry_title": "Black varnish for sword guard, bands for trunks, &amp;c"
     }
   ],
-  "double handful": [
+  "middle of the sheet": [
     {
-    "verbatim_term": "double handful",
-    "entry_id": "p004v_1",
-    "entry_title": "Black varnish for sword guard, bands for trunks, &amp;c"
+    "verbatim_term": "middle of the sheet",
+    "entry_id": "p005r_2",
+    "entry_title": "Concave mirrors"
     }
   ],
   "at the end of a table": [
     {
     "verbatim_term": "at the end of a table",
-    "entry_id": "p005r_2",
-    "entry_title": "Concave mirrors"
-    }
-  ],
-  "middle of the sheet": [
-    {
-    "verbatim_term": "middle of the sheet",
     "entry_id": "p005r_2",
     "entry_title": "Concave mirrors"
     }
@@ -2981,13 +2981,6 @@
     "entry_title": "For removing fine hair from the forehead"
     }
   ],
-  "thickness of one ball &amp; two third": [
-    {
-    "verbatim_term": "thickness of one ball &amp; two thirds",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    }
-  ],
   "thickness of two ball": [
     {
     "verbatim_term": "thickness of two balls",
@@ -2995,16 +2988,9 @@
     "entry_title": "On the gunner"
     }
   ],
-  "at the breech it has three balls &amp; two in front": [
+  "thickness of one ball &amp; two third": [
     {
-    "verbatim_term": "at the breech it has three balls &amp; two in front",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    }
-  ],
-  "width of one ball &amp; a third of a ball": [
-    {
-    "verbatim_term": "width of one ball &amp; a third of a ball",
+    "verbatim_term": "thickness of one ball &amp; two thirds",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     }
@@ -3026,9 +3012,65 @@
     "entry_title": "Orgues"
     }
   ],
+  "at the breech, 3 balls, &amp; 2 in front": [
+    {
+    "verbatim_term": "at the breech, 3 balls, &amp; 2 in front",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "at the breech it has three balls &amp; two in the front": [
+    {
+    "verbatim_term": "at the breech it has three balls &amp; two in the front",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "diameter of a ball &amp; a half": [
+    {
+    "verbatim_term": "diameter of a ball &amp; a half",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "width of two balls &amp; a quarter of a ball": [
+    {
+    "verbatim_term": "width of two balls &amp; a quarter of a ball",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "up to the top of the escutcheon": [
+    {
+    "verbatim_term": "up to the top of the escutcheon",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "thumb’s breadth": [
+    {
+    "verbatim_term": "thumb’s breadth",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
   "3 balls thick": [
     {
     "verbatim_term": "3 balls thick",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "one &amp; a half of": [
+    {
+    "verbatim_term": "one &amp; a half of",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "thickness of half a ball": [
+    {
+    "verbatim_term": "thickness of half a ball",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     }
@@ -3040,16 +3082,16 @@
     "entry_title": "On the gunner"
     }
   ],
-  "per day": [
+  "thickness of two of its balls &amp; esthe threeird part of of a ball": [
     {
-    "verbatim_term": "per day",
+    "verbatim_term": "thickness of two of its balls &amp; esthe threeird part of of a ball",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     }
   ],
-  "at the breech, 3 balls, &amp; 2 in front": [
+  "thickness of three balls at the breech &amp; at the front of two ball": [
     {
-    "verbatim_term": "at the breech, 3 balls, &amp; 2 in front",
+    "verbatim_term": "thickness of three balls at the breech &amp; at the front of two balls",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     }
@@ -3061,27 +3103,6 @@
     "entry_title": "On the gunner"
     }
   ],
-  "thickness of a ball &amp; two of three part": [
-    {
-    "verbatim_term": "thickness of a ball &amp; two of three parts",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    }
-  ],
-  "thickness of two of its balls &amp; esthe threeird part of of a ball": [
-    {
-    "verbatim_term": "thickness of two of its balls &amp; esthe threeird part of of a ball",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    }
-  ],
-  "thickness of b two balls &amp;l one of the three parts of one ball": [
-    {
-    "verbatim_term": "thickness of b two balls &amp;l one of the three parts of one ball",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    }
-  ],
   "at the breech three ball": [
     {
     "verbatim_term": "at the breech three balls",
@@ -3089,9 +3110,9 @@
     "entry_title": "On the gunner"
     }
   ],
-  "thickness of half a ball": [
+  "thickness of f five ball": [
     {
-    "verbatim_term": "thickness of half a ball",
+    "verbatim_term": "thickness of f five balls",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     }
@@ -3123,23 +3144,9 @@
     "entry_title": "Good mixture to color gold"
     }
   ],
-  "at the breech it has three balls &amp; two in the front": [
+  "thickness of a ball &amp; two of three part": [
     {
-    "verbatim_term": "at the breech it has three balls &amp; two in the front",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    }
-  ],
-  "thumb’s breadth": [
-    {
-    "verbatim_term": "thumb’s breadth",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    }
-  ],
-  "thickness of 4 ball": [
-    {
-    "verbatim_term": "thickness of 4 balls",
+    "verbatim_term": "thickness of a ball &amp; two of three parts",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     }
@@ -3151,9 +3158,23 @@
     "entry_title": "On the gunner"
     }
   ],
-  "thickness of three balls at the breech &amp; at the front of two ball": [
+  "width of one ball &amp; a third of a ball": [
     {
-    "verbatim_term": "thickness of three balls at the breech &amp; at the front of two balls",
+    "verbatim_term": "width of one ball &amp; a third of a ball",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "thickness of 4 ball": [
+    {
+    "verbatim_term": "thickness of 4 balls",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "per day": [
+    {
+    "verbatim_term": "per day",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     }
@@ -3165,37 +3186,16 @@
     "entry_title": "On the gunner"
     }
   ],
-  "diameter of a ball &amp; a half": [
+  "thickness of b two balls &amp;l one of the three parts of one ball": [
     {
-    "verbatim_term": "diameter of a ball &amp; a half",
+    "verbatim_term": "thickness of b two balls &amp;l one of the three parts of one ball",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     }
   ],
-  "thickness of f five ball": [
+  "at the breech it has three balls &amp; two in front": [
     {
-    "verbatim_term": "thickness of f five balls",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    }
-  ],
-  "one &amp; a half of": [
-    {
-    "verbatim_term": "one &amp; a half of",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    }
-  ],
-  "up to the top of the escutcheon": [
-    {
-    "verbatim_term": "up to the top of the escutcheon",
-    "entry_id": "p017r_1",
-    "entry_title": "On the gunner"
-    }
-  ],
-  "width of two balls &amp; a quarter of a ball": [
-    {
-    "verbatim_term": "width of two balls &amp; a quarter of a ball",
+    "verbatim_term": "at the breech it has three balls &amp; two in front",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
     }
@@ -3248,16 +3248,16 @@
     "entry_title": "Grenades"
     }
   ],
-  "the thickness of a swan’s quill": [
+  "by the width of one finger": [
     {
-    "verbatim_term": "the thickness of a swan’s quill",
+    "verbatim_term": "by the width of one finger",
     "entry_id": "p024r_1",
     "entry_title": "Grenades"
     }
   ],
-  "by the width of one finger": [
+  "the thickness of a swan’s quill": [
     {
-    "verbatim_term": "by the width of one finger",
+    "verbatim_term": "the thickness of a swan’s quill",
     "entry_id": "p024r_1",
     "entry_title": "Grenades"
     }
@@ -3267,13 +3267,6 @@
     "verbatim_term": "width of two gabions",
     "entry_id": "p024v_1",
     "entry_title": "For bringing a cannon over land"
-    }
-  ],
-  "a long time": [
-    {
-    "verbatim_term": "a long time",
-    "entry_id": "p029v_6",
-    "entry_title": "Dragon’s blood"
     }
   ],
   "sufficient quantity": [
@@ -3286,6 +3279,13 @@
     "verbatim_term": "sufficient quantity",
     "entry_id": "p071r_3",
     "entry_title": "Mulled and sugared wine"
+    }
+  ],
+  "a long time": [
+    {
+    "verbatim_term": "a long time",
+    "entry_id": "p029v_6",
+    "entry_title": "Dragon’s blood"
     }
   ],
   "rosary bead": [
@@ -3302,13 +3302,6 @@
     "entry_title": "Mat maker"
     }
   ],
-  "width of ten b straw": [
-    {
-    "verbatim_term": "width of ten b straws",
-    "entry_id": "p032v_1",
-    "entry_title": "Mat maker"
-    }
-  ],
   "in summer": [
     {
     "verbatim_term": "in summer",
@@ -3319,6 +3312,13 @@
     "verbatim_term": "in summer",
     "entry_id": "p162v_2",
     "entry_title": "Olive trees"
+    }
+  ],
+  "width of ten b straw": [
+    {
+    "verbatim_term": "width of ten b straws",
+    "entry_id": "p032v_1",
+    "entry_title": "Mat maker"
     }
   ],
   "the back of a knife": [
@@ -3349,9 +3349,9 @@
     "entry_title": "For telling someone that you will show teach him something he does not know, and neither do you"
     }
   ],
-  "within the capacity of one of the bushel": [
+  "width of the back of a knife or more": [
     {
-    "verbatim_term": "within the capacity of one of the bushels",
+    "verbatim_term": "width of the back of a knife or more",
     "entry_id": "p035v_2",
     "entry_title": "For transmuting grain from one vessel to another"
     }
@@ -3363,9 +3363,9 @@
     "entry_title": "For transmuting grain from one vessel to another"
     }
   ],
-  "width of the back of a knife or more": [
+  "within the capacity of one of the bushel": [
     {
-    "verbatim_term": "width of the back of a knife or more",
+    "verbatim_term": "within the capacity of one of the bushels",
     "entry_id": "p035v_2",
     "entry_title": "For transmuting grain from one vessel to another"
     }
@@ -3377,16 +3377,16 @@
     "entry_title": "For transmuting a ball into a thimble, cunning"
     }
   ],
-  "as tall as three finger": [
+  "as large as a double liard": [
     {
-    "verbatim_term": "as tall as three fingers",
+    "verbatim_term": "as large as a double liard",
     "entry_id": "p036r_1",
     "entry_title": "For transmuting a ball into a thimble, cunning"
     }
   ],
-  "as large as a double liard": [
+  "as tall as three finger": [
     {
-    "verbatim_term": "as large as a double liard",
+    "verbatim_term": "as tall as three fingers",
     "entry_id": "p036r_1",
     "entry_title": "For transmuting a ball into a thimble, cunning"
     }
@@ -3496,6 +3496,20 @@
     "entry_title": "The work done in Algiers"
     }
   ],
+  "by half": [
+    {
+    "verbatim_term": "by half",
+    "entry_id": "p053v_1",
+    "entry_title": "Silkworms"
+    }
+  ],
+  "size of a pigeon egg": [
+    {
+    "verbatim_term": "size of a pigeon egg",
+    "entry_id": "p053v_1",
+    "entry_title": "Silkworms"
+    }
+  ],
   "times per day": [
     {
     "verbatim_term": "times per day",
@@ -3513,20 +3527,6 @@
   "shorter by half": [
     {
     "verbatim_term": "shorter by half",
-    "entry_id": "p053v_1",
-    "entry_title": "Silkworms"
-    }
-  ],
-  "size of a pigeon egg": [
-    {
-    "verbatim_term": "size of a pigeon egg",
-    "entry_id": "p053v_1",
-    "entry_title": "Silkworms"
-    }
-  ],
-  "by half": [
-    {
-    "verbatim_term": "by half",
     "entry_id": "p053v_1",
     "entry_title": "Silkworms"
     }
@@ -3559,6 +3559,13 @@
     "entry_title": "Excellent tempering bath for cuirass bodies"
     }
   ],
+  "big cauldron": [
+    {
+    "verbatim_term": "big cauldron",
+    "entry_id": "p056r_1",
+    "entry_title": "Excellent tempering bath for cuirass bodies"
+    }
+  ],
   "as much pigeon dung as the said earth": [
     {
     "verbatim_term": "as much pigeon dung as the said earth",
@@ -3569,13 +3576,6 @@
   "as much horse dung": [
     {
     "verbatim_term": "as much horse dung",
-    "entry_id": "p056r_1",
-    "entry_title": "Excellent tempering bath for cuirass bodies"
-    }
-  ],
-  "big cauldron": [
-    {
-    "verbatim_term": "big cauldron",
     "entry_id": "p056r_1",
     "entry_title": "Excellent tempering bath for cuirass bodies"
     }
@@ -3599,6 +3599,13 @@
     "entry_title": "Grinding colors"
     }
   ],
+  "in half": [
+    {
+    "verbatim_term": "in half",
+    "entry_id": "p066v_1",
+    "entry_title": "For preventing teats from swelling d or to diminish overly large ones"
+    }
+  ],
   "times a day": [
     {
     "verbatim_term": "times a day",
@@ -3611,18 +3618,11 @@
     "entry_title": "IlNightingale"
     }
   ],
-  "in half": [
-    {
-    "verbatim_term": "in half",
-    "entry_id": "p066v_1",
-    "entry_title": "For preventing teats from swelling d or to diminish overly large ones"
-    }
-  ],
   "as much in one go as one can hold in a card folded up like a cannule": [
     {
     "verbatim_term": "as much in one go as one can hold in a card folded up like a cannule",
     "entry_id": "p066v_4",
-    "entry_title": "paintbrushes"
+    "entry_title": "Paintbrushes"
     }
   ],
   "degree of heat": [
@@ -3679,13 +3679,6 @@
     "entry_title": "Fountains"
     }
   ],
-  "equal distance": [
-    {
-    "verbatim_term": "equal distances",
-    "entry_id": "p082r_4",
-    "entry_title": "Clockmakers"
-    }
-  ],
   "distances as small as those of the small cogwheel": [
     {
     "verbatim_term": "distances as small as those of the small cogwheels",
@@ -3693,16 +3686,23 @@
     "entry_title": "Clockmakers"
     }
   ],
-  "thickness of a coin of forty sou": [
+  "equal distance": [
     {
-    "verbatim_term": "thickness of a coin of forty sous",
-    "entry_id": "p085v_4",
-    "entry_title": "Experimented sands"
+    "verbatim_term": "equal distances",
+    "entry_id": "p082r_4",
+    "entry_title": "Clockmakers"
     }
   ],
   "thicknesses of paper": [
     {
     "verbatim_term": "thicknesses of paper",
+    "entry_id": "p085v_4",
+    "entry_title": "Experimented sands"
+    }
+  ],
+  "thickness of a coin of forty sou": [
+    {
+    "verbatim_term": "thickness of a coin of forty sous",
     "entry_id": "p085v_4",
     "entry_title": "Experimented sands"
     }
@@ -3721,16 +3721,16 @@
     "entry_title": "Vitrified saltpeter"
     }
   ],
-  "weight of a grain": [
+  "by two tile": [
     {
-    "verbatim_term": "weight of a grain",
+    "verbatim_term": "by two tiles",
     "entry_id": "p100v_2",
     "entry_title": "For ruby take some gold leaf"
     }
   ],
-  "by two tile": [
+  "weight of a grain": [
     {
-    "verbatim_term": "by two tiles",
+    "verbatim_term": "weight of a grain",
     "entry_id": "p100v_2",
     "entry_title": "For ruby take some gold leaf"
     }
@@ -3763,9 +3763,9 @@
     "entry_title": "Ciment royal"
     }
   ],
-  "small knife back": [
+  "dutch quill": [
     {
-    "verbatim_term": "small knife back",
+    "verbatim_term": "dutch quill",
     "entry_id": "p102r_4",
     "entry_title": "Glass vessels"
     }
@@ -3777,9 +3777,9 @@
     "entry_title": "Glass vessels"
     }
   ],
-  "dutch quill": [
+  "small knife back": [
     {
-    "verbatim_term": "dutch quill",
+    "verbatim_term": "small knife back",
     "entry_id": "p102r_4",
     "entry_title": "Glass vessels"
     }
@@ -3791,16 +3791,16 @@
     "entry_title": "Infusion of anthos or rosemary"
     }
   ],
-  "for the space of 9 day": [
+  "for the time it takes you to say 8 paternoster": [
     {
-    "verbatim_term": "for the space of 9 days",
+    "verbatim_term": "for the time it takes you to say 8 paternoster",
     "entry_id": "p103r_1",
     "entry_title": "Against burns, excellent"
     }
   ],
-  "for the time it takes you to say 8 paternoster": [
+  "for the space of 9 day": [
     {
-    "verbatim_term": "for the time it takes you to say 8 paternoster",
+    "verbatim_term": "for the space of 9 days",
     "entry_id": "p103r_1",
     "entry_title": "Against burns, excellent"
     }
@@ -3819,6 +3819,13 @@
     "entry_title": "For etching on iron"
     }
   ],
+  "in the month of january": [
+    {
+    "verbatim_term": "in the month of january",
+    "entry_id": "p105r_4",
+    "entry_title": "Gardening"
+    }
+  ],
   "until the beginning of august": [
     {
     "verbatim_term": "until the beginning of august",
@@ -3829,13 +3836,6 @@
   "from mid-may": [
     {
     "verbatim_term": "from mid-may",
-    "entry_id": "p105r_4",
-    "entry_title": "Gardening"
-    }
-  ],
-  "in the month of january": [
-    {
-    "verbatim_term": "in the month of january",
     "entry_id": "p105r_4",
     "entry_title": "Gardening"
     }
@@ -3917,18 +3917,6 @@
     "entry_title": "Mixture of tin and lead"
     }
   ],
-  "size of a bean": [
-    {
-    "verbatim_term": "size of a bean",
-    "entry_id": "p118v_1",
-    "entry_title": "Casting in frames"
-    },
-    {
-    "verbatim_term": "size of a bean",
-    "entry_id": "p135v_1",
-    "entry_title": "Casting in ☼"
-    }
-  ],
   "the same size as a bottle in which one boils tisane": [
     {
     "verbatim_term": "the same size as a bottle in which one boils tisane",
@@ -3948,6 +3936,18 @@
     "verbatim_term": "half a glass",
     "entry_id": "p118v_1",
     "entry_title": "Casting in frames"
+    }
+  ],
+  "size of a bean": [
+    {
+    "verbatim_term": "size of a bean",
+    "entry_id": "p118v_1",
+    "entry_title": "Casting in frames"
+    },
+    {
+    "verbatim_term": "size of a bean",
+    "entry_id": "p135v_1",
+    "entry_title": "Casting in ☼"
     }
   ],
   "thickness of a the width of a grain of wheat": [
@@ -3971,13 +3971,6 @@
     "entry_title": "Keeping dry flowers in the same state all year"
     }
   ],
-  "earthenware bowl, from which the peasants eat their soup": [
-    {
-    "verbatim_term": "earthenware bowl, from which the peasants eat their soup",
-    "entry_id": "p121v_1",
-    "entry_title": "For casting in silver"
-    }
-  ],
   "small double handful": [
     {
     "verbatim_term": "small double handful",
@@ -3992,9 +3985,16 @@
     "entry_title": "For casting in silver"
     }
   ],
-  "as much as borax": [
+  "earthenware bowl, from which the peasants eat their soup": [
     {
-    "verbatim_term": "as much as borax",
+    "verbatim_term": "earthenware bowl, from which the peasants eat their soup",
+    "entry_id": "p121v_1",
+    "entry_title": "For casting in silver"
+    }
+  ],
+  "in the early morning": [
+    {
+    "verbatim_term": "in the early morning",
     "entry_id": "p123r_1",
     "entry_title": "A means di far correr lotnegra"
     }
@@ -4006,9 +4006,9 @@
     "entry_title": "A means di far correr lotnegra"
     }
   ],
-  "in the early morning": [
+  "as much as borax": [
     {
-    "verbatim_term": "in the early morning",
+    "verbatim_term": "as much as borax",
     "entry_id": "p123r_1",
     "entry_title": "A means di far correr lotnegra"
     }
@@ -4048,9 +4048,9 @@
     "entry_title": "Whitening of cast silver"
     }
   ],
-  "after the bread has been taken out": [
+  "like the heat of the sun in june": [
     {
-    "verbatim_term": "after the bread has been taken out",
+    "verbatim_term": "like the heat of the sun in june",
     "entry_id": "p129v_1",
     "entry_title": "Animals dried in the oven for a long time"
     }
@@ -4062,9 +4062,9 @@
     "entry_title": "Animals dried in the oven for a long time"
     }
   ],
-  "like the heat of the sun in june": [
+  "after the bread has been taken out": [
     {
-    "verbatim_term": "like the heat of the sun in june",
+    "verbatim_term": "after the bread has been taken out",
     "entry_id": "p129v_1",
     "entry_title": "Animals dried in the oven for a long time"
     }
@@ -4102,34 +4102,6 @@
     "entry_title": "Casts of lead and tin"
     }
   ],
-  "when it no longer smoke": [
-    {
-    "verbatim_term": "when it no longer smokes",
-    "entry_id": "p139v_1",
-    "entry_title": "Cast of wax to represent an animal that one has not got"
-    }
-  ],
-  "at least as long": [
-    {
-    "verbatim_term": "at least as long",
-    "entry_id": "p139v_1",
-    "entry_title": "Cast of wax to represent an animal that one has not got"
-    }
-  ],
-  "bowl with handle": [
-    {
-    "verbatim_term": "bowl with handles",
-    "entry_id": "p139v_1",
-    "entry_title": "Cast of wax to represent an animal that one has not got"
-    }
-  ],
-  "as a large walnut": [
-    {
-    "verbatim_term": "as a large walnut",
-    "entry_id": "p139v_1",
-    "entry_title": "Cast of wax to represent an animal that one has not got"
-    }
-  ],
   "cold water": [
     {
     "verbatim_term": "cold water",
@@ -4144,9 +4116,37 @@
     "entry_title": "Cast of wax to represent an animal that one has not got"
     }
   ],
+  "bowl with handle": [
+    {
+    "verbatim_term": "bowl with handles",
+    "entry_id": "p139v_1",
+    "entry_title": "Cast of wax to represent an animal that one has not got"
+    }
+  ],
+  "at least as long": [
+    {
+    "verbatim_term": "at least as long",
+    "entry_id": "p139v_1",
+    "entry_title": "Cast of wax to represent an animal that one has not got"
+    }
+  ],
   "water so hot, that, at the beginning, you cannot hold your finger in it": [
     {
     "verbatim_term": "water so hot, that, at the beginning, you cannot hold your finger in it",
+    "entry_id": "p139v_1",
+    "entry_title": "Cast of wax to represent an animal that one has not got"
+    }
+  ],
+  "as a large walnut": [
+    {
+    "verbatim_term": "as a large walnut",
+    "entry_id": "p139v_1",
+    "entry_title": "Cast of wax to represent an animal that one has not got"
+    }
+  ],
+  "when it no longer smoke": [
+    {
+    "verbatim_term": "when it no longer smokes",
     "entry_id": "p139v_1",
     "entry_title": "Cast of wax to represent an animal that one has not got"
     }
@@ -4219,16 +4219,16 @@
     "entry_title": "Silver"
     }
   ],
-  "height of a man": [
+  "thumbs breadth": [
     {
-    "verbatim_term": "height of a man",
+    "verbatim_term": "thumbs breadth",
     "entry_id": "p167r_1",
     "entry_title": "Petards"
     }
   ],
-  "thumbs breadth": [
+  "height of a man": [
     {
-    "verbatim_term": "thumbs breadth",
+    "verbatim_term": "height of a man",
     "entry_id": "p167r_1",
     "entry_title": "Petards"
     }

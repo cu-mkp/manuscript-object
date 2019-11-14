@@ -1,0 +1,557 @@
+{
+  "firework": [
+    {
+    "verbatim_term": "fireworks",
+    "entry_id": "p008r_2",
+    "entry_title": "For bursting grenades and giving force to fireworks"
+    }
+  ],
+  "grenade": [
+    {
+    "verbatim_term": "grenades",
+    "entry_id": "p008r_2",
+    "entry_title": "For bursting grenades and giving force to fireworks"
+    },
+    {
+    "verbatim_term": "grenades",
+    "entry_id": "p021v_2",
+    "entry_title": "Defense of a town"
+    },
+    {
+    "verbatim_term": "grenades",
+    "entry_id": "p024r_1",
+    "entry_title": "Grenades"
+    },
+    {
+    "verbatim_term": "grenades",
+    "entry_id": "p085v_2",
+    "entry_title": "Mortars"
+    },
+    {
+    "verbatim_term": "grenade",
+    "entry_id": "p024r_1",
+    "entry_title": "Grenades"
+    }
+  ],
+  "arquebus": [
+    {
+    "verbatim_term": "arquebus",
+    "entry_id": "p008r_3",
+    "entry_title": "Tempering of balls for piercing armor of proof"
+    },
+    {
+    "verbatim_term": "arquebus",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "arquebus",
+    "entry_id": "p022v_1",
+    "entry_title": "Orgues"
+    },
+    {
+    "verbatim_term": "arquebus",
+    "entry_id": "p024r_1",
+    "entry_title": "Grenades"
+    },
+    {
+    "verbatim_term": "arquebus",
+    "entry_id": "p024v_1",
+    "entry_title": "For bringing a cannon over land"
+    },
+    {
+    "verbatim_term": "arquebus",
+    "entry_id": "p043v_3",
+    "entry_title": "Arquebusier"
+    },
+    {
+    "verbatim_term": "arquebus",
+    "entry_id": "p043v_4",
+    "entry_title": "Hail shot of the arquebus"
+    },
+    {
+    "verbatim_term": "arquebus",
+    "entry_id": "p044r_1",
+    "entry_title": "The range of an arquebus"
+    },
+    {
+    "verbatim_term": "arquebus",
+    "entry_id": "p044r_3",
+    "entry_title": "Arquebus"
+    },
+    {
+    "verbatim_term": "arquebus",
+    "entry_id": "p045r_1",
+    "entry_title": "Loading an arquebus with hail shot"
+    },
+    {
+    "verbatim_term": "arquebus",
+    "entry_id": "p045v_1",
+    "entry_title": "Loading an arquebus"
+    },
+    {
+    "verbatim_term": "arquebus",
+    "entry_id": "p129r_3",
+    "entry_title": "Viper color"
+    },
+    {
+    "verbatim_term": "chambered arquebus",
+    "entry_id": "p043v_3",
+    "entry_title": "Arquebusier"
+    },
+    {
+    "verbatim_term": "arquebus with hail shot",
+    "entry_id": "p045r_1",
+    "entry_title": "Loading an arquebus with hail shot"
+    }
+  ],
+  "pistol": [
+    {
+    "verbatim_term": "pistol",
+    "entry_id": "p008r_3",
+    "entry_title": "Tempering of balls for piercing armor of proof"
+    },
+    {
+    "verbatim_term": "pistol",
+    "entry_id": "p045r_1",
+    "entry_title": "Loading an arquebus with hail shot"
+    }
+  ],
+  "artillery": [
+    {
+    "verbatim_term": "artillery",
+    "entry_id": "p015r_2",
+    "entry_title": "Foundry casting"
+    },
+    {
+    "verbatim_term": "artillery",
+    "entry_id": "p024v_1",
+    "entry_title": "For bringing a cannon over land"
+    },
+    {
+    "verbatim_term": "artillery",
+    "entry_id": "p123r_1",
+    "entry_title": "A means di far correr lotnegra"
+    }
+  ],
+  "cannon-perrier": [
+    {
+    "verbatim_term": "cannon-perriers",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "cannon-perrier",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "cannon": [
+    {
+    "verbatim_term": "cannon",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "cannon",
+    "entry_id": "p021r_1",
+    "entry_title": "Gunner"
+    },
+    {
+    "verbatim_term": "cannon",
+    "entry_id": "p021r_2",
+    "entry_title": "For firing a cannon at night"
+    },
+    {
+    "verbatim_term": "cannon",
+    "entry_id": "p021v_1",
+    "entry_title": "For unspiking a cannon"
+    },
+    {
+    "verbatim_term": "cannon",
+    "entry_id": "p022r_1",
+    "entry_title": "Cannon ball, weighing 40 lb, having 12 lines, king's foot."
+    },
+    {
+    "verbatim_term": "cannon",
+    "entry_id": "p022v_1",
+    "entry_title": "Orgues"
+    },
+    {
+    "verbatim_term": "cannon",
+    "entry_id": "p023r_1",
+    "entry_title": "On petards"
+    },
+    {
+    "verbatim_term": "cannon",
+    "entry_id": "p024v_1",
+    "entry_title": "For bringing a cannon over land"
+    },
+    {
+    "verbatim_term": "cannon",
+    "entry_id": "p024v_4",
+    "entry_title": "A touch-hole at the level"
+    },
+    {
+    "verbatim_term": "cannon",
+    "entry_id": "p025v_1",
+    "entry_title": "Gunner"
+    },
+    {
+    "verbatim_term": "cannon",
+    "entry_id": "p045v_2",
+    "entry_title": "For adjusting a crooked cannon"
+    },
+    {
+    "verbatim_term": "cannon",
+    "entry_id": "p099v_2",
+    "entry_title": "Cannons"
+    },
+    {
+    "verbatim_term": "cannons",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "cannons",
+    "entry_id": "p021r_1",
+    "entry_title": "Gunner"
+    },
+    {
+    "verbatim_term": "cannons",
+    "entry_id": "p022v_1",
+    "entry_title": "Orgues"
+    },
+    {
+    "verbatim_term": "cannons",
+    "entry_id": "p024v_3",
+    "entry_title": "A steel touch-hole"
+    },
+    {
+    "verbatim_term": "cannons",
+    "entry_id": "p086v_1",
+    "entry_title": "Excellent sand for lead, tin, and copper"
+    },
+    {
+    "verbatim_term": "cannons",
+    "entry_id": "p099v_2",
+    "entry_title": "Cannons"
+    },
+    {
+    "verbatim_term": "cannons",
+    "entry_id": "p121v_2",
+    "entry_title": "Silver for casting"
+    },
+    {
+    "verbatim_term": "large cannon",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "large ordinary cannon",
+    "entry_id": "p022v_1",
+    "entry_title": "Orgues"
+    },
+    {
+    "verbatim_term": "double cannon",
+    "entry_id": "p022v_1",
+    "entry_title": "Orgues"
+    }
+  ],
+  "canno": [
+    {
+    "verbatim_term": "canno",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "canno",
+    "entry_id": "p024v_1",
+    "entry_title": "For bringing a cannon over land"
+    }
+  ],
+  "falconet": [
+    {
+    "verbatim_term": "falconet",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "falconet",
+    "entry_id": "p027v_1",
+    "entry_title": "Falconet"
+    },
+    {
+    "verbatim_term": "falconet",
+    "entry_id": "p027v_2",
+    "entry_title": "Falconet of 4 quintals, alternatively passe-volant, is 8 pans long"
+    }
+  ],
+  "piece": [
+    {
+    "verbatim_term": "piece",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "piece",
+    "entry_id": "p021r_1",
+    "entry_title": "Gunner"
+    },
+    {
+    "verbatim_term": "piece",
+    "entry_id": "p021v_1",
+    "entry_title": "For unspiking a cannon"
+    },
+    {
+    "verbatim_term": "piece",
+    "entry_id": "p024v_1",
+    "entry_title": "For bringing a cannon over land"
+    },
+    {
+    "verbatim_term": "pieces",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "pieces",
+    "entry_id": "p021r_2",
+    "entry_title": "For firing a cannon at night"
+    },
+    {
+    "verbatim_term": "field piece",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "medium pieces",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "pleasure pieces",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "bastarde piece",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "small pieces",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "field pieces",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "old pieces",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "smaller pieces",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "large pieces",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "fowling piece",
+    "entry_id": "p044r_1",
+    "entry_title": "The range of an arquebus"
+    }
+  ],
+  "field": [
+    {
+    "verbatim_term": "field",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "bastarde": [
+    {
+    "verbatim_term": "bastardes",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "bastarde",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "passe-volant": [
+    {
+    "verbatim_term": "passe-volant",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "passe-volant",
+    "entry_id": "p027v_2",
+    "entry_title": "Falconet of 4 quintals, alternatively passe-volant, is 8 pans long"
+    }
+  ],
+  "culverin": [
+    {
+    "verbatim_term": "culverins",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "culverin",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "culverin",
+    "entry_id": "p026v_1",
+    "entry_title": "Culverin ball"
+    },
+    {
+    "verbatim_term": "bastard culverin",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "large culverin",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "large culverins",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "orgue": [
+    {
+    "verbatim_term": "orgues",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "orgues",
+    "entry_id": "p022v_1",
+    "entry_title": "Orgues"
+    }
+  ],
+  "gun": [
+    {
+    "verbatim_term": "gun",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "petard": [
+    {
+    "verbatim_term": "petards",
+    "entry_id": "p021v_2",
+    "entry_title": "Defense of a town"
+    },
+    {
+    "verbatim_term": "petards",
+    "entry_id": "p023v_1",
+    "entry_title": "On petards"
+    },
+    {
+    "verbatim_term": "petards",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    },
+    {
+    "verbatim_term": "petard",
+    "entry_id": "p023r_1",
+    "entry_title": "On petards"
+    },
+    {
+    "verbatim_term": "petard",
+    "entry_id": "p167r_1",
+    "entry_title": "Petards"
+    }
+  ],
+  "torch": [
+    {
+    "verbatim_term": "torches",
+    "entry_id": "p024v_1",
+    "entry_title": "For bringing a cannon over land"
+    }
+  ],
+  "cannonball": [
+    {
+    "verbatim_term": "cannonball",
+    "entry_id": "p026r_1",
+    "entry_title": "Cannonball"
+    }
+  ],
+  "musket": [
+    {
+    "verbatim_term": "musket",
+    "entry_id": "p027v_7",
+    "entry_title": "60 lb musket, is 5 pans and a half or 6"
+    },
+    {
+    "verbatim_term": "double musket",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "simple musket",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ],
+  "hackbut": [
+    {
+    "verbatim_term": "hackbut",
+    "entry_id": "p044r_1",
+    "entry_title": "The range of an arquebus"
+    }
+  ],
+  "schioppo": [
+    {
+    "verbatim_term": "schioppo",
+    "entry_id": "p055r_1",
+    "entry_title": "For firing a schioppo senza rumore"
+    }
+  ],
+  "scimitar": [
+    {
+    "verbatim_term": "scimitars",
+    "entry_id": "p125r_2",
+    "entry_title": "Scimitars"
+    },
+    {
+    "verbatim_term": "scimitar",
+    "entry_id": "p125r_2",
+    "entry_title": "Scimitars"
+    }
+  ],
+  "arquebus à croc": [
+    {
+    "verbatim_term": "arquebus à croc",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    },
+    {
+    "verbatim_term": "arquebus à croc",
+    "entry_id": "p022v_1",
+    "entry_title": "Orgues"
+    }
+  ],
+  "arquebus powder": [
+    {
+    "verbatim_term": "arquebus powder",
+    "entry_id": "p017r_1",
+    "entry_title": "On the gunner"
+    }
+  ]
+}

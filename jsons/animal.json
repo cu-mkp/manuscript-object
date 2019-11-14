@@ -248,6 +248,11 @@
     "entry_title": "Weary horses"
     },
     {
+    "verbatim_term": "horses’",
+    "entry_id": "p024v_1",
+    "entry_title": "For bringing a cannon over land"
+    },
+    {
     "verbatim_term": "good horses",
     "entry_id": "p017r_1",
     "entry_title": "On the gunner"
@@ -437,12 +442,12 @@
     "entry_title": "Thing that does not release"
     },
     {
-    "verbatim_term": "small wall lizard",
+    "verbatim_term": "wall lizard",
     "entry_id": "p133v_3",
     "entry_title": "Various animals entwined"
     },
     {
-    "verbatim_term": "wall lizard",
+    "verbatim_term": "small wall lizard",
     "entry_id": "p133v_3",
     "entry_title": "Various animals entwined"
     }
@@ -509,6 +514,96 @@
     }
   ],
   "snake": [
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p013v_4",
+    "entry_title": "Snakes"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p052r_1",
+    "entry_title": "The work done in Algiers"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p107r_1",
+    "entry_title": "Catching lizards and snakes"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p112v_1",
+    "entry_title": "For molding Making the arrangement and disposition of the animal"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p114r_1",
+    "entry_title": "Second cast"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p115r_1",
+    "entry_title": "Make the cast, reheat the molds, &amp;c Note about everything above |-|"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p115r_2",
+    "entry_title": "Animal after release"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p116v_1",
+    "entry_title": "Molding snakes in all weather"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p117v_1",
+    "entry_title": "For making the ashes of flowers and plants leave molds"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p117v_5",
+    "entry_title": "Blood of snakes"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p122r_2",
+    "entry_title": "Flower in the mouth of the snake"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p124v_3",
+    "entry_title": "A means to make the gate for small female lizards"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p125v_1",
+    "entry_title": "Vipers and snakes"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p129r_3",
+    "entry_title": "Viper color"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p133v_3",
+    "entry_title": "Various animals entwined"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p139v_1",
+    "entry_title": "Cast of wax to represent an animal that one has not got"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p150v_1",
+    "entry_title": "Molding hollow"
+    },
+    {
+    "verbatim_term": "snake",
+    "entry_id": "p164r_1",
+    "entry_title": "Gate"
+    },
     {
     "verbatim_term": "snakes",
     "entry_id": "p013v_4",
@@ -630,96 +725,6 @@
     "entry_title": "Repairing snakes and lizards"
     },
     {
-    "verbatim_term": "snake",
-    "entry_id": "p013v_4",
-    "entry_title": "Snakes"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p052r_1",
-    "entry_title": "The work done in Algiers"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p107r_1",
-    "entry_title": "Catching lizards and snakes"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p112v_1",
-    "entry_title": "For molding Making the arrangement and disposition of the animal"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p114r_1",
-    "entry_title": "Second cast"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p115r_1",
-    "entry_title": "Make the cast, reheat the molds, &amp;c Note about everything above |-|"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p115r_2",
-    "entry_title": "Animal after release"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p116v_1",
-    "entry_title": "Molding snakes in all weather"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p117v_1",
-    "entry_title": "For making the ashes of flowers and plants leave molds"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p117v_5",
-    "entry_title": "Blood of snakes"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p122r_2",
-    "entry_title": "Flower in the mouth of the snake"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p124v_3",
-    "entry_title": "A means to make the gate for small female lizards"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p125v_1",
-    "entry_title": "Vipers and snakes"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p129r_3",
-    "entry_title": "Viper color"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p133v_3",
-    "entry_title": "Various animals entwined"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p139v_1",
-    "entry_title": "Cast of wax to represent an animal that one has not got"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p150v_1",
-    "entry_title": "Molding hollow"
-    },
-    {
-    "verbatim_term": "snake",
-    "entry_id": "p164r_1",
-    "entry_title": "Gate"
-    },
-    {
     "verbatim_term": "water snakes",
     "entry_id": "p112r_4",
     "entry_title": "Putting to death the animal for molding"
@@ -808,13 +813,6 @@
     "verbatim_term": "swan",
     "entry_id": "p024r_1",
     "entry_title": "Grenades"
-    }
-  ],
-  "horses’": [
-    {
-    "verbatim_term": "horses’",
-    "entry_id": "p024v_1",
-    "entry_title": "For bringing a cannon over land"
     }
   ],
   "pigeon": [
@@ -939,7 +937,7 @@
     {
     "verbatim_term": "duck",
     "entry_id": "p066v_4",
-    "entry_title": "paintbrushes"
+    "entry_title": "Paintbrushes"
     }
   ],
   "sheep": [
@@ -981,12 +979,12 @@
   ],
   "ewe": [
     {
-    "verbatim_term": "ewe",
+    "verbatim_term": "ewes",
     "entry_id": "p041v_2",
     "entry_title": "Sheared ewes"
     },
     {
-    "verbatim_term": "ewes",
+    "verbatim_term": "ewe",
     "entry_id": "p041v_2",
     "entry_title": "Sheared ewes"
     }
@@ -1000,7 +998,7 @@
     {
     "verbatim_term": "crow",
     "entry_id": "p066v_4",
-    "entry_title": "paintbrushes"
+    "entry_title": "Paintbrushes"
     }
   ],
   "beef": [
@@ -1065,6 +1063,11 @@
     "verbatim_term": "dog",
     "entry_id": "p131r_4",
     "entry_title": "For teaching a dog well"
+    },
+    {
+    "verbatim_term": "dogs’",
+    "entry_id": "p104v_1",
+    "entry_title": "Against dogs’ mange"
     },
     {
     "verbatim_term": "common dogs",
@@ -1192,27 +1195,6 @@
     "entry_title": "Birds"
     }
   ],
-  "chaffinch": [
-    {
-    "verbatim_term": "chaffinches",
-    "entry_id": "p050v_1",
-    "entry_title": "Small birds"
-    }
-  ],
-  "cuckoo": [
-    {
-    "verbatim_term": "cuckoo",
-    "entry_id": "p050v_1",
-    "entry_title": "Small birds"
-    }
-  ],
-  "goldfinch": [
-    {
-    "verbatim_term": "goldfinches",
-    "entry_id": "p050v_1",
-    "entry_title": "Small birds"
-    }
-  ],
   "spider": [
     {
     "verbatim_term": "spider",
@@ -1255,9 +1237,9 @@
     "entry_title": "Molding a single spider"
     }
   ],
-  "calandra": [
+  "chaffinch": [
     {
-    "verbatim_term": "calandra",
+    "verbatim_term": "chaffinches",
     "entry_id": "p050v_1",
     "entry_title": "Small birds"
     }
@@ -1269,9 +1251,30 @@
     "entry_title": "Small birds"
     }
   ],
+  "calandra": [
+    {
+    "verbatim_term": "calandra",
+    "entry_id": "p050v_1",
+    "entry_title": "Small birds"
+    }
+  ],
   "verdaule": [
     {
     "verbatim_term": "verdaule",
+    "entry_id": "p050v_1",
+    "entry_title": "Small birds"
+    }
+  ],
+  "goldfinch": [
+    {
+    "verbatim_term": "goldfinches",
+    "entry_id": "p050v_1",
+    "entry_title": "Small birds"
+    }
+  ],
+  "cuckoo": [
+    {
+    "verbatim_term": "cuckoo",
     "entry_id": "p050v_1",
     "entry_title": "Small birds"
     }
@@ -1315,13 +1318,6 @@
     "entry_title": "Silkworms"
     }
   ],
-  "bombicum": [
-    {
-    "verbatim_term": "bombicum",
-    "entry_id": "p053v_1",
-    "entry_title": "Silkworms"
-    }
-  ],
   "butterfly": [
     {
     "verbatim_term": "butterfly",
@@ -1357,6 +1353,13 @@
   "silkworm": [
     {
     "verbatim_term": "silkworms",
+    "entry_id": "p053v_1",
+    "entry_title": "Silkworms"
+    }
+  ],
+  "bombicum": [
+    {
+    "verbatim_term": "bombicum",
     "entry_id": "p053v_1",
     "entry_title": "Silkworms"
     }
@@ -1406,6 +1409,39 @@
     "entry_title": "Sheath maker"
     }
   ],
+  "porcupine": [
+    {
+    "verbatim_term": "porcupine",
+    "entry_id": "p058v_5",
+    "entry_title": "Paintbrushes"
+    }
+  ],
+  "weasel": [
+    {
+    "verbatim_term": "weasels",
+    "entry_id": "p058v_5",
+    "entry_title": "Paintbrushes"
+    }
+  ],
+  "squirrel": [
+    {
+    "verbatim_term": "squirrel",
+    "entry_id": "p058v_5",
+    "entry_title": "Paintbrushes"
+    },
+    {
+    "verbatim_term": "squirrel",
+    "entry_id": "p066v_4",
+    "entry_title": "Paintbrushes"
+    }
+  ],
+  "dormouse": [
+    {
+    "verbatim_term": "dormice",
+    "entry_id": "p058v_5",
+    "entry_title": "Paintbrushes"
+    }
+  ],
   "rat": [
     {
     "verbatim_term": "rats",
@@ -1430,7 +1466,7 @@
     {
     "verbatim_term": "rat",
     "entry_id": "p066v_4",
-    "entry_title": "paintbrushes"
+    "entry_title": "Paintbrushes"
     },
     {
     "verbatim_term": "rat",
@@ -1443,44 +1479,11 @@
     "entry_title": "Molding a rat"
     }
   ],
-  "porcupine": [
-    {
-    "verbatim_term": "porcupine",
-    "entry_id": "p058v_5",
-    "entry_title": "Paintbrushes"
-    }
-  ],
-  "squirrel": [
-    {
-    "verbatim_term": "squirrel",
-    "entry_id": "p058v_5",
-    "entry_title": "Paintbrushes"
-    },
-    {
-    "verbatim_term": "squirrel",
-    "entry_id": "p066v_4",
-    "entry_title": "paintbrushes"
-    }
-  ],
-  "dormouse": [
-    {
-    "verbatim_term": "dormice",
-    "entry_id": "p058v_5",
-    "entry_title": "Paintbrushes"
-    }
-  ],
-  "weasel": [
-    {
-    "verbatim_term": "weasels",
-    "entry_id": "p058v_5",
-    "entry_title": "Paintbrushes"
-    }
-  ],
   "petit-gri": [
     {
     "verbatim_term": "petit-gris",
     "entry_id": "p066v_4",
-    "entry_title": "paintbrushes"
+    "entry_title": "Paintbrushes"
     }
   ],
   "human": [
@@ -1536,13 +1539,6 @@
     "entry_title": "For casting in latten"
     }
   ],
-  "mussel": [
-    {
-    "verbatim_term": "mussels",
-    "entry_id": "p092v_1",
-    "entry_title": "Sand from river tellins and mussels"
-    }
-  ],
   "shell": [
     {
     "verbatim_term": "shells",
@@ -1553,6 +1549,13 @@
   "tellin": [
     {
     "verbatim_term": "tellins",
+    "entry_id": "p092v_1",
+    "entry_title": "Sand from river tellins and mussels"
+    }
+  ],
+  "mussel": [
+    {
+    "verbatim_term": "mussels",
     "entry_id": "p092v_1",
     "entry_title": "Sand from river tellins and mussels"
     }
@@ -1589,13 +1592,6 @@
     {
     "verbatim_term": "ogs",
     "entry_id": "p103r_2",
-    "entry_title": "Against dogs’ mange"
-    }
-  ],
-  "dogs’": [
-    {
-    "verbatim_term": "dogs’",
-    "entry_id": "p104v_1",
     "entry_title": "Against dogs’ mange"
     }
   ],
@@ -1683,6 +1679,16 @@
   ],
   "nightingale": [
     {
+    "verbatim_term": "nightingales",
+    "entry_id": "p105v_3",
+    "entry_title": "Catching nightingales See the 15th folio after this."
+    },
+    {
+    "verbatim_term": "nightingales",
+    "entry_id": "p120r_3",
+    "entry_title": "IlNightingale"
+    },
+    {
     "verbatim_term": "nightingale",
     "entry_id": "p105v_3",
     "entry_title": "Catching nightingales See the 15th folio after this."
@@ -1701,28 +1707,13 @@
     "verbatim_term": "nightingale",
     "entry_id": "p120r_3",
     "entry_title": "IlNightingale"
-    },
-    {
-    "verbatim_term": "nightingales",
-    "entry_id": "p105v_3",
-    "entry_title": "Catching nightingales See the 15th folio after this."
-    },
-    {
-    "verbatim_term": "nightingales",
-    "entry_id": "p120r_3",
-    "entry_title": "IlNightingale"
     }
   ],
-  "mealworm": [
+  "calendra": [
     {
-    "verbatim_term": "mealworms",
+    "verbatim_term": "calendras",
     "entry_id": "p105v_5",
     "entry_title": "Nightingale"
-    },
-    {
-    "verbatim_term": "mealworms",
-    "entry_id": "p120r_3",
-    "entry_title": "IlNightingale"
     }
   ],
   "ant": [
@@ -1742,11 +1733,68 @@
     "entry_title": "Silkworms"
     }
   ],
-  "calendra": [
+  "mealworm": [
     {
-    "verbatim_term": "calendras",
+    "verbatim_term": "mealworms",
     "entry_id": "p105v_5",
     "entry_title": "Nightingale"
+    },
+    {
+    "verbatim_term": "mealworms",
+    "entry_id": "p120r_3",
+    "entry_title": "IlNightingale"
+    }
+  ],
+  "crab": [
+    {
+    "verbatim_term": "crabs",
+    "entry_id": "p106v_1",
+    "entry_title": "Casting in gold"
+    },
+    {
+    "verbatim_term": "crabs",
+    "entry_id": "p114r_1",
+    "entry_title": "Second cast"
+    },
+    {
+    "verbatim_term": "crabs",
+    "entry_id": "p137v_1",
+    "entry_title": "Tempering sand for molds of flat medals"
+    },
+    {
+    "verbatim_term": "crabs",
+    "entry_id": "p141r_1",
+    "entry_title": "Molding a crayfish"
+    },
+    {
+    "verbatim_term": "crab",
+    "entry_id": "p111v_3",
+    "entry_title": "Crab and crayfish"
+    },
+    {
+    "verbatim_term": "crab",
+    "entry_id": "p130v_1",
+    "entry_title": "Molding a crab"
+    },
+    {
+    "verbatim_term": "crab",
+    "entry_id": "p130v_2",
+    "entry_title": "Stag beetle"
+    },
+    {
+    "verbatim_term": "crab",
+    "entry_id": "p141r_1",
+    "entry_title": "Molding a crayfish"
+    },
+    {
+    "verbatim_term": "crab",
+    "entry_id": "p169r_1",
+    "entry_title": "List of processes"
+    },
+    {
+    "verbatim_term": "small crabs",
+    "entry_id": "p118r_1",
+    "entry_title": "Snails"
     }
   ],
   "crayfish": [
@@ -1816,58 +1864,6 @@
     "entry_title": "List of processes"
     }
   ],
-  "crab": [
-    {
-    "verbatim_term": "crabs",
-    "entry_id": "p106v_1",
-    "entry_title": "Casting in gold"
-    },
-    {
-    "verbatim_term": "crabs",
-    "entry_id": "p114r_1",
-    "entry_title": "Second cast"
-    },
-    {
-    "verbatim_term": "crabs",
-    "entry_id": "p137v_1",
-    "entry_title": "Tempering sand for molds of flat medals"
-    },
-    {
-    "verbatim_term": "crabs",
-    "entry_id": "p141r_1",
-    "entry_title": "Molding a crayfish"
-    },
-    {
-    "verbatim_term": "crab",
-    "entry_id": "p111v_3",
-    "entry_title": "Crab and crayfish"
-    },
-    {
-    "verbatim_term": "crab",
-    "entry_id": "p130v_1",
-    "entry_title": "Molding a crab"
-    },
-    {
-    "verbatim_term": "crab",
-    "entry_id": "p130v_2",
-    "entry_title": "Stag beetle"
-    },
-    {
-    "verbatim_term": "crab",
-    "entry_id": "p141r_1",
-    "entry_title": "Molding a crayfish"
-    },
-    {
-    "verbatim_term": "crab",
-    "entry_id": "p169r_1",
-    "entry_title": "List of processes"
-    },
-    {
-    "verbatim_term": "small crabs",
-    "entry_id": "p118r_1",
-    "entry_title": "Snails"
-    }
-  ],
   "hart": [
     {
     "verbatim_term": "hart",
@@ -1928,12 +1924,12 @@
   ],
   "viper": [
     {
-    "verbatim_term": "viper",
+    "verbatim_term": "vipers",
     "entry_id": "p125v_1",
     "entry_title": "Vipers and snakes"
     },
     {
-    "verbatim_term": "vipers",
+    "verbatim_term": "viper",
     "entry_id": "p125v_1",
     "entry_title": "Vipers and snakes"
     },
@@ -2027,11 +2023,6 @@
   ],
   "grasshopper": [
     {
-    "verbatim_term": "grasshopper",
-    "entry_id": "p142v_1",
-    "entry_title": "Molding grasshoppers and things too thin"
-    },
-    {
     "verbatim_term": "grasshoppers",
     "entry_id": "p142v_1",
     "entry_title": "Molding grasshoppers and things too thin"
@@ -2045,6 +2036,11 @@
     "verbatim_term": "grasshoppers",
     "entry_id": "p169r_1",
     "entry_title": "List of processes"
+    },
+    {
+    "verbatim_term": "grasshopper",
+    "entry_id": "p142v_1",
+    "entry_title": "Molding grasshoppers and things too thin"
     }
   ],
   "eagle": [
@@ -2184,16 +2180,16 @@
     "entry_title": "Paintbrushes"
     }
   ],
-  "goat kid": [
+  "goat buck": [
     {
-    "verbatim_term": "goat kid",
+    "verbatim_term": "goat buck",
     "entry_id": "p071r_1",
     "entry_title": "Amber"
     }
   ],
-  "goat buck": [
+  "goat kid": [
     {
-    "verbatim_term": "goat buck",
+    "verbatim_term": "goat kid",
     "entry_id": "p071r_1",
     "entry_title": "Amber"
     }
@@ -2248,20 +2244,10 @@
     "entry_title": "Molding turtles"
     }
   ],
-  "those of the water": [
+  "those from garrigue": [
     {
-    "verbatim_term": "those of the water",
+    "verbatim_term": "those from garrigue",
     "entry_id": "p143r_1",
-    "entry_title": "Molding turtles"
-    },
-    {
-    "verbatim_term": "those of the water",
-    "entry_id": "p144r_1",
-    "entry_title": "Turtles"
-    },
-    {
-    "verbatim_term": "those of the water",
-    "entry_id": "p146v_1",
     "entry_title": "Molding turtles"
     }
   ],
@@ -2282,10 +2268,20 @@
     "entry_title": "Molding turtles"
     }
   ],
-  "those from garrigue": [
+  "those of the water": [
     {
-    "verbatim_term": "those from garrigue",
+    "verbatim_term": "those of the water",
     "entry_id": "p143r_1",
+    "entry_title": "Molding turtles"
+    },
+    {
+    "verbatim_term": "those of the water",
+    "entry_id": "p144r_1",
+    "entry_title": "Turtles"
+    },
+    {
+    "verbatim_term": "those of the water",
+    "entry_id": "p146v_1",
     "entry_title": "Molding turtles"
     }
   ],

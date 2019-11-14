@@ -5,7 +5,7 @@ hour,hours,p004v_3,Varnish of iron etchers
 hour,hours,p015v_6,Tooth ache
 hour,hours,p043v_1,Varied and transmuted wine
 hour,hours,p044r_4,Lake
-hour,hours,p066r_6,* Or mat
+hour,hours,p066r_6,
 hour,hours,p074r_3,For making varnish
 hour,hours,p076r_1,For making wood green
 hour,hours,p079r_3,For making bronze in the color of gold
@@ -22,7 +22,7 @@ hour,hour,p003r_1,Counterfeit coral
 hour,hour,p003r_3,Thick varnish for planks
 hour,hour,p052r_1,The work done in Algiers
 hour,hour,p060v_1,Varnish dry in an hour
-hour,hour,p066r_6,* Or mat
+hour,hour,p066r_6" continued="yes,* Or mat
 hour,hour,p067v_3,Huiles d’essence
 hour,hour,p075v_4,Recipe for putting all woods in color
 hour,hour,p078v_3,For making bone or horn green
@@ -78,7 +78,7 @@ year,all year,p120v_6,Keeping dry flowers in the same state all year
 day,day,p009v_3,Waste book
 day,day,p017r_1,On the gunner
 day,day,p059v_4,Desiccative
-day,day,p066r_6,* Or mat
+day,day,p066r_6" continued="yes,* Or mat
 day,day,p066v_1,For preventing teats from swelling d or to diminish overly large ones
 day,day,p073r_1,For making blue varnish
 day,day,p073v_4,Color of burnished copper
@@ -104,7 +104,7 @@ day,days,p053v_1,Silkworms
 day,days,p055r_4,Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits 
 day,days,p056r_1,Excellent tempering bath for cuirass bodies
 day,days,p059v_4,Desiccative
-day,days,p066r_6,* Or mat
+day,days,p066r_6" continued="yes,* Or mat
 day,days,p066v_1,For preventing teats from swelling d or to diminish overly large ones
 day,days,p075v_4,Recipe for putting all woods in color
 day,days,p076r_1,For making wood green
@@ -134,13 +134,13 @@ day,saint paul's day,p038v_4,Planting trees
 day,the next day,p063v_7,Softening
 day,the next day,p087v_3,Sand of the mine of Thoulouse
 day,the next day,p143r_1,Molding turtles
-day,the day after,p066r_6,* Or mat
-day,one day or one night,p066r_6,* Or mat
+day,one day or one night,p066r_6" continued="yes,* Or mat
+day,the day after,p066r_6" continued="yes,* Or mat
 day,every day,p081r_4,Carton
 day,three days a week,p086v_1,Excellent sand for lead, tin, and copper
 day,twice a day,p103r_1,Against burns, excellent
-day,first day,p120r_3,IlNightingale
 day,next day,p120r_3,IlNightingale
+day,first day,p120r_3,IlNightingale
 day,several days,p120v_6,Keeping dry flowers in the same state all year
 day,natural day,p123r_1, A means di far correr lotnegra
 day,a day &amp; a night,p129v_1,Animals dried in the oven for a long time
@@ -169,7 +169,9 @@ long,long,p153v_1,Testing the goodness and strength of a sand to be reheated
 long,long,p166r_1,For the workshop
 long,all year long,p087v_2,Magistra
 long,at least as long,p139v_1,Cast of wax to represent an animal that one has not got
-time,time,p066r_6,* Or mat
+evening,evening,p066r_6" continued="yes,* Or mat
+evening,the evening and the morning,p105v_3,Catching nightingales See the 15th folio after this.
+time,time,p066r_6" continued="yes,* Or mat
 time,long time,p011v_5,Polishing wheel of copper
 time,long time,p037r_1,Founder
 time,long time,p040v_3,Metal
@@ -195,14 +197,12 @@ time,long time,p165v_3,Molds
 time,a long time,p029v_6,Dragon’s blood
 time,a long time,p129v_1,Animals dried in the oven for a long time
 time,very long time,p057v_2,Painter
-evening,evening,p066r_6,* Or mat
-evening,the evening and the morning,p105v_3,Catching nightingales See the 15th folio after this.
 advent,advent,p084r_4,Flour
 advent,advent of christmas,p043r_1,Mericotons and pavis
+thursday,thursdays,p086v_1,Excellent sand for lead, tin, and copper
 tuesday,tuesdays,p086v_1,Excellent sand for lead, tin, and copper
 wednesday,wednesdays,p086v_1,Excellent sand for lead, tin, and copper
 saturday,saturdays,p086v_1,Excellent sand for lead, tin, and copper
-thursday,thursdays,p086v_1,Excellent sand for lead, tin, and copper
 serain,serain,p089v_1,Sal ammoniac and alabaster
 serain,serain,p090r_1,Sal ammoniac and iron dross
 serain,serain of the night,p089r_1,Sand of burnt ox bones and rock salt
@@ -234,19 +234,19 @@ at night,at night,p066v_3,Against bruising of the eyes
 at night,at night,p104v_1,Against dogs’ mange
 by night,by night,p008r_4,For making a breach in a wall by night
 by night,by night,p017r_1,On the gunner
+sun is approaching midday,sun is approaching midday,p009r_1,Plowman
 at the next sowing,at the next sowing,p009r_1,Plowman
 at night in the cool &amp; by moonlight,at night in the cool &amp; by moonlight,p009r_1,Plowman
-sun is approaching midday,sun is approaching midday,p009r_1,Plowman
-st andré’s day,st andré’s day,p009v_3,Waste book
 2nd september 1581,2nd september 1581,p009v_3,Waste book
-in winter,in winter,p032v_1,Mat maker
-in winter,in winter,p047v_3,Crucibles
-in winter,in winter,p056v_1,Painter
-in winter,in winter,p160v_5,Catching birds
+st andré’s day,st andré’s day,p009v_3,Waste book
 in summer,in summer,p032v_1,Mat maker
 in summer,in summer,p116v_1,Molding snakes in all weather
 in summer,in summer,p160v_5,Catching birds
 in summer,in summer,p162v_2,Olive trees
+in winter,in winter,p032v_1,Mat maker
+in winter,in winter,p047v_3,Crucibles
+in winter,in winter,p056v_1,Painter
+in winter,in winter,p160v_5,Catching birds
 once a week,once a week,p037r_2,Medicine for the stomach which heats it and unstops the liver
 once a week,once a week,p050v_1,Small birds
 end of a moon cycle,end of a moon cycle,p037v_1,Gardener
@@ -254,30 +254,30 @@ on saint anthoine’s day in january,on saint anthoine’s day in january,p039r_
 in the following year,in the following year,p041r_02,Garden lily
 in the evening,in the evening,p042v_6,White varnish on plaster
 in the evening,in the evening,p060v_3,Spike lavender oil
-with everyes new ☾,with everyes new ☾,p046r_5,GoFlowers of trees
+with everyes new ☾,with everyes new ☾,p046r_5,Go Flowers of trees
 at the waning of the moon,at the waning of the moon,p047r_3,Against falling sickness or vertigo
 humid weather,humid weather,p047v_3,Crucibles
 before sainct michel,before sainct michel,p049v_1,Birds
-after mid-july until sainct michel,after mid-july until sainct michel,p049v_3,Birds
 from all saints’ day until christma,from all saints’ day until christmas,p049v_3,Birds
+after mid-july until sainct michel,after mid-july until sainct michel,p049v_3,Birds
 at sainct michel,at sainct michel,p049v_3,Birds
-for the entire year,for the entire year,p050r_1,Keeping fruit for the entire year
 for the space of two hour,for the space of two hours,p050r_1,Keeping fruit for the entire year
-on a warm &amp; dry day,on a warm &amp; dry day,p050r_1,Keeping fruit for the entire year
-during the summer,during the summer,p050r_1,Keeping fruit for the entire year
+for the entire year,for the entire year,p050r_1,Keeping fruit for the entire year
 in the winter,in the winter,p050r_1,Keeping fruit for the entire year
 in the winter,in the winter,p116v_1,Molding snakes in all weather
-beginning of august,beginning of august,p050v_1,Small birds
+during the summer,during the summer,p050r_1,Keeping fruit for the entire year
+on a warm &amp; dry day,on a warm &amp; dry day,p050r_1,Keeping fruit for the entire year
 after several day,after several days,p050v_1,Small birds
-around the feast of sainct jehan,around the feast of sainct jehan,p052r_1,The work done in Algiers
+beginning of august,beginning of august,p050v_1,Small birds
 from the feast of st jehan until the 25th of april,from the feast of st jehan until the 25th of april,p052r_1,The work done in Algiers
-around holy week,around holy week,p053v_1,Silkworms
-per day,per day,p053v_1,Silkworms
-until holy week,until holy week,p053v_1,Silkworms
-from their birth until the their time when they make their cocoons &amp; their prison,from their birth until the their time when they make their cocoons &amp; their prisons,p053v_1,Silkworms
-around saint jehan’s day,around saint jehan’s day,p053v_1,Silkworms
-during the day,during the day,p053v_1,Silkworms
+around the feast of sainct jehan,around the feast of sainct jehan,p052r_1,The work done in Algiers
 around pentecost,around pentecost,p053v_1,Silkworms
+around saint jehan’s day,around saint jehan’s day,p053v_1,Silkworms
+around holy week,around holy week,p053v_1,Silkworms
+from their birth until the their time when they make their cocoons &amp; their prison,from their birth until the their time when they make their cocoons &amp; their prisons,p053v_1,Silkworms
+per day,per day,p053v_1,Silkworms
+during the day,during the day,p053v_1,Silkworms
+until holy week,until holy week,p053v_1,Silkworms
 space of fifteen day,space of fifteen days,p055r_4,Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits 
 in the month of june &amp; july,in the month of june &amp; july,p055r_4,Onenev elbirro hcihw sllik fi eno spets no a draob ro a ueirse purrits 
 take a long time,take a long time,p062r_1,Perspectives
@@ -292,24 +292,24 @@ after the bread has been taken out,after the bread has been taken out,p084r_5,Sa
 in a day,in a day,p087v_3,Sand of the mine of Thoulouse
 once a month,once a month,p093r_1,Olives
 palm sunday,palm sunday,p093r_2,Observation from rustics
-weather is not serain &amp; dry,weather is not serain &amp; dry,p100r_1,Gold color
 weather is damp &amp; humid,weather is damp &amp; humid,p100r_1,Gold color
+weather is not serain &amp; dry,weather is not serain &amp; dry,p100r_1,Gold color
 for a month,for a month,p102v_2,Infusion of anthos or rosemary
 in the month of august,in the month of august,p102v_2,Infusion of anthos or rosemary
 for the space of 9 day,for the space of 9 days,p103r_1,Against burns, excellent
 for the time it takes you to say 8 paternoster,for the time it takes you to say 8 paternoster,p103r_1,Against burns, excellent
-from mid-may,from mid-may,p105r_4,Gardening
-in that year,in that year,p105r_4,Gardening
-until the beginning of august,until the beginning of august,p105r_4,Gardening
 in the month of january,in the month of january,p105r_4,Gardening
+in that year,in that year,p105r_4,Gardening
+from mid-may,from mid-may,p105r_4,Gardening
+until the beginning of august,until the beginning of august,p105r_4,Gardening
 rainy weather,rainy weather,p106v_2,
 long enough,long enough,p108r_2,Spalt
 in the spring,in the spring,p111v_4,Lizards
 quarter of an hour,quarter of an hour,p113r_1,Tempering the sand and molding the first cast
 length of a paternoster,length of a paternoster,p114r_1,Second cast
 out of season when winter denies flower,out of season when winter denies flowers,p120v_6,Keeping dry flowers in the same state all year
-for a whole day,for a whole day,p123r_1, A means di far correr lotnegra
 in the early morning,in the early morning,p123r_1, A means di far correr lotnegra
+for a whole day,for a whole day,p123r_1, A means di far correr lotnegra
 at night or at a silent time,at night or at a silent time,p125r_3,Hearing from afar
 in autumn,in autumn,p135r_3,Vine leaf and small frog
 a long time ago,a long time ago,p139v_1,Cast of wax to represent an animal that one has not got

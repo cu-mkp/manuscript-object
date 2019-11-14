@@ -3,11 +3,11 @@ touch,touch,p005r_2,Concave mirrors
 touch,touch,p093r_1,Olives
 touch,touch,p121r_1,For keeping fruits all year
 look,look,p005r_2,Concave mirrors
-deaf,deaf,p008v_4,Mixture of Pewterers 
 sonorou,sonorous,p008v_4,Mixture of Pewterers 
 sonorou,sonorous,p028v_1,Pewterers
 sonorou,sonorous,p044r_2,Pewterer
 sonorou,sonorous,p086v_1,Excellent sand for lead, tin, and copper
+deaf,deaf,p008v_4,Mixture of Pewterers 
 sound,sound,p017r_1,On the gunner
 pain,pain,p033r_1,Knife for cutting the nose or a finger
 coolness,coolness,p033v_1,For making it seem that to someone that he has a piece of silver on his forehead
@@ -19,15 +19,15 @@ stench,stench,p037v_2,Glassworker
 taste,taste,p047v_1,A drink having a taste of wine
 taste,bad taste to the food,p036v_1,Founder
 taste,taste as of vinegar,p039r_2,Pastel woad
-odorant,odorant,p067r_4,Varnish on paper
+fragrant,fragrant,p067r_4,Varnish on paper
 smell,smell,p081r_4,Carton
 noise,noise,p085v_2,Mortars
 ring,ring,p085v_2,Mortars
 ring,ring,p086v_1,Excellent sand for lead, tin, and copper
 observe,observe,p100r_2,Portraying from nature
 touching,touching,p121r_1,For keeping fruits all year
-hearing,hearing,p125r_3,Hearing from afar
 hear,hear,p125r_3,Hearing from afar
+hearing,hearing,p125r_3,Hearing from afar
 stinky,stinky,p129v_1,Animals dried in the oven for a long time
 scent,scent,p163r_1,Perfumer
 scented,scented,p166v_3,Scented candle from Le Mans
@@ -42,16 +42,16 @@ break apart between your hand,break apart between your hands,p088v_2,Mineral san
 soft when handling it between your finger,soft when handling it between your fingers,p090r_3,All sands can be rendered good
 one smells it &amp; brings it close to the nose,one smells it &amp; brings it close to the nose,p097r_2,Gilding
 smells like sulfur,smells like sulfur,p098v_5,Founding
-soft to the touch,soft to the touch,p108r_2,Spalt
 to scratch yourself well,to scratch yourself well,p108r_2,Spalt
+soft to the touch,soft to the touch,p108r_2,Spalt
 not attach to your hand,not attach to your hands,p111r_4,Clay earth
 to the tongue you find the water moderately salty,to the tongue you find the water moderately salty,p111v_1,Sal ammoniac water
 until you can you can hold the tip of your finger in the cast without burning yourself,until you can you can hold the tip of your finger in the cast without burning yourself,p116v_2,Mixture of tin and lead
-so hot that you can bear putting your finger in it,so hot that you can bear putting your finger in it,p131v_1,When the cast of tin or lead becomes porous
 of such a heat that you can handle it without harm, or that you can keep your finger in the gate without burning yourself,of such a heat that you can handle it without harm, or that you can keep your finger in the gate without burning yourself,p131v_1,When the cast of tin or lead becomes porous
-you will find it so, by scraping a little harder than the other where there is none,you will find it so, by scraping a little harder than the other where there is none,p132v_2,Crocum ferri
+so hot that you can bear putting your finger in it,so hot that you can bear putting your finger in it,p131v_1,When the cast of tin or lead becomes porous
 when scraping it with the fingernail, it is a sign that the crocum is good, very fine &amp; well prepared,when scraping it with the fingernail, it is a sign that the crocum is good, very fine &amp; well prepared,p132v_2,Crocum ferri
 perceived on the fingernail,perceived on the fingernail,p132v_2,Crocum ferri
+you will find it so, by scraping a little harder than the other where there is none,you will find it so, by scraping a little harder than the other where there is none,p132v_2,Crocum ferri
 of such heat that you cannot hold your finger there, without feeling strong heat,of such heat that you cannot hold your finger there, without feeling strong heat,p137v_1,Tempering sand for molds of flat medals
 until you can hold your finger without harm in the hole of the gate,until you can hold your finger without harm in the hole of the gate,p139r_1,Casts of lead and tin
 this wax is very soft &amp; amiable &amp; pliant as copper, and it is so strong because of the sulfur, which renders it meltable much before the other, thus you can prove on a hot slate,this wax is very soft &amp; amiable &amp; pliant as copper, and it is so strong because of the sulfur, which renders it meltable much before the other, thus you can prove on a hot slate,p139v_1,Cast of wax to represent an animal that one has not got

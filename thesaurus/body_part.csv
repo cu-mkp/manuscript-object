@@ -1,6 +1,6 @@
 freq,verbatim_term,prefLabel_en
-1,belly,belly
 3,stomach,stomach
+1,belly,belly
 35,finger,finger
 2,handful,handful
 8,face,face
@@ -13,12 +13,12 @@ freq,verbatim_term,prefLabel_en
 4,eyes,eye
 3,nail,nail
 9,foot,foot
-3,eye,eye
-6,ear,ear
 1,elbow,elbow
+3,eye,eye
 2,ears,ear
-1,nostril,nostril
+6,ear,ear
 1,tooth,tooth
+1,nostril,nostril
 2,handfuls,handful
 5,forehead,forehead
 8,thumb,thumb
@@ -30,9 +30,9 @@ freq,verbatim_term,prefLabel_en
 1,knees,knee
 1,fingers',finger
 1,arm's,arm
-6,nose,nose
 1,thigh,thigh
 17,hands,hand
+6,nose,nose
 1,palms,palm
 3,saliva,saliva
 4,head,head
@@ -57,13 +57,13 @@ freq,verbatim_term,prefLabel_en
 1,two,two
 1,sweating,sweating
 2,thumbs,thumb
-1,hair,hair
-2,flesh,flesh
 1,burn,burn
+2,flesh,flesh
+1,hair,hair
 1,burns,burn
 1,veins,vein
-1,headache,headache
 1,earwax,earwax
+1,headache,headache
 1,throat,throat
 1,underfoot,underfoot
 1,tongue,tongue
@@ -71,14 +71,14 @@ freq,verbatim_term,prefLabel_en
 1,armpit,armpit
 1,phlegm,phlegm
 1,knee,knee
-1,digiti,digiti
 1,manus,manu
+1,digiti,digiti
 1,naribus,naribus
 1,ore,ore
 4,little finger,finger
 1,secret places,secret place
-1,nail of your right thumb,nail
 1,big finger,finger
+1,nail of your right thumb,nail
 1,winds of the belly,wind
 1,distilled urine,urine
 3,index finger,finger

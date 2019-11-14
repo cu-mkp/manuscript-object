@@ -1,5 +1,5 @@
 import re
-from typing import List, Dict
+from typing import List, Dict, Optional
 from collections import OrderedDict
 
 re_tags = re.compile(r'<.*?>') # selects any tag
@@ -8,36 +8,54 @@ re_materials = re.compile(r'<m>(.*?)<\/m>') # selects text between materials tag
 prop_dict = {'animal': 'al', 'body_part': 'bp', 'currency': 'cn', 'definition': 'def',
               'environment': 'env', 'material': 'm', 'medical': 'md', 'measurement': 'ms',
               'music': 'mu', 'plant': 'pa', 'place': 'pl', 'personal_name': 'pn',
-              'profession': 'pro', 'sensory': 'sn', 'tool': 'tl', 'time': 'tmp'}
+              'profession': 'pro', 'sensory': 'sn', 'tool': 'tl', 'time': 'tmp', 'weapon': 'wp'}
 prop_dict_reverse = {v: k for k, v in prop_dict.items()}
 
 class Recipe:
 
     def __init__(self, identity: str, tc: str, tcn: str, tl: str) -> None:
-        
         self.identity: str = identity # id of the entry
         self.versions: Dict[str, str] = {'tc': tc, 'tcn': tcn, 'tl': tl} # dict that contains xml text
+        
+        self.continued = True if 'continued="yes">' in self.versions['tl'] else False
+
         self.title: Dict[str, str] = {'tc': self.get_head(tc),
                                      'tcn': self.get_head(tcn),
                                      'tl': self.get_head(tl)}
         self.length: Dict[str, int] = {k: len(self.text(k)) for k, v in self.versions.items()} 
         self.properties: Dict[str, Dict[str, List[str]]] # {prop_type: {version: [prop1, prop2, ...]}}
         self.properties = {k: {} for k in prop_dict.keys()}
-        self.margins = self.find_margins()
-        self.del_tags = self.find_del()
         for k, v in prop_dict.items():
             self.properties[k] = self.find_tag(v)
+        self.margins = self.find_margins()
+        self.del_tags = self.find_del()
+        self.captions = {k: self.find_captions(k) for k in self.versions.keys()}
         self.balanced: Dict[str: bool] = {k: self.check_balance(k) for k in self.versions.keys()}
+        
 
     def find_margins(self) -> List[str]:
         # include figure id?
-        # do we record placement of margins?
-        margins = re.findall(r'<ab margin="left-middle">(.*?)<\/ab>', self.versions['tl'])
-        return margins if margins else []
+        # {'tc': (margin1 placement, margin1text), (margin2 placement, margin2 text),
+        #   ...}
+        margins = {}
+        for version in self.versions.keys():
+          ver_list = []
+          search = re.findall(r'<ab margin="([\w-]*)"( render="([\w-]*)")?>(.*?)<\/ab>', self.versions[version])
+          for tup in search:
+              assert isinstance(tup[0], str) and isinstance(tup[1], str)
+            #   print(tup)
+              ver_list.append(tup)
+              
+          margins[version] = ver_list
+        return margins
 
     def find_del(self) -> List[str]:
         d = re.findall(r'<del>(.*?)</del>', self.versions['tl'])
         return d if d else []
+
+    def find_captions(self, version: str) -> List[str]:
+        c = re.findall(r'<caption>(.*?)</caption>', self.versions[version])
+        return c if c else []
 
     def get_head(self, text: str) -> str:
         """ search text for text in a <head> tag. """
@@ -77,7 +95,7 @@ class Recipe:
         for tag in tags:
             if '</' in tag:
                 if len(stack) < 1 or tag.replace('/', '') != stack.pop():
-                    print(self.identity, tags)
+                    # print(self.identity, tags)
                     return False
             elif '/' not in tag and '!' not in tag:
                 stack.append(tag)

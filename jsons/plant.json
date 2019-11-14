@@ -1,28 +1,24 @@
 {
+  "cinnamon": [
+    {
+    "verbatim_term": "cinnamon",
+    "entry_id": "p001v_1",
+    "entry_title": "For easing the belly"
+    },
+    {
+    "verbatim_term": "cinnamon",
+    "entry_id": "p047r_1",
+    "entry_title": "For teeth"
+    },
+    {
+    "verbatim_term": "cinnamon",
+    "entry_id": "p048r_3",
+    "entry_title": "Excellent mustard"
+    }
+  ],
   "gilliflower": [
     {
     "verbatim_term": "gilliflower",
-    "entry_id": "p001v_1",
-    "entry_title": "For easing the belly"
-    }
-  ],
-  "jujube": [
-    {
-    "verbatim_term": "jujubes",
-    "entry_id": "p001v_1",
-    "entry_title": "For easing the belly"
-    }
-  ],
-  "marshmallow": [
-    {
-    "verbatim_term": "marshmallow",
-    "entry_id": "p001v_1",
-    "entry_title": "For easing the belly"
-    }
-  ],
-  "mallow": [
-    {
-    "verbatim_term": "mallow",
     "entry_id": "p001v_1",
     "entry_title": "For easing the belly"
     }
@@ -39,21 +35,25 @@
     "entry_title": "Borders of a garden"
     }
   ],
-  "cinnamon": [
+  "mallow": [
     {
-    "verbatim_term": "cinnamon",
+    "verbatim_term": "mallow",
     "entry_id": "p001v_1",
     "entry_title": "For easing the belly"
-    },
+    }
+  ],
+  "jujube": [
     {
-    "verbatim_term": "cinnamon",
-    "entry_id": "p047r_1",
-    "entry_title": "For teeth"
-    },
+    "verbatim_term": "jujubes",
+    "entry_id": "p001v_1",
+    "entry_title": "For easing the belly"
+    }
+  ],
+  "marshmallow": [
     {
-    "verbatim_term": "cinnamon",
-    "entry_id": "p048r_3",
-    "entry_title": "Excellent mustard"
+    "verbatim_term": "marshmallow",
+    "entry_id": "p001v_1",
+    "entry_title": "For easing the belly"
     }
   ],
   "cabbage": [
@@ -185,6 +185,45 @@
     "entry_title": "Casting in frames"
     }
   ],
+  "onion": [
+    {
+    "verbatim_term": "onions",
+    "entry_id": "p004v_1",
+    "entry_title": "Black varnish for sword guard, bands for trunks, &amp;c"
+    },
+    {
+    "verbatim_term": "onions",
+    "entry_id": "p074r_3",
+    "entry_title": "For making varnish"
+    },
+    {
+    "verbatim_term": "onion",
+    "entry_id": "p020v_4",
+    "entry_title": "Against burn"
+    }
+  ],
+  "garlic": [
+    {
+    "verbatim_term": "garlic",
+    "entry_id": "p004v_1",
+    "entry_title": "Black varnish for sword guard, bands for trunks, &amp;c"
+    },
+    {
+    "verbatim_term": "garlic",
+    "entry_id": "p015v_6",
+    "entry_title": "Tooth ache"
+    },
+    {
+    "verbatim_term": "garlic",
+    "entry_id": "p039v_3",
+    "entry_title": "Tracing some history on glass"
+    },
+    {
+    "verbatim_term": "garlic",
+    "entry_id": "p051r_2",
+    "entry_title": "Cutters of printing plates"
+    }
+  ],
   "linseed": [
     {
     "verbatim_term": "linseed",
@@ -237,45 +276,6 @@
     "entry_title": "For etching on iron"
     }
   ],
-  "onion": [
-    {
-    "verbatim_term": "onions",
-    "entry_id": "p004v_1",
-    "entry_title": "Black varnish for sword guard, bands for trunks, &amp;c"
-    },
-    {
-    "verbatim_term": "onions",
-    "entry_id": "p074r_3",
-    "entry_title": "For making varnish"
-    },
-    {
-    "verbatim_term": "onion",
-    "entry_id": "p020v_4",
-    "entry_title": "Against burn"
-    }
-  ],
-  "garlic": [
-    {
-    "verbatim_term": "garlic",
-    "entry_id": "p004v_1",
-    "entry_title": "Black varnish for sword guard, bands for trunks, &amp;c"
-    },
-    {
-    "verbatim_term": "garlic",
-    "entry_id": "p015v_6",
-    "entry_title": "Tooth ache"
-    },
-    {
-    "verbatim_term": "garlic",
-    "entry_id": "p039v_3",
-    "entry_title": "Tracing some history on glass"
-    },
-    {
-    "verbatim_term": "garlic",
-    "entry_id": "p051r_2",
-    "entry_title": "Cutters of printing plates"
-    }
-  ],
   "linen": [
     {
     "verbatim_term": "linen",
@@ -298,58 +298,9 @@
     "entry_title": "Gardening"
     }
   ],
-  "willow": [
-    {
-    "verbatim_term": "willow",
-    "entry_id": "p006r_1",
-    "entry_title": "For laying down and seating burnished gold and giving red or green or blue"
-    },
-    {
-    "verbatim_term": "willow",
-    "entry_id": "p038r_4",
-    "entry_title": "Amber"
-    },
-    {
-    "verbatim_term": "willow",
-    "entry_id": "p081v_3",
-    "entry_title": "Sand"
-    },
-    {
-    "verbatim_term": "willow",
-    "entry_id": "p083v_2",
-    "entry_title": "Molding in relief on one part and hollow on the other."
-    },
-    {
-    "verbatim_term": "willow",
-    "entry_id": "p084v_2",
-    "entry_title": "Eau Magistra"
-    },
-    {
-    "verbatim_term": "willow",
-    "entry_id": "p091r_2",
-    "entry_title": "Molding with cuttlefish bone"
-    },
-    {
-    "verbatim_term": "willow",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
-    },
-    {
-    "verbatim_term": "willow",
-    "entry_id": "p164r_2",
-    "entry_title": "Repairing flashing"
-    }
-  ],
   "prele": [
     {
     "verbatim_term": "prele",
-    "entry_id": "p006r_1",
-    "entry_title": "For laying down and seating burnished gold and giving red or green or blue"
-    }
-  ],
-  "horsetail": [
-    {
-    "verbatim_term": "horsetail",
     "entry_id": "p006r_1",
     "entry_title": "For laying down and seating burnished gold and giving red or green or blue"
     }
@@ -386,53 +337,53 @@
     "entry_title": "Plowman"
     }
   ],
-  "brazilwood": [
+  "horsetail": [
     {
-    "verbatim_term": "brazilwood",
+    "verbatim_term": "horsetail",
     "entry_id": "p006r_1",
     "entry_title": "For laying down and seating burnished gold and giving red or green or blue"
-    },
-    {
-    "verbatim_term": "brazilwood",
-    "entry_id": "p032v_1",
-    "entry_title": "Mat maker"
-    },
-    {
-    "verbatim_term": "brazilwood",
-    "entry_id": "p043v_1",
-    "entry_title": "Varied and transmuted wine"
-    },
-    {
-    "verbatim_term": "brazilwood",
-    "entry_id": "p063v_4",
-    "entry_title": "Rosette"
     }
   ],
-  "saffron": [
+  "willow": [
     {
-    "verbatim_term": "saffron",
+    "verbatim_term": "willow",
     "entry_id": "p006r_1",
     "entry_title": "For laying down and seating burnished gold and giving red or green or blue"
     },
     {
-    "verbatim_term": "saffron",
-    "entry_id": "p007r_3",
-    "entry_title": "Doublets"
+    "verbatim_term": "willow",
+    "entry_id": "p038r_4",
+    "entry_title": "Amber"
     },
     {
-    "verbatim_term": "saffron",
-    "entry_id": "p020r_1",
-    "entry_title": "For making millas"
+    "verbatim_term": "willow",
+    "entry_id": "p081v_3",
+    "entry_title": "Sand"
     },
     {
-    "verbatim_term": "saffron",
-    "entry_id": "p038r_2",
-    "entry_title": "Saffron"
+    "verbatim_term": "willow",
+    "entry_id": "p083v_2",
+    "entry_title": "Molding in relief on one part and hollow on the other"
     },
     {
-    "verbatim_term": "saffron",
-    "entry_id": "p041v_3",
-    "entry_title": "Colors and gilding on glass"
+    "verbatim_term": "willow",
+    "entry_id": "p084v_2",
+    "entry_title": "Eau Magistra"
+    },
+    {
+    "verbatim_term": "willow",
+    "entry_id": "p091r_2",
+    "entry_title": "Molding with cuttlefish bone"
+    },
+    {
+    "verbatim_term": "willow",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
+    },
+    {
+    "verbatim_term": "willow",
+    "entry_id": "p164r_2",
+    "entry_title": "Repairing flashing"
     }
   ],
   "pea": [
@@ -467,6 +418,55 @@
     "entry_title": "Molding a rat"
     }
   ],
+  "saffron": [
+    {
+    "verbatim_term": "saffron",
+    "entry_id": "p006r_1",
+    "entry_title": "For laying down and seating burnished gold and giving red or green or blue"
+    },
+    {
+    "verbatim_term": "saffron",
+    "entry_id": "p007r_3",
+    "entry_title": "Doublets"
+    },
+    {
+    "verbatim_term": "saffron",
+    "entry_id": "p020r_1",
+    "entry_title": "For making millas"
+    },
+    {
+    "verbatim_term": "saffron",
+    "entry_id": "p038r_2",
+    "entry_title": "Saffron"
+    },
+    {
+    "verbatim_term": "saffron",
+    "entry_id": "p041v_3",
+    "entry_title": "Colors and gilding on glass"
+    }
+  ],
+  "brazilwood": [
+    {
+    "verbatim_term": "brazilwood",
+    "entry_id": "p006r_1",
+    "entry_title": "For laying down and seating burnished gold and giving red or green or blue"
+    },
+    {
+    "verbatim_term": "brazilwood",
+    "entry_id": "p032v_1",
+    "entry_title": "Mat maker"
+    },
+    {
+    "verbatim_term": "brazilwood",
+    "entry_id": "p043v_1",
+    "entry_title": "Varied and transmuted wine"
+    },
+    {
+    "verbatim_term": "brazilwood",
+    "entry_id": "p063v_4",
+    "entry_title": "Rosette"
+    }
+  ],
   "carnation": [
     {
     "verbatim_term": "carnation",
@@ -492,20 +492,6 @@
     "verbatim_term": "carnations",
     "entry_id": "p169r_1",
     "entry_title": "List of processes"
-    }
-  ],
-  "baillard": [
-    {
-    "verbatim_term": "baillard",
-    "entry_id": "p009r_1",
-    "entry_title": "Plowman"
-    }
-  ],
-  "pomole": [
-    {
-    "verbatim_term": "pomole",
-    "entry_id": "p009r_1",
-    "entry_title": "Plowman"
     }
   ],
   "millet": [
@@ -538,6 +524,20 @@
     "verbatim_term": "yellow millet",
     "entry_id": "p144r_1",
     "entry_title": "Turtles"
+    }
+  ],
+  "pomole": [
+    {
+    "verbatim_term": "pomole",
+    "entry_id": "p009r_1",
+    "entry_title": "Plowman"
+    }
+  ],
+  "baillard": [
+    {
+    "verbatim_term": "baillard",
+    "entry_id": "p009r_1",
+    "entry_title": "Plowman"
     }
   ],
   "grain": [
@@ -735,6 +735,13 @@
     "entry_title": "Mastic varnish dry in a half hour"
     }
   ],
+  "puffball": [
+    {
+    "verbatim_term": "puffball",
+    "entry_id": "p020v_1",
+    "entry_title": "For whitening the face"
+    }
+  ],
   "wheat": [
     {
     "verbatim_term": "wheat",
@@ -867,13 +874,6 @@
     "entry_title": "List of processes"
     }
   ],
-  "puffball": [
-    {
-    "verbatim_term": "puffball",
-    "entry_id": "p020v_1",
-    "entry_title": "For whitening the face"
-    }
-  ],
   "skirret": [
     {
     "verbatim_term": "skirret",
@@ -908,22 +908,22 @@
     "entry_title": "Orange trees"
     },
     {
-    "verbatim_term": "apricot trees",
-    "entry_id": "p091r_1",
-    "entry_title": "Grafting"
-    },
-    {
     "verbatim_term": "prune trees",
     "entry_id": "p091r_1",
     "entry_title": "Grafting"
     },
     {
-    "verbatim_term": "plum trees",
+    "verbatim_term": "apricot trees",
+    "entry_id": "p091r_1",
+    "entry_title": "Grafting"
+    },
+    {
+    "verbatim_term": "peach trees",
     "entry_id": "p093r_3",
     "entry_title": "Grafts"
     },
     {
-    "verbatim_term": "peach trees",
+    "verbatim_term": "plum trees",
     "entry_id": "p093r_3",
     "entry_title": "Grafts"
     },
@@ -1058,16 +1058,16 @@
     "entry_title": "Giving the thickness that you wish to a medal"
     }
   ],
-  "fern": [
+  "saltworth": [
     {
-    "verbatim_term": "fern",
+    "verbatim_term": "saltworth",
     "entry_id": "p036v_3",
     "entry_title": "Glassworkers’ glass"
     }
   ],
-  "saltworth": [
+  "fern": [
     {
-    "verbatim_term": "saltworth",
+    "verbatim_term": "fern",
     "entry_id": "p036v_3",
     "entry_title": "Glassworkers’ glass"
     }
@@ -1250,6 +1250,18 @@
     "entry_title": "Molding a fly"
     }
   ],
+  "pavi": [
+    {
+    "verbatim_term": "pavis",
+    "entry_id": "p043r_1",
+    "entry_title": "Mericotons and pavis"
+    },
+    {
+    "verbatim_term": "pavis",
+    "entry_id": "p053r_5",
+    "entry_title": "Almond trees, apricots"
+    }
+  ],
   "mericoton": [
     {
     "verbatim_term": "mericotons",
@@ -1267,28 +1279,28 @@
     "entry_title": "Gardening"
     }
   ],
-  "pavi": [
+  "columbine": [
     {
-    "verbatim_term": "pavis",
-    "entry_id": "p043r_1",
-    "entry_title": "Mericotons and pavis"
+    "verbatim_term": "columbine",
+    "entry_id": "p044r_5",
+    "entry_title": "Dyes from flowers"
+    }
+  ],
+  "bugloss": [
+    {
+    "verbatim_term": "bugloss",
+    "entry_id": "p044r_5",
+    "entry_title": "Dyes from flowers"
     },
     {
-    "verbatim_term": "pavis",
-    "entry_id": "p053r_5",
-    "entry_title": "Almond trees, apricots"
+    "verbatim_term": "bugloss",
+    "entry_id": "p170v_2",
+    "entry_title": "Against plague"
     }
   ],
   "flax": [
     {
     "verbatim_term": "flax",
-    "entry_id": "p044r_5",
-    "entry_title": "Dyes from flowers"
-    }
-  ],
-  "columbine": [
-    {
-    "verbatim_term": "columbine",
     "entry_id": "p044r_5",
     "entry_title": "Dyes from flowers"
     }
@@ -1340,18 +1352,6 @@
     "verbatim_term": "cornflowers",
     "entry_id": "p120v_6",
     "entry_title": "Keeping dry flowers in the same state all year"
-    }
-  ],
-  "bugloss": [
-    {
-    "verbatim_term": "bugloss",
-    "entry_id": "p044r_5",
-    "entry_title": "Dyes from flowers"
-    },
-    {
-    "verbatim_term": "bugloss",
-    "entry_id": "p170v_2",
-    "entry_title": "Against plague"
     }
   ],
   "rue": [
@@ -1420,6 +1420,13 @@
     "entry_title": "Against diarrhea and dysentery"
     }
   ],
+  "clofe": [
+    {
+    "verbatim_term": "cloves",
+    "entry_id": "p048r_3",
+    "entry_title": "Excellent mustard"
+    }
+  ],
   "mustard": [
     {
     "verbatim_term": "mustard",
@@ -1430,13 +1437,6 @@
     "verbatim_term": "mustard",
     "entry_id": "p121v_1",
     "entry_title": "For casting in silver"
-    }
-  ],
-  "clofe": [
-    {
-    "verbatim_term": "cloves",
-    "entry_id": "p048r_3",
-    "entry_title": "Excellent mustard"
     }
   ],
   "cherry": [
@@ -1460,23 +1460,6 @@
     "entry_title": "Small birds"
     }
   ],
-  "rapeseed": [
-    {
-    "verbatim_term": "rapeseed",
-    "entry_id": "p050v_1",
-    "entry_title": "Small birds"
-    },
-    {
-    "verbatim_term": "rapeseed",
-    "entry_id": "p102r_2",
-    "entry_title": "For the furnace"
-    },
-    {
-    "verbatim_term": "rapeseed",
-    "entry_id": "p144r_1",
-    "entry_title": "Turtles"
-    }
-  ],
   "almond": [
     {
     "verbatim_term": "almonds",
@@ -1497,6 +1480,23 @@
     "verbatim_term": "almond",
     "entry_id": "p126r_1",
     "entry_title": "Molding fruits and animals in sugar"
+    }
+  ],
+  "rapeseed": [
+    {
+    "verbatim_term": "rapeseed",
+    "entry_id": "p050v_1",
+    "entry_title": "Small birds"
+    },
+    {
+    "verbatim_term": "rapeseed",
+    "entry_id": "p102r_2",
+    "entry_title": "For the furnace"
+    },
+    {
+    "verbatim_term": "rapeseed",
+    "entry_id": "p144r_1",
+    "entry_title": "Turtles"
     }
   ],
   "fenugreek": [
@@ -1611,9 +1611,9 @@
     "entry_title": "Turtles"
     }
   ],
-  "slo": [
+  "pomegranate": [
     {
-    "verbatim_term": "sloes",
+    "verbatim_term": "pomegranate",
     "entry_id": "p066v_1",
     "entry_title": "For preventing teats from swelling d or to diminish overly large ones"
     }
@@ -1625,18 +1625,11 @@
     "entry_title": "For preventing teats from swelling d or to diminish overly large ones"
     }
   ],
-  "pomegranate": [
+  "slo": [
     {
-    "verbatim_term": "pomegranate",
+    "verbatim_term": "sloes",
     "entry_id": "p066v_1",
     "entry_title": "For preventing teats from swelling d or to diminish overly large ones"
-    }
-  ],
-  "maple": [
-    {
-    "verbatim_term": "maple",
-    "entry_id": "p071r_2",
-    "entry_title": "Wood with streaked grain"
     }
   ],
   "elm": [
@@ -1669,6 +1662,13 @@
     "verbatim_term": "elm",
     "entry_id": "p087v_2",
     "entry_title": "Magistra"
+    }
+  ],
+  "maple": [
+    {
+    "verbatim_term": "maple",
+    "entry_id": "p071r_2",
+    "entry_title": "Wood with streaked grain"
     }
   ],
   "persicaire": [
@@ -1740,16 +1740,16 @@
     "entry_title": "Sand for lead, the most excellent of all, for high and low reliefs"
     }
   ],
-  "osier": [
+  "bramble": [
     {
-    "verbatim_term": "osier",
+    "verbatim_term": "bramble",
     "entry_id": "p088r_1",
     "entry_title": "Osier"
     }
   ],
-  "bramble": [
+  "osier": [
     {
-    "verbatim_term": "bramble",
+    "verbatim_term": "osier",
     "entry_id": "p088r_1",
     "entry_title": "Osier"
     }
@@ -1759,6 +1759,13 @@
     "verbatim_term": "olives",
     "entry_id": "p093r_1",
     "entry_title": "Olives"
+    }
+  ],
+  "rowan": [
+    {
+    "verbatim_term": "rowan",
+    "entry_id": "p094r_1",
+    "entry_title": "Furbisher"
     }
   ],
   "sage": [
@@ -1771,13 +1778,6 @@
     "verbatim_term": "sage",
     "entry_id": "p156v_1",
     "entry_title": "Molding a fly"
-    }
-  ],
-  "rowan": [
-    {
-    "verbatim_term": "rowan",
-    "entry_id": "p094r_1",
-    "entry_title": "Furbisher"
     }
   ],
   "antho": [
@@ -1865,16 +1865,16 @@
     "entry_title": "For wormseed"
     }
   ],
-  "ranunculu": [
+  "broom": [
     {
-    "verbatim_term": "ranunculus",
+    "verbatim_term": "broom",
     "entry_id": "p120v_6",
     "entry_title": "Keeping dry flowers in the same state all year"
     }
   ],
-  "broom": [
+  "ranunculu": [
     {
-    "verbatim_term": "broom",
+    "verbatim_term": "ranunculus",
     "entry_id": "p120v_6",
     "entry_title": "Keeping dry flowers in the same state all year"
     }
@@ -1893,13 +1893,6 @@
     "entry_title": "Animals with hair and fragile and very thin flowers"
     }
   ],
-  "dandelion": [
-    {
-    "verbatim_term": "dandelion",
-    "entry_id": "p124r_1",
-    "entry_title": "Animals with hair and fragile and very thin flowers"
-    }
-  ],
   "pappu": [
     {
     "verbatim_term": "pappus",
@@ -1907,11 +1900,11 @@
     "entry_title": "Animals with hair and fragile and very thin flowers"
     }
   ],
-  "sauvignon": [
+  "dandelion": [
     {
-    "verbatim_term": "sauvignons",
-    "entry_id": "p126r_1",
-    "entry_title": "Molding fruits and animals in sugar"
+    "verbatim_term": "dandelion",
+    "entry_id": "p124r_1",
+    "entry_title": "Animals with hair and fragile and very thin flowers"
     }
   ],
   "grape": [
@@ -1922,6 +1915,13 @@
     },
     {
     "verbatim_term": "grape",
+    "entry_id": "p126r_1",
+    "entry_title": "Molding fruits and animals in sugar"
+    }
+  ],
+  "sauvignon": [
+    {
+    "verbatim_term": "sauvignons",
     "entry_id": "p126r_1",
     "entry_title": "Molding fruits and animals in sugar"
     }
@@ -2271,16 +2271,16 @@
     "entry_title": "Pastel woad"
     }
   ],
-  "lapathium acutum maiu": [
+  "monk’s rhubarb": [
     {
-    "verbatim_term": "lapathium acutum maius",
+    "verbatim_term": "monk’s rhubarb",
     "entry_id": "p040r_1",
     "entry_title": "Dye"
     }
   ],
-  "monk’s rhubarb": [
+  "lapathium acutum maiu": [
     {
-    "verbatim_term": "monk’s rhubarb",
+    "verbatim_term": "lapathium acutum maius",
     "entry_id": "p040r_1",
     "entry_title": "Dye"
     }
@@ -2292,16 +2292,16 @@
     "entry_title": "Garden lily"
     }
   ],
-  "lily flower": [
+  "red poppy": [
     {
-    "verbatim_term": "lily flower",
+    "verbatim_term": "red poppy",
     "entry_id": "p044r_5",
     "entry_title": "Dyes from flowers"
     }
   ],
-  "red poppy": [
+  "lily flower": [
     {
-    "verbatim_term": "red poppy",
+    "verbatim_term": "lily flower",
     "entry_id": "p044r_5",
     "entry_title": "Dyes from flowers"
     }
@@ -2466,16 +2466,16 @@
     "entry_title": "Turtles"
     }
   ],
-  "turmeric root": [
+  "terra meritum": [
     {
-    "verbatim_term": "turmeric root",
+    "verbatim_term": "terra merita",
     "entry_id": "p148r_1",
     "entry_title": "Beautiful color for latten"
     }
   ],
-  "terra meritum": [
+  "turmeric root": [
     {
-    "verbatim_term": "terra merita",
+    "verbatim_term": "turmeric root",
     "entry_id": "p148r_1",
     "entry_title": "Beautiful color for latten"
     }

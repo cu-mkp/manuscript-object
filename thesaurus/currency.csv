@@ -4,8 +4,8 @@ freq,verbatim_term,prefLabel_en
 4,lb,lb
 1,frans,fran
 3,liard,liard
-1,francs,franc
 1,lb.,lb.
+1,francs,franc
 1,florins,florin
 2,pistolet,pistolet
 1,deniers,denier
@@ -22,5 +22,5 @@ freq,verbatim_term,prefLabel_en
 1,gold denier,gold denier
 1,old douzains,old douzain
 1,old sou,sou
-1,sous from spain,sou
 1,sous from france,sou
+1,sous from spain,sou

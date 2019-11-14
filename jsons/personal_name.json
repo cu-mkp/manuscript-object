@@ -1,11 +1,4 @@
 {
-  "synesiu": [
-    {
-    "verbatim_term": "synesius",
-    "entry_id": "p001r_3",
-    "entry_title": "List of books"
-    }
-  ],
   "savonne": [
     {
     "verbatim_term": "savonne",
@@ -13,11 +6,11 @@
     "entry_title": "List of books"
     }
   ],
-  "festu": [
+  "synesiu": [
     {
-    "verbatim_term": "festus",
-    "entry_id": "p001r_5",
-    "entry_title": "List of books and authors"
+    "verbatim_term": "synesius",
+    "entry_id": "p001r_3",
+    "entry_title": "List of books"
     }
   ],
   "volaterranu": [
@@ -27,9 +20,86 @@
     "entry_title": "List of books and authors"
     }
   ],
-  "sabellicu": [
+  "higinu": [
     {
-    "verbatim_term": "sabellicus",
+    "verbatim_term": "higinus",
+    "entry_id": "p001r_5",
+    "entry_title": "List of books and authors"
+    }
+  ],
+  "festu": [
+    {
+    "verbatim_term": "festus",
+    "entry_id": "p001r_5",
+    "entry_title": "List of books and authors"
+    }
+  ],
+  "seneca": [
+    {
+    "verbatim_term": "seneca",
+    "entry_id": "p001r_5",
+    "entry_title": "List of books and authors"
+    }
+  ],
+  "athenaeu": [
+    {
+    "verbatim_term": "athenaeus",
+    "entry_id": "p001r_5",
+    "entry_title": "List of books and authors"
+    }
+  ],
+  "spartianu": [
+    {
+    "verbatim_term": "spartianus",
+    "entry_id": "p001r_5",
+    "entry_title": "List of books and authors"
+    }
+  ],
+  "dion": [
+    {
+    "verbatim_term": "dion",
+    "entry_id": "p001r_5",
+    "entry_title": "List of books and authors"
+    }
+  ],
+  "serviu": [
+    {
+    "verbatim_term": "servius",
+    "entry_id": "p001r_5",
+    "entry_title": "List of books and authors"
+    }
+  ],
+  "noniu": [
+    {
+    "verbatim_term": "nonius",
+    "entry_id": "p001r_5",
+    "entry_title": "List of books and authors"
+    }
+  ],
+  "herodotu": [
+    {
+    "verbatim_term": "herodotus",
+    "entry_id": "p001r_5",
+    "entry_title": "List of books and authors"
+    }
+  ],
+  "macrobiu": [
+    {
+    "verbatim_term": "macrobius",
+    "entry_id": "p001r_5",
+    "entry_title": "List of books and authors"
+    }
+  ],
+  "appianu": [
+    {
+    "verbatim_term": "appianus",
+    "entry_id": "p001r_5",
+    "entry_title": "List of books and authors"
+    }
+  ],
+  "budaeu": [
+    {
+    "verbatim_term": "budaeus",
     "entry_id": "p001r_5",
     "entry_title": "List of books and authors"
     }
@@ -48,83 +118,6 @@
     "entry_title": "List of books and authors"
     }
   ],
-  "higinu": [
-    {
-    "verbatim_term": "higinus",
-    "entry_id": "p001r_5",
-    "entry_title": "List of books and authors"
-    }
-  ],
-  "athenaeu": [
-    {
-    "verbatim_term": "athenaeus",
-    "entry_id": "p001r_5",
-    "entry_title": "List of books and authors"
-    }
-  ],
-  "budaeu": [
-    {
-    "verbatim_term": "budaeus",
-    "entry_id": "p001r_5",
-    "entry_title": "List of books and authors"
-    }
-  ],
-  "serviu": [
-    {
-    "verbatim_term": "servius",
-    "entry_id": "p001r_5",
-    "entry_title": "List of books and authors"
-    }
-  ],
-  "herodotu": [
-    {
-    "verbatim_term": "herodotus",
-    "entry_id": "p001r_5",
-    "entry_title": "List of books and authors"
-    }
-  ],
-  "dion": [
-    {
-    "verbatim_term": "dion",
-    "entry_id": "p001r_5",
-    "entry_title": "List of books and authors"
-    }
-  ],
-  "macrobiu": [
-    {
-    "verbatim_term": "macrobius",
-    "entry_id": "p001r_5",
-    "entry_title": "List of books and authors"
-    }
-  ],
-  "noniu": [
-    {
-    "verbatim_term": "nonius",
-    "entry_id": "p001r_5",
-    "entry_title": "List of books and authors"
-    }
-  ],
-  "appianu": [
-    {
-    "verbatim_term": "appianus",
-    "entry_id": "p001r_5",
-    "entry_title": "List of books and authors"
-    }
-  ],
-  "spartianu": [
-    {
-    "verbatim_term": "spartianus",
-    "entry_id": "p001r_5",
-    "entry_title": "List of books and authors"
-    }
-  ],
-  "seneca": [
-    {
-    "verbatim_term": "seneca",
-    "entry_id": "p001r_5",
-    "entry_title": "List of books and authors"
-    }
-  ],
   "blondu": [
     {
     "verbatim_term": "blondus",
@@ -132,16 +125,23 @@
     "entry_title": "List of books and authors"
     }
   ],
-  "archimede": [
+  "sabellicu": [
     {
-    "verbatim_term": "archimedes",
-    "entry_id": "p005r_2",
-    "entry_title": "Concave mirrors"
+    "verbatim_term": "sabellicus",
+    "entry_id": "p001r_5",
+    "entry_title": "List of books and authors"
     }
   ],
   "ptolomée": [
     {
     "verbatim_term": "ptolomée",
+    "entry_id": "p005r_2",
+    "entry_title": "Concave mirrors"
+    }
+  ],
+  "archimede": [
+    {
+    "verbatim_term": "archimedes",
     "entry_id": "p005r_2",
     "entry_title": "Concave mirrors"
     }
@@ -207,149 +207,9 @@
     "entry_title": "For the workshop"
     }
   ],
-  "serapi": [
-    {
-    "verbatim_term": "serapis",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "ciceron": [
-    {
-    "verbatim_term": "ciceron",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "vergile": [
-    {
-    "verbatim_term": "vergile",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "cereri": [
-    {
-    "verbatim_term": "cereris",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "david": [
-    {
-    "verbatim_term": "david",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "n": [
-    {
-    "verbatim_term": "n",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "achilli": [
-    {
-    "verbatim_term": "achillis",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "orpheu": [
-    {
-    "verbatim_term": "orpheus",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "numa": [
-    {
-    "verbatim_term": "numa",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
   "polybe": [
     {
     "verbatim_term": "polybe",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "pytagorien": [
-    {
-    "verbatim_term": "pytagorien",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "ceré": [
-    {
-    "verbatim_term": "cerés",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "pythagore": [
-    {
-    "verbatim_term": "pythagore",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "homeru": [
-    {
-    "verbatim_term": "homerus",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "cebé": [
-    {
-    "verbatim_term": "cebés",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "pelidae": [
-    {
-    "verbatim_term": "pelidae",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "homere": [
-    {
-    "verbatim_term": "homere",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "orphei": [
-    {
-    "verbatim_term": "orphei",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "chirone": [
-    {
-    "verbatim_term": "chirone",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "josephe": [
-    {
-    "verbatim_term": "josephe",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "apollo": [
-    {
-    "verbatim_term": "apollo",
     "entry_id": "p166r_1",
     "entry_title": "For the workshop"
     }
@@ -361,11 +221,158 @@
     "entry_title": "For the workshop"
     }
   ],
+  "cereri": [
+    {
+    "verbatim_term": "cereris",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "orphei": [
+    {
+    "verbatim_term": "orphei",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "achilli": [
+    {
+    "verbatim_term": "achillis",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "chirone": [
+    {
+    "verbatim_term": "chirone",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "homere": [
+    {
+    "verbatim_term": "homere",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "homeru": [
+    {
+    "verbatim_term": "homerus",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "numa": [
+    {
+    "verbatim_term": "numa",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "ciceron": [
+    {
+    "verbatim_term": "ciceron",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "david": [
+    {
+    "verbatim_term": "david",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "pythagore": [
+    {
+    "verbatim_term": "pythagore",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "apollo": [
+    {
+    "verbatim_term": "apollo",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "pelidae": [
+    {
+    "verbatim_term": "pelidae",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "orpheu": [
+    {
+    "verbatim_term": "orpheus",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "vergile": [
+    {
+    "verbatim_term": "vergile",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "josephe": [
+    {
+    "verbatim_term": "josephe",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "cebé": [
+    {
+    "verbatim_term": "cebés",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "ceré": [
+    {
+    "verbatim_term": "cerés",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "serapi": [
+    {
+    "verbatim_term": "serapis",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "pytagorien": [
+    {
+    "verbatim_term": "pytagorien",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "n": [
+    {
+    "verbatim_term": "n",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
   "othoni": [
     {
     "verbatim_term": "othonis",
     "entry_id": "p170v_2",
     "entry_title": "Against plague"
+    }
+  ],
+  "marmodaeu": [
+    {
+    "verbatim_term": "marmodaeus",
+    "entry_id": "p170v_4",
+    "entry_title": "List of books"
     }
   ],
   "tilesiu": [
@@ -375,11 +382,11 @@
     "entry_title": "List of books"
     }
   ],
-  "marmodaeu": [
+  "mestre jehan cousin": [
     {
-    "verbatim_term": "marmodaeus",
-    "entry_id": "p170v_4",
-    "entry_title": "List of books"
+    "verbatim_term": "mestre jehan cousin",
+    "entry_id": "p001r_1",
+    "entry_title": "List of names"
     }
   ],
   "mestre jehan garnier": [
@@ -392,13 +399,6 @@
   "mestre nicolas costé": [
     {
     "verbatim_term": "mestre nicolas costé",
-    "entry_id": "p001r_1",
-    "entry_title": "List of names"
-    }
-  ],
-  "mestre jehan cousin": [
-    {
-    "verbatim_term": "mestre jehan cousin",
     "entry_id": "p001r_1",
     "entry_title": "List of names"
     }
@@ -417,34 +417,6 @@
     "entry_title": "List of books"
     }
   ],
-  "polydorus verg": [
-    {
-    "verbatim_term": "polydorus verg",
-    "entry_id": "p001r_5",
-    "entry_title": "List of books and authors"
-    }
-  ],
-  "alexander aphrodisaeu": [
-    {
-    "verbatim_term": "alexander aphrodisaeus",
-    "entry_id": "p001r_5",
-    "entry_title": "List of books and authors"
-    }
-  ],
-  "flavius vopiscu": [
-    {
-    "verbatim_term": "flavius vopiscus",
-    "entry_id": "p001r_5",
-    "entry_title": "List of books and authors"
-    }
-  ],
-  "cornelius nepo": [
-    {
-    "verbatim_term": "cornelius nepos",
-    "entry_id": "p001r_5",
-    "entry_title": "List of books and authors"
-    }
-  ],
   "paulus manutiu": [
     {
     "verbatim_term": "paulus manutius",
@@ -459,6 +431,34 @@
     "entry_title": "List of books and authors"
     }
   ],
+  "quintus curtiu": [
+    {
+    "verbatim_term": "quintus curtius",
+    "entry_id": "p001r_5",
+    "entry_title": "List of books and authors"
+    }
+  ],
+  "cornelius nepo": [
+    {
+    "verbatim_term": "cornelius nepos",
+    "entry_id": "p001r_5",
+    "entry_title": "List of books and authors"
+    }
+  ],
+  "flavius vopiscu": [
+    {
+    "verbatim_term": "flavius vopiscus",
+    "entry_id": "p001r_5",
+    "entry_title": "List of books and authors"
+    }
+  ],
+  "alexander aphrodisaeu": [
+    {
+    "verbatim_term": "alexander aphrodisaeus",
+    "entry_id": "p001r_5",
+    "entry_title": "List of books and authors"
+    }
+  ],
   "iulius firmicu": [
     {
     "verbatim_term": "iulius firmicus",
@@ -466,16 +466,16 @@
     "entry_title": "List of books and authors"
     }
   ],
-  "dionisius halicarnassensi": [
+  "polydorus verg": [
     {
-    "verbatim_term": "dionisius halicarnassensis",
+    "verbatim_term": "polydorus verg",
     "entry_id": "p001r_5",
     "entry_title": "List of books and authors"
     }
   ],
-  "quintus curtiu": [
+  "dionisius halicarnassensi": [
     {
-    "verbatim_term": "quintus curtius",
+    "verbatim_term": "dionisius halicarnassensis",
     "entry_id": "p001r_5",
     "entry_title": "List of books and authors"
     }
@@ -494,16 +494,16 @@
     "entry_title": "Waste book"
     }
   ],
-  "st andré": [
+  "françois du cro": [
     {
-    "verbatim_term": "st andré",
+    "verbatim_term": "françois du cros",
     "entry_id": "p009v_3",
     "entry_title": "Waste book"
     }
   ],
-  "françois du cro": [
+  "st andré": [
     {
-    "verbatim_term": "françois du cros",
+    "verbatim_term": "st andré",
     "entry_id": "p009v_3",
     "entry_title": "Waste book"
     }
@@ -555,16 +555,16 @@
     "entry_title": "The work done in Algiers"
     }
   ],
-  "saint jehan": [
+  "hieronymus vida albensis episcopus, de b cremonensi": [
     {
-    "verbatim_term": "saint jehan",
+    "verbatim_term": "hieronymus vida albensis episcopus, de b cremonensis",
     "entry_id": "p053v_1",
     "entry_title": "Silkworms"
     }
   ],
-  "hieronymus vida albensis episcopus, de b cremonensi": [
+  "saint jehan": [
     {
-    "verbatim_term": "hieronymus vida albensis episcopus, de b cremonensis",
+    "verbatim_term": "saint jehan",
     "entry_id": "p053v_1",
     "entry_title": "Silkworms"
     }
@@ -597,9 +597,16 @@
     "entry_title": "Press for the large molds"
     }
   ],
-  "aule gelle": [
+  "sainct athanase": [
     {
-    "verbatim_term": "aule gelle",
+    "verbatim_term": "sainct athanase",
+    "entry_id": "p166r_1",
+    "entry_title": "For the workshop"
+    }
+  ],
+  "justino martire": [
+    {
+    "verbatim_term": "justino martire",
     "entry_id": "p166r_1",
     "entry_title": "For the workshop"
     }
@@ -611,16 +618,9 @@
     "entry_title": "For the workshop"
     }
   ],
-  "sainct athanase": [
+  "aule gelle": [
     {
-    "verbatim_term": "sainct athanase",
-    "entry_id": "p166r_1",
-    "entry_title": "For the workshop"
-    }
-  ],
-  "justino martire": [
-    {
-    "verbatim_term": "justino martire",
+    "verbatim_term": "aule gelle",
     "entry_id": "p166r_1",
     "entry_title": "For the workshop"
     }
@@ -653,13 +653,6 @@
     "entry_title": "For preserving"
     }
   ],
-  "des orme": [
-    {
-    "verbatim_term": "des ormes",
-    "entry_id": "p170v_4",
-    "entry_title": "List of books"
-    }
-  ],
   "rembertus dodonaeu": [
     {
     "verbatim_term": "rembertus dodonaeus",
@@ -670,6 +663,13 @@
   "albertus magnu": [
     {
     "verbatim_term": "albertus magnus",
+    "entry_id": "p170v_4",
+    "entry_title": "List of books"
+    }
+  ],
+  "des orme": [
+    {
+    "verbatim_term": "des ormes",
     "entry_id": "p170v_4",
     "entry_title": "List of books"
     }
