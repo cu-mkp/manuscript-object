@@ -3,7 +3,8 @@ python:
   - "3.7"
 # command to install dependencies
 install:
-  - cd manuscript-object
+  - pwd
+  - ls -A
   - pipenv shell
 # command to run tests
 script:
