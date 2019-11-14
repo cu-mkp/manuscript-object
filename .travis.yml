@@ -3,7 +3,8 @@ python:
   - "3.7"
 # command to install dependencies
 install:
-  - pip install --system
+  - pip install pipenv
+  - pipenv install --system
   - pipenv sync
   - virtualenv env
   - source env/bin/activate
