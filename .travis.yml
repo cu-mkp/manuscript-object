@@ -4,11 +4,11 @@ python:
 # command to install dependencies
 install:
   - pip install pipenv
-  - pipenv install --system
+  # - pipenv install --system
   - pipenv sync
-  - virtualenv env
-  - source env/bin/activate
-  - pipenv install
+  # - virtualenv env
+  # - source env/bin/activate
+  # - pipenv install
   - python check_update.py
 # command to run tests
 # script:
