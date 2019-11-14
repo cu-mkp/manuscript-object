@@ -3,10 +3,9 @@ python:
   - "3.7"
 # command to install dependencies
 install:
-  - cd ~/makingknowing/copy/manuscript-object/
+  - cd manuscript-object
   - pipenv shell
 # command to run tests
 script:
-  - cd ~/makingknowing/copy/manuscript-object/
   - python update.py
   - exit
