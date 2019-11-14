@@ -6,10 +6,10 @@ from typing import List
 def update_metadata():
   pass
 
-def update_ms_txt()
+def update_ms_txt():
   pass
 
-def update_all()
+def update_all():
   pass
 
 def update_time():
