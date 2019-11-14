@@ -3,8 +3,7 @@ python:
   - "3.7"
 # command to install dependencies
 install:
-  - pwd
-  - ls -A
+  - pipenv install
   - pipenv shell
 # command to run tests
 script:
