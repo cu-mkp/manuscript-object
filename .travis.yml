@@ -3,7 +3,6 @@ python:
   - "3.7"
 # command to install dependencies
 install:
-  - rm Pipefile.lock
   - pip install --system
   - pipenv sync
   - virtualenv env
