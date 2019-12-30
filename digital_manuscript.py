@@ -68,5 +68,6 @@ class BnF():
     df = df.drop(columns=['entry'])
     return df
 
-manuscript = BnF()
+# manuscript = BnF()
+# print(manuscript.entry('162r_1').text('tl'))
 # print(manuscript.search_margins('tl', 'gold', 'left-middle'))
