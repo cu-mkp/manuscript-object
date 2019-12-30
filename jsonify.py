@@ -26,11 +26,12 @@ def read_csvs() -> Dict[str, pd.DataFrame]:
   df_dict = {}
   for prop in properties:
     df = pd.read_csv(f'thesaurus/{prop}.csv')
-    df['entries'] = df.apply(lambda x: [], axis=1) # add new column containing empty lists
+    # add new column containing empty lists to store entries
+    df['entries'] = df.apply(lambda x: [], axis=1)
     df_dict[prop] = df
   return df_dict
 
-def read_manuscript(manuscript: BnF, df_dict: Dict[str, pd.DataFrame]):
+def read_manuscript(manuscript: BnF, df_dict: Dict[str, pd.DataFrame]) -> Dict[str, pd.DataFrame]:
   """
   Iterate through the manuscript and each row in each of the DataFrames. Add entry identities to rows
   for properties that entry has.
@@ -52,7 +53,15 @@ def read_manuscript(manuscript: BnF, df_dict: Dict[str, pd.DataFrame]):
           df_dict[prop] = df
   return df_dict
 
-def df_to_dict(df = pd.DataFrame):
+def df_to_dict(df = pd.DataFrame) -> Dict[str, Tuple[Reciple, str]]:
+  """
+  Convert dataframe into dict of the following format:
+  'prefLabel_en1': [(entry1, verbatim_term1), (entry2, verbatim_term2), ...],
+  'prefLabel_en2: [(entry3, verbatim_term3), ...], ...
+
+  Inputs: df -- dataframe contianing columns 'prefLabel_en', 'verbatim_term', and 'entries'
+  Outputs: prop_dict 
+  """
   prop_dict = {}
   for _, row in df.iterrows():
     for entry in row.entries:
@@ -61,7 +70,7 @@ def df_to_dict(df = pd.DataFrame):
       prop_dict[row.prefLabel_en] = info_list.copy()
   return prop_dict
 
-def write_json(prop_dict, prop: str):
+def write_json(prop_dict, prop: str) -> None:
   text = '{\n'
   for term, info_list in prop_dict.items():
     text += f'  "{term}": [\n'
@@ -84,7 +93,7 @@ def write_json(prop_dict, prop: str):
   f.write(text)
   f.close() 
 
-def write_csv(prop_dict, prop: str): 
+def write_csv(prop_dict, prop: str) -> None: 
   f = open(f'properties/{prop}.csv', "w")
   f.write('prefLabel_en,verbatim_term,identity,title\n')
 
@@ -120,19 +129,19 @@ def write_files(df_dict) -> None:
 def jsonify():
   """ Controller for the file. Match entries to properties and write files. """
 
-  if not os.path.exists('jsons'):
-    os.mkdir('jsons')
-
-  if not os.path.exists('properties'):
-    os.mkdir('properties')
-
+  # Check for prerequesite files
   if not os.path.exists('thesaurus'):
     print('Thesaurus not found. Generating now.')
     os.system('python thesaurus.py')
 
+  # Check for folders to write to
+  for folder in ['jsons', 'properties']:
+    if not os.path.exists(folder):
+      os.mkdir(folder)
+
   manuscript = BnF(apply_corrections=False)
-  df_dict = read_csvs()
-  df_dict = read_manuscript(manuscript, df_dict)
-  write_files(df_dict)
+  df_dict = read_csvs() # read in thesaurus
+  df_dict = read_manuscript(manuscript, df_dict) # match entries to terms
+  write_files(df_dict) # write jsons and csvs
 
 jsonify()
