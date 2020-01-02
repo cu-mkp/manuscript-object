@@ -56,6 +56,9 @@ class Recipe:
 
     def get_head(self, text: str) -> str:
         """ search text for text in a <head> tag. """
+        text = text.replace('<sup>', '[') # mark editor supplied titles with square brackets
+        text = text.replace('</sup>', ']')
+
         head = re_head.search(text)
         if head:
             return re_tags.sub('', head[0])

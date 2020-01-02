@@ -1,4 +1,4 @@
-# Last Updated | 2019-12-30
+# Last Updated | 2020-01-02
 # Python Modules
 import os
 from typing import List
@@ -31,7 +31,7 @@ def update_metadata(manuscript: BnF) -> None:
   df['folio'] = df.entry.apply(lambda x: x.folio)
   df['folio_display'] = df.entry.apply(lambda x: x.folio.lstrip('0'))
   df['div_id'] = df.entry.apply(lambda x: x.identity)
-  df['categories'] = df.entry.apply(lambda x: (', '.join(x.categories)))
+  df['categories'] = df.entry.apply(lambda x: (';'.join(x.categories)))
   df['heading_tc'] = df.entry.apply(lambda x: x.title['tc'])
   df['heading_tcn'] = df.entry.apply(lambda x: x.title['tcn'])
   df['heading_tl'] = df.entry.apply(lambda x: x.title['tl'])
