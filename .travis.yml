@@ -3,10 +3,12 @@ python:
   - "3.7"
 # command to install dependencies
 install:
-  - cd ~/makingknowing/copy/manuscript-object/
-  - pipenv shell
+  - pip install pipenv
+  # - pipenv install --system
+  - pipenv sync
+  # - virtualenv env
+  # - source env/bin/activate
+  # - pipenv install
 # command to run tests
 script:
-  - cd ~/makingknowing/copy/manuscript-object/
-  - python update.py
-  - exit
+  - python check_update.py
