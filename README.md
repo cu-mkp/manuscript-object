@@ -31,7 +31,7 @@ brew install python3 git pipenv
 git clone git@github.com:cu-mkp/m-k-manuscript-data.git
 git clone git@github.com:cu-mkp/manuscript-object.git
 ```
-Then, `cd manuscript object`
+Then, `cd manuscript-object`
 
 3. Run `pipenv install` to install dependencies to the pipenv shell.
 
