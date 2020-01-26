@@ -17,6 +17,7 @@ class Recipe:
     def __init__(self, identity: str, folio: str, tc: str, tcn: str, tl: str) -> None:
         self.identity: str = identity # id of the entry
         self.folio: str = folio # folio of the entry
+        self.originals: Dict[str, str] = {'tc': tc, 'tcn': tcn, 'tl': tl}
         self.versions: Dict[str, str] = {'tc': tc, 'tcn': tcn, 'tl': tl} # dict that contains xml text
         self.categories: List[str] = self.find_categories()
         self.title: Dict[str, str] = {'tc': self.get_head(self.clean_text('tc')),
@@ -56,6 +57,9 @@ class Recipe:
 
     def get_head(self, text: str) -> str:
         """ search text for text in a <head> tag. """
+        text = text.replace('<sup>', '[') # mark editor supplied titles with square brackets
+        text = text.replace('</sup>', ']')
+
         head = re_head.search(text)
         if head:
             return re_tags.sub('', head[0])
@@ -68,6 +72,10 @@ class Recipe:
     def text(self, version: str, xml: bool = False) -> str:
         """ Getter method for text based on version, xml. """
         return self.versions[version] if xml else re_tags.sub('', self.clean_text(version))
+
+    def original_text(self, version: str, xml: bool = False) -> str:
+        """ Getter method for original text based on version, xml. """
+        return self.originals[version] if xml else re_tags.sub('', self.originals[version])
 
     def find_tag(self, tag: str) -> Dict[str, List[str]]:
         """
