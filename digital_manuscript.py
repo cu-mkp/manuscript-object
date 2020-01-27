@@ -69,5 +69,5 @@ class BnF():
     return df
 
 # manuscript = BnF()
-# print(manuscript.entry('162r_1').text('tl'))
-# print(manuscript.search_margins('tl', 'gold', 'left-middle'))
+# for identity, entry in manuscript.entries.items():
+#   print(identity, entry.title['tc'], entry.title['tcn'], entry.title['tl'])
