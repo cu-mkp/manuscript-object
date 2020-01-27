@@ -48,7 +48,7 @@ def process_file(filepath: str) -> OrderedDict[str, str]:
     clean_text = re.sub(r'\s+', ' ', text)
     folio = filepath.split('/')[-1].split('_')[1][1:]
 
-    # needs to be done line by line (hyuck)
+    # needs to be done line by line
     divs = re.findall(r'(<div([\w\s=";-]*)>(.*?)</div>)', clean_text)
     if divs:
       for i, div in enumerate(divs):
@@ -56,8 +56,7 @@ def process_file(filepath: str) -> OrderedDict[str, str]:
         identity = re.findall(r'id="p([\w_]*)"', attributes)
         identity = identity[0] if identity else ''
         key = f'{folio};{identity}'
-        entries[key] = text
-
+        entries[key] = div[2]
   return entries
 
 def generate_complete_manuscript(apply_corrections=True):
