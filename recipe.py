@@ -4,7 +4,7 @@ from collections import OrderedDict
 from margin import Margin
 
 re_tags = re.compile(r'<.*?>') # selects any tag
-re_head = re.compile(r'<head>(.*?)</head>')
+re_head = re.compile(r'<head( margin="[\w-]*")?>(.*?)</head>')
 re_materials = re.compile(r'<m>(.*?)<\/m>') # selects text between materials tags
 prop_dict = {'animal': 'al', 'body_part': 'bp', 'currency': 'cn', 'definition': 'def',
               'environment': 'env', 'material': 'm', 'medical': 'md', 'measurement': 'ms',
@@ -20,9 +20,9 @@ class Recipe:
         self.originals: Dict[str, str] = {'tc': tc, 'tcn': tcn, 'tl': tl}
         self.versions: Dict[str, str] = {'tc': tc, 'tcn': tcn, 'tl': tl} # dict that contains xml text
         self.categories: List[str] = self.find_categories()
-        self.title: Dict[str, str] = {'tc': self.get_head(self.clean_text('tc')),
-                                     'tcn': self.get_head(self.clean_text('tcn')),
-                                     'tl': self.get_head(self.clean_text('tl'))}
+        self.title: Dict[str, str] = {'tc': self.get_head(self.versions['tc']),
+                                     'tcn': self.get_head(self.versions['tcn']),
+                                     'tl': self.get_head(self.versions['tl'])}
         self.length: Dict[str, int] = {k: len(self.clean_text(k)) for k in self.versions} 
         self.properties: Dict[str, Dict[str, List[str]]] # {prop_type: {version: [prop1, prop2, ...]}}
         self.properties = {k: {} for k in prop_dict.keys()}
@@ -64,6 +64,9 @@ class Recipe:
         if head:
             return re_tags.sub('', head[0])
         return ''
+
+    def get_title(self, version: str = 'tl'):
+        return self.title[version]
 
     def get_identity(self) -> str:
         """ Getter method for identity. """
@@ -125,4 +128,5 @@ class Recipe:
         categories = re.search(r'categories="[\w\s;]*"', self.clean_text('tl'))
         if categories:
             return categories[0].split('"')[1].split(';')
+        return []
             

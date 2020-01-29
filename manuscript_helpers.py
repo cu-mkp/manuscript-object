@@ -56,7 +56,7 @@ def process_file(filepath: str) -> OrderedDict[str, str]:
         identity = re.findall(r'id="p([\w_]*)"', attributes)
         identity = identity[0] if identity else ''
         key = f'{folio};{identity}'
-        entries[key] = div[2]
+        entries[key] = div[0]
   return entries
 
 def generate_complete_manuscript(apply_corrections=True):
