@@ -1,4 +1,4 @@
-# Last Updated | 2019-12-30
+# Last Updated | 2020-01-25
 # Python Modules
 import os
 from typing import List
@@ -15,7 +15,6 @@ versions = ['tc', 'tcn', 'tl']
 properties = ['animal', 'body_part', 'currency', 'definition', 'environment', 'material', 'medical', 'measurement',
               'music', 'plant', 'place', 'personal_name', 'profession', 'sensory', 'tool', 'time', 'weapon']
 m_path = f'{os.getcwd()}/../m-k-manuscript-data'
-test_path = f'{os.getcwd()}/test'
 
 def update_metadata(manuscript: BnF) -> None:
   """
@@ -31,7 +30,7 @@ def update_metadata(manuscript: BnF) -> None:
   df['folio'] = df.entry.apply(lambda x: x.folio)
   df['folio_display'] = df.entry.apply(lambda x: x.folio.lstrip('0'))
   df['div_id'] = df.entry.apply(lambda x: x.identity)
-  df['categories'] = df.entry.apply(lambda x: (', '.join(x.categories)))
+  df['categories'] = df.entry.apply(lambda x: (';'.join(x.categories)))
   df['heading_tc'] = df.entry.apply(lambda x: x.title['tc'])
   df['heading_tcn'] = df.entry.apply(lambda x: x.title['tcn'])
   df['heading_tl'] = df.entry.apply(lambda x: x.title['tl'])
@@ -41,13 +40,12 @@ def update_metadata(manuscript: BnF) -> None:
   for prop in properties:
     df[prop] = df.entry.apply(lambda x: '; '.join(x.get_prop(prop=prop, version='tc')))
   df.drop(columns=['entry'], inplace=True)
-  # df.to_csv(f'{m_path}/metadata/entry_metadata.csv', index=False)
-  df.to_csv(f'{test_path}/entry_metadata.csv', index=False)
+  df.to_csv(f'{m_path}/metadata/entry_metadata.csv', index=False)
 
 def update_ms(manuscript: BnF) -> None:
   """
-  Update /m-k-manuscript-data/ms-txt/ with the current manuscript from /ms-xml/. For each version and for each
-  entry in the manuscript, open the 
+  Update /m-k-manuscript-data/ms-txt/ with the current manuscript from /ms-xml/. For each version, delete all existing
+  entries. Regenerate folio text entry by entry, and save the file. 
 
   Input:
     manuscript -- Python object of the manuscript defined in digital_manuscript.py
@@ -55,21 +53,29 @@ def update_ms(manuscript: BnF) -> None:
     None
   """
   for version in versions:
-    current_folio = ''
+    if len(os.listdir(f'{m_path}/ms-txt/{version}')) > 0: # only run when there's at least one file
+      os.system(f'rm {m_path}/ms-txt/{version}/*.txt')
+
+    # Write new files with manuscript object
     for identity, entry in manuscript.entries.items():
-      if identity:
-        folio, num = tuple(identity.split('_'))
-        num = int(num)
+      if identity: # TODO: resolve issue of unidentified entries
+        filename = f'{m_path}/ms-txt/{version}/{version}_p{entry.folio}_preTEI.txt'
 
-        filename = f'{m_path}/ms-txt/{version}_{folio}_preTEI.txt'
-        f = open(filename, 'r')
-        text = f.read()
-        # print(entry.identity, filename, text, '\n\n')
-        f.close()
-
-        # f = open(filename, 'w')
-        # f.write(entry.text(version, xml=False))
-        # f.close()
+        # read existing file
+        text = ''
+        if os.path.exists(filename):
+          f = open(filename, 'r')
+          text = f.read()
+          f.close()
+        
+        # create new text
+        new_text = entry.original_text(version, xml=False)
+        write_text = f'{text}\n\n{new_text}' if text else new_text
+        
+        # write text
+        f = open(filename, 'w')
+        f.write(write_text)
+        f.close
 
 def update_all_folios(manuscript: BnF) -> None:
   """
@@ -89,8 +95,7 @@ def update_all_folios(manuscript: BnF) -> None:
         new_text = entry.text(version, xml=b)
         text = f'{text}\n\n{new_text}' if text else new_text
 
-      # f = open(f'{m_path}/allFolios/{folder}/all_{version}.{folder}', 'w')
-      f = open(f'{test_path}/{folder}/all_{version}.{folder}', 'w')
+      f = open(f'{m_path}/allFolios/{folder}/all_{version}.{folder}', 'w')
       f.write(text)
       f.close()
 
@@ -116,13 +121,12 @@ def update():
   update_metadata(manuscript)
   print('updated metadata')
 
-  # update_ms not yet functional
-  # update_ms(manuscript)
-  # print('updated /ms/')
+  update_ms(manuscript)
+  print('updated /ms/')
 
   update_all_folios(manuscript)
   print('updated /allFolios/')
-  
+
   update_time()
 
 update()
