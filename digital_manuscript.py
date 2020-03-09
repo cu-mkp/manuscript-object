@@ -10,13 +10,23 @@ properties = ['animal', 'body_part', 'currency', 'definition', 'environment', 'm
 
 class BnF():
 
-  def __init__(self, entry_list = [], apply_corrections = True):
-    """ Initialize entire manuscript. If a list of IDs is given, narrow it down to them. """
+  def __init__(self, entry_list: List[str] = [], apply_corrections: bool = True) -> None:
+    """
+    Initialize entire manuscript as a dictionary of Recipe objected keyed by div ID.
+    If a list of IDs is given, return a dict with these entries only.
+    
+    Inputs:
+      entry_list: A list of div IDs
+      apply_corrections: A bool deciding whether or not to apply the changes detailed in teh thesaurus.
+                         For more information, checkout thesaurus.py.
+    
+    Outputs:
+      None
+    """
     complete_manuscript = generate_complete_manuscript(apply_corrections=apply_corrections)
-    # complete_manuscript2 = generate_complete_manuscript2(apply_corrections=apply_corrections)
-    if entry_list:
+    if entry_list: # choose specified entries
       self.entries = {i:e for i, e in complete_manuscript.items() if e.identity in entry_list}
-    else:
+    else: # otherwise, return all entries
       self.entries = complete_manuscript
 
   def entry(self, identity: str = ''):
@@ -94,4 +104,5 @@ class BnF():
       df[prop] = df.entry.apply(lambda x: '; '.join(x.get_prop(prop=prop, version='tc')))
     return df
 
-# manuscript = BnF()
+manuscript = BnF(apply_corrections=True)
+# print(manuscript.entry('004v_1').title['tl'])

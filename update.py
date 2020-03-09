@@ -1,4 +1,4 @@
-# Last Updated | 2020-01-25
+# Last Updated | 2020-02-01
 # Python Modules
 import os
 from typing import List
@@ -14,6 +14,7 @@ from recipe import Recipe
 versions = ['tc', 'tcn', 'tl']
 properties = ['animal', 'body_part', 'currency', 'definition', 'environment', 'material', 'medical', 'measurement',
               'music', 'plant', 'place', 'personal_name', 'profession', 'sensory', 'tool', 'time', 'weapon']
+
 m_path = f'{os.getcwd()}/../m-k-manuscript-data'
 
 def update_metadata(manuscript: BnF) -> None:
@@ -36,7 +37,6 @@ def update_metadata(manuscript: BnF) -> None:
   df['heading_tl'] = df.entry.apply(lambda x: x.title['tl'])
   df['margins'] = df.entry.apply(lambda x: len(x.margins))
   df['del_tags'] = df.entry.apply(lambda x: '; '.join(x.del_tags))
-  df['figures'] = df.entry.apply(lambda x: 'unknown')
   for prop in properties:
     df[prop] = df.entry.apply(lambda x: '; '.join(x.get_prop(prop=prop, version='tc')))
   df.drop(columns=['entry'], inplace=True)

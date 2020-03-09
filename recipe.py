@@ -4,7 +4,7 @@ from collections import OrderedDict
 from margin import Margin
 
 re_tags = re.compile(r'<.*?>') # selects any tag
-re_head = re.compile(r'<head( margin="[\w-]*")?>(.*?)</head>')
+re_head = re.compile(r'<head( (margin|comment)="[\w-]*")?>(.*?)</head>')
 re_materials = re.compile(r'<m>(.*?)<\/m>') # selects text between materials tags
 prop_dict = {'animal': 'al', 'body_part': 'bp', 'currency': 'cn', 'definition': 'def',
               'environment': 'env', 'material': 'm', 'medical': 'md', 'measurement': 'ms',
@@ -17,34 +17,79 @@ class Recipe:
     def __init__(self, identity: str, folio: str, tc: str, tcn: str, tl: str) -> None:
         self.identity: str = identity # id of the entry
         self.folio: str = folio # folio of the entry
-        self.originals: Dict[str, str] = {'tc': tc, 'tcn': tcn, 'tl': tl}
         self.versions: Dict[str, str] = {'tc': tc, 'tcn': tcn, 'tl': tl} # dict that contains xml text
+        self.title = {k: self.find_title(v) for k, v in self.versions.items()}
         self.categories: List[str] = self.find_categories()
-        self.title: Dict[str, str] = {'tc': self.get_head(self.versions['tc']),
-                                     'tcn': self.get_head(self.versions['tcn']),
-                                     'tl': self.get_head(self.versions['tl'])}
-        self.length: Dict[str, int] = {k: len(self.clean_text(k)) for k in self.versions} 
+        self.length = {k: self.clean_length(v) for k, v in self.versions.items()}
+
         self.properties: Dict[str, Dict[str, List[str]]] # {prop_type: {version: [prop1, prop2, ...]}}
         self.properties = {k: {} for k in prop_dict.keys()}
         for k, v in prop_dict.items():
             self.properties[k] = self.find_tag(v)
+
         self.margins = self.find_margins()
         self.del_tags = self.find_del()
         self.captions = {k: self.find_captions(k) for k in self.versions.keys()}
-        self.balanced: Dict[str: bool] = {k: self.check_balance(k) for k in self.versions.keys()}
 
+    def find_categories(self) -> List[str]:
+        categories = re.search(r'categories="[\w\s;]*"', self.clean_text('tl'))
+        if categories:
+            return categories[0].split('"')[1].split(';')
+        return []
+
+    def find_title(self, text: str) -> str:
+        """ search text for text in a <head> tag. """
+        text = text.replace('<sup>', '[').replace('</sup>', ']') # mark editor supplied titles with square brackets
+        text = re.sub(r'\s+', ' ', text.replace('\n', ' '))
+
+        titles = re_head.search(text)
+        return '' if not titles else re_tags.sub('', titles[0])
+
+    def clean_length(self, text: str) -> int:
+        text = re_tags.sub('', text)
+        text = re.sub(r'\s+', ' ', text)
+        return len(text)
+
+    def find_tagged_text(self, text: str, tag: str) -> Dict[str, List[str]]:
+        """
+        For any given tag, finds all text within that tag.
+        Returns data as a dict of the form {version: [tagged_str1, tagged_str2, ...]}
+        """
+        re_tagged = re.compile(rf'<{tag}>(.*?)<\/{tag}>')
+        tagged_dict = {}
+
+        text = re.sub(r'\s+', ' ', text)
+        tagged_text = list(set([re_tags.sub('', t).lower().strip() for t in re_tagged.findall(text)]))
+        return tagged_text
+
+    def find_all_properties():
+        all_properties = {} # prop_type: prop_list
+        for version in versions:
+            version_dict = {}
+            text = self.text(version, xml=True)
+            for prop, tag in prop_dict.entries():
+                prop_list = find_tagged_text(text, tag)
+                version_dict[prop] = prop_list
+            all_properties[version] = version_dict
+        return all_properties
+        
+
+                
+
+            
     def clean_text(self, version: str):
         return re.sub(r'\s+', ' ', self.versions[version])
 
     def find_margins(self) -> List[str]:
         margins = {}
         for version in self.versions.keys():
-          margin_list = []
-          search = re.findall(r'<ab margin="([\w-]*)"( render="([\w-]*)")?>(.*?)<\/ab>', self.versions[version])
-          for tup in search:
-            position, _, render, text = tup
-            margin_list.append(Margin(self.identity, self.folio, position, text, render))
-          margins[version] = margin_list
+            margin_list = []
+            text = re.sub(r'\s+', ' ', self.text(version, xml=True))
+            search = re.findall(r'<ab margin="([\w-]*)"( render="([\w-]*)")?>(.*?)<\/ab>', text)
+            for tup in search:
+                position, _, render, margin_text = tup
+                margin_list.append(Margin(self.identity, position, margin_text, render))
+            margins[version] = margin_list
         return margins
 
     def find_del(self) -> List[str]:
@@ -55,16 +100,6 @@ class Recipe:
         c = re.findall(r'<caption>(.*?)</caption>', self.versions[version])
         return c if c else []
 
-    def get_head(self, text: str) -> str:
-        """ search text for text in a <head> tag. """
-        text = text.replace('<sup>', '[') # mark editor supplied titles with square brackets
-        text = text.replace('</sup>', ']')
-
-        head = re_head.search(text)
-        if head:
-            return re_tags.sub('', head[0])
-        return ''
-
     def get_title(self, version: str = 'tl'):
         return self.title[version]
 
@@ -74,11 +109,16 @@ class Recipe:
 
     def text(self, version: str, xml: bool = False) -> str:
         """ Getter method for text based on version, xml. """
-        return self.versions[version] if xml else re_tags.sub('', self.clean_text(version))
+        if xml:
+            return self.versions[version]
 
+        text = self.versions[version].replace('\n', '**NEWLINE**')
+        text = re_tags.sub('', text).replace('**NEWLINE**', '\n')
+        return text
+       
     def original_text(self, version: str, xml: bool = False) -> str:
         """ Getter method for original text based on version, xml. """
-        return self.originals[version] if xml else re_tags.sub('', self.originals[version])
+        return self.originals[version] if xml else re_tags.sub('', self.originals[version]).strip()
 
     def find_tag(self, tag: str) -> Dict[str, List[str]]:
         """
@@ -117,16 +157,3 @@ class Recipe:
                 return context[0]
         return f'{term} not found in {version} {self.identity}'
 
-    # def head(self, version):
-    #     """ Returns up to the first 50 characters of the manuscript."""
-    #     head = self.text(version)
-    #     if len(head) > 50:
-    #         return head[:50]
-    #     return head
-
-    def find_categories(self) -> List[str]:
-        categories = re.search(r'categories="[\w\s;]*"', self.clean_text('tl'))
-        if categories:
-            return categories[0].split('"')[1].split(';')
-        return []
-            
