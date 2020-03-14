@@ -28,22 +28,22 @@ def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
     os.system('python thesaurus.py')
     print('Finished Generating Thesaurus')
 
-  # manual_corrections = pd.read_csv('manual_vocab.csv')
+  manual_corrections = pd.read_csv('manual_vocab.csv')
 
   for prop in properties:
     dct = {} # {verbatim_term: prefLabel_en}
     df = pd.read_csv(f'thesaurus/{prop}.csv')
 
-    # manual_df = manual_corrections[manual_corrections['property'] == prop]
-    # manual_dict = {} # verbatim_term, prefLabel_en pairs
+    manual_df = manual_corrections[manual_corrections['property'] == prop]
+    manual_dict = {} # verbatim_term, prefLabel_en pairs
 
-    # for _, row in manual_df.iterrows():
-    #   manual_dict[row.verbatim_term] = row.prefLabel_en
+    for _, row in manual_df.iterrows():
+      manual_dict[row.verbatim_term] = row.prefLabel_en
 
     for i, row in df.iterrows(): # add corrections to a dictionary for O(1) access later on.
       if row.verbatim_term != row.prefLabel_en:
-        # dct[row.verbatim_term] =  manual_dict.get(row.verbatim_term) if row.verbatim_term in manual_dict.keys() else row.prefLabel_en
-        dct[row.verbatim_term] = row.prefLabel_en
+        dct[row.verbatim_term] =  manual_dict.get(row.verbatim_term) if row.verbatim_term in manual_dict.keys() else row.prefLabel_en
+
     for identity, entry in entries.items(): # iterate through the manuscript.
       for j, term in enumerate(entry.properties[prop]['tl']):
         entry.properties[prop]['tl'][j] = dct.get(term, term) # apply corrections if needed.
@@ -92,7 +92,7 @@ def generate_complete_manuscript(apply_corrections=True) -> Dict[str, Recipe]:
   Outputs:
     entries: A dictionary of Recipe objects keyed by div ID. 
   """
-  entries = OrderedDict() # initialize dict to return. identity: entry object/REcipe Class
+  entries = OrderedDict() # initialize dict to return. identity: entry object/Recipe Class
   versions = OrderedDict({'tc': {}, 'tcn': {}, 'tl': {}}) # holds contents of each folder before combined
   
   """
@@ -123,7 +123,7 @@ def generate_complete_manuscript(apply_corrections=True) -> Dict[str, Recipe]:
   """
   for identity in versions['tc'].keys():
     folio, entry_id = identity.split(';')
-    tc, tcn, tl = [x.get(identity) for x in versions.values()]
+    tc, tcn, tl = [x.get(identity).strip() for x in versions.values()]
     if entry_id in entries.keys():
       old = entries[entry_id]
       entries[entry_id] = Recipe(entry_id, old.folio,

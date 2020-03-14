@@ -103,6 +103,3 @@ class BnF():
     for prop in properties:
       df[prop] = df.entry.apply(lambda x: '; '.join(x.get_prop(prop=prop, version='tc')))
     return df
-
-manuscript = BnF(apply_corrections=True)
-# print(manuscript.entry('004v_1').title['tl'])

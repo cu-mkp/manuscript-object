@@ -1,6 +1,7 @@
-# Last Updated | 2020-02-01
+# Last Updated | 2020-03-14
 # Python Modules
 import os
+import re
 from typing import List
 
 # Third Party Modules
@@ -40,11 +41,13 @@ def update_metadata(manuscript: BnF) -> None:
   for prop in properties:
     df[prop] = df.entry.apply(lambda x: '; '.join(x.get_prop(prop=prop, version='tc')))
   df.drop(columns=['entry'], inplace=True)
+
   df.to_csv(f'{m_path}/metadata/entry_metadata.csv', index=False)
 
-def update_ms(manuscript: BnF) -> None:
+
+def update_entries(manuscript: BnF) -> None:
   """
-  Update /m-k-manuscript-data/ms-txt/ with the current manuscript from /ms-xml/. For each version, delete all existing
+  Update /m-k-manuscript-data/entries/ with the current manuscript from /ms-xml/. For each version, delete all existing
   entries. Regenerate folio text entry by entry, and save the file. 
 
   Input:
@@ -52,30 +55,61 @@ def update_ms(manuscript: BnF) -> None:
   Output:
     None
   """
-  for version in versions:
-    if len(os.listdir(f'{m_path}/ms-txt/{version}')) > 0: # only run when there's at least one file
-      os.system(f'rm {m_path}/ms-txt/{version}/*.txt')
+
+  for path in [f'{m_path}/entries', f'{m_path}/entries/txt', f'{m_path}/entries/xml']:
+    if not os.path.exists(path):
+      os.mkdir(path)
+
+  for version in versions: # TODO: fix this when you're done with the body
+    txt_path = f'{m_path}/entries/txt/{version}'
+    xml_path = f'{m_path}/entries/xml/{version}'
+    
+    # If the entries/txt or xml directory does not exist, create it. Otherwise, clear the directory.
+    for path in [txt_path, xml_path]:
+      if not os.path.exists(path):
+        os.mkdir(path)
+      # elif len(os.listdir(path)) > 0:
+      #   os.system(f'rm {path} *.txt')
 
     # Write new files with manuscript object
     for identity, entry in manuscript.entries.items():
       if identity: # TODO: resolve issue of unidentified entries
-        filename = f'{m_path}/ms-txt/{version}/{version}_p{entry.folio}_preTEI.txt'
+        # TODO: ask for a naming convention
+        filename_txt = f'{txt_path}/{version}_{entry.identity}.txt'
+        filename_xml = f'{xml_path}/{version}_{entry.identity}.xml'
+        
+        content_txt = entry.text(version, xml=False)
+        content_xml = entry.text(version, xml=True)
 
-        # read existing file
+        f_txt = open(filename_txt, 'w')
+        f_txt.write(content_txt)
+        f_txt.close()
+
+        f_xml = open(filename_xml, 'w')
+        f_xml.write(content_xml)
+        f_xml.close()
+
+def update_ms(manuscript:BnF) -> None:
+  for version in versions: 
+    for r, d, f in os.walk(f'{m_path}/ms-xml/{version}'):
+      for filename in f: # iterate through /ms-xml/{version} folder
+        # read xml file
         text = ''
-        if os.path.exists(filename):
-          f = open(filename, 'r')
+        filepath = f'{m_path}/ms-xml/{version}/{filename}'
+        with open(filepath, encoding="utf-8", errors="surrogateescape") as f:
           text = f.read()
-          f.close()
         
-        # create new text
-        new_text = entry.original_text(version, xml=False)
-        write_text = f'{text}\n\n{new_text}' if text else new_text
-        
-        # write text
-        f = open(filename, 'w')
-        f.write(write_text)
-        f.close
+        # remove xml
+        text = text.replace('\n', '**NEWLINE**')
+        text = re.sub(r'<.*?>', '', text)
+        text = text.replace('**NEWLINE**', '\n')
+
+        # write txt file
+        txt_filepath = filepath.replace('txt', 'xml')
+        f = open(txt_filepath, 'w')
+        f.write(text)
+        f.close()
+
 
 def update_all_folios(manuscript: BnF) -> None:
   """
@@ -121,8 +155,11 @@ def update():
   update_metadata(manuscript)
   print('updated metadata')
 
+  update_entries(manuscript)
+  print('updated /entries/')
+
   update_ms(manuscript)
-  print('updated /ms/')
+  print('updated /ms-txt/')
 
   update_all_folios(manuscript)
   print('updated /allFolios/')
