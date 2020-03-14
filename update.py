@@ -150,19 +150,19 @@ def update_time():
   f.close
 
 def update():
-  manuscript = BnF()
+  # manuscript = BnF()
 
-  update_metadata(manuscript)
-  print('updated metadata')
+  # update_metadata(manuscript)
+  # print('updated metadata')
 
-  update_entries(manuscript)
-  print('updated /entries/')
+  # update_entries(manuscript)
+  # print('updated /entries/')
 
-  update_ms(manuscript)
-  print('updated /ms-txt/')
+  # update_ms(manuscript)
+  # print('updated /ms-txt/')
 
-  update_all_folios(manuscript)
-  print('updated /allFolios/')
+  # update_all_folios(manuscript)
+  # print('updated /allFolios/')
 
   update_time()
 
