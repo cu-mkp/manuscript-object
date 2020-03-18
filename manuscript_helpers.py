@@ -9,7 +9,8 @@ properties = ['animal', 'body_part', 'currency', 'definition',
               'environment', 'material', 'medical', 'measurement',
               'music', 'plant', 'place', 'personal_name',
               'profession', 'sensory', 'tool', 'time', 'weapon']
-properties = ['material']
+
+m_k_data_to_thesaurus = f'{os.getcwd()}/manuscript-object/thesaurus'
 
 def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
   """
@@ -23,16 +24,16 @@ def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
   Output:
     entries: List[Recipe] -- same as above, but with the thesaurus corrections applied.
   """
-  if not os.path.exists('thesaurus'):
+  if not os.path.exists(m_k_data_to_thesaurus):
     print('Thesaurus not found. Generating now.')
-    os.system('python thesaurus.py')
+    os.system(f'python {os.getcwd()}/manuscript-object/thesaurus.py')
     print('Finished Generating Thesaurus')
 
   # manual_corrections = pd.read_csv('manual_vocab.csv')
 
-  for prop in properties:
+for prop in properties:
     dct = {} # {verbatim_term: prefLabel_en}
-    df = pd.read_csv(f'thesaurus/{prop}.csv')
+    df = pd.read_csv(f'{m_k_data_to_thesaurus}/{prop}.csv')
 
     # manual_df = manual_corrections[manual_corrections['property'] == prop]
     # manual_dict = {} # verbatim_term, prefLabel_en pairs
