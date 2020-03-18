@@ -79,6 +79,9 @@ def simplify_terms(simple_df: pd.DataFrame, complex_df:pd.DataFrame) -> pd.DataF
       complex_df.loc[i, 'prefLabel_en'] = head
   return complex_df
 
+
+m_k_data_to_thesaurus = f'{os.getcwd()}/manuscript-object/thesaurus'
+
 def create_thesaurus():
   """ 
   Creates directory 'thesaurus' containing a .csv file for each property. Each .csv has three columns, count,
@@ -95,8 +98,8 @@ def create_thesaurus():
   manuscript = BnF(apply_corrections=False)
 
   # Create directory 'thesaurus' if one does not exist
-  if not os.path.exists('thesaurus'):
-    os.mkdir('thesaurus')
+  if not os.path.exists(m_k_data_to_thesaurus):
+    os.mkdir(m_k_data_to_thesaurus)
 
   for prop in tqdm(properties):
     simple_df, complex_df = get_prop_dfs(manuscript, prop) # get dataframe of count, verbatim terms
@@ -109,6 +112,6 @@ def create_thesaurus():
     complex_df['prefLabel_en'] = complex_df.prefLabel_en.apply(lambda x: inflection.singularize(x))
 
     df = pd.concat([simple_df, complex_df]) # merge dataframes 
-    df.to_csv(f'thesaurus/{prop}.csv', index=False) # write dataframe to a file
+    df.to_csv(f'{m_k_data_to_thesaurus}/{prop}.csv', index=False) # write dataframe to a file
     
 create_thesaurus()
