@@ -31,7 +31,7 @@ def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
 
   # manual_corrections = pd.read_csv('manual_vocab.csv')
 
-for prop in properties:
+  for prop in properties:
     dct = {} # {verbatim_term: prefLabel_en}
     df = pd.read_csv(f'{m_k_data_to_thesaurus}/{prop}.csv')
 
