@@ -104,7 +104,7 @@ def generate_complete_manuscript(apply_corrections=True) -> Dict[str, Recipe]:
   TODO: Instead of going version by version, consider going folio by folio. 
   """
   for version in versions: 
-    dir_path = os.getcwd() + f'/../m-k-manuscript-data/ms-xml/{version}/'
+    dir_path = os.getcwd() + f'/ms-xml/{version}/'
     entry_dict = OrderedDict()
 
     for r, d, f in os.walk(dir_path):
