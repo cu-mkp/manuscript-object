@@ -69,10 +69,10 @@ class BnF():
     for identity, entry in self.entries.items():
       margin_list = entry.margins[version]
       for margin in margin_list:
-        if (not position or position == margin.position) and term in margin.text:
+        if (not position or position == margin.position) and term.lower() in margin.text.lower():
           results.append(identity)
 
-    return results
+    return sorted(list(set(results)))
 
   def tablefy(self):
     # id, head, no. words, category, amount of each tag, margins
@@ -91,6 +91,3 @@ class BnF():
     for prop in properties:
       df[prop] = df.entry.apply(lambda x: '; '.join(x.get_prop(prop=prop, version='tc')))
     return df
-
-manuscript = BnF()
-print(manuscript.search_margins('tl', 'gold', 'left-middle'))
