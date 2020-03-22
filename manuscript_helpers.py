@@ -10,7 +10,9 @@ properties = ['animal', 'body_part', 'currency', 'definition',
               'music', 'plant', 'place', 'personal_name',
               'profession', 'sensory', 'tool', 'time', 'weapon']
 
-m_k_data_to_thesaurus = f'{os.getcwd()}/manuscript-object/thesaurus'
+cwd = os.getcwd()
+m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../m-k-manuscript-data'
+m_k_data_to_thesaurus = f'{m_path}/manuscript-object/thesaurus'
 
 def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
   """
@@ -26,7 +28,7 @@ def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
   """
   if not os.path.exists(m_k_data_to_thesaurus):
     print('Thesaurus not found. Generating now.')
-    os.system(f'python {os.getcwd()}/manuscript-object/thesaurus.py')
+    os.system(f'python {cwd}/manuscript-object/thesaurus.py')
     print('Finished Generating Thesaurus')
 
   # manual_corrections = pd.read_csv('manual_vocab.csv')
@@ -104,7 +106,7 @@ def generate_complete_manuscript(apply_corrections=True) -> Dict[str, Recipe]:
   TODO: Instead of going version by version, consider going folio by folio. 
   """
   for version in versions: 
-    dir_path = os.getcwd() + f'/ms-xml/{version}/'
+    dir_path = f'{m_path}/ms-xml/{version}/'
     entry_dict = OrderedDict()
 
     for r, d, f in os.walk(dir_path):
@@ -139,3 +141,10 @@ def generate_complete_manuscript(apply_corrections=True) -> Dict[str, Recipe]:
     entries = use_thesaurus(entries)
 
   return entries
+
+def common_element(list1: List[str], list2: List[str]) -> bool:
+  for x in list1:
+    for y in list2:
+      if x == y:
+        return True
+  return False
