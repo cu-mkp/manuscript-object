@@ -114,7 +114,7 @@ class Recipe:
 
         text = self.versions[version].replace('\n', '**NEWLINE**')
         text = re_tags.sub('', text).replace('**NEWLINE**', '\n')
-        text = re.sub(r'\n+', '\n', text)
+        text = re.sub(r'\n+', '\n\n', text)
 
         return text.strip(' \n')
        
