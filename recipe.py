@@ -59,7 +59,7 @@ class Recipe:
         tagged_dict = {}
 
         text = re.sub(r'\s+', ' ', text)
-        tagged_text = list(set([re_tags.sub('', t).lower().strip() for t in re_tagged.findall(text)]))
+        tagged_text = list(set([str(re_tags.sub('', t).lower().strip()) for t in re_tagged.findall(text)]))
         return tagged_text
 
     def find_all_properties():
