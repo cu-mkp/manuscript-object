@@ -15,6 +15,7 @@ prop_dict_reverse = {v: k for k, v in prop_dict.items()}
 class Recipe:
 
     def __init__(self, identity: str, folio: str, tc: str, tcn: str, tl: str) -> None:
+
         self.identity: str = identity # id of the entry
         self.folio: str = folio # folio of the entry
         self.versions: Dict[str, str] = {'tc': tc, 'tcn': tcn, 'tl': tl} # dict that contains xml text
@@ -23,9 +24,7 @@ class Recipe:
         self.length = {k: self.clean_length(v) for k, v in self.versions.items()}
 
         self.properties: Dict[str, Dict[str, List[str]]] # {prop_type: {version: [prop1, prop2, ...]}}
-        self.properties = {k: {} for k in prop_dict.keys()}
-        for k, v in prop_dict.items():
-            self.properties[k] = self.find_tag(v)
+        self.properties = self.find_all_properties()
 
         self.margins = self.find_margins()
         self.del_tags = self.find_del()
@@ -56,23 +55,20 @@ class Recipe:
         Returns data as a dict of the form {version: [tagged_str1, tagged_str2, ...]}
         """
         re_tagged = re.compile(rf'<{tag}>(.*?)<\/{tag}>')
-        tagged_dict = {}
-
         text = re.sub(r'\s+', ' ', text)
+
         tagged_text = list(set([str(re_tags.sub('', t).lower().strip()) for t in re_tagged.findall(text)]))
         return tagged_text
 
-    def find_all_properties():
-        all_properties = {} # prop_type: prop_list
-        for version in versions:
-            version_dict = {}
-            text = self.text(version, xml=True)
-            for prop, tag in prop_dict.entries():
-                prop_list = find_tagged_text(text, tag)
-                version_dict[prop] = prop_list
-            all_properties[version] = version_dict
+    def find_all_properties(self):
+        all_properties = {}
+        for prop, tag in prop_dict.items():
+            p_dict = {}
+            for version in self.versions:
+                text = self.text(version, xml=True)
+                p_dict[version] = self.find_tagged_text(text, tag)
+            all_properties[prop] = p_dict
         return all_properties
-        
 
                 
 
@@ -135,7 +131,7 @@ class Recipe:
 
     def get_prop(self, prop, version='tl'):
         """ Getter method for prop based on version. """
-        return self.properties[version][prop]
+        return self.properties[prop][version]
 
     def check_balance(self, version) -> bool:
         tags = re_tags.findall(self.text(version, True))
