@@ -44,9 +44,14 @@ def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
     #   manual_dict[row.verbatim_term] = row.prefLabel_en
 
     for i, row in df.iterrows(): # add corrections to a dictionary for O(1) access later on.
-      if row.verbatim_term != row.prefLabel_en and row.prefLabel_en:
+      if row.verbatim_term != row.prefLabel_en and isinstance(row.prefLabel_en, str):
         # dct[row.verbatim_term] =  manual_dict.get(row.verbatim_term) if row.verbatim_term in manual_dict.keys() else row.prefLabel_en
         dct[row.verbatim_term] = row.prefLabel_en
+
+    if prop == 'currency':
+      for key, value in dct.items():
+        print(key, value)
+
     for identity, entry in entries.items(): # iterate through the manuscript.
       for j, term in enumerate(entry.properties[prop]['tl']):
         entry.properties[prop]['tl'][j] = dct.get(term, term) # apply corrections if needed.
