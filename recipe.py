@@ -135,7 +135,7 @@ class Recipe:
 
     def get_prop(self, prop, version='tl'):
         """ Getter method for prop based on version. """
-        return self.properties[prop][version]
+        return self.properties[version][prop]
 
     def check_balance(self, version) -> bool:
         tags = re_tags.findall(self.text(version, True))
