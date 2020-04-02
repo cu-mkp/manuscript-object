@@ -9,7 +9,9 @@ re_materials = re.compile(r'<m>(.*?)<\/m>') # selects text between materials tag
 prop_dict = {'animal': 'al', 'body_part': 'bp', 'currency': 'cn', 'definition': 'def',
               'environment': 'env', 'material': 'm', 'medical': 'md', 'measurement': 'ms',
               'music': 'mu', 'plant': 'pa', 'place': 'pl', 'personal_name': 'pn',
-              'profession': 'pro', 'sensory': 'sn', 'tool': 'tl', 'time': 'tmp', 'weapon': 'wp'}
+              'profession': 'pro', 'sensory': 'sn', 'tool': 'tl', 'time': 'tmp', 'weapon': 'wp',
+              'german': 'de', 'greek': 'ge' 'italian': 'it', 'latin': 'la', 'occitan': 'oc', 'poitevin': 'po',}
+
 prop_dict_reverse = {v: k for k, v in prop_dict.items()}
 
 class Recipe:
