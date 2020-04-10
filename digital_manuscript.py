@@ -75,8 +75,6 @@ class BnF():
     return sorted(list(set(results)))
 
   def tablefy(self):
-    # id, head, no. words, category, amount of each tag, margins
-    # include figure margins?
     df = pd.DataFrame(columns=['entry'], data=self.entries.values())
     df['folio'] = df.entry.apply(lambda x: x.folio)
     df['folio_display'] = df.entry.apply(lambda x: x.folio.lstrip('0'))
@@ -85,9 +83,6 @@ class BnF():
     df['heading_tc'] = df.entry.apply(lambda x: x.title['tc'])
     df['heading_tcn'] = df.entry.apply(lambda x: x.title['tcn'])
     df['heading_tl'] = df.entry.apply(lambda x: x.title['tl'])
-    df['margins'] = df.entry.apply(lambda x: len(x.margins))
-    df['del_tags'] = df.entry.apply(lambda x: '; '.join(x.del_tags))
-    df['figures'] = df.entry.apply(lambda x: 'unknown')
     for prop in properties:
       df[prop] = df.entry.apply(lambda x: '; '.join(x.get_prop(prop=prop, version='tc')))
     return df

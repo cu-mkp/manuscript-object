@@ -18,7 +18,8 @@ def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
   """
   Use /thesaurus/ to standardize the vocabulary in the manuscript. If the thesaurus does not exist,
   create it. Read in the thesaurus for each property, iterate through the manuscript, and apply
-  corrections to any words in the manuscript also found in the thesaurus.
+  corrections to any words in the manuscript also found in the thesaurus. Code to handle manual
+  corrections to the thesaurus is included, but commented out until data is included. 
 
   Input:
     entries: List[Recipe] -- A list containing the entries of the manuscript as members of the
@@ -57,8 +58,8 @@ def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
 
 def process_file(filepath: str) -> OrderedDict[str, str]:
   """
-  Open the file, and separate each div. If a div is broken up into different parts, they are
-  attached. 
+  Open the file, and separate each div. If a div is broken up into different parts or across
+  multiple folio pages, they are attached. 
   Inputs:
     filepath: string representing the filepath of the file to be read in /ms-text/[version]
   Outputs:
@@ -144,6 +145,14 @@ def generate_complete_manuscript(apply_corrections=True) -> Dict[str, Recipe]:
   return entries
 
 def common_element(list1: List[str], list2: List[str]) -> bool:
+  """
+  Used in the search function to compare list of keywords to a list of properties
+  Inputs:
+    list1: a list of strings representing the search keywords
+    list2: a list of string representing the properties of an entry
+  Outputs:
+    bool: True if they share a common element. Otherwise, False
+  """
   for x in list1:
     for y in list2:
       if x == y:
