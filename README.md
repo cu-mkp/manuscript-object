@@ -6,7 +6,7 @@ Entries have their own class, Recipe(), which formats each entry and parses out 
 
 When BnF() is defined, `complete_manuscript` is instantiated, which calls a function in `manuscript helpers` to generate the complete manuscript. The manuscript object, which is positioned in the same directory as the manuscript data, opens each file in `/ms-xml/` for each version, and conscripts an entry object with it. These entry objects are held in a list called `entries`, and sorted.
 
-# Setup
+# Setup for MacOS
 
 1. If you do not have python3 downloaded on your machine, download it with brew. 
 
@@ -31,9 +31,30 @@ brew install python3 git pipenv
 git clone git@github.com:cu-mkp/m-k-manuscript-data.git
 git clone git@github.com:cu-mkp/manuscript-object.git
 ```
-Then, `cd manuscript object`
+Then, `cd manuscript-object`
 
 3. Run `pipenv install` to install dependencies to the pipenv shell.
 
 4. To enter the pipenv shell, run `pipenv shell`. To exit, press ^D or type `exit`. Inside the pipenv shell, all outside dependencies for the repository are installed. 
 
+
+# Setup for Windows
+
+1. If you do not have python 3 you should install anaconda on your computer.
+Download the installer here : https://www.anaconda.com/distribution/#windows
+
+2. Install git if you don't have it then run in your windows power shell :
+```bash
+git clone https://github.com/cu-mkp/m-k-manuscript-data.git
+git clone https://github.com/cu-mkp/manuscript-object.git
+```
+
+3. Go to the anaconda powershell prompt and run:
+```bash
+pip install pipenv
+cd manuscript-object
+pipenv install
+```
+It should tell you that it found the pip.lock file and its intalling the dependencies.
+
+4. To enter the pipenv shell, run `pipenv shell`. To exit, press ^D or type `exit`. Inside the pipenv shell, all outside dependencies for the repository are installed. 
