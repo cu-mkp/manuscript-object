@@ -37,3 +37,17 @@ Then, `cd manuscript object`
 
 4. To enter the pipenv shell, run `pipenv shell`. To exit, press ^D or type `exit`. Inside the pipenv shell, all outside dependencies for the repository are installed. 
 
+# Setup for Windows
+
+1. If you do not have python 3 you should install anaconda on your computer.
+Download the installer here : https://www.anaconda.com/distribution/#windows
+
+2. Install git if you don't have it then run in your windows power shell :
+```bash
+git clone https://github.com/cu-mkp/m-k-manuscript-data.git
+git clone https://github.com/cu-mkp/manuscript-object.git
+```
+
+3. Next you need to open jupyter using anaconda. On Jupyter, open the notebook digital_manuscript.ipynb and try to run the first cell (click on it and ctrl+Entry)
+Anytime it tells you 'could not find "name" package. Type in your anaconda powershell prompt `pip install "name"`
+Once you have every package installed, it should run normally.
