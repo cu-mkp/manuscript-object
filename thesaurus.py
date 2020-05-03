@@ -15,6 +15,10 @@ from tqdm import tqdm
 from digital_manuscript import BnF
 nlp = spacy.load('en_core_web_sm')
 
+cwd = os.getcwd()
+m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../m-k-manuscript-data'
+m_k_data_to_thesaurus = f'{m_path}/manuscript-object/thesaurus'
+
 properties = ['animal', 'body_part', 'currency', 'definition', 'environment', 'material',
               'medical', 'measurement', 'music', 'plant', 'place', 'personal_name',
               'profession', 'sensory', 'tool', 'time', 'weapon']
@@ -71,16 +75,23 @@ def simplify_terms(simple_df: pd.DataFrame, complex_df:pd.DataFrame) -> pd.DataF
   Output:
     complex_df: BnF -- complex_df with semantic head as preferred label.
   """
-  simple_terms = list(simple_df['verbatim_term'])
+  simple_terms = list(simple_df['prefLabel_en'])
   for i, row in complex_df.iterrows():
     parse = nlp(row.verbatim_term)
+
     head = [token for token in parse if token.head.text == token.text][0].text
+    head = nlp(head)[0]
+    head = inflection.singularize(head.text) if head.pos_ in ['NOUN', 'PROPN'] else head.text
     if head in simple_terms:
       complex_df.loc[i, 'prefLabel_en'] = head
   return complex_df
 
+def singularize(term: str) -> str:
+  if not term:
+    return term
+  parse = nlp(term.lower().strip())[0]
+  return inflection.singularize(term) if parse.pos_ in ['NOUN', 'PROPN'] else term
 
-m_k_data_to_thesaurus = f'{os.getcwd()}/manuscript-object/thesaurus'
 
 def create_thesaurus():
   """ 
@@ -105,8 +116,8 @@ def create_thesaurus():
     simple_df, complex_df = get_prop_dfs(manuscript, prop) # get dataframe of count, verbatim terms
 
     # create the prefLabel_en column by lemmatizing terms to lower case, singular, and stripped of white space
-    simple_df['prefLabel_en'] = simple_df.verbatim_term.apply(lambda x: inflection.singularize(re.sub(r"’|'", '', x)).lower().strip())
-    complex_df['prefLabel_en'] = complex_df.verbatim_term.apply(lambda x: inflection.singularize(x.replace('\'', '')).lower().strip())
+    simple_df['prefLabel_en'] = simple_df.verbatim_term.apply(lambda x: singularize(re.sub(r"’|'", '', x)))
+    complex_df['prefLabel_en'] = complex_df.verbatim_term.apply(lambda x: x.replace('\'', '').lower().strip())
 
     complex_df = simplify_terms(simple_df, complex_df) # reduce complex terms to their semantic heads
     complex_df['prefLabel_en'] = complex_df.prefLabel_en.apply(lambda x: inflection.singularize(x))
