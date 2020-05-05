@@ -27,7 +27,7 @@ def get_prop_dfs(manuscript: BnF, prop_type: str) -> (pd.DataFrame, pd.DataFrame
   """
   For each element of the 'properties' list, iterate through the manuscript, and pull out all properties of that type.
   If the property is a single word, it is simple. Multiple-word properties are complex. Put each property in the
-  appropriate dictionary while counting occurrences. 
+  appropriate dictionary while counting occurrences.
 
   Inputs:
     manuscript: BnF -- The BnF data used to source the terms for the thesaurus.
@@ -52,11 +52,11 @@ def get_prop_dfs(manuscript: BnF, prop_type: str) -> (pd.DataFrame, pd.DataFrame
           simple_properties[prop] = 1
 
       else: # if the term is multiple words, following logic above
-        if prop in complex_properties.keys(): 
+        if prop in complex_properties.keys():
           complex_properties[prop] += 1
         else:
           complex_properties[prop] = 1
-  
+
   # format the dict into a DataFrame
   for i, prop in enumerate(simple_properties.keys()):
     simple_df.loc[i] = [simple_properties[prop], prop]
@@ -68,7 +68,7 @@ def get_prop_dfs(manuscript: BnF, prop_type: str) -> (pd.DataFrame, pd.DataFrame
 def simplify_terms(simple_df: pd.DataFrame, complex_df:pd.DataFrame) -> pd.DataFrame:
   """
   Find the semantic head of each complex term. If the head is a simple term, the head becomes the preferred label.
-  
+
   Inputs:
     simple_df: BnF -- DataFrame containing one-word terms
     complex_df: BnF -- DataFrame containing multi-word terms
@@ -94,7 +94,7 @@ def singularize(term: str) -> str:
 
 
 def create_thesaurus():
-  """ 
+  """
   Creates directory 'thesaurus' containing a .csv file for each property. Each .csv has three columns, count,
   verbatim_term, and prefLabel_en. Count is the number of occurrences of the verbatim term in the manuscript.
   verbatim_term is an term of the given property. prefLabel_en is the normalized form of the term.
@@ -110,7 +110,7 @@ def create_thesaurus():
 
   # Create directory 'thesaurus' if one does not exist
   if not os.path.exists(m_k_data_to_thesaurus):
-    os.mkdir(m_k_data_to_thesaurus)
+    os.makedirs(m_k_data_to_thesaurus)
 
   for prop in tqdm(properties):
     simple_df, complex_df = get_prop_dfs(manuscript, prop) # get dataframe of count, verbatim terms
@@ -122,7 +122,7 @@ def create_thesaurus():
     complex_df = simplify_terms(simple_df, complex_df) # reduce complex terms to their semantic heads
     complex_df['prefLabel_en'] = complex_df.prefLabel_en.apply(lambda x: inflection.singularize(x))
 
-    df = pd.concat([simple_df, complex_df]) # merge dataframes 
+    df = pd.concat([simple_df, complex_df]) # merge dataframes
     df.to_csv(f'{m_k_data_to_thesaurus}/{prop}.csv', index=False) # write dataframe to a file
-    
+
 create_thesaurus()
