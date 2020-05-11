@@ -18,7 +18,9 @@ def analyse_block(block, folio, writer):
             continue
 
         for i in range(len(remove_chars)):
-            tag_text = tag_text.replace(remove_chars[i], "" if i > 0 else " ")
+            tag_text = tag_text.replace(remove_chars[i], "" if i > 2 else " ")
+            # '\n', '\'' and "’" are replaced by ""
+            # all others by " "
 
         # get first parent block node
         p = item.getparent()
@@ -33,13 +35,18 @@ def analyse_block(block, folio, writer):
 
         text_list = tag_text.split()
 
+        if len(text_list) == 0:
+            continue
+
         tag_text_limits = [text_list[0]]
         if len(text_list) > 1:
             tag_text_limits.append(text_list[-1])
 
         for word in word_list:
             for text in tag_text_limits:
-                if (text in word) and (word != text):
+                other_words_in_tag_text = text_list.copy()
+                other_words_in_tag_text.remove(text)
+                if (text in word) and (word != text) and (word not in other_words_in_tag_text) and (text not in dont_cut):
                     # case where text got stuck with other words when removing XML tags
                     i = word.find(text)
                     insert_list = [text]
@@ -54,7 +61,6 @@ def analyse_block(block, folio, writer):
 
                     i = word_list.index(word)
                     word_list[i:i+1] = insert_list
-
 
         # find the index of tag_text in word_list
         # considering it might appear multiple times
@@ -117,10 +123,14 @@ cwd = os.getcwd()
 
 ms_xml_path = cwd + "/../ms-xml/"
 
-tags = ["al"] # which tag we're looking for
+tags = ["al", "bp", "cn", "env", "m", "md", "ms", "mu", "pa", "pl", "pn", "pro", "sn", "tl", "tmp", "wp"] # which tag we're looking for
 manuscript_version = "tl" # "tl", "tc" or "tcn"
-remove_chars = ["\n", "\t", "+", " -", "- ", "\"", ",", ".", "\'", "’"] # characters to remove from words
+remove_chars = ["\n", "\'", "’", "\t", "+", " -", "- ", "\"", ",", "."] # characters to remove from words
+dont_cut = ["a", "in", "on", "or", "at", "as", "the"] # words that shouldn't cut other words (e.g. "in" inside "rain")
 context_size = 10 # how many words taken on each side
 
 for tag in tags:
     get_context(tag)
+    print("tag " + tag + " complete")
+
+print("All finished")
