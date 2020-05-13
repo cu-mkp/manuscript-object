@@ -15,6 +15,7 @@ jupyter = "*"
 notebook = "*"
 tqdm = "*"
 bleach = ">=3.1.1"
+nltk = "*"
 
 [requires]
 python_version = "3.7"
