@@ -16,8 +16,11 @@ from digital_manuscript import BnF
 nlp = spacy.load('en_core_web_sm')
 
 cwd = os.getcwd()
+print(cwd)
 m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../m-k-manuscript-data'
 m_k_data_to_thesaurus = f'{m_path}/manuscript-object/thesaurus'
+m_k_data_to_thesaurus = f'{m_path}/thesaurus'
+m_k_data_to_thesaurus = "thesaurus"
 
 properties = ['animal', 'body_part', 'currency', 'definition', 'environment', 'material',
               'medical', 'measurement', 'music', 'plant', 'place', 'personal_name',
@@ -110,7 +113,7 @@ def create_thesaurus():
 
   # Create directory 'thesaurus' if one does not exist
   if not os.path.exists(m_k_data_to_thesaurus):
-    os.makedirs(m_k_data_to_thesaurus)
+    os.mkdir(m_k_data_to_thesaurus)
 
   for prop in tqdm(properties):
     simple_df, complex_df = get_prop_dfs(manuscript, prop) # get dataframe of count, verbatim terms

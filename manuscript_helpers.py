@@ -11,7 +11,7 @@ properties = ['animal', 'body_part', 'currency', 'definition',
               'profession', 'sensory', 'tool', 'time', 'weapon']
 
 cwd = os.getcwd()
-m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../m-k-manuscript-data'
+m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
 m_k_data_to_thesaurus = f'{m_path}/manuscript-object/thesaurus'
 
 def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
@@ -19,7 +19,7 @@ def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
   Use /thesaurus/ to standardize the vocabulary in the manuscript. If the thesaurus does not exist,
   create it. Read in the thesaurus for each property, iterate through the manuscript, and apply
   corrections to any words in the manuscript also found in the thesaurus. Code to handle manual
-  corrections to the thesaurus is included, but commented out until data is included. 
+  corrections to the thesaurus is included, but commented out until data is included.
 
   Input:
     entries: List[Recipe] -- A list containing the entries of the manuscript as members of the
@@ -59,11 +59,11 @@ def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
 def process_file(filepath: str) -> OrderedDict[str, str]:
   """
   Open the file, and separate each div. If a div is broken up into different parts or across
-  multiple folio pages, they are attached. 
+  multiple folio pages, they are attached.
   Inputs:
     filepath: string representing the filepath of the file to be read in /ms-text/[version]
   Outputs:
-    entries: a dictionary containing the text of each entry keyed by folio and div IDs. 
+    entries: a dictionary containing the text of each entry keyed by folio and div IDs.
   """
 
   entries = OrderedDict()
@@ -72,7 +72,7 @@ def process_file(filepath: str) -> OrderedDict[str, str]:
     text = f.read()
     folio = filepath.split('/')[-1].split('_')[1][1:] # .../tl_p162v_preTEI.xml -> 162v
 
-    text = text.replace('\n', '**NEWLINE**') # re.findall cannot scan over newlines. 
+    text = text.replace('\n', '**NEWLINE**') # re.findall cannot scan over newlines.
     divs = re.findall(r'(<div([\w\s=";-]*)>(.*?)</div>)', text) # separate text by divs
     if divs:
       for i, div in enumerate(divs): # iterate through divs
@@ -95,19 +95,19 @@ def generate_complete_manuscript(apply_corrections=True) -> Dict[str, Recipe]:
   Inputs:
     None
   Outputs:
-    entries: A dictionary of Recipe objects keyed by div ID. 
+    entries: A dictionary of Recipe objects keyed by div ID.
   """
   entries = OrderedDict() # initialize dict to return. identity: entry object/Recipe Class
   versions = OrderedDict({'tc': {}, 'tcn': {}, 'tl': {}}) # holds contents of each folder before combined
-  
+
   """
   Iterate through each folder in /ms-xml/. Use process_file() to locate divs
   keyed by div and folio ID. Accumulate these dicts to entry_dict, sort it, and save it to the
-  version dict keyed by version. 
+  version dict keyed by version.
 
-  TODO: Instead of going version by version, consider going folio by folio. 
+  TODO: Instead of going version by version, consider going folio by folio.
   """
-  for version in versions: 
+  for version in versions:
     dir_path = f'{m_path}/ms-xml/{version}/'
     entry_dict = OrderedDict()
 
@@ -120,11 +120,11 @@ def generate_complete_manuscript(apply_corrections=True) -> Dict[str, Recipe]:
 
     entry_dict = OrderedDict(sorted(entry_dict.items(), key=lambda x: x[0])) # sort entry_dict by key
     versions[version] = entry_dict # save entry dict in the versions dict
-  
+
   """
   Since all the dicts should have the same keys, iterate through one, and recall the text in each
   version. If the entry continues another, attach it to the previous entry, otherwise, generate a
-  new Recipe object and save it to the 'entries' dict keyed by div ID. 
+  new Recipe object and save it to the 'entries' dict keyed by div ID.
   """
   for identity in versions['tc'].keys():
     folio, entry_id = identity.split(';')
