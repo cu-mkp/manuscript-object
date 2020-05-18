@@ -2,7 +2,7 @@ import os
 import re
 import pandas as pd
 from collections import OrderedDict
-from typing import List, Union, Optional
+from typing import List, Union, Optional, Dict
 from recipe import Recipe
 
 properties = ['animal', 'body_part', 'currency', 'definition',
