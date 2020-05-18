@@ -2,7 +2,7 @@ import os
 import re
 import pandas as pd
 from collections import OrderedDict
-from typing import List, Union, Optional, Dict, OrderedDict
+from typing import List, Union, Optional
 from recipe import Recipe
 
 properties = ['animal', 'body_part', 'currency', 'definition',
@@ -56,7 +56,7 @@ def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
       entries[identity] = entry
   return entries
 
-def process_file(filepath: str) -> OrderedDict[str, str]:
+def process_file(filepath: str) -> Dict[str, str]:
   """
   Open the file, and separate each div. If a div is broken up into different parts or across
   multiple folio pages, they are attached. 
@@ -114,7 +114,7 @@ def generate_complete_manuscript(apply_corrections=True) -> Dict[str, Recipe]:
     for r, d, f in os.walk(dir_path):
       for filename in f: # iterate through /ms-xml/{version} folder
         # split folio by entry
-        info: OrderedDict[str, str] = process_file(f'{dir_path}{filename}')
+        info = process_file(f'{dir_path}{filename}')
         for identity, text in info.items(): # add each entry to dictionary
           entry_dict[identity] = text
 
