@@ -80,7 +80,7 @@ def simplify_terms(simple_df: pd.DataFrame, complex_df:pd.DataFrame) -> pd.DataF
   return complex_df
 
 
-m_k_data_to_thesaurus = f'{os.getcwd()}/manuscript-object/thesaurus'
+m_k_data_to_thesaurus = f'{os.getcwd()}/thesaurus'
 
 def create_thesaurus():
   """ 

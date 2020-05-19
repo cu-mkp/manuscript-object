@@ -11,8 +11,8 @@ properties = ['animal', 'body_part', 'currency', 'definition',
               'profession', 'sensory', 'tool', 'time', 'weapon']
 
 cwd = os.getcwd()
-m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../m-k-manuscript-data'
-m_k_data_to_thesaurus = f'{m_path}/manuscript-object/thesaurus'
+m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/..'
+m_k_data_to_thesaurus = f'{cwd}/thesaurus'
 
 def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
   """
@@ -29,7 +29,7 @@ def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
   """
   if not os.path.exists(m_k_data_to_thesaurus):
     print('Thesaurus not found. Generating now.')
-    os.system(f'python {cwd}/manuscript-object/thesaurus.py')
+    os.system(f'python {cwd}/thesaurus.py')
     print('Finished Generating Thesaurus')
 
   # manual_corrections = pd.read_csv('manual_vocab.csv')
