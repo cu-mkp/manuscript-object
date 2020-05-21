@@ -1,11 +1,34 @@
+""" Data transform to generate a folder of .csv files containing the context for the text inside tags. """
+# Python Modules
 import csv
 import os
 
+# Third-Party Modules
 from lxml import etree
 
-#from digital_manuscript import BnF
+from digital_manuscript import BnF
 
-#manuscript = BnF()
+manuscript = BnF()
+
+#cwd = os.getcwd()
+#print(cwd)
+#m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
+#m_k_data_to_context = f'{m_path}/manuscript-object/context'
+
+#if not os.path.exists(m_k_data_to_context):
+#    os.mkdir(m_k_data_to_context)
+
+#os.mkdir("context")
+
+# we assume the script is executed inside the manuscript-object directory,
+# which is itself inside of the m-k-manuscript-data directory
+ms_xml_path = cwd + "/../ms-xml/"
+
+tags = ["al", "bp", "cn", "env", "m", "md", "ms", "mu", "pa", "pl", "pn", "pro", "sn", "tl", "tmp", "wp"] # which tag we're looking for
+manuscript_version = "tl" # "tl", "tc" or "tcn"
+remove_chars = ["\n", "\'", "’", "\t", "+", " -", "- ", "\"", ",", "."] # characters to remove from words
+dont_cut = ["a", "in", "on", "or", "at", "as", "the"] # words that shouldn't cut other words (e.g. "in" inside "rain")
+context_size = 10 # how many words taken on each side
 
 def analyse_block(block, folio, writer):
     already_found_in_block = [] # used in case we get the same word multiple times inside a block
@@ -111,23 +134,6 @@ def get_context(tag):
         folio = manuscript_version + "_p" + number + side +"_preTEI"
         analyse_folio(folio, writer)
 
-
-cwd = os.getcwd()
-#m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../m-k-manuscript-data'
-#m_k_data_to_context = f'{m_path}/manuscript-object/context'
-#
-#if not os.path.exists(m_k_data_to_context):
-#  os.mkdir(m_k_data_to_context)
-
-#os.mkdir("context")
-
-ms_xml_path = cwd + "/../ms-xml/"
-
-tags = ["al", "bp", "cn", "env", "m", "md", "ms", "mu", "pa", "pl", "pn", "pro", "sn", "tl", "tmp", "wp"] # which tag we're looking for
-manuscript_version = "tl" # "tl", "tc" or "tcn"
-remove_chars = ["\n", "\'", "’", "\t", "+", " -", "- ", "\"", ",", "."] # characters to remove from words
-dont_cut = ["a", "in", "on", "or", "at", "as", "the"] # words that shouldn't cut other words (e.g. "in" inside "rain")
-context_size = 10 # how many words taken on each side
 
 for tag in tags:
     get_context(tag)
