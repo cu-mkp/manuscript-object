@@ -1,4 +1,4 @@
-# Last Updated | 2020-03-14
+# Last Updated | 2020-05-21
 # Python Modules
 import os
 import re
@@ -16,7 +16,7 @@ versions = ['tc', 'tcn', 'tl']
 properties = ['animal', 'body_part', 'currency', 'definition', 'environment', 'material', 'medical', 'measurement',
               'music', 'plant', 'place', 'personal_name', 'profession', 'sensory', 'tool', 'time', 'weapon']
 
-m_path = f'{os.getcwd()}/../m-k-manuscript-data'
+m_path = f'{os.getcwd()}/../'
 
 def update_metadata(manuscript: BnF) -> None:
   """

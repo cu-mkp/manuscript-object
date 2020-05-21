@@ -16,7 +16,7 @@ from digital_manuscript import BnF
 nlp = spacy.load('en_core_web_sm')
 
 cwd = os.getcwd()
-m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../m-k-manuscript-data'
+m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
 m_k_data_to_thesaurus = f'{m_path}/manuscript-object/thesaurus'
 
 properties = ['animal', 'body_part', 'currency', 'definition', 'environment', 'material',
