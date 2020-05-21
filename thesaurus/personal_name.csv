@@ -1,97 +1,118 @@
 freq,verbatim_term,prefLabel_en
-1,savonne,savonne
+1,athenaeus,athenaeu
+1,macrobius,macrobiu
+1,budaeus,budaeu
+1,berosus,berosu
+1,servius,serviu
+1,osorius,osoriu
+1,caresariensis,caresariensi
+1,magius,magiu
+1,festus,festu
+1,dion,dion
+1,strabo,strabo
+1,suetonius,suetoniu
+1,seneca,seneca
 1,synesius,synesiu
+3,herodotus,herodotu
+1,sabellicus,sabellicu
+1,pollux,pollux
+1,savonne,savonne
+1,isidorus,isidoru
+1,appianus,appianu
 1,volaterranus,volaterranu
 1,higinus,higinu
-1,festus,festu
-1,seneca,seneca
-1,athenaeus,athenaeu
 1,spartianus,spartianu
-1,dion,dion
-1,servius,serviu
-1,nonius,noniu
-1,herodotus,herodotu
-1,macrobius,macrobiu
-1,appianus,appianu
-1,budaeus,budaeu
-1,magius,magiu
-1,pollux,pollux
 1,blondus,blondu
-1,sabellicus,sabellicu
-1,ptolomée,ptolomée
+1,eupolemus,eupolemu
+1,statius,statiu
+1,pausanias,pausania
+1,nonius,noniu
+1,xenophon,xenophon
+1,ptolemy,ptolemy
 1,archimedes,archimede
 2,poncet,poncet
 1,mathiol,mathiol
-1,charlemaigne,charlemaigne
-1,dieu,dieu
-1,jésus,jésu
-1,sathan,sathan
+1,charlemagne,charlemagne
+1,god,god
+1,jesus,jesu
+1,satan,satan
 1,gesnerus,gesneru
-1,herodote,herodote
-1,polybe,polybe
-1,platon,platon
+1,medea,medea
+1,gyges,gyge
+1,halyattes,halyatte
+1,croesus,croesu
 1,cereris,cereri
-1,orphei,orphei
 1,achillis,achilli
-1,chirone,chirone
-1,homere,homere
-1,homerus,homeru
 1,numa,numa
-1,ciceron,ciceron
-1,david,david
-1,pythagore,pythagore
-1,apollo,apollo
-1,pelidae,pelidae
-1,orpheus,orpheu
-1,vergile,vergile
-1,josephe,josephe
-1,cebés,cebé
-1,cerés,ceré
+1,chirone,chirone
+1,livy,livy
+1,vergil,vergil
+1,josephus,josephu
 1,serapis,serapi
-1,pytagorien,pytagorien
-1,n,n
+1,cicero,cicero
+1,homerus,homeru
+1,orpheus,orpheu
+1,apollo,apollo
+1,orphei,orphei
+1,plato,plato
+1,cebes,cebe
+1,ceres,cere
+1,homer,homer
+1,polybius,polybiu
+1,david,david
+1,pelidae,pelidae
+1,pythagoras,pythagora
 1,othonis,othoni
-1,marmodaeus,marmodaeu
 1,tilesius,tilesiu
-1,mestre jehan cousin,mestre jehan cousin
+1,marmodaeus,marmodaeu
 1,mestre jehan garnier,mestre jehan garnier
+1,"mestre jehan cousin,","mestre jehan cousin,"
 1,mestre nicolas costé,mestre nicolas costé
-1,olaus magnus,olaus magnu
-1,mestre bernard palissi,mestre bernard palissi
-1,paulus manutius,paulus manutiu
-1,iulius capitollin,iulius capitollin
-1,quintus curtius,quintus curtiu
-1,cornelius nepos,cornelius nepo
-1,flavius vopiscus,flavius vopiscu
-1,alexander aphrodisaeus,alexander aphrodisaeu
+1,eleusinae deae,eleusinae deae
 1,iulius firmicus,iulius firmicu
-1,polydorus verg,polydorus verg
+1,hermolaus barbarus,hermolaus barbaru
+2,aulus gellius,aulus gelliu
+1,nicolaus damascenus,nicolaus damascenu
+1,julius capitolinus,julius capitolinu
+1,alexander ab alexandria,alexander ab alexandrium
+1,petrus appianus,appianu
+1,hieronimo ruscelli,hieronimo ruscelli
+1,paulus manutius,paulus manutiu
+2,valerius maximus,valerius maximu
+1,cornelius nepos,cornelius nepo
+1,polydorus vergilius,polydorus vergiliu
 1,dionisius halicarnassensis,dionisius halicarnassensi
+1,angelius bargaeus,angelius bargaeu
+1,alexander aphrodisaeus,alexander aphrodisaeu
+1,cornelius tacitus,cornelius tacitu
+1,flavius vopiscus,flavius vopiscu
+1,mestre bernard palissi,mestre bernard palissi
+1,olaus magnus,olaus magnu
+1,vuolfangus lazius,vuolfangus laziu
+1,quintus curtius,quintus curtiu
+1,hypolito salviano,hypolito salviano
 1,vincenzo sabio,vincenzo sabio
-1,du cros,du cro
 1,françois du cros,françois du cro
-1,st andré,st andré
-1,saint paul,saint paul
-1,saint anthoine,saint anthoine
+2,st. andrew,st. andrew
+1,du cros,du cro
+1,st. paul,st. paul
+1,st. anthony,st. anthony
 1,monsieur de montorsin,monsieur de montorsin
-2,sainct michel,sainct michel
-1,st jehan,st jehan
-1,sainct jehan,sainct jehan
+2,st. michael,st. michael
+2,st. john,st. john
 1,"hieronymus vida albensis episcopus, de b cremonensis","hieronymus vida albensis episcopus, de b cremonensi"
-1,saint jehan,saint jehan
-1,paul tiers,paul tier
+1,paul iii,paul iii
+1,glauci chii,glauci chii
 1,maistre alexandre,maistre alexandre
-1,tyran de syracuse,tyran de syracuse
-1,sainct andré,sainct andré
-1,sainct athanase,sainct athanase
+1,tyrant of syracuse,tyrant of syracuse
 1,justino martire,justino martire
-1,valere max,valere max
-1,aule gelle,aule gelle
-1,tite live,tite live
+1,goddesses of eleusis,goddesses of eleusi
+1,st. athanasius,st. athanasiu
+1,n. the pythagorean,n. the pythagorean
 1,sieur ouvryer,sieur ouvryer
-1,hyeronimus | mercurialis,hyeronimus | mercuriali
-1,abbatis | urspergensis,abbatis | urspergensi
+1,abbatis urspergensis,abbatis urspergensi
+1,hyeronimus mercurialis,hyeronimus mercuriali
 1,rembertus dodonaeus,rembertus dodonaeu
+1,georgio bucanano,georgio bucanano
 1,albertus magnus,albertus magnu
 1,des ormes,des orme
-1,georgio bucanano,georgio bucanano

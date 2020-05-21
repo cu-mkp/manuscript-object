@@ -2,26 +2,26 @@ freq,verbatim_term,prefLabel_en
 3,rain,rain
 1,courtyard,courtyard
 4,sun,sun
-1,window,window
 1,street,street
-4,wall,wall
+1,window,window
+3,wall,wall
 1,court,court
 2,mountains,mountain
 2,chamber,chamber
-2,walls,wall
-1,trenches,trench
-1,gabions,gabion
+1,tower,tower
+1,city,city
+1,walls,wall
+1,cities,city
 1,barricade,barricade
 2,houses,house
-1,tower,tower
-1,cities,city
+1,gabions,gabion
 1,casemates,casemate
-1,city,city
+1,trenches,trench
 2,hearth,hearth
 2,church,church
 1,land,land
-11,mine,mine
 1,countryside,countryside
+12,mine,mine
 1,humidity,humidity
 1,kitchen,kitchen
 1,burrows,burrow
@@ -34,33 +34,32 @@ freq,verbatim_term,prefLabel_en
 2,gardens,garden
 2,room,room
 3,quarry,quarry
-3,workshop,workshop
+4,workshop,workshop
 1,light,light
 1,firelight,firelight
 1,rains,rain
 1,quarreriesries,quarreriesry
-1,quarries,quarry
 1,rocks,rock
 3,sea,sea
+1,quarries,quarry
 3,river,river
 6,wind,wind
 1,vineyard,vineyard
 1,nature,nature
 1,cave,cave
 1,town,town
-1,freezes,freeze
 2,frost,frost
+1,freezes,freeze
 1,kitchens,kitchen
 2,garden,garden
-2,rivers,river
 1,paths,path
+2,rivers,river
 1,sunlight,sunlight
+2,barn,barn
 3,cold,cold
-1,barn,barn
 2,earth,earth
 2,grotto,grotto
 1,forests,forest
-1,barns,barn
 1,anthill,anthill
 1,rooms,room
 1,cabinets,cabinet
@@ -73,60 +72,59 @@ freq,verbatim_term,prefLabel_en
 1,pantries,pantry
 1,fountains,fountain
 1,house,house
-12,in the sun,in the sun
 3,in the shade,in the shade
+12,in the sun,in the sun
 2,open space,open space
 1,pierced door of a closed room,pierced door of a closed room
 6,in the rain,in the rain
 1,in the cool &amp; by moonlight,in the cool &amp; by moonlight
 1,veins of the mountain,veins of the mountain
-1,at night,at night
-1,in cold,in cold
 1,in wind,in wind
+1,in cold,in cold
 1,near the fire,near the fire
 1,autan wind,wind
 1,good &amp; fertile land,good &amp; fertile land
 1,cool &amp; dry place,cool &amp; dry place
-1,house or elsewhere,house
 1,fortresses of little importance,fortresses of little importance
-1,ditch casemates,casemate
+1,house or elsewhere,house
+1,edge of the ditch,edge of the ditch
 1,garrets topped with a tower,garrets topped with a tower
+1,ditch casemates,casemate
 1,private houses,house
 1,small towns,small town
-1,edge of the ditch,edge of the ditch
 1,in a very humid place where with such a rodier well or fountain one can water it often,in a very humid place where with such a rodier well or fountain one can water it often
-2,humid place,humid place
 1,very dry place,very dry place
-1,poorly fortified towns,poorly fortified town
+2,humid place,humid place
 1,fortified towns,fortified town
+1,poorly fortified towns,poorly fortified town
 4,dry place,dry place
 1,bonnes villes,bonnes ville
-4,in the serain,in the serain
 1,in the open air,in the open air
+4,in the serain,in the serain
 1,overcast weather,overcast weather
 1,partition walls of rooms,wall
 1,in the hottest sun,in the hottest sun
 1,in a closed space,in a closed space
-1,in one field &amp; in the one close by it,in one field &amp; in the one close by it
 1,where the depth of the earth is so fertile,where the depth of the earth is so fertile
+1,in one field &amp; in the one close by it,in one field &amp; in the one close by it
 1,thunder storms,thunder storm
 1,in nature,in nature
 1,cities where they are sworn masters,city
 1,humid weather,humid weather
+1,in a room where there is not a drop of air &amp; of wind,in a room where there is not a drop of air &amp; of wind
 1,deep well,well
 1,"well-closed room, where neither wind nor air may enter",room
 1,in a cellar,in a cellar
-1,in a room where there is not a drop of air &amp; of wind,in a room where there is not a drop of air &amp; of wind
 1,forges of foix,forges of foix
 1,place where the flame cannot cause damage,place where the flame cannot cause damage
-1,"from the ceiling, where the air or &amp; sun dry it","from the ceiling, where the air or &amp; sun dry it"
 1,warm &amp; close place,warm &amp; close place
-1,weather is warm &amp; serain,weather is warm &amp; serain
+1,"from the ceiling, where the air or &amp; sun dry it","from the ceiling, where the air or &amp; sun dry it"
 1,"thunder or rainy weather, cloud-covered &amp; cool","thunder or rainy weather, cloud-covered &amp; cool"
 1,room accomodated with three or 4 levels of large shelves,room
-1,in the very strong sun &amp; in the serain,in the very strong sun &amp; in the serain
+1,weather is warm &amp; serain,weather is warm &amp; serain
 1,tree or a plant that is on the bank,tree or a plant that is on the bank
 1,running river,river
+1,in the very strong sun &amp; in the serain,in the very strong sun &amp; in the serain
 1,open sea,sea
 2,dung heap,dung heap
 1,humid places,humid place
@@ -136,32 +134,34 @@ freq,verbatim_term,prefLabel_en
 1,in the wind,in the wind
 1,the first rain,rain
 1,dry weather,dry weather
-1,sandy paths,path
 1,rock caves,rock cafe
-1,near my area,near my area
 1,after rainy weather,after rainy weather
-1,in the cellar or other damp place,in the cellar or other damp place
+1,near my area,near my area
+1,sandy paths,path
+1,in the cellar,in the cellar
+1,other damp place,other damp place
 1,at the foot of a wall,at the foot of a wall
 1,great flakes near the mountains,great flakes near the mountain
 1,on the little hill,on the little hill
 2,damp place,damp place
 1,aerated place,aerated place
-1,mine in thoulouse,mine
 1,"depths of the earth, from the small hill of puy david","depths of the earth, from the small hill of puy david"
+1,mine in thoulouse,mine
 1,private home,private home
 1,out of the wind,out of the wind
 1,vineyard that is quite high up,vineyard
+1,higher up,higher up
 1,deep in the earth,deep in the earth
-2,in dampness,in dampness
+2,in the damp,in the damp
 1,rock formation,rock formation
 1,moisture of the cellar,moisture of the cellar
 1,serain of the night,serain of the night
 3,in a damp place,in a damp place
-1,from the depths of the sand-bed,from the depths of the sand-bed
-1,in the surroundings of all the bonnes villes,in the surroundings of all the bonnes ville
 1,lean territories,lean territory
-1,close to their house,close to their house
+1,in the surroundings of all the bonnes villes,in the surroundings of all the bonnes ville
 1,near the rocks in mountainous areas,near the rocks in mountainous area
+1,from the depths of the sand-bed,from the depths of the sand-bed
+1,close to their house,close to their house
 1,"serain &amp; mild weather, &amp; not too cold &amp; windy","serain &amp; mild weather, &amp; not too cold &amp; windy"
 1,fresh water rivers,river
 1,in freezing weather,in freezing weather
@@ -169,8 +169,8 @@ freq,verbatim_term,prefLabel_en
 1,fireplaces of large kitchens,fireplaces of large kitchen
 1,in the fireplace,in the fireplace
 1,weather is damp &amp; humid,weather is damp &amp; humid
-1,weather is not serain &amp; dry,weather is not serain &amp; dry
 1,on the fire,on the fire
+1,weather is not serain &amp; dry,weather is not serain &amp; dry
 1,humid air or place,humid air or place
 1,sand bank,sand bank
 1,in the fire,in the fire
@@ -184,18 +184,18 @@ freq,verbatim_term,prefLabel_en
 1,fresh &amp; damp earth,fresh &amp; damp earth
 1,wind or the cold,wind
 1,in all weather,in all weather
-1,hot sun,sun
-1,rainy and humid weather,rainy and humid weather
-1,current of the waters,current of the water
-1,"serain, &amp; the humidity of the night","serain, &amp; the humidity of the night"
 1,in sunlight,in sunlight
+1,current of the waters,current of the water
+1,rainy and humid weather,rainy and humid weather
+1,hot sun,sun
+1,serain &amp; the humidity of the night,serain &amp; the humidity of the night
 1,serain &amp; s quite dry weather,serain &amp; s quite dry weather
 1,in the fields,in the field
 1,sun in june,sun
 1,wind from a window,wind
 1,moist &amp; humid place,moist &amp; humid place
-1,the air,the air
 1,the wind,wind
+1,the air,the air
 1,cold &amp; humidity,cold
 1,spring of water in the pit,spring of water in the pit
 1,in a very flat &amp; level place,in a very flat &amp; level place
@@ -205,8 +205,8 @@ freq,verbatim_term,prefLabel_en
 2,in the cold,in the cold
 1,lean &amp; dry earth,lean &amp; dry earth
 1,water where crayfish eat,water
-1,night be dark &amp; without ☾,night be dark &amp; without ☾
 1,in straw,in straw
+1,night be dark &amp; without ☾,night be dark &amp; without ☾
 1,close to the house,close to the house
 1,silver spoon that one uses at the table,silver spoon that one uses at the table
 1,lean soil,lean soil
