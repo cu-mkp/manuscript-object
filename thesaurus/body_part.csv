@@ -13,10 +13,10 @@ freq,verbatim_term,prefLabel_en
 4,eyes,eye
 3,nail,nail
 11,foot,foot
-1,elbow,elbow
-3,eye,eye
 6,ear,ear
 2,ears,ear
+3,eye,eye
+1,elbow,elbow
 1,nostril,nostril
 2,tooth,tooth
 3,handfuls,handful
@@ -28,14 +28,14 @@ freq,verbatim_term,prefLabel_en
 1,wounds,wound
 2,feet,feet
 1,knees,knee
-1,fingers',finger
 1,arm's,arm
-1,thigh,thigh
+1,fingers',finger
 7,nose,nose
+1,thigh,thigh
 17,hands,hand
 1,palms,palm
-3,saliva,saliva
 4,head,head
+3,saliva,saliva
 2,blood,blood
 1,arm,arm
 2,fingertips,fingertip
@@ -60,8 +60,8 @@ freq,verbatim_term,prefLabel_en
 1,hair,hair
 2,flesh,flesh
 1,veins,vein
-1,headache,headache
 1,earwax,earwax
+1,headache,headache
 1,throat,throat
 1,underfoot,underfoot
 1,tongue,tongue
@@ -74,19 +74,19 @@ freq,verbatim_term,prefLabel_en
 1,naribus,naribus
 1,ore,ore
 5,little finger,finger
-1,secret places,secret place
 1,hairs of your beard,hair
+1,secret places,secret place
 1,big finger,finger
 1,nail of your right thumb,nail
 1,winds of the belly,wind
 1,distilled urine,urine
-1,middle finger,finger
 3,index finger,finger
-2,ring finger,finger
+1,middle finger,finger
 1,right hand,hand
+2,ring finger,finger
 1,soles of your feet,soles of your feet
-1,hollow of the hands,hollow of the hand
 1,soles of the feet,soles of the feet
+1,hollow of the hands,hollow of the hand
 1,bare hand,hand
 1,joint of the little finger,joint of the little finger
 1,back of your hand,back

@@ -2,7 +2,7 @@
 import os
 
 cwd = os.getcwd()
-m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../m-k-manuscript-data'
+m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
 m_k_data_to_thesaurus = f'{m_path}/manuscript-object/thesaurus'
 
 versions = ['tc', 'tcn', 'tl']
