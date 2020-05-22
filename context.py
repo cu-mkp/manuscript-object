@@ -6,23 +6,17 @@ import os
 # Third-Party Modules
 from lxml import etree
 
-from digital_manuscript import BnF
+#from digital_manuscript import BnF
 
-manuscript = BnF()
+#manuscript = BnF()
 
-#cwd = os.getcwd()
+cwd = os.getcwd()
 #print(cwd)
-#m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
-#m_k_data_to_context = f'{m_path}/manuscript-object/context'
+m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
+m_k_data_to_context = f'{m_path}/manuscript-object/context'
 
-#if not os.path.exists(m_k_data_to_context):
-#    os.mkdir(m_k_data_to_context)
-
-#os.mkdir("context")
-
-# we assume the script is executed inside the manuscript-object directory,
-# which is itself inside of the m-k-manuscript-data directory
-ms_xml_path = cwd + "/../ms-xml/"
+if not os.path.exists(m_k_data_to_context):
+    os.mkdir(m_k_data_to_context)
 
 tags = ["al", "bp", "cn", "env", "m", "md", "ms", "mu", "pa", "pl", "pn", "pro", "sn", "tl", "tmp", "wp"] # which tag we're looking for
 manuscript_version = "tl" # "tl", "tc" or "tcn"
@@ -112,7 +106,7 @@ def analyse_block(block, folio, writer):
         already_found_in_block.append(tag_text)
 
 def analyse_folio(folio, writer):
-    input_filename = ms_xml_path + manuscript_version + "/" + folio + ".xml"
+    input_filename = m_path + "/ms-xml/" + manuscript_version + "/" + folio + ".xml"
 
     tree = etree.parse(input_filename)
     #root = tree.getroot()
@@ -121,7 +115,7 @@ def analyse_folio(folio, writer):
         analyse_block(block, folio, writer)
 
 def get_context(tag):
-    output_path = "context/" + manuscript_version + "/"
+    output_path = m_k_data_to_context + "/" + manuscript_version + "/"
     output_filename = output_path + "context_" + manuscript_version + "_" + tag + "_tags.csv"
     out_file = open(output_filename, 'w')
     writer = csv.writer(out_file)

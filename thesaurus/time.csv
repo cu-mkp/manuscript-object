@@ -18,12 +18,12 @@ freq,verbatim_term,prefLabel_en
 1,march,march
 2,weeks,week
 3,long,long
-1,evening,evening
 1,time,time
+1,evening,evening
 1,advent,advent
+1,wednesdays,wednesday
 1,tuesdays,tuesday
 1,thursdays,thursday
-1,wednesdays,wednesday
 1,saturdays,saturday
 2,serain,serain
 1,pauses,pause
@@ -34,23 +34,23 @@ freq,verbatim_term,prefLabel_en
 1,june,june
 1,winter,winter
 1,frost,frost
-1,subsequent,subsequent
 1,preceded,preceded
+1,subsequent,subsequent
 1,july,july
 2,in the morning,in the morning
-1,in the summer,in the summer
 1,during the winter,during the winter
+1,in the summer,in the summer
 1,times past,time
 6,quarter of an hour,quarter of an hour
 1,good quarter of an hour,good quarter of an hour
 1,half a day,day
 8,at night,at night
 2,by night,by night
+1,sun is approaching midday,sun is approaching midday
 1,at the next sowing,at the next sowing
 1,at night in the cool &amp; by moonlight,at night in the cool &amp; by moonlight
-1,sun is approaching midday,sun is approaching midday
-1,2nd september 1581,2nd september 1581
 1,st. andrew’s day,st. andrew’s day
+1,2nd september 1581,2nd september 1581
 22,long time,time
 1,every morning,morning
 1,every three days,day
@@ -69,30 +69,30 @@ freq,verbatim_term,prefLabel_en
 1,at the waning of the moon,at the waning of the moon
 1,humid weather,humid weather
 1,before st. michael,before st. michael
-1,after mid-july until st. michael,after mid-july until st. michael
-1,from all saints’ day until christmas,from all saints’ day until christma
-1,all summer,summer
 1,at st. michael,at st. michael
-1,for the space of two hours,for the space of two hour
+1,all summer,summer
+1,from all saints’ day until christmas,from all saints’ day until christma
+1,after mid-july until st. michael,after mid-july until st. michael
 2,in the winter,in the winter
-1,for the entire year,for the entire year
-1,during the summer,during the summer
 1,on a warm &amp; dry day,on a warm &amp; dry day
-1,after several days,after several day
+1,during the summer,during the summer
+1,for the entire year,for the entire year
+1,for the space of two hours,for the space of two hour
 1,beginning of august,beginning of august
+1,after several days,after several day
 1,good hours,hour
 1,"at regular intervals, day &amp; night",night
 1,from the feast of st. john until the 25th of april,from the feast of st. john until the 25th of april
 1,around the feast of st. john,around the feast of st. john
+1,around st. john’s day,around st. john’s day
+1,from their birth until u the their time when they make their cocoons &amp; their prisons,from their birth until u the their time when they make their cocoons &amp; their prison
 1,per day,per day
 1,during the day,during the day
-1,around st. john’s day,around st. john’s day
-1,around pentecost,around pentecost
-1,around holy week,around holy week
-1,from their birth until u the their time when they make their cocoons &amp; their prisons,from their birth until u the their time when they make their cocoons &amp; their prison
 1,until holy week,until holy week
-1,in the month of june &amp; july,in the month of june &amp; july
+1,around holy week,around holy week
+1,around pentecost,around pentecost
 1,space of fifteen days,space of fifteen day
+1,in the month of june &amp; july,in the month of june &amp; july
 1,long ago,long ago
 1,a quarter of an hour,a quarter of an hour
 1,very long time,time
@@ -112,8 +112,8 @@ freq,verbatim_term,prefLabel_en
 1,in the past,in the past
 1,whole year,year
 1,after the bread has been taken out,after the bread has been taken out
-2,next morning,morning
 1,three days a week,day
+2,next morning,morning
 1,all year long,long
 1,in a day,in a day
 1,serain of the night,serain
@@ -128,15 +128,15 @@ freq,verbatim_term,prefLabel_en
 2,hour &amp; a half,hour
 1,in the month of august,in the month of august
 1,for a month,for a month
-1,twice a day,day
-1,for the space of 9 days,for the space of 9 day
 1,for the time it takes you to say 8 paternoster,for the time it takes you to say 8 paternoster
-1,until the beginning of august,until the beginning of august
-1,in that year,in that year
+1,for the space of 9 days,for the space of 9 day
+1,twice a day,day
 1,in the month of january,in the month of january
+1,in that year,in that year
 1,from mid-may,from mid-may
-1,season of their pleasure,season
+1,until the beginning of august,until the beginning of august
 1,the evening and the morning,evening
+1,season of their pleasure,season
 1,rainy weather,rainy weather
 1,long enough,long enough
 1,in the spring,in the spring
@@ -147,18 +147,18 @@ freq,verbatim_term,prefLabel_en
 1,"out of season, when winter denies flowers","out of season, when winter denies flower"
 1,several days,day
 1,in the early morning,in the early morning
-1,for a whole day,for a whole day
 1,natural day,day
+1,for a whole day,for a whole day
 1,at night or at a silent time,at night or at a silent time
 1,a day &amp; a night,day
 1,in autumn,in autumn
-1,well in advance,well in advance
-1,a good hour,hour
 1,at least as long,long
+1,a good hour,hour
+1,well in advance,well in advance
 1,the follwing day,day
 1,a good space of time,a good space of time
 2,during winter,during winter
 1,the winter,winter
 1,"different times, but continue once you have started",time
-1,in the space of a thousand years,in the space of a thousand year
 1,preceding day,day
+1,in the space of a thousand years,in the space of a thousand year
