@@ -18,7 +18,7 @@ m_k_data_to_context = f'{m_path}/manuscript-object/context'
 if not os.path.exists(m_k_data_to_context):
     os.mkdir(m_k_data_to_context)
 
-tags = ["al", "bp", "cn", "env", "m", "md", "ms", "mu", "pa", "pl", "pn", "pro", "sn", "tl", "tmp", "wp"] # which tag we're looking for
+tags = ["al", "bp", "cn", "env", "m", "md", "ms", "mu", "pa", "pl", "pn", "pro", "sn", "tl", "tmp", "wp"] # which tags we're looking for
 manuscript_version = "tl" # "tl", "tc" or "tcn"
 remove_chars = ["\n", "\'", "’", "\t", "+", " -", "- ", "\"", ",", "."] # characters to remove from words
 dont_cut = ["a", "in", "on", "or", "at", "as", "the"] # words that shouldn't cut other words (e.g. "in" inside "rain")
