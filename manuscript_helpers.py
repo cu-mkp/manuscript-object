@@ -11,7 +11,7 @@ properties = ['animal', 'body_part', 'currency', 'definition',
               'profession', 'sensory', 'tool', 'time', 'weapon']
 
 cwd = os.getcwd()
-m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../m-k-manuscript-data'
+m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
 m_k_data_to_thesaurus = f'{m_path}/manuscript-object/thesaurus'
 
 def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
