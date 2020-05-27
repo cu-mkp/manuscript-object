@@ -1,29 +1,29 @@
 freq,verbatim_term,prefLabel_en
 1,prunes,prune
-1,gilliflower,gilliflower
 1,jujubes,jujube
-1,marshmallow,marshmallow
 1,mallow,mallow
 3,cinnamon,cinnamon
+1,marshmallow,marshmallow
+1,gilliflower,gilliflower
 1,cabbage,cabbage
 21,walnut,walnut
-2,onions,onion
 10,linseed,linseed
 4,garlic,garlic
+2,onions,onion
 4,linen,linen
-5,saffron,saffron
 4,brazilwood,brazilwood
-1,prele,prele
-5,bean,bean
-8,willow,willow
-3,pea,pea
 1,horsetail,horsetail
+1,prele,prele
+8,willow,willow
+5,saffron,saffron
+5,bean,bean
+3,pea,pea
 2,carnation,carnation
 3,walnuts,walnut
-1,baillard,baillard
+1,beans,bean
 5,millet,millet
 1,pomole,pomole
-1,beans,bean
+1,baillard,baillard
 4,roses,rose
 2,heather,heather
 1,visaube,visaube
@@ -48,8 +48,8 @@ freq,verbatim_term,prefLabel_en
 5,boxwood,boxwood
 1,saltwort,saltwort
 1,fern,fern
-1,pepper,pepper
 4,wormwood,wormwood
+1,pepper,pepper
 1,melons,melon
 3,marigold,marigold
 2,fir,fir
@@ -60,12 +60,12 @@ freq,verbatim_term,prefLabel_en
 3,mericotons,mericoton
 2,pavis,pavi
 1,lemon,lemon
-2,bugloss,bugloss
-5,pansy,pansy
 1,cornflower,cornflower
 1,flax,flax
-1,grains,grain
 1,columbine,columbine
+2,bugloss,bugloss
+1,grains,grain
+5,pansy,pansy
 1,dittany,dittany
 2,rue,rue
 1,mandrake,mandrake
@@ -74,15 +74,15 @@ freq,verbatim_term,prefLabel_en
 1,guaiac,guaiac
 1,peony,peony
 1,symphytum,symphytum
-2,mustard,mustard
 2,cloves,clofe
+2,mustard,mustard
 1,oats,oat
 1,cherries,cherry
 1,plums,plum
-1,lettuce,lettuce
 1,ettuce,ettuce
-3,rapeseed,rapeseed
 2,almonds,almond
+1,lettuce,lettuce
+3,rapeseed,rapeseed
 1,fenugreek,fenugreek
 3,apricots,apricot
 1,alberges,alberge
@@ -97,8 +97,8 @@ freq,verbatim_term,prefLabel_en
 2,amaranth,amaranth
 1,pomegranate,pomegranate
 1,sumac,sumac
-1,maple,maple
 6,elm,elm
+1,maple,maple
 1,persicaire,persicaire
 1,maplewood,maplewood
 1,fustet,fustet
@@ -127,33 +127,33 @@ freq,verbatim_term,prefLabel_en
 1,potirons,potiron
 1,mushrooms,mushroom
 2,wormseed,wormseed
+2,pansies,pansy
+1,ranunculus,ranunculu
+1,cornflowers,cornflower
 1,marigolds,marigold
 3,carnations,carnation
-1,cornflowers,cornflower
-1,ranunculus,ranunculu
-2,pansies,pansy
 1,broom,broom
 1,zedoary,zedoary
-1,burdock,burdock
 1,dandelion,dandelion
+1,burdock,burdock
 1,pappus,pappu
 1,chauchés,chauchés
 1,pears,pear
-1,sauvignons,sauvignon
+1,apples,apple
 1,grapes,grape
 1,grape,grape
-1,apples,apple
+1,sauvignons,sauvignon
 1,thyme,thyme
-2,strawberries,strawberry
 1,strawberry,strawberry
+2,strawberries,strawberry
 1,periwinkle,periwinkle
 1,mosses,moss
 1,scabious,scabious
-1,seeds,seed
 1,ruta,rutum
+1,seeds,seed
 7,pastel woad,pastel woad
-1,hog’s fennel,hog’s fennel
 1,grains of wheat,grain
+1,hog’s fennel,hog’s fennel
 25,spike lavender,spike lavender
 1,service tree,tree
 8,fig tree,tree
@@ -163,38 +163,38 @@ freq,verbatim_term,prefLabel_en
 2,capilli veneris,capilli veneri
 1,lapathum acutum,lapathum acutum
 1,cooking herbs,cooking herb
-1,monk’s rhubarb,monk’s rhubarb
 1,lapathium acutum maius,lapathium acutum maiu
+1,monk’s rhubarb,monk’s rhubarb
 1,garden lily,garden lily
 1,red poppy,red poppy
 1,lily flower,lily flower
 1,consolida maior,consolida maior
 2,walnut tree,tree
-1,almond tree,tree
 3,almond trees,tree
+1,almond tree,tree
 1,white mulberry,white mulberry
-1,fir tree,tree
 1,pear tree,tree
+1,fir tree,tree
 2,palma christi,palma christi
 1,broom flower,broom flower
 2,orberé grain,grain
-1,blackthorn sloes,blackthorn slo
 1,olive tree,tree
+1,blackthorn sloes,blackthorn slo
 1,elm tree,tree
 1,vine shoots,vine shoot
 1,guesdre woad,guesdre woad
 1,elm root,elm root
-1,orange trees,tree
 1,orange tree,tree
-1,prune trees,tree
+1,orange trees,tree
 1,apricot trees,tree
+1,prune trees,tree
 1,peach trees,tree
 1,plum trees,tree
 1,quince trees,tree
 3,peach tree,tree
 1,mericoton peaches,peach
-1,palta lupina,palta lupina
 1,yellow meadow flowers,yellow meadow flower
+1,palta lupina,palta lupina
 1,caper plant,caper plant
 1,wheat chaff,wheat chaff
 1,yellow millet,millet
