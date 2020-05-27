@@ -6,7 +6,7 @@ from margin import Margin
 re_tags = re.compile(r'<.*?>') # selects any tag
 re_head = re.compile(r'<head( (margin|comment)="[\w-]*")?>(.*?)</head>')
 re_materials = re.compile(r'<m>(.*?)<\/m>') # selects text between materials tags
-prop_dict = {'animal': 'al', 'body_part': 'bp', 'currency': 'cn', 'definition': 'df',
+prop_dict = {'animal': 'al', 'body_part': 'bp', 'currency': 'cn', 'definition': 'df', 'deleted': 'del',
               'environment': 'env', 'material': 'm', 'medical': 'md', 'measurement': 'ms',
               'music': 'mu', 'plant': 'pa', 'place': 'pl', 'personal_name': 'pn',
               'profession': 'pro', 'sensory': 'sn', 'tool': 'tl', 'time': 'tmp', 'weapon': 'wp',
