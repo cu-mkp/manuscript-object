@@ -17,11 +17,32 @@ viz_path = f'{m_path}/manuscript-object/context_visualizations'
 if not os.path.exists(m_k_data_to_context):
     sys.exit("Error: no context directory found")
 
-tags = ["al", "bp", "cn", "env", "m", "md", "ms", "mu", "pa", "pl", "pn", "pro", "sn", "tl", "tmp", "wp"] # which tags we're looking for
+tags = ["al", "bp", "cn", "env", "m", "md", "ms", "mu", "pa", "pl", "pn", "pro",
+        "sn", "tl", "tmp", "wp"] # which tags we're looking for
+tag_names = ["animal (al)", "body part (bp)", "currency (cn)", "environment (en)",
+             "material (m)", "medical (md)", "measurement (ms)", "music (mu)",
+             "plant (pu)", "place (pl)", "personal name (pn)", "profession (pro)",
+             "sensory (sn)", "tool (tl)", "temporal (tmp)", "arms and armor (wp)"]
 manuscript_version = "tl" # "tl", "tc" or "tcn"
 
 def filter_stopwords(word):
-    stopwords = ["ourselves", "hers", "between", "yourself", "but", "again", "there", "about", "once", "during", "out", "very", "having", "with", "they", "own", "an", "be", "some", "for", "do", "its", "yours", "such", "into", "of", "most", "itself", "other", "off", "is", "s", "am", "or", "who", "as", "from", "him", "each", "the", "themselves", "until", "below", "are", "we", "these", "your", "his", "through", "don", "nor", "me", "were", "her", "more", "himself", "this", "down", "should", "our", "their", "while", "above", "both", "up", "to", "ours", "had", "she", "all", "no", "when", "at", "any", "before", "them", "same", "and", "been", "have", "in", "will", "on", "does", "yourselves", "then", "that", "because", "what", "over", "why", "so", "can", "did", "not", "now", "under", "he", "you", "herself", "has", "just", "where", "too", "only", "myself", "which", "those", "i", "after", "few", "whom", "t", "being", "if", "theirs", "my", "against", "a", "by", "doing", "it", "how", "further", "was", "here", "than"]
+    stopwords = ["ourselves", "hers", "between", "yourself", "but", "again",
+                 "there", "about", "once", "during", "out", "very", "having",
+                 "with", "they", "own", "an", "be", "some", "for", "do", "its",
+                 "yours", "such", "into", "of", "most", "itself", "other",
+                 "off", "is", "s", "am", "or", "who", "as", "from", "him",
+                 "each", "the", "themselves", "until", "below", "are", "we",
+                 "these", "your", "his", "through", "don", "nor", "me", "were",
+                 "her", "more", "himself", "this", "down", "should", "our",
+                 "their", "while", "above", "both", "up", "to", "ours", "had",
+                 "she", "all", "no", "when", "at", "any", "before", "them",
+                 "same", "and", "been", "have", "in", "will", "on", "does",
+                 "yourselves", "then", "that", "because", "what", "over", "why",
+                  "so", "can", "did", "not", "now", "under", "he", "you",
+                  "herself", "has", "just", "where", "too", "only", "myself",
+                  "which", "those", "i", "after", "few", "whom", "t", "being",
+                  "if", "theirs", "my", "against", "a", "by", "doing", "it",
+                  "how", "further", "was", "here", "than"]
     if word in stopwords:
         return False
     else:
@@ -78,9 +99,30 @@ for i in all_context:
         sj = set(j)
         line.append(len(si.intersection(sj))/len(si.union(sj))*100)
     matrix.append(line)
-df = pandas.DataFrame(matrix, index = tags, columns = tags)
+df = pandas.DataFrame(matrix, index = tag_names, columns = tag_names)
 no_diag_mask = np.identity(len(tags))
-plt.subplots(figsize = (10,10))
-sns_plot = sns.heatmap(df, square = True, mask = no_diag_mask, annot = True, annot_kws = {"size": 12})
-fig = sns_plot.get_figure()
+plt.subplots(figsize = (15, 15))
+heatmap = sns.heatmap(df, square = True, mask = no_diag_mask,
+                      annot = True, annot_kws = {"size": 12})
+heatmap.collections[0].colorbar.set_label("Percentage of similar words in 20-word surroundings",
+                                          fontsize = 15)
+heatmap.set_title("How similar is the author-practioner's vocabulary when talking about two different topics",
+                  fontsize = 15)
+fig = heatmap.get_figure()
 fig.savefig(viz_path + "/correlations.png")
+
+# histogram visualization
+# how diverse are contexts from different tags
+plt.subplots(figsize = (15,20))
+hist = sns.barplot(x = tag_names, y = [len(l) for l in all_context],
+                   palette = "deep")
+hist.set_ylabel("Number of unique words in 20-word surroundings (log scale)",
+                fontsize = 20)
+hist.set_xlabel("Tag", fontsize = 20)
+hist.set_title("How diversified is the author-practioner's vocabulary when talking about topics",
+               fontsize = 25)
+hist.set_xticklabels(hist.get_xticklabels(), rotation = 45, fontsize = 15)
+#hist.yaxis.set_major_locator(plt.FixedLocator(5))
+hist.set(yscale = "log")
+fig2 = hist.get_figure()
+fig2.savefig(viz_path + "/hist.png")
