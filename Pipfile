@@ -16,6 +16,9 @@ notebook = "*"
 tqdm = "*"
 bleach = ">=3.1.1"
 lxml = "*"
+seaborn = "*"
+matplotlib = "*"
+scipy = "*"
 
 [requires]
 python_version = "3.7"

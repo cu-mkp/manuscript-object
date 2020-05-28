@@ -3,11 +3,16 @@ import csv
 import sys
 import os
 
+# Third-Party Modules
+import numpy as np
 import pandas
+import seaborn as sns; sns.set()
+import matplotlib.pyplot as plt
 
 cwd = os.getcwd()
 m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
 m_k_data_to_context = f'{m_path}/manuscript-object/context'
+viz_path = f'{m_path}/manuscript-object/context_visualizations'
 
 if not os.path.exists(m_k_data_to_context):
     sys.exit("Error: no context directory found")
@@ -74,3 +79,8 @@ for i in all_context:
         line.append(len(si.intersection(sj))/len(si.union(sj))*100)
     matrix.append(line)
 df = pandas.DataFrame(matrix, index = tags, columns = tags)
+no_diag_mask = np.identity(len(tags))
+plt.subplots(figsize = (10,10))
+sns_plot = sns.heatmap(df, square = True, mask = no_diag_mask, annot = True, annot_kws = {"size": 12})
+fig = sns_plot.get_figure()
+fig.savefig(viz_path + "/correlations.png")
