@@ -31,9 +31,30 @@ brew install python3 git pipenv
 git clone git@github.com:cu-mkp/m-k-manuscript-data.git
 git clone git@github.com:cu-mkp/manuscript-object.git
 ```
-Then, `cd manuscript object`
+Then, `cd manuscript-object`
 
 3. Run `pipenv install` to install dependencies to the pipenv shell.
 
 4. To enter the pipenv shell, run `pipenv shell`. To exit, press ^D or type `exit`. Inside the pipenv shell, all outside dependencies for the repository are installed. 
 
+# Setup for Windows
+
+1. If you do not have python3 downloaded on you machine, I would advise you install Anaconda. It will make it easier for us to install the necessary packages. Go to https://www.anaconda.com/products/individual, scroll to the bottom of the page and download the proper installer for your computer then run it (we want python 3.7).
+
+2. If you do not have it, install git.
+
+3. Open the Windows PowerShell, use cd to go where you want the project to be, then run 
+```bash
+git clone git@github.com:cu-mkp/m-k-manuscript-data.git
+git clone git@github.com:cu-mkp/manuscript-object.git
+```
+
+4. We need to install all necessary python packages, in anaconda powershell prompt run :
+```bash
+conda install pandas nltk pip
+pip install print-tree2
+pip install spacy
+pip install wordcloud
+```
+
+5. We now need to run our notebooks. In anaconda powershell prompt, use cd to navigate to the folder where you copied the manuscript object. Then run `jupyter notebook`. In Jupyter you can now open the notebooks and run them.
