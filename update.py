@@ -86,7 +86,7 @@ def update_entries(manuscript: BnF) -> None:
         f_txt.close()
 
         f_xml = open(filename_xml, 'w')
-        f_xml.write(content_xml)
+        f_xml.write(f'<entry>\n{content_xml}\n</entry>')
         f_xml.close()
 
 def update_ms(manuscript:BnF) -> None:
@@ -130,7 +130,7 @@ def update_all_folios(manuscript: BnF) -> None:
         text = f'{text}\n\n{new_text}' if text else new_text
 
       f = open(f'{m_path}/allFolios/{folder}/all_{version}.{folder}', 'w')
-      f.write(text)
+      f.write(f'<all>\n{text}\n</all>')
       f.close()
 
 def update_time():
