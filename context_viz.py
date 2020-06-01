@@ -54,75 +54,101 @@ def filter_digits(word):
     else:
         return True
 
+all_items = []
 all_context = []
 
 for tag in tags:
     filename = m_k_data_to_context + "/" + manuscript_version + "/context_" + manuscript_version + "_" + tag + "_tags.csv"
-    this_context = []
+    these_items = [] # interior of the tag
+    this_context = [] # context of the tag
 
     with open(filename) as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         line_count = 0
         for row in csv_reader:
             if line_count > 0:
-                str = (row[2] + row[3]).lower()
-                remove_chars = ["[", "]", "'", ",", '&']
+                tag_text = row[1].lower()
+                context_text = (row[2] + row[3]).lower()
+                remove_chars = ["[", "]", "'", ",", '&', "’"]
                 for char in remove_chars:
-                    str = str.replace(char, "")
-                word_list = str.split()
+                    tag_text = tag_text.replace(char, "")
+                    context_text = context_text.replace(char, "")
+                tag_word_list = tag_text.split()
+                context_word_list = context_text.split()
                 # remove stopwords
-                word_list = filter(filter_stopwords, word_list)
+                tag_word_list = filter(filter_stopwords, tag_word_list)
+                context_word_list = filter(filter_stopwords, context_word_list)
                 # remove digits
-                word_list = filter(filter_digits, word_list)
-                # remove duplicates
-                word_list = list(dict.fromkeys(word_list))
-                if word_list != []:
-                    this_context += word_list
+                tag_word_list = filter(filter_digits, tag_word_list)
+                context_word_list = filter(filter_digits, context_word_list)
+                if tag_word_list != []:
+                    these_items += tag_word_list
+                if context_word_list != []:
+                    this_context += context_word_list
             line_count += 1
 
+    # remove duplicates
+    #these_items = list(dict.fromkeys(these_items))
+    this_context = list(dict.fromkeys(this_context))
+
+    all_items.append(these_items)
     all_context.append(this_context)
 
 # heatmap visualization
 # how similar are contexts from different tags
-matrix = []
-for i in range(len(tags)):
-    l = []
-    for j in range(len(tags)):
-        l.append(0)
-    matrix.append(l)
+def create_heatmap():
+    matrix = []
+    for i in range(len(tags)):
+        l = []
+        for j in range(len(tags)):
+            l.append(0)
+        matrix.append(l)
 
-matrix = []
-for i in all_context:
-    si = set(i)
-    line = []
-    for j in all_context:
-        sj = set(j)
-        line.append(len(si.intersection(sj))/len(si.union(sj))*100)
-    matrix.append(line)
-df = pandas.DataFrame(matrix, index = tag_names, columns = tag_names)
-no_diag_mask = np.identity(len(tags))
-plt.subplots(figsize = (15, 15))
-heatmap = sns.heatmap(df, square = True, mask = no_diag_mask,
-                      annot = True, annot_kws = {"size": 12})
-heatmap.collections[0].colorbar.set_label("Percentage of similar words in 20-word surroundings",
-                                          fontsize = 15)
-heatmap.set_title("How similar is the author-practioner's vocabulary when talking about two different topics",
-                  fontsize = 15)
-fig = heatmap.get_figure()
-fig.savefig(viz_path + "/correlations.png")
+    matrix = []
+    for i in all_context:
+        si = set(i)
+        line = []
+        for j in all_context:
+            sj = set(j)
+            line.append(len(si.intersection(sj))/len(si.union(sj))*100)
+        matrix.append(line)
+    df = pandas.DataFrame(matrix, index = tag_names, columns = tag_names)
+    no_diag_mask = np.identity(len(tags))
+    plt.subplots(figsize = (15, 15))
+    heatmap = sns.heatmap(df, square = True, mask = no_diag_mask,
+                          annot = True, annot_kws = {"size": 12})
+    heatmap.collections[0].colorbar.set_label("Percentage of similar words in 20-word surroundings",
+                                              fontsize = 15)
+    heatmap.set_title("How similar is the author-practioner's vocabulary when talking about two different topics",
+                      fontsize = 15)
+    fig = heatmap.get_figure()
+    fig.savefig(viz_path + "/correlations.png")
 
-# histogram visualization
+# barplot visualization
 # how diverse are contexts from different tags
-plt.subplots(figsize = (15,20))
-hist = sns.barplot(x = tag_names, y = [len(l) for l in all_context],
-                   palette = "deep")
-hist.set_ylabel("Number of unique words in 20-word surroundings (log scale)",
-                fontsize = 20)
-hist.set_xlabel("Tag", fontsize = 20)
-hist.set_title("How diversified is the author-practioner's vocabulary when talking about topics",
-               fontsize = 25)
-hist.set_xticklabels(hist.get_xticklabels(), rotation = 45, fontsize = 15)
-#hist.yaxis.set_major_locator(plt.FixedLocator(5))
-hist.set(yscale = "log")
-fig2 = hist.get_figure()
-fig2.savefig(viz_path + "/hist.png")
+def create_barplot(normalized):
+    plt.subplots(figsize = (15,25))
+    if normalized:
+        data = [len(all_context[i])/len(all_items[i]) for i in range(len(tags))]
+        ylabel_appendix = ", normalized"
+        filename_appendix = "_normalized"
+    else:
+        data = [len(all_context[i]) for i in range(len(tags))]
+        ylabel_appendix = ""
+        filename_appendix = ""
+    hist = sns.barplot(x = tag_names, y = data,
+                       palette = "deep")
+    hist.set_ylabel("Number of unique words in 20-word surroundings (log scale)" + ylabel_appendix,
+                    fontsize = 20)
+    hist.set_xlabel("Tag", fontsize = 20)
+    hist.set_title("How diversified is the author-practioner's vocabulary when talking about topics",
+                   fontsize = 25)
+    hist.set_xticklabels(hist.get_xticklabels(), rotation = 90, fontsize = 15)
+    #hist.yaxis.set_major_locator(plt.FixedLocator(5))
+    hist.set(yscale = "log")
+    fig2 = hist.get_figure()
+    fig2.savefig(viz_path + "/barplot" + filename_appendix + ".png")
+
+#create_heatmap()
+create_barplot(True)
+create_barplot(False)
