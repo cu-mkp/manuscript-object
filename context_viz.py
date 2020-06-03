@@ -56,6 +56,8 @@ def filter_digits(word):
 
 all_items = []
 all_context = []
+all_items_without_duplicates = []
+all_context_without_duplicates = []
 
 for tag in tags:
     filename = m_k_data_to_context + "/" + manuscript_version + "/context_" + manuscript_version + "_" + tag + "_tags.csv"
@@ -87,53 +89,74 @@ for tag in tags:
                     this_context += context_word_list
             line_count += 1
 
-    # remove duplicates
-    #these_items = list(dict.fromkeys(these_items))
-    this_context = list(dict.fromkeys(this_context))
-
     all_items.append(these_items)
     all_context.append(this_context)
 
+    all_items_without_duplicates.append(list(dict.fromkeys(these_items)))
+    all_context_without_duplicates.append(list(dict.fromkeys(this_context)))
+
 # heatmap visualization
 # how similar are contexts from different tags
-def create_heatmap():
+def create_symmetrical_heatmap():
     matrix = []
-    for i in range(len(tags)):
-        l = []
-        for j in range(len(tags)):
-            l.append(0)
-        matrix.append(l)
-
-    matrix = []
-    for i in all_context:
+    for i in all_context_without_duplicates:
         si = set(i)
         line = []
-        for j in all_context:
+        for j in all_context_without_duplicates:
             sj = set(j)
+            # how much of si and sj is in common
             line.append(len(si.intersection(sj))/len(si.union(sj))*100)
         matrix.append(line)
+
     df = pandas.DataFrame(matrix, index = tag_names, columns = tag_names)
     no_diag_mask = np.identity(len(tags))
     plt.subplots(figsize = (15, 15))
     heatmap = sns.heatmap(df, square = True, mask = no_diag_mask,
-                          annot = True, annot_kws = {"size": 12})
+                          annot = True, annot_kws = {"size": 16})
     heatmap.collections[0].colorbar.set_label("Percentage of similar words in 20-word surroundings",
-                                              fontsize = 15)
+                                              fontsize = 20)
     heatmap.set_title("How similar is the author-practioner's vocabulary when talking about two different topics",
-                      fontsize = 15)
+                      fontsize = 16)
     fig = heatmap.get_figure()
-    fig.savefig(viz_path + "/correlations.png")
+    fig.savefig(viz_path + "/symmetrical_heatmap.png")
+
+# heatmap visualization
+# how similar are contexts from different tags
+def create_asymmetrical_heatmap():
+    matrix = []
+    for i in all_context_without_duplicates:
+        si = set(i)
+        line = []
+        for j in all_context_without_duplicates:
+            sj = set(j)
+            # how much of si is in sj
+            line.append(len(si.intersection(sj))/len(sj)*100)
+        matrix.append(line)
+
+    df = pandas.DataFrame(matrix, index = tag_names, columns = tag_names)
+    no_diag_mask = np.identity(len(tags))
+    plt.subplots(figsize = (18, 16))
+    heatmap = sns.heatmap(df, square = True, mask = no_diag_mask,
+                          annot = True, annot_kws = {"size": 18})
+    heatmap.collections[0].colorbar.set_label("Percentage of included words in 20-word surroundings",
+                                              fontsize = 17)
+    heatmap.set_title("How similar is the author-practioner's vocabulary when talking about two different topics",
+                      fontsize = 20)
+    heatmap.set_ylabel("How much of this tag's context vocabulary...", fontsize = 20)
+    heatmap.set_xlabel("...is included in this tag's context vocabulary?", fontsize = 20)
+    fig = heatmap.get_figure()
+    fig.savefig(viz_path + "/asymmetrical_heatmap.png")
 
 # barplot visualization
 # how diverse are contexts from different tags
 def create_barplot(normalized):
     plt.subplots(figsize = (15,25))
     if normalized:
-        data = [len(all_context[i])/len(all_items[i]) for i in range(len(tags))]
+        data = [len(all_context_without_duplicates[i])/len(all_items[i]) for i in range(len(tags))]
         ylabel_appendix = ", normalized"
         filename_appendix = "_normalized"
     else:
-        data = [len(all_context[i]) for i in range(len(tags))]
+        data = [len(all_context_without_duplicates[i]) for i in range(len(tags))]
         ylabel_appendix = ""
         filename_appendix = ""
     hist = sns.barplot(x = tag_names, y = data,
@@ -141,7 +164,7 @@ def create_barplot(normalized):
     hist.set_ylabel("Number of unique words in 20-word surroundings (log scale)" + ylabel_appendix,
                     fontsize = 20)
     hist.set_xlabel("Tag", fontsize = 20)
-    hist.set_title("How diversified is the author-practioner's vocabulary when talking about topics",
+    hist.set_title("How diversified is the author-practioner's vocabulary when talking about...",
                    fontsize = 25)
     hist.set_xticklabels(hist.get_xticklabels(), rotation = 90, fontsize = 15)
     #hist.yaxis.set_major_locator(plt.FixedLocator(5))
@@ -149,6 +172,7 @@ def create_barplot(normalized):
     fig2 = hist.get_figure()
     fig2.savefig(viz_path + "/barplot" + filename_appendix + ".png")
 
-#create_heatmap()
+create_symmetrical_heatmap()
+create_asymmetrical_heatmap()
 create_barplot(True)
 create_barplot(False)
