@@ -112,7 +112,8 @@ def create_symmetrical_heatmap():
     no_diag_mask = np.identity(len(tags))
     plt.subplots(figsize = (15, 15))
     heatmap = sns.heatmap(df, square = True, mask = no_diag_mask,
-                          annot = True, annot_kws = {"size": 16})
+                          annot = True, annot_kws = {"size": 16},
+                          cmap = sns.cm.rocket_r)
     heatmap.collections[0].colorbar.set_label("Percentage of similar words in 20-word surroundings",
                                               fontsize = 20)
     heatmap.set_title("How similar is the author-practioner's vocabulary when talking about two different topics",
@@ -137,7 +138,8 @@ def create_asymmetrical_heatmap():
     no_diag_mask = np.identity(len(tags))
     plt.subplots(figsize = (18, 16))
     heatmap = sns.heatmap(df, square = True, mask = no_diag_mask,
-                          annot = True, annot_kws = {"size": 18})
+                          annot = True, annot_kws = {"size": 18},
+                          cmap = sns.cm.rocket_r)
     heatmap.collections[0].colorbar.set_label("Percentage of included words in 20-word surroundings",
                                               fontsize = 17)
     heatmap.set_title("How similar is the author-practioner's vocabulary when talking about two different topics",
