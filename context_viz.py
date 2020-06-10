@@ -1,3 +1,4 @@
+""" Data visualizations of the context files. """
 # Python Modules
 import csv
 import sys
@@ -9,13 +10,18 @@ import pandas
 import seaborn as sns; sns.set()
 import matplotlib.pyplot as plt
 
+manuscript_version = "tl" # "tl", "tc" or "tcn"
+
 cwd = os.getcwd()
 m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
 m_k_data_to_context = f'{m_path}/manuscript-object/context'
-viz_path = f'{m_path}/manuscript-object/context_visualizations'
+viz_path = f'{m_path}/manuscript-object/context_visualizations/{manuscript_version}'
 
 if not os.path.exists(m_k_data_to_context):
     sys.exit("Error: no context directory found")
+
+if not os.path.exists(viz_path):
+    os.mkdir(viz_path)
 
 tags = ["al", "bp", "cn", "env", "m", "md", "ms", "mu", "pa", "pl", "pn", "pro",
         "sn", "tl", "tmp", "wp"] # which tags we're looking for
@@ -23,7 +29,6 @@ tag_names = ["animal (al)", "body part (bp)", "currency (cn)", "environment (en)
              "material (m)", "medical (md)", "measurement (ms)", "music (mu)",
              "plant (pu)", "place (pl)", "personal name (pn)", "profession (pro)",
              "sensory (sn)", "tool (tl)", "temporal (tmp)", "arms and armor (wp)"]
-manuscript_version = "tl" # "tl", "tc" or "tcn"
 
 def filter_stopwords(word):
     stopwords = ["ourselves", "hers", "between", "yourself", "but", "again",
@@ -155,7 +160,7 @@ def create_barplot(normalized):
     plt.subplots(figsize = (15,25))
     if normalized:
         data = [len(all_context_without_duplicates[i])/len(all_items[i]) for i in range(len(tags))]
-        ylabel_appendix = ", normalized"
+        ylabel_appendix = ", divided by the number of times this tag appears"
         filename_appendix = "_normalized"
     else:
         data = [len(all_context_without_duplicates[i]) for i in range(len(tags))]
@@ -163,7 +168,7 @@ def create_barplot(normalized):
         filename_appendix = ""
     hist = sns.barplot(x = tag_names, y = data,
                        palette = "deep")
-    hist.set_ylabel("Number of unique words in 20-word surroundings (log scale)" + ylabel_appendix,
+    hist.set_ylabel("Number of unique words in 20-word surroundings" + ylabel_appendix,
                     fontsize = 20)
     hist.set_xlabel("Tag", fontsize = 20)
     hist.set_title("How diversified is the author-practioner's vocabulary when talking about...",
