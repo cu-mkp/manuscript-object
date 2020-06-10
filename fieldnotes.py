@@ -1,4 +1,3 @@
-from digital_manuscript import BnF
 import os
 import pandas as pd
 import re
@@ -6,51 +5,58 @@ import urllib.request
 from urllib.error import HTTPError
 
 # Setup
-manuscript = BnF()
+
+target_website = 'drive.google.com'     # the website to look for when filtering down hrefs
 
 cwd = os.getcwd()
-#m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
-m_path = cwd if 'manuscript-object' in cwd else f'{cwd}/manuscript-object/'
-fieldnotes_path = f'{m_path}/fieldnotes/FA18+other-fieldnotes-list+links.csv'
-out_path = f'{m_path}/fieldnotes/fieldnotes_refs.csv'
+m_path = cwd if 'manuscript-object' in cwd else f'{cwd}/manuscript-object/'     # this validation is probably not necessary
+fieldnotes_metadata_file = 'FA18+other-fieldnotes-list+links.csv'
+in_path = f'{m_path}/fieldnotes/{fieldnotes_metadata_file}'
+out_path = f'{m_path}/fieldnotes/fieldnotes_hrefs.csv'
 
-df_url_column = 'full-html'
-df_refs_column = 'references'
+url_column = 'full-html'
+hrefs_column = 'references'
 
-re_href = re.compile(r'<a href="(.*?)">') # get hyperlinked urls
+re_href = re.compile(r'<a href="(https?://.*?)".*?>')       # regex to find http hrefs in a block of html
+#re_href = re.compile(r'<a href="(.*?)".*?>')       # regex to find hrefs in a block of html (not necessarily web links)
 
+# Function
 
-# Script:
-
-fieldnotes = pd.read_csv(fieldnotes_path)
-
-references = [None] * len(fieldnotes[df_url_column])  # initialize list of proper length filled with falsy values
-for i, url in enumerate(fieldnotes[df_url_column]):
-    if 'http://' not in url:
-        url = f'http://{url}'
-        
+def get_regex_from_url(url:str, regex, target:str='') -> str:
+    """
+    Return all text from a given url matching a given regex and containing a given target string.
+    Text is returned as a string with elements separated by commas.
+    Will return appropriate error messages as strings in case of invalid url.
+    
+    Inputs:
+      url: A string representing a url.
+      regex: A regex Pattern object which determines what text to extract from the html of the url.
+      target: A filtering string. Regex matches will only be included in the output if they include this string.
+              Defaults to the empty string (i.e. defaults to no filter).
+    
+    Outputs:
+      String consisting of each element found via regex and filtered via target, separated by commas.
+            Ex: 'https://makingandknowing.org,https://columbia.edu'
+    """
     try:
-        f = urllib.request.urlopen(url) # open url
+        page = urllib.request.urlopen(url)      # open url
     except HTTPError:
-        print(f"URL not found: {url}")
-        references[i] = 'url not found'
-        continue
+        return 'url not found'
+    except ValueError:
+        return 'not a valid web address'
     
-    page_text = f.read().decode('utf-8') # decode to text
+    page_text = page.read().decode('utf-8')     # decode to text
     
-    matches = re_href.findall(page_text) # find hyperlinks
+    matches = [href for href in regex.findall(page_text) if target in href]     # get hrefs linking to target
     
-    for match in matches:
-        if 'drive.google.com' in match:
-            if not references[i]:
-                references[i] = match        # first url
-            else:
-                references[i] += ',' + match # append next url, separated by comma
-    
-    # if no hyperlinks in that fieldnote, enter 'none'
-    if not references[i]:
-        references[i] = 'none'
+    if not matches:
+        return 'none'       # if target nowhere in that url, return 'none'
+    else:
+        return ','.join(matches)        # otherwise return a string containing each href separated by commas
 
-fieldnotes.insert(len(fieldnotes.columns), df_refs_column, references) # add the references as a column at the end
+# Script
+
+fieldnotes = pd.read_csv(in_path)
+fieldnotes[hrefs_column] = fieldnotes[url_column].apply(lambda url: find_hrefs_from_url(url, re_href, target=target_website))
 
 fieldnotes.to_csv(out_path, index=False)
