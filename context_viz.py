@@ -10,7 +10,7 @@ import pandas
 import seaborn as sns; sns.set()
 import matplotlib.pyplot as plt
 
-manuscript_version = "tcn" # "tl", "tc" or "tcn"
+manuscript_version = "tl" # "tl", "tc" or "tcn"
 
 cwd = os.getcwd()
 m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
@@ -118,13 +118,19 @@ def create_symmetrical_heatmap():
     df = pandas.DataFrame(matrix, index = tag_names, columns = tag_names)
     no_diag_mask = np.identity(len(tags))
     plt.subplots(figsize = (15, 15))
+    plt.gcf().subplots_adjust(bottom = 0.2)
+    plt.gcf().subplots_adjust(left = 0.2)
     heatmap = sns.heatmap(df, square = True, mask = no_diag_mask,
                           annot = True, annot_kws = {"size": 16},
                           cmap = sns.cm.rocket_r)
     heatmap.collections[0].colorbar.set_label("Percentage of similar words in 20-word surroundings",
                                               fontsize = 20)
-    heatmap.set_title("How similar is the author-practioner's vocabulary when talking about two different topics",
-                      fontsize = 16)
+    heatmap.set_title("How similar is the author-practioner's vocabulary\nwhen talking about two different topics",
+                      fontsize = 22)
+    heatmap.set_ylabel("Tags", fontsize = 20)
+    heatmap.set_xlabel("Tags", fontsize = 20)
+    heatmap.set_xticklabels(tag_names, size = 16)
+    heatmap.set_yticklabels(tag_names, size = 16)
     fig = heatmap.get_figure()
     fig.savefig(viz_path + "symmetrical_heatmap.png")
 
@@ -143,45 +149,49 @@ def create_asymmetrical_heatmap():
 
     df = pandas.DataFrame(matrix, index = tag_names, columns = tag_names)
     no_diag_mask = np.identity(len(tags))
-    plt.subplots(figsize = (18, 16))
+    plt.subplots(figsize = (15, 15))
+    plt.gcf().subplots_adjust(bottom = 0.2)
+    plt.gcf().subplots_adjust(left = 0.2)
     heatmap = sns.heatmap(df, square = True, mask = no_diag_mask,
                           annot = True, annot_kws = {"size": 16},
                           cmap = sns.cm.rocket_r)
     heatmap.collections[0].colorbar.set_label("Percentage of included words in 20-word surroundings",
-                                              fontsize = 17)
-    heatmap.set_title("How similar is the author-practioner's vocabulary when talking about two different topics",
-                      fontsize = 20)
+                                              fontsize = 20)
+    heatmap.set_title("How similar is the author-practioner's vocabulary\nwhen talking about two different topics",
+                      fontsize = 22)
     heatmap.set_ylabel("How much of this tag's context vocabulary...", fontsize = 20)
     heatmap.set_xlabel("...is included in this tag's context vocabulary?", fontsize = 20)
-    #heatmap.set_xticklabels(tag_names, size = 16)
-    #heatmap.set_yticklabels(tag_names, size = 16)
+    heatmap.set_xticklabels(tag_names, size = 16)
+    heatmap.set_yticklabels(tag_names, size = 16)
     fig = heatmap.get_figure()
     fig.savefig(viz_path + "asymmetrical_heatmap.png")
 
 # barplot visualization
 # how diverse are contexts from different tags
 def create_barplot(normalized):
-    plt.subplots(figsize = (15,20))
-    plt.gcf().subplots_adjust(bottom = 0.15)
+    plt.subplots(figsize = (10,15))
+    plt.gcf().subplots_adjust(bottom = 0.2)
+    plt.gcf().subplots_adjust(left = 0.15)
     if normalized:
         data = [len(all_context_without_duplicates[i])/len(all_items[i]) for i in range(len(tags))]
-        ylabel_appendix = ", divided by the number of times this tag appears"
+        ylabel_appendix = ",\ndivided by the number of times this tag appears"
         filename_appendix = "_normalized"
     else:
         data = [len(all_context_without_duplicates[i]) for i in range(len(tags))]
         ylabel_appendix = ""
         filename_appendix = ""
-    hist = sns.barplot(x = tag_names, y = data,
+    barplt = sns.barplot(x = tag_names, y = data,
                        palette = "deep")
-    hist.set_ylabel("Number of unique words in 20-word surroundings" + ylabel_appendix,
+    barplt.set_ylabel("Number of unique words in 20-word surroundings" + ylabel_appendix,
                     fontsize = 20)
-    hist.set_xlabel("Tag", fontsize = 20)
-    hist.set_title("How diversified is the author-practioner's vocabulary when talking about...",
-                   fontsize = 25)
-    hist.set_xticklabels(hist.get_xticklabels(), rotation = 90, fontsize = 15)
+    barplt.set_xlabel("Tag", fontsize = 20)
+    barplt.set_title("How diversified is the author-practioner's\nvocabulary when talking about...",
+                   fontsize = 24)
+    barplt.set_xticklabels(barplt.get_xticklabels(), rotation = 90, fontsize = 16)
+    barplt.set_yticklabels(tag_names, size = 16)
     #hist.yaxis.set_major_locator(plt.FixedLocator(5))
-    hist.set(yscale = "log")
-    fig = hist.get_figure()
+    barplt.set(yscale = "log")
+    fig = barplt.get_figure()
     fig.savefig(viz_path + "barplot" + filename_appendix + ".png")
 
 create_symmetrical_heatmap()
