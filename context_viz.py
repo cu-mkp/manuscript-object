@@ -125,7 +125,7 @@ def create_symmetrical_heatmap():
                           cmap = sns.cm.rocket_r)
     heatmap.collections[0].colorbar.set_label("Percentage of similar words in 20-word surroundings",
                                               fontsize = 20)
-    heatmap.set_title("How similar is the author-practioner's vocabulary\nwhen talking about two different topics",
+    heatmap.set_title("How similar is the author-practioner's vocabulary\nwhen talking about two different topics [" + manuscript_version + "]",
                       fontsize = 22)
     heatmap.set_ylabel("Tags", fontsize = 20)
     heatmap.set_xlabel("Tags", fontsize = 20)
@@ -157,7 +157,7 @@ def create_asymmetrical_heatmap():
                           cmap = sns.cm.rocket_r)
     heatmap.collections[0].colorbar.set_label("Percentage of included words in 20-word surroundings",
                                               fontsize = 20)
-    heatmap.set_title("How similar is the author-practioner's vocabulary\nwhen talking about two different topics",
+    heatmap.set_title("How similar is the author-practioner's vocabulary\nwhen talking about two different topics [" + manuscript_version + "]",
                       fontsize = 22)
     heatmap.set_ylabel("How much of this tag's context vocabulary...", fontsize = 20)
     heatmap.set_xlabel("...is included in this tag's context vocabulary?", fontsize = 20)
@@ -182,10 +182,19 @@ def create_barplot(normalized):
         filename_appendix = ""
     barplt = sns.barplot(x = tag_names, y = data,
                        palette = "deep")
+    mean = np.mean(data)
+    barplt.axhline(mean, ls='-', color = "grey")
+    barplt.text(0, mean + 80, "Mean", fontsize = 16, color = "grey")
+    for p in barplt.patches:
+        if (normalized):
+            nb = format(p.get_height(), '.2f')
+        else:
+            nb = int(p.get_height())
+        barplt.annotate(nb, (p.get_x() + p.get_width() / 2., p.get_height()), ha = 'center', va = 'center', xytext = (0, 10), textcoords = 'offset points')
     barplt.set_ylabel("Number of unique words in 20-word surroundings" + ylabel_appendix,
                     fontsize = 20)
     barplt.set_xlabel("Tag", fontsize = 20)
-    barplt.set_title("How diversified is the author-practioner's\nvocabulary when talking about...",
+    barplt.set_title("How diversified is the author-practioner's\nvocabulary when talking about... [" + manuscript_version + "]",
                    fontsize = 24)
     barplt.set_xticklabels(barplt.get_xticklabels(), rotation = 90, fontsize = 16)
     barplt.set_yticklabels(tag_names, size = 16)
