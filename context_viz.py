@@ -106,6 +106,8 @@ for tag in tags:
 # how similar are contexts from different tags
 def create_symmetrical_heatmap():
     matrix = []
+    I = np.ones(len(tags)) - np.eye(len(tags))
+    line_count = 0
     for i in all_context_without_duplicates:
         si = set(i)
         line = []
@@ -113,10 +115,16 @@ def create_symmetrical_heatmap():
             sj = set(j)
             # how much of si and sj is in common
             line.append(len(si.intersection(sj))/len(si.union(sj))*100)
+        line.append(np.average(line, weights = I[line_count]))
         matrix.append(line)
+        line_count += 1
+    tag_range = range(len(tags))
+    averages = [np.average([matrix[i][j] for i in tag_range], weights = I[j]) for j in tag_range]
+    matrix.append(averages)
 
-    df = pandas.DataFrame(matrix, index = tag_names, columns = tag_names)
-    no_diag_mask = np.identity(len(tags))
+    legend = tag_names + ["MEAN"]
+    df = pandas.DataFrame(matrix, index = legend, columns = legend)
+    no_diag_mask = np.identity(len(legend))
     plt.subplots(figsize = (15, 15))
     plt.gcf().subplots_adjust(bottom = 0.2)
     plt.gcf().subplots_adjust(left = 0.2)
@@ -129,8 +137,8 @@ def create_symmetrical_heatmap():
                       fontsize = 22)
     heatmap.set_ylabel("Tags", fontsize = 20)
     heatmap.set_xlabel("Tags", fontsize = 20)
-    heatmap.set_xticklabels(tag_names, size = 16)
-    heatmap.set_yticklabels(tag_names, size = 16)
+    heatmap.set_xticklabels(legend, size = 16)
+    heatmap.set_yticklabels(legend, size = 16)
     fig = heatmap.get_figure()
     fig.savefig(viz_path + "symmetrical_heatmap.png")
 
@@ -138,6 +146,8 @@ def create_symmetrical_heatmap():
 # how similar are contexts from different tags
 def create_asymmetrical_heatmap():
     matrix = []
+    I = np.ones(len(tags)) - np.eye(len(tags))
+    line_count = 0
     for i in all_context_without_duplicates:
         si = set(i)
         line = []
@@ -145,10 +155,16 @@ def create_asymmetrical_heatmap():
             sj = set(j)
             # how much of si is in sj
             line.append(len(si.intersection(sj))/len(sj)*100)
+        line.append(np.average(line, weights = I[line_count]))
         matrix.append(line)
+        line_count += 1
+    tag_range = range(len(tags))
+    averages = [np.average([matrix[i][j] for i in tag_range], weights = I[j]) for j in tag_range]
+    matrix.append(averages)
 
-    df = pandas.DataFrame(matrix, index = tag_names, columns = tag_names)
-    no_diag_mask = np.identity(len(tags))
+    legend = tag_names + ["MEAN"]
+    df = pandas.DataFrame(matrix, index = legend, columns = legend)
+    no_diag_mask = np.identity(len(legend))
     plt.subplots(figsize = (15, 15))
     plt.gcf().subplots_adjust(bottom = 0.2)
     plt.gcf().subplots_adjust(left = 0.2)
@@ -161,8 +177,8 @@ def create_asymmetrical_heatmap():
                       fontsize = 22)
     heatmap.set_ylabel("How much of this tag's context vocabulary...", fontsize = 20)
     heatmap.set_xlabel("...is included in this tag's context vocabulary?", fontsize = 20)
-    heatmap.set_xticklabels(tag_names, size = 16)
-    heatmap.set_yticklabels(tag_names, size = 16)
+    heatmap.set_xticklabels(legend, size = 16)
+    heatmap.set_yticklabels(legend, size = 16)
     fig = heatmap.get_figure()
     fig.savefig(viz_path + "asymmetrical_heatmap.png")
 
@@ -181,10 +197,10 @@ def create_barplot(normalized):
         ylabel_appendix = ""
         filename_appendix = ""
     barplt = sns.barplot(x = tag_names, y = data,
-                       palette = "deep")
+                         palette = "deep")
     mean = np.mean(data)
-    barplt.axhline(mean, ls='-', color = "grey")
-    barplt.text(0, mean + 80, "Mean", fontsize = 16, color = "grey")
+    barplt.axhline(mean, ls='-', color = "black")
+    barplt.text(1, mean*1.01, "Mean", fontsize = 16, color = "black")
     for p in barplt.patches:
         if (normalized):
             nb = format(p.get_height(), '.2f')
@@ -192,10 +208,10 @@ def create_barplot(normalized):
             nb = int(p.get_height())
         barplt.annotate(nb, (p.get_x() + p.get_width() / 2., p.get_height()), ha = 'center', va = 'center', xytext = (0, 10), textcoords = 'offset points')
     barplt.set_ylabel("Number of unique words in 20-word surroundings" + ylabel_appendix,
-                    fontsize = 20)
+                      fontsize = 20)
     barplt.set_xlabel("Tag", fontsize = 20)
     barplt.set_title("How diversified is the author-practioner's\nvocabulary when talking about... [" + manuscript_version + "]",
-                   fontsize = 24)
+                     fontsize = 24)
     barplt.set_xticklabels(barplt.get_xticklabels(), rotation = 90, fontsize = 16)
     barplt.set_yticklabels(tag_names, size = 16)
     #hist.yaxis.set_major_locator(plt.FixedLocator(5))
