@@ -27,6 +27,7 @@ def make_url(url:str) -> str:
 def make_tree():
     tree = ""
     table = []
+    notfound = []
     depth = 0
 
     newpath = mainSpace
@@ -39,7 +40,7 @@ def make_tree():
         try:
             semester_html = url_to_html(f'{mainSpace}/{semester[URL]}') # get html of semester page
         except HTTPError:
-            print("URL not found: " + semester[URL])
+            notfound.append((mainSpace, semester[URL]))
             newpath = newpath[:len(newpath) - len(semester[TITLE]) - 1]
             continue
         
@@ -48,13 +49,13 @@ def make_tree():
         try:
             intermediate_html = url_to_html(f'{mainSpace}/{intermediate[URL]}')
         except HTTPError:
-            print("URL not found: " + intermediate[URL])
+            notfound.append((semester[URL], intermediate[URL]))
             newpath = newpath[:len(newpath) - len(semester[TITLE]) - 1]
             continue
         
         authors = re_authors.findall(intermediate_html) # get list of authors
         
-        tree += "\n" + "blah"*depth + semester[TITLE]
+        tree += "\n" + "\t"*depth + semester[TITLE]
         
         depth += 1
         for author in authors:
@@ -62,7 +63,7 @@ def make_tree():
             try:
                 author_html = url_to_html(f'{mainSpace}/{author[URL]}')
             except HTTPError:
-                print("URL not found: " + author[URL])
+                notfound.append((semester[URL], author[URL]))
                 newpath = newpath[:len(newpath) - len(author[TITLE]) - 1]
                 continue
             
@@ -73,6 +74,15 @@ def make_tree():
             depth += 1
             for fieldnote in fieldnotes:
                 newpath += f'/{fieldnote[TITLE]}'
+                
+                # see if link works
+                try:
+                    url_to_html(f'{mainSpace}/{fieldnote[URL]}')
+                except HTTPError:
+                    notfound.append((author[URL], fieldnote[URL]))
+                except UnicodeDecodeError:
+                    print("unicode decode error: " + fieldnote[URL])
+                
                 # add paths
                 tree += "\n" + "\t"*depth + fieldnote[TITLE]
                 table.append((f'{mainSpace}/{fieldnote[URL]}', make_url(newpath)))
@@ -90,10 +100,10 @@ def make_tree():
         # step back=
         newpath = newpath[:len(newpath) - len(semester[TITLE]) - 1]
     
-    return (table, tree)
+    return (table, tree, notfound)
 
 def organize_field_notes(write=True):
-    table, tree = make_tree()
+    table, tree, notfound = make_tree()
     if write:
         with open("fieldnotes/filetree.txt", "w") as f:
             f.write(tree)
@@ -101,6 +111,10 @@ def organize_field_notes(write=True):
         with open("fieldnotes/filetable.csv", "w") as f:
             writer = csv.writer(f)
             writer.writerows(table)
+            
+        with open("fieldnotes/urlnotfound.csv", "w") as f:
+            writer = csv.writer(f)
+            writer.writerows(notfound)
 
 if __name__=="__main__":
     organize_field_notes()
