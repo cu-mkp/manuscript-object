@@ -40,7 +40,7 @@ def make_tree():
         try:
             semester_html = url_to_html(f'{mainSpace}/{semester[URL]}') # get html of semester page
         except HTTPError:
-            notfound.append((mainSpace, semester[URL]))
+            notfound.append((mainSpace, f'{mainSpace}/{semester[URL]}'))
             newpath = newpath[:len(newpath) - len(semester[TITLE]) - 1]
             continue
         
@@ -49,7 +49,7 @@ def make_tree():
         try:
             intermediate_html = url_to_html(f'{mainSpace}/{intermediate[URL]}')
         except HTTPError:
-            notfound.append((semester[URL], intermediate[URL]))
+            notfound.append((f'{mainSpace}/{semester[URL]}', f'{mainSpace}/{intermediate[URL]}'))
             newpath = newpath[:len(newpath) - len(semester[TITLE]) - 1]
             continue
         
@@ -63,7 +63,7 @@ def make_tree():
             try:
                 author_html = url_to_html(f'{mainSpace}/{author[URL]}')
             except HTTPError:
-                notfound.append((semester[URL], author[URL]))
+                notfound.append((f'{mainSpace}/{semester[URL]}', f'{mainSpace}/{author[URL]}'))
                 newpath = newpath[:len(newpath) - len(author[TITLE]) - 1]
                 continue
             
@@ -79,7 +79,7 @@ def make_tree():
                 try:
                     url_to_html(f'{mainSpace}/{fieldnote[URL]}')
                 except HTTPError:
-                    notfound.append((author[URL], fieldnote[URL]))
+                    notfound.append((f'{mainSpace}/{author[URL]}', f'{mainSpace}/{fieldnote[URL]}'))
                 except UnicodeDecodeError:
                     print("unicode decode error: " + fieldnote[URL])
                 
