@@ -109,13 +109,28 @@ def get_data(manuscript_version):
     return all_items, all_context, all_items_without_duplicates, all_context_without_duplicates
 
 
-# heatmap visualization
-# how similar are contexts from different tags
+# Returns mat1 - mat2 (term-by-term subtraction)
 
-def create_symmetrical_heatmap(data, manuscript_version):
+def mat_subtract(mat1, mat2):
+
+    # mat1 and mat2 two basic Python matrices of same size
+
+    mat = []
+    m = len(mat1)
+    n = len(mat1[0])
+    for i in range(m):
+        line = []
+        for j in range(n):
+            line.append(mat1[i][j] - mat2[i][j])
+        mat.append(line)
+
+    return mat
+
+# Generate the matrix used for symmetrical heatmaps
+
+def generate_symmetrical_matrix(data):
 
     # data = all_context_without_duplicates
-    # manuscript_version = "tc", "tcn" or "tl"
 
     matrix = []
     I = np.ones(len(tags)) - np.eye(len(tags))
@@ -133,7 +148,20 @@ def create_symmetrical_heatmap(data, manuscript_version):
         line_count += 1
     tag_range = range(len(tags))
     averages = [np.average([matrix[i][j] for i in tag_range], weights = I[j]) for j in tag_range]
+    averages.append(0) # just for the purpose of making it a square matrix
     matrix.append(averages)
+
+    return matrix
+
+# heatmap visualization
+# how similar are contexts from different tags
+
+def create_symmetrical_heatmap(data, manuscript_version):
+
+    # data = all_context_without_duplicates
+    # manuscript_version = "tc", "tcn" or "tl"
+
+    matrix = generate_symmetrical_matrix(data)
 
     legend = tag_names + ["MEAN"]
     df = pandas.DataFrame(matrix, index = legend, columns = legend)
@@ -156,6 +184,67 @@ def create_symmetrical_heatmap(data, manuscript_version):
     fig.savefig(viz_path + "symmetrical_heatmap.png")
 
 
+# symmetrical heatmap visualizing the differences between versions
+
+def create_symmetrical_diff_heatmap(v1, v2, data1, data2):
+
+    # v1: first version, "tc", "tcn" or "tl"
+    # v2: second version, "tc", "tcn" or "tl", != v1
+    # data1 = all_context_without_duplicates[v1]
+    # data2 = all_context_without_duplicates[v2]
+
+    matrix1 = generate_symmetrical_matrix(data1)
+    matrix2 = generate_symmetrical_matrix(data2)
+    matrix = mat_subtract(matrix1, matrix2)
+
+    legend = tag_names + ["MEAN"]
+    df = pandas.DataFrame(matrix, index = legend, columns = legend)
+    no_diag_mask = np.identity(len(legend))
+    plt.subplots(figsize = (20, 15))
+    plt.gcf().subplots_adjust(bottom = 0.2)
+    plt.gcf().subplots_adjust(left = 0.1)
+    heatmap = sns.heatmap(df, square = True, mask = no_diag_mask,
+                          annot = True, annot_kws = {"size": 16},
+                          center = 0, cmap = 'seismic', fmt = '.2f')
+    heatmap.collections[0].colorbar.set_label("Percentage of similar words in 20-word surroundings",
+                                              fontsize = 20)
+    heatmap.set_title("How similar is the author-practioner's vocabulary\nwhen talking about two different topics [" + v1 + " - " + v2 + "]",
+                      fontsize = 22)
+    heatmap.set_ylabel("Tags", fontsize = 20)
+    heatmap.set_xlabel("Tags", fontsize = 20)
+    heatmap.set_xticklabels(legend, size = 16)
+    heatmap.set_yticklabels(legend, size = 16)
+    fig = heatmap.get_figure()
+    fig.savefig(viz_path + v1 + "-" + v2 + "_diff_symmetrical_heatmap.png")
+
+
+# Generate the matrix used for asymmetrical heatmaps
+
+def generate_asymmetrical_matrix(data):
+
+    # data = all_context_without_duplicates
+
+    matrix = []
+    I = np.ones(len(tags)) - np.eye(len(tags))
+    # I is used for the average without the diagonal
+    line_count = 0
+    for i in data:
+        si = set(i)
+        line = []
+        for j in data:
+            sj = set(j)
+            # how much of si is in sj
+            line.append(len(si.intersection(sj))/len(sj)*100)
+        line.append(np.average(line, weights = I[line_count]))
+        matrix.append(line)
+        line_count += 1
+    tag_range = range(len(tags))
+    averages = [np.average([matrix[i][j] for i in tag_range], weights = I[j]) for j in tag_range]
+    averages.append(0) # just for the purpose of making it a square matrix
+    matrix.append(averages)
+
+    return matrix
+
 # heatmap visualization
 # how similar are contexts from different tags
 
@@ -164,23 +253,7 @@ def create_asymmetrical_heatmap(data, manuscript_version):
     # data = all_context_without_duplicates
     # manuscript_version = "tc", "tcn" or "tl"
 
-    matrix = []
-    I = np.ones(len(tags)) - np.eye(len(tags))
-    # I is used for the average without the diagonal
-    line_count = 0
-    for i in data:
-        si = set(i)
-        line = []
-        for j in data:
-            sj = set(j)
-            # how much of si is in sj
-            line.append(len(si.intersection(sj))/len(sj)*100)
-        line.append(np.average(line, weights = I[line_count]))
-        matrix.append(line)
-        line_count += 1
-    tag_range = range(len(tags))
-    averages = [np.average([matrix[i][j] for i in tag_range], weights = I[j]) for j in tag_range]
-    matrix.append(averages)
+    matrix = generate_asymmetrical_matrix(data)
 
     legend = tag_names + ["MEAN"]
     df = pandas.DataFrame(matrix, index = legend, columns = legend)
@@ -203,50 +276,38 @@ def create_asymmetrical_heatmap(data, manuscript_version):
     fig.savefig(viz_path + "asymmetrical_heatmap.png")
 
 
-# heatmap visualization
-# how similar are the contexts from tc and tcn
+# asymmetrical heatmap visualizing the differences between versions
 
-def difference_asymmetrical_heatmap(data):
+def create_asymmetrical_diff_heatmap(v1, v2, data1, data2):
 
-    # data_tc = all_context_without_duplicates (difference between tc and tcn)
+    # v1: first version, "tc", "tcn" or "tl"
+    # v2: second version, "tc", "tcn" or "tl", != v1
+    # data1 = all_context_without_duplicates[v1]
+    # data2 = all_context_without_duplicates[v2]
 
-    matrix = []
-    I = np.ones(len(tags)) - np.eye(len(tags))
-    # I is used for the average without the diagonal
-    line_count = 0
-    for i in data:
-        si = set(i)
-        line = []
-        for j in data:
-            sj = set(j)
-            # how much of si is in sj
-            line.append(len(si.intersection(sj))/len(sj)*100)
-        line.append(np.average(line, weights = I[line_count]))
-        matrix.append(line)
-        line_count += 1
-    tag_range = range(len(tags))
-    averages = [np.average([matrix[i][j] for i in tag_range], weights = I[j]) for j in tag_range]
-    matrix.append(averages)
+    matrix1 = generate_asymmetrical_matrix(data1)
+    matrix2 = generate_asymmetrical_matrix(data2)
+    matrix = mat_subtract(matrix1, matrix2)
 
     legend = tag_names + ["MEAN"]
     df = pandas.DataFrame(matrix, index = legend, columns = legend)
     no_diag_mask = np.identity(len(legend))
-    plt.subplots(figsize = (15, 15))
+    plt.subplots(figsize = (20, 15))
     plt.gcf().subplots_adjust(bottom = 0.2)
-    plt.gcf().subplots_adjust(left = 0.2)
+    plt.gcf().subplots_adjust(left = 0.1)
     heatmap = sns.heatmap(df, square = True, mask = no_diag_mask,
                           annot = True, annot_kws = {"size": 16},
-                          cmap = sns.cm.rocket_r)
-    heatmap.collections[0].colorbar.set_label("Percentage of included words in 20-word surroundings",
+                          center = 0, cmap = 'seismic', fmt = '.2f')
+    heatmap.collections[0].colorbar.set_label("Percentage of similar words in 20-word surroundings",
                                               fontsize = 20)
-    heatmap.set_title("How similar is the author-practioner's vocabulary\nwhen talking about two different topics [" + manuscript_version + "]",
+    heatmap.set_title("How similar is the author-practioner's vocabulary\nwhen talking about two different topics [" + v1 + " - " + v2 + "]",
                       fontsize = 22)
     heatmap.set_ylabel("How much of this tag's context vocabulary...", fontsize = 20)
     heatmap.set_xlabel("...is included in this tag's context vocabulary?", fontsize = 20)
     heatmap.set_xticklabels(legend, size = 16)
     heatmap.set_yticklabels(legend, size = 16)
     fig = heatmap.get_figure()
-    fig.savefig(viz_path + "asymmetrical_heatmap.png")
+    fig.savefig(viz_path + v1 + "-" + v2 + "_diff_asymmetrical_heatmap.png")
 
 
 # barplot visualization
@@ -293,7 +354,19 @@ def create_barplot(data, manuscript_version, normalized):
     fig.savefig(viz_path + "barplot" + filename_appendix + ".png")
 
 
-for v in ["tc", "tcn", "tl"]:
+all_items_tc, all_context_tc, all_items_without_duplicates_tc, all_context_without_duplicates_tc = get_data("tc")
+all_items_tcn, all_context_tcn, all_items_without_duplicates_tcn, all_context_without_duplicates_tcn = get_data("tcn")
+all_items_tl, all_context_tl, all_items_without_duplicates_tl, all_context_without_duplicates_tl = get_data("tl")
+
+all_items = [all_items_tc, all_items_tcn, all_items_tl]
+all_context = [all_context_tc, all_context_tcn, all_context_tl]
+all_items_without_duplicates = [all_items_without_duplicates_tc, all_items_without_duplicates_tcn, all_items_without_duplicates_tl]
+all_context_without_duplicates = [all_context_without_duplicates_tc, all_context_without_duplicates_tcn, all_context_without_duplicates_tl]
+
+manuscript_versions = ["tc", "tcn", "tl"]
+
+for i in range(len(manuscript_versions)):
+    v = manuscript_versions[i]
     viz_path = f'{m_path}/manuscript-object/context_visualizations/{v}'
 
     if not os.path.exists(viz_path):
@@ -301,11 +374,24 @@ for v in ["tc", "tcn", "tl"]:
 
     viz_path = f'{viz_path}/{v}_' # for file names purpose
 
-    all_items, all_context, all_items_without_duplicates, all_context_without_duplicates = get_data(v)
-
-    create_symmetrical_heatmap(all_context_without_duplicates, v)
-    create_asymmetrical_heatmap(all_context_without_duplicates, v)
-    create_barplot([all_context_without_duplicates, all_items], v, True)
-    create_barplot([all_context_without_duplicates, all_items], v, False)
+    create_symmetrical_heatmap(all_context_without_duplicates[i], v)
+    create_asymmetrical_heatmap(all_context_without_duplicates[i], v)
+    create_barplot([all_context_without_duplicates[i], all_items[i]], v, True)
+    create_barplot([all_context_without_duplicates[i], all_items[i]], v, False)
 
     print(v + " visualizations complete")
+
+viz_path = f'{m_path}/manuscript-object/context_visualizations/comparisons/'
+
+if not os.path.exists(viz_path):
+    os.mkdir(viz_path)
+
+create_symmetrical_diff_heatmap("tc", "tcn", all_context_without_duplicates[0], all_context_without_duplicates[1])
+create_symmetrical_diff_heatmap("tc", "tl", all_context_without_duplicates[0], all_context_without_duplicates[2])
+create_symmetrical_diff_heatmap("tcn", "tl", all_context_without_duplicates[1], all_context_without_duplicates[2])
+
+create_asymmetrical_diff_heatmap("tc", "tcn", all_context_without_duplicates[0], all_context_without_duplicates[1])
+create_asymmetrical_diff_heatmap("tc", "tl", all_context_without_duplicates[0], all_context_without_duplicates[2])
+create_asymmetrical_diff_heatmap("tcn", "tl", all_context_without_duplicates[1], all_context_without_duplicates[2])
+
+print("All done!")
