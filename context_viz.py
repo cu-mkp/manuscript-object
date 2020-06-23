@@ -24,6 +24,9 @@ tag_names = ["animal (al)", "body part (bp)", "currency (cn)", "environment (en)
              "plant (pu)", "place (pl)", "personal name (pn)", "profession (pro)",
              "sensory (sn)", "tool (tl)", "temporal (tmp)", "arms and armor (wp)"]
 
+manuscript_versions = ["tc", "tcn", "tl"]
+
+
 def filter_stopwords(word):
     stopwords = ["ourselves", "hers", "between", "yourself", "but", "again",
                  "there", "about", "once", "during", "out", "very", "having",
@@ -46,6 +49,7 @@ def filter_stopwords(word):
         return False
     else:
         return True
+
 
 def filter_digits(word):
     if word.isdigit():
@@ -126,6 +130,7 @@ def mat_subtract(mat1, mat2):
 
     return mat
 
+
 # Generate the matrix used for symmetrical heatmaps
 
 def generate_symmetrical_matrix(data):
@@ -152,6 +157,7 @@ def generate_symmetrical_matrix(data):
     matrix.append(averages)
 
     return matrix
+
 
 # heatmap visualization
 # how similar are contexts from different tags
@@ -354,6 +360,59 @@ def create_barplot(data, manuscript_version, normalized):
     fig.savefig(viz_path + "barplot" + filename_appendix + ".png")
 
 
+# grouped barplot visualization
+# how diverse are contexts from different tags, across all manuscript versions
+
+def create_grouped_barplot(data, normalized):
+
+    # data = [all_context_without_duplicates, all_items]
+    # normalized = True of False
+
+    plt.subplots(figsize = (15,15))
+    #plt.gcf().subplots_adjust(bottom = 0.2)
+    plt.gcf().subplots_adjust(left = 0.15)
+
+    if normalized:
+        ylabel_appendix = ",\ndivided by the number of times this tag appears"
+        filename_appendix = "_normalized"
+    else:
+        ylabel_appendix = ""
+        filename_appendix = ""
+
+    context = data[0]
+    items = data[1]
+
+    hist_data = []
+    for i in range(3):
+        v = manuscript_versions[i]
+        for j in range(len(tags)):
+            tag = tags[j]
+            height = len(context[i][j])
+            if normalized:
+                height /= len(items[i][j])
+            hist_data.append([tag, height, v])
+
+    data = pandas.DataFrame(data = hist_data,
+                            columns = ["tag", "height", "manuscript version"])
+
+    barplt = sns.barplot(x = "tag", y = "height", data = data, order = tags,
+                         hue = "manuscript version")
+    barplt.set_ylabel("Number of unique words in 20-word surroundings" + ylabel_appendix,
+                      fontsize = 20)
+    barplt.set_xlabel("Tag", fontsize = 20)
+    barplt.set_title("How diversified is the author-practioner's\nvocabulary when talking about...",
+                     fontsize = 24)
+    barplt.set_xticklabels(barplt.get_xticklabels(), rotation = 90, fontsize = 16)
+    barplt.set_yticklabels(tag_names, size = 16)
+    plt.setp(barplt.get_legend().get_texts(), fontsize='20')
+    plt.setp(barplt.get_legend().get_title(), fontsize='20')
+    #hist.yaxis.set_major_locator(plt.FixedLocator(5))
+    barplt.set(yscale = "log")
+    fig = barplt.get_figure()
+    fig.savefig(viz_path + "grouped_barplot" + filename_appendix + ".png")
+
+
+
 all_items_tc, all_context_tc, all_items_without_duplicates_tc, all_context_without_duplicates_tc = get_data("tc")
 all_items_tcn, all_context_tcn, all_items_without_duplicates_tcn, all_context_without_duplicates_tcn = get_data("tcn")
 all_items_tl, all_context_tl, all_items_without_duplicates_tl, all_context_without_duplicates_tl = get_data("tl")
@@ -362,8 +421,6 @@ all_items = [all_items_tc, all_items_tcn, all_items_tl]
 all_context = [all_context_tc, all_context_tcn, all_context_tl]
 all_items_without_duplicates = [all_items_without_duplicates_tc, all_items_without_duplicates_tcn, all_items_without_duplicates_tl]
 all_context_without_duplicates = [all_context_without_duplicates_tc, all_context_without_duplicates_tcn, all_context_without_duplicates_tl]
-
-manuscript_versions = ["tc", "tcn", "tl"]
 
 for i in range(len(manuscript_versions)):
     v = manuscript_versions[i]
@@ -393,5 +450,12 @@ create_symmetrical_diff_heatmap("tcn", "tl", all_context_without_duplicates[1], 
 create_asymmetrical_diff_heatmap("tc", "tcn", all_context_without_duplicates[0], all_context_without_duplicates[1])
 create_asymmetrical_diff_heatmap("tc", "tl", all_context_without_duplicates[0], all_context_without_duplicates[2])
 create_asymmetrical_diff_heatmap("tcn", "tl", all_context_without_duplicates[1], all_context_without_duplicates[2])
+
+print("difference heatmaps complete")
+
+create_grouped_barplot([all_context_without_duplicates, all_items], True)
+create_grouped_barplot([all_context_without_duplicates, all_items], False)
+
+print("grouped barplots complete")
 
 print("All done!")
