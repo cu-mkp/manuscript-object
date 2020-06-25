@@ -369,8 +369,9 @@ def create_grouped_barplot(data, normalized):
     # normalized = True of False
 
     plt.subplots(figsize = (15,15))
-    #plt.gcf().subplots_adjust(bottom = 0.2)
-    plt.gcf().subplots_adjust(left = 0.15)
+    plt.gcf().subplots_adjust(bottom = 0.2)
+    plt.gcf().subplots_adjust(top = 0.9)
+    #plt.gcf().subplots_adjust(left = 0.15)
 
     if normalized:
         ylabel_appendix = ",\ndivided by the number of times this tag appears"
@@ -402,10 +403,10 @@ def create_grouped_barplot(data, normalized):
     barplt.set_xlabel("Tag", fontsize = 20)
     barplt.set_title("How diversified is the author-practioner's\nvocabulary when talking about...",
                      fontsize = 24)
-    barplt.set_xticklabels(barplt.get_xticklabels(), rotation = 90, fontsize = 16)
-    barplt.set_yticklabels(tag_names, size = 16)
-    plt.setp(barplt.get_legend().get_texts(), fontsize='20')
-    plt.setp(barplt.get_legend().get_title(), fontsize='20')
+    barplt.set_xticklabels(tag_names, rotation = 90, fontsize = 16)
+    barplt.set_yticklabels(barplt.get_yticklabels(), size = 16)
+    plt.setp(barplt.get_legend().get_texts(), fontsize = "16")
+    plt.setp(barplt.get_legend().get_title(), fontsize = "16")
     #hist.yaxis.set_major_locator(plt.FixedLocator(5))
     barplt.set(yscale = "log")
     fig = barplt.get_figure()

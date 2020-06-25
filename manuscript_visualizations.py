@@ -16,7 +16,7 @@ cwd = os.getcwd()
 m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
 
 
-def tags_scatterplot(search_tags, filename):
+def tags_scatterplot(search_tags, filename, title):
     folios = []
     tags = []
     counts = []
@@ -33,14 +33,23 @@ def tags_scatterplot(search_tags, filename):
 
         for tag in search_tags:
             folio_text = etree.tostring(tree, method = "xml", encoding="UTF-8").decode('utf-8')
-            folios.append(folio)
+            folios.append(number+side)
             tags.append(tag)
             counts.append(folio_text.count(f'<{tag}>'))
 
     df = pandas.DataFrame({"folios": folios, "tags": tags, "counts": counts})
 
     plt.subplots(figsize = (20, 10))
+    plt.gcf().subplots_adjust(left = 0.05)
+    plt.gcf().subplots_adjust(right = 0.95)
     scatter = sns.scatterplot(x = "folios", y = "counts", hue = "tags", data = df)
+
+    scatter.set_ylabel("Tag count", fontsize = 20)
+    scatter.set_xlabel("Folios", fontsize = 20)
+    scatter.set_title(title, fontsize = 24)
+    scatter.set_xticklabels(folios, rotation = 90, fontsize = 4)
+    #scatter.set_yticklabels(scatter.get_yticklabels(), size = 16)
+
     fig = scatter.get_figure()
     fig.savefig(f"{viz_path}{filename}.png")
 
@@ -50,4 +59,6 @@ viz_path = f'{m_path}/manuscript-object/manuscript_visualizations/'
 if not os.path.exists(viz_path):
     os.mkdir(viz_path)
 
-tags_scatterplot(["fr", "el", "it", "la", "oc", "po"], "languages_scatterplot")
+language_tags = ["fr", "el", "it", "la", "oc", "po"]
+title = "Other languages in the English translation of the manuscript"
+tags_scatterplot(language_tags, "languages_scatterplot", title)
