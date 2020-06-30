@@ -180,7 +180,7 @@ def create_symmetrical_heatmap(data, manuscript_version):
                           cmap = sns.cm.rocket_r)
     heatmap.collections[0].colorbar.set_label("Percentage of similar words in 20-word surroundings",
                                               fontsize = 20)
-    heatmap.set_title("How similar is the author-practioner's vocabulary\nwhen talking about two different topics [" + manuscript_version + "]",
+    heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + manuscript_version + "]",
                       fontsize = 22)
     heatmap.set_ylabel("Tags", fontsize = 20)
     heatmap.set_xlabel("Tags", fontsize = 20)
@@ -214,7 +214,7 @@ def create_symmetrical_diff_heatmap(v1, v2, data1, data2):
                           center = 0, cmap = 'seismic', fmt = '.2f')
     heatmap.collections[0].colorbar.set_label("Percentage of similar words in 20-word surroundings",
                                               fontsize = 20)
-    heatmap.set_title("How similar is the author-practioner's vocabulary\nwhen talking about two different topics [" + v1 + " - " + v2 + "]",
+    heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + v1 + " - " + v2 + "]",
                       fontsize = 22)
     heatmap.set_ylabel("Tags", fontsize = 20)
     heatmap.set_xlabel("Tags", fontsize = 20)
@@ -272,7 +272,7 @@ def create_asymmetrical_heatmap(data, manuscript_version):
                           cmap = sns.cm.rocket_r)
     heatmap.collections[0].colorbar.set_label("Percentage of included words in 20-word surroundings",
                                               fontsize = 20)
-    heatmap.set_title("How similar is the author-practioner's vocabulary\nwhen talking about two different topics [" + manuscript_version + "]",
+    heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + manuscript_version + "]",
                       fontsize = 22)
     heatmap.set_ylabel("How much of this tag's context vocabulary...", fontsize = 20)
     heatmap.set_xlabel("...is included in this tag's context vocabulary?", fontsize = 20)
@@ -306,7 +306,7 @@ def create_asymmetrical_diff_heatmap(v1, v2, data1, data2):
                           center = 0, cmap = 'seismic', fmt = '.2f')
     heatmap.collections[0].colorbar.set_label("Percentage of similar words in 20-word surroundings",
                                               fontsize = 20)
-    heatmap.set_title("How similar is the author-practioner's vocabulary\nwhen talking about two different topics [" + v1 + " - " + v2 + "]",
+    heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + v1 + " - " + v2 + "]",
                       fontsize = 22)
     heatmap.set_ylabel("How much of this tag's context vocabulary...", fontsize = 20)
     heatmap.set_xlabel("...is included in this tag's context vocabulary?", fontsize = 20)
@@ -329,16 +329,16 @@ def create_barplot(data, manuscript_version, normalized):
     plt.gcf().subplots_adjust(bottom = 0.2)
     plt.gcf().subplots_adjust(left = 0.15)
     if normalized:
-        hist_data = [len(data[0][i])/len(data[1][i]) for i in range(len(tags))]
+        bar_data = [len(data[0][i])/len(data[1][i]) for i in range(len(tags))]
         ylabel_appendix = ",\ndivided by the number of times this tag appears"
         filename_appendix = "_normalized"
     else:
-        hist_data = [len(data[0][i]) for i in range(len(tags))]
+        bar_data = [len(data[0][i]) for i in range(len(tags))]
         ylabel_appendix = ""
         filename_appendix = ""
-    barplt = sns.barplot(x = tag_names, y = hist_data,
+    barplt = sns.barplot(x = tag_names, y = bar_data,
                          palette = "deep")
-    mean = np.mean(hist_data)
+    mean = np.mean(bar_data)
     barplt.axhline(mean, ls='-', color = "black")
     barplt.text(1, mean*1.01, "Mean", fontsize = 16, color = "black")
     for p in barplt.patches:
@@ -350,11 +350,11 @@ def create_barplot(data, manuscript_version, normalized):
     barplt.set_ylabel("Number of unique words in 20-word surroundings" + ylabel_appendix,
                       fontsize = 20)
     barplt.set_xlabel("Tag", fontsize = 20)
-    barplt.set_title("How diversified is the author-practioner's\nvocabulary when talking about... [" + manuscript_version + "]",
+    barplt.set_title("How diversified is the author-practitioner's\nvocabulary when talking about... [" + manuscript_version + "]",
                      fontsize = 24)
     barplt.set_xticklabels(barplt.get_xticklabels(), rotation = 90, fontsize = 16)
     barplt.set_yticklabels(tag_names, size = 16)
-    #hist.yaxis.set_major_locator(plt.FixedLocator(5))
+    #bar.yaxis.set_major_locator(plt.FixedLocator(5))
     barplt.set(yscale = "log")
     fig = barplt.get_figure()
     fig.savefig(viz_path + "barplot" + filename_appendix + ".png")
@@ -383,7 +383,7 @@ def create_grouped_barplot(data, normalized):
     context = data[0]
     items = data[1]
 
-    hist_data = []
+    bar_data = []
     for i in range(3):
         v = manuscript_versions[i]
         for j in range(len(tags)):
@@ -391,9 +391,9 @@ def create_grouped_barplot(data, normalized):
             height = len(context[i][j])
             if normalized:
                 height /= len(items[i][j])
-            hist_data.append([tag, height, v])
+            bar_data.append([tag, height, v])
 
-    data = pandas.DataFrame(data = hist_data,
+    data = pandas.DataFrame(data = bar_data,
                             columns = ["tag", "height", "manuscript version"])
 
     barplt = sns.barplot(x = "tag", y = "height", data = data, order = tags,
@@ -401,13 +401,13 @@ def create_grouped_barplot(data, normalized):
     barplt.set_ylabel("Number of unique words in 20-word surroundings" + ylabel_appendix,
                       fontsize = 20)
     barplt.set_xlabel("Tag", fontsize = 20)
-    barplt.set_title("How diversified is the author-practioner's\nvocabulary when talking about...",
+    barplt.set_title("How diversified is the author-practitioner's\nvocabulary when talking about...",
                      fontsize = 24)
     barplt.set_xticklabels(tag_names, rotation = 90, fontsize = 16)
     barplt.set_yticklabels(barplt.get_yticklabels(), size = 16)
     plt.setp(barplt.get_legend().get_texts(), fontsize = "16")
     plt.setp(barplt.get_legend().get_title(), fontsize = "16")
-    #hist.yaxis.set_major_locator(plt.FixedLocator(5))
+    #bar.yaxis.set_major_locator(plt.FixedLocator(5))
     barplt.set(yscale = "log")
     fig = barplt.get_figure()
     fig.savefig(viz_path + "grouped_barplot" + filename_appendix + ".png")
