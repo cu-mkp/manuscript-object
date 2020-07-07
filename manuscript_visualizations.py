@@ -13,6 +13,15 @@ import matplotlib.pyplot as plt
 cwd = os.getcwd()
 m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
 
+all_categories = ["casting", "painting", "metal process", "varnish",
+              "arms and armor", "medicine", "household and daily life",
+              "cultivation", "stones", "wood and its coloring", "tool",
+              "tricks and sleight of hand", "decorative",
+              "animal husbandry", "glass process", "corrosives", "dyeing",
+              "preserving", "wax process", "practical optics", "lists",
+              "merchants", "printing", "La boutique", "alchemy",
+              "manuscript structure"]
+
 
 def tags_scatterplot(search_tags, filename, title):
     manuscript_version = "tl" # "tl", "tc" or "tcn"
@@ -26,7 +35,6 @@ def tags_scatterplot(search_tags, filename, title):
         side = "r" if (i % 2 == 0) else "v"
 
         folio = f'{manuscript_version}_p{number}{side}_preTEI'
-        #print(folio)
         input_filename = f'{m_path}/ms-xml/{manuscript_version}/{folio}.xml'
 
         tree = etree.parse(input_filename)
@@ -66,7 +74,6 @@ def tags_bubbleplot(search_tags, filename, title, normalized):
         side = "r" if (i % 2 == 0) else "v"
 
         folio = f'{manuscript_version}_p{number}{side}_preTEI'
-        #print(folio)
         input_filename = f'{m_path}/ms-xml/{manuscript_version}/{folio}.xml'
 
         tree = etree.parse(input_filename)
@@ -100,7 +107,6 @@ def tags_bubbleplot(search_tags, filename, title, normalized):
 
     bubbleplot.set_xticklabels([], rotation = 90, fontsize = 6)
     bubbleplot.legend(fancybox = True)
-    #scatter.set_yticklabels(scatter.get_yticklabels(), size = 16)
 
     fig = bubbleplot.get_figure()
     fig.savefig(f"{viz_path}{filename}.png")
@@ -109,44 +115,39 @@ def tags_bubbleplot(search_tags, filename, title, normalized):
 def categories_barplot():
     manuscript_version = "tl" # "tl", "tc" or "tcn"
 
-    categories = ["casting", "painting", "metal process", "varnish",
-                  "arms and armor", "medicine", "household and daily life",
-                  "cultivation", "stones", "wood and its coloring", "tool",
-                  "tricks and sleight of hand", "decorative",
-                  "animal husbandry", "glass process", "corrosives", "dyeing",
-                  "preserving", "wax process", "practical optics", "lists",
-                  "merchants", "printing", "La boutique", "alchemy",
-                  "manuscript structure"]
-    counts = np.zeros(len(categories))
+    counts = np.zeros(len(all_categories))
+    entries = []
 
     for i in range(0, 340):
         number = format(i//2 + 1, '03')
         side = "r" if (i % 2 == 0) else "v"
 
         folio = f'{manuscript_version}_p{number}{side}_preTEI'
-        #print(folio)
         input_filename = f'{m_path}/ms-xml/{manuscript_version}/{folio}.xml'
 
         tree = etree.parse(input_filename)
 
         for div in tree.findall(".//div"):
+            entry = div.get("id")
+            if entry == None or entry in entries:
+                # has already been seen or is not an entry
+                continue
+            entries.append(entry)
             category_list = div.get("categories")
             if category_list != None:
                 category_list = category_list.split(";")
-                for i in range(len(categories)):
-                    if categories[i] in category_list:
+                for i in range(len(all_categories)):
+                    if all_categories[i] in category_list:
                         counts[i] += 1
-
-    df = pandas.DataFrame({"counts": counts, "categories": categories})
+    df = pandas.DataFrame({"counts": counts, "categories": all_categories})
     cat_order = df.sort_values("counts", ascending = False).categories
-
+    
     plt.subplots(figsize = (10, 10))
     plt.gcf().subplots_adjust(bottom = 0.35)
     barplt = sns.barplot(x = "categories", y = "counts", data = df,
                          order = cat_order)
 
     total_sum = sum(counts)
-    print(total_sum)
     for p in barplt.patches:
         nb = format(p.get_height()/total_sum*100, '.2f')
         barplt.annotate(nb + "%", (p.get_x() + p.get_width(), p.get_height() + 5),
@@ -158,12 +159,11 @@ def categories_barplot():
     barplt.set_title("How many entries there are for each category", fontsize = 20)
 
     barplt.set_xticklabels(barplt.get_xticklabels(), rotation = 90, fontsize = 16)
-    #scatter.set_yticklabels(scatter.get_yticklabels(), size = 16)
     fig = barplt.get_figure()
     fig.savefig(viz_path + "categories_barplot.png")
 
 
-def entry_words_scatterplot():
+def entry_words_scatterplot(logscale):
     for manuscript_version in ["tc", "tcn", "tl"]:
 
         entries = []
@@ -176,13 +176,14 @@ def entry_words_scatterplot():
             side = "r" if (i % 2 == 0) else "v"
 
             folio = f'{manuscript_version}_p{number}{side}_preTEI'
-            #print(folio)
             input_filename = f'{m_path}/ms-xml/{manuscript_version}/{folio}.xml'
 
             tree = etree.parse(input_filename)
 
             for div in tree.findall(".//div"):
                 entry = div.get("id")
+                if entry == None:
+                    continue
                 entry_text = etree.tostring(div, method = "text", encoding="UTF-8").decode('utf-8')
                 entry_words = entry_text.split()
                 number_of_words = len(entry_words)
@@ -209,49 +210,91 @@ def entry_words_scatterplot():
 
         for line in range(0, df.shape[0]):
             if (df.lengths[line] > 1500):
-                scatter.text(df.lengths[line] + 30, df.normalized_lengths[line], df.entries[line], horizontalalignment="left", fontsize = 10)
+                scatter.text(df.lengths[line] + 30, df.normalized_lengths[line], df.entries[line], horizontalalignment = "left", fontsize = 10)
+            if (df.lengths[line] < 2 and logscale):
+                scatter.text(df.lengths[line]*1.1, df.normalized_lengths[line], df.entries[line], horizontalalignment = "left", fontsize = 10)
 
-        scatter.set_ylabel("Number of different words", fontsize = 16)
         scatter.set_xlabel("Number of words", fontsize = 16)
-        scatter.set_title(f"Lengths of entries [{manuscript_version}]", fontsize = 20)
+        scatter.set_ylabel("Number of different words", fontsize = 16)
+        if logscale:
+            scatter.set(xscale = "log")
+            scatter.set(yscale = "log")
+            scatter.set_title(f"Lengths of entries (logscale) [{manuscript_version}]", fontsize = 20)
+        else:
+            scatter.set_title(f"Lengths of entries [{manuscript_version}]", fontsize = 20)
 
         scatter.legend(fancybox = True)
-        #scatter.set_yticklabels(scatter.get_yticklabels(), size = 16)
+
+        max_words = np.max(lengths)
+        max_diff_words = np.max(normalized_lengths)
+        minmax = np.min([max_words, max_diff_words])
+        scatter.plot([1, minmax], [1, minmax], ':k')
+        scatter.text(minmax, minmax + 10, "1:1 ratio", horizontalalignment = "center", fontsize = 10)
+
+        ratios = [lengths[i]/normalized_lengths[i] for i in range(len(lengths))]
+        mean_ratio = np.mean(ratios)
+        scatter.plot([1, minmax*mean_ratio], [1, minmax], ':r')
+        if logscale:
+            scatter.text(minmax*mean_ratio, minmax + 200, "mean ratio", horizontalalignment = "center", fontsize = 10, color = "red")
+        else:
+            scatter.text(minmax*mean_ratio, minmax + 10, "mean ratio", horizontalalignment = "center", fontsize = 10, color = "red")
 
         fig = scatter.get_figure()
-        fig.savefig(f"{viz_path}entry_words_scatterplot_{manuscript_version}.png")
+        if logscale:
+            fig.savefig(f"{viz_path}entry_words_scatterplot_logscale_{manuscript_version}.png")
+        else:
+            fig.savefig(f"{viz_path}entry_words_scatterplot_linearscale_{manuscript_version}.png")
 
 
 def tags_by_category_swarmplot(search_tags, filename, title):
     manuscript_version = "tl" # "tl", "tc" or "tcn"
 
+    # for the swarmplot
     entries = []
     entry_ids = []
     tags = []
     categories = []
     entry_count = 0
 
+    # for the stripplot
+    all_entries = []
+    entry_ids2 = []
+    categories2 = []
+
     for i in range(0, 340):
         number = format(i//2 + 1, '03')
         side = "r" if (i % 2 == 0) else "v"
 
         folio = f'{manuscript_version}_p{number}{side}_preTEI'
-        #print(folio)
         input_filename = f'{m_path}/ms-xml/{manuscript_version}/{folio}.xml'
 
         tree = etree.parse(input_filename)
 
         for div in tree.findall(".//div"):
             entry = div.get("id")
+            if entry == None:
+                # not an entry
+                continue
+
+            id = -1
+            for j in range(len(all_entries)):
+                if all_entries[j] == entry:
+                    id = entry_ids2[j]
+                    break
+            if id == -1:
+                id = entry_count
+                entry_count += 1
+
             entry_text = etree.tostring(div, method = "xml", encoding="UTF-8").decode('utf-8')
             category_list = div.get("categories")
             if isinstance(category_list, str):
                 category_list = category_list.split(";")
             if category_list == None:
-                continue
-            id = entry_count
-            if (entry not in entries):
-                entry_count += 1
+                # find the categories if this entry was already seen
+                category_list = []
+                for j in range(len(all_entries)):
+                    if all_entries[j] == entry:
+                        category_list.append(categories2[j])
 
             for tag in search_tags:
                 count = entry_text.count(f'<{tag}>')
@@ -262,12 +305,23 @@ def tags_by_category_swarmplot(search_tags, filename, title):
                         tags.append(tag)
                         categories.append(cat)
 
-    df = pandas.DataFrame({"entries": entries, "tags": tags, "entry_ids": entry_ids, "categories": categories})
+            for cat in category_list:
+                all_entries.append(entry)
+                entry_ids2.append(id)
+                categories2.append(cat)
+
+    df_swarm = pandas.DataFrame({"tags": tags, "entry_ids": entry_ids, "categories": categories})
+    df_strip = pandas.DataFrame({"entry_ids": entry_ids2, "categories": categories2})
 
     plt.subplots(figsize = (21, 15))
     plt.gcf().subplots_adjust(right = 0.99)
 
-    swarm = sns.swarmplot(x = "entry_ids", y = "categories", hue = "tags", dodge = True, data = df, size = 3)
+    swarm = sns.stripplot(x = "entry_ids", y = "categories", data = df_strip,
+                          color = "0.8", jitter = 0, size = 10, marker = "s",
+                          order = all_categories)
+    swarm = sns.swarmplot(x = "entry_ids", y = "categories", hue = "tags",
+                          dodge = True, data = df_swarm, size = 3,
+                          order = all_categories)
 
     swarm.grid(False)
     swarm.set_ylabel("Categories", fontsize = 20)
@@ -290,6 +344,7 @@ if not os.path.exists(viz_path):
 language_tags = ["fr", "el", "it", "la", "oc", "po"]
 
 title = "Other languages in the English translation of the manuscript"
+"""
 tags_scatterplot(language_tags, "languages_scatterplot", title)
 
 tags_bubbleplot(language_tags, "languages_bubbles", "Other languages in the English translation of the manuscript", False)
@@ -297,11 +352,12 @@ tags_bubbleplot(language_tags, "languages_bubbles_normalized", "Other languages 
 
 tags_bubbleplot(["del", "add"], "add_del_bubbles", "Additions and deletions by the author-practitioner", False)
 tags_bubbleplot(["del", "add"], "add_del_bubbles_normalized", "Additions and deletions by the author-practitioner (normalized by entry length)", True)
-
+"""
 categories_barplot()
-
-entry_words_scatterplot()
+"""
+entry_words_scatterplot(True)
+entry_words_scatterplot(False)
 
 tags_by_category_swarmplot(["del", "add"], "add_del_swarmplot", "Additions and deletions by the author-practitioner")
-
+"""
 print("All done!")
