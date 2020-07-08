@@ -141,7 +141,7 @@ def categories_barplot():
                         counts[i] += 1
     df = pandas.DataFrame({"counts": counts, "categories": all_categories})
     cat_order = df.sort_values("counts", ascending = False).categories
-    
+
     plt.subplots(figsize = (10, 10))
     plt.gcf().subplots_adjust(bottom = 0.35)
     barplt = sns.barplot(x = "categories", y = "counts", data = df,
@@ -297,12 +297,12 @@ def tags_by_category_swarmplot(search_tags, filename, title):
                         category_list.append(categories2[j])
 
             for tag in search_tags:
-                count = entry_text.count(f'<{tag}>')
+                count = entry_text.count(tag)
                 for j in range(int(count)):
                     for cat in category_list:
                         entries.append(entry)
                         entry_ids.append(id)
-                        tags.append(tag)
+                        tags.append(tag) # TO DO remove < and >
                         categories.append(cat)
 
             for cat in category_list:
@@ -320,7 +320,7 @@ def tags_by_category_swarmplot(search_tags, filename, title):
                           color = "0.8", jitter = 0, size = 10, marker = "s",
                           order = all_categories)
     swarm = sns.swarmplot(x = "entry_ids", y = "categories", hue = "tags",
-                          dodge = True, data = df_swarm, size = 3,
+                          dodge = True, data = df_swarm, size = 4,
                           order = all_categories)
 
     swarm.grid(False)
@@ -344,7 +344,7 @@ if not os.path.exists(viz_path):
 language_tags = ["fr", "el", "it", "la", "oc", "po"]
 
 title = "Other languages in the English translation of the manuscript"
-"""
+
 tags_scatterplot(language_tags, "languages_scatterplot", title)
 
 tags_bubbleplot(language_tags, "languages_bubbles", "Other languages in the English translation of the manuscript", False)
@@ -352,12 +352,15 @@ tags_bubbleplot(language_tags, "languages_bubbles_normalized", "Other languages 
 
 tags_bubbleplot(["del", "add"], "add_del_bubbles", "Additions and deletions by the author-practitioner", False)
 tags_bubbleplot(["del", "add"], "add_del_bubbles_normalized", "Additions and deletions by the author-practitioner (normalized by entry length)", True)
-"""
+
 categories_barplot()
-"""
+
 entry_words_scatterplot(True)
 entry_words_scatterplot(False)
 
-tags_by_category_swarmplot(["del", "add"], "add_del_swarmplot", "Additions and deletions by the author-practitioner")
-"""
+tags_by_category_swarmplot(["<del>", "<add>"], "add_del_swarmplot", "Additions and deletions by the author-practitioner")
+
+margin_types = ["left-bottom", "right-bottom", "bottom", "right-middle", "left-middle", "right-top", "left-top", "top"]
+tags_by_category_swarmplot(margin_types, "margins_swarmplot", "Margins in the manuscript")
+
 print("All done!")
