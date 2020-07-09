@@ -98,7 +98,7 @@ def tags_bubbleplot(search_tags, filename, title, normalized):
     plt.subplots(figsize = (15, 5))
     #plt.gcf().subplots_adjust(left = 0.05)
     #plt.gcf().subplots_adjust(right = 0.95)
-    bubbleplot = sns.scatterplot(x = "entries", y = "tags", size = "counts", sizes = (10, 500), data = df, linewidth = 0, alpha = 0.3)
+    bubbleplot = sns.scatterplot(x = "entries", y = "tags", size = "counts", sizes = (0, 500), data = df, linewidth = 0, alpha = 0.3)
 
     bubbleplot.grid(False)
     bubbleplot.set_ylabel("Tags", fontsize = 16)
@@ -163,7 +163,7 @@ def categories_barplot():
     fig.savefig(viz_path + "categories_barplot.png")
 
 
-def entry_words_scatterplot(logscale):
+def entries_lengths_scatterplot(logscale):
     for manuscript_version in ["tc", "tcn", "tl"]:
 
         entries = []
@@ -241,9 +241,58 @@ def entry_words_scatterplot(logscale):
 
         fig = scatter.get_figure()
         if logscale:
-            fig.savefig(f"{viz_path}entry_words_scatterplot_logscale_{manuscript_version}.png")
+            fig.savefig(f"{viz_path}entries_lengths_scatterplot_logscale_{manuscript_version}.png")
         else:
-            fig.savefig(f"{viz_path}entry_words_scatterplot_linearscale_{manuscript_version}.png")
+            fig.savefig(f"{viz_path}entries_lengths_scatterplot_linearscale_{manuscript_version}.png")
+
+
+def entries_lengths_distplot():
+    for manuscript_version in ["tc", "tcn", "tl"]:
+
+        lengths = []
+        normalized_lengths = []
+
+        for i in range(0, 340):
+            number = format(i//2 + 1, '03')
+            side = "r" if (i % 2 == 0) else "v"
+
+            folio = f'{manuscript_version}_p{number}{side}_preTEI'
+            input_filename = f'{m_path}/ms-xml/{manuscript_version}/{folio}.xml'
+
+            tree = etree.parse(input_filename)
+
+            for div in tree.findall(".//div"):
+                entry = div.get("id")
+                if entry == None:
+                    continue
+                entry_text = etree.tostring(div, method = "text", encoding="UTF-8").decode('utf-8')
+                entry_words = entry_text.split()
+                number_of_words = len(entry_words)
+                number_of_different_words = len(list(dict.fromkeys(entry_words))) # duplicates removed
+                lengths.append(number_of_words)
+                normalized_lengths.append(number_of_different_words)
+
+        df = pandas.DataFrame({"lengths": lengths, "normalized_lengths": normalized_lengths})
+
+        plt.subplots(figsize = (10, 10))
+        #plt.gcf().subplots_adjust(left = 0.05)
+        #plt.gcf().subplots_adjust(right = 0.95)
+
+        distplt = sns.distplot(a = df["normalized_lengths"], kde = True, color = "r",
+                               kde_kws = {"color": "r", "lw": 3, "label": "Number of differents words per entry"},
+                               bins = np.linspace(0, 800, 40))
+        distplt = sns.distplot(a = df["lengths"], kde = True, color = "b",
+                               kde_kws = {"color": "b", "lw": 3, "label": "Total number of words per entry"},
+                               bins = np.linspace(0, 800, 40))
+
+        distplt.set_xlabel("")
+        distplt.set_title(f"Density estimate of the lengths of entries [{manuscript_version}]", fontsize = 20)
+        distplt.set_yticklabels([])
+        distplt.set_xlim(0, 900)
+        distplt.legend(fancybox = True)
+
+        fig = distplt.get_figure()
+        fig.savefig(f"{viz_path}entries_lengths_distplot_{manuscript_version}.png")
 
 
 def tags_by_category_swarmplot(search_tags, filename, title):
@@ -355,8 +404,10 @@ tags_bubbleplot(["del", "add"], "add_del_bubbles_normalized", "Additions and del
 
 categories_barplot()
 
-entry_words_scatterplot(True)
-entry_words_scatterplot(False)
+entries_lengths_scatterplot(True)
+entries_lengths_scatterplot(False)
+
+entries_lengths_distplot()
 
 tags_by_category_swarmplot(["<del>", "<add>"], "add_del_swarmplot", "Additions and deletions by the author-practitioner")
 
