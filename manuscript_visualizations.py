@@ -84,8 +84,8 @@ def tags_bubbleplot(search_tags, filename, title, normalized):
 
             for tag in search_tags:
                 entries.append(entry)
-                tags.append(tag)
-                count = entry_text.count(f'<{tag}>')
+                tags.append(tag.replace("<", "").replace(">", ""))
+                count = entry_text.count(tag.replace("<", "").replace(">", ""))
                 if normalized:
                     pure_text = etree.tostring(div, method = "text", encoding="UTF-8").decode('utf-8')
                     entry_length = len(pure_text.split())
@@ -106,7 +106,8 @@ def tags_bubbleplot(search_tags, filename, title, normalized):
     bubbleplot.set_title(title, fontsize = 20)
 
     bubbleplot.set_xticklabels([], rotation = 90, fontsize = 6)
-    bubbleplot.legend(fancybox = True)
+    #bubbleplot.legend(loc = "best", ncol = 1, framealpha = 0.2, fancybox = True)
+    plt.legend(bbox_to_anchor = (1.03, 0.5), loc = "center left", fancybox = True)
 
     fig = bubbleplot.get_figure()
     fig.savefig(f"{viz_path}{filename}.png")
@@ -198,7 +199,9 @@ def entries_lengths_scatterplot(logscale):
                     normalized_lengths.append(number_of_different_words)
                     folios.append(i//2 + 1)
 
-        df = pandas.DataFrame({"entries": entries, "lengths": lengths, "normalized_lengths": normalized_lengths, "folio number": folios})
+        df = pandas.DataFrame({"entries": entries, "lengths": lengths,
+                               "normalized_lengths": normalized_lengths,
+                               "folio number": folios})
 
         plt.subplots(figsize = (10, 10))
         #plt.gcf().subplots_adjust(left = 0.05)
@@ -206,22 +209,31 @@ def entries_lengths_scatterplot(logscale):
         #points = plt.scatter(df["lengths"], df["normalized_lengths"], s = 0)
         #plt.colorbar(points)
 
-        scatter = sns.scatterplot(x = "lengths", y = "normalized_lengths", hue = "folio number", data = df, linewidth = 0, alpha = 0.9)
+        scatter = sns.scatterplot(x = "lengths", y = "normalized_lengths",
+                                  hue = "folio number", data = df,
+                                  linewidth = 0, alpha = 0.5, size_norm = 1,
+                                  palette = "plasma")
 
         for line in range(0, df.shape[0]):
             if (df.lengths[line] > 1500):
-                scatter.text(df.lengths[line] + 30, df.normalized_lengths[line], df.entries[line], horizontalalignment = "left", fontsize = 10)
+                scatter.text(df.lengths[line] + 30, df.normalized_lengths[line],
+                             df.entries[line], horizontalalignment = "left",
+                             fontsize = 10)
             if (df.lengths[line] < 2 and logscale):
-                scatter.text(df.lengths[line]*1.1, df.normalized_lengths[line], df.entries[line], horizontalalignment = "left", fontsize = 10)
+                scatter.text(df.lengths[line]*1.1, df.normalized_lengths[line],
+                             df.entries[line], horizontalalignment = "left",
+                             fontsize = 10)
 
         scatter.set_xlabel("Number of words", fontsize = 16)
         scatter.set_ylabel("Number of different words", fontsize = 16)
         if logscale:
             scatter.set(xscale = "log")
             scatter.set(yscale = "log")
-            scatter.set_title(f"Lengths of entries (logscale) [{manuscript_version}]", fontsize = 20)
+            scatter.set_title(f"Lengths of entries (logscale) [{manuscript_version}]",
+                              fontsize = 20)
         else:
-            scatter.set_title(f"Lengths of entries [{manuscript_version}]", fontsize = 20)
+            scatter.set_title(f"Lengths of entries [{manuscript_version}]",
+                              fontsize = 20)
 
         scatter.legend(fancybox = True)
 
@@ -279,13 +291,13 @@ def entries_lengths_distplot():
         #plt.gcf().subplots_adjust(right = 0.95)
 
         distplt = sns.distplot(a = df["normalized_lengths"], kde = True, color = "r",
-                               kde_kws = {"color": "r", "lw": 3, "label": "Number of differents words per entry"},
+                               kde_kws = {"color": "r", "lw": 3, "label": "Number of differents words per entry", "alpha": 0.7},
                                bins = np.linspace(0, 800, 40))
         distplt = sns.distplot(a = df["lengths"], kde = True, color = "b",
-                               kde_kws = {"color": "b", "lw": 3, "label": "Total number of words per entry"},
+                               kde_kws = {"color": "b", "lw": 3, "label": "Total number of words per entry", "alpha": 0.7},
                                bins = np.linspace(0, 800, 40))
 
-        distplt.set_xlabel("")
+        distplt.set_xlabel("Word counts")
         distplt.set_title(f"Density estimate of the lengths of entries [{manuscript_version}]", fontsize = 20)
         distplt.set_yticklabels([])
         distplt.set_xlim(0, 900)
@@ -366,7 +378,7 @@ def tags_by_category_swarmplot(search_tags, filename, title):
     plt.gcf().subplots_adjust(right = 0.99)
 
     swarm = sns.stripplot(x = "entry_ids", y = "categories", data = df_strip,
-                          color = "0.8", jitter = 0, size = 10, marker = "s",
+                          color = "0.6", jitter = 0, size = 12, marker = "$|$",
                           order = all_categories)
     swarm = sns.swarmplot(x = "entry_ids", y = "categories", hue = "tags",
                           dodge = True, data = df_swarm, size = 4,
@@ -390,28 +402,40 @@ viz_path = f'{m_path}/manuscript-object/manuscript_visualizations/'
 if not os.path.exists(viz_path):
     os.mkdir(viz_path)
 
-language_tags = ["fr", "el", "it", "la", "oc", "po"]
+language_tags = ["<fr>", "<el>", "<it>", "<la>", "<oc>", "<po>"]
+margin_types = ["left-bottom", "right-bottom", "bottom", "right-middle", "left-middle", "right-top", "left-top", "top"]
 
-title = "Other languages in the English translation of the manuscript"
-
-tags_scatterplot(language_tags, "languages_scatterplot", title)
+#tags_scatterplot(language_tags, "languages_scatterplot", title)
 
 tags_bubbleplot(language_tags, "languages_bubbles", "Other languages in the English translation of the manuscript", False)
 tags_bubbleplot(language_tags, "languages_bubbles_normalized", "Other languages in the English translation of the manuscript (normalized by entry length)", True)
 
-tags_bubbleplot(["del", "add"], "add_del_bubbles", "Additions and deletions by the author-practitioner", False)
-tags_bubbleplot(["del", "add"], "add_del_bubbles_normalized", "Additions and deletions by the author-practitioner (normalized by entry length)", True)
+tags_bubbleplot(["<del>", "<add>"], "add_del_bubbles", "Additions and deletions by the author-practitioner", False)
+tags_bubbleplot(["<del>", "<add>"], "add_del_bubbles_normalized", "Additions and deletions by the author-practitioner (normalized by entry length)", True)
+
+tags_bubbleplot(margin_types, "margins_bubbles", "Margins in the manuscript", False)
+tags_bubbleplot(margin_types, "margins_bubbles_normalized", "Margins in the manuscript (normalized by entry length)", True)
+
+print("Bubbleplots finished.")
 
 categories_barplot()
+
+print("Barplots finished.")
 
 entries_lengths_scatterplot(True)
 entries_lengths_scatterplot(False)
 
+print("Scatterplots finished.")
+
 entries_lengths_distplot()
 
-tags_by_category_swarmplot(["<del>", "<add>"], "add_del_swarmplot", "Additions and deletions by the author-practitioner")
+print("Distplots finished.")
 
-margin_types = ["left-bottom", "right-bottom", "bottom", "right-middle", "left-middle", "right-top", "left-top", "top"]
+tags_by_category_swarmplot(["<del>", "<add>"], "add_del_swarmplot", "Additions and deletions by the author-practitioner")
 tags_by_category_swarmplot(margin_types, "margins_swarmplot", "Margins in the manuscript")
+
+tags_by_category_swarmplot(language_tags, "languages_swarmplot", "Other languages in the English translation of the manuscript")
+
+print("Swarmplot finished.")
 
 print("All done!")
