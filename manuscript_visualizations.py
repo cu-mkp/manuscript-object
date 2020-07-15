@@ -9,6 +9,7 @@ import numpy as np
 import pandas
 import seaborn as sns; sns.set()
 import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
 
 cwd = os.getcwd()
 m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
@@ -69,6 +70,8 @@ def tags_bubbleplot(search_tags, filename, title, normalized):
     tags = []
     counts = []
 
+    entry = None
+
     for i in range(0, 340):
         number = format(i//2 + 1, '03')
         side = "r" if (i % 2 == 0) else "v"
@@ -79,7 +82,12 @@ def tags_bubbleplot(search_tags, filename, title, normalized):
         tree = etree.parse(input_filename)
 
         for div in tree.findall(".//div"):
-            entry = div.get("id")
+            new_entry = div.get("id")
+            if new_entry != None:
+                entry = new_entry
+            if entry == None:
+                continue
+
             entry_text = etree.tostring(div, method = "xml", encoding="UTF-8").decode('utf-8')
 
             for tag in search_tags:
@@ -96,7 +104,7 @@ def tags_bubbleplot(search_tags, filename, title, normalized):
     df = pandas.DataFrame({"entries": entries, "tags": tags, "counts": counts})
 
     plt.subplots(figsize = (15, 5))
-    #plt.gcf().subplots_adjust(left = 0.05)
+    plt.gcf().subplots_adjust(bottom = 0.2)
     #plt.gcf().subplots_adjust(right = 0.95)
     bubbleplot = sns.scatterplot(x = "entries", y = "tags", size = "counts", sizes = (0, 500), data = df, linewidth = 0, alpha = 0.3)
 
@@ -105,7 +113,14 @@ def tags_bubbleplot(search_tags, filename, title, normalized):
     bubbleplot.set_xlabel("Entries", fontsize = 16)
     bubbleplot.set_title(title, fontsize = 20)
 
-    bubbleplot.set_xticklabels([], rotation = 90, fontsize = 6)
+    individual_entries = list(dict.fromkeys(entries))
+    xlabels = []
+    for i in range(len(individual_entries)):
+        if i % 25 == 0:
+            xlabels.append(individual_entries[i])
+        else:
+            xlabels.append("")
+    bubbleplot.set_xticklabels(xlabels, rotation = 90, fontsize = 6)
     #bubbleplot.legend(loc = "best", ncol = 1, framealpha = 0.2, fancybox = True)
     plt.legend(bbox_to_anchor = (1.03, 0.5), loc = "center left", fancybox = True)
 
@@ -172,6 +187,8 @@ def entries_lengths_scatterplot(logscale):
         normalized_lengths = []
         folios = []
 
+        entry = None
+
         for i in range(0, 340):
             number = format(i//2 + 1, '03')
             side = "r" if (i % 2 == 0) else "v"
@@ -182,9 +199,12 @@ def entries_lengths_scatterplot(logscale):
             tree = etree.parse(input_filename)
 
             for div in tree.findall(".//div"):
-                entry = div.get("id")
+                new_entry = div.get("id")
+                if new_entry != None:
+                    entry = new_entry
                 if entry == None:
                     continue
+
                 entry_text = etree.tostring(div, method = "text", encoding="UTF-8").decode('utf-8')
                 entry_words = entry_text.split()
                 number_of_words = len(entry_words)
@@ -264,6 +284,8 @@ def entries_lengths_distplot():
         lengths = []
         normalized_lengths = []
 
+        entry = None
+
         for i in range(0, 340):
             number = format(i//2 + 1, '03')
             side = "r" if (i % 2 == 0) else "v"
@@ -274,9 +296,12 @@ def entries_lengths_distplot():
             tree = etree.parse(input_filename)
 
             for div in tree.findall(".//div"):
-                entry = div.get("id")
+                new_entry = div.get("id")
+                if new_entry != None:
+                    entry = new_entry
                 if entry == None:
                     continue
+
                 entry_text = etree.tostring(div, method = "text", encoding="UTF-8").decode('utf-8')
                 entry_words = entry_text.split()
                 number_of_words = len(entry_words)
@@ -318,9 +343,14 @@ def tags_by_category_swarmplot(search_tags, filename, title):
     entry_count = 0
 
     # for the stripplot
-    all_entries = []
+    entries2 = []
     entry_ids2 = []
     categories2 = []
+
+    all_entries = [] # used for getting entry ids (necessary for the x axis)
+    xlabels = [""] # will be the labels on the x axis
+
+    entry = None
 
     for i in range(0, 340):
         number = format(i//2 + 1, '03')
@@ -332,19 +362,22 @@ def tags_by_category_swarmplot(search_tags, filename, title):
         tree = etree.parse(input_filename)
 
         for div in tree.findall(".//div"):
-            entry = div.get("id")
+            new_entry = div.get("id")
+            if new_entry != None:
+                entry = new_entry
             if entry == None:
-                # not an entry
                 continue
 
-            id = -1
-            for j in range(len(all_entries)):
-                if all_entries[j] == entry:
-                    id = entry_ids2[j]
-                    break
-            if id == -1:
-                id = entry_count
-                entry_count += 1
+            if entry not in all_entries:
+                id = len(all_entries)
+                all_entries.append(entry)
+                if id % 25 == 0:
+                    xlabels.append(entry)
+            else:
+                for j in range(len(all_entries)):
+                    if all_entries[j] == entry:
+                        id = j
+                        break
 
             entry_text = etree.tostring(div, method = "xml", encoding="UTF-8").decode('utf-8')
             category_list = div.get("categories")
@@ -353,8 +386,8 @@ def tags_by_category_swarmplot(search_tags, filename, title):
             if category_list == None:
                 # find the categories if this entry was already seen
                 category_list = []
-                for j in range(len(all_entries)):
-                    if all_entries[j] == entry:
+                for j in range(len(entries2)):
+                    if entries2[j] == entry:
                         category_list.append(categories2[j])
 
             for tag in search_tags:
@@ -363,11 +396,11 @@ def tags_by_category_swarmplot(search_tags, filename, title):
                     for cat in category_list:
                         entries.append(entry)
                         entry_ids.append(id)
-                        tags.append(tag) # TO DO remove < and >
+                        tags.append(tag.replace("<", "").replace(">", ""))
                         categories.append(cat)
 
             for cat in category_list:
-                all_entries.append(entry)
+                entries2.append(entry)
                 entry_ids2.append(id)
                 categories2.append(cat)
 
@@ -384,12 +417,15 @@ def tags_by_category_swarmplot(search_tags, filename, title):
                           dodge = True, data = df_swarm, size = 4,
                           order = all_categories)
 
+    swarm.xaxis.set_major_locator(ticker.MultipleLocator(25))
+    swarm.xaxis.set_major_formatter(ticker.ScalarFormatter())
+
     swarm.grid(False)
     swarm.set_ylabel("Categories", fontsize = 20)
     swarm.set_xlabel("Entries", fontsize = 20)
     swarm.set_title(title, fontsize = 24)
 
-    swarm.set_xticklabels([])
+    swarm.set_xticklabels(xlabels, rotation = 90, fontsize = 12)
     swarm.set_yticklabels(swarm.get_yticklabels(), fontsize = 12)
     swarm.legend(fancybox = True)
 
@@ -433,7 +469,6 @@ print("Distplots finished.")
 
 tags_by_category_swarmplot(["<del>", "<add>"], "add_del_swarmplot", "Additions and deletions by the author-practitioner")
 tags_by_category_swarmplot(margin_types, "margins_swarmplot", "Margins in the manuscript")
-
 tags_by_category_swarmplot(language_tags, "languages_swarmplot", "Other languages in the English translation of the manuscript")
 
 print("Swarmplot finished.")
