@@ -1,11 +1,15 @@
 import os
 import re
-from url_to_html import url_to_html, HTTPError
+import urllib.request
+import urllib.error
 import csv
 
 # Variables
-mainSpace = 'http://fieldnotes.makingandknowing.org/mainSpace'
-space_menu = f'{mainSpace}/space.menu.html'
+ROOT_DIR = "http://fieldnotes.makingandknowing.org"
+MAIN_SPACE = f'{ROOT_DIR}/mainSpace'
+SPACE_MENU = f'{MAIN_SPACE}/space.menu.html'
+
+ERROR_TABLE_PATH = "fieldnotes/errors.csv"
 
 URL = 0        # url is first in regex Match tuple
 TITLE = 1      # title is second in regex Match tuple
@@ -16,105 +20,161 @@ re_intermediate = re.compile(r'<a.*?href="(.*?)".*?>(.*Field Notes.*)</a>') # ge
 re_authors = re.compile(r'<a.*?href="(.*?)".*?>(.*?)</a>') # get url of each author for a given semester
 re_fieldnotes = re.compile(r'<a.*?href="(.*?)".*?>(.*?)</a>') # get url of each field note for a given author
 
-# Functions
+REGEX = {
+    0 : re_semesters,
+    1 : re_intermediate,
+    2 : re_authors,
+    3 : re_fieldnotes
+}
 
-def make_url(url:str) -> str:
-    """
-    Replace all spaces in a string with dashes in order to make it a viable url.
-    """
-    return url.replace(" ", "-")
+BAD_LIST = ['.pdf', '.docx', 'flickr.com', 'drive.google.com', 'docs.google.com', 'wiley.com', 'wikischolars.columbia.edu']
 
-def make_tree():
-    tree = ""
-    table = []
-    notfound = []
-    depth = 0
+class Node:
 
-    newpath = mainSpace
-    menu_html = url_to_html(space_menu)
-
-    semesters = re_semesters.findall(menu_html[menu_html.find(semesters_header):]) # get list of semesters after semesters section header
-
-    for semester in semesters:
-        newpath += f'/{semester[TITLE]}'
+    def __init__(self, url, title, parent, depth):
+        print("url: " + url)
+        print("title: " + title)
+        # print("parent: " + str(parent))
+        # print("depth: " + str(depth))
+        self.old_url = MAIN_SPACE + "/" + url   # this is for making the final table; remains unchanged
+        self.url = MAIN_SPACE + "/" + url       # this is for working with the file; can be changed
+        self.title = title
+        self.parent = parent
+        self.depth = depth
+        self.hasError = self.checkError(self.url)
+        if self.hasError:
+            self.hasError = not self.repairUrl()
+        self.new_url = self.makeNewUrl()
+        self.children = self.findChildren()
+        
+    def checkError(self, url) -> bool:
+        '''
+        True -> url causes HTTP error
+        False -> url is fine
+        '''
         try:
-            semester_html = url_to_html(f'{mainSpace}/{semester[URL]}') # get html of semester page
-        except HTTPError:
-            notfound.append((mainSpace, f'{mainSpace}/{semester[URL]}'))
-            newpath = newpath[:len(newpath) - len(semester[TITLE]) - 1]
-            continue
-        
-        # collapse the intermediate page
-        intermediate = re_intermediate.findall(semester_html)[0] # get the intermediate page linking to the list of authors
-        try:
-            intermediate_html = url_to_html(f'{mainSpace}/{intermediate[URL]}')
-        except HTTPError:
-            notfound.append((f'{mainSpace}/{semester[URL]}', f'{mainSpace}/{intermediate[URL]}'))
-            newpath = newpath[:len(newpath) - len(semester[TITLE]) - 1]
-            continue
-        
-        authors = re_authors.findall(intermediate_html) # get list of authors
-        
-        tree += "\n" + "\t"*depth + semester[TITLE]
-        
-        depth += 1
-        for author in authors:
-            newpath += f'/{author[TITLE]}'
-            try:
-                author_html = url_to_html(f'{mainSpace}/{author[URL]}')
-            except HTTPError:
-                notfound.append((f'{mainSpace}/{semester[URL]}', f'{mainSpace}/{author[URL]}'))
-                newpath = newpath[:len(newpath) - len(author[TITLE]) - 1]
-                continue
-            
-            fieldnotes = re_fieldnotes.findall(author_html) # get list of fieldnotes
-            
-            tree += "\n" + "\t"*depth + author[TITLE]
-            
-            depth += 1
-            for fieldnote in fieldnotes:
-                newpath += f'/{fieldnote[TITLE]}'
-                
-                # see if link works
-                try:
-                    url_to_html(f'{mainSpace}/{fieldnote[URL]}')
-                except HTTPError:
-                    notfound.append((f'{mainSpace}/{author[URL]}', f'{mainSpace}/{fieldnote[URL]}'))
-                except UnicodeDecodeError:
-                    print("unicode decode error: " + fieldnote[URL])
-                
-                # add paths
-                tree += "\n" + "\t"*depth + fieldnote[TITLE]
-                table.append((f'{mainSpace}/{fieldnote[URL]}', make_url(newpath)))
-                
-                # step back
-                newpath = newpath[:len(newpath) - len(fieldnote[TITLE]) - 1]
-            
-            depth -= 1
-            
-            # step back
-            newpath = newpath[:len(newpath) - len(author[TITLE]) - 1]
-        
-        depth -= 1
-        
-        # step back=
-        newpath = newpath[:len(newpath) - len(semester[TITLE]) - 1]
+            urllib.request.urlopen(url)
+        except urllib.error.HTTPError:
+            return True
+        return False
     
-    return (table, tree, notfound)
-
-def organize_field_notes(write=True):
-    table, tree, notfound = make_tree()
-    if write:
-        with open("fieldnotes/filetree.txt", "w") as f:
-            f.write(tree)
-        
-        with open("fieldnotes/filetable.csv", "w") as f:
-            writer = csv.writer(f)
-            writer.writerows(table)
+    def repairUrl(self) -> bool:
+        '''
+        Returns Boolean to indicate success of repairing url.
+        !! This method modifies self.url !!!
+        '''
+        correction = ERROR_TABLE.get(self.old_url)
+        if correction == None:
+            return False
+        elif correction != "?" and correction != "":
+            self.url = correction
+            print(self.old_url + " corrected to " + correction)
+            return not self.checkError(self.url)
+        else:
+            return False
             
-        with open("fieldnotes/urlnotfound.csv", "w") as f:
-            writer = csv.writer(f)
-            writer.writerows(notfound)
+    def makeNewUrl(self) -> str:
+        if self.parent:
+            parent_directory = self.parent.new_url.rpartition('/')[0]
+        else:
+            parent_directory = ROOT_DIR
+        return f'{parent_directory}/{self.sanitize(self.title)}' + '/index.html'*(self.depth!=4) + '.html'*(self.depth==4)
+    
+    def sanitize(self, text):
+        if self.old_url == "http://fieldnotes.makingandknowing.org/mainSpace/Field%20Notes%20-%20Spring%202016.html":
+            tmp = text.partition(',')
+            text = tmp[2] + " " + tmp[0]     # fix "LastName, FirstName" situations (maybe)
+            
+        disallowed = ['.', ':', ',', '$', '+', '=', ';', '/', '@', '&', '\'', '"']      # remove these symbols
+        for symbol in disallowed:
+            text = text.replace(symbol, '')
+        
+        return text.replace(' - ', '_').replace(' ', '-').replace('%20', '-')    # replace spaces with hyphens, hyphens with underscores
+    
+    def findChildren(self):
+        children = []
+        
+        if self.hasError:
+            return children
+        
+        text = self.getHtml()
+        
+        # hard-coded edge cases because I can't be bothered
+        if self.depth == 0:
+            text = text.partition("Course Archives")[2]     # on space.menu.html, only get links under "Course Archives"
+        if self.url == "http://fieldnotes.makingandknowing.org/mainSpace/Fall%202014%20Archives.html":
+            return children
+        if self.url == "http://fieldnotes.makingandknowing.org/mainSpace/Spring%202015.html":
+            return children
+        if self.url == "http://fieldnotes.makingandknowing.org/mainSpace/Field%20Notes%20Fall%202015.html":
+            text = text.partition("<br />")[0]
+        if self.depth == 4:
+            return children
+        
+        # /end edge cases
+        
+        links = REGEX[self.depth].findall(text)
+        links = filter(lambda link: link[0][0]!="#" and not(any(bad in link[0] for bad in BAD_LIST)), links)
+        
+        for link in links:
+            children.append(Node(link[URL], link[TITLE], self, self.depth+1))
+            
+        return children
+
+    def getHtml(self) -> str:
+        if self.hasError:
+            return None
+        else:
+            page = urllib.request.urlopen(self.url)            # open url
+            return page.read().decode('utf-8')     # decode to text
+        
+class Tree:
+    
+    def __init__(self, root):
+        self.root = root
+        
+    def makeTable(self, node):
+        mapping = []
+        mapping.append((node.old_url, node.new_url))
+        for child in node.children:
+            mapping.extend(self.makeTable(child))
+        return mapping
+    
+    def makeGraph(self, node):
+        tree = "\n" + "\t"*node.depth + node.sanitize(node.title)
+        for child in node.children:
+            tree += self.makeGraph(child)
+        return tree
+    
+    def findErrors(self, node):
+        errors = []
+        if node.hasError and ERROR_TABLE.get(node.old_url)==None:
+            errors.append((node.parent.old_url, node.old_url))
+        for child in node.children:
+            errors.extend(self.findErrors(child))
+        return errors
 
 if __name__=="__main__":
-    organize_field_notes()
+
+    with open(ERROR_TABLE_PATH, mode='r') as infile:
+        reader = csv.reader(infile)
+        ERROR_TABLE = {rows[1] : rows[2] for rows in reader}
+        
+    r = Node('space.menu.html', "main", None, 0)
+    t = Tree(r)
+    
+    with open("fieldnotes/newtree.txt", mode='w') as outfile:
+        outfile.write(t.makeGraph(t.root))
+    outfile.close()
+    
+    with open("fieldnotes/mapping.csv", mode='w', newline='') as outfile:
+        writer = csv.writer(outfile)
+        writer.writerows([("original", "new")])
+        writer.writerows(t.makeTable(t.root))
+    outfile.close()
+    
+    with open("fieldnotes/errors.csv", mode='a', newline='') as outfile:
+        writer = csv.writer(outfile)
+        # writer.writerows([("parent", "culprit")])
+        writer.writerows(t.findErrors(t.root))
+    outfile.close()

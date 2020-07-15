@@ -1,5 +1,4 @@
-import urllib.request
-from urllib.error import HTTPError
+import urllib2
 
 def url_to_html(url:str) -> str:
     """
