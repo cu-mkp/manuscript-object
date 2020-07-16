@@ -61,6 +61,7 @@ def tags_scatterplot(search_tags, filename, title):
 
     fig = scatter.get_figure()
     fig.savefig(f"{viz_path}{filename}.png")
+    plt.close()
 
 
 def tags_bubbleplot(search_tags, filename, title, normalized):
@@ -126,6 +127,7 @@ def tags_bubbleplot(search_tags, filename, title, normalized):
 
     fig = bubbleplot.get_figure()
     fig.savefig(f"{viz_path}{filename}.png")
+    plt.close()
 
 
 def categories_barplot():
@@ -161,7 +163,7 @@ def categories_barplot():
     plt.subplots(figsize = (10, 10))
     plt.gcf().subplots_adjust(bottom = 0.35)
     barplt = sns.barplot(x = "categories", y = "counts", data = df,
-                         order = cat_order)
+                         order = cat_order, palette = "deep")
 
     total_sum = sum(counts)
     for p in barplt.patches:
@@ -177,6 +179,87 @@ def categories_barplot():
     barplt.set_xticklabels(barplt.get_xticklabels(), rotation = 90, fontsize = 16)
     fig = barplt.get_figure()
     fig.savefig(viz_path + "categories_barplot.png")
+    plt.close()
+
+
+def tags_barplot(search_tags, filename, title, stacked):
+    manuscript_version = "tl" # "tl", "tc" or "tcn"
+
+    tags = []
+    categories = []
+
+    all_entries = []
+    all_entry_categories = []
+
+    entry = None
+
+    for i in range(0, 340):
+        number = format(i//2 + 1, '03')
+        side = "r" if (i % 2 == 0) else "v"
+
+        folio = f'{manuscript_version}_p{number}{side}_preTEI'
+        input_filename = f'{m_path}/ms-xml/{manuscript_version}/{folio}.xml'
+
+        tree = etree.parse(input_filename)
+
+        for div in tree.findall(".//div"):
+            new_entry = div.get("id")
+            if new_entry != None:
+                entry = new_entry
+            if entry == None:
+                continue
+
+            entry_text = etree.tostring(div, method = "xml", encoding="UTF-8").decode('utf-8')
+
+            category_list = div.get("categories")
+            if isinstance(category_list, str):
+                category_list = category_list.split(";")
+            if category_list == None:
+                # find the categories if this entry was already seen
+                category_list = []
+                for j in range(len(all_entries)):
+                    if all_entries[j] == entry:
+                        category_list.append(all_entry_categories[j])
+            else:
+                if entry not in all_entries:
+                    for cat in category_list:
+                        all_entries.append(entry)
+                        all_entry_categories.append(cat)
+
+            for tag in search_tags:
+                count = entry_text.count(tag)
+                for j in range(int(count)):
+                    for cat in category_list:
+                        tags.append(tag.replace("<", "").replace(">", ""))
+                        categories.append(cat)
+
+    df = pandas.DataFrame({"tags": tags, "categories": categories})
+
+    plt.subplots(figsize = (10, 10))
+    plt.gcf().subplots_adjust(bottom = 0.35)
+    if stacked:
+        barplt = sns.countplot(x = "categories", data = df,
+                               order = all_categories, palette = "deep")
+        total_sum = len(tags)
+        for p in barplt.patches:
+            nb = format(p.get_height()/total_sum*100, '.2f')
+            barplt.annotate(nb + "%", (p.get_x() + p.get_width()/2, p.get_height()),
+                            ha = 'center', va = 'center', xytext = (0, 25),
+                            textcoords = 'offset points', rotation = 90,
+                            fontsize = 12)
+    else:
+        barplt = sns.countplot(x = "categories", hue = "tags", data = df,
+                               order = all_categories)
+        barplt.legend(fancybox = True)
+
+    barplt.set_ylabel("Count", fontsize = 18)
+    barplt.set_xlabel("Categories", fontsize = 18)
+    barplt.set_title(title, fontsize = 20)
+
+    barplt.set_xticklabels(barplt.get_xticklabels(), rotation = 90, fontsize = 16)
+    fig = barplt.get_figure()
+    fig.savefig(viz_path + filename)
+    plt.close()
 
 
 def entries_lengths_scatterplot(logscale):
@@ -276,6 +359,7 @@ def entries_lengths_scatterplot(logscale):
             fig.savefig(f"{viz_path}entries_lengths_scatterplot_logscale_{manuscript_version}.png")
         else:
             fig.savefig(f"{viz_path}entries_lengths_scatterplot_linearscale_{manuscript_version}.png")
+        plt.close()
 
 
 def entries_lengths_distplot():
@@ -330,6 +414,7 @@ def entries_lengths_distplot():
 
         fig = distplt.get_figure()
         fig.savefig(f"{viz_path}entries_lengths_distplot_{manuscript_version}.png")
+        plt.close()
 
 
 def tags_by_category_swarmplot(search_tags, filename, title):
@@ -431,6 +516,7 @@ def tags_by_category_swarmplot(search_tags, filename, title):
 
     fig = swarm.get_figure()
     fig.savefig(f"{viz_path}{filename}.png")
+    plt.close()
 
 
 viz_path = f'{m_path}/manuscript-object/manuscript_visualizations/'
@@ -439,7 +525,9 @@ if not os.path.exists(viz_path):
     os.mkdir(viz_path)
 
 language_tags = ["<fr>", "<el>", "<it>", "<la>", "<oc>", "<po>"]
+languages = ["French", "Greek", "Italian", "Latin", "Occitan", "Poitevin"]
 margin_types = ["left-bottom", "right-bottom", "bottom", "right-middle", "left-middle", "right-top", "left-top", "top"]
+semantic_tags = []
 
 #tags_scatterplot(language_tags, "languages_scatterplot", title)
 
@@ -455,6 +543,16 @@ tags_bubbleplot(margin_types, "margins_bubbles_normalized", "Margins in the manu
 print("Bubbleplots finished.")
 
 categories_barplot()
+
+tags_barplot(["<del>", "<add>"], "add_del_barplot", "Additions and deletions by the author-practitioner", False)
+tags_barplot(["<add>"], "add_barplot", "Additions by the author-practitioner", True)
+tags_barplot(["<del>"], "del_barplot", "Deletions by the author-practitioner", True)
+tags_barplot(margin_types, "margins_barplot", "Margins in the manuscript", True)
+
+for i in range(len(language_tags)):
+    tag = language_tags[i]
+    language = languages[i]
+    tags_barplot([tag], tag + "_barplot", language + " in the manuscript", True)
 
 print("Barplots finished.")
 

@@ -188,6 +188,7 @@ def create_symmetrical_heatmap(data, manuscript_version):
     heatmap.set_yticklabels(legend, size = 16)
     fig = heatmap.get_figure()
     fig.savefig(viz_path + "symmetrical_heatmap.png")
+    plt.close()
 
 
 # symmetrical heatmap visualizing the differences between versions
@@ -222,6 +223,7 @@ def create_symmetrical_diff_heatmap(v1, v2, data1, data2):
     heatmap.set_yticklabels(legend, size = 16)
     fig = heatmap.get_figure()
     fig.savefig(viz_path + v1 + "-" + v2 + "_diff_symmetrical_heatmap.png")
+    plt.close()
 
 
 # Generate the matrix used for asymmetrical heatmaps
@@ -280,6 +282,7 @@ def create_asymmetrical_heatmap(data, manuscript_version):
     heatmap.set_yticklabels(legend, size = 16)
     fig = heatmap.get_figure()
     fig.savefig(viz_path + "asymmetrical_heatmap.png")
+    plt.close()
 
 
 # asymmetrical heatmap visualizing the differences between versions
@@ -314,6 +317,7 @@ def create_asymmetrical_diff_heatmap(v1, v2, data1, data2):
     heatmap.set_yticklabels(legend, size = 16)
     fig = heatmap.get_figure()
     fig.savefig(viz_path + v1 + "-" + v2 + "_diff_asymmetrical_heatmap.png")
+    plt.close()
 
 
 # barplot visualization
@@ -358,6 +362,7 @@ def create_barplot(data, manuscript_version, normalized):
     barplt.set(yscale = "log")
     fig = barplt.get_figure()
     fig.savefig(viz_path + "barplot" + filename_appendix + ".png")
+    plt.close()
 
 
 # grouped barplot visualization
@@ -411,6 +416,7 @@ def create_grouped_barplot(data, normalized):
     barplt.set(yscale = "log")
     fig = barplt.get_figure()
     fig.savefig(viz_path + "grouped_barplot" + filename_appendix + ".png")
+    plt.close()
 
 
 
@@ -437,7 +443,7 @@ for i in range(len(manuscript_versions)):
     create_barplot([all_context_without_duplicates[i], all_items[i]], v, True)
     create_barplot([all_context_without_duplicates[i], all_items[i]], v, False)
 
-    print(v + " visualizations complete")
+    print(v + " visualizations finished.")
 
 viz_path = f'{m_path}/manuscript-object/context_visualizations/comparisons/'
 
@@ -452,11 +458,11 @@ create_asymmetrical_diff_heatmap("tc", "tcn", all_context_without_duplicates[0],
 create_asymmetrical_diff_heatmap("tc", "tl", all_context_without_duplicates[0], all_context_without_duplicates[2])
 create_asymmetrical_diff_heatmap("tcn", "tl", all_context_without_duplicates[1], all_context_without_duplicates[2])
 
-print("difference heatmaps complete")
+print("difference heatmaps finished.")
 
 create_grouped_barplot([all_context_without_duplicates, all_items], True)
 create_grouped_barplot([all_context_without_duplicates, all_items], False)
 
-print("grouped barplots complete")
+print("grouped barplots finished.")
 
 print("All done!")
