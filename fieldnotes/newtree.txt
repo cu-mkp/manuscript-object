@@ -107,7 +107,7 @@ main
 				Historical-Culinary-Reconstruction
 				Bread-Molding-Reconstruction
 				Verdigris
-				Hiebert_Annotation-Field-Notes-quotSpinet-playing-by-itselfquot-FA16
+				Hiebert_Annotation-Field-Notes-+quotSpinet-playing-by-itself+quot-FA16
 				Madder-Lake-Pigment
 			Changduk-(Charles)-Kang
 				Historical-Culinary-Reconstruction
@@ -162,72 +162,14 @@ main
 				Flower-Paintin
 				Distemper-Painting_Skill-Building
 				Annotation-Plans-Cleo
-			Pitman-Sophie
-				The-manner-to-make-a-Pastry-Cooks-Varnishing-stuff-with-the-which-he-gives-his-Pyes-a-Colour
-				Verdigris
-				Canvas-Preparation
-				Priming-Canvas-with-earth-red-oil-paint
-				Painting-the-canvas
-				Annotation-Plans
-			Reich-Robin
-				Home-Culinary-Reconstruction_Fritters-in-the-Italian-Style
-				Verdigris
-				Making-a-16th-century-Painting-Canvas
-				Priming-Canvas-with-earth-red-oil-paint
-				Painting-with-Oil-on-Canvas-(red-flower)
-				Transferring-Images-to-Prepared-Panels-and-Painting
-				Research-and-Thoughts-in-Preparation-for-Annotations
-			Shi-Yuanxie
-			Soley-Teresa
-				Verdigris
-				Home-Culinary-Reconstruction
-				Preparing-Canvases
-				Flower-Still-LIfe
-				Underdrawing-on-Panel
-				Painting-in-Distemper
-				Flower-Still-Life-in-Oil
-				Red-Lake-Highlights-on-Distemper
-				Annotation-Plans-
-			Zhao-Wenrui
-				Verdigris-experiment
-				Canvas-preparation
-				Annotation-Plan
-			Field-Notes-Fall-2015
-				Marilyn-Bowen_Field-Notes-FA15
-				Jenny-Boulboulle_Field-Notes-FA15
-				Danielle-Carr_Field-Notes-FA15
-				Emilie-Foyer_Field-Notes-FA15
-				Ana-Estrades_Field-Notes-FA15
-				Cindy-Kok_Field-Notes-FA15
-				Kathryn-Kremnitzer_Field-Notes-FA15
-				Tianhe-Lou_Field-Notes-FA15
-				David-McClure_Field-Notes-FA15
-				Sayantani-Mukherjee_Field-Notes-FA15
-				Naomi-Rosenkranz_Field-Notes-FA15
-				Siddhartha-Shah_Field-Notes-FA15
-				Yuan-Yi_Field-Notes-FA15
-				Wenrui-Zhao_Field-Notes-FA15
-			Annotation-Field-Notes
-				Enamels-Gems-Lacquers-and-Practical-Optics-(Yuanxie-Amy-Olivia)
-				Dyes-and-Textiles-(Sophie)
-				Magic-Tricks-(Ann-Sophie)
-				Distemper-and-Shadows-beneath-Skin-(Cleo)
-				Applications-on-Paper-(OLD)
-				Gilding-on-Wood-(Njeri)
-				Medicinal-Remedies-and-Color-Recipes-(Robin)
-				Varnish-(Teresa)
-				Oil-of-Sulfur-for-the-Writer
-				Gilding-on-Paper-and-Parchment-(Goldenberg)
-			Safety-Protocol-Examples
-				Verdigris-experiment
 		Annotation-Field-Notes
 			Enamels-Gems-Lacquers-and-Practical-Optics-(Yuanxie-Amy-Olivia)
-				Annotation-Plans-amp-Research-Questions
+				Annotation-Plans-+-Research-Questions
 				Recipes-from-BnF-MS
 				Contemporary-Recipes
-				Enamels-Bibliography-amp-Secondary-Source-Notes
-				Gemstones-Bibliography-amp-Secondary-Source-Notes
-				Materials-Sourcing-amp-Safety
+				Enamels-Bibliography-+-Secondary-Source-Notes
+				Gemstones-Bibliography-+-Secondary-Source-Notes
+				Materials-Sourcing-+-Safety
 				Experimental-Protocol
 				Experiment-Field-Notes
 			Dyes-and-Textiles-(Sophie)
@@ -241,7 +183,7 @@ main
 			Magic-Tricks-(Ann-Sophie)
 				Recipe-List
 				Mapping-out-the-Context
-				Structural-amp-Content-Components-of-the-Recipes
+				Structural-+-Content-Components-of-the-Recipes
 				Composition-of-the-Magic-Tricks
 				Practical-Approach
 				Experimental-Recreations-of-Recipes
@@ -260,7 +202,7 @@ main
 			Applications-on-Paper-(OLD)
 				Preliminary-Annotation-Plans
 				BnF-Recipes-
-				Contemporary-Sources-amp-Recipes-
+				Contemporary-Sources-+-Recipes-
 				Secondary-Sources
 				Materials-Source-List
 				Protocol
@@ -290,6 +232,16 @@ main
 				April-20th-2016-Gold-Leaf-on-Paper-and-Parchment
 				April-28th-2016-Gilding-and-Burnishing-on-Paper
 	Fall-2015
+		Annotations
+			(Example)-Smith-and-Rosenkranz_FA15-Annotation-Plans
+			Carr-Bilak-Mukherjee--FA15-Annotation-Plans-(Miniver-Brushes)
+			Cindy-and-Yuan_FA15-Annotation-Plans
+			Wenrui-and-Ana_FA15-Annotation-Plans
+			Marilyn-and-Tianhe_FA15-Annotation-Plans
+			Katie-and-Siddhartha-FA15-Annotation-Plans
+			Emilie_FA15-Annotation-Plans
+			David_FA15-Annotation-Plans
+			Resources-general
 		Field-Notes
 			Marilyn-Bowen_Field-Notes-FA15
 				Historical-recipe-reconstruction
@@ -349,4 +301,238 @@ main
 				2)-Damask-Cloth-Field-Notes
 			Wenrui-Zhao_Field-Notes-FA15
 	Spring-2015
+			Chiostrini-Giulia
+			Durkin-Celia
+				Durkin-Marris-Historical-Recipe-Reconstruction
+				Durkin-Gans-Bread-Molding-Reconstruction
+				Durkin--wax-carving
+				Cuttlefish-Bone-Casting
+				Gans-Durkin-sand-casting
+				Durkin-Plaster-casting-recipes
+				Durkin-Plaster-Casting
+				durkin-gans-sugar-casting
+				gans-durkin-alabaster-annotation
+			Fu-Shiye
+				Bread-molding-reconstruction
+				Sand-Casting
+				HRR-Marchpane-Reconstruction
+				Life-casting-Beetle-
+				annotation-field-notes-(molding-paper)
+				annotation-field-notes-(molding-pansies)
+				annotation-field-notes-(molding-a-butterfly)
+			Gans-Sofia
+				Historical-Recipe-Reconstruction_Marchpane
+				Bread-Molding-Reconstruction
+				Sand-Casting
+				Cuttlefish-Bone-Casting
+				Plaster-Life-Casting
+				Sugar-Casting-Annotation
+				Alabaster-Sand-Annotation
+			Marris-Caroline
+				Historical-Recipe-Reconstruction
+				Bread-Molding-Reconstruction
+				Wax-Molding-and-Sandcasting
+				Cuttlefish-Bone-Casting
+				Plaster-casting_flowers
+			Palframan-Jef
+			Pope-Stephanie
+				Bread-Moulding-Reconstruction-(BMR)
+				Wax-carving-and-Sandcasting
+				Cuttlefish-bone-casting
+				Plaster-casting-with-flowers
+				Sandcasting-with-ox-hoof-and-elm-root-broth_annotation
+			Zhang-Zhiqi
+				HRR-Marchpane-Reconstruction
+				Breadmolding-Reconstruction
+				Sandcasting
+				Annotation-field-notes-(moulding-pansies)-
+			Boulboullé-Jenny
+			Bread-molding
+				Field-Notes
+			Sand-casting-recipes
+			Plaster-casting
+			durkin-plaster-casting-recipes
 	Fall-2014
+				Class-Notes-Fall-semester
+				6)-Annotations
+				Bilak-Field-Notes
+				Boulboullé-Field-Notes
+				Boyd_Bread-Molding-Reconstruction-Field-Notes
+				Boyd_Field-Notes_Dental-Office-Gold-Casting
+				Boyd_Historical-Recipe-Reconstruction-Field-Notes
+				Boyd_Sand-Casting-Field-Notes
+				Boyd-Field-Notes
+				Bread-Molding-Field-Notes
+				Bread-Molding-Recipes-Field-Notes
+				Bread-Molding-Reconstruction-Field-Notes
+				Carlson-Field-Notes
+				Carlson-—-Bread-Molding-Recipes-Field-Notes
+				Carlson-—-Historical-Recipe-Reconstruction-Field-Notes
+				Carlson-—-Plaster-Molds-Field-Notes
+				Carlson-—-Portrait-Medal-Field-Notes
+				Carlson-—-Sand-Molding-and-Casting-Field-Notes
+				Cataldo_Sand-Casting
+				Cataldo-Field-Notes
+				Cataldo-Visco_Historical-Recipe-Reconstruction-Field-Notes
+				Cataldo-Visco_Manuscript-Annotations
+				excellent-mustard-48r
+				Field-Notes-—-September-8-2014
+				Jordan-Katz_Plaster-Casting-Field-Notes
+				Jordan-Katz-—-Bread-Molding-Recipes-Field-Notes
+				Katz-Bread-Molding-Field-Notes
+				Katz-Field-Notes
+				Katz-Historical-Recipe-Reconstruction-Field-Notes
+				Laha-Field-Notes
+				Landsman-Field-Notes
+				Lee_Bread-Molding-Recipes
+				Lee_Historical-Recipe-Reconstruction
+				Lee-Field-Notes
+				Lee-Mellon-Wang
+				magistry-84r
+				Manuscript-Annotations_106r-and-145r
+				Manuscript-Annotations-project-notes
+				Mellon_Bread-Molding-Recipes-Field-Notes
+				Mellon_Historical-Recipe-Reconstruction-Field-Notes
+				Mellon_Sugar-Molding-and-Sugar-Sculpture
+				Mellon-Field-Notes
+				ox-bone-and-rock-salt-89r
+				Palframan_Annotation-Field-Notes-Fall-2014
+				Palframan_HRR-Field-Notes-Fall-2014
+				Plaster-Casting_Field-Note-Fall-2014
+				Plaster-Casting-Field-Notes
+				Plaster-Casting-Yijun-Wang
+				Recipe-106r
+				Recipe-145r
+				Recipe-Research-—-September-11-2014
+				Rowan_Historical-Recipe-Reconstruction-Field-Notes
+				Rowen_Bread-Molding-Recipes-Field-Notes
+				Rowen_Historical-Recipe-Reconstruction-Field-Notes
+				Rowen_Plaster-Casting-Field-Notes
+				Rowen_Sand-Casting-Field-Notes
+				Rowen-Field-Notes
+				Sand-Casting
+				Sand-Casting-Field-Notes
+				Sand-Casting_Yijun_Wang
+				Visco-Field-Notes
+				Visco-Historical-Recipe-Reconstruction-Field-Notes
+				Visco-Plaster-Casting-Field-Notes
+				Visco-Sand-Casting
+				Visco-Sugar-Molding-and-Sugar-Sculpture-Field-Notes
+				Wang_Bread-Molding-Recipes
+				Wang_Excellent-Mustard
+				Wang-Field-Notes
+				-Bread-Molding-Reconstruction-Field-Notes
+				-Excellent-Mustard
+				-Plaster-Casting-Field-Notes
+				-Sand-Casting-Field-Notes
+				*-LAB-SETUP-MATERIALS-LIST*
+				28-October-Annotation-Research-Plans
+				6)-Annotations
+				Annotation-Plans
+				Bilak-Field-Notes
+				Boulboullé-Field-Notes
+				Boyd_Bread-Molding-Reconstruction-Field-Notes
+				Boyd_Field-Notes_Dental-Office-Gold-Casting
+				Boyd_Historical-Recipe-Reconstruction-Field-Notes
+				Boyd_Sand-Casting-Field-Notes
+				Boyd-Field-Notes
+				Bread-Mold-Recipes
+				Bread-Molding-Field-Notes
+				Bread-Molding-Recipes-Field-Notes
+				Bread-Molding-Reconstruction_Spring-2015
+				Bread-Molding-Reconstruction-Field-Notes
+				Bread-Molds-BnF-recipes
+				Carlson-Field-Notes
+				Carlson-—-Bread-Molding-Recipes-Field-Notes
+				Carlson-—-Historical-Recipe-Reconstruction-Field-Notes
+				Carlson-—-Plaster-Molds-Field-Notes
+				Carlson-—-Portrait-Medal-Field-Notes
+				Carlson-—-Sand-Molding-and-Casting-Field-Notes
+				Carlson_Katz
+				Cataldo_Sand-Casting
+				Cataldo-Field-Notes
+				Cataldo-Visco_Historical-Recipe-Reconstruction-Field-Notes
+				Cataldo-Visco_Manuscript-Annotations
+				Cataldo_Visco
+				Class-Notes-Fall-semester
+				Diana-Yijun-Michelle
+				Donna-Bilak-(dab2208)-Profile
+				excellent-mustard-48r
+				Field-Notes-—-September-8-2014
+				Final-Annotations
+				Historical-Papermaking-Demonstration
+				Historical-Recipe
+				HRR-Media
+				Jef-and-Emily
+				Jef-R-Palframan-Profile
+				Jenny-Boulboullé-(jbb2161)-Profile
+				Jonah-Bossewitch-(jb2410)-Profile
+				Jordan-Katz_Plaster-Casting-Field-Notes
+				Jordan-Katz-—-Bread-Molding-Recipes-Field-Notes
+				Katz-Bread-Molding-Field-Notes
+				Katz-Field-Notes
+				Katz-Historical-Recipe-Reconstruction-Field-Notes
+				Laha-Field-Notes
+				Landsman_Historical-Recipe-Reconstruction-Field-Notes
+				Landsman-Field-Notes
+				Lee_Bread-Molding-Recipes
+				Lee_Historical-Recipe-Reconstruction
+				Lee-Field-Notes
+				Lee-Mellon-Wang
+				Lost-Wax-and-Sandcasting-Demonstrations-(Videos)
+				magistry-84r
+				Manuscript-Annotations
+				Manuscript-Annotations_106r-and-145r
+				Manuscript-Annotations_Jef+#039s-Orange-Pigment-recipe
+				Manuscript-Annotations_Stucco-for-Molding
+				Manuscript-Annotations-project-notes
+				Mellon_Bread-Molding-Recipes-Field-Notes
+				Mellon_Historical-Recipe-Reconstruction-Field-Notes
+				Mellon_Historical-Recipe-Reconstruction-Fieldnotes
+				Mellon_Sugar-Molding-and-Sugar-Sculpture
+				Mellon-Field-Notes
+				Modern-Instructions-—-September-8-2014
+				Notes-on-Annotation-Plans_Materials
+				Overview-Annotation-Experiments
+				Overview-of-Annotation-Experiments
+				ox-bone-and-rock-salt-89r
+				Palframan_Annotation-Field-Notes-Fall-2014
+				Palframan_BMR-Field-Notes-Fall-2014
+				Palframan_HRR-Field-Notes-Fall-2014
+				Palframan_Sand-Casting-Field-Notes-Fall-2014
+				Palframan_Stucco-for-Molding-Field-Notes-Fall-2014
+				Plaster-Casting_Field-Note-Fall-2014
+				Plaster-Casting-Field-Notes
+				Plaster-Casting-Yijun-Wang
+				Power-Point-—-September-8-2014
+				Recipe-106r
+				Recipe-145r
+				Recipe-Research-—-September-11-2014
+				Recipes-from-BnF-Ms-Fr-640
+				Related-Casting-Recipes
+				Research-Annotation-Plans
+				Rowan_Historical-Recipe-Reconstruction-Field-Notes
+				Rowen_Bread-Molding-Recipes-Field-Notes
+				Rowen_Historical-Recipe-Reconstruction-Field-Notes
+				Rowen_Plaster-Casting-Field-Notes
+				Rowen_Sand-Casting-Field-Notes
+				Rowen-Field-Notes
+				Rowen_Landsman
+				Safety-Resources
+				Sand-Casting
+				Sand-Casting-Field-Notes
+				Sand-Casting_Yijun_Wang
+				Sand-Mold-Recipes
+				Sand-Molds-BnF-recipes
+				Sourcing-Materials
+				Technique-Videos
+				Visco-Field-Notes
+				Visco-Historical-Recipe-Reconstruction-Field-Notes
+				Visco-Plaster-Casting-Field-Notes
+				Visco-Sand-Casting
+				Visco-Sugar-Molding-and-Sugar-Sculpture-Field-Notes
+				Wang_Bread-Molding-Recipes
+				Wang_Excellent-Mustard
+				Wang-Field-Notes
+				Working-with-Wax
+				Working-with-Wax-BnF-Ms-Fr-640-Recipes

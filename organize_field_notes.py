@@ -16,7 +16,7 @@ TITLE = 1      # title is second in regex Match tuple
 
 semesters_header = 'Course Archives'
 re_semesters = re.compile(r'<li><a.*?href="(.*?)".*?>(.*?)</a></li>') # get url of each semester
-re_intermediate = re.compile(r'<a.*?href="(.*?)".*?>(.*Field Notes.*)</a>') # get url of intermediate field notes folder for a given semester
+re_intermediate = re.compile(r'<a.*?href="(.*?)".*?>(.*Field Notes.*|.*Annotations.*)</a>') # get url of intermediate field notes folder for a given semester
 re_authors = re.compile(r'<a.*?href="(.*?)".*?>(.*?)</a>') # get url of each author for a given semester
 re_fieldnotes = re.compile(r'<a.*?href="(.*?)".*?>(.*?)</a>') # get url of each field note for a given author
 
@@ -85,14 +85,15 @@ class Node:
             tmp = text.partition(',')
             text = tmp[2] + " " + tmp[0]     # fix "LastName, FirstName" situations (maybe)
             
-        disallowed = ['.', ':', ',', '$', '+', '=', ';', '/', '@', '&', '\'', '"']      # remove these symbols
+        disallowed = ['.', ':', ',', '$', '+', '=', ';', '/', '@', '\'', '"', '#', ]      # remove these symbols
         for symbol in disallowed:
             text = text.replace(symbol, '')
         
-        return text.replace(' - ', '_').replace(' ', '-').replace('%20', '-')    # replace spaces with hyphens, hyphens with underscores
+        return text.replace(' - ', '_').replace(' ', '-').replace('%20', '-').replace('&amp', '+').replace('&', '+')
     
     def findChildren(self):
         children = []
+        depth = self.depth   # We have to define this separately for stupid edge-case reasons. :(
         
         if self.hasError:
             return children
@@ -100,24 +101,30 @@ class Node:
         text = self.getHtml()
         
         # hard-coded edge cases because I can't be bothered
-        if self.depth == 0:
+        if depth == 0:
             text = text.partition("Course Archives")[2]     # on space.menu.html, only get links under "Course Archives"
+        
+        # specific pages:
         if self.url == "http://fieldnotes.makingandknowing.org/mainSpace/Fall%202014%20Archives.html":
-            return children
-        if self.url == "http://fieldnotes.makingandknowing.org/mainSpace/Spring%202015.html":
-            return children
-        if self.url == "http://fieldnotes.makingandknowing.org/mainSpace/Field%20Notes%20Fall%202015.html":
-            text = text.partition("<br />")[0]
-        if self.depth == 4:
+            depth += 2     # pretend we're in the list of fieldnotes already. We will add the outer folder later. It will be horrible.
+        elif self.url == "http://fieldnotes.makingandknowing.org/mainSpace/Spring%202015.html":
+            depth += 1     # same deal as above but we only need to go one further down (to list of authors)
+        elif self.url == "http://fieldnotes.makingandknowing.org/mainSpace/Field%20Notes%20Fall%202015.html" or self.url == "http://fieldnotes.makingandknowing.org/mainSpace/Field%20Notes%20-%20Spring%202016.html":
+            text = text.partition("<br />")[0]      # stop parsing before links to other indexes
+            
+        if self.parent and (self.parent.url == "http://fieldnotes.makingandknowing.org/mainSpace/Fall%202014%20Archives.html" or self.parent.url == "http://fieldnotes.makingandknowing.org/mainSpace/Fall%202015%20Annotations.html"):
+            return children     # if inside one of these folders, do not parse children (since the directory is flat; we will do this one manually)
+            
+        if depth == 4:
             return children
         
         # /end edge cases
         
-        links = REGEX[self.depth].findall(text)
+        links = REGEX[depth].findall(text)
         links = filter(lambda link: link[0][0]!="#" and not(any(bad in link[0] for bad in BAD_LIST)), links)
         
         for link in links:
-            children.append(Node(link[URL], link[TITLE], self, self.depth+1))
+            children.append(Node(link[URL], link[TITLE], self, depth+1))
             
         return children
 
