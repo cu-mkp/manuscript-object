@@ -314,8 +314,8 @@ def entries_lengths_scatterplot(logscale):
 
         scatter = sns.scatterplot(x = "lengths", y = "normalized_lengths",
                                   hue = "folio number", data = df,
-                                  linewidth = 0, alpha = 0.5, size_norm = 1,
-                                  palette = "plasma")
+                                  linewidth = 0, alpha = 1, size_norm = 1,
+                                  palette = "plasma", marker = ".")
 
         for line in range(0, df.shape[0]):
             if (df.lengths[line] > 1500):
@@ -343,16 +343,16 @@ def entries_lengths_scatterplot(logscale):
         max_words = np.max(lengths)
         max_diff_words = np.max(normalized_lengths)
         minmax = np.min([max_words, max_diff_words])
-        scatter.plot([1, minmax], [1, minmax], ':k')
+        scatter.plot([1, minmax], [1, minmax], "--k")
         scatter.text(minmax, minmax + 10, "1:1 ratio", horizontalalignment = "center", fontsize = 10)
 
         ratios = [lengths[i]/normalized_lengths[i] for i in range(len(lengths))]
         mean_ratio = np.mean(ratios)
-        scatter.plot([1, minmax*mean_ratio], [1, minmax], ':r')
+        scatter.plot([1, minmax*mean_ratio], [1, minmax], "--b", alpha = 1)
         if logscale:
-            scatter.text(minmax*mean_ratio, minmax + 200, "mean ratio", horizontalalignment = "center", fontsize = 10, color = "red")
+            scatter.text(minmax*mean_ratio, minmax + 200, "mean ratio", horizontalalignment = "center", fontsize = 10, color = "b")
         else:
-            scatter.text(minmax*mean_ratio, minmax + 10, "mean ratio", horizontalalignment = "center", fontsize = 10, color = "red")
+            scatter.text(minmax*mean_ratio, minmax + 10, "mean ratio", horizontalalignment = "center", fontsize = 10, color = "b")
 
         fig = scatter.get_figure()
         if logscale:
@@ -527,10 +527,10 @@ if not os.path.exists(viz_path):
 language_tags = ["<fr>", "<el>", "<it>", "<la>", "<oc>", "<po>"]
 languages = ["French", "Greek", "Italian", "Latin", "Occitan", "Poitevin"]
 margin_types = ["left-bottom", "right-bottom", "bottom", "right-middle", "left-middle", "right-top", "left-top", "top"]
-semantic_tags = []
+semantic_tags = ["al", "bp", "cn", "env", "m", "md", "ms", "mu", "pa", "pl", "pn", "pro", "sn", "tl", "tmp", "wp"]
 
 #tags_scatterplot(language_tags, "languages_scatterplot", title)
-
+"""
 tags_bubbleplot(language_tags, "languages_bubbles", "Other languages in the English translation of the manuscript", False)
 tags_bubbleplot(language_tags, "languages_bubbles_normalized", "Other languages in the English translation of the manuscript (normalized by entry length)", True)
 
@@ -552,15 +552,16 @@ tags_barplot(margin_types, "margins_barplot", "Margins in the manuscript", True)
 for i in range(len(language_tags)):
     tag = language_tags[i]
     language = languages[i]
-    tags_barplot([tag], tag + "_barplot", language + " in the manuscript", True)
+    tags_barplot([tag], tag.replace("<", "").replace(">", "") + "_barplot",
+                 language + " in the manuscript", True)
 
 print("Barplots finished.")
-
+"""
 entries_lengths_scatterplot(True)
 entries_lengths_scatterplot(False)
 
 print("Scatterplots finished.")
-
+"""
 entries_lengths_distplot()
 
 print("Distplots finished.")
@@ -570,5 +571,5 @@ tags_by_category_swarmplot(margin_types, "margins_swarmplot", "Margins in the ma
 tags_by_category_swarmplot(language_tags, "languages_swarmplot", "Other languages in the English translation of the manuscript")
 
 print("Swarmplot finished.")
-
+"""
 print("All done!")
