@@ -32,6 +32,7 @@ REGEX = {
 
 BAD_LIST = ['.pdf', '.docx', 'flickr.com', 'drive.google.com', 'docs.google.com', 'wiley.com', 'wikischolars.columbia.edu']
 
+# Classes
 class Node:
 
     def __init__(self, url, title, parent, depth):
@@ -42,15 +43,15 @@ class Node:
         self.title = title
         self.parent = parent
         self.depth = depth
-        self.hasError = self.checkError(self.url)
-        if self.hasError:
-            self.hasError = not self.repairUrl()
+        self.has_error = self.check_error(self.url)
+        if self.has_error:
+            self.has_error = not self.repair_url()
         self.old_path = ROOT_DIR + urllib.parse.unquote(self.url)[len(URL_PREFIX):]    # I am somewhat ashamed of this code.
-        self.new_path = self.makeNewPath()
-        print(self.old_path[len(ROOT_DIR):] + " -> " + self.new_path[len(ROOT_DIR):])
-        self.children = self.findChildren()
+        self.new_path = self.make_new_path()
+        # print(self.old_path[len(ROOT_DIR):] + " -> " + self.new_path[len(ROOT_DIR):])
+        self.children = self.find_children()
         
-    def checkError(self, url) -> bool:
+    def check_error(self, url) -> bool:
         '''
         True -> url causes HTTP error
         False -> url is fine
@@ -61,7 +62,7 @@ class Node:
             return True
         return False
     
-    def repairUrl(self) -> bool:
+    def repair_url(self) -> bool:
         '''
         Returns Boolean to indicate success of repairing url.
         !! This method modifies self.url !!!
@@ -71,12 +72,12 @@ class Node:
             return False
         elif correction != "?" and correction != "":
             self.url = correction
-            print(self.old_url + " corrected to " + correction)
-            return not self.checkError(self.url)
+            # print(self.old_url + " corrected to " + correction)
+            return not self.check_error(self.url)
         else:
             return False
             
-    def makeNewPath(self) -> str:
+    def make_new_path(self) -> str:
         if self.parent:
             parent_directory = os.path.dirname(self.parent.new_path)
         else:
@@ -94,14 +95,14 @@ class Node:
         
         return text.replace(' - ', '_').replace(' ', '-').replace('%20', '-').replace('&amp', '+').replace('&', '+')
     
-    def findChildren(self):
+    def find_children(self):
         children = []
         depth = self.depth   # We have to define this separately for stupid edge-case reasons. :(
         
-        if self.hasError:
+        if self.has_error:
             return children
         
-        text = self.getHtml()
+        text = self.get_html()
         
         # hard-coded edge cases because I can't be bothered
         if depth == 0:
@@ -131,8 +132,8 @@ class Node:
             
         return children
 
-    def getHtml(self) -> str:
-        if self.hasError:
+    def get_html(self) -> str:
+        if self.has_error:
             return None
         else:
             page = urllib.request.urlopen(self.url)            # open url
@@ -143,35 +144,56 @@ class Tree:
     def __init__(self, root):
         self.root = root
         
-    def makeTable(self, node):
+    def make_table(self, node):
         mapping = []
         mapping.append((node.old_path, node.new_path))
         for child in node.children:
-            mapping.extend(self.makeTable(child))
+            mapping.extend(self.make_table(child))
         return mapping
     
-    def makeGraph(self, node):
+    def make_graph(self, node):
         tree = "\n" + "\t"*node.depth + node.sanitize(node.title).lower()
         for child in node.children:
-            tree += self.makeGraph(child)
+            tree += self.make_graph(child)
         return tree
     
-    def findErrors(self, node):
+    def find_errors(self, node):
         errors = []
-        if node.hasError and ERROR_TABLE.get(node.old_url)==None:
+        if node.has_error and ERROR_TABLE.get(node.old_url)==None:
             errors.append((node.parent.old_url, node.old_url))
+            print("found error: " + node.old_url)
         for child in node.children:
-            errors.extend(self.findErrors(child))
+            errors.extend(self.find_errors(child))
         return errors
+
+def resolve_filename_conflict(path):
+    '''
+    Add a number onto the end of a duplicate filename to avoid conflicts
+    '''
+    old_path = path
+    unique_identifier = 0
+    while os.path.isfile(path):
+        path = old_path
+        unique_identifier += 1
+        pair = os.path.splitext(path)
+        path = pair[0] + " (" + str(unique_identifier) + ")" + pair[1]
+    return path
 
 def reorganize(mapping):
     '''
     Takes in a dict with original file paths mapping to new paths.
     '''
+    missing = []
     for old_path, new_path in mapping.items():
         if os.path.isfile(old_path):
+            if os.path.isfile(new_path):
+                print("found duplicate: " + os.path.basename(new_path))
+                new_path = resolve_filename_conflict(new_path)
             os.makedirs(os.path.dirname(new_path), exist_ok=True)
             os.rename(old_path, new_path)
+        else:
+            missing.append((old_path, new_path))
+    return missing
 
 if __name__=="__main__":
 
@@ -181,8 +203,8 @@ if __name__=="__main__":
         
     r = Node(SPACE_MENU, 'main', None, 0)
     t = Tree(r)
-    graph = t.makeGraph(t.root)
-    table = t.makeTable(t.root)
+    graph = t.make_graph(t.root)
+    table = t.make_table(t.root)
     
     with open("fieldnotes/newtree.txt", mode='w') as outfile:
         outfile.write(graph)
@@ -196,12 +218,18 @@ if __name__=="__main__":
     
     with open("fieldnotes/errors.csv", mode='a', newline='') as outfile:
         writer = csv.writer(outfile)
-        # writer.writerows([("parent", "culprit")])
-        writer.writerows(t.findErrors(t.root))
+        writer.writerows([("parent", "culprit")])
+        writer.writerows(t.find_errors(t.root))
     outfile.close()
     
     mapping = {} 
     for t in table:
         mapping[t[0]] = t[1]        # the beauty of this solution is that it overwrites duplicates
         
-    reorganize(mapping)
+    missing = reorganize(mapping)
+    with open("fieldnotes/missing.csv", mode='w', newline='') as outfile:
+        writer = csv.writer(outfile)
+        # writer.writerows([("missing file", "intended destination")])
+        writer.writerows(missing)
+    outfile.close()
+        
