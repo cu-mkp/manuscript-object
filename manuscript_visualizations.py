@@ -168,9 +168,9 @@ def categories_barplot():
     total_sum = sum(counts)
     for p in barplt.patches:
         nb = format(p.get_height()/total_sum*100, '.2f')
-        barplt.annotate(nb + "%", (p.get_x() + p.get_width(), p.get_height() + 5),
-                        ha = 'center', va = 'center', xytext = (0, 10),
-                        textcoords = 'offset points', rotation = 45)
+        barplt.annotate(nb + "%", (p.get_x() + p.get_width()/2, p.get_height()),
+                        ha = 'center', va = 'center', xytext = (0, 25),
+                        textcoords = 'offset points', rotation = 90)
 
     barplt.set_ylabel("Number of entries", fontsize = 18)
     barplt.set_xlabel("Categories", fontsize = 18)
@@ -182,7 +182,7 @@ def categories_barplot():
     plt.close()
 
 
-def tags_barplot(search_tags, filename, title, stacked):
+def tags_by_category_barplot(search_tags, filename, title, stacked):
     manuscript_version = "tl" # "tl", "tc" or "tcn"
 
     tags = []
@@ -258,8 +258,46 @@ def tags_barplot(search_tags, filename, title, stacked):
 
     barplt.set_xticklabels(barplt.get_xticklabels(), rotation = 90, fontsize = 16)
     fig = barplt.get_figure()
-    fig.savefig(viz_path + filename)
+    fig.savefig(f"{viz_path}{filename}.png")
     plt.close()
+
+
+def tagged_length_barplot(tags, xlegend, filename):
+    ntags = len(tags)
+    for manuscript_version in ["tc", "tcn", "tl"]:
+        lengths = np.zeros(ntags)
+        counts = np.zeros(ntags)
+
+        for i in range(340):
+            number = format(i//2 + 1, '03')
+            side = "r" if (i % 2 == 0) else "v"
+
+            folio = f'{manuscript_version}_p{number}{side}_preTEI'
+            input_filename = f'{m_path}/ms-xml/{manuscript_version}/{folio}.xml'
+
+            tree = etree.parse(input_filename)
+
+            for j in range(ntags):
+                tag = tags[j].replace("<", "").replace(">", "")
+                for e in tree.findall(".//" + tag):
+                    tag_text = etree.tostring(e, method = "text", encoding="UTF-8").decode('utf-8')
+                    lengths[j] += len(tag_text.split())
+                    counts[j] += 1
+
+        data = [lengths[i]/counts[i] for i in range(ntags)]
+
+        plt.subplots(figsize = (10, 10))
+        plt.gcf().subplots_adjust(bottom = 0.25)
+        barplt = sns.barplot(x = tags, y = data, palette = "deep")
+
+        barplt.set_ylabel("Average number of words inside tag", fontsize = 16)
+        barplt.set_xlabel("Tag", fontsize = 16)
+        barplt.set_title(f"How many words there inside a tag [{manuscript_version}]", fontsize = 18)
+        barplt.set_xticklabels(xlegend, rotation = 90, fontsize = 14)
+
+        fig = barplt.get_figure()
+        fig.savefig(f"{viz_path}{filename}_{manuscript_version}.png")
+        plt.close()
 
 
 def entries_lengths_scatterplot(logscale):
@@ -526,11 +564,20 @@ if not os.path.exists(viz_path):
 
 language_tags = ["<fr>", "<el>", "<it>", "<la>", "<oc>", "<po>"]
 languages = ["French", "Greek", "Italian", "Latin", "Occitan", "Poitevin"]
-margin_types = ["left-bottom", "right-bottom", "bottom", "right-middle", "left-middle", "right-top", "left-top", "top"]
-semantic_tags = ["al", "bp", "cn", "env", "m", "md", "ms", "mu", "pa", "pl", "pn", "pro", "sn", "tl", "tmp", "wp"]
+margin_types = ["left-bottom", "right-bottom", "bottom", "right-middle",
+                "left-middle", "right-top", "left-top", "top"]
+semantic_tags = ["<al>", "<bp>", "<cn>", "<env>", "<m>", "<md>", "<ms>", "<mu>",
+                 "<pa>", "<pl>", "<pn>", "<pro>", "<sn>", "<tl>", "<tmp>",
+                 "<wp>"]
+semantic_tags_legend = ["animal (al)", "body part (bp)", "currency (cn)",
+                        "environment (env)", "material (m)", "medical (md)",
+                        "measurement (ms)", "music (mu)", "plant (pa)",
+                        "place (pl)", "personal name (pn)", "profession (pro)",
+                        "sensory (sn)", "tool (tl)", "temporal (tmp)",
+                        "arms and armor (wp)"]
 
 #tags_scatterplot(language_tags, "languages_scatterplot", title)
-"""
+
 tags_bubbleplot(language_tags, "languages_bubbles", "Other languages in the English translation of the manuscript", False)
 tags_bubbleplot(language_tags, "languages_bubbles_normalized", "Other languages in the English translation of the manuscript (normalized by entry length)", True)
 
@@ -540,28 +587,39 @@ tags_bubbleplot(["<del>", "<add>"], "add_del_bubbles_normalized", "Additions and
 tags_bubbleplot(margin_types, "margins_bubbles", "Margins in the manuscript", False)
 tags_bubbleplot(margin_types, "margins_bubbles_normalized", "Margins in the manuscript (normalized by entry length)", True)
 
+tags_bubbleplot(semantic_tags, "semantic_tags_bubbles", "Semantic tags in the manuscript", False)
+tags_bubbleplot(semantic_tags, "semantic_tags_bubbles_normalized", "Semantic tags in the manuscript (normalized by entry length)", True)
+
 print("Bubbleplots finished.")
 
 categories_barplot()
 
-tags_barplot(["<del>", "<add>"], "add_del_barplot", "Additions and deletions by the author-practitioner", False)
-tags_barplot(["<add>"], "add_barplot", "Additions by the author-practitioner", True)
-tags_barplot(["<del>"], "del_barplot", "Deletions by the author-practitioner", True)
-tags_barplot(margin_types, "margins_barplot", "Margins in the manuscript", True)
+tags_by_category_barplot(["<del>", "<add>"], "add_del_tag_by_category_barplot", "Additions and deletions by the author-practitioner", False)
+tags_by_category_barplot(["<add>"], "add_tag_by_category_barplot", "Additions by the author-practitioner", True)
+tags_by_category_barplot(["<del>"], "del_tag_by_category_barplot", "Deletions by the author-practitioner", True)
+tags_by_category_barplot(margin_types, "margins_barplot", "Margins in the manuscript", True)
 
 for i in range(len(language_tags)):
     tag = language_tags[i]
     language = languages[i]
-    tags_barplot([tag], tag.replace("<", "").replace(">", "") + "_barplot",
-                 language + " in the manuscript", True)
+    tags_by_category_barplot([tag], tag.replace("<", "").replace(">", "") + "_tag_by_category_barplot",
+                             language + " in the manuscript", True)
+
+for i in range(len(semantic_tags)):
+    tag = semantic_tags[i]
+    legend = semantic_tags_legend[i]
+    tags_by_category_barplot([tag], tag.replace("<", "").replace(">", "") + "_tag_by_category_barplot",
+                             legend + " tags", True)
+
+tagged_length_barplot(semantic_tags, semantic_tags_legend, "semantic_tags_size_barplot")
 
 print("Barplots finished.")
-"""
+
 entries_lengths_scatterplot(True)
 entries_lengths_scatterplot(False)
 
 print("Scatterplots finished.")
-"""
+
 entries_lengths_distplot()
 
 print("Distplots finished.")
@@ -570,6 +628,12 @@ tags_by_category_swarmplot(["<del>", "<add>"], "add_del_swarmplot", "Additions a
 tags_by_category_swarmplot(margin_types, "margins_swarmplot", "Margins in the manuscript")
 tags_by_category_swarmplot(language_tags, "languages_swarmplot", "Other languages in the English translation of the manuscript")
 
+for i in range(len(semantic_tags)):
+    tag = semantic_tags[i]
+    legend = semantic_tags_legend[i]
+    tags_by_category_swarmplot([tag], tag.replace("<", "").replace(">", "") + "_tag_swarmplot",
+                               legend + " tags in the manuscript")
+
 print("Swarmplot finished.")
-"""
+
 print("All done!")

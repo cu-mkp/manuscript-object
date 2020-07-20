@@ -19,10 +19,11 @@ if not os.path.exists(m_k_data_to_context):
 
 tags = ["al", "bp", "cn", "env", "m", "md", "ms", "mu", "pa", "pl", "pn", "pro",
         "sn", "tl", "tmp", "wp"] # which tags we're looking for
-tag_names = ["animal (al)", "body part (bp)", "currency (cn)", "environment (en)",
-             "material (m)", "medical (md)", "measurement (ms)", "music (mu)",
-             "plant (pu)", "place (pl)", "personal name (pn)", "profession (pro)",
-             "sensory (sn)", "tool (tl)", "temporal (tmp)", "arms and armor (wp)"]
+tag_names = ["animal (al)", "body part (bp)", "currency (cn)",
+             "environment (env)", "material (m)", "medical (md)",
+             "measurement (ms)", "music (mu)", "plant (pa)", "place (pl)",
+             "personal name (pn)", "profession (pro)", "sensory (sn)",
+             "tool (tl)", "temporal (tmp)", "arms and armor (wp)"]
 
 manuscript_versions = ["tc", "tcn", "tl"]
 
