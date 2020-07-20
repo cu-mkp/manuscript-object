@@ -218,7 +218,7 @@ if __name__=="__main__":
     
     with open("fieldnotes/errors.csv", mode='a', newline='') as outfile:
         writer = csv.writer(outfile)
-        writer.writerows([("parent", "culprit")])
+        # writer.writerows([("parent", "culprit")])
         writer.writerows(t.find_errors(t.root))
     outfile.close()
     

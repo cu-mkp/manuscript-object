@@ -124,6 +124,11 @@ main
 				annotations-plan
 				madder-for-lake
 			isabella-lores-chavez
+				historical-culinary-reconstruction
+				bread-molding-reconstruction
+				making-and-painting-out-verdigris
+				making-madder-lake
+				annotation-imitating-raw-nature-
 			caitlyn-sellar
 				historical-culinary-reconstruction
 				bread-molding-reconstruction
@@ -266,6 +271,11 @@ main
 				aspic-varnish
 				gold-without-gold
 			ana-estrades_field-notes-fa15
+				historical-culinary-reconstruction
+				test-panel-+-pigment-preparation
+				cochineal-and-brazilwood-preparing-natural-pigments
+				gemstone-imitation-on-horn-annotation
+				painting-on-glass-annotation
 			cindy-kok_field-notes-fa15
 				french-puffs-recipe-reconstruction
 				test-panel
@@ -273,7 +283,17 @@ main
 				yellow-pigments
 				saffron
 			kathryn-kremnitzer_field-notes-fa15
+				historical-culinary-recipe-reconstruction
+				preparation-of-test-panel
+				red-lake-pigments
+				annotations-meeting-notes-october-26-2015
+				imitation-gems_emerald-and-ruby
+				verdigris
 			tianhe-lou_field-notes-fa15
+				hrr-blewmanger
+				panel
+				lake-pigment-restruction
+				painting-on-taffeta
 			david-mcclure_field-notes-fa15
 				making-and-knowing_profile
 				coloring-wood_methods-and-materials
@@ -291,7 +311,13 @@ main
 				varied-and-transmuted-wine-notes
 				varied-and-transmuted-wine-experiment
 			naomi-rosenkranz_field-notes-fa15
+				acid-fermentation-of-urine
+				workshop_madder-pigment-making
 			siddhartha-shah_field-notes-fa15
+				historic-culinary-recipe-reconstruction-(hcr)-quince-jelly
+				gesso-on-wood-panel
+				imitation-gemstone
+				red-lake-pigments
 			yuan-yi_field-notes-fa15
 				historical-recipe-reconstruction-compost
 				gesso-panel-and-gilding
@@ -300,8 +326,19 @@ main
 				1)-sourcing-materials-and-preparations
 				2)-damask-cloth-field-notes
 			wenrui-zhao_field-notes-fa15
+				reconstruction-of-blewmanger
+				making-lake-pigment
+				painting-on-glass
+				gilding-on-glass
 	spring-2015
 			chiostrini-giulia
+				hrr
+				bmr
+				wax-roundel-for-carving
+				sandcasting
+				molding-with-cuttlefish-bone
+				plaster-molding-a-rose
+				molding-a-rose
 			durkin-celia
 				durkin-marris-historical-recipe-reconstruction
 				durkin-gans-bread-molding-reconstruction
@@ -335,6 +372,13 @@ main
 				cuttlefish-bone-casting
 				plaster-casting_flowers
 			palframan-jef
+				historical-recipe-reconstruction
+				bread-molding-reconstruction
+				wax-molding
+				sand-casting
+				plaster-molding
+				annotation-field-notes
+				fall-2014-field-notes
 			pope-stephanie
 				bread-moulding-reconstruction-(bmr)
 				wax-carving-and-sandcasting
