@@ -35,7 +35,7 @@ class BnF():
 
   search_type = Optional[Union[List[str], bool]]
   def search(self, animal: search_type = None, body_part: search_type = None, currency: search_type = None,
-             definition: search_type = None, environment: search_type = None, material: bool = None,
+             definition: search_type = None, environment: search_type = None, material: search_type = None,
              medical: search_type = None, measurement: search_type = None, music: search_type = None,
              plant: search_type = None, place: search_type = None, personal_name: search_type = None,
              profession: search_type = None, sensory: search_type = None, tool: search_type = None,
@@ -56,10 +56,20 @@ class BnF():
     search_bools = [k for k, v in args.items() if isinstance(v, bool)] # select bool element categories
     search_strings = [k for k, v in args.items() if isinstance(v, list)] # select string element categories
 
-    for s in search_bools: # filter by each bool
-      results = {i: r for i, r in results.items() if any(r.get_prop(s, v) for v in versions)}
-    for s in search_strings: # filter by each string
-      results = {i: r for i, r in results.items() if any(common_element(args[s], r.get_prop(s, v)) for v in versions)}
+    for prop in search_bools: # filter by each bool
+      results = {i: r for i, r in results.items() if any(r.get_prop(prop, v) for v in versions)}
+      
+    
+    temp = {}
+    for prop in search_strings: # filter by each string
+      #results = {i: recipe for i, recipe in results.items() if all(all(term in recipe.get_prop(prop, version) for term in args[prop]) for version in versions)}
+      # This is 4 loops, so we're not going to try to be fancy and do it in one line.
+      for version in versions:
+        for i, recipe in results.items():
+          if all(term in recipe.get_prop(prop, version) for term in args[prop]):
+            temp[i] = recipe
+            
+    results = temp          
 
     return list(results.keys()) # return identities
 
