@@ -2,12 +2,13 @@ import os
 import re
 import urllib.request
 import urllib.error
+import urllib.parse
 import csv
 
 # Variables
-ROOT_DIR = "http://fieldnotes.makingandknowing.org"
-MAIN_SPACE = f'{ROOT_DIR}/mainSpace'
-SPACE_MENU = f'{MAIN_SPACE}/space.menu.html'
+URL_PREFIX = "http://fieldnotes.makingandknowing.org/mainSpace"
+ROOT_DIR = "C:/Users/grsch/Desktop/main"
+SPACE_MENU = "space.menu.html"
 
 ERROR_TABLE_PATH = "fieldnotes/errors.csv"
 
@@ -19,6 +20,8 @@ re_semesters = re.compile(r'<li><a.*?href="(.*?)".*?>(.*?)</a></li>') # get url 
 re_intermediate = re.compile(r'<a.*?href="(.*?)".*?>(.*Field Notes.*|.*Annotations.*)</a>') # get url of intermediate field notes folder for a given semester
 re_authors = re.compile(r'<a.*?href="(.*?)".*?>(.*?)</a>') # get url of each author for a given semester
 re_fieldnotes = re.compile(r'<a.*?href="(.*?)".*?>(.*?)</a>') # get url of each field note for a given author
+
+MAX_DEPTH = 4
 
 REGEX = {
     0 : re_semesters,
@@ -32,19 +35,19 @@ BAD_LIST = ['.pdf', '.docx', 'flickr.com', 'drive.google.com', 'docs.google.com'
 class Node:
 
     def __init__(self, url, title, parent, depth):
-        print("url: " + url)
-        print("title: " + title)
         # print("parent: " + str(parent))
         # print("depth: " + str(depth))
-        self.old_url = MAIN_SPACE + "/" + url   # this is for making the final table; remains unchanged
-        self.url = MAIN_SPACE + "/" + url       # this is for working with the file; can be changed
+        self.old_url = URL_PREFIX + "/" + url   # this is for making the final table; remains unchanged
+        self.url = URL_PREFIX + "/" + url       # this is for working with the file; can be changed
         self.title = title
         self.parent = parent
         self.depth = depth
         self.hasError = self.checkError(self.url)
         if self.hasError:
             self.hasError = not self.repairUrl()
-        self.new_url = self.makeNewUrl()
+        self.old_path = ROOT_DIR + urllib.parse.unquote(self.url)[len(URL_PREFIX):]    # I am somewhat ashamed of this code.
+        self.new_path = self.makeNewPath()
+        print(self.old_path[len(ROOT_DIR):] + " -> " + self.new_path[len(ROOT_DIR):])
         self.children = self.findChildren()
         
     def checkError(self, url) -> bool:
@@ -73,19 +76,19 @@ class Node:
         else:
             return False
             
-    def makeNewUrl(self) -> str:
+    def makeNewPath(self) -> str:
         if self.parent:
-            parent_directory = self.parent.new_url.rpartition('/')[0]
+            parent_directory = os.path.dirname(self.parent.new_path)
         else:
-            parent_directory = ROOT_DIR
-        return f'{parent_directory}/{self.sanitize(self.title)}' + '/index.html'*(self.depth!=4) + '.html'*(self.depth==4)
+            parent_directory = os.path.dirname(ROOT_DIR)  # should resolve to "C:/Users/grsch/Desktop"
+        return parent_directory + "/" + self.sanitize(self.title).lower() + '/index.html'*(self.depth!=MAX_DEPTH) + '.html'*(self.depth==MAX_DEPTH)
     
     def sanitize(self, text):
         if self.old_url == "http://fieldnotes.makingandknowing.org/mainSpace/Field%20Notes%20-%20Spring%202016.html":
             tmp = text.partition(',')
             text = tmp[2] + " " + tmp[0]     # fix "LastName, FirstName" situations (maybe)
             
-        disallowed = ['.', ':', ',', '$', '+', '=', ';', '/', '@', '\'', '"', '#', ]      # remove these symbols
+        disallowed = ['.', ':', ',', ';', '/', '\\', '\'', '"', '#', '<', '>', '|', '*', '?']      # remove these invalid symbols
         for symbol in disallowed:
             text = text.replace(symbol, '')
         
@@ -115,7 +118,7 @@ class Node:
         if self.parent and (self.parent.url == "http://fieldnotes.makingandknowing.org/mainSpace/Fall%202014%20Archives.html" or self.parent.url == "http://fieldnotes.makingandknowing.org/mainSpace/Fall%202015%20Annotations.html"):
             return children     # if inside one of these folders, do not parse children (since the directory is flat; we will do this one manually)
             
-        if depth == 4:
+        if depth == MAX_DEPTH:
             return children
         
         # /end edge cases
@@ -142,13 +145,13 @@ class Tree:
         
     def makeTable(self, node):
         mapping = []
-        mapping.append((node.old_url, node.new_url))
+        mapping.append((node.old_path, node.new_path))
         for child in node.children:
             mapping.extend(self.makeTable(child))
         return mapping
     
     def makeGraph(self, node):
-        tree = "\n" + "\t"*node.depth + node.sanitize(node.title)
+        tree = "\n" + "\t"*node.depth + node.sanitize(node.title).lower()
         for child in node.children:
             tree += self.makeGraph(child)
         return tree
@@ -161,23 +164,34 @@ class Tree:
             errors.extend(self.findErrors(child))
         return errors
 
+def reorganize(mapping):
+    '''
+    Takes in a dict with original file paths mapping to new paths.
+    '''
+    for old_path, new_path in mapping.items():
+        if os.path.isfile(old_path):
+            os.makedirs(os.path.dirname(new_path), exist_ok=True)
+            os.rename(old_path, new_path)
+
 if __name__=="__main__":
 
     with open(ERROR_TABLE_PATH, mode='r') as infile:
         reader = csv.reader(infile)
         ERROR_TABLE = {rows[1] : rows[2] for rows in reader}
         
-    r = Node('space.menu.html', "main", None, 0)
+    r = Node(SPACE_MENU, 'main', None, 0)
     t = Tree(r)
+    graph = t.makeGraph(t.root)
+    table = t.makeTable(t.root)
     
     with open("fieldnotes/newtree.txt", mode='w') as outfile:
-        outfile.write(t.makeGraph(t.root))
+        outfile.write(graph)
     outfile.close()
     
     with open("fieldnotes/mapping.csv", mode='w', newline='') as outfile:
         writer = csv.writer(outfile)
-        writer.writerows([("original", "new")])
-        writer.writerows(t.makeTable(t.root))
+        # writer.writerows([("original", "new")])
+        writer.writerows(table)
     outfile.close()
     
     with open("fieldnotes/errors.csv", mode='a', newline='') as outfile:
@@ -185,3 +199,9 @@ if __name__=="__main__":
         # writer.writerows([("parent", "culprit")])
         writer.writerows(t.findErrors(t.root))
     outfile.close()
+    
+    mapping = {} 
+    for t in table:
+        mapping[t[0]] = t[1]        # the beauty of this solution is that it overwrites duplicates
+        
+    reorganize(mapping)
