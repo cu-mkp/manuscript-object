@@ -14,14 +14,22 @@ import matplotlib.ticker as ticker
 cwd = os.getcwd()
 m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
 
-all_categories = ["casting", "painting", "metal process", "varnish",
-              "arms and armor", "medicine", "household and daily life",
-              "cultivation", "stones", "wood and its coloring", "tool",
-              "tricks and sleight of hand", "decorative",
-              "animal husbandry", "glass process", "corrosives", "dyeing",
-              "preserving", "wax process", "practical optics", "lists",
-              "merchants", "printing", "La boutique", "alchemy",
-              "manuscript structure"]
+all_categories = ["casting", "painting", "metal process", "arms and armor",
+                  "varnish", "medicine", "household and daily life",
+                  "cultivation", "stones", "wood and its coloring", "tool",
+                  "tricks and sleight of hand", "animal husbandry",
+                  "decorative", "glass process", "corrosives", "dyeing",
+                  "preserving", "wax process", "practical optics", "lists",
+                  "merchants", "printing", "La boutique", "alchemy",
+                  "manuscript structure"]
+
+
+# cleans the tag string by remove some characters
+def clean_tag(str):
+    remove_chars = ["<", ">", "/"]
+    for c in remove_chars:
+        str = str.replace(c, "")
+    return str
 
 
 def tags_scatterplot(search_tags, filename, title):
@@ -93,8 +101,8 @@ def tags_bubbleplot(search_tags, filename, title, normalized):
 
             for tag in search_tags:
                 entries.append(entry)
-                tags.append(tag.replace("<", "").replace(">", ""))
-                count = entry_text.count(tag.replace("<", "").replace(">", ""))
+                tags.append(clean_tag(tag))
+                count = entry_text.count(clean_tag(tag))
                 if normalized:
                     pure_text = etree.tostring(div, method = "text", encoding="UTF-8").decode('utf-8')
                     entry_length = len(pure_text.split())
@@ -230,7 +238,7 @@ def tags_by_category_barplot(search_tags, filename, title, stacked):
                 count = entry_text.count(tag)
                 for j in range(int(count)):
                     for cat in category_list:
-                        tags.append(tag.replace("<", "").replace(">", ""))
+                        tags.append(clean_tag(tag))
                         categories.append(cat)
 
     df = pandas.DataFrame({"tags": tags, "categories": categories})
@@ -278,7 +286,7 @@ def tagged_length_barplot(tags, xlegend, filename):
             tree = etree.parse(input_filename)
 
             for j in range(ntags):
-                tag = tags[j].replace("<", "").replace(">", "")
+                tag = clean_tag(tags[j])
                 for e in tree.findall(".//" + tag):
                     tag_text = etree.tostring(e, method = "text", encoding="UTF-8").decode('utf-8')
                     lengths[j] += len(tag_text.split())
@@ -519,7 +527,7 @@ def tags_by_category_swarmplot(search_tags, filename, title):
                     for cat in category_list:
                         entries.append(entry)
                         entry_ids.append(id)
-                        tags.append(tag.replace("<", "").replace(">", ""))
+                        tags.append(clean_tag(tag))
                         categories.append(cat)
 
             for cat in category_list:
@@ -534,7 +542,7 @@ def tags_by_category_swarmplot(search_tags, filename, title):
     plt.gcf().subplots_adjust(right = 0.99)
 
     swarm = sns.stripplot(x = "entry_ids", y = "categories", data = df_strip,
-                          color = "0.6", jitter = 0, size = 12, marker = "$|$",
+                          color = "0.7", jitter = 0, size = 12, marker = "$|$",
                           order = all_categories)
     swarm = sns.swarmplot(x = "entry_ids", y = "categories", hue = "tags",
                           dodge = True, data = df_swarm, size = 4,
@@ -557,10 +565,10 @@ def tags_by_category_swarmplot(search_tags, filename, title):
     plt.close()
 
 
-viz_path = f'{m_path}/manuscript-object/manuscript_visualizations/'
+viz_dir = f'{m_path}/manuscript-object/manuscript_visualizations/'
 
-if not os.path.exists(viz_path):
-    os.mkdir(viz_path)
+if not os.path.exists(viz_dir):
+    os.mkdir(viz_dir)
 
 language_tags = ["<fr>", "<el>", "<it>", "<la>", "<oc>", "<po>"]
 languages = ["French", "Greek", "Italian", "Latin", "Occitan", "Poitevin"]
@@ -575,8 +583,14 @@ semantic_tags_legend = ["animal (al)", "body part (bp)", "currency (cn)",
                         "place (pl)", "personal name (pn)", "profession (pro)",
                         "sensory (sn)", "tool (tl)", "temporal (tmp)",
                         "arms and armor (wp)"]
+insertions_marks = ["<mark>X", "<mark>+", "<mark>#"]
 
 #tags_scatterplot(language_tags, "languages_scatterplot", title)
+
+viz_path = viz_dir + "bubbleplots/"
+
+if not os.path.exists(viz_path):
+    os.mkdir(viz_path)
 
 tags_bubbleplot(language_tags, "languages_bubbles", "Other languages in the English translation of the manuscript", False)
 tags_bubbleplot(language_tags, "languages_bubbles_normalized", "Other languages in the English translation of the manuscript (normalized by entry length)", True)
@@ -592,6 +606,11 @@ tags_bubbleplot(semantic_tags, "semantic_tags_bubbles_normalized", "Semantic tag
 
 print("Bubbleplots finished.")
 
+viz_path = viz_dir + "barplots/"
+
+if not os.path.exists(viz_path):
+    os.mkdir(viz_path)
+
 categories_barplot()
 
 tags_by_category_barplot(["<del>", "<add>"], "add_del_tag_by_category_barplot", "Additions and deletions by the author-practitioner", False)
@@ -602,36 +621,53 @@ tags_by_category_barplot(margin_types, "margins_barplot", "Margins in the manusc
 for i in range(len(language_tags)):
     tag = language_tags[i]
     language = languages[i]
-    tags_by_category_barplot([tag], tag.replace("<", "").replace(">", "") + "_tag_by_category_barplot",
+    tags_by_category_barplot([tag], clean_tag(tag) + "_tag_by_category_barplot",
                              language + " in the manuscript", True)
 
 for i in range(len(semantic_tags)):
     tag = semantic_tags[i]
     legend = semantic_tags_legend[i]
-    tags_by_category_barplot([tag], tag.replace("<", "").replace(">", "") + "_tag_by_category_barplot",
+    tags_by_category_barplot([tag], clean_tag(tag) + "_tag_by_category_barplot",
                              legend + " tags", True)
 
 tagged_length_barplot(semantic_tags, semantic_tags_legend, "semantic_tags_size_barplot")
 
 print("Barplots finished.")
 
+viz_path = viz_dir + "scatterplots/"
+
+if not os.path.exists(viz_path):
+    os.mkdir(viz_path)
+
 entries_lengths_scatterplot(True)
 entries_lengths_scatterplot(False)
 
 print("Scatterplots finished.")
 
+viz_path = viz_dir + "distplots/"
+
+if not os.path.exists(viz_path):
+    os.mkdir(viz_path)
+
 entries_lengths_distplot()
 
 print("Distplots finished.")
 
+viz_path = viz_dir + "swarmplots/"
+
+if not os.path.exists(viz_path):
+    os.mkdir(viz_path)
+
 tags_by_category_swarmplot(["<del>", "<add>"], "add_del_swarmplot", "Additions and deletions by the author-practitioner")
 tags_by_category_swarmplot(margin_types, "margins_swarmplot", "Margins in the manuscript")
 tags_by_category_swarmplot(language_tags, "languages_swarmplot", "Other languages in the English translation of the manuscript")
+tags_by_category_swarmplot(["</figure>", "</mark>"], "figures_marks_swarmplot", "Figures and marks in the manuscript")
+tags_by_category_swarmplot(insertions_marks, "insertion_marks_swarmplot", "Insertion marks in the manuscript")
 
 for i in range(len(semantic_tags)):
     tag = semantic_tags[i]
     legend = semantic_tags_legend[i]
-    tags_by_category_swarmplot([tag], tag.replace("<", "").replace(">", "") + "_tag_swarmplot",
+    tags_by_category_swarmplot([tag], clean_tag(tag) + "_tag_swarmplot",
                                legend + " tags in the manuscript")
 
 print("Swarmplot finished.")
