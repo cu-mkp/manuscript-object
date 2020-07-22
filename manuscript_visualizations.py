@@ -72,12 +72,13 @@ def tags_scatterplot(search_tags, filename, title):
     plt.close()
 
 
-def tags_bubbleplot(search_tags, filename, title, normalized):
+def tags_bubbleplot(search_tags, ylabels, filename, title):
     manuscript_version = "tl" # "tl", "tc" or "tcn"
 
     entries = []
     tags = []
     counts = []
+    normalized_counts = []
 
     entry = None
 
@@ -103,39 +104,52 @@ def tags_bubbleplot(search_tags, filename, title, normalized):
                 entries.append(entry)
                 tags.append(clean_tag(tag))
                 count = entry_text.count(clean_tag(tag))
-                if normalized:
-                    pure_text = etree.tostring(div, method = "text", encoding="UTF-8").decode('utf-8')
-                    entry_length = len(pure_text.split())
-                    if entry_length != 0:
-                        count /= entry_length
                 counts.append(count)
 
+                pure_text = etree.tostring(div, method = "text", encoding="UTF-8").decode('utf-8')
+                entry_length = len(pure_text.split())
+                normalized_count = count
+                if entry_length != 0:
+                    normalized_count /= entry_length
+                normalized_counts.append(normalized_count)
+
     df = pandas.DataFrame({"entries": entries, "tags": tags, "counts": counts})
+    df_normalized = pandas.DataFrame({"entries": entries, "tags": tags, "counts": normalized_counts})
 
-    plt.subplots(figsize = (15, 5))
-    plt.gcf().subplots_adjust(bottom = 0.2)
-    #plt.gcf().subplots_adjust(right = 0.95)
-    bubbleplot = sns.scatterplot(x = "entries", y = "tags", size = "counts", sizes = (0, 500), data = df, linewidth = 0, alpha = 0.3)
+    data_frames = [df, df_normalized]
+    title_appendices = ["", " (normalized by entry length)"]
+    filename_apppendices = ["", "_normalized"]
 
-    bubbleplot.grid(False)
-    bubbleplot.set_ylabel("Tags", fontsize = 16)
-    bubbleplot.set_xlabel("Entries", fontsize = 16)
-    bubbleplot.set_title(title, fontsize = 20)
+    for i in range(2):
 
-    individual_entries = list(dict.fromkeys(entries))
-    xlabels = []
-    for i in range(len(individual_entries)):
-        if i % 25 == 0:
-            xlabels.append(individual_entries[i])
-        else:
-            xlabels.append("")
-    bubbleplot.set_xticklabels(xlabels, rotation = 90, fontsize = 6)
-    #bubbleplot.legend(loc = "best", ncol = 1, framealpha = 0.2, fancybox = True)
-    plt.legend(bbox_to_anchor = (1.03, 0.5), loc = "center left", fancybox = True)
+        plt.subplots(figsize = (15, 5))
+        plt.gcf().subplots_adjust(bottom = 0.2)
+        plt.gcf().subplots_adjust(left = 0.15)
+        bubbleplot = sns.scatterplot(x = "entries", y = "tags", size = "counts",
+                                     sizes = (0, 500), data = data_frames[i],
+                                     linewidth = 0, alpha = 0.3)
 
-    fig = bubbleplot.get_figure()
-    fig.savefig(f"{viz_path}{filename}.png")
-    plt.close()
+        bubbleplot.grid(False)
+        bubbleplot.set_ylabel("Tags", fontsize = 16)
+        bubbleplot.set_xlabel("Entries", fontsize = 16)
+        bubbleplot.set_title(title + title_appendices[i], fontsize = 20)
+
+        individual_entries = list(dict.fromkeys(entries))
+        xlabels = []
+        for j in range(len(individual_entries)):
+            if j % 25 == 0:
+                xlabels.append(individual_entries[j])
+            else:
+                xlabels.append("")
+        bubbleplot.set_xticklabels(xlabels, rotation = 90, fontsize = 6)
+        bubbleplot.set_yticklabels(ylabels, fontsize = 12)
+        #bubbleplot.legend(loc = "best", ncol = 1, framealpha = 0.2, fancybox = True)
+        plt.legend(bbox_to_anchor = (1.03, 0.5), loc = "center left",
+                   fancybox = True)
+
+        fig = bubbleplot.get_figure()
+        fig.savefig(f"{viz_path}{filename}{filename_apppendices[i]}.png")
+        plt.close()
 
 
 def categories_barplot():
@@ -270,7 +284,7 @@ def tags_by_category_barplot(search_tags, filename, title, stacked):
     plt.close()
 
 
-def tagged_length_barplot(tags, xlegend, filename):
+def tagged_length_barplot(tags, xlabels, filename):
     ntags = len(tags)
     for manuscript_version in ["tc", "tcn", "tl"]:
         lengths = np.zeros(ntags)
@@ -301,7 +315,7 @@ def tagged_length_barplot(tags, xlegend, filename):
         barplt.set_ylabel("Average number of words inside tag", fontsize = 16)
         barplt.set_xlabel("Tag", fontsize = 16)
         barplt.set_title(f"How many words there inside a tag [{manuscript_version}]", fontsize = 18)
-        barplt.set_xticklabels(xlegend, rotation = 90, fontsize = 14)
+        barplt.set_xticklabels(xlabels, rotation = 90, fontsize = 14)
 
         fig = barplt.get_figure()
         fig.savefig(f"{viz_path}{filename}_{manuscript_version}.png")
@@ -592,17 +606,10 @@ viz_path = viz_dir + "bubbleplots/"
 if not os.path.exists(viz_path):
     os.mkdir(viz_path)
 
-tags_bubbleplot(language_tags, "languages_bubbles", "Other languages in the English translation of the manuscript", False)
-tags_bubbleplot(language_tags, "languages_bubbles_normalized", "Other languages in the English translation of the manuscript (normalized by entry length)", True)
-
-tags_bubbleplot(["<del>", "<add>"], "add_del_bubbles", "Additions and deletions by the author-practitioner", False)
-tags_bubbleplot(["<del>", "<add>"], "add_del_bubbles_normalized", "Additions and deletions by the author-practitioner (normalized by entry length)", True)
-
-tags_bubbleplot(margin_types, "margins_bubbles", "Margins in the manuscript", False)
-tags_bubbleplot(margin_types, "margins_bubbles_normalized", "Margins in the manuscript (normalized by entry length)", True)
-
-tags_bubbleplot(semantic_tags, "semantic_tags_bubbles", "Semantic tags in the manuscript", False)
-tags_bubbleplot(semantic_tags, "semantic_tags_bubbles_normalized", "Semantic tags in the manuscript (normalized by entry length)", True)
+tags_bubbleplot(language_tags, languages, "languages_bubbles", "Other languages in the English translation of the manuscript")
+tags_bubbleplot(["<del>", "<add>"], ["additions", "deletions"], "add_del_bubbles", "Additions and deletions by the author-practitioner")
+tags_bubbleplot(margin_types, margin_types, "margins_bubbles", "Margins in the manuscript")
+tags_bubbleplot(semantic_tags, semantic_tags_legend, "semantic_tags_bubbles", "Semantic tags in the manuscript")
 
 print("Bubbleplots finished.")
 
