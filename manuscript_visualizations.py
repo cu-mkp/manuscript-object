@@ -114,7 +114,8 @@ def tags_bubbleplot(search_tags, ylabels, filename, title):
                 normalized_counts.append(normalized_count)
 
     df = pandas.DataFrame({"entries": entries, "tags": tags, "counts": counts})
-    df_normalized = pandas.DataFrame({"entries": entries, "tags": tags, "counts": normalized_counts})
+    df_normalized = pandas.DataFrame({"entries": entries, "tags": tags,
+                                      "counts": normalized_counts})
 
     data_frames = [df, df_normalized]
     title_appendices = ["", " (normalized by entry length)"]
@@ -196,9 +197,11 @@ def categories_barplot():
 
     barplt.set_ylabel("Number of entries", fontsize = 18)
     barplt.set_xlabel("Categories", fontsize = 18)
-    barplt.set_title("How many entries there are for each category", fontsize = 20)
+    barplt.set_title("How many entries there are for each category",
+                     fontsize = 20)
 
-    barplt.set_xticklabels(barplt.get_xticklabels(), rotation = 90, fontsize = 16)
+    barplt.set_xticklabels(barplt.get_xticklabels(), rotation = 90,
+                           fontsize = 16)
     fig = barplt.get_figure()
     fig.savefig(viz_path + "categories_barplot.png")
     plt.close()
@@ -314,7 +317,8 @@ def tagged_length_barplot(tags, xlabels, filename):
 
         barplt.set_ylabel("Average number of words inside tag", fontsize = 16)
         barplt.set_xlabel("Tag", fontsize = 16)
-        barplt.set_title(f"How many words there inside a tag [{manuscript_version}]", fontsize = 18)
+        barplt.set_title(f"How many words there inside a tag [{manuscript_version}]",
+                         fontsize = 18)
         barplt.set_xticklabels(xlabels, rotation = 90, fontsize = 14)
 
         fig = barplt.get_figure()
@@ -366,6 +370,13 @@ def entries_lengths_scatterplot(logscale):
                                "normalized_lengths": normalized_lengths,
                                "folio number": folios})
 
+        max_words = np.max(lengths)
+        max_diff_words = np.max(normalized_lengths)
+        minmax = np.min([max_words, max_diff_words])
+
+        ratios = [lengths[i]/normalized_lengths[i] for i in range(len(lengths))]
+        mean_ratio = np.mean(ratios)
+
         plt.subplots(figsize = (10, 10))
         #plt.gcf().subplots_adjust(left = 0.05)
         #plt.gcf().subplots_adjust(right = 0.95)
@@ -374,8 +385,8 @@ def entries_lengths_scatterplot(logscale):
 
         scatter = sns.scatterplot(x = "lengths", y = "normalized_lengths",
                                   hue = "folio number", data = df,
-                                  linewidth = 0, alpha = 1, size_norm = 1,
-                                  palette = "plasma", marker = ".")
+                                  linewidth = 0.4, alpha = 1, size_norm = 1,
+                                  palette = "plasma", edgecolor = "k")
 
         for line in range(0, df.shape[0]):
             if (df.lengths[line] > 1500):
@@ -385,6 +396,10 @@ def entries_lengths_scatterplot(logscale):
             if (df.lengths[line] < 2 and logscale):
                 scatter.text(df.lengths[line]*1.1, df.normalized_lengths[line],
                              df.entries[line], horizontalalignment = "left",
+                             fontsize = 10)
+            if (df.entries[line] == "p162r_1" or df.entries[line] == "p001r_3"):
+                scatter.text(df.lengths[line] - 10, df.normalized_lengths[line],
+                             df.entries[line], horizontalalignment = "right",
                              fontsize = 10)
 
         scatter.set_xlabel("Number of words", fontsize = 16)
@@ -400,19 +415,21 @@ def entries_lengths_scatterplot(logscale):
 
         scatter.legend(fancybox = True)
 
-        max_words = np.max(lengths)
-        max_diff_words = np.max(normalized_lengths)
-        minmax = np.min([max_words, max_diff_words])
-        scatter.plot([1, minmax], [1, minmax], "--k")
-        scatter.text(minmax, minmax + 10, "1:1 ratio", horizontalalignment = "center", fontsize = 10)
+        scatter.plot([1, minmax], [1, minmax], "--g")
+        scatter.text(minmax, minmax + 10, "1:1 ratio",
+                     horizontalalignment = "center", fontsize = 10, color = "g")
 
         ratios = [lengths[i]/normalized_lengths[i] for i in range(len(lengths))]
         mean_ratio = np.mean(ratios)
         scatter.plot([1, minmax*mean_ratio], [1, minmax], "--b", alpha = 1)
         if logscale:
-            scatter.text(minmax*mean_ratio, minmax + 200, "mean ratio", horizontalalignment = "center", fontsize = 10, color = "b")
+            scatter.text(minmax*mean_ratio, minmax + 200, "mean ratio",
+                         horizontalalignment = "center", fontsize = 10,
+                         color = "b")
         else:
-            scatter.text(minmax*mean_ratio, minmax + 10, "mean ratio", horizontalalignment = "center", fontsize = 10, color = "b")
+            scatter.text(minmax*mean_ratio, minmax + 10, "mean ratio",
+                         horizontalalignment = "center", fontsize = 10,
+                         color = "b")
 
         fig = scatter.get_figure()
         if logscale:
@@ -467,7 +484,8 @@ def entries_lengths_distplot():
                                bins = np.linspace(0, 800, 40))
 
         distplt.set_xlabel("Word counts")
-        distplt.set_title(f"Density estimate of the lengths of entries [{manuscript_version}]", fontsize = 20)
+        distplt.set_title(f"Density estimate of the lengths of entries [{manuscript_version}]",
+                          fontsize = 20)
         distplt.set_yticklabels([])
         distplt.set_xlim(0, 900)
         distplt.legend(fancybox = True)
@@ -549,8 +567,10 @@ def tags_by_category_swarmplot(search_tags, filename, title):
                 entry_ids2.append(id)
                 categories2.append(cat)
 
-    df_swarm = pandas.DataFrame({"tags": tags, "entry_ids": entry_ids, "categories": categories})
-    df_strip = pandas.DataFrame({"entry_ids": entry_ids2, "categories": categories2})
+    df_swarm = pandas.DataFrame({"tags": tags, "entry_ids": entry_ids,
+                                 "categories": categories})
+    df_strip = pandas.DataFrame({"entry_ids": entry_ids2,
+                                 "categories": categories2})
 
     plt.subplots(figsize = (21, 15))
     plt.gcf().subplots_adjust(right = 0.99)
