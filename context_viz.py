@@ -11,7 +11,7 @@ import seaborn as sns; sns.set()
 import matplotlib.pyplot as plt
 
 cwd = os.getcwd()
-m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
+m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/..'
 m_k_data_to_context = f'{m_path}/manuscript-object/context'
 
 if not os.path.exists(m_k_data_to_context):
@@ -136,8 +136,6 @@ def mat_subtract(mat1, mat2):
 
 def generate_symmetrical_matrix(data):
 
-    # data = all_context_without_duplicates
-
     matrix = []
     I = np.ones(len(tags)) - np.eye(len(tags))
     # I is used for the average without the diagonal
@@ -163,10 +161,11 @@ def generate_symmetrical_matrix(data):
 # heatmap visualization
 # how similar are contexts from different tags
 
-def create_symmetrical_heatmap(data, manuscript_version):
+def create_symmetrical_heatmap(data, manuscript_version, context = True):
 
-    # data = all_context_without_duplicates
+    # data = all_context_without_duplicates or all_items_without_duplicates
     # manuscript_version = "tc", "tcn" or "tl"
+    # context = True or False whether we want the context or the inside of the tags
 
     matrix = generate_symmetrical_matrix(data)
 
@@ -179,27 +178,37 @@ def create_symmetrical_heatmap(data, manuscript_version):
     heatmap = sns.heatmap(df, square = True, mask = no_diag_mask,
                           annot = True, annot_kws = {"size": 16},
                           cmap = sns.cm.rocket_r)
-    heatmap.collections[0].colorbar.set_label("Percentage of similar words in 20-word surroundings",
-                                              fontsize = 20)
-    heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + manuscript_version + "]",
-                      fontsize = 22)
+    if context:
+        heatmap.collections[0].colorbar.set_label("Percentage of identical words in 20-word surroundings",
+                                                  fontsize = 20)
+        heatmap.set_title("How similar is the author-practitioner's vocabulary\nin the context of talking about two different topics [" + manuscript_version + "]",
+                          fontsize = 22)
+    else:
+        heatmap.collections[0].colorbar.set_label("Percentage of identical vocabulary",
+                                                  fontsize = 20)
+        heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + manuscript_version + "]",
+                          fontsize = 22)
     heatmap.set_ylabel("Tags", fontsize = 20)
     heatmap.set_xlabel("Tags", fontsize = 20)
     heatmap.set_xticklabels(legend, size = 16)
     heatmap.set_yticklabels(legend, size = 16)
     fig = heatmap.get_figure()
-    fig.savefig(viz_path + "symmetrical_heatmap.png")
+    if context:
+        fig.savefig(viz_path + v + "_context_symmetrical_heatmap.png")
+    else:
+        fig.savefig(viz_path + v + "_semantic_tags_similarity_symmetrical_heatmap.png")
     plt.close()
 
 
 # symmetrical heatmap visualizing the differences between versions
 
-def create_symmetrical_diff_heatmap(v1, v2, data1, data2):
+def create_symmetrical_diff_heatmap(v1, v2, data1, data2, context = True):
 
     # v1: first version, "tc", "tcn" or "tl"
     # v2: second version, "tc", "tcn" or "tl", != v1
-    # data1 = all_context_without_duplicates[v1]
-    # data2 = all_context_without_duplicates[v2]
+    # data1 = all_context_without_duplicates[v1] or all_items_without_duplicates[v1]
+    # data2 = all_context_without_duplicates[v2] or all_items_without_duplicates[v2]
+    # context = True or False whether we want the context or the inside of the tags
 
     matrix1 = generate_symmetrical_matrix(data1)
     matrix2 = generate_symmetrical_matrix(data2)
@@ -214,24 +223,31 @@ def create_symmetrical_diff_heatmap(v1, v2, data1, data2):
     heatmap = sns.heatmap(df, square = True, mask = no_diag_mask,
                           annot = True, annot_kws = {"size": 16},
                           center = 0, cmap = 'seismic', fmt = '.2f')
-    heatmap.collections[0].colorbar.set_label("Percentage of similar words in 20-word surroundings",
-                                              fontsize = 20)
-    heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + v1 + " - " + v2 + "]",
-                      fontsize = 22)
+    if context:
+        heatmap.collections[0].colorbar.set_label("Percentage of identical words in 20-word surroundings",
+                                                  fontsize = 20)
+        heatmap.set_title("How similar is the author-practitioner's vocabulary\nin the context of talking about two different topics [" + v1 + " - " + v2 + "]",
+                          fontsize = 22)
+    else:
+        heatmap.collections[0].colorbar.set_label("Percentage of identical vocabulary",
+                                                  fontsize = 20)
+        heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + v1 + " - " + v2 + "]",
+                          fontsize = 22)
     heatmap.set_ylabel("Tags", fontsize = 20)
     heatmap.set_xlabel("Tags", fontsize = 20)
     heatmap.set_xticklabels(legend, size = 16)
     heatmap.set_yticklabels(legend, size = 16)
     fig = heatmap.get_figure()
-    fig.savefig(viz_path + v1 + "-" + v2 + "_diff_symmetrical_heatmap.png")
+    if context:
+        fig.savefig(viz_path + v1 + "-" + v2 + "_context_diff_symmetrical_heatmap.png")
+    else:
+        fig.savefig(viz_path + v1 + "-" + v2 + "_semantic_tags_similarity_diff_symmetrical_heatmap.png")
     plt.close()
 
 
 # Generate the matrix used for asymmetrical heatmaps
 
 def generate_asymmetrical_matrix(data):
-
-    # data = all_context_without_duplicates
 
     matrix = []
     I = np.ones(len(tags)) - np.eye(len(tags))
@@ -257,10 +273,11 @@ def generate_asymmetrical_matrix(data):
 # heatmap visualization
 # how similar are contexts from different tags
 
-def create_asymmetrical_heatmap(data, manuscript_version):
+def create_asymmetrical_heatmap(data, manuscript_version, context = True):
 
-    # data = all_context_without_duplicates
+    # data = all_context_without_duplicates or all_items_without_duplicates
     # manuscript_version = "tc", "tcn" or "tl"
+    # context = True or False whether we want the context or the inside of the tags
 
     matrix = generate_asymmetrical_matrix(data)
 
@@ -273,27 +290,39 @@ def create_asymmetrical_heatmap(data, manuscript_version):
     heatmap = sns.heatmap(df, square = True, mask = no_diag_mask,
                           annot = True, annot_kws = {"size": 16},
                           cmap = sns.cm.rocket_r)
-    heatmap.collections[0].colorbar.set_label("Percentage of included words in 20-word surroundings",
-                                              fontsize = 20)
-    heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + manuscript_version + "]",
-                      fontsize = 22)
-    heatmap.set_ylabel("How much of this tag's context vocabulary...", fontsize = 20)
-    heatmap.set_xlabel("...is included in this tag's context vocabulary?", fontsize = 20)
+    if context:
+        heatmap.collections[0].colorbar.set_label("Percentage of included words in 20-word surroundings",
+                                                  fontsize = 20)
+        heatmap.set_title("How similar is the author-practitioner's vocabulary\nin the context of talking about two different topics [" + manuscript_version + "]",
+                          fontsize = 22)
+        heatmap.set_ylabel("How much of this tag's context vocabulary...", fontsize = 20)
+        heatmap.set_xlabel("...is included in this tag's context vocabulary?", fontsize = 20)
+    else:
+        heatmap.collections[0].colorbar.set_label("Percentage of included vocabulary",
+                                                  fontsize = 20)
+        heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + manuscript_version + "]",
+                          fontsize = 22)
+        heatmap.set_ylabel("How much of this tag's vocabulary...", fontsize = 20)
+        heatmap.set_xlabel("...is included in this tag's vocabulary?", fontsize = 20)
     heatmap.set_xticklabels(legend, size = 16)
     heatmap.set_yticklabels(legend, size = 16)
     fig = heatmap.get_figure()
-    fig.savefig(viz_path + "asymmetrical_heatmap.png")
+    if context:
+        fig.savefig(viz_path + v + "_context_asymmetrical_heatmap.png")
+    else:
+        fig.savefig(viz_path + v + "_semantic_tags_similarity_asymmetrical_heatmap.png")
     plt.close()
 
 
 # asymmetrical heatmap visualizing the differences between versions
 
-def create_asymmetrical_diff_heatmap(v1, v2, data1, data2):
+def create_asymmetrical_diff_heatmap(v1, v2, data1, data2, context = True):
 
     # v1: first version, "tc", "tcn" or "tl"
     # v2: second version, "tc", "tcn" or "tl", != v1
-    # data1 = all_context_without_duplicates[v1]
-    # data2 = all_context_without_duplicates[v2]
+    # data1 = all_context_without_duplicates[v1] or all_items_without_duplicates[v1]
+    # data2 = all_context_without_duplicates[v2] or all_items_without_duplicates[v2]
+    # context = True or False whether we want the context or the inside of the tags
 
     matrix1 = generate_asymmetrical_matrix(data1)
     matrix2 = generate_asymmetrical_matrix(data2)
@@ -308,16 +337,27 @@ def create_asymmetrical_diff_heatmap(v1, v2, data1, data2):
     heatmap = sns.heatmap(df, square = True, mask = no_diag_mask,
                           annot = True, annot_kws = {"size": 16},
                           center = 0, cmap = 'seismic', fmt = '.2f')
-    heatmap.collections[0].colorbar.set_label("Percentage of similar words in 20-word surroundings",
-                                              fontsize = 20)
-    heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + v1 + " - " + v2 + "]",
-                      fontsize = 22)
-    heatmap.set_ylabel("How much of this tag's context vocabulary...", fontsize = 20)
-    heatmap.set_xlabel("...is included in this tag's context vocabulary?", fontsize = 20)
+    if context:
+        heatmap.collections[0].colorbar.set_label("Percentage of included words in 20-word surroundings",
+                                                  fontsize = 20)
+        heatmap.set_title("How similar is the author-practitioner's vocabulary\nin the context of talking about two different topics [" + v1 + " - " + v2 + "]",
+                          fontsize = 22)
+        heatmap.set_ylabel("How much of this tag's context vocabulary...", fontsize = 20)
+        heatmap.set_xlabel("...is included in this tag's context vocabulary?", fontsize = 20)
+    else:
+        heatmap.collections[0].colorbar.set_label("Percentage of included vocabulary",
+                                                  fontsize = 20)
+        heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + v1 + " - " + v2 + "]",
+                          fontsize = 22)
+        heatmap.set_ylabel("How much of this tag's vocabulary...", fontsize = 20)
+        heatmap.set_xlabel("...is included in this tag's vocabulary?", fontsize = 20)
     heatmap.set_xticklabels(legend, size = 16)
     heatmap.set_yticklabels(legend, size = 16)
     fig = heatmap.get_figure()
-    fig.savefig(viz_path + v1 + "-" + v2 + "_diff_asymmetrical_heatmap.png")
+    if context:
+        fig.savefig(viz_path + v1 + "-" + v2 + "_context_diff_asymmetrical_heatmap.png")
+    else:
+        fig.savefig(viz_path + v1 + "-" + v2 + "_semantic_tags_similarity_diff_asymmetrical_heatmap.png")
     plt.close()
 
 
@@ -355,14 +395,14 @@ def create_barplot(data, manuscript_version, normalized):
     barplt.set_ylabel("Number of unique words in 20-word surroundings" + ylabel_appendix,
                       fontsize = 20)
     barplt.set_xlabel("Tag", fontsize = 20)
-    barplt.set_title("How diversified is the author-practitioner's\nvocabulary when talking about... [" + manuscript_version + "]",
+    barplt.set_title("How diversified is the author-practitioner's\nvocabulary in the context of talking about... [" + manuscript_version + "]",
                      fontsize = 24)
     barplt.set_xticklabels(barplt.get_xticklabels(), rotation = 90, fontsize = 16)
     barplt.set_yticklabels(tag_names, size = 16)
     #bar.yaxis.set_major_locator(plt.FixedLocator(5))
     barplt.set(yscale = "log")
     fig = barplt.get_figure()
-    fig.savefig(viz_path + "barplot" + filename_appendix + ".png")
+    fig.savefig(viz_path + v + "_context_barplot" + filename_appendix + ".png")
     plt.close()
 
 
@@ -407,7 +447,7 @@ def create_grouped_barplot(data, normalized):
     barplt.set_ylabel("Number of unique words in 20-word surroundings" + ylabel_appendix,
                       fontsize = 20)
     barplt.set_xlabel("Tag", fontsize = 20)
-    barplt.set_title("How diversified is the author-practitioner's\nvocabulary when talking about...",
+    barplt.set_title("How diversified is the author-practitioner's\nvocabulary in the context of talking about...",
                      fontsize = 24)
     barplt.set_xticklabels(tag_names, rotation = 90, fontsize = 16)
     barplt.set_yticklabels(barplt.get_yticklabels(), size = 16)
@@ -416,7 +456,7 @@ def create_grouped_barplot(data, normalized):
     #bar.yaxis.set_major_locator(plt.FixedLocator(5))
     barplt.set(yscale = "log")
     fig = barplt.get_figure()
-    fig.savefig(viz_path + "grouped_barplot" + filename_appendix + ".png")
+    fig.savefig(viz_path + "context_grouped_barplot" + filename_appendix + ".png")
     plt.close()
 
 
@@ -430,23 +470,25 @@ all_context = [all_context_tc, all_context_tcn, all_context_tl]
 all_items_without_duplicates = [all_items_without_duplicates_tc, all_items_without_duplicates_tcn, all_items_without_duplicates_tl]
 all_context_without_duplicates = [all_context_without_duplicates_tc, all_context_without_duplicates_tcn, all_context_without_duplicates_tl]
 
+viz_dir = f'{m_path}/manuscript-object/context_visualizations/'
+if not os.path.exists(viz_dir):
+    os.mkdir(viz_dir)
+
 for i in range(len(manuscript_versions)):
     v = manuscript_versions[i]
-    viz_path = f'{m_path}/manuscript-object/context_visualizations/{v}'
+    viz_path = viz_dir + v + "/"
 
     if not os.path.exists(viz_path):
         os.mkdir(viz_path)
-
-    viz_path = f'{viz_path}/{v}_' # for file names purpose
 
     create_symmetrical_heatmap(all_context_without_duplicates[i], v)
     create_asymmetrical_heatmap(all_context_without_duplicates[i], v)
     create_barplot([all_context_without_duplicates[i], all_items[i]], v, True)
     create_barplot([all_context_without_duplicates[i], all_items[i]], v, False)
 
-    print(v + " visualizations finished.")
+    print(v + " context visualizations finished.")
 
-viz_path = f'{m_path}/manuscript-object/context_visualizations/comparisons/'
+viz_path = viz_dir + "comparisons/"
 
 if not os.path.exists(viz_path):
     os.mkdir(viz_path)
@@ -459,11 +501,40 @@ create_asymmetrical_diff_heatmap("tc", "tcn", all_context_without_duplicates[0],
 create_asymmetrical_diff_heatmap("tc", "tl", all_context_without_duplicates[0], all_context_without_duplicates[2])
 create_asymmetrical_diff_heatmap("tcn", "tl", all_context_without_duplicates[1], all_context_without_duplicates[2])
 
-print("difference heatmaps finished.")
+print("context difference heatmaps finished.")
 
 create_grouped_barplot([all_context_without_duplicates, all_items], True)
 create_grouped_barplot([all_context_without_duplicates, all_items], False)
 
-print("grouped barplots finished.")
+print("context grouped barplots finished.")
+
+# Some more visualizations using the data we have collected
+# and the functions already written
+
+viz_dir = f'{m_path}/manuscript-object/manuscript_visualizations/'
+if not os.path.exists(viz_dir):
+    os.mkdir(viz_dir)
+
+for i in range(len(manuscript_versions)):
+    v = manuscript_versions[i]
+    viz_path = viz_dir + "heatmaps/"
+
+    if not os.path.exists(viz_path):
+        os.mkdir(viz_path)
+
+    create_symmetrical_heatmap(all_items_without_duplicates[i], v, False)
+    create_asymmetrical_heatmap(all_context_without_duplicates[i], v, False)
+
+    print(v + " heatmap visualizations finished.")
+
+create_symmetrical_diff_heatmap("tc", "tcn", all_context_without_duplicates[0], all_context_without_duplicates[1])
+create_symmetrical_diff_heatmap("tc", "tl", all_context_without_duplicates[0], all_context_without_duplicates[2])
+create_symmetrical_diff_heatmap("tcn", "tl", all_context_without_duplicates[1], all_context_without_duplicates[2])
+
+create_asymmetrical_diff_heatmap("tc", "tcn", all_context_without_duplicates[0], all_context_without_duplicates[1])
+create_asymmetrical_diff_heatmap("tc", "tl", all_context_without_duplicates[0], all_context_without_duplicates[2])
+create_asymmetrical_diff_heatmap("tcn", "tl", all_context_without_duplicates[1], all_context_without_duplicates[2])
+
+print("difference heatmaps finished.")
 
 print("All done!")
