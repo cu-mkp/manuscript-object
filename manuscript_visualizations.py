@@ -272,6 +272,10 @@ def tags_by_category_barplot(search_tags, filename, title, stacked):
                             ha = 'center', va = 'center', xytext = (0, 25),
                             textcoords = 'offset points', rotation = 90,
                             fontsize = 12)
+
+        tl = ((barplt.get_xlim()[1] - barplt.get_xlim()[0])*0.8 + barplt.get_xlim()[0],
+              (barplt.get_ylim()[1] - barplt.get_ylim()[0])*0.95 + barplt.get_ylim()[0])
+        barplt.text(tl[0], tl[1], "Total count: " + str(total_sum))
     else:
         barplt = sns.countplot(x = "categories", hue = "tags", data = df,
                                order = all_categories)
@@ -322,7 +326,7 @@ def tagged_length_barplot(tags, xlabels, filename):
         barplt.set_xticklabels(xlabels, rotation = 90, fontsize = 14)
 
         fig = barplt.get_figure()
-        fig.savefig(f"{viz_path}{filename}_{manuscript_version}.png")
+        fig.savefig(f"{viz_path}{manuscript_version}_{filename}.png")
         plt.close()
 
 
@@ -433,9 +437,9 @@ def entries_lengths_scatterplot(logscale):
 
         fig = scatter.get_figure()
         if logscale:
-            fig.savefig(f"{viz_path}entries_lengths_scatterplot_logscale_{manuscript_version}.png")
+            fig.savefig(f"{viz_path}{manuscript_version}_entries_lengths_scatterplot_logscale.png")
         else:
-            fig.savefig(f"{viz_path}entries_lengths_scatterplot_linearscale_{manuscript_version}.png")
+            fig.savefig(f"{viz_path}{manuscript_version}_entries_lengths_scatterplot_linearscale.png")
         plt.close()
 
 
@@ -491,7 +495,7 @@ def entries_lengths_distplot():
         distplt.legend(fancybox = True)
 
         fig = distplt.get_figure()
-        fig.savefig(f"{viz_path}entries_lengths_distplot_{manuscript_version}.png")
+        fig.savefig(f"{viz_path}{manuscript_version}_entries_lengths_distplot.png")
         plt.close()
 
 
@@ -617,7 +621,10 @@ semantic_tags_legend = ["animal (al)", "body part (bp)", "currency (cn)",
                         "place (pl)", "personal name (pn)", "profession (pro)",
                         "sensory (sn)", "tool (tl)", "temporal (tmp)",
                         "arms and armor (wp)"]
-insertions_marks = ["<mark>X", "<mark>+", "<mark>#"]
+insertion_marks = ["<mark>X", "<mark>+", "<mark>#"]
+insertion_marks_legend = ["X", "+", "#"]
+other_tags = ["df"]
+other_tags_legend = ["definition"]
 
 #tags_scatterplot(language_tags, "languages_scatterplot", title)
 
@@ -643,7 +650,9 @@ categories_barplot()
 tags_by_category_barplot(["<del>", "<add>"], "add_del_tag_by_category_barplot", "Additions and deletions by the author-practitioner", False)
 tags_by_category_barplot(["<add>"], "add_tag_by_category_barplot", "Additions by the author-practitioner", True)
 tags_by_category_barplot(["<del>"], "del_tag_by_category_barplot", "Deletions by the author-practitioner", True)
-tags_by_category_barplot(margin_types, "margins_barplot", "Margins in the manuscript", True)
+tags_by_category_barplot(margin_types, "margins_by_category_barplot", "Margins in the manuscript", True)
+tags_by_category_barplot(["</figure>", "</mark>"], "figures_marks_barplot", "Figures and marks in the manuscript", False)
+tags_by_category_barplot(insertion_marks, "insertion_marks_barplot", "Insertion marks in the manuscript", True)
 
 for i in range(len(language_tags)):
     tag = language_tags[i]
@@ -654,6 +663,12 @@ for i in range(len(language_tags)):
 for i in range(len(semantic_tags)):
     tag = semantic_tags[i]
     legend = semantic_tags_legend[i]
+    tags_by_category_barplot([tag], clean_tag(tag) + "_tag_by_category_barplot",
+                             legend + " tags", True)
+
+for i in range(len(other_tags)):
+    tag = other_tags[i]
+    legend = other_tags_legend[i]
     tags_by_category_barplot([tag], clean_tag(tag) + "_tag_by_category_barplot",
                              legend + " tags", True)
 
@@ -689,11 +704,17 @@ tags_by_category_swarmplot(["<del>", "<add>"], "add_del_swarmplot", "Additions a
 tags_by_category_swarmplot(margin_types, "margins_swarmplot", "Margins in the manuscript")
 tags_by_category_swarmplot(language_tags, "languages_swarmplot", "Other languages in the English translation of the manuscript")
 tags_by_category_swarmplot(["</figure>", "</mark>"], "figures_marks_swarmplot", "Figures and marks in the manuscript")
-tags_by_category_swarmplot(insertions_marks, "insertion_marks_swarmplot", "Insertion marks in the manuscript")
+tags_by_category_swarmplot(insertion_marks, "insertion_marks_swarmplot", "Insertion marks in the manuscript")
 
 for i in range(len(semantic_tags)):
     tag = semantic_tags[i]
     legend = semantic_tags_legend[i]
+    tags_by_category_swarmplot([tag], clean_tag(tag) + "_tag_swarmplot",
+                               legend + " tags in the manuscript")
+
+for i in range(len(other_tags)):
+    tag = other_tags[i]
+    legend = other_tags_legend[i]
     tags_by_category_swarmplot([tag], clean_tag(tag) + "_tag_swarmplot",
                                legend + " tags in the manuscript")
 
