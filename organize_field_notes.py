@@ -1,9 +1,11 @@
 import os
+import sys
 import re
 import urllib.request
 import urllib.error
 import urllib.parse
 import csv
+import unicodedata
 
 # Variables
 URL_PREFIX = "http://fieldnotes.makingandknowing.org/mainSpace"
@@ -85,6 +87,7 @@ class Node:
         return parent_directory + "/" + self.sanitize(self.title).lower() + '/index.html'*(self.depth!=MAX_DEPTH) + '.html'*(self.depth==MAX_DEPTH)
     
     def sanitize(self, text):
+        old = text
         if self.old_url == "http://fieldnotes.makingandknowing.org/mainSpace/Field%20Notes%20-%20Spring%202016.html":
             tmp = text.partition(',')
             text = tmp[2] + " " + tmp[0]     # fix "LastName, FirstName" situations (maybe)
@@ -92,8 +95,20 @@ class Node:
         disallowed = ['.', ':', ',', ';', '/', '\\', '\'', '"', '#', '<', '>', '|', '*', '?']      # remove these invalid symbols
         for symbol in disallowed:
             text = text.replace(symbol, '')
+            
+        text = re.sub(r"\s+", ' ', text)  # replace multiple whitespace with just one space
+        text = text.strip()  # remove leading and trailing whitespace
+            
+        # specific replacements for style
+        replacements = {' - ':'_', ' ':'-', '%20':'-', '&amp':'+', '&':'+', 'é':'e'}
+        for k,v in replacements.items():
+            text = text.replace(k, v)
+            
+        # get canonical decomposition of unicode text, then re-encode to ascii while ignoring errors
+        # in particular we hope this handles 'e%CC%81' and turns it into 'e'
+        # text = unicodedata.normalize('NFD', text).encode('ascii', 'ignore').decode('utf-8')
         
-        return text.replace(' - ', '_').replace(' ', '-').replace('%20', '-').replace('&amp', '+').replace('&', '+')
+        return text
     
     def find_children(self):
         children = []
@@ -138,7 +153,8 @@ class Node:
         else:
             page = urllib.request.urlopen(self.url)            # open url
             return page.read().decode('utf-8')     # decode to text
-        
+
+from urllib.parse import quote, unquote
 class Tree:
     
     def __init__(self, root):
@@ -146,7 +162,15 @@ class Tree:
         
     def make_table(self, node):
         mapping = []
-        mapping.append((node.old_path, node.new_path))
+        if "\u0301" in node.old_path:
+            print(node.old_path)
+            node.old_path = node.old_path.encode('utf-8').decode('utf-8') #%CC%81%2C
+            print(node.old_path)
+            print(os.path.exists(node.old_path))
+        if "\u0301" in node.new_path:
+            print(node.new_path)  # this doesn't happen because sanitize(text) fixes it (downgrades to "e")
+        # print((node.old_path.replace(ROOT_DIR + "/", ""), node.new_path.replace(ROOT_DIR + "/", "")))
+        mapping.append((node.old_path.replace(ROOT_DIR + "/", ""), node.new_path.replace(ROOT_DIR + "/", "")))
         for child in node.children:
             mapping.extend(self.make_table(child))
         return mapping
@@ -185,8 +209,10 @@ def reorganize(mapping):
     '''
     missing = []
     for old_path, new_path in mapping.items():
-        if os.path.isfile(old_path):
-            if os.path.isfile(new_path):
+        old_path = ROOT_DIR + "/" + old_path
+        new_path = ROOT_DIR + "/" + new_path
+        if os.path.exists(old_path):
+            if os.path.exists(new_path):
                 print("found duplicate: " + os.path.basename(new_path))
                 new_path = resolve_filename_conflict(new_path)
             os.makedirs(os.path.dirname(new_path), exist_ok=True)
@@ -194,6 +220,23 @@ def reorganize(mapping):
         else:
             missing.append((old_path, new_path))
     return missing
+
+# either do this before the initial move or after, not during.
+# if we do it during it will duplicate files.
+def update_hyperlinks(infile, mapping):
+    with open(infile, mode="r") as f:
+        text = f.read()
+        links = re.findall(r'<a.*href="(.*)".*>', text)
+        for link in links:
+            i = text.find(link)
+            if link in mapping:
+                text = text[:i] + mapping[link] + text[i+len(link):]
+            elif 'http' not in link and link[0]!='#':
+                text = text[:i] + "/" + link + text[i+len(link):]   # "files/..." -> "/files/..."
+    f.close()
+
+    with open(infile, mode="w") as f:
+        f.write(text)
 
 if __name__=="__main__":
 
@@ -205,8 +248,9 @@ if __name__=="__main__":
     t = Tree(r)
     graph = t.make_graph(t.root)
     table = t.make_table(t.root)
+    # [print(k, ":", v) for k,v in table[10:20]]
     
-    with open("fieldnotes/newtree.txt", mode='w') as outfile:
+    with open("fieldnotes/filetree.txt", mode='w') as outfile:
         outfile.write(graph)
     outfile.close()
     
@@ -226,6 +270,9 @@ if __name__=="__main__":
     for t in table:
         mapping[t[0]] = t[1]        # the beauty of this solution is that it overwrites duplicates
         
+    for infile in mapping.keys():
+        update_hyperlinks(infile, mapping)
+    
     missing = reorganize(mapping)
     with open("fieldnotes/missing.csv", mode='w', newline='') as outfile:
         writer = csv.writer(outfile)
