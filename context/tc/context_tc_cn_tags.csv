@@ -4,11 +4,11 @@ tc_p003v_preTEI,sols,"['comme', 'laultre', 'Cestuy', 'cy', 'ne', 'reviendra', 'q
 tc_p003v_preTEI,s,"['au', 'lieu', 'de', 'tourmentine', 'fine', 'Et', 'tu', 'pourra']","['mectre', 's', 'ur', 'deulx', 'lb', 'de', 'tourmentine', 'commune', 'une', 'lb']"
 tc_p003v_preTEI,s,"['Ce', 'vai']","['s', 'eau', 'e', 's', 't', 'pour', 'faire', 'grande', 'quantite', 'dhuile']"
 tc_p004v_preTEI,s,"['En', 'cinq', 'ou']","['ix', 'lb', 'dhuile', 'on', 'mect', 'une', 'lb', 'de', 'Galipot', 'qui']"
-tc_p009v_preTEI,livres,"['Septembre', '1581', '/', 'pour', '1', 'cane', 'toille', 'babtiste', 'a', '8']","['Canne', 'Jedis', '8', 't']"
+tc_p009v_preTEI,livres,"['Septembre', '1581', '/', 'pour', '1', 'cane', 'toille', 'babtiste', 'a', '8']","['Canne', 'Jedis', '___', '___', '___', '___', '8', 't']"
 tc_p009v_preTEI,t.,['E'],"['premieremen', 't', 'francois', 'du', 'Cros', 'doib', 't', 'du', 'iie', 'de']"
-tc_p009v_preTEI,livres,"['septembre', '1581', '/', 'pour', '1', 'Canne', 'toille', 'babtiste', 'a', '8']","['Canne', 'Ainsy', 'que', 'appert', 'au', 'brouillart', 'a', 'c', '25', '/']"
+tc_p009v_preTEI,livres,"['septembre', '1581', '/', 'pour', '1', 'Canne', 'toille', 'babtiste', 'a', '8']","['Canne', 'Ainsy', 'que', 'appert', 'au', 'brouillart', 'a', 'c', '25']"
 tc_p009v_preTEI,livres,"['7', '/', 'a', 'c', '55', '/', 'La', 'somme', 'de', '8']","['/', 'delaquelle', 'ledict', 'du', 'Cros', 'en', 'a', 'faict', 'Cedulle', 'le']"
-tc_p009v_preTEI,lb t.,"['e', 'de', 'la', 'sainc', 't', 'andre', 'prochainne', 'parce', 'dis', '8']",[]
+tc_p009v_preTEI,lb c.,"['andre', 'pro', 'c', 'hainne', 'par', 'c', 'e', 'dis', '___', '8']",[]
 tc_p017r_preTEI,lb,"['quen', 'metal', 'de', 'petites', 'cloches', 'Le', 'metal', 'coste', 'communement', 'xv']","['&', 'la', 'rosette', 'fine', 'xv', 'ou', 'xvi']"
 tc_p017v_preTEI,lb,"['plus', 'de', 'pouldre', 'Sa', 'charge', 'ordinayre', 'est', 'p', 'de', 'xx']","['de', 'pouldre', 'Sa', 'balle', 'de', '40', 'lb', 'Il', 'fault', 'xxv']"
 tc_p017v_preTEI,lb,"['p', 'de', 'xx', 'lb', 'de', 'pouldre', 'Sa', 'balle', 'de', '40']","['Il', 'fault', 'xxv', 'chevaulx', 'pour', 'le', 'tirer', 'Quand', 'on', 'tire']"

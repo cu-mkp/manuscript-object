@@ -46,6 +46,7 @@ tc_p103r_preTEI,faict renaistre le ,"['Sur', 'lequel', 'tu', 'pourras', 'mectre'
 tc_p103r_preTEI,ne laisse poinct cicatrice,"['des', 'foeilles', 'de', 'lierre', 'Cecy', 'faict', 'renaistre', 'le', 'poil', '&']","['Un', 'pouldrier', 'qui', 'sestoit', 'presque', 'tout', 'brusle', 'ma', '&', 'qui']"
 tc_p103v_preTEI,clistere,"['par', 'le', 'bout', '&', 'en', 'ceste', 'sorte', 'on', 'donne', 'le']",[]
 tc_p103v_preTEI,mal de ,"['de', 'lurine', 'qui', 'se', 'faict', 'volontiers', 'par', 'ceulx', 'qui', 'ont']","['teste', 'toute', 'lescume', 'se', 'dissipera']"
+tc_p106v_preTEI,eviter la vapeur,"['ne', 'trop', 'vehemente', 'remue', 'tousjours', 'Avecq', 'un', 'long', 'baston', 'pour']","['le', 'tournant', 'aultour', 'du', 'chaulderon', '&', 'au', 'milieu', 'en', 'forme']"
 tc_p109v_preTEI,remede,"['si', 'tu', 'avoys', 'manie', 'des', 'orties', 'Mays', 'le', 'plus', 'souverain']","['pour', 'cela', 'est', 'de', 'metre', 'la', 'main', 'dans', 'de', 'la']"
 tc_p110r_preTEI,partie infectee,"['terre', 'fresche', '&', 'humide', 'Laquelle', 'apliquee', 'fresche', 'en', 'sur', 'la']","['en', 'tire', 'tout', 'le', 'venin', 'sans', 'aultre', 'chose', 'Aultant', 'est']"
 tc_p120v_preTEI,sinapise,"['Il', 'est', 'excellent']","['sur', 'les', 'playes', 'pour', 'arrester', 'le', 'sang', 'Le', 'meilleur', 'est']"

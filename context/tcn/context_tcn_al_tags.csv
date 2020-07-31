@@ -1,5 +1,5 @@
 folio,text in tag,before,after
-tcn_p001r_preTEI,aucupio,"['Comment', 'urb', 'rom', 'Hieronimo', 'Ruscelli', 'Hermolaus', 'Barbarus', 'Angelius', 'Bargaeus', 'De']","['et', 'venatione', 'Nicolaus', 'Damascenus', 'Caresariensis', 'De', 'rebus', 'Persarum', 'Isidorus', 'Osorius']"
+tcn_p001r_preTEI,aucupio,"['Comment', 'urb', 'rom', 'Hieronimo', 'Ruscelli', 'Hermolaus', 'Barbarus', 'Angelius', 'Bargæus', 'De']","['et', 'venatione', 'Nicolaus', 'Damascenus', 'Caresariensis', 'De', 'rebus', 'Persarum', 'Isidorus', 'Osorius']"
 tcn_p001v_preTEI,poulet,"['Ou', 'bien', 'dans', 'un', 'bouillon', 'de']","['de', 'la', 'racine', 'de', 'guimave', 'La', 'fresche', 'est', 'plus', 'remollitive']"
 tcn_p006r_preTEI,mouton,"['d', 'un', 'que', 'd', 'aultre', 'aussy', 'gros', 'de', 'suif', 'de']","['comme', 'une', 'febve', 'ou', 'un', 'poys', 'selon', 'la', 'quantité', 'du']"
 tcn_p007r_preTEI,perdrix,"['auras', 'doré', 'd', 'or', 'bel', 'colore', 'le', 'avecq', 'fumée', 'de']","['ou', 'de', 'drap', 'rouge', 'ou', 'jaulne', '&', 'il', 'sera', 'beau']"
@@ -31,8 +31,8 @@ tcn_p019v_preTEI,chat,"['qui', 'pour', 'le', 'mieulx', 'est', 'doibt', 'estre', 
 tcn_p022v_preTEI,chevaulx,"['grands', 'lanternes', 'Sa', 'balle', 'poise', '56', 'lb', 'Il', 'fault', 'trente']","['pour', 'le', 'conduire', 'll', 'faict', 'bien', 'plus', 'd', 'estonnement', 'à']"
 tcn_p024r_preTEI,"cigne,","['doibt', 'estre', 'grand', 'comme', 'la', 'grosseur', 'd', 'une', 'plume', 'de']","['&', 'n', 'as', 'que', 'faire', 'de', 'le', 'faire', 'en', 'ancrou']"
 tcn_p025r_preTEI,chevaulx,"['aultour', 'des', 'la', 'roues', '&', 'mectent', 'aussy', 'aulx', 'pieds', 'de']","['des', 'soles', 'ou', 'souliers', 'de', 'cuir', 'affin', 'qu', 'on', 'ne']"
-tcn_p029v_preTEI,dragon,"['Le', 'bon', 'sang', 'de']","['se', 'trouve', 'à', 'grands', 'lopins', 'comme', 'pieces', 'de', 'torteau', 'cestuy']"
 tcn_p029v_preTEI,dragon,"['Le', 'plus', 'obscur', 'sang', 'de']","['est', 'le', 'meilleur', '&', 'ha', 'plus', 'de', 'taincture;', 'c', 'est']"
+tcn_p029v_preTEI,dragon,"['Le', 'bon', 'sang', 'de']","['se', 'trouve', 'à', 'grands', 'lopins', 'comme', 'pieces', 'de', 'torteau', 'cestuy']"
 tcn_p029v_preTEI,dragon,"['avecq', 'laquelle', 'je', 'croy', 'qu', 'ilz', 'sophistiquent', 'le', 'sang', 'de']",[]
 tcn_p030r_preTEI,cheval,"['se', 'font', 'de', 'terre', 'ardille', 'blanche', 'meslée', 'de', 'fiente', 'de']","['&', 'bourre', '&', 'fort', 'battue', 'pource', 'que', 'les', 'pintes', 'estant']"
 tcn_p031r_preTEI,pigeon,"['labourée', 'mects', 'a', 'chasque', 'pied', 'deulx', 'poignées', 'de', 'fiente', 'de']",[]
@@ -47,7 +47,7 @@ tcn_p041r_preTEI,boeuf,"['albastre', 'calciné', 'ou', 'chose', 'semblable', 'ou
 tcn_p041v_preTEI,brebis,"['les', 'blesse', 'il', 'y', 'mect', 'de', 'la', 'fiente', 'mesme', 'de']","['dessus', 'Quand', 'elles', 'sont', 'grasses', 'elles', 'sont', 'plus', 'aysées', 'à']"
 tcn_p041v_preTEI,moutons,"['aye', 'esté', 'avecq', 'sa', 'femme', 'car', 'cela', 'feroit', 'mourir', 'les']",[]
 tcn_p044v_preTEI,cheval,"['à', 'Coustance', 'en', 'Normandie', 'de', 'poil', 'de', 'la', 'queue', 'de']","['qu', 'ilz', 'nettoyent', 'avecq', 'de', 'la', 'lessive', 'à', 'cause', 'qu']"
-tcn_p046r_preTEI,corbeau,"['Ayes', 'des', 'oeufs', 'frais', 'd', 'un']","['ou', 'qualtre', 'ou', 'cinq', '&le', 'l', 'espace', 'de', '4', 'ou']"
+tcn_p046r_preTEI,corbeau,"['Ayes', 'des', 'oeufs', 'frais', 'd', 'un']","['ou', 'qualtre', 'ou', 'cinq', '&', 'le', 'l', 'espace', 'de', '4']"
 tcn_p047r_preTEI,boeuf,"['&', 'mise', 'entre', 'des', 'pieces', 'coupeures', 'en', 'une', 'piece', 'de']","['puys', 'bouillie', 'les', 'reunist', 'à', 'ce', 'qu', 'on', 'dict']"
 tcn_p048r_preTEI,oiseaulx,"['l', 'ayant', 'cou', 'remplye', 'de', 'cotton', '&', 'cousue', 'escorche', 'les']","['laissant', 'neantmoings', 'la', 'teste', 'le', 'col', 'les', 'aisles', '&', 'les']"
 tcn_p048r_preTEI,oiseaulx,"['la', 'teste', 'le', 'col', 'les', 'aisles', '&', 'les', 'pieds', 'aulx']","['&', 'la', 'teste', 'les', 'cuisses', '&', 'pieds', '&', 'queue', 'aulx']"
@@ -88,9 +88,9 @@ tcn_p053v_preTEI,vers,"['marchans', 'y', 'aportent', 'est', 'estimée', 'la', 'm
 tcn_p053v_preTEI,vers,"['une', 'once', 'de', 'soye', 'grene', 'ilz', 's', 'en', 'produict', 'des']","['qui', 'raportent', 'ord', 'communement', 'xv', 'lb', 'de', 'soye', 'Mays', 'l']"
 tcn_p053v_preTEI,vers,"['Troys', 'onces', 'de', 'grene', 'sont', 'pour', 'produire', 'telle', 'quantité', 'de']","['que', 'tu', 'en', 'pourras', 'fournir', 'une', 'chambre', 'acommodée', 'de', 'trois']"
 tcn_p053v_preTEI,formis noires,"['chauldement', 'Et', 'au', 'commancement', 'ilz', 's', 'espellissent', 'comme', 'f', 'petites']","['&', 'aussy', 'tost', 'qu', 'il', 'y', 'en', 'ha', 'deulx', 'ou']"
-tcn_p053v_preTEI,vers,"['estages', 'de', 'tables', 'larges', 'Volontiers', 'ilz', 'comancent', 'à', 's', 'espelir']","['la', 'Sepmaine', 'saincte', 'Et', 'pour', 'ce', 'faire', 'on', 'les', 'mect']"
-tcn_p053v_preTEI,vers,"['serain', 'la', 'soye', 'abonde', 'plus', '&', 'en', 'est', 'meilleure', 'Aulcuns']","['la', 'font', 'plus', 'blanche', 'aultres', 'plus', 'jaunastre', 'Et', 'encores', 'qu']"
 tcn_p053v_preTEI,bombicum,"['Hieronymus', 'Vida', 'Albensis', 'episcopus', 'de', 'b', 'Cremonensis', 'scripsit', 'carmine', 'de']",['natura']
+tcn_p053v_preTEI,vers,"['serain', 'la', 'soye', 'abonde', 'plus', '&', 'en', 'est', 'meilleure', 'Aulcuns']","['la', 'font', 'plus', 'blanche', 'aultres', 'plus', 'jaunastre', 'Et', 'encores', 'qu']"
+tcn_p053v_preTEI,vers,"['quand', 'on', 'la', 'tire', 'avecq', 'l', 'eau', 'chaulde', 'Despuys', 'Les']","['despuys', 'leur', 'naissance', 'jusques', 'au', 'leur', 'temps', 'qu', 'ilz', 'font']"
 tcn_p054r_preTEI,pigeon,"['on', 'appelle', 'coquon', 'de', 'la', 'grandeur', 'd', 'un', 'oeuf', 'de']","['communement', 'combien', 'qu', 'il', 's', 'en', 'trouve', 'de', 'beaucoup', 'plus']"
 tcn_p054r_preTEI,vers,"['il', 'se', 'mect', 'deulx', 'ou', 'trois', '&', 'jusques', 'a', 'xi']","['dans', 'un', 'coquon', 'qui', 'est', 'bourru', '&', 'lanugineulx', 'à', 'l']"
 tcn_p054r_preTEI,ver,"['il', 'se', 'mect', 'deulx', 'ou', 'trois', '&', 'jusques', 'a', 'xi']","['s', 'dans', 'un', 'coquon', 'qui', 'est', 'bourru', '&', 'lanugineulx', 'à']"
@@ -181,11 +181,11 @@ tcn_p103r_preTEI,chiens,"['Les', 'Anglois', 'qui', 'caressent', 'fort', 'les']",
 tcn_p103r_preTEI,chiens,"['de', 'l', 'eau', '&', 'l', 'y', 'laissant', 'tremper', 'frottent', 'les']","['de', 'ceste', 'eau', 'ou', 'bien', 'avecq', 'de', 'l', 'eau', 'de']"
 tcn_p103v_preTEI,poulet,"['le', 'bout', 'du', 'canon', 'd', 'un', 'lopin', 'de', 'boyau', 'de']","['&', 'on', 'le', 'replye', 'par', 'le', 'bout', '&', 'en', 'ceste']"
 tcn_p104v_preTEI,chiens,"['Une', 'demy', '℥', 'de', 'staphisagrie', 'pour', 'les']","['communs', '&', 'une', '℥', 'pour', 'les', 'grands', 'en', 'pouldre', 'subtile']"
-tcn_p105v_preTEI,vers,"['en', 'garde', 'quelque', 'peu', 'froit', 'il', 's', 'y', 'engendre', 'des']",[]
 tcn_p105v_preTEI,calandres,"['luy', 'fault', 'une', 'cage', 'faicte', 'en', 'grange', 'comme', 'celle', 'des']","['doublé', 'de', 'drap', 'vert', 'pource', 'qu', 'il', 'craint', 'le', 'froid']"
 tcn_p105v_preTEI,fourmis,"['il', 'est', 'prins', 'en', 'cage', 'il', 'luy', 'fault', 'donner', 'des']","['avecq', 'de', 'la', 'terre', 'au', 'fonds', 'de', 'sa', 'cage', 'pour']"
 tcn_p105v_preTEI,mouton,"['picoter', 'puys', 'luy', 'et', 'luy', 'donner', 'd', 'un', 'coeur', 'de']","['haché', '&', 'tantost', 'des', 'oeufs', '&', 'des', 'vers', 'de', 'farine']"
 tcn_p105v_preTEI,vers de farine,"['coeur', 'de', 'mouton', 'haché', '&', 'tantost', 'des', 'oeufs', '&', 'des']",[]
+tcn_p105v_preTEI,vers,"['en', 'garde', 'quelque', 'peu', 'froit', 'il', 's', 'y', 'engendre', 'des']",[]
 tcn_p105v_preTEI,rossignol,"['aiment', 'le', 'plus', '&', 'le', 'temps', 'de', 'leur', 'volupté', 'Le']","['aultant', 'qu', 'il', 'chante', 'mainctient', 'un', 'quartier', 'pour', 'luy', 'tout']"
 tcn_p105v_preTEI,vers,"['semblant', 'de', 'chercher', 'en', 'terre', 'quelque', 'chose', 'Et', 'ayant', 'des']","['qui', 'viennent', 'dans', 'les', 'vielles', 'farines', 'ou', 'dessoubs', 'les', 'mects']"
 tcn_p105v_preTEI,vers,"['chante', 'fais', 'un', 'trou', 'en', 'terre', '&', 'y', 'mects', 'des']","['et', 'ton', 'engin', 'de', 'petits', 'bastons', 'en', 'croix', 'Il', 'luy']"
@@ -372,7 +372,7 @@ tcn_p144r_preTEI,tortue,"['dans', 'la', 'platine', 'd', 'ardille', 'pour', 'les'
 tcn_p144v_preTEI,tortue,"['ardille', 'posée', 'sur', 'le', 'milieu', 'deu', 'la', 'dos', 'de', 'la']","['comme', 'tu', 'vois', '&', 'à', 'l', 'endroit', 'du', 'plus', 'large']"
 tcn_p144v_preTEI,serpents,"['ou', 'qui', 'est', 'dure', 'et', 'ne', 'preste', 'poinct', 'comme', 'les']","['&', 'laisards', 'veult', 'estre', 'huilée', 'pour', 'despouiller', 'Les', 'choses', 'qui']"
 tcn_p144v_preTEI,laisards,"['est', 'dure', 'et', 'ne', 'preste', 'poinct', 'comme', 'les', 'serpents', '&']","['veult', 'estre', 'huilée', 'pour', 'despouiller', 'Les', 'choses', 'qui', 'prestent', 'n']"
-tcn_p144v_preTEI,tortue,"['mieulx', 'sur', 'l', 'huile', 'qui', 'aultrement', 'refuseroit', 'Ta', 'moictié', 'de']","['estant', 'ainsy', 'desp', 'moulée', 'separe', 'la', 'avecq', 'son', 'demy', 'mole']"
+tcn_p144v_preTEI,tortue,"['Ta', 'moictié', 'de']","['estant', 'ainsy', 'desp', 'moulée', 'separe', 'la', 'avecq', 'son', 'demy', 'mole']"
 tcn_p144v_preTEI,tortue,"['le', 'demy', 'moule', 'comprendra', 'plus', 'que', 'la', 'moictié', 'de', 'la']","['couppe', '&', 'retranche', 'uniment', 'ce', 'qui', 'excedera', '&', 'nettoye', 'bien']"
 tcn_p144v_preTEI,tortue,"['party', 'deulx', 'coches', 'comme', 'aulx', 'aultres', 'molles', 'et', 'retourne', 'ta']","['sur', 'sa', 'platine', 'comme', 'elle', 'estoict', '&', 'luy', 'asseure', 'les']"
 tcn_p144v_preTEI,tortue,"['demy', 'molle', '&', 'ses', 'coches', 'et', 'la', 'coquille', 'de', 'la']","['&', 'l', 'ayant', 'aussy', 'arrosée', 'd', 'eau', 'de', 'vye', 'chaufe']"
@@ -402,7 +402,7 @@ tcn_p151r_preTEI,tortues,"['soict', 'bien', 'sec', '&', 'le', 'moule', 'mediocre
 tcn_p151v_preTEI,tortue,"['oste', 'pas', 'que', 'tu', 'n', 'ayes', 'du', 'tout', 'reparé', 'la']","['car', 'ceste', 'terre', 'te', 'servira', 'de', 'ciment', 's', 'il', 'te']"
 tcn_p151v_preTEI,tortues,"['poinct', 'trampé', 'pour', 'faire', 'quelque', 'chose', 'grumeleuse', 'Pour', 'ces', 'deulx']","['&', 'choses', 'creuses', 'qui', 'presuposent', 'estre', 'assés', 'grandes', 'gecte', 'ta']"
 tcn_p151v_preTEI,tortue,"['poinct', 'trampé', 'pour', 'faire', 'quelque', 'chose', 'grumeleuse', 'Pour', 'ces', 'deulx']","['s', '&', 'choses', 'creuses', 'qui', 'presuposent', 'estre', 'assés', 'grandes', 'gecte']"
-tcn_p151v_preTEI,tortues,"['serré', 'd', 'une', 'presse', 'Et', 'pour', 'faire', 'les', 'escailles', 'des']","['ou', 'aultres', 'animaulx', 'tu', 'peulx', 'faire', 'des', 'petits', 'ciselets', 'en']"
+tcn_p151v_preTEI,tortues,"['Et', 'pour', 'faire', 'les', 'escailles', 'des']","['ou', 'aultres', 'animaulx', 'tu', 'peulx', 'faire', 'des', 'petits', 'ciselets', 'en']"
 tcn_p151v_preTEI,serpent,"['en', 'façon', 'd', 'une', 'gouge', 'ou', 'd', 'une', 'escaille', 'de']","['&', 'lesard', 'et', 'd', 'aultres', 'sur', 'une', 'lime', 'pour', 'faire']"
 tcn_p151v_preTEI,lesard,"['d', 'une', 'gouge', 'ou', 'd', 'une', 'escaille', 'de', 'serpent', '&']","['et', 'd', 'aultres', 'sur', 'une', 'lime', 'pour', 'faire', 'les', 'friseures']"
 tcn_p151v_preTEI,tortues,"['sur', 'une', 'lime', 'pour', 'faire', 'les', 'friseures', '&', 'grommeleures', 'Les']","['qui', 'ne', 'se', 'moulent', 'poinct', 'creuses', 'n', 'ont', 'pas', 'tant']"
@@ -439,7 +439,7 @@ tcn_p157r_preTEI,seiche,"['Comme', 'il', 'est', 'bien', 'emprainct', 'dans', 'le
 tcn_p157r_preTEI,mouche,"['le', 'gect', 's', 'i', 'fait', 'mieulx', 'Advise', 'en', 'prenant', 'la']","['de', 'ne', 'rompre', 'pas', 'les', 'jambes', '&', 'de', 'ne', 'la']"
 tcn_p157r_preTEI,poisson,"['tombent', 'Et', 'si', 'cela', 't', 'advient', 'colle', 'avecq', 'colle', 'de']","['les', 'mesmes', 'jambes', 'et', 'avecq', 'cire', 'ou', 'bien', 'adaptes', 'en']"
 tcn_p157r_preTEI,porc,"['et', 'avecq', 'cire', 'ou', 'bien', 'adaptes', 'en', 'de', 'poil', 'de']","['ou', 'de', 'corde', 'd', 'espinette', 'Arreste', 'la', 'foeille', 'sur', 'la']"
-tcn_p157r_preTEI,mouche,"['sur', 'la', 'platene', 'd', 'ardille', 'avecq', 'deux', 'poinctes', 'et', 'la']","['avecq', 'une', 'poincte', 'au', 'milieu', 'du', 'corps', '&', 'les', 'pattes']"
+tcn_p157r_preTEI,mouche,"['poinctes', 'et', 'la']","['avecq', 'une', 'poincte', 'au', 'milieu', 'du', 'corps', '&', 'les', 'pattes']"
 tcn_p157v_preTEI,oiseau,"['ardille', 'et', 'cacher', 'dans', 'icelle', '&', 'enfoncer', 'la', 'moictié', 'dudict']","['affin', 'qu', 'il', 'ne', 'mostre', 'qu', 'une', 'jambe', '&', 'un']"
 tcn_p157v_preTEI,oiseau,"['pieds', 'communement', 'demeure', 'foibles', 'pour', 'soubstenir', 'la', 'masse', 'de', 'l']","['massif', 'Et', 'pour', 'ceste', 'cause', 'on', 'adapte', 'un', 'fil', 'de']"
 tcn_p158v_preTEI,boeuf,"['noir', 'verdastre', 'comme', 'le', 'noir', 'd', 'os', 'de', 'pied', 'de']","['faict', 'bleuastre', 'Et', 'ainsy', 'par', 'jugement', '&', 'discretion', 'mects', 'la']"
@@ -449,7 +449,7 @@ tcn_p160v_preTEI,boeuf,"['au', 'bout', 'd', 'un', 'baston', 'du', 'foye', 'ou', 
 tcn_p160v_preTEI,moutton,"['d', 'un', 'baston', 'du', 'foye', 'ou', 'poulmon', 'de', 'boeuf', 'ou']","['&', 'qu', 'avecq', 'une', 'petite', 'corde', 'tu', 'faces', 'pendre', 'un']"
 tcn_p160v_preTEI,escrevisses,"['au', 'bout', 'dudit', 'baston', 'Mects', 'dans', 'l', 'eau', 'où', 'les']","['se', 'nourrissent', '&', 'elles', 'bien', 'tost', 'se', 'viendont', 'amonceller', 'sur']"
 tcn_p160v_preTEI,oiseaulx,"['En', 'hyver', 'lors', 'que', 'les']","['ont', 'mué', 'escorche', 'les', '&', 'les', 'remplis', 'de', 'toile', 'de']"
-tcn_p160v_preTEI,mouche,"['faict', 'pource', 'que', 'plustost', 'qu', 'ilz', 'ne', 'fussent', 'secs', 'la']","['se', 'mectroit', 'dans', 'les', 'yeulx', 'et', 'feroit', 'des', 'vers', 'L']"
+tcn_p160v_preTEI,mouche,"['ne', 'fussent', 'secs', 'la']","['se', 'mectroit', 'dans', 'les', 'yeulx', 'et', 'feroit', 'des', 'vers', 'L']"
 tcn_p160v_preTEI,vers,"['la', 'mouche', 'se', 'mectroit', 'dans', 'les', 'yeulx', 'et', 'feroit', 'des']","['L', 'hiver', 'il', 's', 'acoustrent', 'mieulx', '&', 'se', 'seichent', 'eulx']"
 tcn_p163v_preTEI,pourceau,"['en', 'reparant', 'mouille', '&', 'frotte', 'avecq', 'tes', 'petites', 'sayettes', 'de']",[]
 tcn_p164r_preTEI,serpent,"['fais', 'le', 'gect', 'de', 'quelque', 'animal', 'delicat', 'comme', 'd', 'un']","['fais', 'qu', 'il', 'vienne', 'du', 'costé', 'du', 'ventre', '&', 'soubs']"
@@ -461,15 +461,15 @@ tcn_p166r_preTEI,poulle,"['Comme', 'la']","['cherche', 'curieusement', 'parmy', 
 tcn_p166r_preTEI,poulsins,"['une', 'miette', 'ou', 'quelque', 'grain', 'qu', 'elle', 'depart', 'à', 'ses']","['ainsy', 'aulx', 'orphelins', 'distribue', 'on', 'ce', 'qui', 'a', 'esté', 'cherché']"
 tcn_p168r_preTEI,boeufs,"['une', 'porte', 'de', 'paysant', 'usent', 'des', 'clochettes', 'que', 'portent', 'les']","['ou', 'mulets', 'Aultres', 'chargent', 'deux', 'canons', 'de', 'pistoles', '&', 'avecq']"
 tcn_p168r_preTEI,mulets,"['de', 'paysant', 'usent', 'des', 'clochettes', 'que', 'portent', 'les', 'boeufs', 'ou']","['Aultres', 'chargent', 'deux', 'canons', 'de', 'pistoles', '&', 'avecq', 'un', 'guimbelet']"
-tcn_p169r_preTEI,tortues,['Mouler'],[]
-tcn_p169r_preTEI,Oiseaulx,[],[]
-tcn_p169r_preTEI,chancre,['Mouler'],['mis']
-tcn_p169r_preTEI,Escrevisse,[],"['mis', 'et', 'veu']"
-tcn_p169r_preTEI,Sauterelles,[],[]
-tcn_p169r_preTEI,Barbots,[],[]
-tcn_p169r_preTEI,Papillons,[],[]
-tcn_p169r_preTEI,Mousches,[],[]
-tcn_p169r_preTEI,Chauvesouris,[],[]
-tcn_p169r_preTEI,poissons,['Mouler'],[]
-tcn_p169r_preTEI,Cef volant,[],[]
-tcn_p169r_preTEI,butor,"['Pied', 'de']",['moulé']
+tcn_p169r_preTEI,tortues,['Mouler'],"['Animaulx', 'a', 'poil', 'Oiseaulx', 'Foeille', 'de', 'vigne', 'mis', 'De', 'fraise']"
+tcn_p169r_preTEI,Oiseaulx,"['Mouler', 'tortues', 'Animaulx', 'a', 'poil']","['Foeille', 'de', 'vigne', 'mis', 'De', 'fraise', 'Mouler', 'a', 'diverses', 'pieces']"
+tcn_p169r_preTEI,chancre,"['un', 'bouquet', 'Rose', 'oeillets', 'Mouler', 'creux', 'Argent', 'doré', 'creux', 'Mouler']","['mis', 'Escrevisse', 'mis', 'et', 'veu', 'Sauterelles', 'Barbots', 'Papillons', 'Mousches', 'Chauvesouris']"
+tcn_p169r_preTEI,Escrevisse,"['Rose', 'oeillets', 'Mouler', 'creux', 'Argent', 'doré', 'creux', 'Mouler', 'chancre', 'mis']","['mis', 'et', 'veu', 'Sauterelles', 'Barbots', 'Papillons', 'Mousches', 'Chauvesouris', 'Esmailler', 'or']"
+tcn_p169r_preTEI,Sauterelles,"['Argent', 'doré', 'creux', 'Mouler', 'chancre', 'mis', 'Escrevisse', 'mis', 'et', 'veu']","['Barbots', 'Papillons', 'Mousches', 'Chauvesouris', 'Esmailler', 'or', 'fort', 'tanvre', 'Mouler', 'en']"
+tcn_p169r_preTEI,Barbots,"['doré', 'creux', 'Mouler', 'chancre', 'mis', 'Escrevisse', 'mis', 'et', 'veu', 'Sauterelles']","['Papillons', 'Mousches', 'Chauvesouris', 'Esmailler', 'or', 'fort', 'tanvre', 'Mouler', 'en', 'sucre']"
+tcn_p169r_preTEI,Papillons,"['creux', 'Mouler', 'chancre', 'mis', 'Escrevisse', 'mis', 'et', 'veu', 'Sauterelles', 'Barbots']","['Mousches', 'Chauvesouris', 'Esmailler', 'or', 'fort', 'tanvre', 'Mouler', 'en', 'sucre', 'Mouler']"
+tcn_p169r_preTEI,Mousches,"['Mouler', 'chancre', 'mis', 'Escrevisse', 'mis', 'et', 'veu', 'Sauterelles', 'Barbots', 'Papillons']","['Chauvesouris', 'Esmailler', 'or', 'fort', 'tanvre', 'Mouler', 'en', 'sucre', 'Mouler', 'poissons']"
+tcn_p169r_preTEI,Chauvesouris,"['chancre', 'mis', 'Escrevisse', 'mis', 'et', 'veu', 'Sauterelles', 'Barbots', 'Papillons', 'Mousches']","['Esmailler', 'or', 'fort', 'tanvre', 'Mouler', 'en', 'sucre', 'Mouler', 'poissons', 'Gecter']"
+tcn_p169r_preTEI,poissons,"['Mousches', 'Chauvesouris', 'Esmailler', 'or', 'fort', 'tanvre', 'Mouler', 'en', 'sucre', 'Mouler']","['Gecter', 'en', 'soufre', 'mis', 'Carton', 'P', 'Cire', 'mis', 'Esbaucher', 'Medailles']"
+tcn_p169r_preTEI,Cef volant,"['d', 'animaulx', 'de', 'metal', 'Huile', 'de', 'froment', 'mis', 'et', 'veu']","['Pied', 'de', 'butor', 'moulé', 'Espesseur', 'd', 'une', 'medaille']"
+tcn_p169r_preTEI,butor,"['Huile', 'de', 'froment', 'mis', 'et', 'veu', 'Cef', 'volant', 'Pied', 'de']","['moulé', 'Espesseur', 'd', 'une', 'medaille']"

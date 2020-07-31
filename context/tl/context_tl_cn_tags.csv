@@ -4,11 +4,11 @@ tl_p003v_preTEI,sous,"['one', 'will', 'cost', 'you', 'no', 'more', 'than', 'five
 tl_p003v_preTEI,sous,"['or', 'six', 'sous', 'per', 'lb', '&', 'is', 'sold', 'for', '40']","['per', 'lb']"
 tl_p003v_preTEI,sous,"['cooler', 'on', 'the', 'top', 'The', 'lb', 'is', 'sold', 'at', 'xii']","['&', 'at', 'the', 'bottom', 'of', 'the', 'vessel', 'remains', 'the', 'colophony']"
 tl_p004v_preTEI,sous,"['one', 'must', 'put', 'one', 'lb', 'of', 'galipot', 'which', 'costs', '4']","['&', 'some', 'peeled', 'garlic', 'cloves', 'This', 'varnish', 'in', 'and', 'of']"
-tl_p009v_preTEI,livres,"['2nd', 'September', '1581', 'for', '1', 'cane', 'of', 'cambric', 'at', '8']","['per', 'canne', 'I', 'make', 'this', '8', 'lb', 't']"
-tl_p009v_preTEI,lb t.,"['t', '8', 'livres', 'per', 'canne', 'I', 'make', 't', 'his', '8']",[]
-tl_p009v_preTEI,livres,"['2nd', 'September', '1581', 'for', '1', 'canne', 'of', 'cambric', 'at', '8']","['per', 'canne', 'as', 'appears', 'in', 'the', 'waste', 'book', 'at', 'c']"
-tl_p009v_preTEI,livres,"['book', 'No', '7', 'at', 'c', '55', 'the', 'sum', 'of', '8']","['of', 'which', 'the', 'said', 'du', 'Cros', 'has', 'made', 'a', 'bill']"
-tl_p009v_preTEI,lb t.,"['Andrew', 's', 'day', 'nex', 't', 'I', 'make', 't', 'his', '8']",[]
+tl_p009v_preTEI,livres,"['September', '1581', '/', 'for', '1', 'cane', 'of', 'cambric', 'at', '8']","['per', 'canne', 'I', 'make', 'this', '___', '___', '___', '___', '8']"
+tl_p009v_preTEI,lb t.,"['canne', 'I', 'make', 't', 'his', '___', '___', '___', '___', '8']",[]
+tl_p009v_preTEI,livres,"['September', '1581', '/', 'for', '1', 'canne', 'of', 'cambric', 'at', '8']","['per', 'canne', 'as', 'appears', 'in', 'the', 'waste', 'book', 'at', 'c']"
+tl_p009v_preTEI,livres,"['7', '/', 'at', 'c', '55', '/', 'the', 'sum', 'of', '8']","['/', 'of', 'which', 'the', 'said', 'du', 'Cros', 'has', 'made', 'a']"
+tl_p009v_preTEI,lb ,"['St', 'Andrew', 's', 'day', 'next', 'I', 'make', 'this', '___', '8']",['t']
 tl_p017r_preTEI,lb,"['the', 'metal', 'of', 'small', 'bells', 'The', 'metal', 'commonly', 'costs', 'xv']","['&', 'fine', 'rosette', 'xv', 'or', 'xvi']"
 tl_p017v_preTEI,lb,"['it', 'more', 'powder', 'Its', 'common', 'load', 'is', 'p', 'of', 'xx']","['of', 'powder', 'its', 'ball', 'of', '40', 'lb', 'One', 'needs', 'xxv']"
 tl_p017v_preTEI,lb,"['p', 'of', 'xx', 'lb', 'of', 'powder', 'its', 'ball', 'of', '40']","['One', 'needs', 'xxv', 'horses', 'to', 'draw', 'it', 'When', 'one', 'fires']"
@@ -33,7 +33,7 @@ tl_p044v_preTEI,sous,"['They', 'sell', 'them', 'by', 'the', 'dozen', '&', 'each'
 tl_p053v_preTEI,s,"['They', 'are', 'produced', 'from']","['eed', 'that', 'i', 's', 'to', 's', 'ay', 'egg', 's', 'that']"
 tl_p058v_preTEI,sous,"['oil', 'Walnut', 'oil', 'in', 'Flanders', 'costs', 'at', 'least', 'a', 'hundred']","['a', 'pint', 'The', 'azure', 'requires', 'a', 'little', 'fatty', 'oil', 'because']"
 tl_p085v_preTEI,sous,"['hollow', '&', 'of', 'the', 'thickness', 'of', 'a', 'coin', 'of', 'forty']","['I', 'cast', 'very', 'hot']"
-tl_p094r_preTEI,sous,"['quite', 'convenient', 'To', 'The', 'beautiful', 'skin', 'costs', 'fifty', 'or', 'lx']","['&', '4', 'or', 'five', 'dozen', 'grips', 'are', 'made', 'from', 'it']"
+tl_p094r_preTEI,sous,"['quite', 'convenient', 'Pou', 'The', 'beautiful', 'skin', 'costs', 'fifty', 'or', 'lx']","['&', '4', 'or', 'five', 'dozen', 'grips', 'are', 'made', 'from', 'it']"
 tl_p094v_preTEI,sous,"['A', 'grip', 'of', 'fine', 'gold', 'is', 'worth', '18', 'or', '20']",[]
 tl_p095r_preTEI,lb,"['Blades', 'from', 'Vienne', 'commonly', 'cost', 'xviii', 'or', '19']","['a', 'dozen']"
 tl_p095r_preTEI,liard,"['or', 'has', 'done', 'by', 'locksmiths', 'or', 'farriers', 'giving', 'him', 'some']","['for', 'his', 'charcoal', 'Next', 'they', 'pass', 'it', 'over', 'a', 'grindstone']"
@@ -45,10 +45,10 @@ tl_p096r_preTEI,sous,"['or', 'calf', 'A', 'waxed', 'scabbard', 'is', 'worth', 'a
 tl_p096r_preTEI,sous,"['is', 'worth', 'at', 'least', 'xxx', 'sous', 'a', 'cow', 'one', 'xx']",[]
 tl_p097r_preTEI,sous,"['than', 'for', 'painters', 'A', 'quarteron', 'is', 'worth', 'fifty', 'or', 'lx']",[]
 tl_p103v_preTEI,teston,"['one', 'first', 'covers', 'the', 'medal', 'to', 'the', 'thickness', 'of', 'a']",[]
-tl_p104r_preTEI,liard,"['Then', 'to', 'etch', 'it', '&', 'make', 'the', 'water', 'take', 'a']","['s', 'worth', 'of', 'verdet', '&', 'put', 'in', 'twice', 'as', 'much']"
+tl_p104r_preTEI,liard,"['Then', 'to', 'engrave', 'it', '&', 'make', 'the', 'water', 'take', 'a']","['s', 'worth', 'of', 'verdet', '&', 'put', 'in', 'twice', 'as', 'much']"
 tl_p121v_preTEI,teston,"['leg', 'animal', 'against', 'another', 'or', 'to', 'repair', 'it', 'is', 'commonly']","['silver', 'And', 'all', 'alloyed', 'silver', 'as', 'long', 'as', 'it', 'is']"
 tl_p121v_preTEI,sous,"['they', 'would', 'buy', 'much', 'of', 'it', 'Some', 'buy', 'it', 'five']","['for', 'a', 'denier']"
-tl_p123r_preTEI,sous,"['of', 'this', 'substance', 'sell', 'a', 'denier', 'of', 'it', 'for', '5']","['to', 'other', 'goldsmiths', '&', 'especially', 'to', 'those', 'who', 'work', 'in']"
+tl_p123r_preTEI,sous,"['of', 'this', 'substance', 'sell', 'a', 'denier', 'of', 'it', 'for', 'five']","['to', 'other', 'goldsmiths', '&', 'especially', 'to', 'those', 'who', 'work', 'in']"
 tl_p124v_preTEI,écu,"['gold', 'is', 'more', 'appropriate', 'for', 'it', 'such', 'as', 'that', 'of']","['&', 'pistolet', 'If', 'Gold', 'f', 'is', 'not', 'put', 'back', 'on']"
 tl_p124v_preTEI,pistolet,"['more', 'appropriate', 'for', 'it', 'such', 'as', 'that', 'of', 'écu', '&']","['If', 'Gold', 'f', 'is', 'not', 'put', 'back', 'on', 'the', 'fire']"
 tl_p126v_preTEI,sous,"['in', 'gold', 'ven', 'buy', 'the', 'ounce', 'for', 'forty', 'or', 'fifty']",[]
@@ -65,8 +65,8 @@ tl_p164r_preTEI,reals,"['thus', 'it', 'is', 'good', 'to', 'melt', 'all', 'coined
 tl_p164r_preTEI,reals,"['of', 'silver', 'and', 'I', 'made', 'the', 'alloy', 'out', 'of', '4']","['of', '20', 'sous', 'from', 'Spain', '&', 'a', 'coin', 'of', 'xx']"
 tl_p164r_preTEI,sous from,"['I', 'made', 'the', 'alloy', 'out', 'of', '4', 'reals', 'of', '20']","['Spain', '&', 'a', 'coin', 'of', 'xx', 'sous', 'from', 'France']"
 tl_p164r_preTEI,sous from ,"['of', '20', 'sous', 'from', 'Spain', '&', 'a', 'coin', 'of', 'xx']",['France']
-tl_p170v_preTEI,écus,"['of', 'thee', 'late', 'Sieur', 'Ouvryer', 'received', 'two', 'hundred', 'and', 'five']","['the', 'rent', 'of', 'Saint-Frajou', 'amounting', 'to', 'twelve', 'hundred', 'and', 'thirty']"
+tl_p170v_preTEI,écus,"['the', 'e', 'late', 'Sieur', 'Ouvryer', 'received', 'two', 'hundred', 'and', 'five']","['the', 'rent', 'of', 'Saint-Frajou', 'amounting', 'to', 'twelve', 'hundred', 'and', 'thirty']"
 tl_p170v_preTEI,livres,"['the', 'rent', 'of', 'Saint-Frajou', 'amounting', 'to', 'twelve', 'hundred', 'and', 'thirty']",[]
-tl_p170v_preTEI,écus,"['seventy', 'nine', 'two', 'three', 'hundred', 'forty', 'three', 'and', 'one', 'third']","['sur', 'qu']"
-tl_p170v_preTEI,livres,"['And', 'for', 'the', 'first', 'year', 'eighty']","['and', 'fifteen']"
+tl_p170v_preTEI,écus,"['seventy', 'nine', 'two', 'three', 'hundred', 'forty', 'three', 'and', 'one', 'third']","['on', 'qu']"
+tl_p170v_preTEI,livres,"['And', 'for', 'the', 'first', 'year', 'eighty']","['and', 'fifteen', 'remain', 'to', 'them', 'and', 'for', 'the', 'second', 'settlement']"
 tl_p170v_preTEI,écu,"['Take', 'against', 'pestilential', 'fever', 'or', 'poison', 'or', 'plague', 'an']","['s', 'weight', 'of', 'your', 'opiate', 'soaked', 'in', 'scabious', 'or', 'bugloss']"

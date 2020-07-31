@@ -4,10 +4,10 @@ tcn_p003v_preTEI,sols,"['aultre', 'Cestuy', 'cy', 'ne', 'reviendra', 'qu', 'à',
 tcn_p003v_preTEI,s,"['au', 'lieu', 'de', 'tourmentine', 'fine', 'Et', 'tu', 'pourra']","['mectre', 's', 'ur', 'deulx', 'lb', 'de', 'tourmentine', 'commune', 'une', 'lb']"
 tcn_p003v_preTEI,s,"['Ce', 'vai']","['s', 'eau', 'e', 's', 't', 'pour', 'faire', 'grande', 'quantité', 'd']"
 tcn_p004v_preTEI,s,"['En', 'cinq', 'ou']","['ix', 'lb', 'd', 'huile', 'on', 'mect', 'une', 'lb', 'de', 'galipot']"
-tcn_p009v_preTEI,livres,"['de', 'septembre', '1581', 'pour', 'i', 'cane', 'toille', 'babtiste', 'à', '8']","['canne', 'je', 'dis', '8', 'lb', 't']"
-tcn_p009v_preTEI,livres,"['de', 'septembre', '1581', 'pour', '1', 'canne', 'toille', 'babtiste', 'à', '8']","['canne', 'ainsy', 'que', 'appert', 'au', 'brouillart', 'à', 'c', '25']"
-tcn_p009v_preTEI,livres,"['vantes', 'n°', '7', 'à', 'c', '55', 'la', 'somme', 'de', '8']","['de', 'laquelle', 'ledict', 'du', 'Cros', 'en', 'a', 'faict', 'cedulle', 'ledict']"
-tcn_p009v_preTEI,lbt.,"['de', 'la', 'Sainc', 't', 'André', 'prochainne', 'par', 'ce', 'dis', '8']",[]
+tcn_p009v_preTEI,livres,"['septembre', '1581', '/', 'pour', '1', 'cane', 'toille', 'babtiste', 'à', '8']","['canne', 'je', 'dis', '___', '___', '___', '___', '8', 'lb', 't']"
+tcn_p009v_preTEI,livres,"['septembre', '1581', '/', 'pour', '1', 'canne', 'toille', 'babtiste', 'à', '8']","['canne', 'ainsy', 'que', 'appert', 'au', 'brouillart', 'à', 'c', '25']"
+tcn_p009v_preTEI,livres,"['7', '/', 'à', 'c', '55', '/', 'la', 'somme', 'de', '8']","['/', 'de', 'laquelle', 'ledict', 'du', 'Cros', 'en', 'a', 'faict', 'cedulle']"
+tcn_p009v_preTEI,lb,"['de', 'la', 'Sainct', 'André', 'prochainne', 'par', 'ce', 'dis', '___', '8']",['t']
 tcn_p017r_preTEI,lb,"['en', 'metal', 'de', 'petites', 'cloches', 'Le', 'metal', 'coste', 'communement', 'xv']","['&', 'la', 'rosette', 'fine', 'xv', 'ou', 'xvi']"
 tcn_p017v_preTEI,lb,"['plus', 'de', 'pouldre', 'Sa', 'charge', 'ordinayre', 'est', 'p', 'de', 'xx']","['de', 'pouldre', 'sa', 'balle', 'de', '40', 'lb', 'Il', 'fault', 'xxv']"
 tcn_p017v_preTEI,lb,"['p', 'de', 'xx', 'lb', 'de', 'pouldre', 'sa', 'balle', 'de', '40']","['Il', 'fault', 'xxv', 'chevaulx', 'pour', 'le', 'tirer', 'Quand', 'on', 'tire']"
@@ -73,5 +73,5 @@ tcn_p164r_preTEI,s,"['Il', 's', 'e', 'dechet', 'beaucoup', 'à', 'cau']","['e', 
 tcn_p170v_preTEI,escus,"['transport', 'aulx', 'heritiers', 'deu', 'feu', 'sieur', 'Ouvryer', 'deux', 'cens', 'cinq']","['du', 'rentement', 'de', 'Sainct', 'Frajou', 'montant', 'douze', 'cens', 'trente', 'livres']"
 tcn_p170v_preTEI,livres,"['escus', 'du', 'rentement', 'de', 'Sainct', 'Frajou', 'montant', 'douze', 'cens', 'trente']",[]
 tcn_p170v_preTEI,escus,"['cinq', 'cens', 'septante', 'neuf', 'de', 'deux', 'trois', 'cens', 'quarante', 'trois']","['un', 'tiers', 'sur', 'qu']"
-tcn_p170v_preTEI,livres,"['Et', 'leur', 'reste', 'sur', 'la', 'premiere', 'annee', 'quatre', 'vintg']",['quinze']
+tcn_p170v_preTEI,livres,"['Et', 'leur', 'reste', 'sur', 'la', 'premiere', 'annee', 'quatre', 'vintg']","['quinze', 'et', 'sur', 'la', 'seconde', 'judication', 'n', 'ont', 'encore', 'rien']"
 tcn_p170v_preTEI,escues,"['fiebvre', 'pestilentiale', 'ou', 'poison', 'ou', 'peste', 'le', 'poix', 'd', 'un']","['de', 'ton', 'opiate', 'destrempé', 'avecq', 'eau', 'de', 'scabieuse', 'ou', 'buglose']"

@@ -1,5 +1,5 @@
 folio,text in tag,before,after
-tl_p005v_preTEI,touch,"['It', 'casts', 'the', 'representation', 'out', 'of', 'itself', 'and', 'if', 'you']","['le', 'lieu', 'the', 'eye', 'of', 'the', 'representation', 'with', 'your', 'finger']"
+tl_p005v_preTEI,touch,"['It', 'casts', 'the', 'representation', 'out', 'of', 'itself', 'and', 'if', 'you']","['the', 'place', 'the', 'eye', 'of', 'the', 'representation', 'with', 'your', 'finger']"
 tl_p008v_preTEI,deaf,"['often', 'mix', 'a', 'half', 'of', 'lead', 'which', 'renders', 'the', 'tin']","['to', 'correct', 'this', 'they', 'mix', 'in', 'latten', 'filings', 'to', 'render']"
 tl_p008v_preTEI,sonorous,"['correct', 'this', 'they', 'mix', 'in', 'latten', 'filings', 'to', 'render', 'it']",[]
 tl_p017v_preTEI,biggervoice,"['tin', 'for', 'one', 'quintal', 'of', 'rosette', 'to', 'give', 'it', 'a']","['For', 'the', 'more', 'tin', 'there', 'is', 'the', 'clearer', 'the', 'sound']"
@@ -12,7 +12,7 @@ tl_p034r_preTEI,loudly,"['tries', 'to', 'saya', 'it', 'but', 'be', 'sure', 'that
 tl_p036v_preTEI,bad taste tothe food,"['pots', 'are', 'made', 'well', 'in', 'order', 'not', 'to', 'give', 'a']","['with', 'the', 'same', 'metal', 'the', 'bells', 'are', 'made', 'of', 'It']"
 tl_p036v_preTEI,stinking,"['the', 'latten', 'by', 'itself', '&', 'at', 'a', 'mere', 'touch', 'is']","['&', 'of', 'bad', 'odor']"
 tl_p036v_preTEI,bad odor,"['itself', '&', 'at', 'a', 'mere', 'touch', 'is', 'stinking', '&', 'of']",[]
-tl_p037v_preTEI,stench,"['And', 'likewise', 'if', 'the', 'glassworker', 'who', 'is', 'working', 'has', 'a']","['from', 'his', 'nose', 'or', 'his', 'mouth', 'la', '&', 'he', 'breathes']"
+tl_p037v_preTEI,stench,"['And', 'likewise', 'if', 'the', 'glassworker', 'who', 'is', 'working', 'has', 'a']","['from', 'his', 'nose', 'or', 'his', 'mouth', 'the', '&', 'he', 'breathes']"
 tl_p039r_preTEI,taste as of,"['is', 'known', 'when', 'put', 'in', 'the', 'mouth', 'it', 'gives', 'a']","['vinegar', 'or', 'when', 'crumbling', '&', 'breaking', 'it', 'it', 'has', 'some']"
 tl_p044r_preTEI,sonorous,"['copper', 'shards', 'that', 'coppersmiths', 'make', 'This', 'makes', 'the', 'plate', 'more']","['and', 'it', 'is', 'not', 'as', 'breakable']"
 tl_p047r_preTEI,bad odor,"['will', 'go', 'away', 'It', 'is', 'true', 'that', 'it', 'has', 'a']","['but', 'you', 'can', 'mix', 'it', 'with', 'rose', 'honey', '&', 'a']"
@@ -47,7 +47,7 @@ tl_p125r_preTEI,hear,"['night', 'or', 'at', 'a', 'silent', 'time', '&', 'you', '
 tl_p129v_preTEI,smelly,"['that', 'it', 'is', 'chau', 'dry', 'for', 'otherwise', 'it', 'would', 'be']","['However', 'take', 'heed', 'that', 'the', 'oven', 'not', 'be', 'too', 'harsh']"
 tl_p131v_preTEI,"of such a heat that you can handle it without harm, or that you cankeep your ","['makes', 'it', 'porous', 'Your', 'mold', 'must', 'not', 'be', 'cold', 'but']","['finger', 'in', 'the', 'gate', 'without', 'burning', 'your', 'self', 'It', 'is']"
 tl_p131v_preTEI,cries loudly,"['very', 'thin', 'And', 'to', 'know', 'this', 'if', 'l', 'the', 'tin']","['it', 'is', 'a', 'sign', 'there', 'is', 'not', 'too', 'much', 'lead']"
-tl_p131v_preTEI,cries weakly,"['a', 'sign', 'there', 'is', 'not', 'too', 'much', 'lead', 'If', 'it']","['that', 'means', 'that', 'is', 'there', 'is', 'too', 'much', 'Take', 'heed']"
+tl_p131v_preTEI,cries weakly,"['a', 'sign', 'there', 'is', 'not', 'too', 'much', 'lead', 'If', 'it']","['that', 'means', 'that', 'there', 'is', 'too', 'much', 'Take', 'heed']"
 tl_p131v_preTEI,so hot that you can bear puttingyour ,"['sign', 'of', 'its', 'perfect', 'heat', '&', 'the', 'mold', 'ch', 'is']","['finger', 'in', 'it', 'Do', 'not', 'open', 'until', 'it', 'is', 'cooled']"
 tl_p132v_preTEI,perceived on the ,"['had', 'it', 'finely', 'ground', 'on', 'porphyry', 'until', 'no', 'roughness', 'was']","['fingernail', 'Then', 'I', 'wet', 'it', 'with', 'very', 'good', 'vinegar', '&']"
 tl_p132v_preTEI,when scraping it with the,"['firms', 'it', 'And', 'when', 'your', 'mold', 'is', 'soft', '&', 'fatty']","['fingernail', 'it', 'is', 'a', 'sign', 'that', 'the', 'crocum', 'is', 'good']"
@@ -62,5 +62,5 @@ tl_p145r_preTEI,they cry & crackle oncebrought near the ,"['the', 'inside', '&',
 tl_p145v_preTEI,ofsuch heat that you can hold your ,"['Cast', 'your', 'tin', 'very', 'red', 'in', 'the', 'mold']","['finger', 'there', 'without', 'harm', 'in', 'the', 'hole']"
 tl_p158r_preTEI,odor of itself,"['within', '&', 'in', 'flight', 'seeks', 'out', 'conduits', '&', 'leaves', 'an']","['which', 'sours', 'the', 'tin', 'or', 'other', 'metal', 'that', 'you', 'will']"
 tl_p163r_preTEI,scent,"['&', 'very', 'little', 'civet', 'because', 'amber', 'always', 'overtakes', 'the', 'principal']","['of', 'musk']"
-tl_p163r_preTEI,scent,"['white', 'layers', '&', 'pour', 'l', 'which', 'gives', 'a', 'more', 'forceful']","['But', 'to', 'remove', 'la', 'or', 'hide', 'the', 'blackness', 'of', 'the']"
+tl_p163r_preTEI,scent,"['white', 'layers', '&', 'for', 'l', 'which', 'gives', 'a', 'more', 'forceful']","['But', 'to', 'remove', 'the', 'or', 'hide', 'the', 'blackness', 'of', 'the']"
 tl_p164v_preTEI,when they are still of such a heat as you have noticed before by puttingyour ,"['but', 'leave', 'them', 'to', 'become', 'lukewarm', 'near', 'the', 'fire', '&']","['finger', 'in', 'the', 'hole', 'cast', 'And', 'when', 'the', 'mold', 'is']"

@@ -6,27 +6,6 @@ import os
 # Third-Party Modules
 from lxml import etree
 
-#from digital_manuscript import BnF
-
-#manuscript = BnF()
-
-manuscript_version = "tcn" # "tl", "tc" or "tcn"
-
-cwd = os.getcwd()
-#print(cwd)
-m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
-m_k_data_to_context = f'{m_path}/manuscript-object/context/{manuscript_version}'
-
-if not os.path.exists(m_k_data_to_context):
-    os.mkdir(m_k_data_to_context)
-
-tags = ["al", "bp", "cn", "env", "m", "md", "ms", "mu", "pa", "pl", "pn", "pro", "sn", "tl", "tmp", "wp"] # which tags we're looking for
-remove_chars = ["\n", "\'", "’", "\t", "+", " -", "- ", "\"", ",", "."] # characters to remove from words
-if (manuscript_version == "tl"):
-    dont_cut = ["a", "in", "on", "or", "at", "as", "the"] # words that shouldn't cut other words (e.g. "in" inside "rain")
-else:
-    dont_cut = ["de", "le", "la", "du", "a", "verd", "gris", "huille"]
-context_size = 10 # how many words taken on each side
 
 def analyse_block(block, folio, writer):
     already_found_in_block = [] # used in case we get the same word multiple times inside a block
@@ -136,8 +115,34 @@ def get_context(tag):
         analyse_folio(folio, writer)
 
 
-for tag in tags:
-    get_context(tag)
-    print("tag " + tag + " complete")
+manuscript_version = "tcn" # "tl", "tc" or "tcn"
 
-print("All finished")
+cwd = os.getcwd()
+#print(cwd)
+m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
+m_k_data_to_context = f'{m_path}/manuscript-object/context'
+
+if not os.path.exists(m_k_data_to_context):
+    os.mkdir(m_k_data_to_context)
+
+tags = ["al", "bp", "cn", "env", "m", "md", "ms", "mu", "pa", "pl", "pn", "pro", "sn", "tl", "tmp", "wp"] # which tags we're looking for
+remove_chars = ["\n", "\'", "’", "\t", "+", " -", "- ", "\"", ",", "."] # characters to remove from words
+
+context_size = 10 # how many words taken on each side
+
+for manuscript_version in ["tc", "tcn", "tl"]:
+    m_k_data_to_context = f'{m_path}/manuscript-object/context/{manuscript_version}'
+
+    if not os.path.exists(m_k_data_to_context):
+        os.mkdir(m_k_data_to_context)
+
+    if (manuscript_version == "tl"):
+        dont_cut = ["a", "in", "on", "or", "at", "as", "the"] # words that shouldn't cut other words (e.g. "in" inside "rain")
+    else:
+        dont_cut = ["de", "le", "la", "du", "a", "verd", "gris", "huille"]
+
+    for tag in tags:
+        get_context(tag)
+        print("[" + manuscript_version + "] tag " + tag + " complete")
+
+print("All done!")
