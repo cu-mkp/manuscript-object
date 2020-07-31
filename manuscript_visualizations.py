@@ -11,26 +11,18 @@ import seaborn as sns; sns.set()
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
-cwd = os.getcwd()
-m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
 
-all_categories = ["casting", "painting", "metal process", "arms and armor",
-                  "varnish", "medicine", "household and daily life",
-                  "cultivation", "stones", "wood and its coloring", "tool",
-                  "tricks and sleight of hand", "animal husbandry",
-                  "decorative", "glass process", "corrosives", "dyeing",
-                  "preserving", "wax process", "practical optics", "lists",
-                  "merchants", "printing", "La boutique", "alchemy",
-                  "manuscript structure"]
+# Auxiliary function
+# cleans the tag string by removing some characters
 
-
-# cleans the tag string by remove some characters
 def clean_tag(str):
     remove_chars = ["<", ">", "/"]
     for c in remove_chars:
         str = str.replace(c, "")
     return str
 
+"""
+# Deprecated
 
 def tags_scatterplot(search_tags, filename, title):
     manuscript_version = "tl" # "tl", "tc" or "tcn"
@@ -70,9 +62,21 @@ def tags_scatterplot(search_tags, filename, title):
     fig = scatter.get_figure()
     fig.savefig(f"{viz_path}{filename}.png")
     plt.close()
+"""
 
+# Generates 2 bubble plot
+# names: {filename}_{normalized} and {filename}
+# x-axis: entries in order
+# y-axis: tags
+# bubble size: entry count
 
 def tags_bubbleplot(search_tags, ylabels, filename, title):
+
+    # search_tags: array of strings, keywords to look for (e.g. ["<add>", "<del>"])
+    # ylabels: array of strings, labels to put on the y-axis
+    # filename: string, file name that will be saved in the viz_path directory (with extension)
+    # title: string, title displayed on top of the plot
+
     manuscript_version = "tl" # "tl", "tc" or "tcn"
 
     entries = []
@@ -153,6 +157,11 @@ def tags_bubbleplot(search_tags, ylabels, filename, title):
         plt.close()
 
 
+# Generates 1 bar plot
+# name: categories_barplot.png
+# x-axis: categories, in decreasing y value order
+# y-axis: entry count
+
 def categories_barplot():
     manuscript_version = "tl" # "tl", "tc" or "tcn"
 
@@ -197,7 +206,7 @@ def categories_barplot():
 
     barplt.set_ylabel("Number of entries", fontsize = 18)
     barplt.set_xlabel("Categories", fontsize = 18)
-    barplt.set_title("How many entries there are for each category",
+    barplt.set_title("How many entries are tagged with each category",
                      fontsize = 20)
 
     barplt.set_xticklabels(barplt.get_xticklabels(), rotation = 90,
@@ -207,7 +216,18 @@ def categories_barplot():
     plt.close()
 
 
+# Generates 1 bar plot
+# file name: {filename}.png
+# x-axis: categories, in the order of all_categories (global variable)
+# y-axis: entry count
+
 def tags_by_category_barplot(search_tags, filename, title, stacked):
+
+    # search_tags: array of strings, keywords to look for (e.g. ["<add>", "<del>"])
+    # filename: string, file name that will be saved in the viz_path directory (without extension)
+    # title: string, title displayed on top of the plot
+    # stacked: boolean, True if all tags are counted together in 1 bar per category
+
     manuscript_version = "tl" # "tl", "tc" or "tcn"
 
     tags = []
@@ -281,7 +301,7 @@ def tags_by_category_barplot(search_tags, filename, title, stacked):
                                order = all_categories)
         barplt.legend(fancybox = True)
 
-    barplt.set_ylabel("Count", fontsize = 18)
+    barplt.set_ylabel("Tag count", fontsize = 18)
     barplt.set_xlabel("Categories", fontsize = 18)
     barplt.set_title(title, fontsize = 20)
 
@@ -291,7 +311,17 @@ def tags_by_category_barplot(search_tags, filename, title, stacked):
     plt.close()
 
 
+# Generates 3 bar plots, one for each manuscript version
+# file names: {manuscript_version}_{filename}.png
+# x-axis: tags
+# y-axis: average number of words inside tag
+
 def tagged_length_barplot(tags, xlabels, filename):
+
+    # tags: array of strings, keywords to look for (e.g. ["<add>", "<del>"])
+    # xlabels: array of strings, labels to put on the x-axis
+    # filename: string, file name that will be saved in the viz_path directory (without extension)
+
     ntags = len(tags)
     for manuscript_version in ["tc", "tcn", "tl"]:
         lengths = np.zeros(ntags)
@@ -321,7 +351,7 @@ def tagged_length_barplot(tags, xlabels, filename):
 
         barplt.set_ylabel("Average number of words inside tag", fontsize = 16)
         barplt.set_xlabel("Tag", fontsize = 16)
-        barplt.set_title(f"How many words there inside a tag [{manuscript_version}]",
+        barplt.set_title(f"How many words there inside a tag [{manuscript_version.upper()}]",
                          fontsize = 18)
         barplt.set_xticklabels(xlabels, rotation = 90, fontsize = 14)
 
@@ -330,7 +360,16 @@ def tagged_length_barplot(tags, xlabels, filename):
         plt.close()
 
 
+# Generates 3 scatterplots, on for each manuscript version
+# file names: {manuscript_version}_entries_lengths_scatterplot_{scale}.png
+# x-axis: number of words in the entry
+# y-axis: number of different words in the entry
+# color hue: folio number
+
 def entries_lengths_scatterplot(logscale):
+
+    # logscale: boolean, whether the x- and y-axis are in logarithmic scale
+
     for manuscript_version in ["tc", "tcn", "tl"]:
 
         entries = []
@@ -411,10 +450,10 @@ def entries_lengths_scatterplot(logscale):
         if logscale:
             scatter.set(xscale = "log")
             scatter.set(yscale = "log")
-            scatter.set_title(f"Lengths of entries (logscale) [{manuscript_version}]",
+            scatter.set_title(f"Lengths of entries (logscale) [{manuscript_version.upper()}]",
                               fontsize = 20)
         else:
-            scatter.set_title(f"Lengths of entries [{manuscript_version}]",
+            scatter.set_title(f"Lengths of entries [{manuscript_version.upper()}]",
                               fontsize = 20)
 
         scatter.legend(fancybox = True)
@@ -442,6 +481,13 @@ def entries_lengths_scatterplot(logscale):
             fig.savefig(f"{viz_path}{manuscript_version}_entries_lengths_scatterplot_linearscale.png")
         plt.close()
 
+
+# Generates 3 dist plots, one for each manuscript version
+# file names: {manuscript_version}_entries_lengths_distplot.png
+# x-axis: word count
+# y-axis: entry count and density estimation
+# in red: number of different words per entry
+# in blue: total number of words per entry
 
 def entries_lengths_distplot():
     for manuscript_version in ["tc", "tcn", "tl"]:
@@ -481,14 +527,15 @@ def entries_lengths_distplot():
         #plt.gcf().subplots_adjust(right = 0.95)
 
         distplt = sns.distplot(a = df["normalized_lengths"], kde = True, color = "r",
-                               kde_kws = {"color": "r", "lw": 3, "label": "Number of differents words per entry", "alpha": 0.7},
+                               kde_kws = {"color": "r", "lw": 3, "label": "Number of differents words", "alpha": 0.7},
                                bins = np.linspace(0, 800, 40))
         distplt = sns.distplot(a = df["lengths"], kde = True, color = "b",
-                               kde_kws = {"color": "b", "lw": 3, "label": "Total number of words per entry", "alpha": 0.7},
+                               kde_kws = {"color": "b", "lw": 3, "label": "Total number of words", "alpha": 0.7},
                                bins = np.linspace(0, 800, 40))
 
-        distplt.set_xlabel("Word counts")
-        distplt.set_title(f"Density estimate of the lengths of entries [{manuscript_version}]",
+        distplt.set_xlabel("Number of (different) words")
+        distplt.set_ylabel("Entry count")
+        distplt.set_title(f"Density estimate of the lengths of entries [{manuscript_version.upper()}]",
                           fontsize = 20)
         distplt.set_yticklabels([])
         distplt.set_xlim(0, 900)
@@ -499,7 +546,17 @@ def entries_lengths_distplot():
         plt.close()
 
 
+# Generates 1 swarm plot
+# x-axis: entries in order
+# y-axis: categories, in the order of all_categories (global variable)
+# color hue: tags
+
 def tags_by_category_swarmplot(search_tags, filename, title):
+
+    # search_tags: array of strings, keywords to look for (e.g. ["<add>", "<del>"])
+    # filename: string, file name that will be saved in the viz_path directory (with extension)
+    # title: string, title displayed on top of the plot
+
     manuscript_version = "tl" # "tl", "tc" or "tcn"
 
     # for the swarmplot
@@ -603,10 +660,21 @@ def tags_by_category_swarmplot(search_tags, filename, title):
     plt.close()
 
 
+cwd = os.getcwd()
+m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
 viz_dir = f'{m_path}/manuscript-object/manuscript_visualizations/'
 
 if not os.path.exists(viz_dir):
     os.mkdir(viz_dir)
+
+all_categories = ["casting", "painting", "metal process", "arms and armor",
+                  "varnish", "medicine", "household and daily life",
+                  "cultivation", "stones", "wood and its coloring", "tool",
+                  "tricks and sleight of hand", "animal husbandry",
+                  "decorative", "glass process", "corrosives", "dyeing",
+                  "preserving", "wax process", "practical optics", "lists",
+                  "merchants", "printing", "La boutique", "alchemy",
+                  "manuscript structure"]
 
 language_tags = ["<fr>", "<el>", "<it>", "<la>", "<oc>", "<po>"]
 languages = ["French", "Greek", "Italian", "Latin", "Occitan", "Poitevin"]
@@ -664,13 +732,13 @@ for i in range(len(semantic_tags)):
     tag = semantic_tags[i]
     legend = semantic_tags_legend[i]
     tags_by_category_barplot([tag], clean_tag(tag) + "_tag_by_category_barplot",
-                             legend + " tags", True)
+                             legend + " tags in the manuscript", True)
 
 for i in range(len(other_tags)):
     tag = other_tags[i]
     legend = other_tags_legend[i]
     tags_by_category_barplot([tag], clean_tag(tag) + "_tag_by_category_barplot",
-                             legend + " tags", True)
+                             legend + " tags in the manuscript", True)
 
 tagged_length_barplot(semantic_tags, semantic_tags_legend, "semantic_tags_size_barplot")
 

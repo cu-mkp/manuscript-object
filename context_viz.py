@@ -181,12 +181,12 @@ def create_symmetrical_heatmap(data, manuscript_version, context = True):
     if context:
         heatmap.collections[0].colorbar.set_label("Percentage of identical words in 20-word surroundings",
                                                   fontsize = 20)
-        heatmap.set_title("How similar is the author-practitioner's vocabulary\nin the context of talking about two different topics [" + manuscript_version + "]",
+        heatmap.set_title("How similar is the author-practitioner's vocabulary\nin the context of talking about two different topics [" + manuscript_version.upper() + "]",
                           fontsize = 22)
     else:
         heatmap.collections[0].colorbar.set_label("Percentage of identical vocabulary",
                                                   fontsize = 20)
-        heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + manuscript_version + "]",
+        heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + manuscript_version.upper() + "]",
                           fontsize = 22)
     heatmap.set_ylabel("Tags", fontsize = 20)
     heatmap.set_xlabel("Tags", fontsize = 20)
@@ -194,9 +194,9 @@ def create_symmetrical_heatmap(data, manuscript_version, context = True):
     heatmap.set_yticklabels(legend, size = 16)
     fig = heatmap.get_figure()
     if context:
-        fig.savefig(viz_path + v + "_context_symmetrical_heatmap.png")
+        fig.savefig(viz_path + manuscript_version + "_context_symmetrical_heatmap.png")
     else:
-        fig.savefig(viz_path + v + "_semantic_tags_similarity_symmetrical_heatmap.png")
+        fig.savefig(viz_path + manuscript_version + "_semantic_tags_similarity_symmetrical_heatmap.png")
     plt.close()
 
 
@@ -226,12 +226,12 @@ def create_symmetrical_diff_heatmap(v1, v2, data1, data2, context = True):
     if context:
         heatmap.collections[0].colorbar.set_label("Percentage of identical words in 20-word surroundings",
                                                   fontsize = 20)
-        heatmap.set_title("How similar is the author-practitioner's vocabulary\nin the context of talking about two different topics [" + v1 + " - " + v2 + "]",
+        heatmap.set_title("How similar is the author-practitioner's vocabulary\nin the context of talking about two different topics [" + v1.upper() + " - " + v2.upper() + "]",
                           fontsize = 22)
     else:
         heatmap.collections[0].colorbar.set_label("Percentage of identical vocabulary",
                                                   fontsize = 20)
-        heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + v1 + " - " + v2 + "]",
+        heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + v1.upper() + " - " + v2.upper() + "]",
                           fontsize = 22)
     heatmap.set_ylabel("Tags", fontsize = 20)
     heatmap.set_xlabel("Tags", fontsize = 20)
@@ -293,14 +293,14 @@ def create_asymmetrical_heatmap(data, manuscript_version, context = True):
     if context:
         heatmap.collections[0].colorbar.set_label("Percentage of included words in 20-word surroundings",
                                                   fontsize = 20)
-        heatmap.set_title("How similar is the author-practitioner's vocabulary\nin the context of talking about two different topics [" + manuscript_version + "]",
+        heatmap.set_title("How similar is the author-practitioner's vocabulary\nin the context of talking about two different topics [" + manuscript_version.upper() + "]",
                           fontsize = 22)
         heatmap.set_ylabel("How much of this tag's context vocabulary...", fontsize = 20)
         heatmap.set_xlabel("...is included in this tag's context vocabulary?", fontsize = 20)
     else:
         heatmap.collections[0].colorbar.set_label("Percentage of included vocabulary",
                                                   fontsize = 20)
-        heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + manuscript_version + "]",
+        heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + manuscript_version.upper() + "]",
                           fontsize = 22)
         heatmap.set_ylabel("How much of this tag's vocabulary...", fontsize = 20)
         heatmap.set_xlabel("...is included in this tag's vocabulary?", fontsize = 20)
@@ -308,9 +308,9 @@ def create_asymmetrical_heatmap(data, manuscript_version, context = True):
     heatmap.set_yticklabels(legend, size = 16)
     fig = heatmap.get_figure()
     if context:
-        fig.savefig(viz_path + v + "_context_asymmetrical_heatmap.png")
+        fig.savefig(viz_path + manuscript_version + "_context_asymmetrical_heatmap.png")
     else:
-        fig.savefig(viz_path + v + "_semantic_tags_similarity_asymmetrical_heatmap.png")
+        fig.savefig(viz_path + manuscript_version + "_semantic_tags_similarity_asymmetrical_heatmap.png")
     plt.close()
 
 
@@ -340,14 +340,14 @@ def create_asymmetrical_diff_heatmap(v1, v2, data1, data2, context = True):
     if context:
         heatmap.collections[0].colorbar.set_label("Percentage of included words in 20-word surroundings",
                                                   fontsize = 20)
-        heatmap.set_title("How similar is the author-practitioner's vocabulary\nin the context of talking about two different topics [" + v1 + " - " + v2 + "]",
+        heatmap.set_title("How similar is the author-practitioner's vocabulary\nin the context of talking about two different topics [" + v1.upper() + " - " + v2.upper() + "]",
                           fontsize = 22)
         heatmap.set_ylabel("How much of this tag's context vocabulary...", fontsize = 20)
         heatmap.set_xlabel("...is included in this tag's context vocabulary?", fontsize = 20)
     else:
         heatmap.collections[0].colorbar.set_label("Percentage of included vocabulary",
                                                   fontsize = 20)
-        heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + v1 + " - " + v2 + "]",
+        heatmap.set_title("How similar is the author-practitioner's vocabulary\nwhen talking about two different topics [" + v1.upper() + " - " + v2.upper() + "]",
                           fontsize = 22)
         heatmap.set_ylabel("How much of this tag's vocabulary...", fontsize = 20)
         heatmap.set_xlabel("...is included in this tag's vocabulary?", fontsize = 20)
@@ -392,17 +392,17 @@ def create_barplot(data, manuscript_version, normalized):
         else:
             nb = int(p.get_height())
         barplt.annotate(nb, (p.get_x() + p.get_width() / 2., p.get_height()), ha = 'center', va = 'center', xytext = (0, 10), textcoords = 'offset points')
-    barplt.set_ylabel("Number of unique words in 20-word surroundings" + ylabel_appendix,
+    barplt.set_ylabel("Number of unique words in 20-word surroundings" + ylabel_appendix + " (log scale)",
                       fontsize = 20)
     barplt.set_xlabel("Tag", fontsize = 20)
-    barplt.set_title("How diversified is the author-practitioner's\nvocabulary in the context of talking about... [" + manuscript_version + "]",
+    barplt.set_title("How diversified is the author-practitioner's\nvocabulary in the context of talking about... [" + manuscript_version.upper() + "]",
                      fontsize = 24)
     barplt.set_xticklabels(barplt.get_xticklabels(), rotation = 90, fontsize = 16)
     barplt.set_yticklabels(tag_names, size = 16)
     #bar.yaxis.set_major_locator(plt.FixedLocator(5))
     barplt.set(yscale = "log")
     fig = barplt.get_figure()
-    fig.savefig(viz_path + v + "_context_barplot" + filename_appendix + ".png")
+    fig.savefig(viz_path + manuscript_version + "_context_barplot" + filename_appendix + ".png")
     plt.close()
 
 
@@ -444,7 +444,7 @@ def create_grouped_barplot(data, normalized):
 
     barplt = sns.barplot(x = "tag", y = "height", data = data, order = tags,
                          hue = "manuscript version")
-    barplt.set_ylabel("Number of unique words in 20-word surroundings" + ylabel_appendix,
+    barplt.set_ylabel("Number of unique words in 20-word surroundings" + ylabel_appendix + " (log scale)",
                       fontsize = 20)
     barplt.set_xlabel("Tag", fontsize = 20)
     barplt.set_title("How diversified is the author-practitioner's\nvocabulary in the context of talking about...",
@@ -453,6 +453,9 @@ def create_grouped_barplot(data, normalized):
     barplt.set_yticklabels(barplt.get_yticklabels(), size = 16)
     plt.setp(barplt.get_legend().get_texts(), fontsize = "16")
     plt.setp(barplt.get_legend().get_title(), fontsize = "16")
+    handles, labels = barplt.get_legend_handles_labels()
+    barplt.legend(handles = handles, labels = ["TC", "TCN", "TL"], title = "Manuscript version")
+    #plt.legend(labels = ["TC", "TCN", "TL"])
     #bar.yaxis.set_major_locator(plt.FixedLocator(5))
     barplt.set(yscale = "log")
     fig = barplt.get_figure()
@@ -523,17 +526,17 @@ for i in range(len(manuscript_versions)):
         os.mkdir(viz_path)
 
     create_symmetrical_heatmap(all_items_without_duplicates[i], v, False)
-    create_asymmetrical_heatmap(all_context_without_duplicates[i], v, False)
+    create_asymmetrical_heatmap(all_items_without_duplicates[i], v, False)
 
     print(v + " heatmap visualizations finished.")
 
-create_symmetrical_diff_heatmap("tc", "tcn", all_context_without_duplicates[0], all_context_without_duplicates[1])
-create_symmetrical_diff_heatmap("tc", "tl", all_context_without_duplicates[0], all_context_without_duplicates[2])
-create_symmetrical_diff_heatmap("tcn", "tl", all_context_without_duplicates[1], all_context_without_duplicates[2])
+create_symmetrical_diff_heatmap("tc", "tcn", all_items_without_duplicates[0], all_items_without_duplicates[1], False)
+create_symmetrical_diff_heatmap("tc", "tl", all_items_without_duplicates[0], all_items_without_duplicates[2], False)
+create_symmetrical_diff_heatmap("tcn", "tl", all_items_without_duplicates[1], all_items_without_duplicates[2], False)
 
-create_asymmetrical_diff_heatmap("tc", "tcn", all_context_without_duplicates[0], all_context_without_duplicates[1])
-create_asymmetrical_diff_heatmap("tc", "tl", all_context_without_duplicates[0], all_context_without_duplicates[2])
-create_asymmetrical_diff_heatmap("tcn", "tl", all_context_without_duplicates[1], all_context_without_duplicates[2])
+create_asymmetrical_diff_heatmap("tc", "tcn", all_items_without_duplicates[0], all_items_without_duplicates[1], False)
+create_asymmetrical_diff_heatmap("tc", "tl", all_items_without_duplicates[0], all_items_without_duplicates[2], False)
+create_asymmetrical_diff_heatmap("tcn", "tl", all_items_without_duplicates[1], all_items_without_duplicates[2], False)
 
 print("difference heatmaps finished.")
 
