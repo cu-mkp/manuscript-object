@@ -64,8 +64,8 @@ def tags_scatterplot(search_tags, filename, title):
     plt.close()
 """
 
-# Generates 2 bubble plot
-# names: {filename}_{normalized} and {filename}
+# Generates 2 bubble plots
+# names: {filename}_{normalized}.png and {filename}.png
 # x-axis: entries in order
 # y-axis: tags
 # bubble size: entry count
@@ -74,7 +74,7 @@ def tags_bubbleplot(search_tags, ylabels, filename, title):
 
     # search_tags: array of strings, keywords to look for (e.g. ["<add>", "<del>"])
     # ylabels: array of strings, labels to put on the y-axis
-    # filename: string, file name that will be saved in the viz_path directory (with extension)
+    # filename: string, file name that will be saved in the viz_path directory (without extension)
     # title: string, title displayed on top of the plot
 
     manuscript_version = "tl" # "tl", "tc" or "tcn"
@@ -360,7 +360,7 @@ def tagged_length_barplot(tags, xlabels, filename):
         plt.close()
 
 
-# Generates 3 scatterplots, on for each manuscript version
+# Generates 3 scatter plots, on for each manuscript version
 # file names: {manuscript_version}_entries_lengths_scatterplot_{scale}.png
 # x-axis: number of words in the entry
 # y-axis: number of different words in the entry
