@@ -2,6 +2,7 @@ import re
 from typing import List, Dict, Optional
 from collections import OrderedDict
 from margin import Margin
+from bs4 import BeautifulSoup
 
 re_tags = re.compile(r'<.*?>') # selects any tag
 re_head = re.compile(r'<head( (margin|comment)="[\w-]*")?>(.*?)</head>')
@@ -10,7 +11,7 @@ prop_dict = {'animal': 'al', 'body_part': 'bp', 'currency': 'cn', 'definition': 
               'environment': 'env', 'material': 'm', 'medical': 'md', 'measurement': 'ms',
               'music': 'mu', 'plant': 'pa', 'place': 'pl', 'personal_name': 'pn',
               'profession': 'pro', 'sensory': 'sn', 'tool': 'tl', 'time': 'tmp', 'weapon': 'wp',
-              'german': 'de', 'greek': 'el', 'italian': 'it', 'latin': 'la', 'occitan': 'oc', 'poitevin': 'po',}
+              'german': 'de', 'greek': 'el', 'italian': 'it', 'latin': 'la', 'occitan': 'oc', 'poitevin': 'po'}
 
 prop_dict_reverse = {v: k for k, v in prop_dict.items()}
 
@@ -18,6 +19,8 @@ class Recipe:
 
     def __init__(self, identity: str, folio: str, tc: str, tcn: str, tl: str) -> None:
 
+        print(f"Loading entry with folio {folio}, ID {identity}")
+        
         self.identity: str = identity # id of the entry
         self.folio: str = folio # folio of the entry
         self.versions: Dict[str, str] = {'tc': tc, 'tcn': tcn, 'tl': tl} # dict that contains xml text
@@ -82,11 +85,17 @@ class Recipe:
           Dict[str, List[str]]: A list of the form {version: [tagged_str1, tagged_str2, ...]}
           For any given property type, the list of properties is keyed by version.
         """
+        
+        """
         re_tagged = re.compile(rf'<{tag}>(.*?)<\/{tag}>')
         text = re.sub(r'\s+', ' ', text)
 
-        tagged_text = list(set([str(re_tags.sub('', t).lower().strip()) for t in re_tagged.findall(text)]))
+        tagged_text = [str(re_tags.sub('', t).lower().strip()) for t in re_tagged.findall(text)]
         return tagged_text
+        """
+        soup = BeautifulSoup(text, "lxml")
+        tags = soup.find_all(tag)
+        return [tag.text.replace("\n", " ") for tag in tags]
 
     def find_all_properties(self):
         """
