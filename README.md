@@ -58,3 +58,5 @@ pip install wordcloud
 ```
 
 5. We now need to run our notebooks. In anaconda powershell prompt, use cd to navigate to the folder where you copied the manuscript object. Then run `jupyter notebook`. In Jupyter you can now open the notebooks and run them.
+
+xxx
