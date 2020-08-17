@@ -1,4 +1,4 @@
 .DS_Store
-.ippynb_checkpoints/
+.ipynb_checkpoints/
 __pycache__/
 .vscode/
