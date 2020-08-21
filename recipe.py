@@ -51,7 +51,7 @@ class Recipe:
             return categories[0].split('"')[1].split(';')
         return []
 
-    def find_title(self, text: str) -> str:
+    def find_title(self, text: str, remove_del_text=False) -> str:
         """ 
         Use a regex to find text in between head tags. Specifying the version is not necessary since it is
         included in the dict comprehension statement where this function is called.
@@ -65,7 +65,10 @@ class Recipe:
         text = re.sub(r'\s+', ' ', text.replace('\n', ' '))
 
         titles = re_head.search(text)
-        return '' if not titles else re_tags.sub('', titles[0])
+        if remove_del_text:
+            return '' if not titles else re.sub(r'\s+', ' ', re_tags.sub('', re.sub(r'<del>.*</del>', '', titles[0])))
+        else:
+            return '' if not titles else re_tags.sub('', titles[0])
 
     def clean_length(self, text: str) -> int:
         # TODO: make it word count instead of character count.
