@@ -65,9 +65,12 @@ class Recipe:
         text = re.sub(r'\s+', ' ', text.replace('\n', ' '))
 
         titles = re_head.search(text)
-        title = titles[0]
-        title = re.sub(r'<del>.*</del>', '', title)
-        return '' if not titles else re.sub(r'\s+', ' ', re_tags.sub('', title))
+        if not titles:
+            return ''
+        else:
+            title = titles[0]
+            title = re.sub(r'<del>.*</del>', '', title)
+            return re.sub(r'\s+', ' ', re_tags.sub('', title))
 
     def clean_length(self, text: str) -> int:
         # TODO: make it word count instead of character count.
