@@ -1,8 +1,8 @@
+# Last Updated | 2019-11-10
+
 import os
 from datetime import datetime
 
-
-#  change threshhold to 7 minutes
 def check_update():
   now = datetime.strptime(str(datetime.now()).split(' ')[0], '%Y-%m-%d')
   with open('./update.py', 'r') as f:
@@ -11,7 +11,7 @@ def check_update():
     timestamp = datetime.strptime(comment.split('|')[1].strip(), '%Y-%m-%d')
 
     if timestamp < now:
-      print(f'The repository has not been updated since {str(timestamp)}. Please run update.py on the day of merging the branch.')
+      print('The repository has not been updated since ' + str(timestamp) + '. Please run update.py on the day of merging the branch.')
       assert False
 
 check_update()
