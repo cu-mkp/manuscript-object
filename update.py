@@ -1,11 +1,9 @@
-# Last Updated | 2020-08-21
+# Last Updated | 2020-08-24
 # Python Modules
 import os
 import sys
 import re
 from typing import List
-
-sys.path.insert(1, './manuscript-object/')
 
 # Third Party Modules
 import pandas as pd
@@ -25,7 +23,9 @@ prop_dict = {'animal': 'al', 'body_part': 'bp', 'currency': 'cn', 'definition': 
               'profession': 'pro', 'sensory': 'sn', 'tool': 'tl', 'time': 'tmp', 'weapon': 'wp',
               'german': 'de', 'greek': 'el', 'italian': 'it', 'latin': 'la', 'occitan': 'oc', 'poitevin': 'po',}
 
-m_path = f'{os.getcwd()}'
+manuscript_data_path = os.path.dirname(os.getcwd()) + "/m-k-manuscript-data"
+print("Using manuscript data directory:", manuscript_data_path)
+assert(os.path.exists(manuscript_data_path))
 
 def update_metadata(manuscript: BnF) -> None:
   """
@@ -54,7 +54,7 @@ def update_metadata(manuscript: BnF) -> None:
   # remove entry column, since it only displays memory address
   df.drop(columns=['entry'], inplace=True)
 
-  df.to_csv(f'{m_path}/metadata/entry_metadata.csv', index=False)
+  df.to_csv(f'{manuscript_data_path}/metadata/entry_metadata.csv', index=False)
 
 def update_entries(manuscript: BnF) -> None:
   """
@@ -67,13 +67,13 @@ def update_entries(manuscript: BnF) -> None:
     None
   """
 
-  for path in [f'{m_path}/entries', f'{m_path}/entries/txt', f'{m_path}/entries/xml']:
+  for path in [f'{manuscript_data_path}/entries', f'{manuscript_data_path}/entries/txt', f'{manuscript_data_path}/entries/xml']:
     if not os.path.exists(path):
       os.mkdir(path)
 
   for version in versions:
-    txt_path = f'{m_path}/entries/txt/{version}'
-    xml_path = f'{m_path}/entries/xml/{version}'
+    txt_path = f'{manuscript_data_path}/entries/txt/{version}'
+    xml_path = f'{manuscript_data_path}/entries/xml/{version}'
 
     # If the entries/txt or xml directory does not exist, create it. Otherwise, clear the directory.
     for path in [txt_path, xml_path]:
@@ -121,7 +121,7 @@ def update_all_folios(manuscript: BnF) -> None:
         text = f'{text}\n\n{new_text}' if text else new_text
 
       # write file
-      f = open(f'{m_path}/allFolios/{folder}/all_{version}.{folder}', 'w')
+      f = open(f'{manuscript_data_path}/allFolios/{folder}/all_{version}.{folder}', 'w')
       f.write(text)
       f.close()
 
@@ -136,11 +136,11 @@ def update_ms(manuscript: BnF) -> None:
     None
   """
   for version in versions:
-    for r, d, f in os.walk(f'{m_path}/ms-xml/{version}'):
+    for r, d, f in os.walk(f'{manuscript_data_path}/ms-xml/{version}'):
       for filename in f: # iterate through /ms-xml/{version} folder
         # read xml file
         text = ''
-        filepath = f'{m_path}/ms-xml/{version}/{filename}'
+        filepath = f'{manuscript_data_path}/ms-xml/{version}/{filename}'
         with open(filepath, encoding="utf-8", errors="surrogateescape") as f:
           text = f.read()
 
@@ -188,7 +188,7 @@ def update():
   print('Updating allFolios')
   update_all_folios(manuscript)
 
-  update_time()
+  # update_time()
 
 if __name__ == "__main__":
   update()
