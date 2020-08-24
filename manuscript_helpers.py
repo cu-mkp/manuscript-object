@@ -12,8 +12,8 @@ properties = ['animal', 'body_part', 'currency', 'definition',
 
 manuscript_data_path = os.path.dirname(os.getcwd()) + "/m-k-manuscript-data"
 thesaurus_path = os.getcwd() + "/thesaurus"
+assert(os.path.exists(manuscript_data_path)), ("Could not find manuscript data directory: " + manuscript_data_path)
 print("Using manuscript data directory:", manuscript_data_path)
-assert(os.path.exists(manuscript_data_path))
 
 def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
   """

@@ -24,8 +24,8 @@ prop_dict = {'animal': 'al', 'body_part': 'bp', 'currency': 'cn', 'definition': 
               'german': 'de', 'greek': 'el', 'italian': 'it', 'latin': 'la', 'occitan': 'oc', 'poitevin': 'po',}
 
 manuscript_data_path = os.path.dirname(os.getcwd()) + "/m-k-manuscript-data"
+assert(os.path.exists(manuscript_data_path)), ("Could not find manuscript data directory: " + manuscript_data_path)
 print("Using manuscript data directory:", manuscript_data_path)
-assert(os.path.exists(manuscript_data_path))
 
 def update_metadata(manuscript: BnF) -> None:
   """
