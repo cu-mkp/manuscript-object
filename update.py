@@ -50,6 +50,7 @@ def update_metadata(manuscript: BnF) -> None:
   for prop, tag in prop_dict.items():
     for version in versions:
       df[f'{tag}_{version}'] = df.entry.apply(lambda x: '; '.join(x.get_prop(prop=prop, version=version)))
+      
   # remove entry column, since it only displays memory address
   df.drop(columns=['entry'], inplace=True)
 
