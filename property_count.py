@@ -36,8 +36,8 @@ versions = ['tc', 'tcn', 'tl']
 
 # %%
 # set up paths
-base = os.path.dirname(os.getcwd()) # .../m-k-manuscript-data/"
-entry_metadata_path = base + "/metadata/entry_metadata.csv"
+manuscript_data_path = os.path.dirname(os.getcwd()) + "/m-k-manuscript-data"
+entry_metadata_path = manuscript_data_path + "/metadata/entry_metadata.csv"
 output_path = "property_count.csv"
 
 # %%
