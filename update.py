@@ -1,4 +1,4 @@
-# Last Updated | 2020-08-24
+# Last Updated | 2020-08-25
 # Python Modules
 import os
 import sys
@@ -94,10 +94,12 @@ def update_entries(manuscript: BnF) -> None:
         content_xml = entry.text(version, xml=True)
 
         f_txt = open(filename_txt, 'w')
+        print(f"Writing entry to /entries/txt/{version}/{os.path.basename(filename_txt)}...")
         f_txt.write(content_txt)
         f_txt.close()
 
         f_xml = open(filename_xml, 'w')
+        print(f"Writing entry to /entries/xml/{version}/{os.path.basename(filename_xml)}...")
         f_xml.write(content_xml)
         f_xml.close()
 
@@ -122,6 +124,7 @@ def update_all_folios(manuscript: BnF) -> None:
 
       # write file
       f = open(f'{manuscript_data_path}/allFolios/{folder}/all_{version}.{folder}', 'w')
+      print(f"Writing to /allFolios/{folder}/all_{version}.{folder}...")
       f.write(text)
       f.close()
 
@@ -153,6 +156,7 @@ def update_ms(manuscript: BnF) -> None:
         # write txt file
         txt_filepath = filepath.replace('xml', 'txt')
         f = open(txt_filepath, 'w')
+        print(f"Writing entry to /ms-txt/{version}/{os.path.basename(txt_filepath)}")
         f.write(text)
         f.close()
 
@@ -188,7 +192,7 @@ def update():
   print('Updating allFolios')
   update_all_folios(manuscript)
 
-  # update_time()
+  update_time()
 
 if __name__ == "__main__":
   update()
