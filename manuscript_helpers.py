@@ -138,6 +138,7 @@ def generate_complete_manuscript(apply_corrections=True) -> Dict[str, Recipe]:
                                  old.versions['tl'] + '\n\n' + tl)
     else:
       entries[entry_id] = Recipe(entry_id, folio, tc, tcn, tl)
+    print(f"Loading entry {entry_id}")
 
   # if specified, manually rewrite entry properties based on thesaurus.
   if apply_corrections:

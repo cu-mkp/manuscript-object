@@ -18,8 +18,6 @@ prop_dict_reverse = {v: k for k, v in prop_dict.items()}
 class Recipe:
 
     def __init__(self, identity: str, folio: str, tc: str, tcn: str, tl: str) -> None:
-
-        print(f"Loading entry with folio {folio}, ID {identity}")
         
         self.identity: str = identity # id of the entry
         self.folio: str = folio # folio of the entry
