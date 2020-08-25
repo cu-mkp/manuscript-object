@@ -116,6 +116,7 @@ def generate_complete_manuscript(apply_corrections=True) -> Dict[str, Recipe]:
       for filename in f: # iterate through /ms-xml/{version} folder
         # split folio by entry
         info = process_file(f'{dir_path}{filename}')
+        print(f"Loading folio {filename}...")
         for identity, text in info.items(): # add each entry to dictionary
           entry_dict[identity] = text
 
@@ -138,7 +139,7 @@ def generate_complete_manuscript(apply_corrections=True) -> Dict[str, Recipe]:
                                  old.versions['tl'] + '\n\n' + tl)
     else:
       entries[entry_id] = Recipe(entry_id, folio, tc, tcn, tl)
-    print(f"Loading entry {entry_id}")
+    print(f"Generating Recipe object for {entry_id}...")
 
   # if specified, manually rewrite entry properties based on thesaurus.
   if apply_corrections:
