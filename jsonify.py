@@ -53,7 +53,7 @@ def read_manuscript(manuscript: BnF, df_dict: Dict[str, pd.DataFrame]) -> Dict[s
           df_dict[prop] = df
   return df_dict
 
-def df_to_dict(df = pd.DataFrame) -> Dict[str, Tuple[Reciple, str]]:
+def df_to_dict(df = pd.DataFrame) -> Dict[str, Tuple[Recipe, str]]:
   """
   Convert dataframe into dict of the following format:
   'prefLabel_en1': [(entry1, verbatim_term1), (entry2, verbatim_term2), ...],

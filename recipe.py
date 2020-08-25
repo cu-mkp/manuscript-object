@@ -18,8 +18,6 @@ prop_dict_reverse = {v: k for k, v in prop_dict.items()}
 class Recipe:
 
     def __init__(self, identity: str, folio: str, tc: str, tcn: str, tl: str) -> None:
-
-        print(f"Loading entry with folio {folio}, ID {identity}")
         
         self.identity: str = identity # id of the entry
         self.folio: str = folio # folio of the entry
@@ -51,7 +49,7 @@ class Recipe:
             return categories[0].split('"')[1].split(';')
         return []
 
-    def find_title(self, text: str) -> str:
+    def find_title(self, text: str, remove_del_text=False) -> str:
         """ 
         Use a regex to find text in between head tags. Specifying the version is not necessary since it is
         included in the dict comprehension statement where this function is called.
@@ -65,7 +63,10 @@ class Recipe:
         text = re.sub(r'\s+', ' ', text.replace('\n', ' '))
 
         titles = re_head.search(text)
-        return '' if not titles else re_tags.sub('', titles[0])
+        if remove_del_text:
+            return '' if not titles else re.sub(r'\s+', ' ', re_tags.sub('', re.sub(r'<del>.*</del>', '', titles[0])))
+        else:
+            return '' if not titles else re_tags.sub('', titles[0])
 
     def clean_length(self, text: str) -> int:
         # TODO: make it word count instead of character count.
@@ -170,6 +171,16 @@ class Recipe:
 
     def get_title(self, version: str = 'tl'):
         return self.title[version]
+        
+    def get_head(self, text: str) -> str:
+        """ search text for text in a <head> tag. """
+        text = text.replace('<sup>', '[') # mark editor supplied titles with square brackets
+        text = text.replace('</sup>', ']')
+
+        head = re_head.search(text)
+        if head:
+            return re_tags.sub('', head[0])
+        return ''
 
     def get_identity(self) -> str:
         """ Getter method for identity. """
