@@ -10,9 +10,10 @@ properties = ['animal', 'body_part', 'currency', 'definition',
               'music', 'plant', 'place', 'personal_name',
               'profession', 'sensory', 'tool', 'time', 'weapon']
 
-cwd = os.getcwd()
-m_path = cwd if 'manuscript-object' not in cwd else f'{cwd}/../'
-m_k_data_to_thesaurus = f'{m_path}/manuscript-object/thesaurus'
+manuscript_data_path = os.path.dirname(os.getcwd()) + "/m-k-manuscript-data"
+thesaurus_path = os.getcwd() + "/thesaurus"
+assert(os.path.exists(manuscript_data_path)), ("Could not find manuscript data directory: " + manuscript_data_path)
+print("Using manuscript data directory:", manuscript_data_path)
 
 def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
   """
@@ -27,7 +28,7 @@ def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
   Output:
     entries: List[Recipe] -- same as above, but with the thesaurus corrections applied.
   """
-  if not os.path.exists(m_k_data_to_thesaurus):
+  if not os.path.exists(thesaurus_path):
     print('Thesaurus not found. Generating now.')
     os.system(f'python {cwd}/manuscript-object/thesaurus.py')
     print('Finished Generating Thesaurus')
@@ -36,7 +37,7 @@ def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
 
   for prop in properties:
     dct = {} # {verbatim_term: prefLabel_en}
-    df = pd.read_csv(f'{m_k_data_to_thesaurus}/{prop}.csv')
+    df = pd.read_csv(f'{thesaurus_path}/{prop}.csv')
 
     # manual_df = manual_corrections[manual_corrections['property'] == prop]
     # manual_dict = {} # verbatim_term, prefLabel_en pairs
@@ -108,7 +109,7 @@ def generate_complete_manuscript(apply_corrections=True) -> Dict[str, Recipe]:
   TODO: Instead of going version by version, consider going folio by folio. 
   """
   for version in versions: 
-    dir_path = f'{m_path}/ms-xml/{version}/'
+    dir_path = f'{manuscript_data_path}/ms-xml/{version}/'
     entry_dict = OrderedDict()
 
     for r, d, f in os.walk(dir_path):
