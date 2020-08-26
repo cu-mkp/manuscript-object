@@ -248,7 +248,7 @@ def save_as_json(manuscript: BnF, outfile) -> None:
 
 def update():
 
-  manuscript = BnF(load_json=True, apply_corrections=False)
+  manuscript = BnF(load_json=False, apply_corrections=False)
 
   print('Updating metadata')
   update_metadata(manuscript)
