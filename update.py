@@ -224,8 +224,9 @@ def make_json(manuscript: BnF):
     }
   '''
   manuscript_dict = {}
+  manuscript_dict["entries"] = {}
   for identity, entry in manuscript.entries.items():
-    manuscript_dict[identity] = {
+    manuscript_dict["entries"][identity] = {
       "id" : entry.identity,
       "folio" : entry.folio,
       "versions" : entry.versions,
@@ -247,7 +248,7 @@ def save_as_json(manuscript: BnF, outfile) -> None:
 
 def update():
 
-  manuscript = BnF(apply_corrections=False)
+  manuscript = BnF(load_json=True, apply_corrections=False)
 
   print('Updating metadata')
   update_metadata(manuscript)
@@ -261,8 +262,8 @@ def update():
   print('Updating allFolios')
   update_all_folios(manuscript)
 
-  print("Saving to JSON")
-  save_as_json(manuscript, "digital_manuscript.json")
+  # print("Saving to JSON")
+  # save_as_json(manuscript, "digital_manuscript.json")
 
   update_time()
 

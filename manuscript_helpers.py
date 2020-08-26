@@ -4,6 +4,7 @@ import pandas as pd
 from collections import OrderedDict
 from typing import List, Union, Optional, Dict
 from recipe import Recipe
+import json
 
 properties = ['animal', 'body_part', 'currency', 'definition',
               'environment', 'material', 'medical', 'measurement',
@@ -88,7 +89,7 @@ def process_file(filepath: str) -> Dict[str, str]:
           entries[key] = div[0].replace('**NEWLINE**', '\n').replace('\n\n\n', '\n\n')
   return entries
 
-def generate_complete_manuscript(apply_corrections=True) -> Dict[str, Recipe]:
+def generate_complete_manuscript(load_json=False, apply_corrections=True) -> Dict[str, Recipe]:
   """
   Generate complete manuscript by extracting the text from each folder in /m-k-manuscript-data/ms-xml/
   Apply corrections if specified.
@@ -108,6 +109,15 @@ def generate_complete_manuscript(apply_corrections=True) -> Dict[str, Recipe]:
 
   TODO: Instead of going version by version, consider going folio by folio. 
   """
+  if load_json:
+    f = open("digital_manuscript.json", mode="r")
+    manuscript_dict = json.load(f)
+    f.close()
+    for identity, entry in manuscript_dict["entries"].items():
+      entries[identity] = Recipe(entry["id"], entry["folio"], entry["versions"]["tc"], entry["versions"]["tcn"], entry["versions"]["tl"], json_dict=entry)
+      print("Generating Recipe object from JSON for entry with ID", entry["id"])
+    return entries
+  
   for version in versions: 
     dir_path = f'{manuscript_data_path}/ms-xml/{version}/'
     entry_dict = OrderedDict()
