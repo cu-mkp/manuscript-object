@@ -3,7 +3,8 @@
 import os
 import sys
 import re
-from typing import List
+from typing import List, Dict
+import json
 
 # Third Party Modules
 import pandas as pd
@@ -176,9 +177,78 @@ def update_time():
   f.write('\n'.join(lines))
   f.close
 
+def make_json(manuscript: BnF):
+  '''
+  Make the manuscript into a JSON-friendly dictionary with the following format:
+    {
+      "entries" : {
+        "127v_2" : {
+          "id" : "127v_2",
+          "folio" : "127v",
+          "versions" : {
+            "tc" : THE_ENTIRE_RAW_TC_XML,
+            "tcn" : THE_ENTIRE_RAW_TCN_XML,
+            "tl" : THE_ENTIRE_RAW_TL_XML
+          },
+          "title" : {
+            "tc" : TC_TITLE,
+            "tcn" : TCN_TITLE,
+            "tl" : TL_TITLE,
+          },
+          "categories" : [
+            CATEGORY_1,
+            CATEGORY_2,
+            ...
+          ],
+          "length" : {
+            "tc" : LENGTH_TC,
+            "tcn" : LENGTH_TCN,
+            "tl" : LENGTH_TL
+          },
+          "properties" : {
+            "animal" : {
+              "tc" : [TERM_1, %TERM_2, ...],
+              "tcn" : [TERM_1, %TERM_2, ...],
+              "tl" : [TERM_1, %TERM_2, ...]
+            },
+            ... more properties
+          }
+          // pretty sure we're gonna skip margins, del_tags, and captions
+          // and we can just recompute those from XML upon loading JSON
+        },
+        "127v_3" : {
+          ...
+        },
+        ... more entries
+      }
+    }
+  '''
+  manuscript_dict = {}
+  manuscript_dict["entries"] = {}
+  for identity, entry in manuscript.entries.items():
+    manuscript_dict["entries"][identity] = {
+      "id" : entry.identity,
+      "folio" : entry.folio,
+      "versions" : entry.versions,
+      "title" : entry.title,
+      "categories" : entry.categories,
+      "length" : entry.length,
+      "properties" : entry.properties,
+    }
+  return manuscript_dict
+
+def save_as_json(manuscript: BnF, outfile) -> None:
+  '''
+  Save the manuscript in JSON format to a specified .json file.
+  '''
+  manuscript_dict = make_json(manuscript)
+  f = open(outfile, mode="w")
+  json.dump(manuscript_dict, f, indent=4)
+  f.close()
+
 def update():
 
-  manuscript = BnF(apply_corrections=False)
+  manuscript = BnF(load_json=False, apply_corrections=False)
 
   print('Updating metadata')
   update_metadata(manuscript)
@@ -191,6 +261,9 @@ def update():
 
   print('Updating allFolios')
   update_all_folios(manuscript)
+
+  # print("Saving to JSON")
+  # save_as_json(manuscript, "digital_manuscript.json")
 
   update_time()
 

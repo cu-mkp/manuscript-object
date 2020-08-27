@@ -17,17 +17,29 @@ prop_dict_reverse = {v: k for k, v in prop_dict.items()}
 
 class Recipe:
 
-    def __init__(self, identity: str, folio: str, tc: str, tcn: str, tl: str) -> None:
+    def __init__(self, identity: str, folio: str, tc: str, tcn: str, tl: str, json_dict = None) -> None:
         
-        self.identity: str = identity # id of the entry
-        self.folio: str = folio # folio of the entry
-        self.versions: Dict[str, str] = {'tc': tc, 'tcn': tcn, 'tl': tl} # dict that contains xml text
-        self.title = {k: self.find_title(v) for k, v in self.versions.items()}
-        self.categories: List[str] = self.find_categories(self.text('tl', xml=True))
-        self.length = {k: self.clean_length(v) for k, v in self.versions.items()}
+        if json_dict:
+            self.identity = json_dict["id"] # id of the entry
+            self.folio = json_dict["folio"] # folio of the entry
+            self.versions = json_dict["versions"] # dict that contains xml text
+            self.title = json_dict["title"]
+            self.categories = json_dict["categories"]
+            self.length = json_dict["length"]
 
-        self.properties: Dict[str, Dict[str, List[str]]] # {prop_type: {version: [prop1, prop2, ...]}}
-        self.properties = self.find_all_properties()
+            self.properties: Dict[str, Dict[str, List[str]]] # {prop_type: {version: [prop1, prop2, ...]}}
+            self.properties = json_dict["properties"]
+
+        else:
+            self.identity: str = identity # id of the entry
+            self.folio: str = folio # folio of the entry
+            self.versions: Dict[str, str] = {'tc': tc, 'tcn': tcn, 'tl': tl} # dict that contains xml text
+            self.title = {k: self.find_title(v) for k, v in self.versions.items()}
+            self.categories: List[str] = self.find_categories(self.text('tl', xml=True))
+            self.length = {k: self.clean_length(v) for k, v in self.versions.items()}
+
+            self.properties: Dict[str, Dict[str, List[str]]] # {prop_type: {version: [prop1, prop2, ...]}}
+            self.properties = self.find_all_properties()
 
         self.margins = self.find_margins()
         self.del_tags = self.find_del()
