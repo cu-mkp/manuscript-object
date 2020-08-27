@@ -1,4 +1,4 @@
-# Last Updated | 2020-08-26
+# Last Updated | 2020-08-27
 # Python Modules
 import os
 import sys
@@ -92,7 +92,7 @@ def update_entries(manuscript: BnF) -> None:
         filename_xml = f'{xml_path}/{version}_{entry.identity}.xml'
 
         content_txt = entry.text(version, xml=False)
-        content_xml = entry.text(version, xml=True)
+        content_xml = "<entry>" + entry.text(version, xml=True) + "</entry>"
 
         f_txt = open(filename_txt, 'w')
         print(f"Writing entry to /entries/txt/{version}/{os.path.basename(filename_txt)}...")
@@ -122,6 +122,9 @@ def update_all_folios(manuscript: BnF) -> None:
       for identity, entry in manuscript.entries.items():
         new_text = entry.text(version, xml=b)
         text = f'{text}\n\n{new_text}' if text else new_text
+
+      if b:
+        text = "<all>" + text + "</all>"
 
       # write file
       f = open(f'{manuscript_data_path}/allFolios/{folder}/all_{version}.{folder}', 'w')
@@ -262,8 +265,8 @@ def update():
   print('Updating allFolios')
   update_all_folios(manuscript)
 
-  # print("Saving to JSON")
-  # save_as_json(manuscript, "digital_manuscript.json")
+  print("Saving to JSON")
+  save_as_json(manuscript, "digital_manuscript.json")
 
   update_time()
 
