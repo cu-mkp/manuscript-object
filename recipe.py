@@ -203,11 +203,13 @@ class Recipe:
         if xml:
             return self.versions[version]
 
-        text = self.versions[version].replace('\n', '**NEWLINE**')
-        text = re_tags.sub('', text).replace('**NEWLINE**', '\n')
-        text = re.sub(r'\n+', '\n\n', text)
+        # text = self.versions[version].replace('\n', '**NEWLINE**')
+        # text = re_tags.sub('', text).replace('**NEWLINE**', '\n')
+        # text = re.sub(r'\n+', '\n\n', text)
 
-        return text.strip(' \n')
+        # return text.strip(' \n')
+        soup = BeautifulSoup(self.versions[version], "lxml")
+        return soup.text
 
     def context(self, term: str, version: str) -> str:
         """ Returns five words on either side of the given term in the specified version. """

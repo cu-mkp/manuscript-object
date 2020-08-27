@@ -5,6 +5,7 @@ from collections import OrderedDict
 from typing import List, Union, Optional, Dict
 from recipe import Recipe
 import json
+from bs4 import BeautifulSoup
 
 properties = ['animal', 'body_part', 'currency', 'definition',
               'environment', 'material', 'medical', 'measurement',
@@ -72,21 +73,21 @@ def process_file(filepath: str) -> Dict[str, str]:
   # read file, extract text and folio ID
   with open(filepath, encoding="utf-8", errors="surrogateescape") as f:
     text = f.read()
-    folio = filepath.split('/')[-1].split('_')[1][1:] # .../tl_p162v_preTEI.xml -> 162v
+    soup = BeautifulSoup(text, 'lxml')
 
-    text = text.replace('\n', '**NEWLINE**') # re.findall cannot scan over newlines. 
-    divs = re.findall(r'(<div([\w\s=";-]*)>(.*?)</div>)', text) # separate text by divs
-    if divs:
-      for i, div in enumerate(divs): # iterate through divs
-        attributes = div[1] # text within div tag, between second parentheses in the regex.
-        identity = re.findall(r'id="p([\w_]*)"', attributes) # find identity
-        identity = identity[0] if identity else '' # unpack identity from regex
-        key = f'{folio};{identity}' # create unique key for attaching 'continued' entries.
-        if key in entries.keys(): # if this div is a part of another entry, attach them
-          new_text = div[0].replace('**NEWLINE**', '\n').replace('\n\n\n', '\n\n')
-          entries[key] = entries[key] + "\n\n" + new_text
-        else: # otherwise create a new entry in the entries dict.
-          entries[key] = div[0].replace('**NEWLINE**', '\n').replace('\n\n\n', '\n\n')
+    folio = os.path.basename(filepath).split("_")[1][1:] # .../tl_p162v_preTEI.xml -> 162v
+
+    # text = text.replace('\n', '**NEWLINE**') # re.findall cannot scan over newlines. 
+    # divs = re.findall(r'(<div([\w\s=";-]*)>(.*?)</div>)', text) # separate text by divs
+    divs = soup.find_all('div')
+    for div in divs: # iterate through divs
+      identity = div.get("id") # find identity
+      identity = identity if identity else "" # default to empty string if no identity found
+      key = folio + ";" + identity # create unique key for attaching 'continued' entries.
+      if key in entries.keys(): # if this div is a part of another entry, attach them
+        entries[key] += "\n\n" + div.prettify()
+      else: # otherwise create a new entry in the entries dict.
+        entries[key] = div.prettify()
   return entries
 
 def generate_complete_manuscript(load_json=False, apply_corrections=True) -> Dict[str, Recipe]:
