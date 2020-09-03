@@ -83,9 +83,9 @@ def process_file(filepath: str) -> Dict[str, str]:
       identity = identity if identity else "" # default to empty string if no identity found
       key = folio + ";" + identity # create unique key for attaching 'continued' entries.
       if key in entries.keys(): # if this div is a part of another entry, attach them
-        entries[key] += "\n\n" + et.tostring(div, pretty_print=True).decode()
+        entries[key] += "\n\n" + et.tostring(div, pretty_print=False).decode()
       else: # otherwise create a new entry in the entries dict.
-        entries[key] = et.tostring(div, pretty_print=True).decode()
+        entries[key] = et.tostring(div, pretty_print=False).decode()
   return entries
 
 def generate_complete_manuscript(load_json=False, apply_corrections=True) -> Dict[str, Recipe]:
