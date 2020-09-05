@@ -10,7 +10,7 @@ properties = ['animal', 'body_part', 'currency', 'definition', 'environment', 'm
 
 class BnF():
 
-  def __init__(self, entry_list: List[str] = [], load_json: bool = False, apply_corrections: bool = True) -> None:
+  def __init__(self, entry_list: List[str] = [], load_json: bool = False, apply_corrections: bool = True, silent: bool = False) -> None:
     """
     Initialize entire manuscript as a dictionary of Recipe objected keyed by div ID.
     If a list of IDs is given, return a dict with these entries only.
@@ -23,7 +23,7 @@ class BnF():
     Outputs:
       None
     """
-    complete_manuscript = generate_complete_manuscript(load_json=load_json, apply_corrections=apply_corrections)
+    complete_manuscript = generate_complete_manuscript(load_json=load_json, apply_corrections=apply_corrections, silent=silent)
     if entry_list: # choose specified entries
       self.entries = {i:e for i, e in complete_manuscript.items() if e.identity in entry_list}
     else: # otherwise, return all entries

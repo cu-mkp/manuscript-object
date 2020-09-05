@@ -88,7 +88,7 @@ def process_file(filepath: str) -> Dict[str, str]:
         entries[key] = et.tostring(div, pretty_print=False).decode()
   return entries
 
-def generate_complete_manuscript(load_json=False, apply_corrections=True) -> Dict[str, Recipe]:
+def generate_complete_manuscript(load_json=False, apply_corrections=True, silent=False) -> Dict[str, Recipe]:
   """
   Generate complete manuscript by extracting the text from each folder in /m-k-manuscript-data/ms-xml/
   Apply corrections if specified.
@@ -114,7 +114,8 @@ def generate_complete_manuscript(load_json=False, apply_corrections=True) -> Dic
     f.close()
     for identity, entry in manuscript_dict["entries"].items():
       entries[identity] = Recipe(entry["id"], entry["folio"], entry["versions"]["tc"], entry["versions"]["tcn"], entry["versions"]["tl"], json_dict=entry)
-      print("Generating Recipe object from JSON for entry with ID", entry["id"])
+      if not silent:
+        print("Generating Recipe object from JSON for entry with ID", entry["id"])
     return entries
   
   for version in versions: 
@@ -125,7 +126,8 @@ def generate_complete_manuscript(load_json=False, apply_corrections=True) -> Dic
       for filename in f: # iterate through /ms-xml/{version} folder
         # split folio by entry
         info = process_file(f'{dir_path}{filename}')
-        print(f"Loading folio {filename}...")
+        if not silent:
+          print(f"Loading folio {filename}...")
         for identity, text in info.items(): # add each entry to dictionary
           entry_dict[identity] = text
 
@@ -148,7 +150,8 @@ def generate_complete_manuscript(load_json=False, apply_corrections=True) -> Dic
                                  old.versions['tl'] + '\n\n' + tl)
     else:
       entries[entry_id] = Recipe(entry_id, folio, tc, tcn, tl)
-    print(f"Generating Recipe object for {entry_id}...")
+    if not silent:
+      print(f"Generating Recipe object for {entry_id}...")
 
   # if specified, manually rewrite entry properties based on thesaurus.
   if apply_corrections:
