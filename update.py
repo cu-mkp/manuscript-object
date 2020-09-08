@@ -5,6 +5,7 @@ import sys
 import re
 from typing import List, Dict
 import json
+import argparse
 
 # Third Party Modules
 import pandas as pd
@@ -26,7 +27,6 @@ prop_dict = {'animal': 'al', 'body_part': 'bp', 'currency': 'cn', 'definition': 
 
 manuscript_data_path = os.path.dirname(os.getcwd()) + "/m-k-manuscript-data"
 assert(os.path.exists(manuscript_data_path)), ("Could not find manuscript data directory: " + manuscript_data_path)
-print("Using manuscript data directory:", manuscript_data_path)
 
 def update_metadata(manuscript: BnF) -> None:
   """
@@ -251,24 +251,48 @@ def save_as_json(manuscript: BnF, outfile) -> None:
 
 def update():
 
-  manuscript = BnF(load_json=False, apply_corrections=False)
+  parser = argparse.ArgumentParser(description="Generate derivative files from original ms-xml folios.")
+  parser.add_argument('-d', '--dry-run', help="Generate as usual, but do not write derivatives.", action="store_true")
+  parser.add_argument('-s', '--silent', help="Silence output. Do not write generation progress to terminal.", action="store_true")
+  parser.add_argument('-c', '--cache', help="Save manuscript object to a JSON cache for quicker loading next time.", action="store_true")
+  parser.add_argument('-q', '--quick', help="Use JSON cache of manuscript object to speed up generation process. Don't do this if you need to include changes from ms-xml!", action="store_true")
+  parser.add_argument('-a', '--all-folios', help="Generate allFolios derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
+  parser.add_argument('-m', '--metadata', help="Generate metadata derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
+  parser.add_argument('-t', '--txt', help="Generate ms-txt derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
+  parser.add_argument('-e', '--entries', help="Generate entries derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
 
-  print('Updating metadata')
-  update_metadata(manuscript)
+  options = parser.parse_args()
 
-  print('Updating entries')
-  update_entries(manuscript)
+  # if no specific derivatives were specified, generate all of them
+  if not [op for op in [options.all_folios, options.metadata, options.txt, options.entries] if op]:
+    generate_all_derivatives = True
+  else:
+    generate_all_derivatives = False
 
-  print('Updating ms-txt')
-  update_ms(manuscript)
+  manuscript = BnF(load_json=options.quick, apply_corrections=False, silent=options.silent)
 
-  print('Updating allFolios')
-  update_all_folios(manuscript)
+  if not options.dry_run:
+    if options.metadata or generate_all_derivatives:
+      print('Updating metadata')
+      update_metadata(manuscript)
 
-  print("Saving to JSON")
-  save_as_json(manuscript, "digital_manuscript.json")
+    if options.entries or generate_all_derivatives:
+      print('Updating entries')
+      update_entries(manuscript)
 
-  update_time()
+    if options.txt or generate_all_derivatives:
+      print('Updating ms-txt')
+      update_ms(manuscript)
+
+    if options.all_folios or generate_all_derivatives:
+      print('Updating allFolios')
+      update_all_folios(manuscript)
+
+    update_time()
+
+  if options.cache:
+    print("Saving to JSON")
+    save_as_json(manuscript, "digital_manuscript.json")
 
 if __name__ == "__main__":
   update()
