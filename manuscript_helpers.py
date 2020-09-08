@@ -5,7 +5,7 @@ from collections import OrderedDict
 from typing import List, Union, Optional, Dict
 from recipe import Recipe
 import json
-from bs4 import BeautifulSoup
+from lxml import etree as et
 
 properties = ['animal', 'body_part', 'currency', 'definition',
               'environment', 'material', 'medical', 'measurement',
@@ -73,21 +73,19 @@ def process_file(filepath: str) -> Dict[str, str]:
   # read file, extract text and folio ID
   with open(filepath, encoding="utf-8", errors="surrogateescape") as f:
     text = f.read()
-    soup = BeautifulSoup(text, 'lxml')
+    root = et.XML(text.encode())
 
     folio = os.path.basename(filepath).split("_")[1][1:] # .../tl_p162v_preTEI.xml -> 162v
 
-    # text = text.replace('\n', '**NEWLINE**') # re.findall cannot scan over newlines. 
-    # divs = re.findall(r'(<div([\w\s=";-]*)>(.*?)</div>)', text) # separate text by divs
-    divs = soup.find_all('div')
+    divs = root.findall('div') # note: this is NOT recursive. it will not find nested divs (there shouldn't be any).
     for div in divs: # iterate through divs
-      identity = div.get("id") # find identity
+      identity = div.get("id")# find identity
       identity = identity if identity else "" # default to empty string if no identity found
       key = folio + ";" + identity # create unique key for attaching 'continued' entries.
       if key in entries.keys(): # if this div is a part of another entry, attach them
-        entries[key] += "\n\n" + div.prettify()
+        entries[key] += "\n\n" + et.tostring(div, pretty_print=False).decode()
       else: # otherwise create a new entry in the entries dict.
-        entries[key] = div.prettify()
+        entries[key] = et.tostring(div, pretty_print=False).decode()
   return entries
 
 def generate_complete_manuscript(load_json=False, apply_corrections=True) -> Dict[str, Recipe]:

@@ -2,7 +2,7 @@ import re
 from typing import List, Dict, Optional
 from collections import OrderedDict
 from margin import Margin
-from bs4 import BeautifulSoup
+from lxml import etree as et
 
 re_tags = re.compile(r'<.*?>') # selects any tag
 re_head = re.compile(r'<head( (margin|comment)="[\w-]*")?>(.*?)</head>')
@@ -86,29 +86,24 @@ class Recipe:
         text = re.sub(r'\s+', ' ', text)
         return len(text)
 
-    def find_tagged_text(self, text: str, tag: str) -> Dict[str, List[str]]:
+    def find_tagged_text(self, text: str, tag: str) -> List[str]:
         """
-        Use a regex to find text between the given tag from the source text. This is a helper function for
+        Use lxml parsing to find text between the given tag from the source text. This is a helper function for
         find_all_properties, which handles specifying the version.
         
         Input:
           text: str -- source text with xml tags
           tag: str -- property tag of the manuscript listed above in prop_dict
         Output:
-          Dict[str, List[str]]: A list of the form {version: [tagged_str1, tagged_str2, ...]}
-          For any given property type, the list of properties is keyed by version.
+          List[str]: A list of the form [tagged_str1, tagged_str2, ...]
         """
-        
-        """
-        re_tagged = re.compile(rf'<{tag}>(.*?)<\/{tag}>')
-        text = re.sub(r'\s+', ' ', text)
 
-        tagged_text = [str(re_tags.sub('', t).lower().strip()) for t in re_tagged.findall(text)]
-        return tagged_text
-        """
-        soup = BeautifulSoup(text, "lxml")
-        tags = soup.find_all(tag)
-        return [tag.text.replace("\n", " ") for tag in tags]
+        text = "<entry>" + text + "</entry>" # this is temporary band-aid code to stave off a larger problem.
+                                             # see: https://github.com/cu-mkp/manuscript-object/issues/33.
+
+        root = et.XML(text.encode()) # lxml only accepts encoded bytes versions of strings
+        tags = root.findall(".//" + tag) # ".//" is an XPath prefix that searches the entire XML document recursively (not just at current level)
+        return [et.tostring(tag, method="text", encoding="utf-8").decode().replace("\n", " ") for tag in tags]
 
     def find_all_properties(self):
         """
@@ -203,13 +198,10 @@ class Recipe:
         if xml:
             return self.versions[version]
 
-        # text = self.versions[version].replace('\n', '**NEWLINE**')
-        # text = re_tags.sub('', text).replace('**NEWLINE**', '\n')
-        # text = re.sub(r'\n+', '\n\n', text)
-
-        # return text.strip(' \n')
-        soup = BeautifulSoup(self.versions[version], "lxml")
-        return soup.text
+        text = "<entry>" + self.versions[version] + "</entry>" # this is temporary band-aid code to stave off a larger problem.
+                                                               # see: https://github.com/cu-mkp/manuscript-object/issues/33.
+        root = et.XML(text.encode()) # lxml only accepts encoded bytes versions of strings
+        return et.tostring(root, method="text", encoding="utf-8").decode()
 
     def context(self, term: str, version: str) -> str:
         """ Returns five words on either side of the given term in the specified version. """
