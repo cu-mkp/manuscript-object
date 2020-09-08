@@ -5,6 +5,7 @@ import sys
 import re
 from typing import List, Dict
 import json
+import argparse
 
 # Third Party Modules
 import pandas as pd
@@ -13,7 +14,6 @@ from datetime import datetime
 # Local Modules
 from digital_manuscript import BnF
 from recipe import Recipe
-import clappy
 
 versions = ['tc', 'tcn', 'tl']
 properties = ['animal', 'body_part', 'currency', 'definition', 'environment', 'material', 'medical', 'measurement',
@@ -251,17 +251,17 @@ def save_as_json(manuscript: BnF, outfile) -> None:
 
 def update():
 
-  parser = clappy.Parser(description="Generate derivative files from original ms-xml folios.")
-  parser.add_argument('-d', '--dry-run', help="Generate as usual, but do not write derivatives.")
-  parser.add_argument('-s', '--silent', help="Silence output. Do not write generation progress to terminal.")
-  parser.add_argument('-c', '--cache', help="Save manuscript object to a JSON cache for quicker loading next time.")
-  parser.add_argument('-q', '--quick', help="Use JSON cache of manuscript object to speed up generation process. Don't do this if you need to include changes from ms-xml!")
-  parser.add_argument('-a', '--all-folios', help="Generate allFolios derivative files. Disables generation of other derivatives unless those are also specified.")
-  parser.add_argument('-m', '--metadata', help="Generate metadata derivative files. Disables generation of other derivatives unless those are also specified.")
-  parser.add_argument('-t', '--txt', help="Generate ms-txt derivative files. Disables generation of other derivatives unless those are also specified.")
-  parser.add_argument('-e', '--entries', help="Generate entries derivative files. Disables generation of other derivatives unless those are also specified.")
+  parser = argparse.ArgumentParser(description="Generate derivative files from original ms-xml folios.")
+  parser.add_argument('-d', '--dry-run', help="Generate as usual, but do not write derivatives.", action="store_true")
+  parser.add_argument('-s', '--silent', help="Silence output. Do not write generation progress to terminal.", action="store_true")
+  parser.add_argument('-c', '--cache', help="Save manuscript object to a JSON cache for quicker loading next time.", action="store_true")
+  parser.add_argument('-q', '--quick', help="Use JSON cache of manuscript object to speed up generation process. Don't do this if you need to include changes from ms-xml!", action="store_true")
+  parser.add_argument('-a', '--all-folios', help="Generate allFolios derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
+  parser.add_argument('-m', '--metadata', help="Generate metadata derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
+  parser.add_argument('-t', '--txt', help="Generate ms-txt derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
+  parser.add_argument('-e', '--entries', help="Generate entries derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
 
-  _, options = parser.parse_args(sys.argv[1:])
+  options = parser.parse_args()
 
   # if no specific derivatives were specified, generate all of them
   if not [op for op in [options.all_folios, options.metadata, options.txt, options.entries] if op]:
