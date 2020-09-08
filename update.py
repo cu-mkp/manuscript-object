@@ -1,4 +1,4 @@
-# Last Updated | 2020-09-02
+# Last Updated | 2020-09-08
 # Python Modules
 import os
 import sys
@@ -252,14 +252,14 @@ def save_as_json(manuscript: BnF, outfile) -> None:
 def update():
 
   parser = clappy.Parser(description="Generate derivative files from original ms-xml folios.")
-  parser.add_argument('-d', '--dry-run', usage="Generate as usual, but do not write derivatives.")
-  parser.add_argument('-s', '--silent', usage="Silence output. Do not write generation progress to terminal.")
-  parser.add_argument('-c', '--cache', usage="Save manuscript object to a JSON cache for quicker loading next time.")
-  parser.add_argument('-q', '--quick', usage="Use JSON cache of manuscript object to speed up generation process. Don't do this if you need to include changes from ms-xml!")
-  parser.add_argument('-a', '--all-folios', usage="Generate allFolios derivative files. Disables generation of other derivatives unless those are also specified.")
-  parser.add_argument('-m', '--metadata', usage="Generate metadata derivative files. Disables generation of other derivatives unless those are also specified.")
-  parser.add_argument('-t', '--txt', usage="Generate ms-txt derivative files. Disables generation of other derivatives unless those are also specified.")
-  parser.add_argument('-e', '--entries', usage="Generate entries derivative files. Disables generation of other derivatives unless those are also specified.")
+  parser.add_argument('-d', '--dry-run', help="Generate as usual, but do not write derivatives.")
+  parser.add_argument('-s', '--silent', help="Silence output. Do not write generation progress to terminal.")
+  parser.add_argument('-c', '--cache', help="Save manuscript object to a JSON cache for quicker loading next time.")
+  parser.add_argument('-q', '--quick', help="Use JSON cache of manuscript object to speed up generation process. Don't do this if you need to include changes from ms-xml!")
+  parser.add_argument('-a', '--all-folios', help="Generate allFolios derivative files. Disables generation of other derivatives unless those are also specified.")
+  parser.add_argument('-m', '--metadata', help="Generate metadata derivative files. Disables generation of other derivatives unless those are also specified.")
+  parser.add_argument('-t', '--txt', help="Generate ms-txt derivative files. Disables generation of other derivatives unless those are also specified.")
+  parser.add_argument('-e', '--entries', help="Generate entries derivative files. Disables generation of other derivatives unless those are also specified.")
 
   _, options = parser.parse_args(sys.argv[1:])
 

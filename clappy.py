@@ -14,6 +14,7 @@ class ParserError(Exception):
             self.message = args[0]
         else:
             self.message = None
+        super().__init__(*args)
 
     def __str__(self):
         if self.message:
@@ -30,41 +31,65 @@ class Parser:
         self.version = version
         self.description = description
 
-    def add_argument(self, *flags, usage=None, default=False):
+    def add_argument(self, *flags, help=None, default=None, name=None):
+        #args = ", ".join([str(k) + "=" + str(v) for k,v in list(locals().items())[1:]])
 
-        flags = [flag for flag in flags if flag]
-        error_message = f"{' '.join(flags)}, usage={usage}, default={default}"
+        flags = [flag for flag in flags if flag] # filter out blank flags
 
+        longhands = [flag for flag in flags if flag[:2]=="--"]
+        shorthands = [flag for flag in flags if flag not in longhands and flag[0]=="-"]
+
+        # discerning errors
         if not flags:
-            raise ParserError(f"No flags provided for argument:\n\t" + error_message)
+            raise ParserError(f"No flags provided for argument.")
 
-        if any([flag[0]=="-" for flag in flags]) and not all([flag[0]=="-" for flag in flags]):
-            raise ParserError(f"Flags for optional arguments must begin with - or --:\n\t" + error_message)
+        if shorthands or longhands:
+            offenders = [flag for flag in flags if flag not in (shorthands + longhands)]
+            if offenders:
+                # We have some flags beginning with - or -- but not all.
+                # the inconsistency is ambiguous; the user could be trying to define
+                # an optional argument or an operand, but we give an error message
+                # assuming they are going for an optional argument and simply forgot
+                # the prefix.
+                if len(offenders[0]) > 1:
+                    raise ParserError(f"Optional argument flag '{offenders[0]}' must be prefixed with '--'")
+                else:
+                    raise ParserError(f"Optional argument flag '{offenders[0]}' must be prefixed with '-'")
 
-        if any([flag[:2]!="--" and flag[0]=="-" and len(flag)>2 for flag in flags]):
-            raise ParserError(f"Shorthand flags must be a single letter:\n\t" + error_message)
+        offenders = [flag for flag in shorthands if len(flag)>2]
+        if offenders:
+            raise ParserError(f"Flag '{offenders[0]}' with prefix '-' must be a single letter")
 
         # no -- or - implies operand (mandatory argument)
-        if not any([flag[0]=="-" for flag in flags]):
-            self.operands.append({
-                "value" : default,
-                "flags" : flags,
-                "help" : str(usage)
-            })
+        if len(shorthands) + len(longhands) == 0:
+            if name:
+                raise ParserError(f"Refusing given argument name '{name}': Positional arguments cannot be named")
+            self.add_operand(*flags, help=help, default=default)
 
         # inclusion of - or -- in flags implies optional argument
         else:
-            longhand = [flag for flag in flags if "--" in flag[:2]]
-            shorthand = [flag for flag in flags if flag not in longhand]
-            if longhand:
-                name = longhand[0][2:].replace("-", "_") # name of argument is the first longform without initial --
+            self.add_option(*flags, help=help, default=default, name=name)
+
+    def add_operand(self, *flags, help, default):
+        self.operands.append({
+            "value" : default,
+            "flags" : flags,
+            "help" : str(help)
+        })
+
+    def add_option(self, *flags, help, default, name):
+        if not name:
+            longhands = [flag for flag in flags if "--" in flag[:2]]
+            shorthands = [flag for flag in flags if flag not in longhands]
+            if longhands:
+                name = longhands[0][2:].replace("-", "_") # name of argument is the first longform without initial --
             else:
-                name = shorthand[0][1:] # otherwise, name of argument is first shorthand without initial -
-            self.options[name] = {
-                "value" : default,
-                "flags" : flags,
-                "help" : str(usage)
-            }
+                name = shorthands[0][1:] # otherwise, name of argument is first shorthand without initial -
+        self.options[name] = {
+            "value" : default,
+            "flags" : flags,
+            "help" : str(help)
+        }
 
     def help(self):
         message = "\n"
@@ -78,7 +103,8 @@ class Parser:
         if self.operands:
             for op in self.operands:
                 usage.append(op["flags"][0])
-        message += " ".join(usage)
+        usage = " ".join(usage)
+        message += usage
 
         # program desciption
         if self.description:
@@ -152,7 +178,7 @@ class Parser:
                         options[name] = True
                         break
                 else:
-                    raise ParserError("Unrecognized optional argument. See usage:\n" + usage)
+                    raise ParserError(f"Unrecognized optional argument '{arg}'.\nInclude -h or --help to see usage.")
                 
             # check for grouped shorthand flags
             elif arg[0] == "-":
@@ -162,13 +188,13 @@ class Parser:
                             options[name] = True
                             break
                     else:
-                        raise ParserError("Unrecognized optional argument. See usage:\n" + usage)
+                        raise ParserError(f"Unrecognized optional argument '{arg}'.\nInclude -h or --help to see usage.")
 
             # must be positional argument, so add to operands
             else:
                 operands.append(arg)
                 if len(operands) > len(self.operands):
-                    raise ParserError("Too many positional arguments. See usage:\n" + usage)
+                    raise ParserError(f"Error on argument '{arg}': Too many positional arguments.\nInclude -h or --help to see usage.")
 
         return operands, Map(options)
 
@@ -181,7 +207,7 @@ class Map(dict):
     https://stackoverflow.com/questions/2352181/how-to-use-a-dot-to-access-members-of-dictionary
     """
     def __init__(self, dictionary):
-        super(Map, self).__init__(dictionary)
+        super().__init__(dictionary)
         try:
             for k, v in dictionary.items():
                 self[k] = v
@@ -194,9 +220,12 @@ class Map(dict):
 if __name__ == "__main__":
     parser = Parser()
     parser.add_argument("-d", "--dry-run")
-    parser.add_argument("-s", "--silent", usage="Quiet mode. Do not print progress to console.")
-    parser.add_argument("folios", usage="Specify which folios to load.")
-    operands, options = parser.parse_args(["-d", "-d", "--dry-run", "-s", "[005v, 005r]", "-s"])
-    print(operands)
-    print(options)
+    parser.add_argument("-s", "--silent", help="Quiet mode. Do not print progress to console.")
+    parser.add_argument("folios", help="Specify which folios to load.")
+
+    args = "-d --dry-run -s file.txt".split()
+
+    operands, options = parser.parse_args(args)
+    print("operands:", operands)
+    print("options:", options)
     print(options.silent)
