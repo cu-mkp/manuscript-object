@@ -12,10 +12,7 @@ properties = ['animal', 'body_part', 'currency', 'definition',
               'music', 'plant', 'place', 'personal_name',
               'profession', 'sensory', 'tool', 'time', 'weapon']
 
-manuscript_data_path = os.path.dirname(os.getcwd()) + "/m-k-manuscript-data"
 thesaurus_path = os.getcwd() + "/thesaurus"
-assert(os.path.exists(manuscript_data_path)), ("Could not find manuscript data directory: " + manuscript_data_path)
-print("Using manuscript data directory:", manuscript_data_path)
 
 def use_thesaurus(entries: Dict[str, Recipe]) -> List[Recipe]:
   """
@@ -88,7 +85,7 @@ def process_file(filepath: str) -> Dict[str, str]:
         entries[key] = et.tostring(div, pretty_print=False).decode()
   return entries
 
-def generate_complete_manuscript(load_json=False, apply_corrections=True, silent=False) -> Dict[str, Recipe]:
+def generate_complete_manuscript(manuscript_data_path, load_json=False, apply_corrections=True, silent=False) -> Dict[str, Recipe]:
   """
   Generate complete manuscript by extracting the text from each folder in /m-k-manuscript-data/ms-xml/
   Apply corrections if specified.

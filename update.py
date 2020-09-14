@@ -1,4 +1,4 @@
-# Last Updated | 2020-09-08
+# Last Updated | 2020-09-14
 # Python Modules
 import os
 import sys
@@ -25,10 +25,9 @@ prop_dict = {'animal': 'al', 'body_part': 'bp', 'currency': 'cn', 'definition': 
               'profession': 'pro', 'sensory': 'sn', 'tool': 'tl', 'time': 'tmp', 'weapon': 'wp',
               'german': 'de', 'greek': 'el', 'italian': 'it', 'latin': 'la', 'occitan': 'oc', 'poitevin': 'po',}
 
-manuscript_data_path = os.path.dirname(os.getcwd()) + "/m-k-manuscript-data"
-assert(os.path.exists(manuscript_data_path)), ("Could not find manuscript data directory: " + manuscript_data_path)
+manuscript_data_path = os.path.dirname(os.getcwd()) + "/m-k-manuscript-data" # default
 
-def update_metadata(manuscript: BnF) -> None:
+def update_metadata(manuscript: BnF, manuscript_data_path: str) -> None:
   """
   Update /m-k-manuscript-data/metadata/entry_metadata.csv with the current manuscript. Create a Pandas DataFrame
   indexed by entry. Create data columns, and remove the column that contains the entry objects. Save File.
@@ -57,7 +56,7 @@ def update_metadata(manuscript: BnF) -> None:
 
   df.to_csv(f'{manuscript_data_path}/metadata/entry_metadata.csv', index=False)
 
-def update_entries(manuscript: BnF) -> None:
+def update_entries(manuscript: BnF, manuscript_data_path: str) -> None:
   """
   Update /m-k-manuscript-data/entries/ with the current manuscript from /ms-xml/. For each version, delete all existing
   entries. Regenerate folio text entry by entry, and save the file.
@@ -104,7 +103,7 @@ def update_entries(manuscript: BnF) -> None:
         f_xml.write(content_xml)
         f_xml.close()
 
-def update_all_folios(manuscript: BnF) -> None:
+def update_all_folios(manuscript: BnF, manuscript_data_path: str) -> None:
   """
   Update /m-k-manuscript-data/allFolios/ with the current manuscript from /ms-xml/.
 
@@ -132,7 +131,7 @@ def update_all_folios(manuscript: BnF) -> None:
       f.write(text)
       f.close()
 
-def update_ms(manuscript: BnF) -> None:
+def update_ms(manuscript: BnF, manuscript_data_path: str) -> None:
   """
   Update /m-k-manuscript-data/update_ms/ with the current manuscript from /ms-xml/.
   Iterate through /ms-xml/ for each version, remove tags, and save to /ms-txt/.
@@ -254,14 +253,25 @@ def update():
   parser = argparse.ArgumentParser(description="Generate derivative files from original ms-xml folios.")
   parser.add_argument('-d', '--dry-run', help="Generate as usual, but do not write derivatives.", action="store_true")
   parser.add_argument('-s', '--silent', help="Silence output. Do not write generation progress to terminal.", action="store_true")
+  parser.add_argument('-b', '--bypass', help="Bypass user y/n confirmation. Useful for automation.", action="store_true")
   parser.add_argument('-c', '--cache', help="Save manuscript object to a JSON cache for quicker loading next time.", action="store_true")
   parser.add_argument('-q', '--quick', help="Use JSON cache of manuscript object to speed up generation process. Don't do this if you need to include changes from ms-xml!", action="store_true")
   parser.add_argument('-a', '--all-folios', help="Generate allFolios derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
   parser.add_argument('-m', '--metadata', help="Generate metadata derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
   parser.add_argument('-t', '--txt', help="Generate ms-txt derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
   parser.add_argument('-e', '--entries', help="Generate entries derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
+  parser.add_argument("path", action="store", default=manuscript_data_path, help="Path to m-k-manuscript-data directory. Defaults to the sibling of your current directory.")
 
   options = parser.parse_args()
+
+  # verify manuscript-data path
+  assert(os.path.exists(options.path)), ("Could not find manuscript data directory: " + options.path)
+  assert(os.path.exists(options.path + "/ms-xml")), ("Could not find ms-xml folder in manuscript data directory: " + options.path + "/ms-xml")
+
+  if not options.bypass:
+    okay = input(f"Using manuscript data path: {options.path}. Confirm (y/n)? ").lower() in ("y", "yes")
+    if not okay:
+      return
 
   # if no specific derivatives were specified, generate all of them
   if not [op for op in [options.all_folios, options.metadata, options.txt, options.entries] if op]:
@@ -269,24 +279,24 @@ def update():
   else:
     generate_all_derivatives = False
 
-  manuscript = BnF(load_json=options.quick, apply_corrections=False, silent=options.silent)
+  manuscript = BnF(options.path, load_json=options.quick, apply_corrections=False, silent=options.silent)
 
   if not options.dry_run:
     if options.metadata or generate_all_derivatives:
       print('Updating metadata')
-      update_metadata(manuscript)
+      update_metadata(manuscript, options.path)
 
     if options.entries or generate_all_derivatives:
       print('Updating entries')
-      update_entries(manuscript)
+      update_entries(manuscript, options.path)
 
     if options.txt or generate_all_derivatives:
       print('Updating ms-txt')
-      update_ms(manuscript)
+      update_ms(manuscript, options.path)
 
     if options.all_folios or generate_all_derivatives:
       print('Updating allFolios')
-      update_all_folios(manuscript)
+      update_all_folios(manuscript, options.path)
 
     update_time()
 
