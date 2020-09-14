@@ -251,10 +251,10 @@ def save_as_json(manuscript: BnF, outfile) -> None:
 def update():
 
   parser = argparse.ArgumentParser(description="Generate derivative files from original ms-xml folios.")
-  parser.add_argument('-d', '--dry-run', help="Generate as usual, but do not write derivatives.", action="store_true")
+  parser.add_argument('-d', '--dry-run', help="Generate as usual, but do not write derivatives (if -c is included, will still create a cache).", action="store_true")
   parser.add_argument('-s', '--silent', help="Silence output. Do not write generation progress to terminal.", action="store_true")
   parser.add_argument('-b', '--bypass', help="Bypass user y/n confirmation. Useful for automation.", action="store_true")
-  parser.add_argument('-c', '--cache', help="Save manuscript object to a JSON cache for quicker loading next time.", action="store_true")
+  parser.add_argument('-c', '--cache', help="Also save manuscript object to a JSON cache for quicker loading next time.", action="store_true")
   parser.add_argument('-q', '--quick', help="Use JSON cache of manuscript object to speed up generation process. Don't do this if you need to include changes from ms-xml!", action="store_true")
   parser.add_argument('-a', '--all-folios', help="Generate allFolios derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
   parser.add_argument('-m', '--metadata', help="Generate metadata derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
