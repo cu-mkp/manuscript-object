@@ -19,6 +19,16 @@ Note for TXT versions:
 - figures and comments are absent and unmarked
 
 # Running update.py
+0. Update `m-k-manuscript-data` with a `git pull`
+1. Navigate to your local `manuscript-object` directory.
+2. Make sure you're on the correct branch by typing `git status`. If you're not in the correct branch, type `git checkout [BRANCH_NAME]`.
+3. Run `git pull`.
+4. Run update.py. Detailed instructions are below, but specific tasks are listed here:
+  - To regenerate all the derivative files from originals: `python3 update.py`
+  - To test update.py without generating any derivative files: `python3 update.py -d`
+  - To only generate specific derivatives: `python3 update.py [--all-folios] [--entries] [--metadata] [--txt]`, without the brackets
+  - To show the help message: `python3 update.py -h`
+
 ```
 usage: update.py [-h] [-d] [-s] [-b] [-c] [-q] [-a] [-m] [-t] [-e] [path]
 
