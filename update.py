@@ -301,7 +301,7 @@ def update():
     update_time()
 
   if options.cache:
-    print("Saving to JSON")
+    print("Saving to JSON cache at: digital_manuscript.json")
     save_as_json(manuscript, "digital_manuscript.json")
 
 if __name__ == "__main__":
