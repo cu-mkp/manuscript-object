@@ -78,6 +78,6 @@ mkp/
     ...
 ```
 
-5. Run `python3 -m pipenv install` to install dependencies to the pipenv shell.
+5. Run `python3 -m pipenv install` to install dependencies to the pipenv shell. If you get a version error, try `python3 -m pipenv install --python [VERSION]`, where [VERSION] is the version of Python you just installed (e.g. 3.7.4).
 
 6. To enter the pipenv shell, run `python3 -m pipenv shell`. To exit, press ^D or type `exit`. Inside the pipenv shell, all outside dependencies for the repository are installed.
