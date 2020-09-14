@@ -260,7 +260,7 @@ def update():
   parser.add_argument('-m', '--metadata', help="Generate metadata derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
   parser.add_argument('-t', '--txt', help="Generate ms-txt derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
   parser.add_argument('-e', '--entries', help="Generate entries derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
-  parser.add_argument("path", action="store", default=manuscript_data_path, help="Path to m-k-manuscript-data directory. Defaults to the sibling of your current directory.")
+  parser.add_argument("path", nargs="?", action="store", default=manuscript_data_path, help="Path to m-k-manuscript-data directory. Defaults to the sibling of your current directory.")
 
   options = parser.parse_args()
 
