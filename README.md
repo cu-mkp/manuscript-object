@@ -59,4 +59,29 @@ pip install wordcloud
 
 5. We now need to run our notebooks. In anaconda powershell prompt, use cd to navigate to the folder where you copied the manuscript object. Then run `jupyter notebook`. In Jupyter you can now open the notebooks and run them.
 
-xxx
+# Running update.py
+```
+usage: update.py [-h] [-d] [-s] [-b] [-c] [-q] [-a] [-m] [-t] [-e] [path]
+
+Generate derivative files from original ms-xml folios.
+
+positional arguments:
+  path              Path to m-k-manuscript-data directory. Defaults to the sibling of your current directory.
+
+optional arguments:
+  -h, --help        show this help message and exit
+  -d, --dry-run     Generate as usual, but do not write derivatives.
+  -s, --silent      Silence output. Do not write generation progress to terminal.
+  -b, --bypass      Bypass user y/n confirmation. Useful for automation.
+  -c, --cache       Save manuscript object to a JSON cache for quicker loading next time.
+  -q, --quick       Use JSON cache of manuscript object to speed up generation process. Don't do this if you need to
+                    include changes from ms-xml!
+  -a, --all-folios  Generate allFolios derivative files. Disables generation of other derivatives unless those are
+                    also specified.
+  -m, --metadata    Generate metadata derivative files. Disables generation of other derivatives unless those are also
+                    specified.
+  -t, --txt         Generate ms-txt derivative files. Disables generation of other derivatives unless those are also
+                    specified.
+  -e, --entries     Generate entries derivative files. Disables generation of other derivatives unless those are also
+                    specified.
+```
