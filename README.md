@@ -80,4 +80,6 @@ mkp/
 
 5. Run `python3 -m pipenv install` to install dependencies to the pipenv shell. If you get a version error, try `python3 -m pipenv install --python [VERSION]`, where [VERSION] is the version of Python you just installed (e.g. 3.7.4).
 
-6. To enter the pipenv shell, run `python3 -m pipenv shell`. To exit, press ^D or type `exit`. Inside the pipenv shell, all outside dependencies for the repository are installed. If you just want to run a specific command (e.g. run a file) without entering the shell, use `python3 -m pipenv run [COMMAND]`. If you find yourself doing this often, consider adding an alias, e.g. so you can simply write: `pipenv run python3 update.py`.
+6. To enter the pipenv shell, run `python3 -m pipenv shell`. To exit, press ^D or type `exit`. Inside the pipenv shell, all outside dependencies for the repository are installed.
+
+Helpful hint: If you just want to run a specific command (e.g. run a file) without entering the shell, use `python3 -m pipenv run [COMMAND]`. If you find yourself doing this often, consider adding an alias, e.g. so you can simply write: `pipenv run python3 update.py`.
