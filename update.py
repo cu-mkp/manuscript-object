@@ -150,6 +150,7 @@ def update_ms(manuscript_data_path: str) -> None:
           text = f.read()
 
         # remove xml, normalize whitespace
+        # TODO: use the prepare_txt() function from Recipe for this. Store the function in helpers, maybe?
         root = et.XML(text.encode()) # lxml only accepts encoded bytes versions of strings
         text = et.tostring(root, method="text", encoding="utf-8").decode()
 
@@ -272,7 +273,7 @@ def update():
       return
 
   # if no specific derivatives were specified, generate all of them
-  if not [op for op in [options.all_folios, options.metadata, options.txt, options.entries] if op]:
+  if not any([options.all_folios, options.metadata, options.txt, options.entries]):
     generate_all_derivatives = True
   else:
     generate_all_derivatives = False
