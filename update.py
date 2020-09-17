@@ -1,4 +1,4 @@
-# Last Updated | 2020-09-14
+# Last Updated | 2020-09-16
 # Python Modules
 import os
 import sys
@@ -12,7 +12,7 @@ import pandas as pd
 from datetime import datetime
 
 # Local Modules
-from digital_manuscript import BnF
+from digital_manuscript import Manuscript
 from recipe import Recipe
 
 versions = ['tc', 'tcn', 'tl']
@@ -27,7 +27,7 @@ prop_dict = {'animal': 'al', 'body_part': 'bp', 'currency': 'cn', 'definition': 
 
 manuscript_data_path = os.path.dirname(os.getcwd()) + "/m-k-manuscript-data" # default
 
-def update_metadata(manuscript: BnF, manuscript_data_path: str) -> None:
+def update_metadata(manuscript: Manuscript, manuscript_data_path: str) -> None:
   """
   Update /m-k-manuscript-data/metadata/entry_metadata.csv with the current manuscript. Create a Pandas DataFrame
   indexed by entry. Create data columns, and remove the column that contains the entry objects. Save File.
@@ -56,7 +56,7 @@ def update_metadata(manuscript: BnF, manuscript_data_path: str) -> None:
 
   df.to_csv(f'{manuscript_data_path}/metadata/entry_metadata.csv', index=False)
 
-def update_entries(manuscript: BnF, manuscript_data_path: str) -> None:
+def update_entries(manuscript: Manuscript, manuscript_data_path: str) -> None:
   """
   Update /m-k-manuscript-data/entries/ with the current manuscript from /ms-xml/. For each version, delete all existing
   entries. Regenerate folio text entry by entry, and save the file.
@@ -103,7 +103,7 @@ def update_entries(manuscript: BnF, manuscript_data_path: str) -> None:
         f_xml.write(content_xml)
         f_xml.close()
 
-def update_all_folios(manuscript: BnF, manuscript_data_path: str) -> None:
+def update_all_folios(manuscript: Manuscript, manuscript_data_path: str) -> None:
   """
   Update /m-k-manuscript-data/allFolios/ with the current manuscript from /ms-xml/.
 
@@ -131,7 +131,7 @@ def update_all_folios(manuscript: BnF, manuscript_data_path: str) -> None:
       f.write(text)
       f.close()
 
-def update_ms(manuscript: BnF, manuscript_data_path: str) -> None:
+def update_ms(manuscript: Manuscript, manuscript_data_path: str) -> None:
   """
   Update /m-k-manuscript-data/update_ms/ with the current manuscript from /ms-xml/.
   Iterate through /ms-xml/ for each version, remove tags, and save to /ms-txt/.
@@ -179,7 +179,7 @@ def update_time():
   f.write('\n'.join(lines))
   f.close
 
-def make_json(manuscript: BnF):
+def make_json(manuscript: Manuscript):
   '''
   Make the manuscript into a JSON-friendly dictionary with the following format:
     {
@@ -239,7 +239,7 @@ def make_json(manuscript: BnF):
     }
   return manuscript_dict
 
-def save_as_json(manuscript: BnF, outfile) -> None:
+def save_as_json(manuscript: Manuscript, outfile) -> None:
   '''
   Save the manuscript in JSON format to a specified .json file.
   '''
@@ -279,7 +279,7 @@ def update():
   else:
     generate_all_derivatives = False
 
-  manuscript = BnF(options.path, load_json=options.quick, apply_corrections=False, silent=options.silent)
+  manuscript = Manuscript(options.path, load_json=options.quick, use_thesaurus=False, silent=options.silent)
 
   if not options.dry_run:
     if options.metadata or generate_all_derivatives:

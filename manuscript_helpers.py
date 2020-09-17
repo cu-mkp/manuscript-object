@@ -85,7 +85,7 @@ def process_file(filepath: str) -> Dict[str, str]:
         entries[key] = et.tostring(div, pretty_print=False).decode()
   return entries
 
-def generate_complete_manuscript(manuscript_data_path, load_json=False, apply_corrections=True, silent=False) -> Dict[str, Recipe]:
+def generate_complete_manuscript(manuscript_data_path, load_json=False, use_thesaurus=True, silent=False) -> Dict[str, Recipe]:
   """
   Generate complete manuscript by extracting the text from each folder in /m-k-manuscript-data/ms-xml/
   Apply corrections if specified.
@@ -151,7 +151,7 @@ def generate_complete_manuscript(manuscript_data_path, load_json=False, apply_co
       print(f"Generating Recipe object for {entry_id}...")
 
   # if specified, manually rewrite entry properties based on thesaurus.
-  if apply_corrections:
+  if use_thesaurus:
     entries = use_thesaurus(entries)
 
   return entries

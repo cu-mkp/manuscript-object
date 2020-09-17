@@ -8,22 +8,22 @@ from manuscript_helpers import generate_complete_manuscript, common_element
 properties = ['animal', 'body_part', 'currency', 'definition', 'environment', 'material', 'medical', 'measurement',
               'music', 'plant', 'place', 'personal_name', 'profession', 'sensory', 'tool', 'time', 'weapon']
 
-class BnF():
+class Manuscript():
 
-  def __init__(self, manuscript_data_path, entry_list: List[str] = [], load_json: bool = False, apply_corrections: bool = True, silent: bool = False) -> None:
+  def __init__(self, manuscript_data_path, entry_list: List[str] = [], load_json: bool = False, use_thesaurus: bool = True, silent: bool = False) -> None:
     """
     Initialize entire manuscript as a dictionary of Recipe objected keyed by div ID.
     If a list of IDs is given, return a dict with these entries only.
     
     Inputs:
       entry_list: A list of div IDs
-      apply_corrections: A bool deciding whether or not to apply the changes detailed in teh thesaurus.
+      use_thesaurus: A bool deciding whether or not to apply the changes detailed in teh thesaurus.
                          For more information, checkout thesaurus.py.
     
     Outputs:
       None
     """
-    complete_manuscript = generate_complete_manuscript(manuscript_data_path, load_json=load_json, apply_corrections=apply_corrections, silent=silent)
+    complete_manuscript = generate_complete_manuscript(manuscript_data_path, load_json=load_json, use_thesaurus=use_thesaurus, silent=silent)
     if entry_list: # choose specified entries
       self.entries = {i:e for i, e in complete_manuscript.items() if e.identity in entry_list}
     else: # otherwise, return all entries
