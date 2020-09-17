@@ -1,7 +1,5 @@
 import os
-import re
 import pandas as pd
-from collections import OrderedDict
 from typing import List, Union, Optional, Dict
 from recipe import Recipe
 import json
@@ -66,7 +64,7 @@ def process_file(filepath: str) -> Dict[str, str]:
     entries: a dictionary containing the text of each entry keyed by folio and div IDs. 
   """
 
-  entries = OrderedDict()
+  entries = {}
   # read file, extract text and folio ID
   with open(filepath, encoding="utf-8", errors="surrogateescape") as f:
     text = f.read()
@@ -95,8 +93,8 @@ def generate_complete_manuscript(manuscript_data_path, load_json=False, use_thes
   Outputs:
     entries: A dictionary of Recipe objects keyed by div ID. 
   """
-  entries = OrderedDict() # initialize dict to return. identity: entry object/Recipe Class
-  versions = OrderedDict({'tc': {}, 'tcn': {}, 'tl': {}}) # holds contents of each folder before combined
+  entries = {} # initialize dict to return. identity: entry object/Recipe Class
+  versions = {'tc': {}, 'tcn': {}, 'tl': {}} # holds contents of each folder before combined
   
   """
   Iterate through each folder in /ms-xml/. Use process_file() to locate divs
@@ -110,14 +108,14 @@ def generate_complete_manuscript(manuscript_data_path, load_json=False, use_thes
     manuscript_dict = json.load(f)
     f.close()
     for identity, entry in manuscript_dict["entries"].items():
-      entries[identity] = Recipe(entry["id"], entry["folio"], entry["versions"]["tc"], entry["versions"]["tcn"], entry["versions"]["tl"], json_dict=entry)
       if not silent:
         print("Generating Recipe object from JSON for entry with ID", entry["id"])
+      entries[identity] = Recipe(entry["id"], entry["folio"], entry["xml"]["tc"], entry["xml"]["tcn"], entry["xml"]["tl"], json_dict=entry)
     return entries
   
   for version in versions: 
     dir_path = f'{manuscript_data_path}/ms-xml/{version}/'
-    entry_dict = OrderedDict()
+    entry_dict = {}
 
     for r, d, f in os.walk(dir_path):
       for filename in f: # iterate through /ms-xml/{version} folder
@@ -128,7 +126,6 @@ def generate_complete_manuscript(manuscript_data_path, load_json=False, use_thes
         for identity, text in info.items(): # add each entry to dictionary
           entry_dict[identity] = text
 
-    entry_dict = OrderedDict(sorted(entry_dict.items(), key=lambda x: x[0])) # sort entry_dict by key
     versions[version] = entry_dict # save entry dict in the versions dict
   
   """
@@ -139,17 +136,17 @@ def generate_complete_manuscript(manuscript_data_path, load_json=False, use_thes
   for identity in versions['tc'].keys():
     folio, entry_id = identity.split(';')
     tc, tcn, tl = [x.get(identity).strip() for x in versions.values()]
+    if not silent:
+      print(f"Generating Recipe object for {entry_id}...")
     if entry_id in entries.keys():
       old = entries[entry_id]
       entries[entry_id] = Recipe(entry_id, old.folio,
-                                 old.versions['tc'] + '\n\n' + tc,
-                                 old.versions['tcn'] + '\n\n' + tcn,
-                                 old.versions['tl'] + '\n\n' + tl)
+                                 old.xml['tc'] + '\n\n' + tc,
+                                 old.xml['tcn'] + '\n\n' + tcn,
+                                 old.xml['tl'] + '\n\n' + tl)
     else:
       entries[entry_id] = Recipe(entry_id, folio, tc, tcn, tl)
-    if not silent:
-      print(f"Generating Recipe object for {entry_id}...")
-
+    
   # if specified, manually rewrite entry properties based on thesaurus.
   if use_thesaurus:
     entries = use_thesaurus(entries)

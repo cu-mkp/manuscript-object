@@ -1,8 +1,7 @@
-# Last Updated | 2020-09-16
+# Last Updated | 2020-09-17
 # Python Modules
 import os
 import sys
-import re
 from typing import List, Dict
 import json
 import argparse
@@ -10,6 +9,7 @@ import argparse
 # Third Party Modules
 import pandas as pd
 from datetime import datetime
+from lxml import etree as et
 
 # Local Modules
 from digital_manuscript import Manuscript
@@ -43,9 +43,9 @@ def update_metadata(manuscript: Manuscript, manuscript_data_path: str) -> None:
   df['folio_display'] = df.entry.apply(lambda x: x.folio.lstrip('0'))
   df['div_id'] = df.entry.apply(lambda x: x.identity)
   df['categories'] = df.entry.apply(lambda x: (';'.join(x.categories)))
-  df['heading_tc'] = df.entry.apply(lambda x: x.find_title(x.versions['tc'], remove_del_text=True))
-  df['heading_tcn'] = df.entry.apply(lambda x: x.find_title(x.versions['tcn'], remove_del_text=True))
-  df['heading_tl'] = df.entry.apply(lambda x: x.find_title(x.versions['tl'], remove_del_text=True))
+  df['heading_tc'] = df.entry.apply(lambda x: x.find_title('tc', remove_del_text=True))
+  df['heading_tcn'] = df.entry.apply(lambda x: x.find_title('tcn', remove_del_text=True))
+  df['heading_tl'] = df.entry.apply(lambda x: x.find_title('tl', remove_del_text=True))
 
   for prop, tag in prop_dict.items():
     for version in versions:
@@ -131,30 +131,27 @@ def update_all_folios(manuscript: Manuscript, manuscript_data_path: str) -> None
       f.write(text)
       f.close()
 
-def update_ms(manuscript: Manuscript, manuscript_data_path: str) -> None:
+def update_ms(manuscript_data_path: str) -> None:
   """
   Update /m-k-manuscript-data/update_ms/ with the current manuscript from /ms-xml/.
   Iterate through /ms-xml/ for each version, remove tags, and save to /ms-txt/.
 
   Input:
-    manuscript -- Python object of the manuscript defined in digital_manuscript.py
+    None
   Output:
     None
   """
   for version in versions:
-    for r, d, f in os.walk(f'{manuscript_data_path}/ms-xml/{version}'):
+    for _, _, f in os.walk(f'{manuscript_data_path}/ms-xml/{version}'):
       for filename in f: # iterate through /ms-xml/{version} folder
         # read xml file
-        text = ''
         filepath = f'{manuscript_data_path}/ms-xml/{version}/{filename}'
         with open(filepath, encoding="utf-8", errors="surrogateescape") as f:
           text = f.read()
 
         # remove xml, normalize whitespace
-        text = text.replace('\n', '**NEWLINE**')
-        text = re.sub(r'<.*?>', '', text)
-        text = text.replace('**NEWLINE**', '\n')
-        text = text.strip(' \n')
+        root = et.XML(text.encode()) # lxml only accepts encoded bytes versions of strings
+        text = et.tostring(root, method="text", encoding="utf-8").decode()
 
         # write txt file
         txt_filepath = filepath.replace('xml', 'txt')
@@ -231,7 +228,8 @@ def make_json(manuscript: Manuscript):
     manuscript_dict["entries"][identity] = {
       "id" : entry.identity,
       "folio" : entry.folio,
-      "versions" : entry.versions,
+      "xml" : entry.xml,
+      "txt" : entry.txt,
       "title" : entry.title,
       "categories" : entry.categories,
       "length" : entry.length,
@@ -292,7 +290,7 @@ def update():
 
     if options.txt or generate_all_derivatives:
       print('Updating ms-txt')
-      update_ms(manuscript, options.path)
+      update_ms(options.path)
 
     if options.all_folios or generate_all_derivatives:
       print('Updating allFolios')
