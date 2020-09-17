@@ -184,8 +184,12 @@ class Recipe:
     def prepare_txt(self, root: et.Element) -> et.Element:
         # see https://github.com/cu-mkp/m-k-manuscript-data/issues/1613 for discussion on this matter
         for deltag in root.findall(".//del"):
-            deltag.text = '' if not deltag.text else f'<-{deltag.text}->'
-        # potentially something for <ill/> tags??
+            deltag.text = '<-' if not deltag.text else f'<-{deltag.text}' # add <- before current content
+            deltag.tail = '->' if not deltag.tail else f'->{deltag.tail}' # add -> before next content
+        for illtag in root.findall(".//ill"):
+            if illtag.text:
+                print(illtag.text)
+            illtag.text = "[illegible]"
         return root
 
     def text(self, version: str, xml: bool = False) -> str:
