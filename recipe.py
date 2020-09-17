@@ -46,7 +46,7 @@ class Recipe:
         self.captions = {k: self.find_captions(k) for k in self.xml.keys()}
 
     def make_etree(self, xml_string: str):
-        xml_string = "<entry>" + xml_string + "</entry>"
+        xml_string = f"<entry>{xml_string}</entry>"
         # ^^ this is temporary band-aid code to stave off a larger problem.
         # see: https://github.com/cu-mkp/manuscript-object/issues/33.
         return et.XML(xml_string.encode())
@@ -88,16 +88,12 @@ class Recipe:
         else:
             title = titles[0]
             if remove_del_text:
-                for deltag in title.findall(".//del"):
-                    # see https://github.com/cu-mkp/m-k-manuscript-data/issues/1613 for discussion on this matter
-                    deltag.text = "" if not deltag.text else "<-" + deltag.text + "->"
+                title = self.prepare_txt(title)
             return et.tostring(title, method="text", encoding="utf-8").decode()
 
     def clean_length(self, version: str) -> int:
         # TODO: make it word count instead of character count.
-        root = self.root[version] 
-        text = et.tostring(root, method="text", encoding="utf-8").decode()
-        return len(text)
+        return len(self.txt[version])
 
     def find_tagged_text(self, text: str, tag: str) -> List[str]:
         """
@@ -185,12 +181,20 @@ class Recipe:
     def find_captions(self, version: str) -> List[str]:
         return [tag.text for tag in self.root[version].findall(".//caption")]
 
+    def prepare_txt(self, root: et.Element) -> et.Element:
+        # see https://github.com/cu-mkp/m-k-manuscript-data/issues/1613 for discussion on this matter
+        for deltag in root.findall(".//del"):
+            deltag.text = '' if not deltag.text else f'<-{deltag.text}->'
+        # potentially something for <ill/> tags??
+        return root
+
     def text(self, version: str, xml: bool = False) -> str:
         """ Getter method for text based on version, xml. """
         if xml:
             return self.xml[version]
         else:
-            return et.tostring(self.root[version], method="text", encoding="utf-8").decode()
+            root = self.prepare_txt(self.root[version]) # e.g. add <- -> to text within <del> tags
+            return et.tostring(root, method="text", encoding="utf-8").decode()
 
 """
     def context(self, term: str, version: str) -> str:
