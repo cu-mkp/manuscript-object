@@ -1,5 +1,4 @@
 from typing import List, Dict, Optional
-from collections import OrderedDict
 from margin import Margin
 from lxml import etree as et
 
@@ -95,23 +94,20 @@ class Recipe:
         # TODO: make it word count instead of character count.
         return len(self.txt[version])
 
-    def find_tagged_text(self, text: str, tag: str) -> List[str]:
+    def find_tagged_text(self, version: str, tag: str) -> List[str]:
         """
         Use lxml parsing to find text between the given tag from the source text. This is a helper function for
         find_all_properties, which handles specifying the version.
         
         Input:
-          text: str -- source text with xml tags
+          text: str -- which version to get XML from
           tag: str -- property tag of the manuscript listed above in prop_dict
         Output:
           List[str]: A list of the form [tagged_str1, tagged_str2, ...]
         """
 
-        text = "<entry>" + text + "</entry>" # this is temporary band-aid code to stave off a larger problem.
-                                             # see: https://github.com/cu-mkp/manuscript-object/issues/33.
-
-        root = et.XML(text.encode()) # lxml only accepts encoded bytes versions of strings
-        tags = root.findall(".//" + tag) # ".//" is an XPath prefix that searches the entire XML document recursively (not just at current level)
+        root = self.root[version]
+        tags = root.findall(f".//{tag}") # ".//" is an XPath prefix that searches the entire XML document recursively (not just at current level)
         return [et.tostring(tag, method="text", encoding="utf-8").decode().replace("\n", " ") for tag in tags]
 
     def find_all_properties(self):
@@ -140,9 +136,8 @@ class Recipe:
         all_properties = {}
         for prop, tag in prop_dict.items():
             p_dict = {}
-            for version in self.xml:
-                text = self.text(version, xml=True)
-                p_dict[version] = self.find_tagged_text(text, tag)
+            for version in self.xml.keys():
+                p_dict[version] = self.find_tagged_text(version, tag)
             all_properties[prop] = p_dict
         return all_properties
 
