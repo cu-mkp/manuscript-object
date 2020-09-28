@@ -7,7 +7,7 @@ Each entry has been grouped into at least one (and up to three) descriptive cate
 > For example, `<div id="p004v_1" categories="varnish;arms and armor">` for the entry on fol. 4v, "Black varnish for sword guard, bands for trunks, &c"
 
 ## Percentage of Entries by Category
-As can be seen by the bargraph below, "casting" by far has the most entries of any category, followed by "painting" and then "metal process."
+As can be seen by the bar graph below, "casting" by far has the most entries of any category, followed by "painting" and then "metal process."
 
 ![categories-barplot](https://github.com/ronikaufman/manuscript-object/blob/context/manuscript_visualizations/barplots/categories_barplot.png?raw=true)
 
