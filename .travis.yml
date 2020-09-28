@@ -3,7 +3,7 @@ python:
   - "3.8"
 # command to install dependencies
 install:
-  - pip install pipenv
+  - pip install pipenv==2020.8.13
   # - pipenv install --system
   - pipenv sync
   # - virtualenv env
