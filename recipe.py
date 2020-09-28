@@ -103,7 +103,7 @@ class Recipe:
 
         root = et.XML(text.encode()) # lxml only accepts encoded bytes versions of strings
         tags = root.findall(".//" + tag) # ".//" is an XPath prefix that searches the entire XML document recursively (not just at current level)
-        return [et.tostring(tag, method="text", encoding="utf-8").decode().replace("\n", " ") for tag in tags]
+        return [et.tostring(tag, method="text", encoding="utf-8", with_tail=False).decode().replace("\n", " ") for tag in tags]
 
     def find_all_properties(self):
         """

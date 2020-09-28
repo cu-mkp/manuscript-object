@@ -10,7 +10,7 @@ datetime = "*"
 pandas = "*"
 spacy = "*"
 inflection = "*"
-en-core-web-sm = {file = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz"}
+en-core-web-sm = {file = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz"}
 jupyter = "*"
 notebook = "*"
 tqdm = "*"
