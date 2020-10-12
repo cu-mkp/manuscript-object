@@ -1,4 +1,6 @@
-#m_k_data_to_thesaurus = f'{m_path}/manuscript-object/thesaurus'
+import os
+
+manuscript_data_path = os.path.dirname(os.getcwd()) + "/m-k-manuscript-data" # default m&k data directory
 
 versions = ['tc', 'tcn', 'tl']
 
@@ -57,44 +59,5 @@ categories = [
     "manuscript structure" 
 ]
 
-stylesheet = """ 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    exclude-result-prefixes="xs"
-    version="1.0">
-    <xsl:output method="text" encoding="UTF-8"/>
-    
-    <xsl:template match="/">
-        <xsl:apply-templates/>
-    </xsl:template>
-
-    <xsl:template match="corr">
-        <xsl:text>[</xsl:text>
-        <xsl:apply-templates/>
-        <xsl:text>]</xsl:text>
-    </xsl:template>
-
-    <xsl:template match="del">
-        <xsl:text>&lt;-</xsl:text>
-        <xsl:apply-templates/>
-        <xsl:text>-&gt;</xsl:text>
-    </xsl:template>
-
-    <xsl:template match="exp">
-        <xsl:text>{</xsl:text>
-        <xsl:apply-templates/>
-        <xsl:text>}</xsl:text>
-    </xsl:template>
-
-    <xsl:template match="ill">
-        <xsl:text>[illegible]</xsl:text>
-        <xsl:apply-templates/>
-    </xsl:template>
-    
-    <xsl:template match="sup">
-        <xsl:text>[</xsl:text>
-        <xsl:apply-templates/>
-        <xsl:text>]</xsl:text>
-    </xsl:template>
-</xsl:stylesheet>
-"""
+with open("annotations.xslt", "r") as fp:
+    stylesheet = fp.read()

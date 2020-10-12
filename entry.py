@@ -2,6 +2,9 @@ from typing import List, Dict
 from lxml import etree as et
 import utils
 
+# stylesheet to use for XSLT transformations
+transform = et.XSLT(et.parse("annotations.xslt"))
+
 # module-level functions for helping parse xml inside entries
 
 def generate_etree(xml_string: str) -> et.Element:
@@ -12,85 +15,25 @@ def to_xml_string(xml: et.Element) -> str:
     # take in an XML etree and render it as decoded utf-8 text, with tags and all
     return et.tostring(xml, encoding="utf-8", pretty_print=False).decode()
 
-def to_text(xml: et.Element, annotate=True) -> str:
+def to_string(xml: et.Element, *args, **kwargs) -> str:
     # take in an XML etree and convert it to text (remove all tags)
     # by default, use all editorial annotations
-    if annotate:
-        return xslt_transform(xml)
-    else:
-        return et.tostring(xml, method="text", encoding="utf-8").decode()
+    # TODO: ask for a better term than "annotations" -- they're not tags, what are they?
 
-def xslt_transform(xml: et.Element, stylesheet: str=utils.stylesheet) -> str:
-    transform = et.XSLT(et.XML(stylesheet.encode()))
-    return str(transform(xml))
+    return xslt_transform(xml, *args, **kwargs)
 
-def add_annotations(xml: et.Element, annotate=[]) -> et.Element:
+def xslt_transform(xml: et.Element, *args, **kwargs) -> str:
     # takes an etree element and returns an etree element with added annotations
     # e.g. adding <- -> around deleted text, or add "[illegible]" in <ill> tags
-    # annotate: list of strings specifying which (if any) editorial annotations to include
-    #           empty list or False for none, True for all
+    
+    # XSLT booleans are represented as "true()" and "false()"
+    for k,v in kwargs.items():
+        if v==True:
+            kwargs[k] = "true()"
+        elif v==False:
+            kwargs[k] = "false()"
 
-    # TODO: ask for a better term than "annotations" -- they're not tags, what are they?
-    # see https://github.com/cu-mkp/m-k-manuscript-data/issues/1613 for discussion on this matter
-
-    # correction
-    def annotate_corr(xml):
-        for element in xml.findall(".//corr"):
-            element.text = '[' if not element.text else f'[{element.text}'
-            element.tail = ']' if not element.tail else f']{element.tail}'
-        return xml
-        
-    # deletion
-    def annotate_del(xml):
-        for element in xml.findall(".//del"):
-            # can someone please remind me why I did it this way
-            element.text = '<-' if not element.text else f'<-{element.text}'
-            element.tail = '->' if not element.tail else f'->{element.tail}'
-        return xml
-
-    # expansion
-    def annotate_exp(xml):
-        for element in xml.findall(".//exp"):
-            element.text = '{' if not element.text else '{' + element.text
-            element.tail = '}' if not element.tail else '}' + element.tail
-        return xml
-
-    # illegible
-    def annotate_ill(xml):
-        for element in xml.findall(".//ill"):
-            element.text = "[illegible]"
-        return xml
-
-    # supplied
-    def annotate_sup(xml):
-        for element in xml.findall(".//sup"):
-            element.text = '[' if not element.text else f'[{element.text}'
-            element.tail = ']' if not element.tail else f']{element.tail}'
-        return xml
-
-    #TODO: add the rest of the annotations
-    #TODO: should I add in the annotations which are rendered as-is in DCE? e.g. emph and add
-    annotation_dispatch = {
-        "corr" : annotate_corr,
-        "del" : annotate_del,
-        "exp" : annotate_exp,
-        "ill" : annotate_ill,
-        "sup" : annotate_sup
-    }
-
-    if annotate==True:
-        for dispatch in annotation_dispatch.values():
-            xml = dispatch(xml)
-    elif annotate==False:
-        return xml
-    else:
-        for key in annotate:
-            try:
-                xml = annotation_dispatch.get(key)(xml)
-            except TypeError:
-                print(f"Error: unrecognized editorial tag: '{key}'.\nValid editorial tags: {', '.join(annotation_dispatch.keys())}")
-
-    return xml
+    return str(transform(xml, *args, **kwargs))
 
 def parse_categories(xml: et.Element) -> List[str]:
     # get the categories attribute of the first div in the TL version
@@ -100,11 +43,11 @@ def parse_categories(xml: et.Element) -> List[str]:
     else:
         return []
 
-def find_terms(xml: et.Element, tag: str, annotate=True) -> List[str]:
+def find_terms(xml: et.Element, tag: str, *args, **kwargs) -> List[str]:
     # takes an etree element to search
     # returns a list of all terms with a given tag, in plaintext
     tags = xml.findall(f".//{tag}")
-    return [to_text(tag, annotate=annotate).replace("\n", " ") for tag in tags]
+    return [to_string(tag, **kwargs).replace("\n", " ") for tag in tags]
 
 def parse_properties(xml: et.Element) -> Dict[str, List[str]]:
     # {prop1: [term1, term2, ...], prop2: [term1, term2, ...], ...}
@@ -117,8 +60,7 @@ def find_title(xml: et.Element) -> str:
     # get the first "head" term in plaintext with annotations
     # if none are found, return an empty string
 
-    # exclude del annotations
-    titles = find_terms(xml, "head", annotate=["corr", "exp", "ill", "sup"])
+    titles = find_terms(xml, "head", {"del":"false()"}) # exclude del annotations
     if titles:
         return titles[0]
     else:
@@ -136,7 +78,6 @@ def find_identity(xml: et.Element) -> str:
         return ''
 
 class Entry:
-
     def __init__(self, xml, identity=None, folio=None):
         # constructor: generate instance variables from xml string
         # identity: str
@@ -151,7 +92,7 @@ class Entry:
         self.data["identity"] = identity if identity else find_identity(self.xml) # if you're not given an identity, you can try to discern it from the id attribute of the first div
         self.data["folio"] = folio if folio else "" # if you're not given a folio, don't try to guess! 
 
-        self.data["text"] = to_text(self.xml, annotate=True)
+        self.data["text"] = to_string(self.xml)
         self.data["xml_string"] = to_xml_string(self.xml) #TODO: find a better name for this?
 
         self.data["title"] = find_title(self.xml)
@@ -162,14 +103,12 @@ class Entry:
     @classmethod
     def from_file(cls, filename: str, identity=None, folio=None):
         # altnernative constructor: read from a given file path and use the contents of that file as the xml
-        with open(filename, "r") as fp:
-            xml_string = fp.read().encode()
-        return cls.from_string(xml_string, identity=identity, folio=folio)
+        return cls(et.parse(filename), identity=identity, folio=folio)
 
     @classmethod
     def from_string(cls, xml_string, identity=None, folio=None):
         # alternative constructor: read from a string of valid XML
-        xml = generate_etree(xml_string) # this should work, right?
+        xml = generate_etree(xml_string)
         return cls(xml, identity=identity, folio=folio)
 
     def as_dict(self):
