@@ -21,10 +21,10 @@ The raw data (the xml-encoded transcriptions and translations of the manuscript 
 
 ### Notes and Observations and Why is This Interesting?
 
-- Casting: A large majority of casting recipes supports the theory that this is the author-practitioner's main focus and area of expertise. The casting entries are some of the longest and seen to contain the most first-hand observations and active experimentation.
+**Casting:** A large majority of casting recipes supports the theory that this is the author-practitioner's main focus and area of expertise. The casting entries are some of the longest and seen to contain the most first-hand observations and active experimentation.
 \[(add example of an entry with first-person language; recipes with repeated trials of same thing like sands or flies; graph of entry lengths)\]
 
-- Alchemy: While the manuscript was originally thought to contain alchemical writings, as was common for many "Books of Secrets" in the Renaissance that contained first-hand experimentation, the ditribution of categories shows that "alchemy" is one of the least prevalent categories. In fact, there is only one entry that is "alchemical": [fol. 52r, "The work done in Algiers"](https://edition640.makingandknowing.org/#/folios/52r/f/52r/tl)
+**Alchemy:** While the manuscript was originally thought to contain alchemical writings, as was common for many "Books of Secrets" in the Renaissance that contained first-hand experimentation, the ditribution of categories shows that "alchemy" is one of the least prevalent categories. In fact, there is only one entry that is "alchemical": [fol. 52r, "The work done in Algiers"](https://edition640.makingandknowing.org/#/folios/52r/f/52r/tl)
 
 ## Distribution of Entry Categories Across the Folios
 
@@ -37,15 +37,22 @@ Starting at the beginning of the manuscript on 1r and ending with the last page,
 
 ### Notes and Observations and Why is This Interesting?
 
-- Casting: The largest category is found throughout the entire manuscript, but clustering of entries can be seen in the second half, especially after fol. 115r or so.
+**Casting:**
+- The largest category is found throughout the entire manuscript, but clustering of entries can be seen in the second half, especially after fol. 115r or so.
 
-- Painting: There is a distinct cluster of entries around the 60s. This seems to start with [fol. 56v, "Painter"](https://edition640.makingandknowing.org/#/folios/56v/f/56v/tl), a relatively long entry which covers a wide variety of topics:
-     - pigments
-     - binding media
-     - tools: "For palettes to paint, ivory is excellent..."
-     - geographical practices: "The Italians soften by hatching with a large flattened paintbrush..."
+**Painting:**
+- There is a distinct cluster of entries around the 60s. This seems to start with [fol. 56v, "Painter"](https://edition640.makingandknowing.org/#/folios/56v/f/56v/tl), a relatively long entry which covers a wide variety of topics:
+     - pigments: "Vermilion ground by itself is wan and pale"
+     - binding media: "In distemper do not mix your different colors together"
+     - tools: "For palettes to paint, ivory is excellent"
+     - geographical practices: "The Italians soften by hatching with a large flattened paintbrush"
+- There is a section which appears in the continuation on fol. 57r that may provide further evidence that the author-practitioner's main focus, or perhaps his main area of expertise, is casting. Even in an entry about various painting techniques and materials, he draws immediate connection back to casting (bold has been added for emphasis and does not appear in the original):
+     - "...Lake takes long to dry in oil and for that reason one must **grind some glass** with it. But one needs to choose cristallin because it is cleaner. And because it would be too difficult to grind by itself, one must redden it on the fire, then when entirely red throw it into cold water, & it will crumble & pulverize easily for grinding it afterward. Being well ground it with a lot of water, **it resembles ground lead white**, but for all this it has no body. **I think it would be good for casting**."
+- The clustering of painting entries also corresponds to a section with very few casting entries. Is this a general trend? It seems to be that where there are painting entries there are no casting entries and vice versa. 
 
-which also corresponds to a section with very few casting entries. Is this a general trend? It seems to be that where there are painting entries there are no casting entries and vice versa. 
+**Use of a Scribe?**
+- While the great majority of the manuscript is written in one hand, there are a few instances of a different hand, including a number of sequential entries 
+
 
 manuscript/document/folio sequence
 sequentially 
