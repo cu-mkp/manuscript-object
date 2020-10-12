@@ -28,10 +28,15 @@ The raw data (the xml-encoded transcriptions and translations of the manuscript 
 ## Distribution of Entry Categories Across the Folios
 
 The manuscript is composed of 170 folios which is 340 pages:
+
 1 folio = front page and back page
+
 The first folio is 1r (recto = front) and 1v (verso = back), the second is 2r and 2v, then 3r, 3v, etc.
 
-Starting at the beginning of the manuscript on 1r and ending with the last page, 170v, each entry is plotted below by category. This shows us the distribution of the entry categories across the entire manuscript: one black vertical line = 1 entry.
+Starting at the beginning of the manuscript on 1r and ending with the last page, 170v, each entry is plotted below by category. This shows us the distribution of the entry categories across the entire manuscript.
+
+One black vertical line = 1 entry.
+
 ![categories-swarmplot-blank](https://github.com/cu-mkp/manuscript-object/blob/master/sandbox/blank_swarmplot.png?raw=true)
 
 ### Notes and Observations and Why is This Interesting?
