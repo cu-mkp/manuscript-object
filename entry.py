@@ -18,7 +18,7 @@ def to_text(xml: et.Element, annotate=True, with_tail=True) -> str:
     xml = add_annotations(xml, annotate=annotate) # e.g. add <- -> to text within <del> tags
     return et.tostring(xml, method="text", encoding="utf-8", with_tail=with_tail).decode()
 
-def add_annotations(xml: et.Element, annotate=[]) -> et.Element:
+def add_annotations(root: et.Element, annotate=[]) -> et.Element:
     # takes an etree element and returns an etree element with added annotations
     # e.g. adding <- -> around deleted text, or add "[illegible]" in <ill> tags
     # annotate: list of strings specifying which (if any) editorial annotations to include
@@ -26,6 +26,8 @@ def add_annotations(xml: et.Element, annotate=[]) -> et.Element:
 
     # TODO: ask for a better term than "annotations" -- they're not tags, what are they?
     # see https://github.com/cu-mkp/m-k-manuscript-data/issues/1613 for discussion on this matter
+
+    xml = et.Element()
 
     # correction
     def annotate_corr(xml):
@@ -129,7 +131,7 @@ def find_identity(xml: et.Element) -> str:
     else:
         return ''
 
-class Entry(dict):
+class Entry:
 
     def __init__(self, xml, identity=None, folio=None):
         # constructor: generate instance variables from xml string
@@ -152,6 +154,9 @@ class Entry(dict):
 
         self.data["categories"] = parse_categories(self.xml) 
         self.data["properties"] = parse_properties(self.xml) 
+
+        print(add_annotations(self.xml, annotate=True) is self.xml)
+        # whether they're the same object
 
     @classmethod
     def from_file(cls, filename: str, identity=None, folio=None):
