@@ -12,13 +12,19 @@ def to_xml_string(xml: et.Element) -> str:
     # take in an XML etree and render it as decoded utf-8 text, with tags and all
     return et.tostring(xml, encoding="utf-8", pretty_print=False).decode()
 
-def to_text(xml: et.Element, annotate=True, with_tail=True) -> str:
+def to_text(xml: et.Element, annotate=True) -> str:
     # take in an XML etree and convert it to text (remove all tags)
     # by default, use all editorial annotations
-    xml = add_annotations(xml, annotate=annotate) # e.g. add <- -> to text within <del> tags
-    return et.tostring(xml, method="text", encoding="utf-8", with_tail=with_tail).decode()
+    if annotate:
+        return xslt_transform(xml)
+    else:
+        return et.tostring(xml, method="text", encoding="utf-8").decode()
 
-def add_annotations(root: et.Element, annotate=[]) -> et.Element:
+def xslt_transform(xml: et.Element, stylesheet: str=utils.stylesheet) -> str:
+    transform = et.XSLT(et.XML(stylesheet.encode()))
+    return str(transform(xml))
+
+def add_annotations(xml: et.Element, annotate=[]) -> et.Element:
     # takes an etree element and returns an etree element with added annotations
     # e.g. adding <- -> around deleted text, or add "[illegible]" in <ill> tags
     # annotate: list of strings specifying which (if any) editorial annotations to include
@@ -26,8 +32,6 @@ def add_annotations(root: et.Element, annotate=[]) -> et.Element:
 
     # TODO: ask for a better term than "annotations" -- they're not tags, what are they?
     # see https://github.com/cu-mkp/m-k-manuscript-data/issues/1613 for discussion on this matter
-
-    xml = et.Element()
 
     # correction
     def annotate_corr(xml):
@@ -100,7 +104,7 @@ def find_terms(xml: et.Element, tag: str, annotate=True) -> List[str]:
     # takes an etree element to search
     # returns a list of all terms with a given tag, in plaintext
     tags = xml.findall(f".//{tag}")
-    return [to_text(tag, annotate=annotate, with_tail=False).replace("\n", " ") for tag in tags]
+    return [to_text(tag, annotate=annotate).replace("\n", " ") for tag in tags]
 
 def parse_properties(xml: et.Element) -> Dict[str, List[str]]:
     # {prop1: [term1, term2, ...], prop2: [term1, term2, ...], ...}
@@ -154,9 +158,6 @@ class Entry:
 
         self.data["categories"] = parse_categories(self.xml) 
         self.data["properties"] = parse_properties(self.xml) 
-
-        print(add_annotations(self.xml, annotate=True) is self.xml)
-        # whether they're the same object
 
     @classmethod
     def from_file(cls, filename: str, identity=None, folio=None):

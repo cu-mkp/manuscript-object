@@ -98,7 +98,7 @@ class Manuscript():
                     entry = Entry.from_file(os.path.join(root, filename)) # TODO: ask for folio??
 
                     # TODO: ask for output file name convention
-                    outfile = os.path.join(self.data_path, "ms-txt", version, filename)
+                    outfile = os.path.join(self.data_path, "ms-txt", version, filename.replace("xml", "txt"))
                     with open(outfile, 'w') as fp:
                         fp.write(entry.text)
 
