@@ -30,10 +30,25 @@ The raw data (the xml-encoded transcriptions and translations of the manuscript 
 
 The manuscript is composed of 170 folios which is 340 pages:
 1 folio = front page and back page
-The first folio is 1r (recto = front) and 1v (verso = back), the second is 2r and 2v, etc.
+The first folio is 1r (recto = front) and 1v (verso = back), the second is 2r and 2v, then 3r, 3v, etc.
 
-Starting at the beginning of the manuscript on 1r and ending with the last page, 170v, each entry is plotted below by category. This shows us the distribution of the entry categories across the entire manuscript.
+Starting at the beginning of the manuscript on 1r and ending with the last page, 170v, each entry is plotted below by category. This shows us the distribution of the entry categories across the entire manuscript: one black vertical line = 1 entry.
 ![categories-swarmplot-blank](https://github.com/cu-mkp/manuscript-object/blob/master/sandbox/blank_swarmplot.png?raw=true)
+
+### Notes and Observations and Why is This Interesting?
+
+- Casting: The largest category is found throughout the entire manuscript, but clustering of entries can be seen in the second half, especially after fol. 115r or so.
+
+- Painting: There is a distinct cluster of entries around the 60s. This seems to start with [fol. 56v, "Painter"](https://edition640.makingandknowing.org/#/folios/56v/f/56v/tl), a relatively long entry which covers a wide variety of topics:
+     - pigments
+     - binding media
+     - tools: "For palettes to paint, ivory is excellent..."
+     - geographical practices: "The Italians soften by hatching with a large flattened paintbrush..."
+
+which also corresponds to a section with very few casting entries. Is this a general trend? It seems to be that where there are painting entries there are no casting entries and vice versa. 
+
+manuscript/document/folio sequence
+sequentially 
 
 - \[ varnish category vs. painting - which ones are both? which ones are only one or the other? \]
 
