@@ -45,7 +45,7 @@ One black vertical line = 1 entry.
 - The largest category is found throughout the entire manuscript, but clustering of entries can be seen in the second half, especially after fol. 115r or so.
 
 **Painting:**
-- There is a distinct cluster of entries around the 60s. This seems to start with [fol. 56v, "Painter"](https://edition640.makingandknowing.org/#/folios/56v/f/56v/tl), a relatively long entry which covers a wide variety of topics:
+- There is a distinct cluster of entries around the 60s. This seems to start with [fol. 56v, "Painter,"](https://edition640.makingandknowing.org/#/folios/56v/f/56v/tl) a relatively long entry which covers a wide variety of topics:
      - pigments: "Vermilion ground by itself is wan and pale"
      - binding media: "In distemper do not mix your different colors together"
      - tools: "For palettes to paint, ivory is excellent"
