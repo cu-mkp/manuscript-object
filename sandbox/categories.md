@@ -21,10 +21,9 @@ The raw data (the xml-encoded transcriptions and translations of the manuscript 
 
 ### Notes and Observations and Why is This Interesting?
 
-**Casting:** A large majority of casting recipes supports the theory that this is the author-practitioner's main focus and area of expertise. The casting entries are some of the longest and seen to contain the most first-hand observations and active experimentation.
+- **Casting:** A large majority of casting recipes supports the theory that this is the author-practitioner's main focus and area of expertise. The casting entries are some of the longest and seen to contain the most first-hand observations and active experimentation.
 \[(add example of an entry with first-person language; recipes with repeated trials of same thing like sands or flies; graph of entry lengths)\]
-
-**Alchemy:** While the manuscript was originally thought to contain alchemical writings, as was common for many "Books of Secrets" in the Renaissance that contained first-hand experimentation, the ditribution of categories shows that "alchemy" is one of the least prevalent categories. In fact, there is only one entry that is "alchemical": [fol. 52r, "The work done in Algiers"](https://edition640.makingandknowing.org/#/folios/52r/f/52r/tl)
+- **Alchemy:** While the manuscript was originally thought to contain alchemical writings, as was common for many "Books of Secrets" in the Renaissance that contained first-hand experimentation, the ditribution of categories shows that "alchemy" is one of the least prevalent categories. In fact, there is only one entry that is "alchemical": [fol. 52r, "The work done in Algiers"](https://edition640.makingandknowing.org/#/folios/52r/f/52r/tl)
 
 ## Distribution of Entry Categories Across the Folios
 
