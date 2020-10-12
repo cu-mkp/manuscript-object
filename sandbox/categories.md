@@ -52,6 +52,7 @@ Starting at the beginning of the manuscript on 1r and ending with the last page,
 
 **Use of a Scribe?**
 - While the great majority of the manuscript is written in one hand, there are a few instances of a different hand, including a number of sequential entries 
+https://edition640.makingandknowing.org/#/folios/73r/f/73r/tl
 
 
 manuscript/document/folio sequence
