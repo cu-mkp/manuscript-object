@@ -1,6 +1,7 @@
 import os
 
-manuscript_data_path = os.path.dirname(os.getcwd()) + "/m-k-manuscript-data" # default m&k data directory
+manuscript_data_path = os.path.join(os.path.dirname(os.getcwd()), "m-k-manuscript-data") # default m&k data directory
+ms_xml_path = os.path.join(manuscript_data_path, "ms-xml")
 
 versions = ['tc', 'tcn', 'tl']
 

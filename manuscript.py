@@ -87,12 +87,18 @@ class Manuscript():
 
     # TODO: write a search method
 
+    def update(self):
+        self.update_metadata()
+        self.update_ms_txt()
+        self.update_entries()
+        self.update_all_folios()
+
     def update_ms_txt(self):
         """
         Update /m-k-manuscript-data/update_ms/ with the current manuscript from /ms-xml/.
         Iterate through /ms-xml/ for each version, remove tags, and save to /ms-txt/.
         """
-        for version, folios_dict in self.generate_ms_text():
+        for version, folios_dict in self.generate_ms_txt():
             for filename, folio in folios:
                 outfile = os.path.join(self.data_path, "ms-txt", version, filename.replace("xml", "txt"))
                 with open(outfile, 'w') as fp:
@@ -145,8 +151,8 @@ class Manuscript():
         xml_dir = os.path.join(self.data_path, "allFolios", "xml")
 
         for version in utils.versions:
-            content_txt = generate_all_folios(method="txt", version=version)
-            content_xml = generate_all_folios(method="xml", version=version)
+            content_txt = self.generate_all_folios(method="txt", version=version)
+            content_xml = self.generate_all_folios(method="xml", version=version)
 
             txt_path = os.path.join(txt_dir, version)
             xml_path = os.path.join(xml_dir, version)
