@@ -137,10 +137,10 @@ class Manuscript():
                 content_txt = entry.text
                 content_xml = entry.xml_string # should already have an <entry> root tag :)
 
-                with open(filepath_txt, 'w') as fp:
+                with open(filepath_txt, 'w', encoding='utf-8') as fp:
                     fp.write(content_txt)
 
-                with open(filepath_xml, 'w') as fp:
+                with open(filepath_xml, 'w', encoding='utf-8') as fp:
                     fp.write(content_xml)
 
     def update_all_folios(self):
@@ -162,10 +162,10 @@ class Manuscript():
             filepath_txt = os.path.join(txt_path, f"all_{version}.txt")
             filepath_xml = os.path.join(xml_path, f"all_{version}.xml")
 
-            with open(filepath_txt, 'w') as fp:
+            with open(filepath_txt, 'w', encoding='utf-8') as fp:
                 fp.write(content_txt)
 
-            with open(filepath_xml, 'w') as fp:
+            with open(filepath_xml, 'w', encoding='utf-8') as fp:
                 fp.write(content_xml)
 
     def generate_all_folios(self, method="txt", version="tl"):
