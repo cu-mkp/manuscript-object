@@ -48,7 +48,8 @@ def generate_manuscript(directory) -> Dict[str, Entry]:
 
             for identity, xml in entries.items():
                 if identity in xml_dict.keys():
-                    xml_dict[identity].append(xml)
+                    for div in xml.findall("div"): # extract divs from xml
+                        xml_dict[identity].append(div) # append each div
                 elif identity: # only add it to the dict if it has an identity
                     xml_dict[identity] = xml
 
