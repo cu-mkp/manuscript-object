@@ -16,7 +16,7 @@ def separate_by_id(filepath: str) -> Dict[str, et.Element]:
     folio = extract_folio(filepath)
     entries = {}
 
-    xml = et.parse(filepath) 
+    xml = et.parse(filepath)
 
     divs = xml.findall("div") # not recursive; there should be no nested divs
 
@@ -47,15 +47,14 @@ def generate_manuscript(directory) -> Dict[str, Entry]:
             entries = separate_by_id(os.path.join(root, filename))
 
             for identity, xml in entries.items():
-                key = (folio, identity)
-                if key in xml_dict.keys():
-                    xml_dict[key].append(xml)
+                if identity in xml_dict.keys():
+                    xml_dict[identity].append(xml)
                 elif identity: # only add it to the dict if it has an identity
-                    xml_dict[key] = xml
-    
+                    xml_dict[identity] = xml
+
     entries_dict = {}
     # now convert each value of entries_dict into its appropriate Entry object
-    for (folio, identity), xml in xml_dict.items():
+    for identity, xml in xml_dict.items():
         entries_dict[identity] = Entry(xml, folio=folio, identity=identity)
 
     return entries_dict
@@ -64,7 +63,7 @@ def generate_manuscript(directory) -> Dict[str, Entry]:
 class Manuscript():
     def __init__(self, directory):
         # directory: file path to the directory of data files organized by version
-        
+
         #TODO: implement specifying a range of entries you want, like so:
         #entries: Union[bool, List[str]]=True
         # entries: a list or a boolean describing which entries to load
@@ -118,7 +117,7 @@ class Manuscript():
 
     def update_entries(self):
         """
-        Update /m-k-manuscript-data/entries/ with the current manuscript from /ms-xml/. 
+        Update /m-k-manuscript-data/entries/ with the current manuscript from /ms-xml/.
         """
 
         txt_dir = os.path.join(self.data_path, "entries", "txt")
@@ -176,14 +175,14 @@ class Manuscript():
             content = "" # string representing the entire text version
             for identity, entry in self.entries[version].items():
                 content += entry.text #TODO: add line breaks between entries?
-        
+
         elif method=="xml":
             root = et.Element("all") # root element to wrap the entire xml string
             for identity, entry in self.entries[version].items():
                 divs = [deepcopy(div) for div in list(entry.xml)] # avoid modifying instance variables
                 root.extend(divs) # add children of <entry> element
             content = to_xml_string(root)
-        
+
         else:
             raise Exception(f"Invalid method: '{method}'. Methods: txt, xml")
 
