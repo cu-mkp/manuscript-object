@@ -1,4 +1,4 @@
-from typing import List, Dict 
+from typing import List, Dict
 from lxml import etree as et
 import utils
 
@@ -25,7 +25,7 @@ def to_string(xml: et.Element, *args, **kwargs) -> str:
 def xslt_transform(xml: et.Element, *args, **kwargs) -> str:
     # takes an etree element and returns an etree element with added annotations
     # e.g. adding <- -> around deleted text, or add "[illegible]" in <ill> tags
-    
+
     # XSLT booleans are represented as "true()" and "false()"
     for k,v in kwargs.items():
         if v==True:
@@ -82,7 +82,7 @@ class Entry:
         # constructor: generate instance variables from xml string
         # identity: str
         # folio: str
-        # xml: lxml.etree.Element object 
+        # xml: lxml.etree.Element object
 
         # all the important data is enclosed in a dictionary called 'data'
         # this makes it really easy to access!
@@ -90,15 +90,15 @@ class Entry:
         self.data["xml"] = xml #TODO: confirm that this is really the best name for this
 
         self.data["identity"] = identity if identity else find_identity(self.xml) # if you're not given an identity, you can try to discern it from the id attribute of the first div
-        self.data["folio"] = folio if folio else "" # if you're not given a folio, don't try to guess! 
+        self.data["folio"] = folio if folio else "" # if you're not given a folio, don't try to guess!
 
         self.data["text"] = to_string(self.xml)
         self.data["xml_string"] = to_xml_string(self.xml) #TODO: find a better name for this?
 
         self.data["title"] = find_title(self.xml)
 
-        self.data["categories"] = parse_categories(self.xml) 
-        self.data["properties"] = parse_properties(self.xml) 
+        self.data["categories"] = parse_categories(self.xml)
+        self.data["properties"] = parse_properties(self.xml)
 
     @classmethod
     def from_file(cls, filename: str, identity=None, folio=None):
@@ -117,7 +117,7 @@ class Entry:
 
     def __len__(self) -> int:
         return len(self.text)
-    
+
     def __getattr__(self, attr):
         # allows you to write, e.g. "entry.properties" and get the value of that key in the data dict
         # this is really cool, trust me!
