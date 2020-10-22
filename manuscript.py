@@ -16,6 +16,7 @@ def separate_by_id(filepath: str) -> Dict[str, et.Element]:
     folio = extract_folio(filepath)
     entries = {}
 
+    print(f"Separating divs in file: {filepath}")
     xml = et.parse(filepath)
 
     divs = xml.findall("div") # not recursive; there should be no nested divs
@@ -32,12 +33,14 @@ def separate_by_id(filepath: str) -> Dict[str, et.Element]:
             entries[key] = root
 
     # note this will result in overwriting for id-less divs, but my understanding is that those divs should be ignored anyway
+    print(f"Found {len(entries)} div{'' if len(entries)==1 else 's'} in file {filepath}")
 
     return entries
 
 def generate_manuscript(directory) -> Dict[str, Entry]:
-    print(directory)
     # directory: file path to a directory of data files
+    print(f"Generating entries from files in folder {directory}")
+
     xml_dict: Dict[Tuple(str, str), et.Element] = {}
 
     for root, _, files in os.walk(directory):
@@ -56,8 +59,10 @@ def generate_manuscript(directory) -> Dict[str, Entry]:
     entries_dict = {}
     # now convert each value of entries_dict into its appropriate Entry object
     for identity, xml in xml_dict.items():
+        print(f"Generating entry with folio {folio}, ID {identity}")
         entries_dict[identity] = Entry(xml, folio=folio, identity=identity)
 
+    print(f"Generated {len(entries)} entr{'y' if len(entries)==1 else 'ies'}.")
     return entries_dict
 
 
@@ -77,6 +82,7 @@ class Manuscript():
         #folios = [el for el in entries if el not in ids] # e.g. "017v"
 
         # does having 3x as many Entry objects waste some space by duplicating secondary information? yes. is it a good idea anyway? yes!
+        print(f"Generating Manuscript object from {directory}")
         self.entries = {}
         for version in utils.versions:
             self.entries[version] = generate_manuscript(os.path.join(directory, version))
@@ -102,6 +108,7 @@ class Manuscript():
             for filename, folio in folios:
                 outfile = os.path.join(self.data_path, "ms-txt", version, filename.replace("xml", "txt"))
                 with open(outfile, 'w') as fp:
+                    print(f"Writing folio {folio} to {outfile}")
                     fp.write(folio.text)
 
     def generate_ms_txt(self):
@@ -113,6 +120,7 @@ class Manuscript():
                     # I'm making this simple at the sacrifice of a tiny bit of speed
                     # Forgive me
                     # TODO: make entry.py do this with a module function called from the classmethod so there's one universal place to generate an Entry etree from a file (we already have one for from a string: generate_etree()!)
+                    print(f"Generating entry from file {os.path.join(root, filename)}")
                     folios_dict[filename] = Entry.from_file(os.path.join(root, filename))
         return versions
 
@@ -138,9 +146,11 @@ class Manuscript():
                 content_xml = entry.xml_string # should already have an <entry> root tag :)
 
                 with open(filepath_txt, 'w', encoding='utf-8') as fp:
+                    print(f"Writing entry {entry.identity} txt to {filepath_txt}")
                     fp.write(content_txt)
 
                 with open(filepath_xml, 'w', encoding='utf-8') as fp:
+                    print(f"Writing entry {entry.identity} XML to {filepath_xml}")
                     fp.write(content_xml)
 
     def update_all_folios(self):
@@ -163,9 +173,11 @@ class Manuscript():
             filepath_xml = os.path.join(xml_path, f"all_{version}.xml")
 
             with open(filepath_txt, 'w', encoding='utf-8') as fp:
+                print(f"Writing allFolios txt version {version} to {filepath_txt}")
                 fp.write(content_txt)
 
             with open(filepath_xml, 'w', encoding='utf-8') as fp:
+                print(f"Writing allFolios XML version {version} to {filepath_txt}")
                 fp.write(content_xml)
 
     def generate_all_folios(self, method="txt", version="tl"):
@@ -175,11 +187,13 @@ class Manuscript():
         if method=="txt":
             content = "" # string representing the entire text version
             for identity, entry in self.entries[version].items():
+                print(f"Adding entry {identity} to allFolios version {version} {method}")
                 content += entry.text #TODO: add line breaks between entries?
 
         elif method=="xml":
             root = et.Element("all") # root element to wrap the entire xml string
             for identity, entry in self.entries[version].items():
+                print(f"Adding entry {identity} to allFolios version {version} {method}")
                 divs = [deepcopy(div) for div in list(entry.xml)] # avoid modifying instance variables
                 root.extend(divs) # add children of <entry> element
             content = to_xml_string(root)
@@ -192,13 +206,16 @@ class Manuscript():
     def update_metadata(self):
         df = self.generate_metadata()
         df.drop(columns=utils.versions, inplace=True) # this is just memory addresses
-        df.to_csv(os.path.join(self.data_path, "metadata", "entry_metadata.csv"), index=False)
+        outfile = os.path.join(self.data_path, "metadata", "entry_metadata.csv")
+        print(f"Writing metadata to {outfile}")
+        df.to_csv(outfile, index=False)
 
     def generate_metadata(self):
         """
         Update /m-k-manuscript-data/metadata/entry_metadata.csv with the current manuscript. Create a Pandas DataFrame
         indexed by entry. Create data columns, and remove the column that contains the entry objects. Save File.
         """
+        print("Generating metadata")
         # for making entry-metadata.csv
         # use tl version for basic info
         # TODO: this is almost identical to Matthew's code; can be we improve on it at all?

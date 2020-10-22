@@ -1,4 +1,4 @@
-# Last Updated | 2020-10-19
+# Last Updated | 2020-10-21
 # Python Modules
 import os
 import sys
@@ -42,6 +42,7 @@ def update():
 
     options = parser.parse_args()
 
+
     # verify manuscript-data path
     assert(os.path.exists(options.path)), ("Could not find manuscript data directory: " + options.path)
     assert(os.path.exists(options.path + "/ms-xml")), ("Could not find ms-xml folder in manuscript data directory: " + options.path + "/ms-xml")
@@ -50,6 +51,9 @@ def update():
         okay = input(f"Using manuscript data path: {options.path}. Confirm (y/n)? ").lower() in ("y", "yes")
         if not okay:
           return
+
+    if options.silent:
+        sys.stdout = open(os.devnull, "w") # turn off print statements. Is this a bad idea?
 
     # if no specific derivatives were specified, generate all of them
     if not any([options.all_folios, options.metadata, options.txt, options.entries]):
@@ -61,19 +65,19 @@ def update():
 
     if not options.dry_run:
         if options.metadata or generate_all_derivatives:
-            print('Updating metadata')
+            print('Updating metadata', file=sys.__stdout__)
             manuscript.update_metadata()
 
         if options.entries or generate_all_derivatives:
-            print('Updating entries')
+            print('Updating entries', file=sys.__stdout__)
             manuscript.update_entries()
 
         if options.txt or generate_all_derivatives:
-            print('Updating ms-txt')
+            print('Updating ms-txt', file=sys.__stdout__)
             manuscript.update_ms_txt()
 
         if options.all_folios or generate_all_derivatives:
-            print('Updating allFolios')
+            print('Updating allFolios', file=sys.__stdout__)
             manuscript.update_all_folios()
 
     update_time()
