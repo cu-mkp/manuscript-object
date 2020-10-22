@@ -3,6 +3,7 @@ from lxml import etree as et
 from pandas import DataFrame
 import os
 from copy import deepcopy
+from collections import OrderedDict
 
 import utils
 from entry import Entry, generate_etree, to_xml_string
@@ -18,7 +19,7 @@ def extract_folio(filepath: str) -> str:
 def separate_by_id(filepath: str) -> Dict[str, et.Element]:
     # takes a file path, reads it as XML, and processes it into separate elements by id
     folio = extract_folio(filepath)
-    entries = {}
+    entries = OrderedDict()
 
     print(f"Separating divs in file: {ignore_data_path(filepath)}...")
     xml = et.parse(filepath)
@@ -45,7 +46,7 @@ def generate_manuscript(directory) -> Dict[str, Entry]:
     # directory: file path to a directory of data files
     print(f"Generating entries from files in folder {directory}...")
 
-    xml_dict: Dict[Tuple(str, str), et.Element] = {}
+    xml_dict: Dict[str, et.Element] = OrderedDict()
 
     for root, _, files in os.walk(directory):
         for filename in files:
@@ -60,7 +61,7 @@ def generate_manuscript(directory) -> Dict[str, Entry]:
                 elif identity: # only add it to the dict if it has an identity
                     xml_dict[identity] = xml
 
-    entries_dict = {}
+    entries_dict: Dict[str, Entry] = OrderedDict()
     # now convert each value of entries_dict into its appropriate Entry object
     for identity, xml in xml_dict.items():
         print(f"Generating entry with folio {folio}, ID {identity}...")
