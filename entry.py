@@ -72,8 +72,7 @@ def find_identity(xml: et.Element) -> str:
     # if div has an id attribute, return it; otherwise return empty string
     div = xml.find('div')
     if len(div):
-        identity = div.get('id')
-        return identity if identity else ''
+        return div.get('id') or ''
     else:
         return ''
 
@@ -89,8 +88,8 @@ class Entry:
         self.data = {}
         self.data["xml"] = xml #TODO: confirm that this is really the best name for this
 
-        self.data["identity"] = identity if identity else find_identity(self.xml) # if you're not given an identity, you can try to discern it from the id attribute of the first div
-        self.data["folio"] = folio if folio else "" # if you're not given a folio, don't try to guess!
+        self.data["identity"] = identity or find_identity(self.xml) # if you're not given an identity, you can try to discern it from the id attribute of the first div
+        self.data["folio"] = folio or "" # if you're not given a folio, don't try to guess!
 
         self.data["text"] = to_string(self.xml)
         self.data["xml_string"] = to_xml_string(self.xml) #TODO: find a better name for this?
