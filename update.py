@@ -32,7 +32,7 @@ def update_time():
 def update():
     parser = argparse.ArgumentParser(description="Generate derivative files from original ms-xml folios.")
     parser.add_argument('-d', '--dry-run', help="Generate as usual, but do not write derivatives.", action="store_true")
-    parser.add_argument('-s', '--silent', help="Silence output. Do not write generation progress to terminal.", action="store_true")
+    parser.add_argument('-v', '--verbose', help="Write verbose generation progress to stdout.", action="store_true")
     parser.add_argument('-b', '--bypass', help="Bypass user y/n confirmation. Useful for automation.", action="store_true")
     parser.add_argument('-a', '--all-folios', help="Generate allFolios derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
     parser.add_argument('-m', '--metadata', help="Generate metadata derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
@@ -52,7 +52,7 @@ def update():
         if not okay:
           return
 
-    if options.silent:
+    if not options.verbose:
         sys.stdout = open(os.devnull, "w") # turn off print statements. Is this a bad idea?
 
     # if no specific derivatives were specified, generate all of them
