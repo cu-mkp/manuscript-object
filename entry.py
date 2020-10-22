@@ -1,4 +1,4 @@
-from typing import List, Dict
+from typing import List, Dict, OrderedDict
 from lxml import etree as et
 import utils
 
@@ -51,7 +51,7 @@ def find_terms(xml: et.Element, tag: str, *args, **kwargs) -> List[str]:
 
 def parse_properties(xml: et.Element) -> Dict[str, List[str]]:
     # {prop1: [term1, term2, ...], prop2: [term1, term2, ...], ...}
-    properties = {}
+    properties = OrderedDict()
     for prop, tag in utils.prop_dict.items():
         properties[prop] = find_terms(xml, tag)
     return properties
