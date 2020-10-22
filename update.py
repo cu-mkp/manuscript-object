@@ -48,7 +48,7 @@ def update():
     assert(os.path.exists(options.path + "/ms-xml")), ("Could not find ms-xml folder in manuscript data directory: " + options.path + "/ms-xml")
 
     if not options.bypass:
-        okay = input(f"Using manuscript data path: {options.path}. Confirm (y/n)? ").lower() in ("y", "yes")
+        okay = input(f"Using manuscript data path: {options.path}. Confirm (Y/n)? ").lower() in ("", "y", "yes")
         if not okay:
           return
 
