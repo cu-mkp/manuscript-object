@@ -111,6 +111,7 @@ class Manuscript():
         for version, folios_dict in self.generate_ms_txt().items():
             for filename, folio in folios_dict.items():
                 outfile = os.path.join(self.data_path, "ms-txt", version, filename.replace("xml", "txt"))
+                os.makedirs(os.path.dirname(outfile), exist_ok=True)
                 with open(outfile, 'w') as fp:
                     print(f"Writing folio {version}_{extract_folio(filename)} to {ignore_data_path(outfile)}...")
                     fp.write(folio.text)
