@@ -27,8 +27,7 @@ def separate_by_id(filepath: str) -> Dict[str, et.Element]:
     divs = xml.findall("div") # not recursive; there should be no nested divs
 
     for div in divs:
-        identity = div.get("id")
-        key = identity if identity else "" # there must be a better way to do this; seems monadic?
+        key = div.get("id") or ""
 
         if key in entries.keys():
             entries[key].append(div) # add continued entry in-place
