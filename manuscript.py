@@ -2,6 +2,7 @@ from typing import List, Tuple, Dict
 from lxml import etree as et
 from pandas import DataFrame
 import os
+import sys
 from copy import deepcopy
 from collections import OrderedDict
 
@@ -108,7 +109,7 @@ class Manuscript():
         Update /m-k-manuscript-data/update_ms/ with the current manuscript from /ms-xml/.
         Iterate through /ms-xml/ for each version, remove tags, and save to /ms-txt/.
         """
-        for version, folios_dict in self.generate_ms_txt().items():
+        for version, folios_dict in self.generate_folios().items():
             for filename, folio in folios_dict.items():
                 outfile = os.path.join(self.data_path, "ms-txt", version, filename.replace("xml", "txt"))
                 os.makedirs(os.path.dirname(outfile), exist_ok=True)
@@ -116,7 +117,8 @@ class Manuscript():
                     print(f"Writing folio {version}_{extract_folio(filename)} to {ignore_data_path(outfile)}...")
                     fp.write(folio.text)
 
-    def generate_ms_txt(self):
+    def generate_folios(self):
+        # TODO: specify a version for this
         versions = {}
         for version in utils.versions:
             folios_dict = {}
@@ -189,18 +191,20 @@ class Manuscript():
     def generate_all_folios(self, method="txt", version="tl"):
         # method: "txt" or "xml"
         # version: "tc", "tcn", or "tl"
+        folios_dict = self.generate_folios()[version]
 
         if method=="txt":
             content = "" # string representing the entire text version
-            for identity, entry in self.entries[version].items():
-                print(f"Adding entry {identity} to allFolios {version} {method}...")
-                content += entry.text #TODO: add line breaks between entries?
+            for filename, folio in folios_dict.items():
+                print(f"Adding folio {extract_folio(filename)} to allFolios {version} {method}...")
+                content += folio.text + "\n\n"
 
         elif method=="xml":
             root = et.Element("all") # root element to wrap the entire xml string
-            for identity, entry in self.entries[version].items():
-                print(f"Adding entry {identity} to allFolios {version} {method}...")
-                divs = [deepcopy(div) for div in list(entry.xml)] # avoid modifying instance variables
+            for filename, folio in folios_dict.items():
+                print(f"Adding folio {extract_folio(filename)} to allFolios {version} {method}...")
+                list_of_divs = folio.xml.findall("div")
+                divs = [deepcopy(div) for div in list_of_divs] # avoid modifying instance variables
                 root.extend(divs) # add children of <entry> element
             content = to_xml_string(root)
 
