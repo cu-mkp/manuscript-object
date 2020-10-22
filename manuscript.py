@@ -108,11 +108,11 @@ class Manuscript():
         Update /m-k-manuscript-data/update_ms/ with the current manuscript from /ms-xml/.
         Iterate through /ms-xml/ for each version, remove tags, and save to /ms-txt/.
         """
-        for version, folios_dict in self.generate_ms_txt():
-            for filename, folio in folios:
+        for version, folios_dict in self.generate_ms_txt().items():
+            for filename, folio in folios_dict.items():
                 outfile = os.path.join(self.data_path, "ms-txt", version, filename.replace("xml", "txt"))
                 with open(outfile, 'w') as fp:
-                    print(f"Writing folio {folio} to {ignore_data_path(outfile)}...")
+                    print(f"Writing folio {version}_{extract_folio(filename)} to {ignore_data_path(outfile)}...")
                     fp.write(folio.text)
 
     def generate_ms_txt(self):
@@ -126,6 +126,7 @@ class Manuscript():
                     # TODO: make entry.py do this with a module function called from the classmethod so there's one universal place to generate an Entry etree from a file (we already have one for from a string: generate_etree()!)
                     print(f"Generating entry from file {ignore_data_path(os.path.join(root, filename))}...")
                     folios_dict[filename] = Entry.from_file(os.path.join(root, filename))
+            versions[version] = folios_dict
         return versions
 
     def update_entries(self):
