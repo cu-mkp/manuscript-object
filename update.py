@@ -65,19 +65,19 @@ def update():
 
     if not options.dry_run:
         if options.metadata or generate_all_derivatives:
-            print('Updating metadata', file=sys.__stdout__)
+            print('Updating metadata..', file=sys.__stdout__)
             manuscript.update_metadata()
 
         if options.entries or generate_all_derivatives:
-            print('Updating entries', file=sys.__stdout__)
+            print('Updating entries...', file=sys.__stdout__)
             manuscript.update_entries()
 
         if options.txt or generate_all_derivatives:
-            print('Updating ms-txt', file=sys.__stdout__)
+            print('Updating ms-txt...', file=sys.__stdout__)
             manuscript.update_ms_txt()
 
         if options.all_folios or generate_all_derivatives:
-            print('Updating allFolios', file=sys.__stdout__)
+            print('Updating allFolios...', file=sys.__stdout__)
             manuscript.update_all_folios()
 
     update_time()
