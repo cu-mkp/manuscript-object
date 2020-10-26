@@ -7,7 +7,7 @@ from copy import deepcopy
 from collections import OrderedDict
 
 import utils
-from entry import Entry, generate_etree, to_xml_string
+from entry import *
 
 def ignore_data_path(filepath: str) -> str:
     # remove the manuscript data path portion from a filepath
