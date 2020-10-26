@@ -204,6 +204,8 @@ It's very easy to go from here to a simple histogram showing the length distribu
 ```
 > plt.hist(lengths, bins=100)
 > plt.axvline(average, color="orange")
+> for x in range(1,14):
+    plt.axvline(average + x*sd, color="purple", linewidth=0.5)
 ```
 ![histogram](https://raw.githubusercontent.com/cu-mkp/manuscript-object/master/projects/visualizations/hist.png)
 
