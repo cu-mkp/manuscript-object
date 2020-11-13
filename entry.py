@@ -16,25 +16,26 @@ def to_xml_string(xml: et.Element) -> str:
     """Render an XML etree as decoded utf-8 text, with tags."""
     return et.tostring(xml, encoding="utf-8", pretty_print=False).decode()
 
-def to_string(xml: et.Element, *args, **kwargs) -> str:
-    """Convert an XML etree to text, removing all tags and rendering editorial tags."""
-    return xslt_transform(xml, *args, **kwargs)
-
-def xslt_transform(xml: et.Element, transform: et.XSLT=transform, *args, **kwargs) -> str:
-    """Apply an XSLT stylesheet to the given XML etree, rendering it as a string.
-    Optional arguments specify XSLT parameters.
-    By default, use the stylesheet from utils.
-    Editorial tags are rendered according to specification here: https://github.com/cu-mkp/m-k-manuscript-data/issues/1613#issuecomment-700295493.
+def to_string(xml: et.Element, params={}) -> str:
+    """Convert an XML etree to text, removing all tags and rendering editorial tags.
+    Uses global variable `transform`.
     """
+    return xslt_transform(xml, transform, params=params)
 
-    # XSLT booleans are represented as "true()" and "false()"
-    for k,v in kwargs.items():
+def xslt_transform(xml: et.Element, transform: et.XSLT, params={}) -> str:
+    """Apply an XSLT stylesheet to the given XML etree, rendering it as a string.
+    Optional argument `params` is a dictionary specifying XSLT parameters.
+    Editorial tags are rendered according to specification here: https://github.com/cu-mkp/m-k-manuscript-data/issues/1613#issuecomment-700295493.
+    Uses global variable `transform`.
+    """
+    # XSLT booleans are represented as "true()" and "false()".
+    for k,v in params.items():
         if v==True:
-            kwargs[k] = "true()"
+            params[k] = "true()"
         elif v==False:
-            kwargs[k] = "false()"
+            params[k] = "false()"
 
-    return str(transform(xml, *args, **kwargs))
+    return str(transform(xml, **params))
 
 def parse_categories(xml: et.Element) -> List[str]:
     """Get the categories attribute of the first div.
@@ -46,10 +47,10 @@ def parse_categories(xml: et.Element) -> List[str]:
     else:
         return []
 
-def find_terms(xml: et.Element, tag: str, *args, **kwargs) -> List[str]:
+def find_terms(xml: et.Element, tag: str, params={}) -> List[str]:
     """Returns a list of the contents of every instance of a given tag in an XML etree, rendered as plaintext using the to_string() function."""
     tags = xml.findall(f".//{tag}")
-    return [to_string(tag, *args, **kwargs).replace("\n", " ") for tag in tags]
+    return [to_string(tag, params=params).replace("\n", " ") for tag in tags]
 
 def parse_properties(xml: et.Element) -> Dict[str, List[str]]:
     """Return a dictionary keyed by property containing a list of the contents of all tags for that property.
@@ -65,7 +66,7 @@ def find_title(xml: et.Element) -> str:
     """Get the content of the first "head" tag, rendered in plaintext, but not rendering "del" editorial tags.
     If no such tags are found, return an empty string.
     """
-    titles = find_terms(xml, "head", {"del":"false()"}) # exclude del annotations
+    titles = find_terms(xml, "head", params={"del":"false()"}) # Exclude del annotations.
     #TODO: check if we want to *not render* del tags (meaning keep the text but don't add <- ->) or *remove del tags entirely* (meaning ignore their contents)
     if titles:
         return titles[0]
