@@ -60,5 +60,4 @@ categories = [
     "manuscript structure" 
 ]
 
-with open("annotations.xslt", "r") as fp:
-    stylesheet = fp.read()
+stylesheet_path = "annotations.xslt"
