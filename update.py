@@ -33,14 +33,14 @@ def update():
     """Generate the entire manuscript and write all derivative files, by default.
     Various command line arguments permit alternative actions, as described by each one's help message.
     """
-    parser = argparse.ArgumentParser(description="Generate derivative files from original ms-xml folios.")
+    parser = argparse.ArgumentParser(description="Generate and update derivative files from original ms-xml folios.")
     parser.add_argument('-d', '--dry-run', help="Generate as usual, but do not write derivatives.", action="store_true")
     parser.add_argument('-v', '--verbose', help="Write verbose generation progress to stdout.", action="store_true")
     parser.add_argument('-b', '--bypass', help="Bypass user y/n confirmation. Useful for automation.", action="store_true")
-    parser.add_argument('-a', '--all-folios', nargs="?", default=False, const=utils.all_folios_path, help="Generate allFolios derivative files. Disables generation of other derivatives unless those are also specified.")
-    parser.add_argument('-m', '--metadata', nargs="?", default=False, const=utils.metadata_path, help="Generate metadata derivative files. Disables generation of other derivatives unless those are also specified.")
-    parser.add_argument('-t', '--txt', nargs="?", default=False, const=utils.ms_txt_path, help="Generate ms-txt derivative files. Disables generation of other derivatives unless those are also specified.")
-    parser.add_argument('-e', '--entries', nargs="?", default=False, const=utils.entries_path, help="Generate entries derivative files. Disables generation of other derivatives unless those are also specified.")
+    parser.add_argument('-a', '--all-folios', nargs="?", default=False, const=utils.all_folios_path, help="Update allFolios derivative files. Disables generation of other derivatives unless those are also specified. Optional argument: folder path to which to write derivative files.")
+    parser.add_argument('-m', '--metadata', nargs="?", default=False, const=utils.metadata_path, help="Update metadata derivative files. Disables generation of other derivatives unless those are also specified. Optional argument: folder path to which to write derivative files.")
+    parser.add_argument('-t', '--txt', nargs="?", default=False, const=utils.ms_txt_path, help="Update ms-txt derivative files. Disables generation of other derivatives unless those are also specified. Optional argument: folder path to which to write derivative files.")
+    parser.add_argument('-e', '--entries', nargs="?", default=False, const=utils.entries_path, help="Update entries derivative files. Disables generation of other derivatives unless those are also specified. Optional argument: folder path to which to write derivative files.")
     parser.add_argument("path", nargs="?", default=utils.manuscript_data_path, help="Path to m-k-manuscript-data directory. Defaults to the sibling of your current directory.")
 
     options = parser.parse_args()
