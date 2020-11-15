@@ -135,17 +135,27 @@ class Manuscript():
         fs = self.folios.get(version)
         return fs and fs.get(clean_folio(folio)) # short-circuit if fs is None
 
+    def add_entry(self, version, entry):
+        if version not in self.versions:
+            self.versions.append(version)
+        if version not in self.entries.keys():
+            self.entries[version] = OrderedDict()
+        self.entries[version][clean_id(entry.identity)] = entry
+
     def add_entries(self, version, list_of_entries):
-        self.entries[version] = OrderedDict()
         for entry in list_of_entries:
-            self.entries[version][entry.identity] = entry
-        self.versions.append(version)
+            self.add_entry(version, entry)
+
+    def add_folio(self, version, folio):
+        if version not in self.versions:
+            self.versions.append(version)
+        if version not in self.folios.keys():
+            self.folios[version] = OrderedDict()
+        self.folios[version][clean_folio(folio.folio)] = folio
 
     def add_folios(self, version, list_of_folios):
-        self.folios[version] = OrderedDict()
         for folio in list_of_folios:
-            self.folios[version][folio.folio] = folio
-        self.versions.append(version)
+            self.add_folio(version, folio)
 
     def add_dir(self, directory):
         """Add another version of the manuscript by providing a path to a folder containing XML files to be parsed as entries and folios."""
