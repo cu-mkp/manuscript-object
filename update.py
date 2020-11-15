@@ -1,4 +1,4 @@
-# Last Updated | 2020-11-13
+# Last Updated | 2020-11-14
 # Python Modules
 import os
 import sys
@@ -37,11 +37,11 @@ def update():
     parser.add_argument('-d', '--dry-run', help="Generate as usual, but do not write derivatives.", action="store_true")
     parser.add_argument('-v', '--verbose', help="Write verbose generation progress to stdout.", action="store_true")
     parser.add_argument('-b', '--bypass', help="Bypass user y/n confirmation. Useful for automation.", action="store_true")
-    parser.add_argument('-a', '--all-folios', help="Generate allFolios derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
-    parser.add_argument('-m', '--metadata', help="Generate metadata derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
-    parser.add_argument('-t', '--txt', help="Generate ms-txt derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
-    parser.add_argument('-e', '--entries', help="Generate entries derivative files. Disables generation of other derivatives unless those are also specified.", action="store_true")
-    parser.add_argument("path", nargs="?", action="store", default=utils.manuscript_data_path, help="Path to m-k-manuscript-data directory. Defaults to the sibling of your current directory.")
+    parser.add_argument('-a', '--all-folios', nargs="?", default=False, const=utils.all_folios_path, help="Generate allFolios derivative files. Disables generation of other derivatives unless those are also specified.")
+    parser.add_argument('-m', '--metadata', nargs="?", default=False, const=utils.metadata_path, help="Generate metadata derivative files. Disables generation of other derivatives unless those are also specified.")
+    parser.add_argument('-t', '--txt', nargs="?", default=False, const=utils.ms_txt_path, help="Generate ms-txt derivative files. Disables generation of other derivatives unless those are also specified.")
+    parser.add_argument('-e', '--entries', nargs="?", default=False, const=utils.entries_path, help="Generate entries derivative files. Disables generation of other derivatives unless those are also specified.")
+    parser.add_argument("path", nargs="?", default=utils.manuscript_data_path, help="Path to m-k-manuscript-data directory. Defaults to the sibling of your current directory.")
 
     options = parser.parse_args()
 
@@ -59,28 +59,29 @@ def update():
 
     # If no specific derivatives were specified, generate all of them.
     if not any([options.all_folios, options.metadata, options.txt, options.entries]):
-        generate_all_derivatives = True
+        update_all_derivatives = True
     else:
-        generate_all_derivatives = False
+        update_all_derivatives = False
 
-    ms = manuscript.Manuscript(os.path.join(options.path, *utils.version_paths))
+    dirs = [os.path.join(options.path, "ms-xml", v) for v in utils.versions]
+    ms = manuscript.Manuscript.from_dirs(*dirs)
 
     if not options.dry_run:
-        if options.metadata or generate_all_derivatives:
+        if options.metadata or update_all_derivatives:
             print('Updating metadata..', file=sys.__stdout__)
-            ms.update_metadata()
+            ms.update_metadata(outdir=options.metadata)
 
-        if options.entries or generate_all_derivatives:
+        if options.entries or update_all_derivatives:
             print('Updating entries...', file=sys.__stdout__)
-            ms.update_entries()
+            ms.update_entries(outdir=options.entries)
 
-        if options.txt or generate_all_derivatives:
+        if options.txt or update_all_derivatives:
             print('Updating ms-txt...', file=sys.__stdout__)
-            ms.update_ms_txt()
+            ms.update_ms_txt(outdir=options.txt)
 
-        if options.all_folios or generate_all_derivatives:
+        if options.all_folios or update_all_derivatives:
             print('Updating allFolios...', file=sys.__stdout__)
-            ms.update_all_folios()
+            ms.update_all_folios(outdir=options.all_folios)
 
     update_time()
 

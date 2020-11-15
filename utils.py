@@ -4,7 +4,12 @@ manuscript_data_path = os.path.join(os.path.dirname(os.getcwd()), "m-k-manuscrip
 ms_xml_path = os.path.join(manuscript_data_path, "ms-xml")
 versions = ['tc', 'tcn', 'tl']
 version_paths = [os.path.join(ms_xml_path, version) for version in versions]
-tc_path, tcn_path, tl_path = *version_paths
+tc_path, tcn_path, tl_path = version_paths
+
+ms_txt_path = os.path.join(manuscript_data_path, "ms-txt")
+entries_path = os.path.join(manuscript_data_path,"entries")
+all_folios_path = os.path.join(manuscript_data_path, "allFolios")
+metadata_path = os.path.join(manuscript_data_path, "metadata")
 
 prop_dict = {
     'animal': 'al',
