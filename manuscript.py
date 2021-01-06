@@ -187,26 +187,29 @@ class Manuscript():
             folios[version] = list_of_folios
         return cls(entries, folios)
 
-    def update(self):
-        self.update_metadata()
-        self.update_ms_txt()
-        self.update_entries()
-        self.update_all_folios()
+    def update(self, dry_run=False):
+        self.update_metadata(dry_run=dry_run)
+        self.update_ms_txt(dry_run=dry_run)
+        self.update_entries(dry_run=dry_run)
+        self.update_all_folios(dry_run=dry_run)
 
-    def update_ms_txt(self, outdir=utils.ms_txt_path):
+    def update_ms_txt(self, outdir=utils.ms_txt_path, dry_run=False):
         """Update  with the current manuscript from /ms-xml/.
         Iterate through /ms-xml/ for each version, remove tags, and save to /ms-txt/.
         """
         for version, folios_dict in self.folios.items():
             for folio_name, folio in folios_dict.items():
                 outpath = os.path.join(outdir, version, filename.replace("xml", "txt"))
-                os.makedirs(os.path.dirname(outpath), exist_ok=True)
+                if not dry_run:
+                    os.makedirs(os.path.dirname(outpath), exist_ok=True)
+                if dry_run:
+                    outpath = os.devnull
                 with open(outpath, 'w') as fp:
                     print(f"Writing folio {version}_{extract_folio(folio_name)} to {ignore_data_path(outpath)}...")
                     fp.write(folio.text)
 
 
-    def update_entries(self, outdir=utils.entries_path):
+    def update_entries(self, outdir=utils.entries_path, dry_run=False):
         """Update /m-k-manuscript-data/entries/ with the current manuscript from /ms-xml/."""
 
         txt_dir = os.path.join(outdir, "txt")
@@ -215,8 +218,9 @@ class Manuscript():
         for version, entries in self.entries.items():
             txt_path = os.path.join(txt_dir, version)
             xml_path = os.path.join(xml_dir, version)
-            os.makedirs(txt_path, exist_ok=True)
-            os.makedirs(xml_path, exist_ok=True)
+            if not dry_run:
+                os.makedirs(txt_path, exist_ok=True)
+                os.makedirs(xml_path, exist_ok=True)
 
             for identity, entry in entries.items():
                 filepath_txt = os.path.join(txt_path, f'{version}_{entry.identity}.txt')
@@ -225,15 +229,19 @@ class Manuscript():
                 content_txt = entry.text
                 content_xml = entry.xml_string # should already have an <entry> root tag :)
 
+                if dry_run:
+                    filepath_txt = os.devnull
                 with open(filepath_txt, 'w', encoding='utf-8') as fp:
                     print(f"Writing entry {entry.identity} {version} txt to {ignore_data_path(filepath_txt)}...")
                     fp.write(content_txt)
 
+                if dry_run:
+                    filepath_xml = os.devnull
                 with open(filepath_xml, 'w', encoding='utf-8') as fp:
                     print(f"Writing entry {entry.identity} {version} xml to {ignore_data_path(filepath_xml)}...")
                     fp.write(content_xml)
 
-    def update_all_folios(self, outdir=utils.all_folios_path):
+    def update_all_folios(self, outdir=utils.all_folios_path, dry_run=False):
         """Update /m-k-manuscript-data/allFolios/ with the current manuscript from /ms-xml/."""
         txt_dir = os.path.join(outdir, "txt")
         xml_dir = os.path.join(outdir, "xml")
@@ -244,16 +252,21 @@ class Manuscript():
 
             txt_path = os.path.join(txt_dir, version)
             xml_path = os.path.join(xml_dir, version)
-            os.makedirs(txt_path, exist_ok=True)
-            os.makedirs(xml_path, exist_ok=True)
+            if not dry_run:
+                os.makedirs(txt_path, exist_ok=True)
+                os.makedirs(xml_path, exist_ok=True)
 
             filepath_txt = os.path.join(txt_path, f"all_{version}.txt")
             filepath_xml = os.path.join(xml_path, f"all_{version}.xml")
 
+            if dry_run:
+                filepath_txt = os.devnull
             with open(filepath_txt, 'w', encoding='utf-8') as fp:
                 print(f"Writing allFolios {version} txt to {ignore_data_path(filepath_txt)}...")
                 fp.write(content_txt)
 
+            if dry_run:
+                filepath_xml = os.devnull
             with open(filepath_xml, 'w', encoding='utf-8') as fp:
                 print(f"Writing allFolios {version} xml to {ignore_data_path(filepath_xml)}...")
                 fp.write(content_xml)
