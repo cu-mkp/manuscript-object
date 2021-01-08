@@ -17,7 +17,13 @@ def extract_folio(filepath: str) -> str:
     """Get the folio out of a filepath which points to a folio XML file.
     E.g. .../tl_p162v_preTEI.xml -> 162v
     """
-    return os.path.basename(filepath).split("_")[1][1:] 
+    return os.path.basename(filepath).split("_")[1][1:]
+
+def filename_from_folio(folio: str, version: str, extension: str = 'xml') -> str:
+    """Returns the filename associated with a folio of a particular version.
+    E.g. 162v, tl, xml -> tl_p162v_preTEI.xml
+    """
+    return f'{version}_p{folio.zfill(4)}_preTEI.{extension}'
 
 def clean_folio(folio: str) -> str:
     return folio.lstrip("0")
@@ -93,7 +99,7 @@ def generate_entries(directory) -> List[entry.Entry]:
 def generate_folios(directory) -> List[entry.Entry]:
     """Given the path to a directory of XML files, generate a list of Entry objects by loading each file as its own entry.
     """
-    folios = [] 
+    folios = []
     for root, _, files in os.walk(directory):
         for filename in files:
             print(f"Generating folio from file {ignore_data_path(os.path.join(root, filename))}...")
@@ -199,13 +205,13 @@ class Manuscript():
         """
         for version, folios_dict in self.folios.items():
             for folio_name, folio in folios_dict.items():
-                outpath = os.path.join(outdir, version, filename.replace("xml", "txt"))
+                outpath = os.path.join(outdir, version, filename_from_folio(folio_name, version, "txt"))
                 if not dry_run:
                     os.makedirs(os.path.dirname(outpath), exist_ok=True)
                 if dry_run:
                     outpath = os.devnull
                 with open(outpath, 'w') as fp:
-                    print(f"Writing folio {version}_{extract_folio(folio_name)} to {ignore_data_path(outpath)}...")
+                    print(f"Writing folio {version}_{folio_name} to {ignore_data_path(outpath)}...")
                     fp.write(folio.text)
 
 
@@ -277,14 +283,14 @@ class Manuscript():
         """
         if method=="txt":
             content = "" # string representing the entire text version
-            for filename, folio in self.folios[version].items():
-                print(f"Adding folio {extract_folio(filename)} to allFolios {version} {method}...")
+            for folio_name, folio in self.folios[version].items():
+                print(f"Adding folio {folio_name} to allFolios {version} {method}...")
                 content += folio.text + "\n\n"
 
         elif method=="xml":
             root = et.Element("all") # Create a root element to wrap the entire XML.
-            for filename, folio in self.folios[version].items():
-                print(f"Adding folio {extract_folio(filename)} to allFolios {version} {method}...")
+            for folio_name, folio in self.folios[version].items():
+                print(f"Adding folio {folio_name} to allFolios {version} {method}...")
                 list_of_divs = folio.xml.findall("div")
                 divs = [deepcopy(div) for div in list_of_divs] # Lxml modifies in-place when you move divs, so deepcopy makes a copy of the folio so we don't lose data in self.folios.
                 root.extend(divs) # Add children of <entry> element.
@@ -295,11 +301,13 @@ class Manuscript():
 
         return content
 
-    def update_metadata(self, outdir=utils.metadata_path, outfile="entry_metadata.csv"):
+    def update_metadata(self, outdir=utils.metadata_path, outfile="entry_metadata.csv", dry_run=False):
         """Write a metadata file containing information about each entry."""
         df = self.generate_metadata()
         df.drop(columns=self.versions, inplace=True) # this is just memory addresses
         outpath = os.path.join(outdir, outfile)
+        if dry_run:
+            outpath = os.devnull
         print(f"Writing metadata to {ignore_data_path(outpath)}...")
         df.to_csv(outpath, index=False)
 
