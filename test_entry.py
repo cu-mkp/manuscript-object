@@ -231,7 +231,10 @@ class TestEntry(unittest.TestCase):
         files = ["tc_170r_6.xml", "tcn_170r_6.xml", "tl_170r_6.xml"]
 
         for filename in files:
+            with open(examples_dir + filename.replace("xml","txt"), "r") as fp:
+                text = fp.read()
             e = Entry.from_file(examples_dir + filename)
+            self.assertEquals(e.text, text)
         # Not sure what actual test to put here...
 
     def test_from_string(self):
