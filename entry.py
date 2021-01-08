@@ -78,7 +78,7 @@ def find_identity(xml: et.Element) -> str:
     If there is no such attribute, return an empty string.
     """
     div = xml.find('div')
-    if len(div):
+    if div is not None and len(div):
         return div.get('id') or ''
     else:
         return ''
