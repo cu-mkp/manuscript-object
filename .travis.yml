@@ -11,4 +11,4 @@ install:
   # - pipenv install
 # command to run tests
 script:
-  - python check_update.py
+  - python -m unittest discover
