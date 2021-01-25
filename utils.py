@@ -33,6 +33,7 @@ prop_dict = {
     'greek': 'el',
     'italian': 'it',
     'latin': 'la',
+    'french': 'fr',
     'occitan': 'oc',
     'poitevin': 'po'
 }

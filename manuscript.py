@@ -31,6 +31,10 @@ def clean_folio(folio: str) -> str:
 def clean_id(identity: str) -> str:
     return identity.lstrip("p").lstrip("0").replace("_","")
 
+def display_id(identity: str) -> str:
+    # inverse of clean_id()
+    return "p" + identity[:-1].zfill(4) + "_" + identity[-1]
+
 def separate_by_id(filepath: str) -> Dict[str, et.Element]:
     """Take a file path, read it as XML, and process it into separate elements by ID.
     Returned object is a dictionary of lxml.etree.Element objects keyed by entry ID as a string.
@@ -229,8 +233,9 @@ class Manuscript():
                 os.makedirs(xml_path, exist_ok=True)
 
             for identity, entry in entries.items():
-                filepath_txt = os.path.join(txt_path, f'{version}_{entry.identity}.txt')
-                filepath_xml = os.path.join(xml_path, f'{version}_{entry.identity}.xml')
+                # need to leftpad this
+                filepath_txt = os.path.join(txt_path, f'{version}_{display_id(entry.identity)}.txt')
+                filepath_xml = os.path.join(xml_path, f'{version}_{display_id(entry.identity)}.xml')
 
                 content_txt = entry.text
                 content_xml = entry.xml_string # should already have an <entry> root tag :)
