@@ -3,6 +3,7 @@ from lxml import etree as et
 from pandas import DataFrame
 import os
 import sys
+import shutil # For recursively removing directories.
 from copy import deepcopy
 from collections import OrderedDict
 
@@ -207,6 +208,10 @@ class Manuscript():
         """Update  with the current manuscript from /ms-xml/.
         Iterate through /ms-xml/ for each version, remove tags, and save to /ms-txt/.
         """
+        if not dry_run:
+            for version in utils.versions:
+                shutil.rmtree(os.path.join(outdir, version))
+
         for version, folios_dict in self.folios.items():
             for folio_name, folio in folios_dict.items():
                 outpath = os.path.join(outdir, version, filename_from_folio(folio_name, version, "txt"))
@@ -224,6 +229,10 @@ class Manuscript():
 
         txt_dir = os.path.join(outdir, "txt")
         xml_dir = os.path.join(outdir, "xml")
+
+        if not dry_run:
+            shutil.rmtree(txt_dir)
+            shutil.rmtree(xml_dir)
 
         for version, entries in self.entries.items():
             txt_path = os.path.join(txt_dir, version)
@@ -256,6 +265,10 @@ class Manuscript():
         """Update /m-k-manuscript-data/allFolios/ with the current manuscript from /ms-xml/."""
         txt_dir = os.path.join(outdir, "txt")
         xml_dir = os.path.join(outdir, "xml")
+
+        if not dry_run:
+            shutil.rmtree(txt_dir)
+            shutil.rmtree(xml_dir)
 
         for version in self.versions:
             content_txt = self.generate_all_folios(method="txt", version=version)
