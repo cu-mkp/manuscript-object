@@ -130,7 +130,7 @@ class TestEntry(unittest.TestCase):
             "<ab>Content 2</ab>"
             "</div>"
             "</entry>"))
-        xml3 = generate_etree("<entry></entry>")
+        xml3 = generate_etree("<entry><div></div></entry>")
 
         self.assertEqual(find_identity(xml1), "170v_1")
         self.assertEqual(find_identity(xml2), "")
@@ -184,22 +184,22 @@ class TestEntry(unittest.TestCase):
         e_id = Entry(xml, identity='075r_1')
         e_folio = Entry(xml, folio='044v')
 
-        self.assertEquals(e.identity, '150r_1')
-        self.assertEquals(e.folio, '')
+        self.assertEqual(e.identity, '150r_1')
+        self.assertEqual(e.folio, '')
 
-        self.assertEquals(e_id.identity, '075r_1')
-        self.assertEquals(e_id.folio, '')
+        self.assertEqual(e_id.identity, '075r_1')
+        self.assertEqual(e_id.folio, '')
 
-        self.assertEquals(e_folio.identity, '150r_1')
-        self.assertEquals(e_folio.folio, '044v')
+        self.assertEqual(e_folio.identity, '150r_1')
+        self.assertEqual(e_folio.folio, '044v')
 
         for entry in (e, e_id, e_folio):
-            self.assertEquals(entry.xml, xml) # pretty sure this is just equality of reference :/
-            self.assertEquals(entry.text, text)
-            self.assertEquals(entry.xml_string, xml_string)
-            self.assertEquals(entry.title, "My title with deleted text")
-            self.assertEquals(entry.categories, ["arms and armor", "casting"])
-            self.assertEquals(entry.properties, 
+            self.assertEqual(entry.xml, xml) # pretty sure this is just equality of reference :/
+            self.assertEqual(entry.text, text)
+            self.assertEqual(entry.xml_string, xml_string)
+            self.assertEqual(entry.title, "My title with deleted text")
+            self.assertEqual(entry.categories, ["arms and armor", "casting"])
+            self.assertEqual(entry.properties, 
                     OrderedDict([
                         ("animal",["dog"]),
                         ("body_part",[]),
@@ -234,7 +234,7 @@ class TestEntry(unittest.TestCase):
             with open(examples_dir + filename.replace("xml","txt"), "r") as fp:
                 text = fp.read()
             e = Entry.from_file(examples_dir + filename)
-            self.assertEquals(e.text, text)
+            self.assertEqual(e.text, text)
         # Not sure what actual test to put here...
 
     def test_from_string(self):
@@ -282,21 +282,21 @@ class TestEntry(unittest.TestCase):
         e_id = Entry.from_string(xml_string, identity='075r_1')
         e_folio = Entry.from_string(xml_string, folio='044v')
 
-        self.assertEquals(e.identity, '150r_1')
-        self.assertEquals(e.folio, '')
+        self.assertEqual(e.identity, '150r_1')
+        self.assertEqual(e.folio, '')
 
-        self.assertEquals(e_id.identity, '075r_1')
-        self.assertEquals(e_id.folio, '')
+        self.assertEqual(e_id.identity, '075r_1')
+        self.assertEqual(e_id.folio, '')
 
-        self.assertEquals(e_folio.identity, '150r_1')
-        self.assertEquals(e_folio.folio, '044v')
+        self.assertEqual(e_folio.identity, '150r_1')
+        self.assertEqual(e_folio.folio, '044v')
 
         for entry in (e, e_id, e_folio):
-            self.assertEquals(entry.text, text)
-            self.assertEquals(entry.xml_string, xml_string)
-            self.assertEquals(entry.title, "My title with deleted text")
-            self.assertEquals(entry.categories, ["arms and armor", "casting"])
-            self.assertEquals(entry.properties, 
+            self.assertEqual(entry.text, text)
+            self.assertEqual(entry.xml_string, xml_string)
+            self.assertEqual(entry.title, "My title with deleted text")
+            self.assertEqual(entry.categories, ["arms and armor", "casting"])
+            self.assertEqual(entry.properties, 
                     OrderedDict([
                         ("animal",["dog"]),
                         ("body_part",[]),
