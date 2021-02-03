@@ -31,17 +31,17 @@ def clean_folio(folio: str) -> str:
 def clean_id(identity: str) -> str:
     return identity.lstrip("p").lstrip("0").replace("_","")
 
-def separate_by_id(filepath: str) -> Dict[str, et.Element]:
-    """Take a file path, read it as XML, and process it into separate elements by ID.
+def separate_by_id(fileObj) -> Dict[str, et.Element]:
+    """Take a file object, read it as XML, and process it into separate elements by ID.
     Returned object is a dictionary of lxml.etree.Element objects keyed by entry ID as a string.
     Divs without IDs will lumped together into one object keyed by an empty string.
     """
     entries = OrderedDict()
 
-    print(f"Separating divs in file: {ignore_data_path(filepath)}...")
-    xml = et.parse(filepath)
+    #print(f"Separating divs in file: {ignore_data_path(filepath)}...")
+    xml: et.ElementTree = et.parse(fileObj)
 
-    divs = xml.findall("div") # not recursive, which is okay since there should be no nested divs
+    divs: List[et.Element] = xml.findall("div") # not recursive, which is okay since there should be no nested divs
 
     for div in divs:
         key = div.get("id") or ""
@@ -53,7 +53,7 @@ def separate_by_id(filepath: str) -> Dict[str, et.Element]:
             root.append(div) # put the current div in the new tree
             entries[key] = root
 
-    print(f"Found {len(entries)} div{'' if len(entries)==1 else 's'} in file {ignore_data_path(filepath)} with ID{'' if len(entries)==1 else 's'}: {', '.join(entries.keys())}.")
+    print(f"Found {len(entries)} div{'' if len(entries)==1 else 's'} in file with ID{'' if len(entries)==1 else 's'}: {', '.join(entries.keys())}.")
 
     return entries
 
