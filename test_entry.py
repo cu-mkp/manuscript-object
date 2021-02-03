@@ -227,6 +227,7 @@ class TestEntry(unittest.TestCase):
                     ]))
 
     def test_from_file(self):
+        # change these to be Mock objects pls
         examples_dir = "./examples/entries/"
         files = ["tc_170r_6.xml", "tcn_170r_6.xml", "tl_170r_6.xml"]
 
