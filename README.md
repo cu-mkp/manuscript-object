@@ -21,6 +21,8 @@ Note for TXT versions:
 - figures and comments are absent and unmarked
 
 # Running update.py
+These are detailed instructions for how to use `update.py`. For simpler steps to updating derivatives in `m-k-manuscript-data`, see [the README in that repo](https://github.com/cu-mkp/m-k-manuscript-data/blob/master/README.md).
+
 0. Update `m-k-manuscript-data` with a `git pull`
 1. Navigate to your local `manuscript-object` directory.
 2. Make sure you're on the correct branch by typing `git status`. If you're not in the correct branch, type `git checkout [BRANCH_NAME]`.
