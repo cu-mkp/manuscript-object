@@ -1,0 +1,64 @@
+folio,text in tag,before,after
+tcn_p001v_preTEI,pourl’,"['veu', 'l', 't', 'un', 'peu', 'de', 'cane', 'l', 'l', 'e']",['estomac']
+tcn_p001v_preTEI,remollitive,"['poulet', 'de', 'la', 'racine', 'de', 'guimave', 'La', 'fresche', 'est', 'plus']",[]
+tcn_p001v_preTEI,lasche le ,"['doulces', 'avecq', 'de', 'l', 'eau', '&', 'en', 'prendre', 'au', 'matin']",['ventre']
+tcn_p007v_preTEI,contre la suffocation,"['car', 'six', 'noix', 'estainctes', 'sont', 'pour', 'une', 'dose', 'Excellent', 'remede']","['de', 'matrice']"
+tcn_p007v_preTEI,injectionem,"['refrigerata', 'colentur', 'cum', 'forti', 'expressione', '&', 'de', 'colatura', 'utatur', 'per']",[]
+tcn_p013v_preTEI,ne pourront se mouvoir ne parler ne donner empeschement,"['en', 'la', 'chambre', 'de', 'quelques', 'uns', 'de', 'nuict', 'qu', 'ilz']","['aulx', 'larrons']"
+tcn_p015v_preTEI,defluxion,"['Quand', 'quelque']","['y', 'vient', 'il', 'se', 'fault', 'bien', 'garder', 'd', 'y', 'rien']"
+tcn_p015v_preTEI,à l’,"['rien', 'mectre', 'dedans', 'et', 'se', 'l', 'on', 'l', 'e', 'proverbe']","['oei', 'l', '&', 'à', 'l', 'orei', 'l', 'l', 'e', 'i']"
+tcn_p015v_preTEI,conforte,"['c', 'est', 'à', 'dire', 'tenu', 'parmy', 'du', 'musc', 'car', 'il']","['bien', 'fort']"
+tcn_p016v_preTEI,injection,"['coings', 'en', 'eau', 'claire', '&', 'de', 'cette', 'eau', 'mucilagineuse', 'fais']",[]
+tcn_p020v_preTEI,contre la colique venteuse,"['l', 'eau', 'distilée', 'de', 'l', 'escorce', 'd', 'orenge', 'est', 'excellent']","['L', 'escorce', 'aussi', 'confite', 'est', 'excellente', 'pour', 'les', 'vents', 'de']"
+tcn_p020v_preTEI,pour les ,"['contre', 'la', 'colique', 'venteuse', 'L', 'escorce', 'aussi', 'confite', 'est', 'excellente']","['vents', 'de', 'l', 'estomac', 'Et', 'pour', 'en', 'faire', 'preuve', 'ayant']"
+tcn_p020v_preTEI,nourrissant,"['un', 'doigt', 'de', 'vin', 'Et', 'oultre', 'ce', 'que', 'cela', 'est']","['il', 'faict', 'bon', 'ventre']"
+tcn_p020v_preTEI,faict bon,"['de', 'vin', 'Et', 'oultre', 'ce', 'que', 'cela', 'est', 'nourrissant', 'il']",['ventre']
+tcn_p021v_preTEI,blesseures,"['le', 'crusol', 'quand', 'on', 'les', 'veult', 'gecter;', 'cela', 'empire', 'les']","['Il', 'ne', 'fault', 'pas', 'que', 'les', 'grenades', 'soient', 'si', 'aigres']"
+tcn_p037r_preTEI,dissipe la pituite & les vents qui,"['tu', 'pourras', 'boire', 'un', 'doigt', 'de', 'vin', 'trempé', 'suffisamment', 'Cela']","['en', 'proviennent', 'Tu', 'peulx', 'prendre', 'six', 'grains', 'de', 'poyvre', '&']"
+tcn_p037r_preTEI,profficte à l’,"['es', 'ava', 'l', 'l', 'er', 'sans', 'mascher', 'Ce', 'l', 'a']","['estomac', 'sans', 'eschaufer', 'l', 'e', 'foye']"
+tcn_p044v_preTEI,auras bientost envye de dormir,"['si', 'tu', 'frottes', 'un', 'peu', 'la', 'plante', 'des', 'pieds', 'tu']",[]
+tcn_p046r_preTEI,blanchissent,"['Aulcuns', 'les']","['avecq', 'compositions', 'd', 'eau', 'fort;', 'toutesfois', 'on', 'dict', 'que', 'cela']"
+tcn_p046r_preTEI,cela par aprés les corrompt & leur,"['blanchissent', 'avecq', 'compositions', 'd', 'eau', 'fort;', 'toutesfois', 'on', 'dict', 'que']","['cause', 'une', 'noirceur', 'On', 'dict', 'que', 'l', 'huile', 'de', 'soufre']"
+tcn_p046r_preTEI,penetre & est corrosif,"['et', 'reitere', 'deulx', 'ou', 'trois', 'fois', 'L', 'huile', 'de', 'soufre']","['et', 'l', 'mays', 'l', 'huile', 'de', 'girofle', '&', 'le', 'miel']"
+tcn_p046r_preTEI,"Apliqué sur le poil le faict tumber, & le garde de naistre",[],[]
+tcn_p046r_preTEI,le mal ne revient,"['huile', 'de', 'soufre', 'donne', 'le', 'au', 'patient', 'On', 'tient', 'que']",['plus']
+tcn_p047r_preTEI,le tartre & noirceur s’en ira,"['et', 'de', 'si', 'peu', 'que', 'tu', 'en', 'toucheras', 'la', 'dent']","['Il', 'est', 'vray', 'qu', 'il', 'est', 'de', 'mauvaise', 'odeur', 'mays']"
+tcn_p047r_preTEI,Contre la diarrhoee,[],"['il', 'est', 'tres', 'bon', 'd', 'user', 'de', 'la', 'conserve', 'de']"
+tcn_p047r_preTEI,contre,"['conserve', 'de', 'symphitum', 'aultrement', 'consolida', 'maior', 'Et', 'si', 'c', 'est']","['la', 'dissenterie', 'tu', 'peulx', 'avecq', 'cella', 'frotter', 'les', 'temples', 'le']"
+tcn_p048v_preTEI,fumée,"['fois', '&', 'se', 'tournent', 'le', 'dos', 'de', 'peur', 'de', 'la']","['Et', 'continuent', 'ainsy', 'jusques', 'à', 'ce', 'que', 'tout', 'y', 'soict']"
+tcn_p052v_preTEI,l’exhalation en seroit dangereuse,"['foeu', 'soit', 'amorty', '&', 'que', 'tout', 'soict', 'refroidy', 'Ap', 'car']","['Et', 'pour', 'ceste', 'occasion', 'quand', 'tu', 'l', 'apastes', 'avecq', 'des']"
+tcn_p055r_preTEI,il ne mourra,"['qu', 'aulcuns', 'apellent', 'vermicularis', 'Et', 'on', 'tient', 'pour', 'asseuré', 'qu']",['point']
+tcn_p058r_preTEI,"dames, se voulant colorer les ","['d', 'un', 'qui', 'ha', 'grand', 'froit', 'C', 'est', 'pourquoy', 'les']","['joues', 'broyent', 'de', 'la', 'laque', 'de', 'Florence', 'bien', 'subtillement', 'puys']"
+tcn_p066v_preTEI,ramolist,"['qu', 'il', 'fault', 'aprés', 'avoir', 'apliqué', 'le', 'pain', 'chault', 'qui']","['&', 'faict', 'suer', 'mectre', 'dessus', 'des', 'linges', 'trempés', 'en', 'eau']"
+tcn_p066v_preTEI,faict suer,"['fault', 'aprés', 'avoir', 'apliqué', 'le', 'pain', 'chault', 'qui', 'ramolist', '&']","['mectre', 'dessus', 'des', 'linges', 'trempés', 'en', 'eau', 'de', 'ruche', 'de']"
+tcn_p077r_preTEI,purger la,"['partye', 'te', 'sortira', 'par', 'le', 'nes', 'Mays', 'si', 'tu', 'veulx']","['teste', 'sarre', 'aussy', 'le', 'nes', 'Contre', 'morfondiments', 'rheumes', '&', 'aultres']"
+tcn_p077r_preTEI,Contre morfondiments,"['si', 'tu', 'veulx', 'purger', 'la', 'teste', 'sarre', 'aussy', 'le', 'nes']","['rheumes', '&', 'aultres', 'malladies']"
+tcn_p077r_preTEI,rheumes,"['veulx', 'purger', 'la', 'teste', 'sarre', 'aussy', 'le', 'nes', 'Contre', 'morfondiments']","['&', 'aultres', 'malladies']"
+tcn_p077r_preTEI,aultresmalladies,"['la', 'teste', 'sarre', 'aussy', 'le', 'nes', 'Contre', 'morfondiments', 'rheumes', '&']",[]
+tcn_p079r_preTEI,vous vous en trouverés fort bien,"['heure', 'que', 'vous', 'vouldrés', '&', 'aveq', 'l', 'ayde', 'de', 'Dieu']",[]
+tcn_p079v_preTEI,gardésq,"['s', 'i', 'fault', 'q', 'u', 'il', 'soit', 'six', 'heures', '&']","['ue', 'la', 'fumée', 'ne', 'vous', 'face', 'mal', 'car', 'est', 'maulvaix']"
+tcn_p079v_preTEI,l’,['Prens'],"['e', 'matin', 'une', 'rostie', 'au', 'boeurre', '&', 'l', 'antimoine', 'ne']"
+tcn_p093r_preTEI,humeur,"['plustost', 'que', 'leur', 'abre', 'ne', 'soict', 'en', 'sabe', 'car', 'l']","['les', 'pousse', 'bien', 'tost', 'Aultrement', 'au', 'ilz', 'se', 'seichent', 'plustost']"
+tcn_p093r_preTEI,humeur,"['bien', 'tost', 'Aultrement', 'au', 'ilz', 'se', 'seichent', 'plustost', 'que', 'l']","['de', 'la', 'sabe', 'ne', 'les', 'pousse']"
+tcn_p102v_preTEI,pour,"['deulx', 'ou', 'trois', 'cuillerées', 'de', 'vin', 'blanc', 'Mays', 'c', 'est']","['les', 'vieulx', 'Paul', 'tiers', 'en', 'usoit']"
+tcn_p103r_preTEI,"n’y en mects pasd’advantage,","['n', 'gdras', 'la', 'brusleure', 'l', 'espace', 'de', '9', 'jours', 'Mays']","['car', 'il', 'te', 'faeroit', 'surcroistre', 'la', 'chair', 'Tu', 'pte', 'pe']"
+tcn_p103r_preTEI,faict renaistre le ,"['sur', 'lequel', 'tu', 'pourras', 'mectre', 'des', 'foeilles', 'de', 'lierre', 'Cecy']","['poil', '&', 'ne', 'laisse', 'poinct', 'cicatrice', 'Un', 'pouldrier', 'qui', 's']"
+tcn_p103r_preTEI,ne laisse poinct cicatrice,"['des', 'foeilles', 'de', 'lierre', 'Cecy', 'faict', 'renaistre', 'le', 'poil', '&']","['Un', 'pouldrier', 'qui', 's', 'estoit', 'presque', 'tout', 'bruslé', 'm', 'a']"
+tcn_p103v_preTEI,clistere,"['par', 'le', 'bout', '&', 'en', 'ceste', 'sorte', 'on', 'donne', 'le']",[]
+tcn_p103v_preTEI,mal de ,"['l', 'urine', 'qui', 'se', 'faict', 'volontiers', 'par', 'ceulx', 'qui', 'ont']","['teste', 'toute', 'l', 'escume', 'se', 'dissipera']"
+tcn_p106v_preTEI,eviter la vapeur,"['ne', 'trop', 'vehemente', 'Remue', 'tousjours', 'avecq', 'un', 'long', 'baston', 'pour']","['le', 'tournant', 'aultour', 'du', 'chaulderon', '&', 'au', 'milieu', 'en', 'forme']"
+tcn_p109v_preTEI,remede,"['si', 'tu', 'avoys', 'manié', 'des', 'orties', 'Mays', 'le', 'plus', 'souverain']","['pour', 'cela', 'est', 'de', 'metre', 'la', 'main', 'dans', 'de', 'la']"
+tcn_p110r_preTEI,partie infectée,"['terre', 'fresche', '&', 'humide', 'laquelle', 'apliquée', 'fresche', 'en', 'sur', 'la']","['en', 'tire', 'tout', 'le', 'venin', 'sans', 'aultre', 'chose', 'Aultant', 'est']"
+tcn_p120v_preTEI,sinapisé,"['Il', 'est', 'excellent']","['sur', 'les', 'playes', 'pour', 'arrester', 'le', 'sang', 'Le', 'meilleur', 'est']"
+tcn_p122r_preTEI,contrepoison,"['quelque', 'fleur', 'q', 'ou', 'quelque', 'branche', 'd', 'herbe', 'qui', 'porte']","['contre', 'sa', 'morsure', 'prens', 'une', 'petite', 'branche', 'des', 'mieulx', 'disposées']"
+tcn_p123r_preTEI,fumée en est,"['s', 'il', 'se', 'rompt', 'les', 'materiaulx', 's', 'evaporent', '&', 'la']","['dangereuse', 'Si', 'en', 'xii', 'heures', 'il', 'n', 'est', 'fondu', '&']"
+tcn_p123v_preTEI,fumées,"['pour', 'n', 'y', 'tourner', 'pas', 'souvent', 'à', 'cause', 'que', 'les']","['qui', 'sont', 'dangereuses', 'te', 'pourroient', 'nuire', 'Et', 'plustost', 'qu', 'i']"
+tcn_p136v_preTEI,garde,"['cuivre', '&', 'metal', 'Si', 'tu', 'gectes', 'de', 'la', 'calamine', 'recente']","['toy', 'de', 'la', 'fumée', 'car', 'elle', 'est', 'pernicieuse', 'J', 'ay']"
+tcn_p149r_preTEI,poison,"['duquel', 'il', 'se', 'peult', 'faire', 'des', 'coupes', 'qui', 'demonstreront', 'le']",[]
+tcn_p165v_preTEI,entameure en,"['fort', 'long', 'temps', 'sans', 'se', 'gaster', 'Si', 'tu', 'as', 'quelque']","['la', 'main', 'gardes', 'bi', 'en', 'que', 'ceste', 'mixtion', 'n', 'y']"
+tcn_p165v_preTEI,"la main, gardes bien que ceste mixtion n’y touche","['temps', 'sans', 'se', 'gaster', 'Si', 'tu', 'as', 'quelque', 'entameure', 'en']",[]
+tcn_p170v_preTEI,contre fiebvre pestilentiale,['Prends'],"['ou', 'poison', 'ou', 'peste', 'le', 'poix', 'd', 'un', 'escues', 'de']"
+tcn_p170v_preTEI,poison,"['Prends', 'contre', 'fiebvre', 'pestilentiale', 'ou']","['ou', 'peste', 'le', 'poix', 'd', 'un', 'escues', 'de', 'ton', 'opiate']"
+tcn_p170v_preTEI,peste,"['Prends', 'contre', 'fiebvre', 'pestilentiale', 'ou', 'poison', 'ou']","['le', 'poix', 'd', 'un', 'escues', 'de', 'ton', 'opiate', 'destrempé', 'avecq']"
+tcn_p170v_preTEI,pour preserver qua,"['lateres', 'igniti', 'et', 'vapor', 'excipiatur', 'ore', '&', 'naribus', 'C', 'est']","['nd', 'on', 'va', 'en', 'aer', 'infaict', 'Un', 'acoustrement', 'se', 'peult']"
+tcn_p170v_preTEI,osterl’infection,"['aer', 'infaict', 'Un', 'acoustrement', 'se', 'peult', 'parfumer', 'ainsy', '&', 'en']","['la', 'chambre', 'maison', '&c', 'Si', 'tu', 'te', 'trouves', 'en', 'lieu']"

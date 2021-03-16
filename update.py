@@ -16,7 +16,7 @@ versions = ['tc', 'tcn', 'tl']
 properties = ['animal', 'body_part', 'currency', 'definition', 'environment', 'material', 'medical', 'measurement',
               'music', 'plant', 'place', 'personal_name', 'profession', 'sensory', 'tool', 'time', 'weapon']
 
-m_path = f'{os.getcwd()}/../m-k-manuscript-data'
+m_path = f'{os.getcwd()}/../'
 
 def update_metadata(manuscript: BnF) -> None:
   """
@@ -48,7 +48,7 @@ def update_metadata(manuscript: BnF) -> None:
 def update_entries(manuscript: BnF) -> None:
   """
   Update /m-k-manuscript-data/entries/ with the current manuscript from /ms-xml/. For each version, delete all existing
-  entries. Regenerate folio text entry by entry, and save the file. 
+  entries. Regenerate folio text entry by entry, and save the file.
 
   Input:
     manuscript -- Python object of the manuscript defined in digital_manuscript.py
@@ -63,7 +63,7 @@ def update_entries(manuscript: BnF) -> None:
   for version in versions: # TODO: fix this when you're done with the body
     txt_path = f'{m_path}/entries/txt/{version}'
     xml_path = f'{m_path}/entries/xml/{version}'
-    
+
     # If the entries/txt or xml directory does not exist, create it. Otherwise, clear the directory.
     for path in [txt_path, xml_path]:
       if not os.path.exists(path):
@@ -77,7 +77,7 @@ def update_entries(manuscript: BnF) -> None:
         # TODO: ask for a naming convention
         filename_txt = f'{txt_path}/{version}_{entry.identity}.txt'
         filename_xml = f'{xml_path}/{version}_{entry.identity}.xml'
-        
+
         content_txt = entry.text(version, xml=False)
         content_xml = entry.text(version, xml=True)
 
@@ -90,7 +90,7 @@ def update_entries(manuscript: BnF) -> None:
         f_xml.close()
 
 def update_ms(manuscript:BnF) -> None:
-  for version in versions: 
+  for version in versions:
     for r, d, f in os.walk(f'{m_path}/ms-xml/{version}'):
       for filename in f: # iterate through /ms-xml/{version} folder
         # read xml file
@@ -98,7 +98,7 @@ def update_ms(manuscript:BnF) -> None:
         filepath = f'{m_path}/ms-xml/{version}/{filename}'
         with open(filepath, encoding="utf-8", errors="surrogateescape") as f:
           text = f.read()
-        
+
         # remove xml
         text = text.replace('\n', '**NEWLINE**')
         text = re.sub(r'<.*?>', '', text)
@@ -113,7 +113,7 @@ def update_ms(manuscript:BnF) -> None:
 
 def update_all_folios(manuscript: BnF) -> None:
   """
-  Update /m-k-manuscript-data/allFolios/ with the current manuscript from /ms-xml/. 
+  Update /m-k-manuscript-data/allFolios/ with the current manuscript from /ms-xml/.
 
   Input:
     manuscript -- Python object of the manuscript defined in digital_manuscript.py
@@ -143,7 +143,7 @@ def update_time():
   with open('./update.py', 'r') as f:
     lines = f.read().split('\n')
     lines[0] = f'# Last Updated | {now_str}'
-  
+
   # write modified text
   f = open('./update.py', 'w')
   f.write('\n'.join(lines))

@@ -1,0 +1,21 @@
+folio,text in tag,before,after
+tcn_p004r_preTEI,quiterniers,"['de', 'polir', 'leur', 'hebene', 'le', 'vernissent', 'de', 'cestuy', 'cy', 'les']","['aussi', 'Cestuy', 'cy', 'n', 'est', 'pas', 'si', 'propre', 'pour', 'les']"
+tcn_p007r_preTEI,quiternier,"['Les', 'menusiers', 'en', 'collent', 'leurs', 'chef', 'd', 'oeuvre', 'et', 'les']","['s', 'en', 'servent', 'aulx', 'ouvrages', 'delicates', 'Elle', 'veult', 'estre', 'fort']"
+tcn_p104v_preTEI,cistre,"['aultour', 'en', 'l', 'espesseur', 'et', 'attaches', 'des', 'plumes', 'comme', 'pour']","['ou', 'espinette', '&', 'les', 'dispose', 'selon', 'la', 'chançon', 'que', 'tu']"
+tcn_p104v_preTEI,espinette,"['l', 'espesseur', 'et', 'attaches', 'des', 'plumes', 'comme', 'pour', 'cistre', 'ou']","['&', 'les', 'dispose', 'selon', 'la', 'chançon', 'que', 'tu', 'vouldras', 'faire']"
+tcn_p111r_preTEI,espinette,"['de', 'moingdre', '&', 'du', 'delié', 'p', 'comme', 'grosse', 'corde', 'd']","['pour', 'les', 'petits', 'ouvrages', 'Tu', 'en', 'fais', 'estant', 'de', 'recuit']"
+tcn_p113r_preTEI,espinettes,"['subtiles', '&', 'deliés', 'quasi', 'comme', 'les', 'plus', 'grosses', 'cordes', 'd']","['Et', 'est', 'mieulx', 'qu', 'elles', 'soient', 'de', 'fil', 'de', 'fer']"
+tcn_p113r_preTEI,mandorre,"['estant', 'bien', 'posé', 'sur', 'la', 'tourtelle', 'faicte', 'en', 'forme', 'de']","['pose', 'tout', 'aultour', 'un', 'entour', 'de', 'mesme', 'terre', 'en', 'ceste']"
+tcn_p113v_preTEI,mandorre,"['avecq', 'un', 'grand', 'cousteau', 'luy', '||', 'donnant', 'forme', 'longue', 'de']",['Rasche']
+tcn_p114r_preTEI,cistre,"['faire', 'des', 'poinctes', 'delicates', 'de', 'fil', 'de', 'cist', 'cordes', 'de']","['de', 'longues', '&', 'courtes']"
+tcn_p114v_preTEI,mandorre,"['adapte', 'tes', 'deulx', 'moles', 'uniment', 'ensemble', 'en', 'forme', 'longuette', 'de']","['comme', 'dict', 'est', 'à', 'cause', 'du', 'gect', 'Et', 'trempe', 'un']"
+tcn_p115r_preTEI,mandorre,"['se', 'faict', 'le', 'gect', 'qui', 'est', 'le', 'bout', 'de', 'la']",[]
+tcn_p116r_preTEI,mandorle,"['&', 'alum', 'destrempé', 'dessus', 'ayant', 'disposé', 'ton', 'image', 'sur', 'la']","['d', 'ardile', '&', 'y', 'ayant', 'faict', 'un', 'contour', 'de', 'pour']"
+tcn_p117r_preTEI,mandorre,"['comme', 'tu', 'as', 'faict', 'pour', 'les', 'serpens', 'en', 'forme', 'de']","['ainsy', 'que', 'selon', 'la', 'grandeur', 'de', 'ton', 'herbe', 'Puys', 'prens']"
+tcn_p117r_preTEI,mandorle,"['passe', 'la', 'queue', 'de', 'fer', 'par', 'le', 'bout', 'de', 'la']","['de', 'terre', 'affin', 'que', 'la', 'quille', 'de', 'cire', 'q', 'où']"
+tcn_p117r_preTEI,mandorle,"['l', 'herbe', 'est', 'hantée', 'se', 'joingne', 'au', 'bout', 'de', 'la']","['de', 'terre', 'Et', 'dispose', 'tellement', 'ton', 'herbe', 'ainsy', 'couchée', 'qu']"
+tcn_p117r_preTEI,mandorre,"['ainsy', 'couchée', 'qu', 'elle', 'demeure', 'au', 'milieu', 'de', 'la', 'dicte']","['sans', 'toucher', 'en', 'aulcun', 'costé', 'affin', 'que', 'lae', 'sable', 'que']"
+tcn_p117r_preTEI,mandorle,"['destrempé', 'beaucoup', 'plus', 'cler', 'que', 'pour', 'les', 'serpents', 'dedans', 'la']","['Et', 'le', 'plustost', 'sera', 'le', 'meilleur', 'affin', 'que', 'l', 'eau']"
+tcn_p156v_preTEI,espinette,"['chaulde', 'Tu', 'couperas', 'aussy', 'de', 'petits', 'bouts', 'de', 'corde', 'd']","['&', 'les', 'colleras', 'avecq', 'ladicte', 'colle', '&', 'estants', 'secs', 'c']"
+tcn_p157r_preTEI,espinette,"['adaptes', 'en', 'de', 'poil', 'de', 'porc', 'ou', 'de', 'corde', 'd']","['Arreste', 'la', 'foeille', 'sur', 'la', 'platene', 'd', 'ardille', 'avecq', 'deux']"
+tcn_p165v_preTEI,espinette,"['bouche', 'ouverte', 'mects', 'y', 'un', 'petit', 'bout', 'de', 'corde', 'd']","['qui', 'ne', 'tiendra', 'point', 'de', 'lieu']"
