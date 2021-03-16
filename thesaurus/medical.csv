@@ -3,8 +3,9 @@ freq,verbatim_term,prefLabel_en
 1,injectionem,injectionem
 1,toadstone,toadstone
 1,defluxion,defluxion
+1,toothache,toothache
 1,injection,injection
-1,enemas,enema
+1,clysters,clyster
 1,nourishing,nourishing
 2,wounds,wound
 1,whiten,whiten
@@ -20,9 +21,9 @@ freq,verbatim_term,prefLabel_en
 1,antidote,antidote
 2,poison,poison
 1,plague,plague
-1,for easing the belly,for easing the belly
+1,for loosening the belly,for loosening the belly
+1,loosens the belly,loosens the belly
 1,for the stomach,for the stomach
-1,eases the belly,eases the belly
 1,against pains,against pain
 1,against the suffocation of the matrix,against the suffocation of the matrix
 1,against windy colic,against windy colic
@@ -30,10 +31,9 @@ freq,verbatim_term,prefLabel_en
 1,against gonorrhea,against gonorrhea
 1,for getting rid of the redness of eyes or bruising,for getting rid of the redness of eyes or bruising
 1,"they will be neither able to move, nor speak, nor thwart thieves","they will be neither able to move, nor speak, nor thwart thiefe"
-1,one ought only to touch the ear &amp; the eye with the elbow,one ought only to touch the ear &amp; the eye with the elbow
 1,comforts quite well,comforts quite well
-1,tooth ache,tooth ache
-1,against go,against go
+1,one ought only to touch the ear &amp; the eye with the elbow,one ought only to touch the ear &amp; the eye with the elbow
+1,against go.,against go.
 1,for removing fine hair from the forehead,for removing fine hair from the forehead
 1,for whitening the face,for whitening the face
 1,against the windy colic,against the windy colic
@@ -42,18 +42,17 @@ freq,verbatim_term,prefLabel_en
 1,against burn,against burn
 1,a form of regimen,a form of regiman
 1,makes a good stomach,makes a good stomach
+1,medicine for the stomach which heats it and unstops the liver,medicine for the stomach which heats it and unstops the liver
 1,benefits the stomach without heating the liver,benefits the stomach without heating the liver
-1,unstops the liver,unstops the liver
-1,medicine for the stomach which heats it,medicine for the stomach which heats it
 1,dissipates the phlegm &amp; the winds which arise from it,dissipates the phlegm &amp; the winds which arise from it
 1,nose bleed,nose bleed
 1,forehead of the one who bleeds,forehead of the one who bleed
 1,water against the plague,water against the plague
 1,white soporific oil,white soporific oil
 1,will soon feel like sleeping,will soon feel like sleeping
+1,this corrupts them afterward &amp; causes a blackness on them,this corrupts them afterward &amp; causes a blackness on them
 1,for the teeth,for the teeth
 1,penetrates &amp; is corrosive,penetrates &amp; is corrosive
-1,this corrupts them afterward &amp; causes a blackness on them,this corrupts them afterward &amp; causes a blackness on them
 1,"applied to hair, it makes it fall out &amp; keeps it from being born.","applied to hair, it makes it fall out &amp; keeps it from being born."
 1,the pain will not return,the pain will not return
 1,against the falling sickness,against the falling sickness
@@ -61,45 +60,46 @@ freq,verbatim_term,prefLabel_en
 1,for teeth,for teeth
 1,the tartar &amp; blackness will go away,the tartar &amp; blackness will go away
 1,against falling sickness or vertigo,against falling sickness or vertigo
-1,against dysentery,against dysentery
 1,against diarrhea,against diarrhea
+1,against dysentery,against dysentery
 1,curing dogs of mange,curing dogs of mange
 1,its exhalation would be dangerous,its exhalation would be dangerou
 1,will make healing difficult,will make healing difficult
 1,against wounds,against wound
 1,it will not die,it will not die
-1,onenev elbirro,onenev elbirro
 1,hcihw sllik fi eno spets no a draob ro a ueirse purrits,hcihw sllik fi eno spets no a draob ro a ueirse purrit
+1,onenev elbirro,onenev elbirro
 1,"ladies, wanting to color their cheeks","ladies, wanting to color their cheek"
-1,makes one sweat,makes one sweat
 1,for preventing teats from swelling d or to diminish overly large ones,for preventing teats from swelling d or to diminish overly large one
+1,makes one sweat,makes one sweat
 1,against bruising of the eyes,against bruising of the eye
 1,against redness of the face,against redness of the face
-1,against colds,against cold
 1,other maladies,other malady
+1,against colds,against cold
 1,purge the head,purge the head
 1,against all maladies,against all malady
 1,water for disease of the eyes,water for disease of the eye
 1,you will find yourself very well from it,you will find yourself very well from it
 1,mind that the fumes do not harm you for they are bad,mind that the fumes do not harm you for they are bad
-1,neither antimony nor any other vapor will be able to harm you,neither antimony nor any other vapor will be able to harm you
 1,antidote against the fumes of metals,antidote
+1,neither antimony nor any other vapor will be able to harm you,neither antimony nor any other vapor will be able to harm you
 1,go to your head,go to your head
 1,medicinal gums,medicinal gum
 1,for the elderly,for the elderly
-1,causes hair to regrow,causes hair to regrow
 1,against burns,against burn
-1,"do not apply it any longer than this, for it would cause a your flesh to grow excessively","do not apply it any longer than this, for it would cause a your flesh to grow excessively"
 1,leaves no scar,leaves no scar
+1,"do not apply it any longer than this, for it would cause a your flesh to grow excessively","do not apply it any longer than this, for it would cause a your flesh to grow excessively"
+1,causes hair to regrow,causes hair to regrow
 2,against dogs’ mange,against dogs’ mange
 1,protruding or swollen hemorrhoidal veins,protruding or swollen hemorrhoidal vein
 1,infected part,infected part
-1,"fumes, which are dangerous, could hurt you","fumes, which are dangerous, could hurt you"
 1,fumes of it are dangerous,fumes of it are dangerou
+1,"fumes, which are dangerous, could hurt you","fumes, which are dangerous, could hurt you"
 1,"keep away from the fumes, for they are pernicious","keep away from the fumes, for they are perniciou"
-1,"cut on your hand, take care that this mixture does not touch it","cut on your hand, take care that this mixture does not touch it"
-1,against pestilential fever,against pestilential fever
+1,"cut on your hand,","cut on your hand,"
+1,take care that this mixture does not touch it,take care that this mixture does not touch it
 1,against plague,against plague
+1,against pestilential fever,against pestilential fever
+1,to preserve oneself when one goes into infected air,to preserve oneself when one goes into infected air
 1,removing its infection,removing its infection
 1,for preserving,for preserving
-1,to preserve oneself when one goes into infected air,to preserve oneself when one goes into infected air
