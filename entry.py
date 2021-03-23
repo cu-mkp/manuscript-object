@@ -28,13 +28,6 @@ def xslt_transform(xml: et.Element, transform: et.XSLT, params={}) -> str:
     Editorial tags are rendered according to specification here: https://github.com/cu-mkp/m-k-manuscript-data/issues/1613#issuecomment-700295493.
     Uses global variable `transform`.
     """
-    # XSLT booleans are represented as "true()" and "false()".
-    for k,v in params.items():
-        if v==True:
-            params[k] = "true()"
-        elif v==False:
-            params[k] = "false()"
-
     return str(transform(xml, **params))
 
 def parse_categories(xml: et.Element) -> List[str]:
@@ -66,8 +59,7 @@ def find_title(xml: et.Element) -> str:
     """Get the content of the first "head" tag, rendered in plaintext, but not rendering "del" editorial tags.
     If no such tags are found, return an empty string.
     """
-    titles = find_terms(xml, "head", params={"del":"false()"}) # Exclude del annotations.
-    #TODO: check if we want to *not render* del tags (meaning keep the text but don't add <- ->) or *remove del tags entirely* (meaning ignore their contents)
+    titles = find_terms(xml, "head", params={"del":"'omit'"}) # Remove text inside <del> tags from the title.
     if titles:
         return titles[0]
     else:
