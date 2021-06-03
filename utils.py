@@ -1,6 +1,6 @@
 import os
 
-manuscript_data_path = os.path.join(os.path.dirname(os.getcwd()), "m-k-manuscript-data") # default m&k data directory
+manuscript_data_path = os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(__file__))), "m-k-manuscript-data") # default m&k data directory
 ms_xml_path = os.path.join(manuscript_data_path, "ms-xml")
 versions = ['tc', 'tcn', 'tl']
 version_paths = [os.path.join(ms_xml_path, version) for version in versions]
@@ -67,4 +67,4 @@ categories = [
     "manuscript structure" 
 ]
 
-stylesheet_path = "annotations.xslt"
+stylesheet_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), "annotations.xslt")
