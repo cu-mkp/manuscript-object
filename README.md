@@ -25,7 +25,7 @@ These are detailed instructions for how to use `update.py`. For simpler steps to
 
 0. Update `m-k-manuscript-data` with a `git pull`
 1. Navigate to your local `manuscript-object` directory.
-2. Make sure you're on the correct branch by typing `git status`. If you're not in the correct branch, type `git checkout [BRANCH_NAME]`.
+2. Make sure you're on the correct branch by typing `git status`. If you're not in the correct branch, type `git checkout -b [BRANCH_NAME]`.
 3. Run `git pull`.
 4. Run update.py. Detailed instructions are below, but specific tasks are listed here:
   - To regenerate all the derivative files from originals: `python3 update.py`
