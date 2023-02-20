@@ -70,9 +70,9 @@ Note: if you have multiple versions of Python 3 installed, specify that version 
 
 2. Install [Pip](https://pypi.org/project/pip/)
 
-3. Install [Pipenv](https://pypi.org/project/pipenv/) via `python3 -m pip install pipenv`
+3. Install [Pipenv](https://pypi.org/project/pipenv/) via `python3 -m pip3 install pipenv`
 
-update from 2023/02/20: here I think it should be install "pip" instead of install "pip3"
+update from 2023/02/20: here I think it should be install "pip" instead of install "pip3" (it might be because I have a older version of python, still need to double check)
 
 4. Clone the repositories into separate folders in the same directory: 
 ```bash
