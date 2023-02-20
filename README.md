@@ -64,7 +64,7 @@ optional arguments:
 ```
 
 # Setup
-Note: if you have multiple versions of Python 3 installed, specify that version when running bash commands. E.g. `python3.7` instead of `python3`.
+Note: if you have multiple versions of Python 3 installed, specify that version when running bash commands. E.g., `python3.7` instead of `python3`.
 
 1. Install [Python](https://www.python.org/) (version 3.7+)
 
@@ -72,14 +72,17 @@ Note: if you have multiple versions of Python 3 installed, specify that version 
 
 3. Install [Pipenv](https://pypi.org/project/pipenv/) via `python3 -m pip3 install pipenv`
 
-update from 2023/02/20: here I think it should be install "pip" instead of install "pip3" (it might be because I have a older version of python, still need to double check)
+> update from 2023/02/20: here I think it should be install "pip" instead of install "pip3" (it might be because I have a older version of python, still need to double check) 
+
+
+> pip3 SHOULD specify using the version of python you have that is 3.0+ whereas pip is more general. So it is possible that for some users, install "pip" is sufficient, rather 
 
 4. Clone the repositories into separate folders in the same directory: 
 ```bash
 git clone https://github.com/cu-mkp/m-k-manuscript-data
 git clone https://github.com/cu-mkp/manuscript-object
 ```
-E.g. after running these commands in a folder called 'mkp', you should see:
+E.g., after running these commands in a folder called, for example, 'mkp', you should see:
 ```
 mkp/
   m-k-manuscript-data/
