@@ -72,6 +72,8 @@ Note: if you have multiple versions of Python 3 installed, specify that version 
 
 3. Install [Pipenv](https://pypi.org/project/pipenv/) via `python3 -m pip install pipenv`
 
+update from 2023/02/20: here I think it should be install "pip" instead of install "pip3"
+
 4. Clone the repositories into separate folders in the same directory: 
 ```bash
 git clone https://github.com/cu-mkp/m-k-manuscript-data
@@ -85,6 +87,8 @@ mkp/
   manuscript-object/
     ...
 ```
+
+update from 2023/2/20: here I did not see a folder called mkp, but I did see two seperate folder called m-k-manuscript-data and manuscript-object.
 
 5. Run `python3 -m pipenv install` to install dependencies to the pipenv shell. If you get a version error, try `python3 -m pipenv install --python [VERSION]`, where [VERSION] is the version of Python you just installed (e.g. 3.7.4).
 
