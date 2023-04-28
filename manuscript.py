@@ -301,13 +301,13 @@ class Manuscript():
         """
         if method=="txt":
             content = "" # string representing the entire text version
-            for folio_name, folio in self.folios[version].items():
+            for folio_name, folio in sorted(self.folios[version].items(), key=lambda i: i[0].zfill(4)):
                 print(f"Adding folio {folio_name} to allFolios {version} {method}...")
                 content += folio.text + "\n\n"
 
         elif method=="xml":
             root = et.Element("all") # Create a root element to wrap the entire XML.
-            for folio_name, folio in self.folios[version].items():
+            for folio_name, folio in sorted(self.folios[version].items(), key=lambda i: i[0].zfill(4)):
                 print(f"Adding folio {folio_name} to allFolios {version} {method}...")
                 list_of_divs = folio.xml.findall("div")
                 divs = [deepcopy(div) for div in list_of_divs] # Lxml modifies in-place when you move divs, so deepcopy makes a copy of the folio so we don't lose data in self.folios.
