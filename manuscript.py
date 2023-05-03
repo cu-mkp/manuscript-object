@@ -99,7 +99,7 @@ def generate_entries(directory) -> List[entry.Entry]:
         entries.append(entry.Entry(xml, folio=clean_folio(folio), identity=clean_id(identity)))
 
     print(f"Generated {len(entries)} entr{'y' if len(entries)==1 else 'ies'}.")
-    return entries
+    return list(sorted(entries, key=lambda e: e.identity))
 
 def generate_folios(directory) -> List[entry.Entry]:
     """Given the path to a directory of XML files, generate a list of Entry objects by loading each file as its own entry.
@@ -109,7 +109,7 @@ def generate_folios(directory) -> List[entry.Entry]:
         for filename in files:
             print(f"Generating folio from file {ignore_data_path(os.path.join(root, filename))}...")
             folios.append(entry.Entry.from_file(os.path.join(root, filename), folio=clean_folio(extract_folio(filename))))
-    return folios
+    return list(sorted(folios, key=lambda e: e.folio))
 
 class Manuscript():
     def __init__(self, entries={}, folios={}):
@@ -301,13 +301,13 @@ class Manuscript():
         """
         if method=="txt":
             content = "" # string representing the entire text version
-            for folio_name, folio in self.folios[version].items():
+            for folio_name, folio in sorted(self.folios[version].items(), key=lambda i: i[0].zfill(4)):
                 print(f"Adding folio {folio_name} to allFolios {version} {method}...")
                 content += folio.text + "\n\n"
 
         elif method=="xml":
             root = et.Element("all") # Create a root element to wrap the entire XML.
-            for folio_name, folio in self.folios[version].items():
+            for folio_name, folio in sorted(self.folios[version].items(), key=lambda i: i[0].zfill(4)):
                 print(f"Adding folio {folio_name} to allFolios {version} {method}...")
                 list_of_divs = folio.xml.findall("div")
                 divs = [deepcopy(div) for div in list_of_divs] # Lxml modifies in-place when you move divs, so deepcopy makes a copy of the folio so we don't lose data in self.folios.
