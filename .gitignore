@@ -4,3 +4,5 @@ __pycache__/
 .vscode/
 digital_manuscript.json
 Pipfile.lock
+# python venv virtual environment files
+venv/
