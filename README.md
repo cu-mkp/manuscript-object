@@ -1,5 +1,7 @@
 # manuscript-object
 
+[![DOI](https://zenodo.org/badge/191953906.svg)](https://doi.org/10.5281/zenodo.16755927)
+
 Data extraction, transformation, manipulation, and analysis of the [Making and Knowing Project](https://makingandknowing.org/)'s core dataset of the Digital Critical Edition, [_Secrets of Craft and Nature_](https://edition640.makingandknowing.org). The working files and data are housed in [m-k-manuscript-data](https://github.com/cu-mkp/m-k-manuscript-data).
 
 It's a good idea to set up a python virtual environment locally:
